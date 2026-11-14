@@ -41,6 +41,7 @@ assert.ok(cleanupAt > placeAt, 'old structure cleanup must follow successful pla
 assert.ok(deleteAt > placeAt, 'temporary snapshot must be deleted after placement');
 assert.match(placeMoved, /includeEntities:\s*false/);
 assert.match(placeMoved, /includeBlocks:\s*true/);
+assert.match(placeMoved, /snapshot\.size\.x !== instance\.size\.x/);
 assert.match(placeMoved, /Původní stavba zůstala zachována/);
 
 const removeConfirmation = functionBody('confirmRemoveInstance', 'openTeleportMenu');
