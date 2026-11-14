@@ -188,6 +188,46 @@ function clearStructure(dimension, instance) {
     );
 }
 
+function isAirBlock(block) {
+    return block?.typeId === 'minecraft:air' ||
+        block?.typeId === 'minecraft:cave_air' ||
+        block?.typeId === 'minecraft:void_air';
+}
+
+function isMoveDestinationClear(dimension, instance, target) {
+    const size = instance.size;
+    if (
+        !size ||
+        !Number.isInteger(size.x) || size.x < 1 ||
+        !Number.isInteger(size.y) || size.y < 1 ||
+        !Number.isInteger(size.z) || size.z < 1
+    ) return false;
+
+    try {
+        for (let x = 0; x < size.x; x++) {
+            for (let y = 0; y < size.y; y++) {
+                for (let z = 0; z < size.z; z++) {
+                    const location = {
+                        x: target.x + x,
+                        y: target.y + y,
+                        z: target.z + z,
+                    };
+                    const block = dimension.getBlock(location);
+                    const isOriginMarker =
+                        x === 0 && y === 0 && z === 0 &&
+                        block?.typeId === CONTROL_BLOCK;
+
+                    if (!isOriginMarker && !isAirBlock(block)) return false;
+                }
+            }
+        }
+    } catch {
+        return false;
+    }
+
+    return true;
+}
+
 function loadStructure(dimension, instance) {
     const p = instance.origin;
     const at = p.x + ' ' + p.y + ' ' + p.z;
@@ -331,22 +371,20 @@ async function renameInstance(player, instance) {
 
 function beginMove(player, instance) {
     try {
-        clearStructure(player.dimension, instance);
-        setControlStone(player.dimension, instance);
-
         writePlayer(player, MOVE_KEY, {
             instanceId: instance.id,
             dimension: instance.dimension,
-            target: { ...instance.origin },
+            target: null,
         });
 
         notify(
             player,
             '§b🔵 PŘESUN: §fkámen sleduje tvůj pohled. ' +
-            '§7Zamíř na nové místo a klepni na kámen.',
+            '§7Původní stavba zůstává zachována, dokud nebude nové místo úspěšně použito. ' +
+            '§7Cílový prostor musí být celý prázdný.',
         );
     } catch (e) {
-        notify(player, '§cPřesun se nepodařil.');
+        notify(player, '§cPřesun se nepodařilo zahájit.');
         console.warn('SpiderQuick move start error: ' + e);
     }
 }
@@ -410,13 +448,7 @@ function updateMovePreview(player) {
 
     try {
         const targetBlock = player.dimension.getBlock(target);
-        const targetType = targetBlock?.typeId ?? '';
-        const isAir =
-            targetType === 'minecraft:air' ||
-            targetType === 'minecraft:cave_air' ||
-            targetType === 'minecraft:void_air';
-
-        if (!isAir) return;
+        if (!isAirBlock(targetBlock)) return;
 
         const occupied = getInstances().some(
             (i) =>
@@ -453,25 +485,79 @@ function placeMoved(player, instance) {
     }
 
     const target = { ...move.target };
+    const original = { ...instance.origin };
+
+    if (!isMoveDestinationClear(player.dimension, instance, target)) {
+        notify(
+            player,
+            '§cCílový prostor není celý prázdný. Původní stavba nebyla změněna.',
+        );
+        return;
+    }
 
     try {
         clearMarker(player.dimension, target);
-        instance.origin = target;
 
-        loadStructure(player.dimension, instance);
-        setControlStone(player.dimension, instance);
+        const movedInstance = { ...instance, origin: target };
+        loadStructure(player.dimension, movedInstance);
+        setControlStone(player.dimension, movedInstance);
 
         saveInstances(
             getInstances().map((i) =>
-                i.id === instance.id ? instance : i,
+                i.id === instance.id ? movedInstance : i,
             ),
         );
 
         writePlayer(player, MOVE_KEY, null);
+
+        try {
+            clearStructure(player.dimension, { ...instance, origin: original });
+        } catch (clearError) {
+            notify(
+                player,
+                '§eNová stavba je umístěna, ale původní oblast se nepodařilo vyčistit. Zůstala zachována jako kopie.',
+            );
+            console.warn('SpiderQuick old structure cleanup error: ' + clearError);
+            return;
+        }
+
         notify(player, '§a🔵 Stavba ' + instance.name + ' byla přesunuta.');
     } catch (e) {
-        notify(player, '§cNové místo se nepodařilo použít.');
+        notify(
+            player,
+            '§cNové místo se nepodařilo použít. Původní stavba zůstala zachována.',
+        );
         console.warn('SpiderQuick move place error: ' + e);
+    }
+}
+
+async function confirmRemoveInstance(player, instance, favorites) {
+    const form = new ActionFormData()
+        .title(formTitle('Potvrdit odstranění'))
+        .body(
+            '§cOpravdu odstranit stavbu ' + instance.name + '?\n\n' +
+            '§7Odstraní se celý kvádrový prostor ' +
+            instance.size.x + '×' + instance.size.y + '×' + instance.size.z +
+            ' včetně případných hráčských úprav uvnitř něj. Tuto akci nelze vrátit.',
+        )
+        .button('§l§cAno, odstranit stavbu')
+        .button('§8Zrušit');
+
+    const result = await form.show(player);
+    if (result.canceled || result.selection !== 0) return;
+
+    try {
+        clearStructure(player.dimension, instance);
+        removeInstance(instance);
+        writePlayer(
+            player,
+            FAVS_KEY,
+            favorites.filter((id) => id !== instance.id),
+        );
+        notify(player, '§cOdstraněno: §f' + instance.name);
+    } catch (error) {
+        notify(player, '§cOdstranění se nepodařilo. Záznam stavby zůstal zachován.');
+        console.warn('SpiderQuick remove instance error: ' + error);
     }
 }
 
@@ -543,6 +629,7 @@ async function openInstanceMenu(player, instance) {
 
     if (moving?.instanceId === instance.id) {
         f.button('§l§6🎯 Umístit na zaměřené místo');
+        f.button('§l§8Zrušit přesun');
     }
 
     const result = await f.show(player);
@@ -579,18 +666,7 @@ async function openInstanceMenu(player, instance) {
     }
 
     if (result.selection === 4) {
-        try {
-            clearStructure(player.dimension, instance);
-            removeInstance(instance);
-            writePlayer(
-                player,
-                FAVS_KEY,
-                favs.filter((id) => id !== instance.id),
-            );
-            notify(player, '§cOdstraněno: §f' + instance.name);
-        } catch {
-            notify(player, '§cOdstranění se nepodařilo.');
-        }
+        await confirmRemoveInstance(player, instance, favs);
         return;
     }
 
@@ -608,6 +684,13 @@ async function openInstanceMenu(player, instance) {
 
     if (result.selection === 7 && moving?.instanceId === instance.id) {
         placeMoved(player, instance);
+        return;
+    }
+
+    if (result.selection === 8 && moving?.instanceId === instance.id) {
+        if (moving.target) clearMarker(player.dimension, moving.target);
+        writePlayer(player, MOVE_KEY, null);
+        notify(player, '§7Přesun stavby byl zrušen. Původní stavba zůstala zachována.');
     }
 }
 
