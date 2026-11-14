@@ -24,6 +24,8 @@ assert.doesNotMatch(beginMove, /setControlStone\s*\(/);
 const destinationCheck = functionBody('isMoveDestinationClear', 'loadStructure');
 assert.match(destinationCheck, /dimension\.getBlock\(location\)/);
 assert.match(destinationCheck, /CONTROL_BLOCK/);
+assert.match(destinationCheck, /volumesOverlap\(target, size, instance\.origin, size\)/);
+assert.match(destinationCheck, /otherInstances\.some/);
 assert.match(destinationCheck, /return false/);
 
 const placeMoved = functionBody('placeMoved', 'confirmRemoveInstance');
