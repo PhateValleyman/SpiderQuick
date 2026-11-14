@@ -248,19 +248,6 @@ function isMoveDestinationClear(dimension, instance, target) {
     return true;
 }
 
-function loadStructure(dimension, instance) {
-    const p = instance.origin;
-    const at = p.x + ' ' + p.y + ' ' + p.z;
-    const animation = instance.anim
-        ? ' ' + instance.anim + ' ' + instance.animSeconds
-        : '';
-
-    dimension.runCommand(
-        'structure load ' + instance.structure + ' ' + at + ' ' +
-        instance.rotation + ' ' + instance.mirror + animation,
-    );
-}
-
 function newId() {
     return 'QC-' + system.currentTick.toString(36).toUpperCase() + '-' +
         Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0').toUpperCase();
