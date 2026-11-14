@@ -15,6 +15,8 @@ check:
 	$(PYTHON) $(ROOT)/tools/validate_merge.py
 	$(PYTHON) $(ROOT)/tools/check_scripts.py --node "$(NODE)"
 	$(NODE) $(ROOT)/tools/test_optional_handlers.cjs
+	$(NODE) $(ROOT)/tools/test_command_compat.cjs
+	$(NODE) $(ROOT)/tools/test_structure_safety.cjs
 
 # The pack sources are committed directly; no configure or compile step is needed.
 prepare: check
