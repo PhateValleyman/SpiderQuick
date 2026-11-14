@@ -1,0 +1,121 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.green_goblin.planeador": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-6.75",
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-6.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-6.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-6.5"
+          ]
+        },
+        "green_goblin_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-6.75",
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-6.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-6.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-6.5"
+          ]
+        }
+      }
+    },
+    "controller.animation.green_goblin_raimi.idle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        },
+        "green_goblin_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        }
+      }
+    },
+    "controller.animation.green_goblin.idle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-1.75",
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        },
+        "green_goblin_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-1.75",
+			"/particle spidermanaddon:green_goblin_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        }
+      }
+    },
+    "controller.animation.hobgoblin.idle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hobgoblin_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:hobgoblin_particle ^ ^0.6 ^-1.75",
+			"/particle spidermanaddon:hobgoblin_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        },
+        "hobgoblin_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:hobgoblin_particle ^ ^0.6 ^-1.75",
+			"/particle spidermanaddon:hobgoblin_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.75",
+			"/particle minecraft:basic_smoke_particle ^ ^0.6 ^-1.5"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.miles_morales": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.default", "Texture.enchanted" ]
+    },
+    "controller.render.miles_morales.invisibility": {
+      "geometry": "Geometry.invisibility",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.invisibility" } ],
+      "textures": [ "Texture.invisibility", "Texture.enchanted" ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.13.0",
+  "animations": {
+    "animation.player.spiderman.web_shooter.shoot": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.1": [
+			"/scoreboard players remove @s web_shoot_load 1",
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5",
+			"/event entity @s web_shooter:shoot"
+		]
+      }
+    },
+    "animation.player.spiderman.web_shooter.reload": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.5": [
+			"/playsound web_shooter_sounds.empty @a[r=10] ~ ~ ~ 0.5"
+		],
+        "0.85": [
+			"/scoreboard players set @s web_shoot 100",
+			"/scoreboard players set @s[scores={web_shoot_lv=0}] web_shoot_load 5",
+			"/scoreboard players set @s[scores={web_shoot_lv=1}] web_shoot_load 8",
+			"/scoreboard players set @s[scores={web_shoot_lv=2}] web_shoot_load 8",
+			"/scoreboard players set @s[scores={web_shoot_lv=3}] web_shoot_load 10",
+			"/scoreboard players set @s[scores={web_shoot_lv=4}] web_shoot_load 10",
+			"/clear @s mzaddon:spider_web_cartridge 0 1"
+		]
+      }
+    },
+    "animation.player.spiderman.web_shooter_balanceo.reload": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.5": [
+			"/playsound web_shooter_sounds.empty @a[r=10] ~ ~ ~ 0.5"
+		],
+        "0.85": [
+			"/scoreboard players set @s web_shoot_balanceo 100",
+			"/clear @s mzaddon:spider_web_cartridge 0 1"
+		]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spiderman_ps5_symbiote_mask",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/spiderman_ps5_symbiote_suit",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_mask_x64",
+				"armor_skin": "geometry.player_ironman"
+			},
+
+			"render_controllers": [
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

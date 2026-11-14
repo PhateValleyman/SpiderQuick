@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:symbiotes",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "variant_0": "textures/entity/symbiotes/symbiotes0",
+        "variant_1": "textures/entity/symbiotes/symbiotes1",
+        "variant_2": "textures/entity/symbiotes/symbiotes2",
+        "variant_3": "textures/entity/symbiotes/symbiotes3"
+      },
+      "geometry": { "default": "geometry.symbiotes" },
+      "animations": {
+        "idle": "animation.symbiotes.idle",
+        "look_at_target": "animation.mayor_fisk.look_at_target",
+        "walk": "animation.symbiotes.walk",
+        "falling": "animation.symbiotes.falling",
+        "attack": "animation.symbiotes.attack",
+        "shoot": "animation.symbiotes.shoot",
+        "explotion": "animation.symbiotes.explotion",
+        "controller": "controller.animation.symbiotes",
+		"melee_controller": "controller.animation.symbiotes.melee",
+		"impulse": "animation.symbiotes.impulse",
+		"skip": "animation.symbiotes.skip"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": ["controller", "melee_controller", "idle"]
+      },
+      "render_controllers": ["controller.render.symbiotes1"],
+      "spawn_egg": {
+        "base_color": "#0c0c0c",
+        "overlay_color": "#620000"
+      }
+    }
+  }
+}

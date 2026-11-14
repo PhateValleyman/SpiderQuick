@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "marveladdons:avengers_id_card"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+	  "ABB",
+	  "CCC"
+    ],
+    "key": {
+	  "A": {
+        "item": "spidermanaddon:nanotechnology_chip"
+      },
+	  "B": {
+        "item": "minecraft:gold_ingot"
+      },
+	  "C": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "marveladdons:avengers_id_card",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "mystructure:symbionte_nest_jigsaw"
+    },
+    "biome_filters": [
+      {
+        "all_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "birch"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "hills"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "mountain"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "!=",
+            "value": "mutated"
+          }
+        ]
+      }
+    ],
+    "step": "surface_structures",
+    "terrain_adaptation": "none",
+    "start_pool": "mystructure:symbionte_nest_pool",
+    "max_depth": 1,
+    "max_distance_from_center": {
+      "horizontal": 128,
+      "vertical": 160
+    },
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -10
+      }
+    },
+    "heightmap_projection": "world_surface",
+    "liquid_settings": "ignore_waterlogging",
+    "dimension_padding": {
+      "top": 0,
+      "bottom": 0
+    }
+  }
+}

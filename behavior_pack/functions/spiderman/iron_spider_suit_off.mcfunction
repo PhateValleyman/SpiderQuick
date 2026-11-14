@@ -1,0 +1,1 @@
+clear @s spiderverse:iron_spider_mask

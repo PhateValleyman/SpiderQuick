@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:norm_stone",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/kingpin/mayor_fisk"
+			},
+			"geometry": {
+				"default": "geometry.norm_stone",
+				"first": "geometry.norm_stone_first"
+			},
+			"render_controllers": [
+				{ "controller.render.item_3d": "!c.is_first_person" },
+				{ "controller.render.item_3d.first": "c.is_first_person" }
+			]
+		}
+	}
+}

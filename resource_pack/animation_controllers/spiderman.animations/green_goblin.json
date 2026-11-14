@@ -1,0 +1,111 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.green_goblin" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.green_goblin.kick.c",
+						"player.green_goblin.laser.c",
+						{"player.green_goblin.planeador.c": "!v.is_first_person"},
+						{"player.green_goblin.attack.c": "!v.is_first_person"}
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "green_goblin.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_spiderman3_blades') && variable.attack_time > 0.1" },
+						{ "green_goblin.knife.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_raimi_blades') && variable.attack_time > 0.1" }
+					]
+				},
+				"green_goblin.knife.attack" : {
+					"animations" : [ "player.green_goblin.raimi.knife.attack" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished" }
+					]
+				},
+				"green_goblin.attack.0" : {
+					"animations" : [ "player.green_goblin.blades.attack.0" ],
+					"transitions" : [
+						{ "default.2" : "q.any_animation_finished" }
+					]
+				},
+				"default.2" : {
+					"transitions" : [
+						{ "green_goblin.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_spiderman3_blades') && variable.attack_time > 0.1" },
+						{ "green_goblin.knife.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_raimi_blades') && variable.attack_time > 0.1" }
+					]
+				},
+				"green_goblin.attack.1" : {
+					"animations" : [ "player.green_goblin.blades.attack.1"],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.planeador" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "green_goblin.planeador" : "q.is_riding && q.property('arathnido:custom_riding') == 20" },
+						{ "green_goblin_spiderman3.planeador" : "q.is_riding && q.property('arathnido:custom_riding') == 21" }
+					]
+				},
+				"green_goblin_spiderman3.planeador" : {
+					"animations" : [ "player.green_goblin_spiderman3.planeador" ],
+					"transitions" : [
+						{ "default" : "!q.is_riding || q.property('arathnido:custom_riding') == 0" }
+					]
+				},
+				"green_goblin.planeador" : {
+					"animations" : [ "player.green_goblin.planeador" ],
+					"transitions" : [
+						{ "default" : "!q.is_riding || q.property('arathnido:custom_riding') == 0" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.kick" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "green_goblin.kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_combat') && q.property('arathnido:animation') == 1" }
+					]
+				},
+				"green_goblin.kick" : {
+					"animations" : [ "player.green_goblin.kick" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_combat') || q.property('arathnido:animation') == 0" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.laser" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "green_goblin.kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_laser')" }
+					]
+				},
+				"green_goblin.kick" : {
+					"animations" : [ 
+						{ "player.green_goblin.laser": "!v.is_first_person" },
+						{ "player.green_goblin.laser.first": "v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_laser')" }
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1741 @@
+﻿gui.spidermanaddon.upgrade_max=Mejorar al máximo
+gui.spidermanaddon.upgrade_max_cost=Mejora los %1 niveles restantes por %2 componentes.
+gui.spidermanaddon.not_enough_components_max=Necesitas %1 componentes para mejorar este lanzatelarañas al nivel máximo.
+gui.spidermanaddon.upgraded_to_max=Lanzatelarañas mejorado al nivel máximo.
+item.spidermanaddon:black_cat_skin=Aspecto de Black Cat
+item.spidermanaddon:norm_stone=Piedra Norm
+
+ui.spiderman.settings.spider_sense_particles=Partículas del sentido arácnido
+ui.spiderman.settings.spider_sense_sound=Sonido del sentido arácnido
+ui.spiderman.settings.spider_sense_actionbar=Barra de advertencia del sentido arácnido
+
+item.minecraft:leather=Cuero
+item.spidermanaddon:spider_gwen_skin=Piel de Spider-Gwen
+item.spidermanaddon:mayday_skin=Piel de Mayday Parker
+
+entity.spidermanaddon:hulk_boss.name=Hulk
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=Aparecer Hulk
+
+dialogue.spidermanaddon.hulk_activation=?????:§r Estás hecho un desastre. No te cruces en mi camino. Porque si lo haces, no serán solo tus amigos los que se olviden de quién es Peter Parker.
+dialogue.spidermanaddon.hulk_defeated=?????:§r Lo hiciste bien, para la próxima vez no tendrás tanta suerte
+
+spidermanaddon:itemGroup.name.shocker=Arsenal de Shocker
+item.spidermanaddon:shocker_mask=Mascara de Shocker
+item.spidermanaddon:shocker_suit=Traje de Shocker
+item.spidermanaddon:spider_punk_guitar=Guitarra de Spider-Punk
+item.spidermanaddon:shocker_gloves=Guantes de Shocker
+gui.spidermanaddon.symbiont_evil_dance=Baile Malvado
+tile.spiderman:spider_capsule.name=Capsula con araña radioactiva
+
+ui.spiderman.settings.button=§8Configuración
+ui.spiderman.settings.title=§lConfiguración de poderes
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§bCorrer por la pared de forma libre
+ui.spiderman.settings.water_surf=§9Surf en agua
+ui.spiderman.settings.save=Guardar configuración
+ui.spiderman.settings.saved=§aConfiguración guardada correctamente.
+
+item.spidermanaddon:organic_web_potion=Pocion de telaraña organica
+
+item.minecraft:gunpowder=Polvora
+item.minecraft:glass=Cristal
+item.minecraft:slime_ball=Bola de Slime
+item.minecraft:string=Cuerda
+item.minecraft:ender_pearl=Perla de Ender
+
+ui.oscorp_table.title=§2Mesa de tecnología Oscorp
+ui.oscorp_table.body=§7Selecciona el proyecto de un villano de Spider-Man que deseas fabricar.
+ui.oscorp_table.category_body=§7Selecciona el objeto, traje o poder que deseas fabricar.
+ui.oscorp_table.category.green_goblin=§aDuende Verde
+ui.oscorp_table.category.doctor_octopus=§6Doctor Octopus
+ui.oscorp_table.category.boomerang=§9Boomerang
+ui.oscorp_table.category.electro=§eElectro
+ui.oscorp_table.category.mysterio=§5Mysterio
+ui.oscorp_table.category.scorpion=§2Scorpion
+ui.oscorp_table.category.tarantula=§4Tarantula
+ui.oscorp_table.category.black_cat=§dBlack Cat
+ui.oscorp_table.category.modified_spider=§cAraña modificada
+ui.oscorp_table.selected=Proyecto seleccionado
+ui.oscorp_table.required_materials=Materiales requeridos
+ui.oscorp_table.result=Resultado
+ui.oscorp_table.craft=Fabricar
+ui.oscorp_table.missing_materials=Materiales faltantes
+ui.oscorp_table.cancel=Cancelar
+ui.oscorp_table.back=Volver
+ui.oscorp_table.crafted=Fabricación completada
+ui.oscorp_table.no_materials=No tienes los materiales necesarios
+ui.oscorp_table.invalid_item=No se pudo crear el objeto
+
+entity.spidermanaddon:oscorp_table.name=Mesa de laboratorio de Oscorp
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=Mesa de laboratorio de Oscorp
+
+item.spidermanaddon:tarantula_attack=Patada voladora
+item.spidermanaddon:black_cat_mask=Mascara de Black Cat
+item.spidermanaddon:black_cat_suit=Traje de Black Cat
+
+item.spidermanaddon:boomerang_powers=Poderes de Boomerang
+item.spidermanaddon:boomerang_skill_explosive=Boomerang explosivo
+item.spidermanaddon:boomerang_skill=Lanzar Boomerang
+item.spidermanaddon:boomerang_skill_electric=Boomerang electrica
+
+item.minecraft:spider_eye=Ojo de araña
+item.minecraft:fermented_spider_eye=Ojo de araña fermentado
+item.minecraft:blaze_powder=Polvo de Blaze
+item.minecraft:ghast_tear=Lagrima de Ghast
+item.minecraft:milk_bucket=Cubeta de leche
+
+ui.laboratory_workbench.upgrade_levels_body=§fNivel actual: §e%1§f/§e%2
+§fCoste de mejora: §a%3 niveles de experiencia
+ui.laboratory_workbench.no_levels=§cNecesitas %1 niveles de experiencia. Actualmente tienes %2.
+
+item.spidermanaddon:police_scanner=Escáner policial
+action.interact.police_scanner=Encender/Apagar escáner
+hud.police_scanner.crime.location=§cCrimen detectado §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§bDistancia: §f%1 m
+
+hud.man_spider.web.ready=§2Telaraña orgánica §f%1/%2
+hud.man_spider.web.locked=§cTelaraña bloqueada §f%1/%2
+hud.man_spider.acid.ready=§aÁcido listo
+hud.man_spider.acid.cooldown=§2Ácido §f%1s
+hud.man_spider.claw.ready=§cAtaque de salto listo
+hud.man_spider.claw.cooldown=§4Ataque de salto §f%1s
+message.man_spider.mutation.requires_powers=§cNecesitas tener equipado los poderes de Spider-Man.
+message.organic_web.requires_powers=§cNecesitas tener equipado los poderes de Spider-Man.
+
+item.spidermanaddon:man_spider_web_shoot=Disparar telaraña [Telaraña organica]
+item.spidermanaddon:man_spider_swing=Telañara balanceo [Telaraña organica]
+item.spidermanaddon:man_spider_acid=Disparar acido
+item.spidermanaddon:man_spider_claw=Ataque
+item.spidermanaddon:spider_mutant=Suero de mutacion
+item.spidermanaddon:mutation_antidote=Antídoto mutante
+item.spidermanaddon:six_arms=Seis brazos
+item.spidermanaddon:man_spider=Man-Spider
+
+hud.spiderman.web_swing.ammo=§bBalanceo de telaraña §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ Punto de balanceo detectado: §f%1 bloques
+hud.spiderman.web_swing.target.none=§c◇ Sin punto de balanceo: §fmáx. %1 bloques
+hud.spiderman.web_swing.target.no_ammo=§c✖ Sin fluido de telaraña
+hud.spiderman.web_swing.target.active=§a◆ Telaraña conectada
+
+item.spidermanaddon:spiderman_unlimited_sonic=Onda sonica
+item.spidermanaddon:spiderman_unlimited_invisibility=Invisibilidad
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=Brazalete de Spider-Man: Unlimited
+menu.pizza.full_shift=§6Turno completo
+dialog.pizza.full_shift_started=§6Sr. Aziz:§r Turno completo iniciado. Pedido %1/%2: entrega pizzas a %3 clientes. Tiempo inicial: %4.
+dialog.pizza.full_shift_return_to_joe=§6Pedido completado. Regresa con Sr. Aziz para recoger el pedido %1/%2.
+dialog.pizza.full_shift_return_for_reward=§6Completaste el último pedido. Regresa con Sr. Aziz para cobrar tu recompensa.
+dialog.pizza.full_shift_next_order=§6Sr. Aziz:§r Pedido %1/%2 listo: entrega pizzas a %3 clientes. Tiempo acumulado: %4.
+dialog.pizza.full_shift_spawn_failed=§6Sr. Aziz:§r No pude localizar clientes para el siguiente pedido. El turno completo ha fracasado.
+dialog.pizza.full_shift_success=§6Sr. Aziz:§r ¡Turno completo terminado! Completaste %1 pedidos y recibiste %2 lingotes de oro, %3 componentes y %4 puntos de experiencia.
+
+
+dialog.pizza.night_unavailable=§6Sr. Aziz:§r El turno de reparto está cerrado durante la noche. Vuelve durante el día.
+dialog.pizza.daily_limit=§6Sr. Aziz:§r Ya realizaste tus %1 misiones de reparto de hoy. Vuelve mañana.
+
+item.spidermanaddon:pizza_backpack_offhand=Mochila de Pizzero
+
+pack.name=SpiderQuick
+pack.description=Sistema de repartidor de pizzas inspirado en Spider-Man 2.
+
+entity.spidermanaddon:joe_pizza.name=Sr. Aziz
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=Generar a Sr. Aziz
+entity.spidermanaddon:customer.name=Cliente
+item.spawn_egg.entity.spidermanaddon:customer.name=Generar cliente
+item.spidermanaddon:pizza_backpack=¡Pizza Caliente!
+
+action.interact.pizza_talk=Hablar con Sr. Aziz
+action.interact.deliver_pizza=Entregar pizza
+
+menu.pizza.title=§6Sr. Aziz's Pizza
+menu.pizza.body=¿Quieres trabajar como repartidor? Entrega todos los pedidos y regresa antes de que termine el tiempo.
+menu.pizza.accept=§aAceptar misión
+menu.pizza.decline=Ahora no
+
+dialog.pizza.busy=§6Sr. Aziz:§r Ya hay un repartidor trabajando. Vuelve más tarde.
+dialog.pizza.spawn_failed=§6Sr. Aziz:§r No encontré lugares seguros para los clientes. Inténtalo en otra zona.
+dialog.pizza.inventory_full=§6Sr. Aziz:§r Necesitas al menos un espacio vacío en el inventario para la mochila.
+dialog.pizza.mission_started=§6Sr. Aziz:§r Tienes %2 para entregar %1 pedido(s). ¡Muévete!
+dialog.pizza.still_working=§6Sr. Aziz:§r Todavía faltan %1 pedido(s). Tiempo restante: %2.
+dialog.pizza.not_your_customer=§6Sr. Aziz:§r Ese pedido pertenece a otro repartidor.
+dialog.pizza.already_delivered=§eEste cliente ya recibió su pizza.
+dialog.pizza.need_backpack=§cDebes sostener la mochila con pizzas para entregar el pedido.
+dialog.pizza.order_delivered=§aPedido entregado. Clientes: %1/%2.
+dialog.pizza.return_to_joe=§6Todos los pedidos están listos. ¡Regresa con Sr. Aziz antes de que termine el tiempo!
+dialog.pizza.failed_time=§6Sr. Aziz:§r Se acabó el tiempo. La misión ha fracasado.
+dialog.pizza.failed_customer=§6Sr. Aziz:§r Un cliente desapareció o murió. La misión ha fracasado.
+dialog.pizza.success=§6Sr. Aziz:§r Buen trabajo. Entregaste %1 pedido(s) y recibiste %2 lingotes de oro.
+
+dialog.spider_sense.enemy_detected=§cEnemigo detectado en:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Mascara de Ben Really
+item.spiderverse:ben_really_suit=Traje de Ben Really
+
+item.spidermanaddon:scorpion_attack=Ataque de aguijon
+item.spidermanaddon:scorpion_spin=Golpe giratorio
+item.spidermanaddon:scorpion_poison=Activar veneno
+item.spidermanaddon:scorpion_powers=Cola de Scorpion
+
+entity.spidermanaddon:electro_boss.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Aparecer Electro
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Aparecer Silk
+entity.spidermanaddon:punisher_van.name=Van de Punisher
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=Van de Punisher
+item.marveladdons:venom_transform=Transformarse en Venom
+item.marveladdons:venom_claw=Garra de Venom
+item.marveladdons:venom_combat=Combate
+item.marveladdons:venom_powers=Poderes de Venom
+item.marveladdons:venom_shield=Escudo
+item.spidermanaddon:agent_venom_ult=Habilidad del Agente Venom
+item.spiderverse:spiderman_undies_suit=Ropa interior de Spider-Man
+item.spiderverse:electro_mask=Mascara de Electro
+item.spidermanaddon:electro_powers=Poderes de Electro
+item.spidermanaddon:tarantula_suit=Traje de Tarantula
+item.spidermanaddon:tarantula_mask=Mascara de Tarantula
+item.spidermanaddon:boomerang_suit=Traje de Boomerang
+item.spidermanaddon:boomerang_mask=Mascara de Boomerang
+item.spidermanaddon:scorpion_suit=Traje de Scorpion
+item.spidermanaddon:green_goblin_combat=Combate
+item.spidermanaddon:green_goblin_laser=Laser del Duende Verde
+item.spidermanaddon:hobgoblin_pumpkin_bomb=Bomba del Hobgoblin
+item.spidermanaddon:black_cat_powers=Poderes de Black Cat
+item.spidermanaddon:spiderman_menu=Menu
+item.marveladdons:venom_wings=Alas de Venom
+item.marveladdons:venom_whip=Latigo de balanceo
+
+marveladdons:itemGroup.name.fabric=Rollos de tela
+marveladdons:itemGroup.name.spray=Pinturas de aerosol
+spidermanaddon:itemGroup.name.powers=Poderes de Spider-Man
+spidermanaddon:itemGroup.name.web_shooters=Lanzatelarañas
+spidermanaddon:itemGroup.name.mask=Mascaras de Spider-Man
+spidermanaddon:itemGroup.name.suit=Trajes de Spider-Man
+spidermanaddon:itemGroup.name.mysterio=Arsenal de Mysterio
+spidermanaddon:itemGroup.name.green_goblin=Arsenal de Duende Verde
+spidermanaddon:itemGroup.name.sandman=Arsenal de Sandman
+spidermanaddon:itemGroup.name.electro=Arsenal de Electro
+spidermanaddon:itemGroup.name.black_cat=Arsenal de Black Cat
+spidermanaddon:itemGroup.name.scorpion=Arsenal de Scorpion
+spidermanaddon:itemGroup.name.dr_octopus=Arsenal de Dr. Octopus
+spidermanaddon:itemGroup.name.tarantula=Arsenal de Tarantula
+spidermanaddon:itemGroup.name.boomerang=Arsenal de Boomerang
+
+entity.spidermanaddon:symbiote_nests.name=Nidos de Simbionte
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=Nidos de Simbionte
+
+dialog.black_cat.heal.light=§dBlack Cat:§r Algo sencillo... pero útil. No te acostumbres a verme agradecida.
+dialog.black_cat.heal.meal=§dBlack Cat:§r Eso sí cuenta como cuidar a una aliada. Buen detalle, Spider.
+dialog.black_cat.heal.golden=§dBlack Cat:§r ¿Una manzana dorada para mí? Vaya, alguien quiere ganarse mis nueve vidas.
+dialog.black_cat.heal.full=§dBlack Cat:§r Ahora sí me siento perfecta. Trata de no arruinarlo, ¿sí?
+dialog.black_cat.heal.bad=§dBlack Cat:§r ¿Comida podrida? Cuidado, cariño. La confianza también se puede envenenar.
+
+dialog.punisher.heal.light=§8Punisher:§r Suministro recibido. Suficiente para seguir avanzando.
+dialog.punisher.heal.meal=§8Punisher:§r Buena comida. Mantiene al equipo en pie.
+dialog.punisher.heal.golden=§8Punisher:§r Manzana dorada. Útil. No la desperdiciaste.
+dialog.punisher.heal.full=§8Punisher:§r Recuperación completa. Vuelvo al combate.
+dialog.punisher.heal.bad=§8Punisher:§r Eso no es ayuda. Es una mala decisión.
+
+dialog.punisher.night.1=§8Punisher:§r La noche favorece a los criminales... también a nosotros.
+dialog.punisher.night.2=§8Punisher:§r Es cuando salen de sus escondites.
+dialog.punisher.night.3=§8Punisher:§r Mantén los ojos abiertos.
+
+dialog.punisher.health.1=§8Punisher:§r He recibido peores heridas.
+dialog.punisher.health.2=§8Punisher:§r Todavía puedo seguir luchando.
+
+item.spiderverse:electro_no_way_home_suit=Traje de Electro: Spider-Man No Way Home
+item.spiderverse:electro_no_way_home_mask=Mascara de Electro: Spider-Man No Way Home
+item.spiderverse:electro_tas2_suit=Traje de Electro: The Amazing Spider-Man 2
+item.spiderverse:electro_tas2_mask=Mascara de Electro: The Amazing Spider-Man 2
+
+item.spidermanaddon:electro_laser=Laser de electro
+item.spidermanaddon:electro_teleport=Teletransporte
+item.spidermanaddon:electro_ray=Iman electrico
+
+gui.uncle_ben_camera.title=§bModo Camara
+gui.uncle_ben_camera.body=Selecciona una opción de cámara.
+gui.uncle_ben_camera.camera=Cámara
+gui.uncle_ben_camera.poses=Poses
+gui.uncle_ben_camera.camera.title=Cámara
+gui.uncle_ben_camera.camera.body=Elige el modo de cámara.
+gui.uncle_ben_camera.camera.free=Cámara libre
+gui.uncle_ben_camera.camera.selfie=Modo selfie
+gui.uncle_ben_camera.poses.title=Poses
+gui.uncle_ben_camera.poses.body=Selecciona una pose.
+gui.uncle_ben_camera.poses.disable=Desactivar poses
+gui.uncle_ben_camera.poses.pose=Pose
+
+dialog.punisher.interact.low.1=§8Punisher:§r No confundas trabajar juntos con ser amigos.
+dialog.punisher.interact.low.2=§8Punisher:§r Si bajas la guardia, no pienso rescatarte.
+dialog.punisher.interact.low.3=§8Punisher:§r Demuéstrame que puedo confiar en ti.
+dialog.punisher.interact.low.4=§8Punisher:§r He visto demasiados héroes caer por confiar en cualquiera.
+dialog.punisher.interact.low.5=§8Punisher:§r Habla menos. Mantén los ojos abiertos.
+
+dialog.punisher.interact.high.1=§8Punisher:§r Has demostrado que sabes sobrevivir.
+dialog.punisher.interact.high.2=§8Punisher:§r No suelo decir esto... buen trabajo.
+dialog.punisher.interact.high.3=§8Punisher:§r Si tú cubres mi espalda, yo cubriré la tuya.
+dialog.punisher.interact.high.4=§8Punisher:§r Empiezo a pensar que haces la diferencia.
+dialog.punisher.interact.high.5=§8Punisher:§r Mientras luchemos juntos, esos criminales no tendrán descanso.
+
+dialog.punisher.follow=§8Punisher:§r No te alejes demasiado.
+dialog.punisher.free=§8Punisher:§r Si algo aparece, me encargaré.
+
+dialog.punisher.recruit.1=§8Punisher:§r Esa credencial demuestra que vienes de los Vengadores... Trabajaré contigo.
+dialog.punisher.recruit.2=§8Punisher:§r No sigo órdenes de cualquiera. Pero te daré una oportunidad.
+
+dialog.punisher.respect.1=§8Punisher:§r Vas aprendiendo.
+dialog.punisher.respect.2=§8Punisher:§r Buen trabajo.
+dialog.punisher.respect.3=§8Punisher:§r Empiezo a confiar en ti.
+dialog.punisher.respect.4=§8Punisher:§r Eso fue profesional.
+
+dialog.punisher.assist.1=§8Punisher:§r Buen disparo. Sigue así.
+dialog.punisher.assist.2=§8Punisher:§r Peleas mejor de lo que esperaba.
+dialog.punisher.assist.3=§8Punisher:§r Hoy les dimos una lección.
+dialog.punisher.assist.4=§8Punisher:§r Trabajar contigo hace esto más sencillo.
+
+dialog.punisher.respect.25=§8Punisher:§r Parece que sabes lo que haces.
+dialog.punisher.respect.50=§8Punisher:§r Empiezo a confiar en ti.
+dialog.punisher.respect.75=§8Punisher:§r Has demostrado ser un verdadero aliado.
+dialog.punisher.respect.100=§8Punisher:§r Si alguna vez necesito a alguien cubriendo mi espalda, serás tú.
+
+dialog.punisher.idle.1=§8Punisher:§r Mantente alerta.
+dialog.punisher.idle.2=§8Punisher:§r La ciudad nunca duerme.
+dialog.punisher.idle.3=§8Punisher:§r Los criminales siempre vuelven.
+dialog.punisher.idle.4=§8Punisher:§r Aprovecha este momento de calma.
+dialog.punisher.idle.5=§8Punisher:§r No bajes la guardia.
+
+gui.punisher.interact=Interactuar
+gui.punisher.follow=Seguirme
+gui.punisher.stop_follow=Dejar de seguirme
+gui.punisher.title=The Punisher
+gui.punisher.respect=Nivel de respeto:
+
+dialog.punisher.enemy.1=§8Punisher:§r Ahí están... no los pierdas de vista.
+dialog.punisher.enemy.2=§8Punisher:§r Tenemos compañía.
+dialog.punisher.enemy.3=§8Punisher:§r Hora de limpiar las calles.
+
+dialog.punisher.owner_hit.1=§8Punisher:§r Controla tus golpes. No estoy aquí para recibir fuego amigo.
+dialog.punisher.owner_hit.2=§8Punisher:§r Mala decisión. La próxima vez apunta al enemigo.
+dialog.punisher.owner_hit.3=§8Punisher:§r Ese error cuesta confianza. Mantén la disciplina.
+
+menu.punisher.body.low_respect=Punisher te observa con cautela. Aún no confía del todo en ti.
+menu.punisher.body.high_respect=Punisher se acerca con una sonrisa confiada. Parece disfrutar tu compañía.
+
+item.marveladdons:avengers_id_card=Tarjeta de identificacion de los Vengadores.
+
+dialog.black_cat.enemy.1=§dBlack Cat:§r Tenemos compañía cerca. Y no parece de la clase que deja propina.
+dialog.black_cat.enemy.2=§dBlack Cat:§r Escucho algo moviéndose cerca... prepara tus telarañas, Spider.
+dialog.black_cat.enemy.3=§dBlack Cat:§r No estamos solos. Hay un monstruo cerca arruinando la noche.
+
+dialog.black_cat.owner_hit.1=§dBlack Cat:§r ¿Eso fue un golpe o una pésima forma de llamar mi atención?
+dialog.black_cat.owner_hit.2=§dBlack Cat:§r Cuidado, Spider. La confianza también se rompe con las garras equivocadas.
+dialog.black_cat.owner_hit.3=§dBlack Cat:§r Si vas a tratarme así, quizá deba volver a trabajar sola.
+
+dialog.black_cat.approach.low.1=§dBlack Cat:§r Vaya, mira quién se acercó. ¿Vienes a ayudar o a estorbar con estilo?
+dialog.black_cat.approach.low.2=§dBlack Cat:§r No te emociones, todavía no somos socios. Pero puedes caminar a mi lado... por ahora.
+dialog.black_cat.approach.low.3=§dBlack Cat:§r Si buscas confianza, tendrás que ganártela. Yo no regalo mis nueve vidas.
+
+dialog.black_cat.approach.high.1=§dBlack Cat:§r Ahí estás, Spider. Empezaba a pensar que la noche se iba a poner aburrida.
+dialog.black_cat.approach.high.2=§dBlack Cat:§r Llegas justo a tiempo. Conmigo cerca, los problemas suelen ser más divertidos.
+dialog.black_cat.approach.high.3=§dBlack Cat:§r Me gusta cuando apareces así. Hace que la ciudad parezca un poco menos peligrosa... casi.
+
+dialog.black_cat.play_night.end.1=§dBlack Cat:§r Creo que ese traje ya no te quedaba bien.
+dialog.black_cat.play_night.end.2=§dBlack Cat:§r Buenos días... dormiste bastante profundo.
+dialog.black_cat.play_night.end.3=§dBlack Cat:§r Espero que no te moleste... tomé prestado algo de tu armario.
+dialog.black_cat.play_night.end.4=§dBlack Cat:§r No pongas esa cara... te ves adorable así.
+dialog.black_cat.play_night.end.5=§dBlack Cat:§r Ahora tenemos un pequeño secreto entre nosotros.
+dialog.black_cat.play_night.end.6=§dBlack Cat:§r Supongo que esta noche fue inolvidable.
+
+dialog.black_cat.play_night.start.1=§dBlack Cat:§r Esta noche... eres solo mío.
+dialog.black_cat.play_night.start.2=§dBlack Cat:§r Por una noche olvidemos a los villanos.
+dialog.black_cat.play_night.start.3=§dBlack Cat:§r Ven... tengo algo especial preparado.
+dialog.black_cat.play_night.start.4=§dBlack Cat:§r No te preocupes... prometo portarme bien.
+dialog.black_cat.play_night.start.5=§dBlack Cat:§r Después de todo lo que hemos vivido... te lo has ganado.
+dialog.black_cat.play_night.start.6=§dBlack Cat:§r No mires tanto... ven aquí.
+
+dialog.black_cat.theft.1=§dBlack Cat:§r Ups... ¿Eso era tuyo?
+dialog.black_cat.theft.2=§dBlack Cat:§r Lo tomaré prestado... quizá te lo devuelva.
+dialog.black_cat.theft.3=§dBlack Cat:§r Demasiado lento, Spider.
+dialog.black_cat.theft.4=§dBlack Cat:§r ¿En serio pensabas que no lo notaría?
+dialog.black_cat.theft.5=§dBlack Cat:§r ¡Atrápame si puedes!
+dialog.black_cat.theft.6=§dBlack Cat:§r Siempre haces que esto sea divertido.
+
+dialog.black_cat.play_night.betrayal.1=§dBlack Cat:§r Fue una noche divertida, Spider... pero no confundas diversión con lealtad.
+dialog.black_cat.play_night.betrayal.2=§dBlack Cat:§r Te dije que confiar en una ladrona era peligroso. Gracias por los recuerdos... y por todo lo demás.
+dialog.black_cat.play_night.betrayal.3=§dBlack Cat:§r No lo tomes personal, cariño. Solo seguí mi naturaleza: entrar, robar y desaparecer.
+
+menu.black_cat.play_night=¡Noche de diversión!
+dialog.black_cat.play_night.ready=Black Cat parece lista para pasar una noche especial contigo.
+menu.black_cat.play_night=Play Night
+menu.black_cat.aspect.spiderman_suit=Black Cat Spider-Man Suit
+menu.black_cat.aspect=Aspecto
+menu.black_cat.aspect.title=Aspectos de Black Cat
+menu.black_cat.aspect.body=Elige el aspecto que usará Black Cat.
+menu.black_cat.aspect.default=Black Cat
+menu.black_cat.aspect.symbiont=Black Cat Simbionte
+menu.black_cat.aspect.rivals=Black Cat Marvel Rivals
+menu.black_cat.aspect.locked=%s [Bloqueado]
+dialog.black_cat.aspect.locked=Aún no confía lo suficiente en ti para usar ese aspecto.
+dialog.black_cat.aspect.changed=Black Cat cambió de aspecto.
+
+dialog.black_cat.assist.1=§dBlack Cat:§r No estuvo mal. Quizá sí sirves en una pelea.
+dialog.black_cat.assist.2=§dBlack Cat:§r Buen golpe. Casi me impresionas.
+dialog.black_cat.assist.3=§dBlack Cat:§r Hacemos buen equipo... no te emociones.
+dialog.black_cat.assist.4=§dBlack Cat:§r Admito que eso fue elegante.
+
+dialog.black_cat.try_tame=§dBlack Cat:§r Si quieres que trabaje contigo, usa la esmeralda.
+menu.black_cat.title=Black Cat
+
+menu.black_cat.respect=Respeto:
+menu.black_cat.interact=Interactuar
+menu.black_cat.follow_me=Seguirme
+menu.black_cat.stop_following=Deja de seguirme
+
+menu.black_cat.body.low_respect=Black Cat te observa con cautela. Aún no confía del todo en ti.
+menu.black_cat.body.high_respect=Black Cat se acerca con una sonrisa confiada. Parece disfrutar tu compañía.
+
+dialog.black_cat.low_respect.1=§dBlack Cat:§r No te confundas, todavía no confío en ti.
+dialog.black_cat.low_respect.2=§dBlack Cat:§r Si esto sale mal, no pienso salvarte dos veces.
+dialog.black_cat.low_respect.3=§dBlack Cat:§r Eres útil... por ahora.
+dialog.black_cat.low_respect.4=§dBlack Cat:§r No me des razones para arrepentirme.
+dialog.black_cat.low_respect.5=§dBlack Cat:§r He trabajado sola mucho tiempo. No lo arruines.
+dialog.black_cat.low_respect.6=§dBlack Cat:§r Tienes talento, pero también muchos problemas.
+dialog.black_cat.low_respect.7=§dBlack Cat:§r No bajes la guardia. Yo no lo haré.
+dialog.black_cat.low_respect.8=§dBlack Cat:§r Quizá puedas ganarte mi confianza... algún día.
+
+dialog.black_cat.high_respect.1=§dBlack Cat:§r Me gusta trabajar contigo, arañita.
+dialog.black_cat.high_respect.2=§dBlack Cat:§r Tienes estilo. No tanto como yo, pero casi.
+dialog.black_cat.high_respect.3=§dBlack Cat:§r Sabía que podía confiar en ti.
+dialog.black_cat.high_respect.4=§dBlack Cat:§r Admito que haces esto más divertido.
+dialog.black_cat.high_respect.5=§dBlack Cat:§r Buen trabajo. Casi me impresionas.
+dialog.black_cat.high_respect.6=§dBlack Cat:§r Contigo cerca, esto se siente menos aburrido.
+dialog.black_cat.high_respect.7=§dBlack Cat:§r No te emociones, pero me alegra verte.
+dialog.black_cat.high_respect.8=§dBlack Cat:§r Cuida mi espalda y yo cuidaré la tuya.
+
+dialog.black_cat.follow_me=§dBlack Cat:§r Está bien, iré contigo. Pero no camines tan lento.
+dialog.black_cat.stop_following=§dBlack Cat:§r Perfecto, me quedaré por aquí. No me extrañes demasiado.
+dialog.black_cat.not_owner=§dBlack Cat:§r Lo siento, cariño. Yo no trabajo para ti.
+
+entity.spidermanaddon:black_cat.name=Black Cat
+action.interact.black_cat=Interactuar
+item.spidermanaddon:black_cat_contract.name=Contrato de Black Cat
+dialog.black_cat.stolen=§dBlack Cat:§r Gracias por el diamante. Si lo quieres de vuelta... atrápame.
+dialog.black_cat.captured=§dBlack Cat:§r Bien... admito que eres más rápido de lo que esperaba.
+dialog.black_cat.escape=§dBlack Cat:§r Demasiado lento, Spider. Hasta la próxima.
+dialog.black_cat.need_contract=§dBlack Cat:§r ¿Crees que voy a trabajar gratis? Tráeme una oferta mejor.
+dialog.black_cat.recruited=§dBlack Cat:§r Está bien... trabajaré contigo. Pero no esperes que siga las reglas.
+item.spidermanaddon:uncle_ben_camera=Camara del Tio Ben
+
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+action.interact.j_jonah_jameson=Hablar
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=Jameson te mira con desconfianza desde su escritorio.
+menu.j_jonah_jameson.interact=Interactuar
+menu.j_jonah_jameson.sell_picture=Vender fotografía
+menu.j_jonah_jameson.close=Cerrar
+
+dialogue.j_jonah_jameson.random.1=¡Spider-Man es una amenaza! ¡Una amenaza enmascarada!
+dialogue.j_jonah_jameson.random.2=Quiero fotos de Spider-Man, no excusas.
+dialogue.j_jonah_jameson.random.3=Si ese trepamuros aparece, quiero la exclusiva en mi escritorio.
+dialogue.j_jonah_jameson.random.4=La ciudad necesita noticias reales, no héroes saltando por los techos.
+dialogue.j_jonah_jameson.random.5=¡Parker! Espera... tú no eres Parker. Bueno, igual muévete rápido.
+
+dialogue.j_jonah_jameson.sell_picture=La foto es terrible, el ángulo es pésimo y Spider-Man sigue pareciendo una amenaza... pero sirve. Toma tus 10 lingotes.
+dialogue.j_jonah_jameson.no_picture=¿Vienes a venderme aire? ¡Vuelve cuando tengas una fotografía real de Spider-Man!
+
+item.minecraft:planks=Tablones de madera
+item.minecraft:glowstone_dust=Polvo de piedra luminosa
+item.minecraft:redstone=Redstone
+item.minecraft:diamond=Diamante
+item.minecraft:copper_ingot=Lingote de cobre
+item.minecraft:amethyst_shard=Fragmento de amatista
+item.minecraft:quartz=Cuarzo del Nether
+item.minecraft:netherite_ingot=Lingote de Netherita
+item.minecraft:gold_ingot=Lingote de oro
+item.minecraft:iron_ingot=Lingote de hierro
+item.minecraft:emerald=Esmeralda
+item.marveladdons:iron_arms=Brazos metalicos de Iron Spider
+
+ui.spiderman_accessories.title=Fabricación de accesorios
+ui.spiderman_accessories.body=Selecciona un accesorio para fabricar.
+ui.spiderman_accessories.selected_accessory=Accesorio seleccionado
+ui.spiderman_accessories.crafted=Has fabricado
+
+ui.laboratory_workbench.upgrades_menu=Mejorar habilidades de Spider-Man
+ui.laboratory_workbench.upgrades_body=Selecciona una habilidad para mejorar.
+ui.laboratory_workbench.accessories=Fabricación de accesorios
+ui.laboratory_workbench.accessories_coming_soon=La fabricación de accesorios estará disponible más adelante.
+ui.laboratory_workbench.back=Volver
+
+ui.spiderman_suits.next_unlock=Próximo desbloqueo
+
+gui.spidermanaddon.spiderman_level_up=¡Spider-Man subió al nivel %1!
+gui.spidermanaddon.spiderman_max_level=Has alcanzado el nivel máximo de Spider-Man.
+ui.spiderman_suits.title=Laboratorio de trajes
+ui.spiderman_suits.body=Selecciona un traje para fabricar.
+ui.spiderman_suits.level=Nivel de Spider-Man
+ui.spiderman_suits.locked=Bloqueado
+ui.spiderman_suits.need_level=Necesitas nivel de Spider-Man
+ui.spiderman_suits.selected_suit=Traje seleccionado
+ui.spiderman_suits.required_level=Nivel requerido
+ui.spiderman_suits.required_materials=Materiales necesarios
+ui.spiderman_suits.result=Resultado
+ui.spiderman_suits.mask_included=Este traje ya incluye máscara.
+ui.spiderman_suits.craft=Fabricar
+ui.spiderman_suits.missing_materials=Faltan materiales
+ui.spiderman_suits.cancel=Cancelar
+ui.spiderman_suits.no_materials=Ya no tienes suficientes materiales.
+ui.spiderman_suits.crafted=Has fabricado
+
+ui.laboratory_workbench.suits=Fabricación de trajes
+
+ui.spiderman_suits.title=Laboratorio de trajes
+ui.spiderman_suits.body=Selecciona un traje para fabricar.
+
+item.marveladdons:blue_spray=§9Pintura en aerosol azul
+item.marveladdons:brown_spray=§6Pintura en aerosol marrón
+item.marveladdons:cyan_spray=§3Pintura en aerosol cian
+item.marveladdons:gray_spray=§8Pintura en aerosol gris
+item.marveladdons:green_spray=§2Pintura en aerosol verde
+item.marveladdons:light_blue_spray=§bPintura en aerosol azul claro
+item.marveladdons:light_gray_spray=§7Pintura en aerosol gris claro
+item.marveladdons:lime_spray=§aPintura en aerosol lima
+item.marveladdons:magenta_spray=§dPintura en aerosol magenta
+item.marveladdons:orange_spray=§6Pintura en aerosol naranja
+item.marveladdons:pink_spray=§dPintura en aerosol rosa
+item.marveladdons:purple_spray=§5Pintura en aerosol morada
+item.marveladdons:red_spray=§cPintura en aerosol roja
+item.marveladdons:white_spray=§fPintura en aerosol blanca
+item.marveladdons:yellow_spray=§ePintura en aerosol amarilla
+item.marveladdons:black_spray=Pintura en aerosol negra
+
+item.marveladdons:white_fabric=§fRollo de tela blanca
+item.marveladdons:light_gray_fabric=§7Rollo de tela gris claro
+item.marveladdons:gray_fabric=§8Rollo de tela gris
+item.marveladdons:black_fabric=Rollo de tela negra
+item.marveladdons:red_fabric=§cRollo de tela roja
+item.marveladdons:orange_fabric=§6Rollo de tela naranja
+item.marveladdons:yellow_fabric=§eRollo de tela amarilla
+item.marveladdons:lime_fabric=§aRollo de tela lima
+item.marveladdons:green_fabric=§2Rollo de tela verde
+item.marveladdons:cyan_fabric=§3Rollo de tela cian
+item.marveladdons:light_blue_fabric=§bRollo de tela azul claro
+item.marveladdons:blue_fabric=§9Rollo de tela azul
+item.marveladdons:purple_fabric=§5Rollo de tela morada
+item.marveladdons:magenta_fabric=§dRollo de tela magenta
+item.marveladdons:pink_fabric=§dRollo de tela rosa
+item.marveladdons:brown_fabric=§6Rollo de tela marrón
+item.marveladdons:glasses=§fLentes para máscara
+itemGroup.name.spray=§6Pinturas en aerosol
+itemGroup.name.fabric=§bRollos de tela
+
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Aparecer Black Cat
+entity.spidermanaddon:punisher.name=Punisher
+item.spawn_egg.entity.spidermanaddon:punisher.name=Aparecer Punisher
+entity.spidermanaddon:electro.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro.name=Aparecer Electro
+entity.spidermanaddon:mano_ninja.name=Ninja de La Mano
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=Aparecer Ninja de La Mano
+entity.spidermanaddon:scorpion.name=Scorpion
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Aparecer Scorpion
+entity.spidermanaddon:tarantula.name=Tarantula
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Aparecer Tarantula
+entity.spidermanaddon:symbiotes.name=Simbiontes
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=Aparecer Simbiontes
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Aparecer Kraven
+entity.spidermanaddon:mayor_fisk.name=Kingpin
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Aparecer Kingpin
+entity.spidermanaddon:boomerang.name=Boomerang
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Aparecer Boomerang
+
+item.spidermanaddon:miles_morales_venom_punch=Puño de veneno
+item.spidermanaddon:miles_morales_sensor=Escaneo
+item.spidermanaddon:miles_morales_invisibility=Invisibilidad
+item.spidermanaddon:miles_morales_focus=Focus
+item.spidermanaddon:miles_morales_venom_punch=Puño de veneno
+item.spidermanaddon:miles_morales_venom_jump=Salto de veneno
+item.spidermanaddon:miles_morales_venom_smash=Golpe venenoso
+item.spidermanaddon:miles_morales_combat=Combate
+
+message.spiderman_resistance.shield=Tu resistencia arácnida te protegió en el último momento.
+
+ui.laboratory_workbench.title=Mesa de laboratorio
+ui.laboratory_workbench.body=Selecciona una mejora para tus poderes de Spider-Man.
+
+ui.laboratory_workbench.health=Salud: Nivel %s/%s
+ui.laboratory_workbench.resistance=Resistencia: Nivel %s/%s
+ui.laboratory_workbench.focus=Enfoque: Nivel %s/%s
+
+ui.laboratory_workbench.health.title=Mejorar salud
+ui.laboratory_workbench.resistance.title=Mejorar resistencia
+ui.laboratory_workbench.focus.title=Mejorar enfoque
+
+ui.laboratory_workbench.health.body=Nivel actual: %s/%s\nCosto: %s componentes.\n\n¿Quieres mejorar tu salud?
+ui.laboratory_workbench.resistance.body=Nivel actual: %s/%s\nCosto: %s componentes.\n\n¿Quieres mejorar tu resistencia?
+ui.laboratory_workbench.focus.body=Nivel actual: %s/%s\nCosto: %s componentes.\n\n¿Quieres mejorar tu enfoque?
+
+ui.laboratory_workbench.upgrade=Mejorar
+ui.laboratory_workbench.cancel=Cancelar
+
+ui.laboratory_workbench.no_components=No tienes suficientes componentes. Necesitas %s componentes.
+ui.laboratory_workbench.max_level=Esta mejora ya llegó al nivel máximo.
+
+ui.laboratory_workbench.health.success=Has mejorado la salud al nivel %s.
+ui.laboratory_workbench.resistance.success=Has mejorado la resistencia al nivel %s.
+ui.laboratory_workbench.focus.success=Has mejorado el enfoque al nivel %s.
+
+item.spiderverse:spiderman_rivals_mask=Mascara de Spider-Man: Rivals
+item.spiderverse:spiderman_rivals_suit=Traje de Spider-Man: Rivals
+item.spiderverse:spiderman_2099_white_mask=Mascara de Spider-Man 2099 Blanco
+item.spiderverse:spiderman_2099_white_suit=Traje de Spider-Man 2099 Blanco
+item.spiderverse:spiderman_brand_new_day_mask=Mascara de Spider-Man: Un Nuevo Día
+item.spiderverse:spiderman_brand_new_day_suit=Traje de Spider-Man: Un Nuevo Día
+item.spiderverse:spider_oni_mask=Mascara de Spider-Oni
+item.spiderverse:spider_oni_suit=Traje de Spider-Oni
+item.spiderverse:spiderman_black_gold_mask=Mascara de Spider-Man Negro y Dorado
+item.spiderverse:spiderman_black_gold_suit=Traje de Spider-Man Negro y Dorado
+item.spiderverse:spiderman_mk1_mask=Mascara de Spider-Man MK I
+item.spiderverse:spiderman_mk1_suit=Traje de Spider-Man MK I
+item.spiderverse:spiderman_mk2_mask=Mascara de Spider-Man MK II
+item.spiderverse:spiderman_mk2_suit=Traje de Spider-Man MK II
+item.spiderverse:spiderman_mk3_mask=Mascara de Spider-Man MK III
+item.spiderverse:spiderman_mk3_suit=Traje de Spider-Man MK III
+item.spiderverse:spiderman_mk4_mask=Mascara de Spider-Man MK IV
+item.spiderverse:spiderman_mk4_suit=Traje de Spider-Man MK IV
+item.spiderverse:spiderman_miles_morales_2099_mask=Mascara de Spider-Man: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_2099_suit=Traje de Spider-Man: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Mascara de Spider-Man: Miles Morales - Purple Reign
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Traje de Spider-Man: Miles Morales - Purple Reign
+item.spiderverse:silk_web_mask=Mascara de Silk: Traje de telaraña
+item.spiderverse:silk_web_suit=Traje de Silk: Traje de telaraña
+item.spiderverse:scarlet_spider_2_mask=Mascara de Scarlet Spider II
+item.spiderverse:scarlet_spider_2_suit=Traje de Scarlet Spider II
+item.spiderverse:spiderman_dark_mask=Mascara de Spider-Man Oscuro
+item.spiderverse:spiderman_dark_suit=Traje de Spider-Man Oscuro
+item.spiderverse:spiderman_into_the_spiderverse_mask=Mascara de Spider-Man: Into the Spider-Verse
+item.spiderverse:spiderman_into_the_spiderverse_suit=Traje de Spider-Man: Into the Spider-Verse
+item.spiderverse:spiderman_miles_morales_2020_mask=Mascara de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_suit=Traje de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Mascara de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Traje de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Mascara de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Traje de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Mascara de Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Traje de Miles Morales 2020
+item.spiderverse:spiderman_blue_mask=Mascara de Spider-Man Azul
+item.spiderverse:spiderman_blue_suit=Traje de Spider-Man Azul
+item.spiderverse:spiderman_antivenom_classic_mask=Mascara de Spider-Man Anti-Venom Clásico
+item.spiderverse:spiderman_antivenom_classic_suit=Traje de Spider-Man Anti-Venom Clásico
+item.spiderverse:poison_mask=Mascara de Spider-Man: Poison
+item.spiderverse:poison_suit=Traje de Spider-Man: Poison
+item.spiderverse:spiderman_king_in_black_mask=Mascara de Spider-Man: King in Black
+item.spiderverse:spiderman_king_in_black_suit=Traje de Spider-Man: King in Black
+item.spiderverse:spidergwen_symbiont_mask=Mascara de Gwenom
+item.spiderverse:spidergwen_symbiont_suit=Traje de Gwenom
+item.spiderverse:spiderman_zombie_black_mask=Máscara de Spider-Man Zombi Simbionte
+item.spiderverse:spiderman_zombie_black_suit=Traje de Spider-Man Zombi Simbionte
+item.spiderverse:spiderman_zombie_mask=Máscara de Spider-Man Zombi
+item.spiderverse:spiderman_zombie_suit=Traje de Spider-Man Zombi
+item.spiderverse:arachknight_mask=Máscara de Arachknight
+item.spiderverse:arachknight_suit=Traje de Arachknight
+item.spiderverse:spiderman_cyborg_mask=Máscara de Spider-Man Cyborg
+item.spiderverse:spiderman_cyborg_suit=Traje de Spider-Man Cyborg
+item.spiderverse:spider_carnage_mask=Máscara de Spider-Carnage
+item.spiderverse:spider_carnage_suit=Traje de Spider-Carnage
+item.spiderverse:punisher_spiderman_mask=Máscara de Spider-Punisher
+item.spiderverse:punisher_spiderman_suit=Traje de Spider-Punisher
+item.spiderverse:assassin_spiderman_mask=Máscara de Spider-Man Asesino
+item.spiderverse:assassin_spiderman_suit=Traje de Spider-Man Asesino
+item.spiderverse:mayday_parker_black_mask=Máscara de Mayday Parker Simbionte
+item.spiderverse:mayday_parker_black_suit=Traje de Mayday Parker Simbionte
+item.spiderverse:mayday_parker_mask=Máscara de Mayday Parker
+item.spiderverse:mayday_parker_suit=Traje de Mayday Parker
+item.spiderverse:spiderman_classic_black_red_spider_mask=Máscara de Spider-Man Simbionte (Araña roja)
+item.spiderverse:spiderman_classic_black_red_spider_suit=Traje de Spider-Man Simbionte (Araña roja)
+item.spidermanaddon:agent_venom_powers=Poderes del Agente Venom
+item.spidermanaddon:agent_venom_fusil=Fusil de Asalto
+item.spidermanaddon:agent_venom_missiles=Lanzamisiles
+item.spidermanaddon:agent_venom_pistols=Pistolas
+item.marveladdons:venom_item=Simbionte
+
+gui.spidermanaddon.black=Negro
+gui.spidermanaddon.white=Blanco
+gui.spidermanaddon.dark_blue=Azul oscuro
+gui.spidermanaddon.light_blue=Azul claro
+gui.spidermanaddon.snow=Nieve
+gui.spidermanaddon.purple=Morado
+gui.spidermanaddon.red=Rojo
+
+gui.spidermanaddon.symbiont_color=Color de simbionte
+gui.spidermanaddon.symbiont_color_body=Selecciona el color de tu simbionte
+gui.spidermanaddon.symbiont_color_changed=Color de simbionte cambiado
+gui.spidermanaddon.symbiont_wings=Alas de simbionte
+gui.spidermanaddon.symbiont_wings_body=Activa o desactiva las alas del simbionte
+gui.spidermanaddon.symbiont_wings_enable=Activar alas
+gui.spidermanaddon.symbiont_wings_disable=Desactivar alas
+gui.spidermanaddon.symbiont_wings_enabled=Alas activadas
+gui.spidermanaddon.symbiont_wings_disabled=Alas desactivadas
+
+gui.spidermanaddon.agent_venom_suits=Trajes de Agente Venom
+gui.spidermanaddon.agent_venom_suits_body=Selecciona un traje exclusivo del Agente Venom
+gui.spidermanaddon.agent_venom_suit_unlocked=Traje del Agente Venom desbloqueado
+item.spidermanaddon:agent_venom_thunderbolts_mask=Mascara del Agente Venom: Thunderbolts
+item.spidermanaddon:agent_venom_thunderbolts_suit=Traje del Agente Venom: Thunderbolts
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=Mascara del Agente Venom: Harry Osborn (Con araña)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=Traje del Agente Venom: Harry Osborn (Con araña)
+item.spidermanaddon:agent_venom_spiderman2_mask=Mascara del Agente Venom: Harry Osborn
+item.spidermanaddon:agent_venom_spiderman2_suit=Traje del Agente Venom: Harry Osborn
+item.spidermanaddon:agent_anti_venom_mask=Mascara del Agente Anti-Venom
+item.spidermanaddon:agent_anti_venom_suit=Traje del Agente Anti-Venom
+item.spidermanaddon:agent_venom_mask=Mascara del Agente Venom
+item.spidermanaddon:agent_venom_suit=Traje del Agente Venom
+
+gui.spidermanaddon.symbiont_skins=Aspectos
+gui.spidermanaddon.symbiont_skins_body=Selecciona un aspecto para Venom
+gui.spidermanaddon.symbiont_skin_need_capsule=Necesitas una cápsula de simbionte para desbloquear este aspecto
+gui.spidermanaddon.symbiont_skin_unlocked=Aspecto desbloqueado
+gui.spidermanaddon.symbiont_skin_changed=Aspecto cambiado
+gui.spidermanaddon.symbiont_venom_required=Necesitas estar transformado en Venom
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=Agente Venom activado
+gui.spidermanaddon.symbiont_agent_venom_disabled=Agente Venom desactivado
+gui.spidermanaddon.symbiont_agent_venom_deactivate=Desactivar Agente Venom
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=¿Seguro que quieres desactivar al Agente Venom?
+gui.spidermanaddon.symbiont_venom_enabled=Transformación de Venom activada
+gui.spidermanaddon.symbiont_venom_disabled=Transformación de Venom desactivada
+gui.spidermanaddon.symbiont_venom_deactivate=Desactivar transformación Venom
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=¿Seguro que quieres desactivar la transformación de Venom?
+gui.spidermanaddon.symbiont_venom_incompatible=Incompatibilidad con la simbiosis, no debes tener nada equipado en tus piernas
+
+item.spidermanaddon:venom_rage=Modo furia
+item.marveladdons:venom_cellular_corrosion=Corrosión Celular
+item.marveladdons:venom_eat=Alimentarse
+item.marveladdons:venom_axe=Hacha simbionte
+item.marveladdons:venom_knife_whip=Navaja de simbionte
+item.marveladdons:venom_explotion=Explosion de simbionte
+
+gui.spidermanaddon.symbiont_deactivate=Desactivar simbionte
+gui.spidermanaddon.symbiont_deactivate_confirm=¿Seguro que quieres desactivar los poderes del simbionte?
+gui.spidermanaddon.symbiont_powers_enabled=Poderes simbiontes activados
+gui.spidermanaddon.symbiont_powers_disabled=Poderes simbiontes desactivados
+gui.spidermanaddon.confirm=Confirmar
+gui.spidermanaddon.cancel=Cancelar
+gui.spidermanaddon.symbiont_menu_body=Sistema del simbionte Venom
+gui.spidermanaddon.symbiont_progress=Ver progresión
+gui.spidermanaddon.symbiont_activate=Activar simbionte
+gui.spidermanaddon.symbiont_unlock_suit=Desbloquear un traje
+gui.spidermanaddon.symbiont_unlock_suit_body=Selecciona un traje simbionte disponible
+gui.spidermanaddon.symbiont_level=Nivel
+gui.spidermanaddon.symbiont_exp=Experiencia
+gui.spidermanaddon.symbiont_powers=Activar poderes simbiontes
+gui.spidermanaddon.symbiont_venom=Transformarte en Venom
+gui.spidermanaddon.symbiont_venom_locked=Transformarte en Venom §cBloqueado
+gui.spidermanaddon.symbiont_agent_venom=Agente Venom
+gui.spidermanaddon.symbiont_agent_venom_locked=Agente Venom §cBloqueado
+gui.spidermanaddon.symbiont_suit_missing=Necesitas tener equipado el traje completo
+gui.spidermanaddon.symbiont_suit_unlocked=Traje simbionte desbloqueado
+gui.spidermanaddon.symbiont_bonded=Ahora eres portador del simbionte Venom
+gui.spidermanaddon.not_symbiont_host=No eres portador del simbionte
+gui.spidermanaddon.back=Volver
+
+gui.spidermanaddon.symbiont_rank_0=Portador
+gui.spidermanaddon.symbiont_rank_1=Vinculado
+gui.spidermanaddon.symbiont_rank_2=Portador Furioso
+gui.spidermanaddon.symbiont_rank_3=Protector Letal
+gui.spidermanaddon.symbiont_rank_4=Adaptación Perfecta
+gui.spidermanaddon.symbiont_rank_5=Agente Venom
+gui.spidermanaddon.symbiont_rank_6=Arsenal Viviente
+gui.spidermanaddon.symbiont_rank_7=Anti-Venom
+gui.spidermanaddon.symbiont_rank_8=Unión Perfecta
+gui.spidermanaddon.symbiont_rank_9=Alas del Rey
+gui.spidermanaddon.symbiont_rank_10=El Rey Negro
+
+item.spidermanaddon:black_cat_whip_thef=Garfio de fortuna
+item.spidermanaddon:black_cat_whip_claws=Latigo de garras
+item.spidermanaddon:black_cat_swing=Gancho de balanceo
+item.spidermanaddon:black_cat_claws=Ataque de garras
+
+item.spidermanaddon:mysterio_gas=Gas de ilusión
+item.spidermanaddon:mysterio_powers=Poderes de Mysterio
+item.spidermanaddon:mysterio_invoke=Soltar señuelo
+item.spidermanaddon:mysterio_drones=Drones de ataque
+item.spidermanaddon:mysterio_laser=Rayo de Mysterio
+item.spidermanaddon:mysterio_clones=Invocar clones
+item.spiderverse:mysterio_far_from_home_suit=Traje de Mysterio: Far From Home
+item.spiderverse:mysterio_far_from_home_helmet=Casco de Mysterio: Far From Home
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=Navajas explosivas de seguimiento del Duende Verde
+item.spidermanaddon:pumpkin_knife_guide=Navajas de seguimiento del Duende Verde
+item.spidermanaddon:green_goblin_powers=Poderes del Duende Verde
+item.spidermanaddon:green_goblin_raimi_blades=Navajas retractiles del Duende Verde
+item.spidermanaddon:green_goblin_spiderman3_blades=Navajas del Duende Verde
+item.spiderverse:green_goblin_spiderman3_suit=Traje del Duende Verde - Spider-Man 3
+item.spiderverse:green_goblin_spiderman3_mask=Mascara del Duende Verde - Spider-Man 3
+item.spiderverse:green_goblin_no_way_home_suit=Traje del Duende Verde - Spider-Man: No Way Home
+item.spiderverse:green_goblin_no_way_home_mask=Mascara del Duende Verde - Spider-Man: No Way Home
+item.spidermanaddon:planeador_spiderman3_item=Patineta voladora del Duende Verde
+entity.spidermanaddon:planeador_spiderman3.name=Patineta voladora del Duende Verde
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=Patineta voladora del Duende Verde
+
+gui.spidermanaddon.confirm_upgrade=Mejorar Web Shooter
+gui.spidermanaddon.upgrade_cost=Necesitas 10 Componentes para mejorar este Web Shooter
+gui.spidermanaddon.upgrade=Mejorar
+gui.spidermanaddon.max_level=Este Web Shooter ya está al nivel máximo
+gui.spidermanaddon.upgraded=Web Shooter mejorado
+gui.spidermanaddon.not_enough_components=No tienes suficientes Componentes
+
+gui.spidermanaddon.no_upgrades=Necesitas un lanzaredes que puedas mejorar.
+gui.spidermanaddon.upgrade_menu=Mejorar lanzaredes
+gui.spidermanaddon.select_upgrade=Selecciona Web Shooter
+gui.spidermanaddon.confirm_remove=¿Recuperar 5 componentes?
+gui.spidermanaddon.remove=Eliminar
+gui.spidermanaddon.shooter_removed=Se ha eliminado el lanzaredes
+gui.spidermanaddon.cannot_remove_equipped=No se puede quitar el lanzaredes equipado
+
+gui.spidermanaddon.upgrade_shooter=Mejorar Web Shooter
+gui.spidermanaddon.remove_shooter=Eliminar Web Shooter
+gui.spidermanaddon.settings=Configurar Web Shooter
+
+gui.spidermanaddon.confirm_unlock=Desbloquear el lanzaredes
+gui.spidermanaddon.unlock_cost=Se necesitan 10 componentes
+gui.spidermanaddon.unlock=Desbloquear
+gui.spidermanaddon.cancel=Cancelar
+gui.spidermanaddon.not_enough_components=No hay suficientes componentes
+gui.spidermanaddon.unlocked=Lanzaredes desbloqueado
+
+gui.spidermanaddon.select_unlock=Selecciona Lanzaredes
+gui.spidermanaddon.unlock_menu=Desbloquear Lanzaredes
+gui.spidermanaddon:web_shot=Lanzatelarañas
+gui.spidermanaddon.loadout=§cEquipamiento del lanzaredes
+gui.spidermanaddon.web_shooter_loadout=Cargar Web Shooter
+gui.spidermanaddon.empty=§cVacio
+gui.spidermanaddon.config=§aWeb Shooter configurado.
+gui.spidermanaddon.no_info=§cNo se encontró información.
+
+spidermanaddon.web_line.no_build=§cNo hay un segundo extremo dentro de 30 bloques.
+spidermanaddon.web_line.empty=§cNo tienes suficiente fluido.
+
+item.spidermanaddon:web_shield=Escudo de telaraña
+item.spidermanaddon:web_whip=Gancho de telaraña
+item.spidermanaddon:web_line=Linea de telaraña
+item.spidermanaddon:web_bomb=Granada de telaraña
+item.spidermanaddon:spider_drone=Spider-Drone
+item.spidermanaddon:web_hook=Gancho de telaraña
+
+item.mzaddon:spider_web_cartridge=Cartucho de telaraña
+item.spidermanaddon:spiderman_spin_punch=Ataque giratorio
+item.spidermanaddon:spiderman_kick=Patada voladora
+item.spidermanaddon:spiderman_focus=Enfoque
+item.spidermanaddon:spiderman_sensor=Escaneo
+item.spidermanaddon:spiderman_punch=Puñetazo
+item.spidermanaddon:spiderman_combat=Combate
+
+item.spiderverse:silk_mask=Mascara de Silk
+item.spiderverse:silk_suit=Traje de Silk
+spidermanaddon.venom_wings=Configurar vuelo
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Aparecer Miles Morales
+entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Man
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Aparecer Spectacular Spider-Man
+entity.spidermanaddon:spider_gwen.name=Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Aparecer Spider-Gwen
+entity.spidermanaddon:spider_ham.name=Spider-Ham
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Aparecer Spider-Ham
+entity.spidermanaddon:spider_punk.name=Spider-Punk
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Aparecer Spider-Punk
+entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Aparecer Spider-Man 2099
+entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way home
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Aparecer Spider-Man: No way home
+entity.spidermanaddon:spiderman_noir.name=Spider-Noir
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Aparecer Spider-Noir
+entity.spidermanaddon:spiderman_raimi.name=Spider-Man (Tierra-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Aparecer Spider-Man (Tierra-96283)
+entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Aparecer Spider-Man Unlimited
+entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (Tierra-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Aparecer Spider-Man (Tierra-120703)
+
+item.spidermanaddon:spider_ham_skin=Spider-Ham Skin
+item.spidermanaddon:spider_ham_hammer=Mazo de Spider-Ham
+
+spidermanaddon.gizmo_camera_mode.title=Modo camara
+spidermanaddon:camera.free=Camara libre
+spidermanaddon:camera.selfie=Camara Selfie
+spidermanaddon:camera.clear=Desactivar modo camara
+spidermanaddon:camera.animations=Animaciones
+spidermanaddon:camera.lyla=Activar/Desactivar Lyla
+
+spidermanaddon:camera.lyla.off=Desactivar
+spidermanaddon:camera.lyla.on=Activar
+
+item.spidermanaddon:multiversal_chip=Chip multiversal
+item.spidermanaddon:gizmo_portal=Crear portal
+item.spidermanaddon:gizmo_camera_mode=Modo camara
+
+spidermanaddon.gizmo.title=Gizmo multiversal
+spidermanaddon.portal=Crear portal
+spidermanaddon.spiderman=Reclutar Spider-Man
+spidermanaddon.villain=Invocar villano
+spidermanaddon.miles_morales=Miles Morales (Tierra 1610B)
+spidermanaddon.spectacular_spiderman=Spectacular Spider-Man (Tierra 26496)
+spidermanaddon.spider_punk=Spider-Punk (Tierra 138B)
+spidermanaddon.spider_gwen=Spider-Gwen (Tierra 65B)
+spidermanaddon.spider_ham=Spider-Ham (Tierra 8311B)
+spidermanaddon.spiderman_2099=Spider-Man 2099 (Tierra 928B)
+spidermanaddon.spiderman_no_way_home=Spider-Man - MCU (Tierra 199999)
+spidermanaddon.spiderman_noir=Spider-Noir (Tierra 90214)
+spidermanaddon.spiderman_raimi=Spider-Man (Tierra 96283)
+spidermanaddon.spiderman_unlimited=Spider-Man Unlimited (Tierra 751263)
+spidermanaddon.the_amazing_spiderman=The Amazing Spider-Man (Tierra 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=Mascara casero de The Amazing Spider-Man
+item.spiderverse:the_amazing_spiderman_casero_suit=Traje casero de The Amazing Spider-Man
+item.spiderverse:spiderman_new_blue_mask=Mascara de Spider-Man: New Blue
+item.spiderverse:spiderman_new_blue_suit=Traje de Spider-Man: New Blue
+item.spiderverse:yfn_spiderman_oscorp_mask=Mascara de Tu amigo y vecino Spider-Man: Oscorp Suit
+item.spiderverse:yfn_spiderman_oscorp_suit=Traje de Tu amigo y vecino Spider-Man: Oscorp Suit
+item.spiderverse:yfn_spiderman_mask=Mascara de Tu amigo y vecino Spider-Man
+item.spiderverse:yfn_spiderman_suit=Traje de Tu amigo y vecino Spider-Man
+item.spiderverse:spiderman_bombastic_bag_man_mask=Mascara de Spider-Man: Bombastic Bag-Man
+item.spiderverse:spiderman_bombastic_bag_man_suit=Traje de Spider-Man: Bombastic Bag-Man
+
+item.spidermanaddon:web_bomb_item=Bomba de telaraña
+item.spidermanaddon:spider_drone_item=Spider-Drone
+item.spidermanaddon:mobile=Telefono celular
+item.spidermanaddon:dr_octopus_take=Agarrar
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Mascara de Spider-Man Noir: Into The Spider-Verse
+item.spiderverse:the_amazing_spiderman_black_mask=Mascara negra de The Amazing Spider-Man
+item.spidermanaddon:capsule=Capsula
+item.spidermanaddon:dr_octopus_chip=Chip invocador: Doctor Octopus [Tierra-616]
+item.spidermanaddon:multiversal_gizmo=Gizmo multiversal
+item.spidermanaddon:web_shooter=Lanzatelarañas
+item.spidermanaddon:web_shooter_balanceo=Lanzatelarañas [Balanceo]
+entity.spidermanaddon:air_compressor.name=Compresor de aire
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=Compresor de aire
+entity.spidermanaddon:viento.name=Viento
+item.spawn_egg.entity.spidermanaddon:viento.name=Viento
+
+spidermanaddon.symbiont_pull_lock=Realizar un tiron de simbionte que agarra a 4 enemigos cercanos y aplastarlos.
+spidermanaddon.antivenom_bomb_lock=Lanzar una bomba antivenom que infringira un gran daño a los enemigos.
+spidermanaddon.antivenom_tempest_lock=Realizar tempestar de antivenom que infringira un gran daño a los enemigos.
+spidermanaddon.symbiote_whip_lock=Realizar combate con cuchillas de simbionte.
+spidermanaddon.rage_mode_lock=Activar modo furia que te aumentara la resistencia, daño en el combate e inmortalidad por unos segundos.
+spidermanaddon.rage_mode_unlock.price=Precio: 25XP
+spidermanaddon.symbiote_powers_lock.price=Precio: 5XP
+item.spidermanaddon:pumpkin_bomb_raimi=Bomba calabaza del duende verde [Raimi Saga]
+item.spidermanaddon:planeador_raimi_item=Planeador del duene verde [Raimi Saga]
+item.spidermanaddon:iron_arms_menu=Menu
+item.spidermanaddon:dr_octopus_walk=Caminar con los brazos metalicos
+item.spidermanaddon:dr_octopus_attack=Attack
+entity.spidermanaddon:suits_machine.name=Fabricadora de trajes
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=Fabricadora de trajes
+entity.spidermanaddon:taskmaster_drone.name=Drone de Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=Aparecer Drone de Taskmaster
+item.spidermanaddon:iron_arms_menu=Menu
+item.spidermanaddon:concussive_blast=Lanzatelarañas: Concussive Blast
+item.spidermanaddon:web_grabber=Lanzatelarañas: Web Grabber
+item.spidermanaddon:impact_web=Lanzatelarañas: Web Impact
+item.spiderverse:superior_spiderman_black_mask=Mascara negra de Superior Spider-Man
+item.spiderverse:spiderman_raimi_black_mask=Mascara negra de Spider-Man Raimi's
+item.spiderverse:the_amazing_spiderman_black_suit=Mascara negra de The Amazing Spider-Man
+item.spiderverse:spiderman_ps5_symbiote_mask=Mascara de Insomniac's Spider-Man 2: Traje simbionte
+item.spiderverse:spiderman_ps4_black_mask=Mascara de Insomniac's Spider-Man 2: Traje negro
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Mascara de Spider-Man Miles Morales: Across The Spider-Verse
+item.spiderverse:spiderman_classic_black_mask=Mascara negra clasica de Spider-Man
+item.spiderverse:venom_s3_mask=Mascara de Venom [Spider-Man 3]
+item.spiderverse:spiderman_antivenom_mask=Mascara de Spider-Man: Antivenom
+item.spiderverse:spirit_spider_mask=Mascara de Spirit Spider
+item.spiderverse:spectacular_spiderman_black_mask_3=Mascara negra de Spectacular Spider-Man 3.0
+item.spiderverse:spectacular_spiderman_black_mask_2=Mascara negra de Spectacular Spider-Man 2.0
+item.spiderverse:spectacular_spiderman_black_mask=Mascara negra de Spectacular Spider-Man
+item.spiderverse:spectacular_spiderman_mask=Mascara de Spectacular Spider-Man
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Mascara de Spider-Man 2099: Across The Spider-Verse
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Mascara de Spider-Man 2099: Across The Spider-Verse
+item.spiderverse:anti_ock_mask_3=Mascara de traje Anti-Ock
+item.spiderverse:anti_ock_mask_2=Mascara de traje Anti-Ock
+item.spiderverse:anti_ock_mask_1=Mascara de traje Anti-Ock
+item.spiderverse:anti_ock_mask=Mascara de traje Anti-Ock
+item.spiderverse:aracnido_jr_mask=Mascara de Aracnido Jr.
+item.spiderverse:ezekiel_sims_mask=Mascara de Ezekiel Sims
+item.spiderverse:human_spider_mask=Mascara de la araña humana
+item.spiderverse:into_the_spiderverse_sb_mask=Mascara de Into The Spider-Verse SB
+item.spiderverse:miles_morales_10th_mask_3=Mascara de Spider-Man Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_mask_2=Mascara de Spider-Man Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_mask_1=Mascara de Spider-Man Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_mask=Mascara de Spider-Man Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_bodega_cat_mask=Mascara de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_bodega_cat_mask_1=Mascara de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_bodega_cat_mask_2=Mascara de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_bodega_cat_mask_3=Mascara de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_gold_mask=Mascara de Spider-Man Miles Morales: Orgullo de Barrio
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Mascara de Miles Morales: Into The Spider-Verse
+item.spiderverse:miles_morales_wolverine_mask_3=Mascara de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask_2=Mascara de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask_1=Mascara de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask=Mascara de Miles Morales: Wolverine
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Mascara de Scarlet Spider: Across The Spider-Verse
+item.spiderverse:scarlet_spider_mask_3=Mascara de Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Mascara de Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Mascara de Scarlet Spider
+item.spiderverse:scarlet_spider_mask_2=Mascara de Scarlet Spider
+item.spiderverse:scarlet_spider_mask_1=Mascara de Scarlet Spider
+item.spiderverse:scarlet_spider_mask=Mascara de Scarlet Spider
+item.spiderverse:spiderman_67_mask=Mascara de Spider-Man: 67°
+item.spiderverse:spiderman_90_black_mask_1=Mascara negra de Spider-Man: La serie animada [Bordes Rojo & Azul]
+item.spiderverse:spiderman_90_black_mask=Mascara negra de Spider-Man: La serie animada
+item.spiderverse:spiderman_90_mask=Mascara de Spider-Man: La serie animada
+item.spiderverse:spiderman_cero_mask=Mascara de Spider-Man: Cero
+item.spiderverse:spiderman_future_foundation_mask=Mascara de Spider-Man: Fundacion futura
+item.spiderverse:spiderman_homecoming_mask=Mascara de Spider-Man: Traje Stark
+item.spiderverse:spiderman_homemade_mask=Mascara casera de Spider-Man
+item.spiderverse:spiderman_india_mask=Traje de Spider-Man India: Across The Spider-Verse
+item.spiderverse:spiderman_far_from_home_mask=Mascara de Spider-Man: Actualizado
+item.spiderverse:spiderman_last_stand_mask=Mascara de Spider-Man: Last Stand
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Mascara de Miles Morales: Salto de fe
+item.spiderverse:spiderman_negative_mask=Mascara de Spider-Man: Negative
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Mascara de Spider-Noir: Into The Spider-Verse
+item.spiderverse:spiderman_no_way_home_mask=Mascara de Spider-Man: Hibrido
+item.spiderverse:spiderman_ps4_mask=Insomniac's Spider-Man: Mascara avanzado
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Spider-Man: Mascara avanzado 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Spider-Man: Mascara avanzado 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Spider-Man: Mascara avanzado 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Spider-Man: Mascara avanzado 2.0
+item.spiderverse:spiderman_raimi_mask=Mascara de Spider-Man Raimi's
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Mascara de Spider-Man: Secret Wars - Civil War
+item.spiderverse:spiderman_stealth_mask=Mascara de Spider-Man: Big Time
+item.spiderverse:spiderman_steve_ditko_mask=Mascara de Spider-Man: Amazing Fantasy #15
+item.spiderverse:spiderman_unlimited_mask=Mascara de Spider-Man: Unlimited
+item.spiderverse:spiderman_velocity_mask=Mascara de velocidad de Spider-Man
+item.spiderverse:spiderman_web_of_shadows_black_mask=Mascara negra de Spider-Man: Web of Shadows
+item.spiderverse:spiderman_web_of_shadows_mask=Mascara de Spider-Man: Web of Shadows
+item.spiderverse:spiderman_what_if_animated_mask=Mascara de Spider-Man: What If Ep 5
+item.spiderverse:spiderman_what_if_mask=Mascara de Spider-Man: Disney Land
+item.spiderverse:spiderman_wrestler_mask=Mascara de Spider-Man Luchador
+item.spiderverse:superior_spiderman_mask_3=Mascara de Superior Spider-Man
+item.spiderverse:superior_spiderman_mask_2=Mascara de Superior Spider-Man
+item.spiderverse:superior_spiderman_mask_1=Mascara de Superior Spider-Man
+item.spiderverse:superior_spiderman_mask=Mascara de Superior Spider-Man
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Mascara de Spider-Punk: Across The Spider-Verse
+item.spiderverse:the_amazing_spiderman_2_mask=Mascara de The Amazing Spider-Man 2
+item.spiderverse:spider_punk_mask=Mascara de Spider-Punk
+item.spiderverse:the_amazing_spiderman_1_mask=Mascara de The Amazing Spider-Man
+item.spiderverse:ultimate_spiderman_mask=Mascara de Ultimate Spider-Man
+item.spiderverse:ultimate_spiderman_ucm_mask=Mascara de Ultimate Spider-Man [MCU]
+item.spiderverse:ultimate_spiderman_black_mask=Mascara negra de Ultimate Spider-Man
+item.spiderverse:yfn_spiderman_casero_mask=Mascara casero de "Tu amigo y vecino Spider-Man"
+item.spidermanaddon:green_goblin_chip=Chip invocador: Duende Verde [Tierra-616]
+item.spidermanaddon:green_goblin_raimi_chip=Chip invocador: Duende Verde [Tierra-96283]
+item.spidermanaddon:hobgoblin_chip=Chip invocador: Hobgoblin [Tierra-616]
+item.spidermanaddon:doctor_octopus_chip=Chip invocador: Doctor Octopus [Tierra-616]
+item.spidermanaddon:lizard_chip=Chip invocador: Lagarto [Tierra-616]
+item.spidermanaddon:shocker_chip=Chip invocador: Shocker [Tierra-616]
+
+item.spidermanaddon:iron_arms=Brazos metalicos de Iron Spider
+item.spidermanaddon:spiderman_symbiote_powers=Poderes de Spider-Man con simbionte
+item.spidermanaddon:spiderman_powers=Poderes de Spider-Man
+item.spidermanaddon:web_wings=Alas de telaraña
+item.spiderverse:green_goblin_raimi_suit=Traje de Duende Verde [Raimi]
+item.spiderverse:green_goblin_raimi_mask=Mascara de Duende Verde [Raimi]
+
+spidermanaddon.damage_player.text=Activar/Desactivar ataques contra jugadores, aplica tambien otras habilidades.
+spidermanaddon.activar=Activar
+spidermanaddon.web_shooter_config=Configuracion
+spidermanaddon.desactivar=Desactivar
+spidermanaddon.symbiont_suit.unlock=Desbloquear: 5XP
+spidermanaddon.suit_lock=Desbloquear traje simbionte [Modo furia]
+spidermanaddon.cancel=Cancel
+spidermanaddon.back=Volver
+spidermanaddon.none=Ninguno
+spidermanaddon.venom=Venom
+spidermanaddon.antivenom=Antivenom
+spidermanaddon.carnage=Carnage
+spidermanaddon.ultimate_venom=Ultimate Venom
+spidermanaddon.symbiote_config=Configuracion
+spidermanaddon.damage_player=Daño a jugadores
+spidermanaddon.symbiote_skin=Tipo de simbionte
+spidermanaddon.symbiote_suit=Traje simbionte [Modo furia]
+spidermanaddon.spiderman_powers=Poderes de Spider-Man
+spidermanaddon.block_powers=Mejora bloqueada.
+spidermanaddon.block_powers_text=Desbloquea mejoras para desbloquear esta mejora.
+spidermanaddon.continuar=Continuar
+spidermanaddon.unlock_mejora=Desbloquear mejora
+spidermanaddon.swing_1_lock=Balanceo: Realizar acrobacias durante las caidas en picada. Al realizar acrobacias generas XP.
+spidermanaddon.combat_0_lock=Combate: Aumenta el daño de ataque cuerpo a cuerpo.
+spidermanaddon.combat_1_lock=Combate: Aumentar el daño de golpes al suelo y al golpear al aire a un enemigo.
+spidermanaddon.combat_2_lock=Combate: Al dar un golpe al aire podrás mandar a volar a tus enemigos en area.
+spidermanaddon.health_0_lock=Salud: Corazones extra.
+spidermanaddon.health_1_lock=Salud: Al tener menos de 2 corazones obtendrás efecto de absorción durante 10 segundos con un coldown de 30 segundos.
+spidermanaddon.health_2_lock=Salud: Regeneración cada 15 segundos siempre y cuando no recibas daño.
+spidermanaddon.swing_1.unlock=Desbloquear: 10XP
+spidermanaddon.combat_0.unlock=Desbloquear: 10XP
+spidermanaddon.combat_1.unlock=Desbloquear: 15XP
+spidermanaddon.combat_2.unlock=Desbloquear: 20XP
+spidermanaddon.health_0.unlock=Desbloquear: 10XP
+spidermanaddon.health_1.unlock=Desbloquear: 15XP
+spidermanaddon.health_2.unlock=Desbloquear: 20XP
+
+item.spiderverse:spiderman_classic_mask=Spider-Man: Mascara clasica
+item.spiderverse:spiderman_classic_mask_1=Spider-Man: Mascara clasica
+item.spiderverse:spiderman_classic_mask_2=Spider-Man: Mascara clasica
+item.spiderverse:spiderman_classic_mask_3=Spider-Man: Mascara clasica
+item.spiderverse:scarlet_spider_mask=Mascara de la araña escarlata
+item.spiderverse:scarlet_spider_mask_1=Mascara de la araña escarlata
+item.spiderverse:scarlet_spider_mask_2=Mascara de la araña escarlata
+item.spiderverse:scarlet_spider_mask_3=Mascara de la araña escarlata
+item.spiderverse:iron_spider_mask=Mascara de Iron Spider (Clasico)
+item.spiderverse:iron_spider_mask_1=Mascara de Iron Spider (Clasico)
+item.spiderverse:iron_spider_mask_2=Mascara de Iron Spider (Clasico)
+item.spiderverse:iron_spider_mask_3=Mascara de Iron Spider (Clasico)
+item.spiderverse:iron_spider_ucm_mask=Mascara de Iron Spider [MCU]
+item.spiderverse:spiderman_2099_mask_1=Mascara de Spider-Man 2099
+item.spiderverse:spiderman_2099_mask_2=Mascara de Spider-Man 2099
+item.spiderverse:spiderman_2099_mask_3=Mascara de Spider-Man 2099
+item.spiderverse:spiderman_2099_mask=Mascara de Spider-Man 2099
+item.spiderverse:miles_morales_mask=Mascara de Spider-Man Miles Morales
+item.spiderverse:ghost_spider_mask=Mascara de Ghost Spider
+
+entity.spidermanaddon:taskmaster_sequels.name=Secuas de Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=Aparecer Secuas de Taskmaster
+spidermanaddon.repetir=Repetir Desafio
+spidermanaddon.taskmaster_challenges.0=Desafio 1
+spidermanaddon.taskmaster_challenges.1=Desafio 2
+spidermanaddon.taskmaster_challenges.2=Desafio 3
+spidermanaddon.taskmaster_challenges.3=Desafio 4
+spidermanaddon.taskmaster_challenges.4=Desafio 5
+spidermanaddon.taskmaster_challenges.start=Iniciar
+spidermanaddon.taskmaster_challenges.0.text=Derrota a 5 secuases de Taskmaster.
+spidermanaddon.taskmaster_challenges.1.text=Desactiva la bomba y derrota a los secuases de Taskmaster.
+spidermanaddon.taskmaster_challenges.2.text=Destruye los drones de Taskmaster.
+spidermanaddon.taskmaster_challenges.3.text=Salva al ciudadano de los secuases de Taskmaster.
+spidermanaddon.taskmaster_challenges.4.text=Derrota a Taskmaster.
+
+spidermanaddon.suitsFabricForm=Fabricar
+marveladdon:fabricar=Fabricar
+spidermanaddon.venom_snow_lock=Venom: Simbionte de nieve §l§6[Desbloquear]
+spidermanaddon.venom_snow_lock.price=Precio: 20XP
+spidermanaddon.venompool_lock=Venompool §l§6[Desbloquear]
+spidermanaddon.venompool_lock.price=Precio: 20XP
+spidermanaddon.venom_2099_lock=Venom 2099 §l§6[Desbloquear]
+spidermanaddon.venom_2099_lock.price=Precio: 15XP
+spidermanaddon.ultimate_venom_spider_lock=Ultimate Venom [Con la araña] §l§6[Desbloquear]
+spidermanaddon.ultimate_venom_spider_lock.price=Precio: 15XP
+spidermanaddon.ultimate_venom_lock=Ultimate Venom §l§6[Desbloquear]
+spidermanaddon.ultimate_venom_lock.price=Precio: 15XP
+spidermanaddon.venom_lee_price_lock=Venom: Lee Price §l§6[Desbloquear]
+spidermanaddon.venom_lee_price_lock.price=Precio: 15XP
+spidermanaddon.blue_venom_lock=Venom: Blue §l§6[Desbloquear]
+spidermanaddon.blue_venom_lock.price=Precio: 10XP
+spidermanaddon.venom_movies_lock=Venom: Movies §l§6[Desbloquear]
+spidermanaddon.venom_movies_lock.price=Precio: 15XP
+spidermanaddon.venom.unlock=Desbloquear
+
+entity.spidermanaddon:green_goblin_raimi.name=Duende verde [Raimi Saga]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=Aparecer Duende verde [Raimi Saga]
+
+item.spidermanaddon:iron_arms_attack=Iron Arms [Ataque]
+item.spidermanaddon:spider_rush=Spider Rush
+item.spidermanaddon:spider_shock=Spider Shock
+spidermanaddon.iron_arms.title=Brazos metalicos de araña
+item.spidermanaddon:symbiote_menu=Menu
+spidermanaddon.concussive_blast.price=Costo: §l§a15 Niveles XP
+item.spidermanaddon:rage_mode=Modo furia
+item.spidermanaddon:symbiote_blast=Explosion de simbionte
+spidermanaddon.symbiote_blast=Explosion de simbionte
+item.spidermanaddon:symbiont_pull=Tirón del simbionte
+spidermanaddon.symbiont_pull=Tirón del simbionte
+item.spidermanaddon:symbiote_strike=Huelga de simbiontes
+spidermanaddon.symbiote_strike=Huelga de simbiontes
+item.spidermanaddon:antivenom_bomb=Bomba Antivenom
+spidermanaddon.antivenom_bomb=Bomba Antivenom
+item.spidermanaddon:antivenom_tempest=Tempestad de Antivenom
+spidermanaddon.antivenom_tempest=Tempestad de Antivenom
+item.spidermanaddon:symbiote_whip=Navajas de simbionte
+spidermanaddon.symbiote_whip=Navajas de simbionte
+
+spidermanaddon.web_grabber.price=Costo: §l§a15 Niveles XP
+spidermanaddon.web_grabber.price5=Costo: §l§a25 Niveles XP
+
+spidermanaddon.web_grabber_lv1=Web Grabber - §l§aNivel 0 §6[Subir de Nivel]
+spidermanaddon.web_grabber_lv1_title=Web Grabber - §l§aNivel 1
+spidermanaddon.web_grabber_lv1_text=Aumenta la capacidad del cargador de 2 a 3 tiros.
+
+spidermanaddon.web_grabber_lv2=Web Grabber - §l§aNivel 1 §6[Subir de Nivel]
+spidermanaddon.web_grabber_lv2_title=Web Grabber - §l§aNivel 2
+spidermanaddon.web_grabber_lv2_text=Aumenta la velocidad de carga de 55 segundos a 40 segundos.
+
+spidermanaddon.web_grabber_lv3=Web Grabber - §l§aNivel 2 §6[Subir de Nivel]
+spidermanaddon.web_grabber_lv3_title=Web Grabber - §l§aNivel 3
+spidermanaddon.web_grabber_lv3_text=Aumentar la radio de agarre de 6 a 12 bloques.
+
+spidermanaddon.web_grabber_lv4=Web Grabber - §l§aNivel 3 §6[Subir de Nivel]
+spidermanaddon.web_grabber_lv4_title=Web Grabber - §l§aNivel 4
+spidermanaddon.web_grabber_lv4_text=Aumenta la capacidad del cargador de 3 a 4 tiros.
+
+spidermanaddon.web_grabber_lv5=Web Grabber - §l§aNivel 4 §6[Subir de Nivel]
+spidermanaddon.web_grabber_lv5_title=Web Grabber - §l§aNivel 5
+spidermanaddon.web_grabber_lv5_text=Capturar de 4 enemigos a 8 enemigos.
+
+spidermanaddon.web_grabber_full=Web Grabber - §l§aNivel 5
+spidermanaddon.web_grabber_full_text=EWeb Grabber - §l§aNivel 5
+spidermanaddon.web_grabber_unlock=Web Grabber
+spidermanaddon.web_grabber_lock=Web Grabber §l§6[Desbloquear]
+
+spidermanaddon.concussive_blast.price=Costo: §l§a15 Niveles XP
+spidermanaddon.concussive_blast.price5=Costo: §l§a25 Niveles XP
+
+spidermanaddon.concussive_blast_lv1=Concussive Blast - §l§aNivel 0 §6[Subir de Nivel]
+spidermanaddon.concussive_blast_lv1_title=Concussive Blast - §l§aNivel 1
+spidermanaddon.concussive_blast_lv1_text=Aumenta la capacidad del cargador de 2 a 3 tiros.
+
+spidermanaddon.concussive_blast_lv2=Concussive Blast - §l§aNivel 1 §6[Subir de Nivel]
+spidermanaddon.concussive_blast_lv2_title=Concussive Blast - §l§aNivel 2
+spidermanaddon.concussive_blast_lv2_text=Aumenta la velocidad de carga de 45 segundos a 35 segundos.
+
+spidermanaddon.concussive_blast_lv3=Concussive Blast - §l§aNivel 2 §6[Subir de Nivel]
+spidermanaddon.concussive_blast_lv3_title=Concussive Blast - §l§aNivel 3
+spidermanaddon.concussive_blast_lv3_text=Aumenta la capacidad del cargador de 3 a 4 tiros.
+
+spidermanaddon.concussive_blast_lv4=Concussive Blast - §l§aNivel 3 §6[Subir de Nivel]
+spidermanaddon.concussive_blast_lv4_title=Concussive Blast - §l§aNivel 4
+spidermanaddon.concussive_blast_lv4_text=Aumenta la velocidad de carga de 35 segundos a 24 segundos.
+
+spidermanaddon.concussive_blast_lv5=Concussive Blast - §l§aNivel 4 §6[Subir de Nivel]
+spidermanaddon.concussive_blast_lv5_title=Concussive Blast - §l§aNivel 5
+spidermanaddon.concussive_blast_lv5_text=Aumenta el empuje de impacto.
+
+spidermanaddon.concussive_blast_full=Concussive Blast - §l§aNivel 5
+spidermanaddon.concussive_blast_full_text=Concussive Blast - §l§aNivel 5
+spidermanaddon.concussive_blast_unlock=Concussive Blast
+spidermanaddon.concussive_blast_lock=Concussive Blast §l§6[Desbloquear]
+
+spidermanaddon.electric_web.price=Costo: §l§a15 Niveles XP
+spidermanaddon.electric_web.price5=Costo: §l§a25 Niveles XP
+
+spidermanaddon.electric_web_lv1=Electric Web - §l§aNivel 0 §6[Subir de Nivel]
+spidermanaddon.electric_web_lv1_title=Electric Web - §l§aNivel 1
+spidermanaddon.electric_web_lv1_text=Aumenta la capacidad del cargador de 2 a 3 tiros.
+
+spidermanaddon.electric_web_lv2=Electric Web - §l§aNivel 1 §6[Subir de Nivel]
+spidermanaddon.electric_web_lv2_title=Electric Web - §l§aNivel 2
+spidermanaddon.electric_web_lv2_text=Aumenta la duración de la telaraña electrica de 5 segundos a 10 segundos.
+
+spidermanaddon.electric_web_lv3=Electric Web - §l§aNivel 2 §6[Subir de Nivel]
+spidermanaddon.electric_web_lv3_title=Electric Web - §l§aNivel 3
+spidermanaddon.electric_web_lv3_text=Aumenta la velocidad de carga de 45 segundos a 30 segundos.
+
+spidermanaddon.electric_web_lv4=Electric Web - §l§aNivel 3 §6[Subir de Nivel]
+spidermanaddon.electric_web_lv4_title=Electric Web - §l§aNivel 4
+spidermanaddon.electric_web_lv4_text=Aumenta la capacidad del cargador de 3 a 4 tiros.
+
+spidermanaddon.electric_web_lv5=Electric Web - §l§aNivel 4 §6[Subir de Nivel]
+spidermanaddon.electric_web_lv5_title=Electric Web - §l§aNivel 5
+spidermanaddon.electric_web_lv5_text=Aumenta el daño de la telaraña electrica.
+
+spidermanaddon.electric_web_full=Electric Web - §l§aNivel 5
+spidermanaddon.electric_web_full_text=Electric Web - §l§aNivel 5
+spidermanaddon.electric_web_unlock=Electric Web
+spidermanaddon.electric_web_lock=Electric Web §l§6[Desbloquear]
+
+spidermanaddon.web_whip_full=Web Whip
+spidermanaddon.web_whip_full_text=Mejoras no disponble
+spidermanaddon.web_whip_unlock=Web Whip
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.web_whip_lock=Web Whip §l§6[Desbloquear]
+
+spidermanaddon.impact_web_lv1=Lanzatelarañas - §l§aNivel 0 §6[Subir de Nivel]
+spidermanaddon.impact_web_lv1_title=Lanzatelarañas - §l§aNivel 1
+spidermanaddon.impact_web_lv1_text=Aumenta la capacidad del cargador de 6 a 8 tiros.
+
+spidermanaddon.impact_web_lv2=Lanzatelarañas - §l§aNivel 1 §6[Subir de Nivel]
+spidermanaddon.impact_web_lv2_title=Lanzatelarañas - §l§aNivel 2
+spidermanaddon.impact_web_lv2_text=Aumenta la velocidad de carga de 2 segundos a 1.5 segundos
+
+spidermanaddon.impact_web_lv3=Lanzatelarañas - §l§aNivel 2 §6[Subir de Nivel]
+spidermanaddon.impact_web_lv3_title=Lanzatelarañas - §l§aNivel 3
+spidermanaddon.impact_web_lv3_text=Aumenta la capacidad del cargador de 8 a 10 tiros
+
+spidermanaddon.impact_web_lv4=Lanzatelarañas - §l§aNivel 3 §6[Subir de Nivel]
+spidermanaddon.impact_web_lv4_title=Lanzatelarañas - §l§aNivel 4
+spidermanaddon.impact_web_lv4_text=Aumenta la velocidad de carga de 1.5 segundos a un segundo
+
+spidermanaddon.impact_web_lv5=Lanzatelarañas - §l§aNivel 4 §6[Subir de Nivel]
+spidermanaddon.impact_web_lv5_title=Lanzatelarañas - §l§aNivel 5
+spidermanaddon.impact_web_lv5_text=Al impactar a un enemigo hay una pequeña probabilidad de que le otorgue efecto de telaraña. (El efecto hace que spawne un bloque de telaraña)
+
+spidermanaddon.impact_web_full=Lanzatelarañas - §l§aNivel 5
+spidermanaddon.web_shooter_full_text=Llegaste el limite de mejorar.
+spidermanaddon.impact_web.price=Costo: §l§a15 Niveles XP
+spidermanaddon.impact_web.price5=Costo: §l§a25 Niveles XP
+
+spidermanaddon.web_shooter_shoot_lv1=Lanzatelarañas - §l§aNivel 0 §6[Subir de Nivel]
+spidermanaddon.web_shooter_shoot_lv1_title=Lanzatelarañas - §l§aNivel 1
+spidermanaddon.web_shooter_shoot_lv1_text=Aumenta la capacidad del cargador de 6 a 8 tiros.
+
+spidermanaddon.web_shooter_shoot_lv2=Lanzatelarañas - §l§aNivel 1 §6[Subir de Nivel]
+spidermanaddon.web_shooter_shoot_lv2_title=Lanzatelarañas - §l§aNivel 2
+spidermanaddon.web_shooter_shoot_lv2_text=Aumenta la velocidad de carga de 2 segundos a 1.5 segundos
+
+spidermanaddon.web_shooter_shoot_lv3=Lanzatelarañas - §l§aNivel 2 §6[Subir de Nivel]
+spidermanaddon.web_shooter_shoot_lv3_title=Lanzatelarañas - §l§aNivel 3
+spidermanaddon.web_shooter_shoot_lv3_text=Aumenta la capacidad del cargador de 8 a 10 tiros
+
+spidermanaddon.web_shooter_shoot_lv4=Lanzatelarañas - §l§aNivel 3 §6[Subir de Nivel]
+spidermanaddon.web_shooter_shoot_lv4_title=Lanzatelarañas - §l§aNivel 4
+spidermanaddon.web_shooter_shoot_lv4_text=Aumenta la velocidad de carga de 1.5 segundos a un segundo
+
+spidermanaddon.web_shooter_shoot_lv5=Lanzatelarañas - §l§aNivel 4 §6[Subir de Nivel]
+spidermanaddon.web_shooter_shoot_lv5_title=Lanzatelarañas - §l§aNivel 5
+spidermanaddon.web_shooter_shoot_lv5_text=Al impactar a un enemigo hay una pequeña probabilidad de que le otorgue efecto de telaraña. (El efecto hace que spawne un bloque de telaraña)
+
+spidermanaddon.web_shooter_shoot_full=Lanzatelarañas - §l§aNivel 5
+spidermanaddon.web_shooter_full_text=Llegaste el limite de mejorar.
+spidermanaddon.web_shooter_shoot.price=Costo: §l§a15 Niveles XP
+spidermanaddon.web_shooter_shoot.price5=Costo: §l§a25 Niveles XP
+
+spidermanaddon.impact_web=Impact Web
+spidermanaddon.impact_web_lock=Impact Web §l§6[Desbloquear]
+
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.electric_web=Electric Web
+spidermanaddon.concussive_blast=Concussive Blast
+spidermanaddon.web_bomb=Web Bomb
+spidermanaddon.spider_drone=Spider Drone
+spidermanaddon.web_grabber=Web Grabber
+
+item.spidermanaddon:web_blossom=Web blossom
+item.spidermanaddon:holo_decoy=Holo decoy
+item.spidermanaddon:low_gravity=Low gravity
+item.spidermanaddon:arms_race=Arms race
+item.spidermanaddon:blitz=Blitz
+item.spidermanaddon:electric_punch=Electric Punch
+item.spidermanaddon:equaliser=Equaliser
+item.spidermanaddon:negative_shockwave=Negative shockwave
+item.spidermanaddon:rock_out=Rock out
+item.spidermanaddon:spirit_fire=Spirit fire
+
+spidermanaddon.low_gravity_lock_text=Disminuye la gravedad mientras estás en el aire durante 10 segundos.
+spidermanaddon.low_gravity_lock=Low gravity §l§6[Desbloquear]
+spidermanaddon.web_blossom_text=Salta y dispara telaraña todo lo que veas.
+spidermanaddon.holo_decoy_lock_text=Genera múltiples Hologramas.
+spidermanaddon.holo_decoy_lock=Holo decoy §l§6[Desbloquear]
+spidermanaddon.arms_race_lock_text=Descarga electrica para aturdir a los enemigos.
+spidermanaddon.arms_race_lock=Arms race §l§6[Desbloquear]
+spidermanaddon.blitz_lock_text=Esprintar más rápido y la transferencia de impulso en tiempo real empuja a los enemigos.
+spidermanaddon.blitz_lock=Blitz §l§6[Desbloquear]
+spidermanaddon.electric_punch_lock_text=Puños con descarga electrifican temporalmente, electrificando a los enemigos.
+spidermanaddon.electric_punch_lock=Electric Punch §l§6[Desbloquear]
+spidermanaddon.equaliser_text=Todos caen de un golpe, incluido tú durante 5 segundos.
+spidermanaddon.equaliser_lock=Equaliser §l§6[Desbloquear]
+spidermanaddon.negative_shockwave_text=Desatar una ola de energía negativa.
+spidermanaddon.negative_shockwave_lock=Negative shockwave §l§6[Desbloquear]
+spidermanaddon.rock_out_text=Explota a los enemigos con ondas de sonido justiciero.
+spidermanaddon.rock_out_lock=Rock out §l§6[Desbloquear]
+spidermanaddon.spirit_fire_text=Canaliza ondas inestables de energía etérea dañina desde ... algún lugar...
+spidermanaddon.spirit_fire_lock=Spirit fire §l§6[Desbloquear]
+
+spidermanaddon.regresar=Regresar
+spidermanaddon.salir=Salir
+spidermanaddon.usar=Usar
+
+item.spidermanaddon:spectacular_spiderman_chip=Spectacular Spider-Man [Tierra-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [Tierra-1610B]
+item.spidermanaddon:spider_gwen_chip=Spider-Gwen [Tierra-65B]
+item.spidermanaddon:spider_ham_chip=Spider-Ham [Tierra-8311]
+item.spidermanaddon:spider_punk_chip=Spider-Punk [Tierra-138B]
+item.spidermanaddon:spiderman_2099_chip=Spider-Man 2099 [Tierra-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Spider-Man [Tierra-199999]
+item.spidermanaddon:spiderman_noir_chip=Spider-Man: Noir [Tierra-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Spider-Man [Tierra-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Spider-Man: Inlimited [Tierra-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=The Amazing Spider-Man [Tierra-120703]
+
+item.spidermanaddon:green_goblin=Duende Verde [Tierra-616]
+item.spidermanaddon:hobgoblin=Hobgoblin [Tierra-616]
+item.spidermanaddon:shocker=Shocker [Tierra-616]
+item.spidermanaddon:lizard=Largarto [Tierra-616]
+
+spidermanaddon.multiversal_gizmo=Gizmo multiversal
+spidermanaddon.accesorios=Accesorios
+spidermanaddon.suit_skills=Habilidad del traje
+spidermanaddon.upgrades_laboratoryWorkbench=Mejoras
+spidermanaddon.laboratoryWorkbench=Mesa de trabajo de laboratorio
+spidermanaddon.web_shooter=Lanzatelarañas
+spidermanaddon.capsule=Capsula
+spidermanaddon.hobgoblin_pumpkin_bomb=Bomba calabaza del Hobgoblin
+spidermanaddon.fabricar=Fabricar
+spidermanaddon.suitsFabric_form=Fabricar
+spidermanaddon.suits_form=Seleccionar traje
+spidermanaddon.multiversal_chip=Chip [Villanos]
+spidermanaddon.spiderman_chip=Chip [Sociedad Aracnida]
+
+item.spidermanaddon:venom=Venom [Transformacion]
+item.spidermanaddon:symbiont_whip=Latigo de simbionte
+item.spidermanaddon:venom_regeneration=Alimentarse
+item.spidermanaddon:symbiont_axe=Hacha de simbionte
+item.spidermanaddon:symbiont_claw=Garra de simbionte
+item.spidermanaddon:venom_punch=Combate
+item.spidermanaddon:venom_impulse_whip=Latigo de simbionte [Impulso]
+item.spidermanaddon:symbiote_capsule=Capsula de simbionte Venom
+item.spidermanaddon:capsule=Capsula
+tile.spidermanaddon:knull_block.name=Bloque de Knull
+tile.spidermanaddon:meteorite_block.name=Bloque de meteorito
+spidermanaddon.feed=Alimentarse
+spidermanaddon.symbiont_axe=Hacha de simbionte
+spidermanaddon.symbiont_claw=Garra de simbionte
+spidermanaddon.symbiont_whip=Latigo de simbionte
+spidermanaddon.transformation=Transformacion
+spidermanaddon.skins=Pieles
+spidermanaddon.on=Activar
+spidermanaddon.off=Desactivar
+spidermanaddon.camera=Camara del juego
+spidermanaddon.third=Tercera person
+spidermanaddon.first=Primera persona
+entity.spidermanaddon:symbiont.name=Simbionte Venom
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Simbionte Venom
+entity.spidermanaddon:venom_horse.name=Venom caballo
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=Venom caballo
+
+item.spidermanaddon:spiderman_2099_burger.name=Hamburguesa de Spider-Man 2099
+item.spiderverse:scarlet_spider_suit=Traje de la araña escarlata
+item.spiderverse:spiderman_90_suit=Traje de Spider-Man: La serie animada
+item.spiderverse:spiderman_67_suit=Traje de Spider-Man 67°
+item.spiderverse:spectacular_spiderman_suit=Traje de Spectacular Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit=Traje negro de Spectacular Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit_2=Traje negro de Spectacular Spider-Man 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Traje negro de Spectacular Spider-Man 3.0
+item.spiderverse:spiderman_steve_ditko_suit=Traje de Spider-Man: Amazing Fantasy #15
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Peluche de Ultimate Spider-Man
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Peluche de Spider-Man India
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Peluche de Miles Morales
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Peluche de Iron Spider [MCU]
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Peluche de Spider-Punk
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Peluche de Spider-Man Hybrid
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Peluche de Spider-Man Noir
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Peluche de Superior Spider-Man
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Peluche de Spider-Man Raimi Black Suit
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Peluche de Spider-Man Raimi
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Peluche de Spider-Man PS4
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Peluche de Spider-Man Black Suit
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Peluche de Spider-Man 2099 [Across the Spider-Verse]
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Peluche de Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Peluche de Silk
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Peluche de Scarlet Spider
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peluche de Peni Parker
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=Peluche de The Amazing Spider-Man 2
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=Peluche de The Amazing Spider-Man
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Peluche de Miles Morales (leap of faith)
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Spider-Mobile
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Spider-Bike
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Muñeco de Black Cat
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=Mochila de Peter Parker
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=Soporte de trajes de Spider-Man
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=Mesa de trabajo de laboratorio
+entity.spidermanaddon:lizard.name=Lagarto
+item.spawn_egg.entity.spidermanaddon:lizard.name=Aparecer Lagarto
+entity.spidermanaddon:prisoner.name=Prisionero
+item.spawn_egg.entity.spidermanaddon:prisoner.name=Aparecer Prisionero
+item.spidermanaddon:research_token=Ficha de investigacion
+
+item.spidermanaddon:backpack_token=Ficha de mochila
+item.spidermanaddon:web_shooters_plans=Sistema de lanzaredes [Balanceo]
+item.spiderverse:web_shooter_balanceo=Lanzaredes [Balanceo]
+item.spidermanaddon:usb=USB [Sin datos]
+
+item.spidermanaddon:base_token=Ficha de base
+item.spidermanaddon:challenge_token=Ficha de desafio
+item.spidermanaddon:tokens_crime=Ficha de delito
+item.spiderverse:web_cartridge=Cartucho de telaraña
+item.spidermanaddon:spiderman_palette.name=Paleta de Spider-Man
+
+item.spidermanaddon:miles_morales_invisibility_token=Habilidad de Miles Morales: Invisibilidad
+item.spidermanaddon:fire_resistence_stealth_suit_token=Habilidad de traje: Resistencia al fuego
+item.spidermanaddon:invisibility_stealth_suit_token=Habilidad de traje: Invisibilidad
+item.spidermanaddon:regeneration_stealth_suit_token=Habilidad de traje: Regeneracion
+
+item.spiderverse:spiderman_classic_suit=Spider-Man: Traje clasico
+item.spiderverse:spiderman_raimi_suit=Traje de Spider-Man Raimi's
+item.spiderverse:spiderman_raimi_black_suit=Traje negro de Spider-Man Raimi's
+item.spiderverse:miles_morales_suit=Spider-Man Miles Morales: Traje clasico
+item.spiderverse:miles_morales_gold_suit=Traje de Spider-Man Miles Morales: Orgullo de barrio
+item.spiderverse:iron_spider_ucm_suit=Traje de Iron Spider [UCM]
+item.spiderverse:spiderman_stealth_suit=Traje de Spider-Man: Big Time
+item.spiderverse:spiderman_ps4_suit=Insomniac's Spider-Man: Traje avanzado
+item.spiderverse:spiderman_ps4_black_suit=Insomniac's Spider-Man 2: Traje negro
+item.spiderverse:ultimate_spiderman_ucm_suit=Spider-Man: Traje Ultimate
+item.spiderverse:the_amazing_spiderman_1_suit=Traje de The Amazing Spider-Man
+item.spiderverse:the_amazing_spiderman_2_suit=Traje de The Amazing Spider-Man 2
+item.spiderverse:spiderman_steve_ditko_suit=Traje de Spider-Man: Amazing Fantasy #15
+item.spiderverse:human_spider_suit=Traje de la araña humana
+item.spiderverse:spiderman_wrestler_suit=Traje de Spider-Man Luchador
+item.spiderverse:spiderman_homemade_suit=Spider-Man: Traje casero
+item.spiderverse:spiderman_far_from_home_suit=Traje de Spider-Man: Actualizado
+item.spiderverse:spiderman_no_way_home_suit=Traje de Spider-Man: hibrido
+item.spiderverse:spiderman_negative_suit=Spider-Man: Traje negativo
+item.spiderverse:spiderman_homecoming_suit=Spider-Man: Traje Stark
+item.spidermanaddon:genetically_engineered_super_spider=Superaraña modificada genéticamente
+item.spidermanaddon:spider_egg=Aparecer araña
+item.spidermanaddon:radioactive_spider=Spider-Man Powers
+item.spidermanaddon:pumpkin_bomb=Bomba calabaza
+item.spiderverse:iron_arms=Patas metalicas de Iron Spider
+item.spidermanaddon:nanotechnology_chip=Chip nanotecnológico
+item.spiderverse:miles_morales_bodega_cat_suit=Traje de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:ultimate_spiderman_suit=Traje de Ultimate Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man: Traje negro
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man: Traje negro 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man: Traje negro 3.0
+item.spiderverse:spiderman_classic_black_suit=Spider-Man: Traje negro clasico
+item.spiderverse:spiderman_black_suit_comic=Spider-Man: Traje negro de Secret Wars
+item.spiderverse:ultimate_spiderman_black_suit=Ultimate Spider-Man: Traje negro
+entity.spidermanaddon:green_goblin.name=Duende verde
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=Aparecer Duende verde
+entity.spidermanaddon:shocker.name=Shocker
+item.spawn_egg.entity.spidermanaddon:shocker.name=Aparecer Shocker
+entity.spidermanaddon:venom_boss.name=Venom
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Aparecer Venom
+entity.spidermanaddon:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Aparecer Hobgoblin
+entity.spidermanaddon:taskmaster.name=Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Aparecer Taskmaster
+entity.spidermanaddon:dealer.name=Traficante
+item.spawn_egg.entity.spidermanaddon:dealer.name=Aparecer Traficante
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Aparecer Black Cat
+entity.spidermanaddon:symbiot.name=Simbionte de venom
+item.spawn_egg.entity.spidermanaddon:symbiot.name=Simbionte de venom
+entity.spidermanaddon:sewing_machine.name=Maquina de coser
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=Maquina de coser
+entity.spidermanaddon:challenge_box.name=Caja de desafios
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=Caja de desafios
+entity.spidermanaddon:microscope.name=Microscope
+item.spawn_egg.entity.spidermanaddon:microscope.name=Microscope
+entity.spidermanaddon:symbiote_meteorite.name=Meteorito de simbionte
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=Aparecer Meteorito de simbionte
+entity.spidermanaddon:symbiote_meteorite_table.name=Meteorito de simbionte
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=Meteorito de simbionte
+entity.spidermanaddon:symbiont.name=Simbionte Venom
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Simbionte Venom
+
+item.spidermanaddon:venom=Venom [Transformacion]
+
+item.spiderverse:spider_gwen=Spider-Gwen [Transformacion]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Into the Spider-Verse [Transformacion]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Into the Spider-Verse - Salto de fe [Transformacion]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Across the Spider-Verse [Transformacion]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Into the Spider-Verse - Entrenamiento [Transformacion]
+item.spidermanaddon:comic1=Comic: Amazing Fantasy #15
+item.spiderverse:hobgoblin_skin=Traje de Hobgoblin
+item.spiderverse:green_goblin_skin=Traje de duende verde
+
+item.spidermanaddon:planeador_item=Planeador de duende verde
+item.spidermanaddon:spider_mobile_item=Spider-Mobile
+item.spidermanaddon:spider_bike_item=Spider-Bike
+
+item.spidermanaddon:web_shot_empty=Lanzatelarañas [Vacio]
+item.spidermanaddon:web_shot=Lanzatelarañas
+item.spidermanaddon:sand_crystal_shard=Fragmento de cristal de Sandman
+tile.spidermanaddon:sand_crystal.name=Cristal de Sandman
+tile.spidermanaddon:sand_crystal_block.name=Bloque de cristal de Sandman
+tile.spidermanaddon:prisoner_spawn.name=Prisoner Spawn
+
+item.spidermanaddon:combat_mode=Modo combate
+item.spidermanaddon:delete_upgrades_token=Eliminar mejoras
+item.spidermanaddon:escudo_token=Escudo [Mejora]
+item.spidermanaddon:golpe_eletrico_token=Golpe electrico [Mejora]
+item.spidermanaddon:regeneracion_token=Regeneracion [Mejora]
+item.spidermanaddon:salud_extra_token=Salud extra [Mejora]
+item.spidermanaddon:dano_token=Daño extra [Mejora]
+item.spidermanaddon:mega_venom_blast=Mega ráfaga de veneno
+item.spidermanaddon:venom_blast_punch=Golpe de veneno
+item.spidermanaddon:bodega_cat=Mochila del gato de la tienda
+item.spidermanaddon:multiversal_particles=Particulas multiversal
+item.spidermanaddon:component=Componente tecnologicos
+item.spidermanaddon:gr_27_negative=GR-27 Negativo
+item.spidermanaddon:web_flow=Flujo de telaraña
+item.spidermanaddon:spider_powers=Poderes de araña
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=Capsula con simbionte Venom
+
+item.spidermanaddon:symbiote_super_punch=Super puño de simbionte
+item.spidermanaddon:symbiote_punch=Golpe de simbionte
+item.spidermanaddon:symbiont_blast=Explosion de simbionte
+item.spidermanaddon:backpack_empty=Mochila vacia
+item.spidermanaddon:cat_hability_item=Habilidad de gato
+item.spidermanaddon:comic2=Comic de Ultimate Spider-Man #1
+item.spidermanaddon:lizard_invoke=Invocador de lagarto
+item.spidermanaddon:shocker_invoke=Invocador de Shocker
+item.spidermanaddon:green_goblin_invoke=Invocador de duende verde
+item.spidermanaddon:taskmaster_invoke=Invocador de Taskmaster
+item.spidermanaddon:hobgoblin_invoke=Invocador de Hobgoblin
+
+item.spiderverse:spiderman_classic_suit_damage=Spider-Man: Traje clasico §c[Dañado]
+item.spiderverse:spiderman_raimi_suit_damage=Traje de Spider-Man Raimi's §c[Dañado]
+item.spiderverse:miles_morales_suit_damage=Spider-Man Miles Morales: Traje clasico §c[Dañado]
+item.spiderverse:miles_morales_gold_suit_damage=Spider-Man Miles Morales: Traje de orgullo de barrio §c[Dañado]
+item.spiderverse:spiderman_stealth_suit_damage=Spider-Man: Traje de sigilo §c[Dañado]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Spider-Man: Traje avanzado §c[Dañado]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=Spider-Man: Traje Ultimate §c[Dañado]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=Traje de The Amazing Spider-Man §c[Dañado]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=Traje de The Amazing Spider-Man 2 §c[Dañado]
+item.spiderverse:human_spider_suit_damage=Traje de la araña humana §c[Dañado]
+item.spiderverse:spiderman_wrestler_suit_damage=Traje de luchador Spider-Man §c[Dañado]
+item.spiderverse:spiderman_homemade_suit_damage=Spider-Man: Traje casero §c[Dañado]
+item.spiderverse:spiderman_far_from_home_suit_damage=Spider-Man: Traje actualizado §c[Dañado]
+item.spiderverse:spiderman_no_way_home_suit_damage=Spider-Man: Traje hibrido §c[Dañado]
+item.spiderverse:spiderman_homecoming_suit_damage=Spider-Man: Traje Stark §c[Dañado]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=Spider-Man Miles Morales: Traje de gato de la tienda §c[Dañado]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's Spider-Man: Traje avanzado 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Spider-Man: Traje avanzado 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Spider-Man: Traje avanzado 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Spider-Man: Traje avanzado 2.0
+item.spiderverse:ezekiel_sims_suit=Traje de Ezekiel Sims
+item.spiderverse:iron_spider_suit=Traje de Iron Spider (Clasico)
+item.spiderverse:iron_spider_suit_1=Traje de Iron Spider (Clasico)
+item.spiderverse:iron_spider_suit_2=Traje de Iron Spider (Clasico)
+item.spiderverse:iron_spider_suit_3=Traje de Iron Spider (Clasico)
+item.spiderverse:spiderman_velocity_suit=Traje de velocidad de Spider-Man
+item.spiderverse:spiderman_future_foundation_suit=Spider-Man: Traje de la fundacion futura
+item.spiderverse:spiderman_cero_suit=Spider-Man: Traje cero
+item.spiderverse:aracnido_jr_suit=Traje de Aracnido Jr.
+item.spiderverse:spiderman_classic_suit_1=Spider-Man: Traje clasico
+item.spiderverse:spiderman_classic_suit_2=Spider-Man: Traje clasico
+item.spiderverse:spiderman_classic_suit_3=Spider-Man: Traje clasico
+item.spiderverse:spiderman_2099_suit_1=Traje de Spider-Man 2099
+item.spiderverse:spiderman_2099_suit_2=Traje de Spider-Man 2099
+item.spiderverse:spiderman_2099_suit_3=Traje de Spider-Man 2099
+item.spiderverse:spiderman_2099_suit=Traje de Spider-Man 2099
+item.spiderverse:spider_punk_suit=Traje de Spider-Punk
+item.spiderverse:spiderman_ps5_symbiote_suit=Insomniac's Spider-Man 2: Traje simbionte
+item.spiderverse:scarlet_spider_suit_1=Traje de la araña escarlata
+item.spiderverse:scarlet_spider_suit_2=Traje de la araña escarlata
+item.spiderverse:scarlet_spider_suit_3=Traje de la araña escarlata
+item.spiderverse:anti_ock_suit=Traje Anti-Ock
+item.spiderverse:taskmaster_suit=Traje de Taskmaster
+item.spiderverse:taskmaster_mask=Mascara de Taskmaster
+item.spiderverse:anti_ock_suit_damage=Traje Anti-Ock §c[Dañado]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Spider-Man: Traje avanzado 2.0 §c[Dañado]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Spider-Man: Traje avanzado 2.0 §c[Dañado]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Spider-Man: Traje avanzado 2.0 §c[Dañado]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Spider-Man: Traje avanzado 2.0 §c[Dañado]
+item.spiderverse:spiderman_classic_suit_1_damage=Spider-Man: Traje clasico §c[Dañado]
+item.spiderverse:spiderman_classic_suit_2_damage=Spider-Man: Traje clasico §c[Dañado]
+item.spiderverse:spiderman_classic_suit_3_damage=Spider-Man: Traje clasico §c[Dañado]
+item.spiderverse:scarlet_spider_suit_1_damage=Traje de la araña escarlata §c[Dañado]
+item.spiderverse:scarlet_spider_suit_2_damage=Traje de la araña escarlata §c[Dañado]
+item.spiderverse:scarlet_spider_suit_3_damage=Traje de la araña escarlata §c[Dañado]
+item.spiderverse:spiderman_2099_suit_1_damage=Traje de Spider-Man 2099 §c[Dañado]
+item.spiderverse:spiderman_2099_suit_2_damage=Traje de Spider-Man 2099 §c[Dañado]
+item.spiderverse:spiderman_2099_suit_3_damage=Traje de Spider-Man 2099 §c[Dañado]
+item.spiderverse:spiderman_2099_suit_damage=Traje de Spider-Man 2099 §c[Dañado]
+item.spiderverse:spider_punk_suit_damage=Traje de Spider-Punk §c[Dañado]
+item.spiderverse:hobgoblin_mask=Mascara de Hobgoblin
+item.spiderverse:green_goblin_mask=Mascara de duende verde
+item.spidermanaddon:spiderman_picture=Fotografia de Spider-Man
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=Anya Corazon
+item.spidermanaddon:spider_bot_fly_controllers=Controladores de vuelo para Spider-Bots
+item.spidermanaddon:spider_bots_controllers=Controladores de Spider-Bots
+item.spidermanaddon:camera_mode_emotes=Emote
+item.spidermanaddon:camera_mode=Cambiar posicion de camara
+item.spidermanaddon:spider_web_ball=Bola de telaraña
+tile.spidermanaddon:newspaper0.name=Periodico
+tile.spidermanaddon:newspaper1.name=Periodico
+tile.spidermanaddon:newspaper.name=Periodico
+entity.spidermanaddon:penguin_stacy.name=Penguin Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Aparecer Penguin Stacy
+entity.spidermanaddon:robot_dog.name=Robot de cazadores
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=Aparecer Robot de cazadores
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=Aparecer J. Jonah Jameson
+entity.spidermanaddon:hunters_drone.name=Drones de cazadores
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=Aparecer Drones de cazadores
+entity.spidermanaddon:stuffed_aracnido_jr.name=Peluche de Aracnido Jr.
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=Peluche de Aracnido Jr.
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=Cazadores de Kraven
+item.spawn_egg.entity.spidermanaddon:hunter.name=Aparecer Cazadores de Kraven
+entity.spidermanaddon:hunter_crossbow.name=Cazadores de Kraven con balletas
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=Aparecer Cazadores de Kraven con balletas
+item.spidermanaddon:delete_spider_powers=Eliminar poderes
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Traje de Spider-Man 2099: Across The Spider-Verse
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Traje de Spider-Man 2099: Across The Spider-Verse (Oscuro)
+item.spiderverse:spiderman_90_black_suit=Traje negro de Spider-Man: La serie animada
+item.spiderverse:spiderman_90_black_suit_1=Traje negro de Spider-Man: La serie animada [Bordes Rojo & Azul]
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Traje de Scarlet Spider: Across The SpiderVerse
+item.spiderverse:superior_spiderman_suit=Traje de Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_1=Traje de Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_2=Traje de Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_3=Traje de Superior Spider-Man
+item.spiderverse:miles_morales_wolverine_suit=Traje de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_1=Traje de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_2=Traje de Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_3=Traje de Miles Morales: Wolverine
+item.spiderverse:the_amazing_spiderman_belt_suit=Traje de The Amazing Spider-Man con cinturon
+item.spiderverse:the_amazing_spiderman_black_suit=Traje negro de The Amazing Spider-Man
+item.spiderverse:spider_gwen_classic_suit=Traje de Ghost ️Spider
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Traje de Miles Morales: Across The Spider-Verse
+item.spidermanaddon:dr_octopus_arms=Brazos metalicos del Doctor Octopus
+item.spidermanaddon:electric_web_empty=Lanzatelarañas electrica [Vacio]
+item.spidermanaddon:electric_web=Lanzatelarañas electrica
+entity.spidermanaddon:dr_octopus.name=Doctor Octopus
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Aparecer Doctor Octopus
+item.spiderverse:vulture_suit=Traje de buitre
+item.spiderverse:mysterio_suit_1=Traje de Mysterio
+item.spiderverse:mysterio_suit=Traje de Mysterio
+item.spiderverse:mysterio_helmet=Casco de Mysterio
+item.spiderverse:ghost_spider_suit=Traje de Ghost Spider
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Traje de Miles Morales: Into the Spider-Verse
+item.spiderverse:electro_suit=Traje de Electro
+item.spiderverse:electro_helmet=Mascara de Electro
+item.spidermanaddon:kraven_axe=Hacha de Kraven
+item.spidermanaddon:robot_dog_pet_plans=Controladores del perro robot de Kraven
+item.spidermanaddon:robot_dog_pet=Perro robot de Kraven [Mascota]
+item.spidermanaddon:miles_morales_powers=Poderes de Miles Morales
+item.spidermanaddon:symbiote_powers=Poderes de simbionte
+item.spiderverse:superior_spiderman_suit_damage=Traje de Superior Spider-Man §c[Dañado]
+item.spiderverse:superior_spiderman_suit_1_damage=Traje de Superior Spider-Man §c[Dañado]
+item.spiderverse:superior_spiderman_suit_2_damage=Traje de Superior Spider-Man §c[Dañado]
+item.spiderverse:superior_spiderman_suit_3_damage=Traje de Superior Spider-Man §c[Dañado]
+item.spiderverse:miles_morales_wolverine_suit_damage=Traje de Miles Morales: Wolverine §c[Dañado]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Traje de Miles Morales: Wolverine §c[Dañado]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Traje de Miles Morales: Wolverine §c[Dañado]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Traje de Miles Morales: Wolverine §c[Dañado]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=Traje de The Amazing Spider-Man con cinturon §c[Dañado]
+
+item.spiderverse:venom_s3=Traje de Venom [Spider-Man 3]
+item.spiderverse:spiderman_last_stand_suit=Traje de Spider-Man: Last Stand
+item.spiderverse:superior_spiderman_black_suit=Traje negro de Superior Spider-Man
+item.spiderverse:spiderman_web_of_shadows_black_suit=Traje de negro Spider-Man: Web of Shadows
+item.spiderverse:spiderman_web_of_shadows_suit=Traje de Spider-Man: Web of Shadows
+item.spiderverse:spiderman_what_if_suit=Traje de Spider-Man: Disney Land
+item.spiderverse:spiderman_what_if_animated_suit=Traje de Spider-Man: What If Ep 5
+item.spiderverse:spirit_spider_suit=Traje de Spirit Spider
+item.spiderverse:yfn_spiderman_casero_suit=Traje casero de "Tu amigo y vecino Spider-Man"
+item.spiderverse:into_the_spiderverse_sb_suit=Traje de Into The Spider-Verse SB
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Traje de Miles Morales: Salto de fe
+item.spiderverse:miles_morales_bodega_cat_suit_3=Traje de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_bodega_cat_suit_2=Traje de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_bodega_cat_suit_1=Traje de Spider-Man Miles Morales: Gato de la tienda
+item.spiderverse:miles_morales_10th_suit_3=Traje de Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_suit_2=Traje de Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_suit_1=Traje de Miles Morales: 10th Aniversario
+item.spiderverse:miles_morales_10th_suit=Traje de Miles Morales: 10th Aniversario
+item.spiderverse:anti_ock_suit_1=Traje Anti-Ock
+item.spiderverse:anti_ock_suit_2=Traje Anti-Ock
+item.spiderverse:anti_ock_suit_3=Traje Anti-Ock
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Traje de Spider-Punk: Across The Spider-Verse
+item.spiderverse:spiderman_unlimited_suit=Traje de Spider-Man: Unlimited
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Traje de Spider-Noir: Into The Spider-Verse
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Traje de Spider-Man: Secret Wars - Civil War
+item.spiderverse:spiderman_india_suit=Traje de Spider-Man India: Across The Spider-Verse
+item.spiderverse:spiderman_antivenom_suit=Traje Antivenom de Spider-Man

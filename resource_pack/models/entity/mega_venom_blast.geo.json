@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mega_venom_blast",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 11,
+				"visible_bounds_height": 11,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "mega_venom_blast",
+					"pivot": [-0.5, 16, 0.5],
+					"cubes": [
+						{"origin": [-16, 0, 0], "size": [32, 32, 2], "uv": [0, 0]},
+						{"origin": [-16, 0, 0], "size": [32, 32, 2], "pivot": [0, 0, 0], "rotation": [0, -90, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "mega_venom_blast0",
+					"parent": "mega_venom_blast",
+					"pivot": [-0.5, 16, 0.5],
+					"rotation": [-45, 0, 0],
+					"cubes": [
+						{"origin": [-16, 0, 0], "size": [32, 32, 2], "pivot": [-0.5, 16, 0.5], "rotation": [0, -45, 0], "uv": [0, 0]},
+						{"origin": [-17, 0, 0], "size": [32, 32, 2], "pivot": [-0.5, 16, 0.5], "rotation": [-180, -45, 180], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+clear @p[r=1] antmanaddon:ant_blasters_shoot_item

@@ -1,0 +1,87 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:spiderverse_portal_shoot",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"spiderverse_portal_shoot": "controller.animation.spiderverse_portal_shoot"
+			},
+			"scripts": {
+				"animate": [
+					"spiderverse_portal_shoot"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			}
+		},
+		"component_groups": {
+			"green_goblin": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "spiderverse_portal_shoot",
+								"target": "self"
+							}
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 2.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"destroy_on_hurt": true,
+					"uncertainty_base": 1,
+					"uncertainty_multiplier": 1,
+					"should_bounce": false,
+					"inertia": 1,
+					"offset": [
+						0,
+						0.5,
+						0
+					],
+					"multiple_targets": true
+				},
+				"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.075,
+				  "randomInterval": false,
+				  "time_down_event": {
+					"event": "spawn:green_goblin"
+					}
+				}
+			},
+			"spawn:green_goblin": {
+				"minecraft:transformation": {
+					"into": "spidermanaddon:spiderverse_portal<spawn:green_goblin>"
+				}
+			}
+		},
+		"events": {
+			"spawn:green_goblin": { "add": { "component_groups": [ "spawn:green_goblin" ] }
+			},
+			"green_goblin": { "add": { "component_groups": [ "green_goblin" ] }
+			}
+		}
+	}
+}

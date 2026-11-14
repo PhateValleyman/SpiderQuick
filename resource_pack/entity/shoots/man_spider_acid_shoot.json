@@ -1,0 +1,37 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "spidermanaddon:man_spider_acid_shoot",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.bullet_shoot"
+            },
+            "textures": {
+                "default": "textures/bullet_shoot"
+            },
+			"animations": {
+				"rot": "animation.mysterio.unibeam.rot",
+				"loop": "animation.mysterio_unibeam_shoot.idle"
+			},
+            "particle_effects": {
+                "mysterio_unibeam": "spidermanaddon:mysterio_smoke",
+				"mysterio_light": "spidermanaddon:mysterio_light"
+            },
+            "scripts": {
+                "animate": [
+                    "rot", "loop"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#ffffff",
+                "overlay_color": "#ffffff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

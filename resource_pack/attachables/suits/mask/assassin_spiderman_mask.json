@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:assassin_spiderman_mask",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/suits/assassin_spiderman_suit"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_mask_x64"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

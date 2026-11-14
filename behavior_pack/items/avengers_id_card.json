@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "marveladdons:avengers_id_card",
+			  "menu_category": {
+				"category": "items"
+			  }
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "avengers_id_card"
+			},
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

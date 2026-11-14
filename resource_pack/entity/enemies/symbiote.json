@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:symbiont",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/symbiont"
+			},
+			"geometry": {
+				"default": "geometry.symbiont"
+			},
+			"animations": {
+				"walk": "animation.symbiont.walk",
+				"loop": "animation.symbiont.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"walk": "controller.animation.symbiont"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "symbiont",
+				"texture_index": 0
+			}
+		}
+	}
+}

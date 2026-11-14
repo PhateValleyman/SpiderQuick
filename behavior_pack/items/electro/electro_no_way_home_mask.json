@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spiderverse:electro_no_way_home_mask",
+			  "menu_category": {
+				"category": "none"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"electro_no_way_home_mask",
+					"mask"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "electro_no_way_home_mask"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_head"
+			},
+			"minecraft:wearable": {
+				"protection": 3,
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

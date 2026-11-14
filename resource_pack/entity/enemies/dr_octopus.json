@@ -1,0 +1,79 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:dr_octopus",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"campo_fuerza": "outline_light",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/dr_octopus/dr_octopus",
+				"campo_fuerza": "textures/entity/dr_octopus/dr_octopus_campo_fuerza",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"default": "geometry.dr_octopus",
+				"campo_fuerza": "geometry.dr_octopus_campo_fuerza",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"idle": "animation.dr_octopus.idle",
+				"idle.none": "animation.dr_octopus.idle.none",
+				"arms_on": "animation.player.dr_octopus.arms_on",
+				"walk": "animation.prisoner.walk",
+				"walk_attack": "animation.player.dr_octopus.walk",
+				"attack": "animation.player.dr_octopus.attack.aire",
+				"jumping": "animation.dr_octopus.jumping",
+				"electrocutado": "animation.dr_octopus.electrocutado",
+				"hability_1": "animation.dr_octopus.sneaking",
+				"climb": "animation.player.dr_octopus.climb",
+				"take": "animation.player.dr_octopus.take",
+				"take.move": "animation.player.dr_octopus.take_move",
+				"take.idle": "animation.player.dr_octopus.take_idle",
+				"lanzar": "animation.player.dr_octopus.lanzar"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.dr_octopus.idle"
+				},
+				{
+					"walk": "controller.animation.dr_octopus.walk"
+				},
+				{
+					"jumping": "controller.animation.dr_octopus.jumping"
+				},
+				{
+					"attack": "controller.animation.dr_octopus.attack"
+				},
+				{
+					"electrocutado": "controller.animation.dr_octopus.electrocutado"
+				},
+				{
+					"hability_1": "controller.animation.dr_octopus.hability_1"
+				},
+				{
+					"climb": "controller.animation.dr_octopus.climb"
+				},
+				{
+					"hability_2": "controller.animation.dr_octopus.hability_2"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.dr_octopus.campo_fuerza",
+				"controller.render.scan"
+			],
+            "spawn_egg": {
+                "base_color": "#2f6533",
+                "overlay_color": "#eba604"
+            }
+		}
+	}
+}

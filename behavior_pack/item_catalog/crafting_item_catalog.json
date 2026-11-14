@@ -1,0 +1,231 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "marveladdons:red_fabric",
+              "name": "marveladdons:itemGroup.name.fabric"
+            },
+            "items": [
+              "marveladdons:red_fabric"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "marveladdons:red_spray",
+              "name": "marveladdons:itemGroup.name.spray"
+            },
+            "items": [
+              "marveladdons:red_spray"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:spiderman_powers",
+              "name": "spidermanaddon:itemGroup.name.powers"
+            },
+            "items": [
+              "spidermanaddon:spiderman_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:web_shot",
+              "name": "spidermanaddon:itemGroup.name.web_shooters"
+            },
+            "items": [
+              "spidermanaddon:web_shot"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spiderverse:spiderman_classic_mask",
+              "name": "spidermanaddon:itemGroup.name.mask"
+            },
+            "items": [
+              "spiderverse:spiderman_classic_mask"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spiderverse:spiderman_classic_suit",
+              "name": "spidermanaddon:itemGroup.name.suit"
+            },
+            "items": [
+              "spiderverse:spiderman_classic_suit"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:mysterio_powers",
+              "name": "spidermanaddon:itemGroup.name.mysterio"
+            },
+            "items": [
+              "spidermanaddon:mysterio_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:shocker_gloves",
+              "name": "spidermanaddon:itemGroup.name.shocker"
+            },
+            "items": [
+              "spidermanaddon:shocker_gloves"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:green_goblin_powers",
+              "name": "spidermanaddon:itemGroup.name.green_goblin"
+            },
+            "items": [
+              "spidermanaddon:green_goblin_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:sandman_powers",
+              "name": "spidermanaddon:itemGroup.name.sandman"
+            },
+            "items": [
+              "spidermanaddon:sandman_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:electro_powers",
+              "name": "spidermanaddon:itemGroup.name.electro"
+            },
+            "items": [
+              "spidermanaddon:electro_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:black_cat_powers",
+              "name": "spidermanaddon:itemGroup.name.black_cat"
+            },
+            "items": [
+              "spidermanaddon:black_cat_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:scorpion_powers",
+              "name": "spidermanaddon:itemGroup.name.scorpion"
+            },
+            "items": [
+              "spidermanaddon:scorpion_powers"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:dr_octopus_arms",
+              "name": "spidermanaddon:itemGroup.name.dr_octopus"
+            },
+            "items": [
+              "spidermanaddon:dr_octopus_arms"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:tarantula_mask",
+              "name": "spidermanaddon:itemGroup.name.tarantula"
+            },
+            "items": [
+              "spidermanaddon:tarantula_mask"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "spidermanaddon:boomerang_powers",
+              "name": "spidermanaddon:itemGroup.name.boomerang"
+            },
+            "items": [
+              "spidermanaddon:boomerang_powers"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

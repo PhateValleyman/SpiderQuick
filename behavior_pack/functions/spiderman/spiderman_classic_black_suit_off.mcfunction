@@ -1,0 +1,1 @@
+clear @s spiderverse:spiderman_classic_black_mask

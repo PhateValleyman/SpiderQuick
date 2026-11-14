@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.spiderman.stealth_suit.red": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s fire_resistance 3 3 true"
+        ]
+      }
+    },
+    "animation.spiderman.stealth_suit.invisibility": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s invisibility 3 0 true"
+        ]
+      }
+    },
+    "animation.spiderman.stealth_suit.blue": {
+      "loop": true,
+      "animation_length": 32.0,
+      "timeline": {
+        "0.0": [
+          "/effect @s regeneration 10 3 true"
+        ]
+      }
+    }
+  }
+}

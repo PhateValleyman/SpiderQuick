@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:ultimate_spiderman_suit",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime",
+				"outline": "outline"
+			},
+			"textures": {
+				"default": "textures/suits/ultimate_spiderman_suit",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible",
+				"outline": "textures/suits/spiderman_outline",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_suit_x64",
+				"armor_skin": "geometry.player_ironman",
+				"web_wings": "geometry.web_wings",
+				"outline": "geometry.spiderman_suit_x64_outline"
+			},
+			"scripts": {
+                "animate": [
+                    "default_c",
+					"mask_c",
+					"selfie_hand_c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.spiderman_suit.web_wings": "q.is_gliding && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.outline": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+                "mask_c": "controller.animation.suit.mask",
+                "mask.off": "animation.mask.on",
+				"mask.on": "animation.mask.off",
+				"mask.time": "animation.spider_female.mask_time",
+				
+                "default_c": "controller.animation.spiderman_suit.web_default",
+                "web_off": "animation.spiderman.web_shooters.off",
+				"web_on": "animation.spiderman.web_shooters.on",
+				"selfie_hand_c": "controller.animation.spiderman_suit.selfie_hand",
+				"selfie_hand": "animation.spiderman.web_shooters.selfie_hand"
+            }
+		}
+	}
+}

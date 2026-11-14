@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vulture_suit.idle": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"position": [0.75, 0, 0],
+					"scale": [1.25, 1, 1]
+				},
+				"la": {
+					"position": [0.75, 0, 0],
+					"scale": [1.25, 1, 1]
+				},
+				"rightArm": {
+					"position": [-0.75, 0, 0],
+					"scale": [1.25, 1, 1]
+				},
+				"ra": {
+					"position": [-0.75, 0, 0],
+					"scale": [1.25, 1, 1]
+				},
+				"ala0": {
+					"rotation": [0, 0, 52.5]
+				},
+				"ala1": {
+					"rotation": [0, 0, -52.5]
+				}
+			}
+		},
+		"animation.vulture_suit.elytra": {
+			"loop": true,
+			"bones": {
+				"ala0": {
+					"rotation": [0, 0, -52.5]
+				},
+				"ala1": {
+					"rotation": [0, 0, 52.5]
+				}
+			}
+		}
+	}
+}

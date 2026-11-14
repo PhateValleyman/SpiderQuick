@@ -1,0 +1,114 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:man_spider_acid_shoot",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "hit",
+							"target": "self"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							17,
+							17.0
+						],
+						"knockback": true,
+						"destroy_on_hit": false,
+						"catch_fire": true,
+						"semi_random_diff_damage": false
+					},
+					  "mob_effect": {
+						"effect": "poison",
+						"durationeasy": 40,
+						"durationnormal": 40,
+						"durationhard": 40,
+						"amplifier": 2
+					  },
+					"stick_in_ground":{
+						"shake_time": 0.1
+					}
+				},
+				"power": 3.25,
+				"gravity": 0.1,
+				"anchor": 1,
+				"destroy_on_hurt": true,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 1,
+				"should_bounce": false,
+				"inertia": 1,
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"multiple_targets": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.1,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"hit": {
+				"sequence": [
+					  {
+						"queue_command": {
+						  "command": [
+							"playsound mysterio.bomb.explode @a[r=25] ~ ~ ~ 0.25 1.5",
+							"particle spidermanaddon:mysterio_repulse_hit ^ ^-0.5 ^",
+							"particle spidermanaddon:mysterio_repulse_hit2 ^ ^-0.5 ^",
+							"particle spidermanaddon:mysterio_repulse_hit3 ^ ^-0.5 ^",
+							"particle spidermanaddon:mysterio_repulse_hit ^ ^0.5 ^",
+							"particle spidermanaddon:mysterio_repulse_hit2 ^ ^0.5 ^",
+							"particle spidermanaddon:mysterio_repulse_hit3 ^ ^0.5 ^"
+						  ]
+						}
+					  },
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

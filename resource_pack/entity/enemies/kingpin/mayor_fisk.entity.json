@@ -1,0 +1,69 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:mayor_fisk",
+      "materials": {
+        "default": "entity_alphatest",
+		"scan": "scan"
+      },
+      "textures": {
+        "default": "textures/entity/kingpin/mayor_fisk",
+		"scan": "textures/entity/kingpin/mayor_fisk_scan"
+      },
+      "geometry": {
+        "default": "geometry.mayor_fisk",
+		"scan": "geometry.mayor_fisk_scan"
+      },
+		"particle_effects": {
+			"light": "spidermanaddon:mysterio_light",
+			"kingpin_shield_explotion": "spidermanaddon:kingpin_shield_explotion",
+			"kingpin_shield": "spidermanaddon:kingpin_shield"
+		},
+		"scripts": {
+		  "pre_animation": [
+			"variable.attack = Math.sin(variable.attack_time * 38.17);"
+		  ],
+		  "animate": [
+			"controller",
+			"melee_controller"
+		  ]
+		},
+      "animations": {
+        "controller": "controller.animation.mayor_fisk",
+		"melee_controller": "controller.animation.mayor_fisk.melee",
+
+        "idle": "animation.mayor_fisk.idle",
+        "look_at_target": "animation.mayor_fisk.look_at_target",
+        "walk": "animation.mayor_fisk.walk",
+        "falling": "animation.mayor_fisk.falling",
+
+        "attack_0": "animation.mayor_fisk.attack.0",
+        "attack_1": "animation.mayor_fisk.attack.1",
+
+        "jump": "animation.mayor_fisk.jump",
+        "jump_end": "animation.mayor_fisk.jump.end",
+
+        "charge": "animation.mayor_fisk.charge",
+        "charge_end": "animation.mayor_fisk.charge.end",
+
+        "laser": "animation.mayor_fisk.norm_stone.shoot",
+
+        "shield": "animation.mayor_fisk.shield",
+        "shield_end": "animation.mayor_fisk.shield.end",
+
+        "debility": "animation.mayor_fisk.debility",
+
+        "death": "animation.mayor_fisk.death"
+      },
+      "render_controllers": [
+        "controller.render.default",
+				"controller.render.scan"
+      ],
+      "spawn_egg": {
+        "base_color": "#f2f2f2",
+        "overlay_color": "#9d174d"
+      }
+    }
+  }
+}

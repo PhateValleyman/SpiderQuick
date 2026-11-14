@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.robot_dog.ia": {
+      "loop": true,
+      "animation_length": 11.5,
+      "timeline": {
+        "1.0": [
+          "/event entity @s minecraft:hability_active",
+		  "/effect @s slowness 2 45 true"
+        ],     
+		"1.8": [
+          "/summon spiderverse:robot_dog_jump ^ ^1 ^-2",
+		  "/particle minecraft:spiderman_combo ^ ^1 ^-2"
+        ],
+        "2.75": [
+          "/event entity @s minecraft:default"
+        ]
+      }
+    }
+  }
+}

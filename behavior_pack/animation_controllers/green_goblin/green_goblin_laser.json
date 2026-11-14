@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.green_goblin_laser": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_laser": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_laser ^ ^ ^"
+          ]
+        },
+        "green_goblin_laser": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:green_goblin_laser ^ ^ ^"
+          ]
+        }
+      }
+    },
+    "controller.animation.hobgoblin_laser": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "hobgoblin_laser": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_flame_particle ^ ^ ^"
+          ]
+        },
+        "hobgoblin_laser": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:basic_flame_particle ^ ^ ^"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+	"controller.animation.mayor_fisk.melee": {
+	  "initial_state": "default",
+	  "states": {
+		"default": {
+		  "transitions": [
+			{
+			  "attack_0": "variable.attack > 0.0"
+			}
+		  ]
+		},
+		"attack_0": {
+		  "animations": [
+			"attack_0"
+		  ],
+		  "transitions": [
+			{
+			  "attack_1": "q.all_animations_finished && variable.attack > 0.0"
+			}
+		  ]
+		},
+		"attack_1": {
+		  "animations": [
+			"attack_1"
+		  ],
+		  "transitions": [
+			{
+			  "default": "q.all_animations_finished"
+			}
+		  ]
+		}
+	  }
+	},
+    "controller.animation.mayor_fisk": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+              "idle",
+            {
+              "walk": "q.modified_move_speed > 0.1 && query.is_on_ground && (query.property('spidermanaddon:boss_state') == 'attack1' || query.property('spidermanaddon:boss_state') == 'attack0' || query.property('spidermanaddon:boss_state') == 'default')"
+            },
+            {
+              "falling": "!query.is_on_ground && query.property('spidermanaddon:boss_state') == 'default'"
+            },
+            {
+              "look_at_target": "query.has_target && query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ],
+          "transitions": [
+            {
+              "jump": "query.property('spidermanaddon:boss_state') == 'jump'"
+            },
+            {
+              "charge": "query.property('spidermanaddon:boss_state') == 'charge'"
+            },
+            {
+              "laser": "query.property('spidermanaddon:boss_state') == 'laser'"
+            },
+            {
+              "shield": "query.property('spidermanaddon:boss_state') == 'shield'"
+            },
+            {
+              "debility": "query.property('spidermanaddon:boss_state') == 'debility'"
+            },
+			{
+			  "death": "query.property('spidermanaddon:boss_state') == 'death'"
+			}
+          ]
+        },
+		"death": {
+		  "animations": [
+			"death"
+		  ],
+		  "transitions": []
+		},
+        "jump": {
+          "animations": [
+            "jump"
+          ],
+          "transitions": [
+            {
+              "jump_end": "query.property('spidermanaddon:boss_state') == 'jump_end'"
+            },
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "jump_end": {
+          "animations": [
+            "jump_end"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "charge": {
+          "animations": [
+            "charge"
+          ],
+          "transitions": [
+            {
+              "charge_end": "query.property('spidermanaddon:boss_state') == 'charge_end'"
+            },
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "charge_end": {
+          "animations": [
+            "charge_end"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "laser": {
+          "animations": [
+            "laser"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "shield": {
+          "animations": [
+            "shield"
+          ],
+          "transitions": [
+            {
+              "shield_end": "query.property('spidermanaddon:boss_state') == 'shield_end'"
+            },
+            {
+              "debility": "query.property('spidermanaddon:boss_state') == 'debility'"
+            },
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "shield_end": {
+          "animations": [
+            "shield_end"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        },
+
+        "debility": {
+          "animations": [
+            "debility"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boss_state') == 'default'"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

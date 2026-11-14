@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pizza_backpack.first": {
+			"loop": true,
+			"bones": {
+				"pizza": {
+					"rotation": [65, 62.5, -55],
+					"position": [2.64634, 3.54199, -10.12182]
+				}
+			}
+		},
+		"animation.pizza_backpack.third": {
+			"loop": true,
+			"bones": {
+				"leftItem": {
+					"scale": 0
+				},
+				"pizza": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

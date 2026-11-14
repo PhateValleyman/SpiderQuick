@@ -1,0 +1,40 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"spidermanaddon:meteorite_block": {
+		"textures": "meteorite_block"
+	},
+	  "spidermanaddon:knull_block": {
+		"textures": {
+		  "up": "knull_block",
+		  "down": "meteorite_block",
+		  "side": "meteorite_block"
+		}
+	  },
+	"spidermanaddon:sand_crystal_block": {
+		"textures": "sand_crystal_block",
+		"sound": "amethyst_block"
+	},
+	"spidermanaddon:sand_crystal": {
+		"textures": "sand_crystal",
+		"sound": "amethyst_block"
+	},
+	"spidermanaddon:web_bridge": {
+		"textures": "web_bridge",
+		"sound": "web"
+	},
+	"spidermanaddon:symbiote_trace": {
+		"textures": "symbiote_trace",
+		"sound": "web"
+	},
+	"spidermanaddon:symbiote_block": {
+		"textures": "symbiote_block",
+		"sound": "web"
+	},
+	"spidermanaddon:prisoner_spawn": {
+		"textures": "spiderman_spawn"
+	}
+}

@@ -1,0 +1,193 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.symbiote_knife",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 13,
+				"visible_bounds_height": 12,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "sp_leftArm",
+					"parent": "leftArm",
+					"pivot": [6, 18, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "symbiote_whip1",
+					"parent": "leftArm",
+					"pivot": [6, 12, -1],
+					"rotation": [90, 0, 0]
+				},
+				{
+					"name": "regene35",
+					"parent": "symbiote_whip1",
+					"pivot": [5.5, 11, -1],
+					"cubes": [
+						{"origin": [4.5, 9.5, -7], "size": [3, 3, 6], "uv": [26, 33]},
+						{"origin": [4.5, 9.5, -13], "size": [3, 3, 6], "uv": [26, 33]}
+					]
+				},
+				{
+					"name": "regene0_134",
+					"parent": "regene35",
+					"pivot": [6, 11, -13],
+					"cubes": [
+						{"origin": [4.5, 9.5, -18.75], "size": [3, 3, 6], "inflate": -0.25, "uv": [0, 34]},
+						{"origin": [4.5, 9.5, -24.25], "size": [3, 3, 6], "inflate": -0.25, "uv": [0, 34]}
+					]
+				},
+				{
+					"name": "regene0_135",
+					"parent": "regene0_134",
+					"pivot": [6, 11, -24],
+					"cubes": [
+						{"origin": [5, 10, -30], "size": [2, 2, 6], "uv": [0, 43]},
+						{"origin": [5, 10, -36], "size": [2, 2, 6], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "regene0_136",
+					"parent": "regene0_135",
+					"pivot": [6, 11.5, -36],
+					"cubes": [
+						{"origin": [5, 10, -41.75], "size": [2, 2, 6], "inflate": -0.25, "uv": [44, 33]},
+						{"origin": [5.5, 11, -41.75], "size": [2, 4, 6], "inflate": -0.25, "uv": [18, 42]},
+						{"origin": [5.5, 7, -41.75], "size": [2, 4, 6], "inflate": -0.25, "uv": [34, 42]},
+						{"origin": [5, 10, -47.25], "size": [2, 2, 6], "inflate": -0.25, "uv": [44, 33]},
+						{"origin": [3, 9.25, -47.75], "size": [6, 2, 7], "inflate": -0.25, "uv": [0, 25]}
+					]
+				},
+				{
+					"name": "regene0_137",
+					"parent": "regene0_136",
+					"pivot": [5.5, 11, -47],
+					"cubes": [
+						{"origin": [5.5, 10.5, -53], "size": [1, 1, 6], "uv": [50, 18]},
+						{"origin": [3.5, 9.75, -53.5], "size": [5, 1, 7], "uv": [26, 25]},
+						{"origin": [6, 11.5, -53], "size": [1, 3, 6], "uv": [50, 0]},
+						{"origin": [6, 7.5, -53], "size": [1, 3, 6], "uv": [50, 9]},
+						{"origin": [5.5, 10.5, -59], "size": [1, 1, 6], "uv": [50, 18]}
+					]
+				},
+				{
+					"name": "knife1",
+					"parent": "regene0_137",
+					"pivot": [6, 11, -55.5],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [6, -1, -55.5], "size": [24, 24, 1], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "sp_rigthArm",
+					"parent": "rightArm",
+					"pivot": [-6, 18, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-7, 18, 0]
+				},
+				{
+					"name": "symbiote_whip0",
+					"parent": "rightArm",
+					"pivot": [-6, 12, -1],
+					"rotation": [90, 0, 0]
+				},
+				{
+					"name": "regene34",
+					"parent": "symbiote_whip0",
+					"pivot": [-5.5, 11, -1],
+					"cubes": [
+						{"origin": [-7.5, 9.5, -7], "size": [3, 3, 6], "uv": [26, 33]},
+						{"origin": [-7.5, 9.5, -13], "size": [3, 3, 6], "uv": [26, 33]}
+					]
+				},
+				{
+					"name": "regene0_130",
+					"parent": "regene34",
+					"pivot": [-5.5, 11, -13],
+					"cubes": [
+						{"origin": [-7.5, 9.5, -18.75], "size": [3, 3, 6], "inflate": -0.25, "uv": [0, 34]},
+						{"origin": [-7.5, 9.5, -24.25], "size": [3, 3, 6], "inflate": -0.25, "uv": [0, 34]}
+					]
+				},
+				{
+					"name": "regene0_131",
+					"parent": "regene0_130",
+					"pivot": [-5.5, 11, -24],
+					"cubes": [
+						{"origin": [-7, 10, -30], "size": [2, 2, 6], "uv": [0, 43]},
+						{"origin": [-7, 10, -36], "size": [2, 2, 6], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "regene0_132",
+					"parent": "regene0_131",
+					"pivot": [-6, 11.5, -36],
+					"cubes": [
+						{"origin": [-6.5, 10, -41.75], "size": [2, 2, 6], "inflate": -0.25, "uv": [44, 33]},
+						{"origin": [-6.5, 11, -41.75], "size": [2, 4, 6], "inflate": -0.25, "uv": [18, 42]},
+						{"origin": [-6.5, 7, -41.75], "size": [2, 4, 6], "inflate": -0.25, "uv": [34, 42]},
+						{"origin": [-6.5, 10, -47.25], "size": [2, 2, 6], "inflate": -0.25, "uv": [44, 33]},
+						{"origin": [-9, 9.25, -47.75], "size": [6, 2, 7], "inflate": -0.25, "uv": [0, 25]}
+					]
+				},
+				{
+					"name": "regene0_133",
+					"parent": "regene0_132",
+					"pivot": [-5.5, 11, -47],
+					"cubes": [
+						{"origin": [-6, 10.5, -53], "size": [1, 1, 6], "uv": [50, 18]},
+						{"origin": [-8.5, 9.75, -53.5], "size": [5, 1, 7], "uv": [26, 25]},
+						{"origin": [-6, 11.5, -53], "size": [1, 3, 6], "uv": [50, 0]},
+						{"origin": [-6, 7.5, -53], "size": [1, 3, 6], "uv": [50, 9]},
+						{"origin": [-6.5, 10.5, -59], "size": [1, 1, 6], "uv": [50, 18]}
+					]
+				},
+				{
+					"name": "knife0",
+					"parent": "regene0_133",
+					"pivot": [-6, 11, -55.5],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-6, -1, -55.5], "size": [24, 24, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

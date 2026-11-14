@@ -1,0 +1,76 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.motorcycle.aire" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"aire" : "!query.is_on_ground"
+						}
+					],
+          "blend_transition": 1.5
+				},
+				"aire" : {
+					"animations" : [ "aire" ],
+					"transitions" : [
+						{
+							"default" : "query.is_on_ground"
+						}
+					],
+          "blend_transition": 0.15
+				}
+			}
+		},
+		"controller.animation.bike.player.animation" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"bike.idle" : "query.mark_variant == 1 && !variable.is_first_person"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"bike.idle" : {
+					"animations" : [ "bike.idle" ],
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 0 || query.mark_variant == 3 || variable.is_first_person"
+						},
+						{
+							"bike.jump_time" : "query.mark_variant == 2"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"bike.jump_time" : {
+					"animations" : [ "bike.jump_time" ],
+					"transitions" : [
+						{
+							"bike.idle" : "query.any_animation_finished && q.mark_variant == 1"
+						},
+						{
+							"bike.jump" : "query.any_animation_finished && q.mark_variant == 2"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"bike.jump" : {
+					"animations" : [ "bike.jump" ],
+					"transitions" : [
+						{
+							"default" : "query.mark_variant == 0 || query.mark_variant == 3 || variable.is_first_person"
+						},
+						{
+							"bike.idle" : "query.mark_variant == 1"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

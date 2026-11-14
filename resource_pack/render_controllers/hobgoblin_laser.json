@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.hobgoblin_laser": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.hobgoblin" ]
+    },
+    "controller.render.hobgoblin_laser.first": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.hobgoblin" ]
+    }
+  }
+}

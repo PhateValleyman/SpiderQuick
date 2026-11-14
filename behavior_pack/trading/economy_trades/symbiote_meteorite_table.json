@@ -1,0 +1,260 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 13,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:symbiote_powers",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_black_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_black_suit_2",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_black_suit_2",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_black_suit_3",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_raimi_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_raimi_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps4_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps4_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps4_black_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps5_symbiote_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_steve_ditko_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_black_suit_comic",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_classic_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:ultimate_spiderman_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:ultimate_spiderman_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_90_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_90_black_suit",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_90_black_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:redstone",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_90_black_suit_1",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_1_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:symbiote_capsule",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_black_suit",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

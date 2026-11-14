@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.spider_drone_shoot": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "spider_drone_shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:spider_drone_shoot ^ ^ ^"
+          ]
+        },
+        "spider_drone_shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:spider_drone_shoot ^ ^ ^"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:vulture_suit",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/vulture/vulture",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.vulture_suit",
+				"armor_skin": "geometry.player_ironman"
+			},
+			"scripts": {
+                "animate": [
+                    "loop_c",
+					"elytra_c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.armor_skin": "query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+                "loop_c": "controller.animation.loop",
+                "loop": "animation.vulture_suit.idle",
+                "elytra_c": "controller.animation.vulture_suit.elytra",
+                "elytra": "animation.vulture_suit.elytra"
+            }
+		}
+	}
+}

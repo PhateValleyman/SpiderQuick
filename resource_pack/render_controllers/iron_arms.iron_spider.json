@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.iron_arms.iron_spider": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.iron_spider" ]
+    },
+    "controller.render.iron_arms.iron_spider_comic": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.iron_spider_comic" ]
+    },
+    "controller.render.iron_arms.superior_spiderman": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.superior_spiderman" ]
+    },
+    "controller.render.iron_arms.superior_spiderman.1": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.superior_spiderman_1" ]
+    },
+    "controller.render.iron_arms.superior_spiderman.3": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.superior_spiderman_3" ]
+    },
+    "controller.render.iron_arms.noir_iron_arms": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.noir_iron_arms" ]
+    },
+    "controller.render.iron_arms.spider_oni_arms": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spider_oni_arms" ]
+    }
+  }
+}

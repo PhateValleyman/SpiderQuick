@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spiderman_zombie_black_suit",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/zombie_spiderman_black_suit",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.zombie_spiderman_suit",
+				"web_wings": "geometry.web_wings"
+			},
+			"render_controllers": [
+				{ "controller.render.spiderman_suit.web_wings": "q.is_gliding && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

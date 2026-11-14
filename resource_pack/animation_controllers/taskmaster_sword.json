@@ -1,0 +1,96 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.taskmaster" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+					  "player.taskmaster.sword.c",
+					  { "player.taskmaster_sword.first": "q.equipped_item_any_tag('slot.weapon.mainhand', 'norm_stone') && variable.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.taskmaster.sword.combat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "player.taskmaster_sword.idle": "!variable.is_first_person && q.is_on_ground && !q.is_sneaking && !q.is_in_water" }
+					],
+					"transitions" : [
+						{
+							"taskmaster_sword.attack.1" : "variable.attack_time > 0.1"
+						}
+					]
+				},
+				"taskmaster_sword.attack.1" : {
+					"animations" : [ 
+						"player.taskmaster_sword.attack.1"
+					],
+					"transitions" : [
+						{
+							"default.2" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.5
+				},
+				"default.2" : {
+					"animations" : [ 
+						{ "player.taskmaster_sword.idle": "!variable.is_first_person && q.is_on_ground && !q.is_sneaking && !q.is_in_water" }
+					],
+					"transitions" : [
+						{
+							"taskmaster_sword.attack.2" : "variable.attack_time > 0.1"
+						}
+					]
+				},
+				"taskmaster_sword.attack.2" : {
+					"animations" : [ 
+						"player.taskmaster_sword.attack.2"
+					],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.taskmaster.sword" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "player.taskmaster_sword" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'taskmaster_sword')" },
+						{ "player.spider_punk_guitar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_punk_guitar')" }
+					]
+				},
+				"player.taskmaster_sword" : {
+					"animations" : [ 
+						{ "player.taskmaster_sword.combat.c": "!variable.is_first_person" },
+						{ "player.taskmaster_sword.first": "variable.is_first_person" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'taskmaster_sword')"
+						}
+					]
+				},
+				"player.spider_punk_guitar" : {
+					"animations" : [ 
+						{ "player.taskmaster_sword.combat.c": "!variable.is_first_person && q.property('arathnido:animation') == 0" },
+						{ "player.taskmaster_sword.first": "variable.is_first_person" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_punk_guitar')"
+						}
+					]
+				}	
+			}
+		}
+	}
+}

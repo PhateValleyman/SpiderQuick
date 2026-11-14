@@ -1,0 +1,25 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "spidermanaddon:sand_crystal_block4_feature"
+    },
+    "places_block": "spidermanaddon:sand_crystal_block",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "may_replace": [
+      "minecraft:sand",
+      "minecraft:sandstone",
+      "minecraft:stone",
+      "minecraft:dirt",
+      "minecraft:grass",
+      "minecraft:gravel"
+    ],
+    "may_not_attach_to": {
+      "all": [
+        "minecraft:water",
+        "minecraft:flowing_water"
+      ]
+    }
+  }
+}

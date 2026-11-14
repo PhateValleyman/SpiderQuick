@@ -1,0 +1,99 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:web_bomb_invoke",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	"component_groups": {
+	  "minecraft:despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+	  },
+	  "minecraft:contador": {
+			"minecraft:timer": {
+			  "looping": false,
+			  "time": 0.1,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "minecraft:dont_eat"
+			  }
+		}
+	  }
+	},
+	
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "blocks" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+			"minecraft:timer": {
+			  "looping": false,
+			  "time": 2,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "minecraft:contar"
+			  }
+		},
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/spikes.json"
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+
+    "events": {
+      "minecraft:contar": {
+            "queue_command": {
+              "command": [
+                "fill ~-1 ~ ~-1 ~1 ~2 ~1 web 0 destroy",
+				"playsound effects.web_shooter @p"
+              ]
+            },
+        "add": {
+          "component_groups": [
+            "minecraft:contador"
+          ]
+        }
+      },
+      "minecraft:dont_eat": {
+        "add": {
+          "component_groups": [
+            "minecraft:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

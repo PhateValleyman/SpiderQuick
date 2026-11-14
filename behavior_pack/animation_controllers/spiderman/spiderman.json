@@ -1,0 +1,819 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.player.spiderman" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.spiderman.powers.c",
+						"player.agent_venom.powers.c",
+						"player.spiderman.enchant.c",
+						"player.spiderman.skills.c",
+						"player.spiderman.menu.c",
+						"player.spiderman.iron_arms.c",
+						"player.iron_arms.items.c",
+						"player.spiderman.balanceo.c"
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.balanceo": {
+			"initial_state": "on",
+			"states": {
+				"on": { "transitions": [ {"default":"(1.0)" } ]
+				},
+				"default": {
+					"on_entry": [ 
+						"/scoreboard objectives add spiderman_web dummy",
+						"/scoreboard objectives add spiderman_web_time dummy",
+						"/scoreboard objectives add spider_force dummy",
+						"/scoreboard objectives add web_target dummy",
+						"/scoreboard objectives add web_acrobacia dummy",
+						"/scoreboard objectives add web_spider_mode dummy","/event entity @s spiderman:balanceo.off",
+						"/stopsound @s spiderman_effects.falling.idle",
+						"/stopsound @s spiderman_effects.reflexes","/tag @s remove super_slingshot_slow", "/tag @s remove super_slingshot_full",
+						"/stopsound @s web_shooter_sounds.balancing_loop", "/scoreboard players set @s web_acrobacia 0", "/inputpermission set @s jump enabled", "/inputpermission set @s movement enabled",
+						"/effect @s slowness 0 3 true",
+						"/tag @s remove web_impulse_air",
+						"/tag @s remove web_wing_block",
+						"/scoreboard objectives add web_shoot_balanceo dummy",
+						"/scoreboard players add @s web_shoot_balanceo 0",
+						"/tag @s remove spiderman_damage_falling",
+						"/scoreboard players set @s web_spider_mode 0", "/tag @s remove web_golpe_suelo", "/tag @s remove golpe_suelo_player", "/tag @s remove web_golpe_quieto"
+					],
+					"transitions": [ 
+                        {"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" },
+						//{"impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_using_item && q.is_sneaking && q.scoreboard('spiderman_impulse') == 1 && q.scoreboard('web_shoot_balanceo') > 0 && q.is_on_ground && q.scoreboard('web_target') == 1 && q.head_x_rotation(0) < 70" },
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"web_attack" : "!q.is_gliding && q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.property('arathnido:escalar') == false && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_using_item && q.is_sneaking && q.scoreboard('web_shoot_balanceo') > 0 && !q.is_on_ground && q.head_x_rotation(0) > 80" },
+						{ "player.spiderman.run.jump":"q.property('arathnido:ability0') == 2"},
+						{ "caida_picada":"q.property('arathnido:ability0') == 1"}
+                    ]
+				},
+				"web_attack" : {
+					"on_entry" : [ "/tag @s add web_balance_remove", "/event entity @s spiderman:caida_picada.off", "/event entity @s spiderman:web_attack" ],
+					"animations" : [ "player.spiderman.web_shooter.golpe_suelo" ],
+					"transitions" : [
+						{
+							"spiderman.web_shooter.impact" : "q.is_on_ground"
+						},
+						{ "default" : "q.is_gliding" },
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" }
+					]
+				},
+				"spiderman.web_shooter.impact" : {
+					"on_entry" : [ "/event entity @s spiderman:balanceo.off" ],
+					"animations" : [ "player.spiderman.web_shooter.impact" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item && q.any_animation_finished"
+						},
+						{ "default" : "q.is_gliding" },
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" }
+					]
+				},
+				"impulse_air" : {
+					"on_entry" : [ "/stopsound @s spiderman_effects.falling.idle", "/event entity @s spiderman:caida_picada.off", "/event entity @s spiderman:balanceo.impulse" ],
+					"animations" : [ "player.spiderman.balanceo.impulse_air" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.all_animations_finished && !q.is_using_item) || q.is_on_ground || q.property('arathnido:escalar') == true" },
+						{"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" },
+						{ "caida_picada" : "q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.all_animations_finished" }
+					]
+				},
+				"impulse" : {
+					"on_entry" : [ "/event entity @s spiderman:caida_picada.off", "/tag @s remove web_golpe_suelo", "/tag @s remove golpe_suelo_player", "/tag @s remove web_golpe_quieto", "/scoreboard players remove @s web_shoot_balanceo 1", "/event entity @s spiderman:balanceo.impulse" ],
+					"animations" : [ "player.spiderman.balanceo.impulse" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && !q.is_using_item" }
+					]
+				},
+				"balanceo.idle": {
+					"on_entry": [ 
+						"/tag @s add web_wing_block", "/tag @s remove web_golpe_suelo", "/tag @s remove golpe_suelo_player", "/tag @s remove web_golpe_quieto", "/tag @s add web_wing_block", "/stopsound @s spiderman_effects.falling.idle"
+					],
+					"animations": [
+						{ "player.spiderman.balanceo.sounds": "!q.is_on_ground && q.scoreboard('web_spider_mode') == 0"  },
+						{ "player.spiderman.balanceo.off_sounds": "q.is_on_ground || q.scoreboard('web_spider_mode') == 1"  },
+						"player.spiderman.balanceo.balancing_loop",
+						"player.spiderman.balanceo.web_wing_block"
+					],
+					"transitions": [ 
+                        {"balanceo.end":"!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && (q.property('arathnido:animation') == 0 || q.is_gliding || q.is_riding)"},
+						{"balanceo.end":"q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && (q.property('arathnido:animation') == 0 || q.is_riding)"}
+                    ]
+				},
+				"balanceo.end": {
+					"on_entry": [ 
+						"/event entity @s spiderman:balanceo.off", "/playsound spiderman_effects.falling.on @s","/event entity @s spiderman:caida_picada.off",
+						"/stopsound @s fly_loop",
+						"/stopsound @s web_shooter_sounds.balancing_loop",
+						"/tag @s remove web_on_ground", "/tag @s remove swing_start", "/tag @s add web_wing_block"
+					],
+					"animations": [ 
+						"player.spiderman.balanceo.end.time"
+					],
+					"transitions": [ 
+						{"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" },
+                        {"default":"((q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') || q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')) && q.property('arathnido:animation') == 9) || q.is_riding || q.is_in_water || q.property('arathnido:ability0') == 4 || (!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && !q.is_using_item && q.property('arathnido:animation') == 0 && q.all_animations_finished) || q.is_gliding || q.is_on_ground || q.property('arathnido:escalar') == true"},
+						{"caida_picada":"q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.property('arathnido:animation') == 0 && q.all_animations_finished"},
+						{"default" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"web_attack" : "!q.is_gliding && q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_using_item && q.is_sneaking && q.scoreboard('spiderman_impulse') == 1 && q.scoreboard('web_shoot_balanceo') > 0 && !q.is_on_ground && q.head_x_rotation(0) > 80" }
+                    ]
+				},
+				"caida_picada": {
+					"on_entry": [ 
+						"/event entity @s spiderman:caida_picada", "/tag @s remove web_wing_block"
+					],
+					"animations": [ 
+						{ "player.spiderman.caida_picada.time": "!q.is_using_item" },
+						"player.spiderman.caida_picada.sounds",
+						"player.spiderman.balanceo.acrobacias.c"
+					],
+					"transitions": [ 
+						{"caida_picada.off" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+                        {"default":"!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && !q.is_using_item && q.property('arathnido:animation') == 0"},
+						{"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" },
+						{"caida_picada.off":"q.is_riding || ((q.is_on_ground || q.property('arathnido:ability0') == 0) && ((!q.is_sneaking && !q.is_jumping) || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo'))) || q.property('arathnido:ability0') == 4 || q.property('arathnido:escalar') == true || q.is_gliding || ((q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') || q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')) && q.property('arathnido:animation') == 9) || q.is_in_water"},
+						{"falling.damage":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_on_ground && (q.is_sneaking || q.is_jumping)"},
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"web_attack" : "!q.is_gliding && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_using_item && q.is_sneaking && q.scoreboard('spiderman_impulse') == 1 && q.scoreboard('web_shoot_balanceo') > 0 && !q.is_on_ground && q.head_x_rotation(0) > 80" }
+                    ]
+				},
+				"caida_picada.off": {
+					"on_entry": [ 
+						"/event entity @s spiderman:caida_picada.off",
+						"/stopsound @s spiderman_effects.falling.idle", "/scoreboard players set @s web_acrobacia 0",
+						"/effect @s slowness 0 3 true", "/tag @s remove web_wing_block"
+					],
+					"transitions": [ 
+                        {"default":"(1.0)"}
+                    ]
+				},
+				"falling.damage": {
+					"on_entry": [ 
+						"/stopsound @s spiderman_effects.falling.idle", "/scoreboard players set @s web_acrobacia 0", "/event entity @s spiderman:caida_picada.off", "/inputpermission set @s jump disabled", "/inputpermission set @s movement disabled"
+					],
+					"animations": [ 
+						"player.spiderman.falling.damage"
+					],
+					"transitions": [ 
+                        {"default":"q.all_animations_finished"}
+                    ]
+				},
+				"player.spiderman.run.jump": {
+					"on_entry": [ 
+						"/tag @s add web_wing_block",
+						"/playsound spiderman_effects.punch @s"
+					],
+					"animations": [ 
+						"player.spiderman.super_slingshot"
+					],
+					"transitions": [ 
+                        {"balanceo.idle":"q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && (q.property('arathnido:animation') == 1 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 4)" },
+						{"impulse_air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{"web_attack" : "!q.is_gliding && q.property('arathnido:escalar') == false && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_using_item && q.is_sneaking && q.scoreboard('spiderman_impulse') == 1 && q.scoreboard('web_shoot_balanceo') > 0 && !q.is_on_ground && q.head_x_rotation(0) > 80" },
+                        {"caida_picada":"q.all_animations_finished"},
+						{"caida_picada.off" : "q.is_riding || (q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10)" },
+						{"default":"q.property('arathnido:ability0') == 4"},
+						{"caida_picada.off":"q.is_on_ground || q.property('arathnido:escalar') == true || (q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 9) || q.is_in_water"}
+                    ]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.balanceo.acrobacias" : {
+			"initial_state" : "on",
+			"states" : {
+				"default" : { "on_entry": [ 
+						"/scoreboard players set @s web_acrobacia 0",
+						"/tag @s remove web_wing_block" 
+					],
+					"transitions" : [
+						{ "ball" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_sneaking" },
+						{ "spin" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_jumping" },
+						{ "special" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_jumping && q.is_sneaking" }
+					]
+				},
+				"ball" : { "on_entry": [ "/scoreboard players set @s web_acrobacia 1", "/tag @s add web_wing_block" ],
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacias"
+					],
+					"transitions" : [ { "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || !q.is_sneaking" },
+						{ "special" : "q.is_jumping && q.is_sneaking" } ]
+				},
+				"spin" : { "on_entry": [ "/scoreboard players set @s web_acrobacia 1", "/tag @s remove web_wing_block" ],
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacias"
+					],
+					"transitions" : [ { "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || !q.is_jumping" },
+						{ "special" : "q.is_jumping && q.is_sneaking" } ]
+				},
+				"special" : { "on_entry": [ "/scoreboard players set @s web_acrobacia 1", "/tag @s add web_wing_block" ],
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacias.2"
+					],
+					"transitions" : [ { "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || !q.is_jumping || !q.is_sneaking" } ]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.iron_arms" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/tag @s remove iron_arms_attack", "/tag @s remove iron_arms_attack_3", "/tag @s remove iron_arms_attack_4", "/tag @s remove iron_arms_impulse"
+					],
+					"transitions" : [
+						{
+							"iron_arms.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && q.is_on_ground"
+						},
+						{
+							"iron_arms.attack.3" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && !q.is_on_ground"
+						}
+					]
+				},
+				"iron_arms.attack" : {
+					"on_entry": [
+						"/tag @s add iron_arms_attack", "/tag @s remove iron_arms_attack_3", "/tag @s remove iron_arms_attack_4", "/tag @s remove iron_arms_impulse"
+					],
+					"animations" : [ "player.iron_arms.attack" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && q.any_animation_finished"
+						},
+						{
+							"iron_arms.attack.3" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && !q.is_on_ground"
+						}
+					]
+				},
+				"iron_arms.attack.2" : {
+					"on_entry": [
+						"/tag @s add iron_arms_attack", "/tag @s remove iron_arms_attack_3", "/tag @s remove iron_arms_attack_4", "/tag @s remove iron_arms_impulse"
+					],
+					"animations" : [ "player.iron_arms.attack" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.4" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && q.any_animation_finished"
+						},
+						{
+							"iron_arms.attack.3" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && !q.is_on_ground"
+						}
+					]
+				},
+				"iron_arms.attack.4" : {
+					"on_entry": [
+						"/tag @s add iron_arms_attack_4", "/tag @s remove iron_arms_attack", "/tag @s remove iron_arms_attack_3"
+					],
+					"animations" : [ "player.iron_arms.attack.4" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"iron_arms.attack.3" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack') && q.is_using_item && !q.is_on_ground && q.all_animations_finished"
+						}
+					]
+				},
+				"iron_arms.attack.3" : {
+					"on_entry": [
+						"/tag @s add iron_arms_attack_3", "/tag @s remove iron_arms_attack", "/tag @s remove iron_arms_attack_4", "/tag @s remove iron_arms_impulse"
+					],
+					"animations" : [ "player.iron_arms.attack.3" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished || q.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.iron_spider" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/event entity @s spiderman:iron_spider.off"
+					],
+					"transitions" : [
+						{
+							"player.iron_spider" : "q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_ucm_suit')"
+						}
+					]
+				},
+				"player.iron_spider" : {
+					"animations" : [ 
+						"player.iron_spider"
+					],
+					"transitions" : [
+						{
+							"player.end" : "q.all_animations_finished"
+						}
+					]
+				},
+				"player.end" : {
+					"on_entry": [
+						"/event entity @s spiderman:iron_spider.5"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_ucm_suit')"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.punch" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/tag @s remove spiderman_punch_timer", "/event entity @s guns:shoot.off", "/tag @s remove spiderman_punch_i", "/tag @s remove spiderman_attack" ],
+					"transitions" : [
+						{ "punch.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch') && q.is_using_item && !q.is_sneaking && q.property('arathnido:ability0') == 0" },
+						{ "punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch') && q.is_using_item && q.is_sneaking && q.property('arathnido:ability0') == 0" }
+					]
+				},
+				"punch.impulse" : {
+					"on_entry" : [ "/event entity @s spiderman:punch.impulse" ],
+					"animations" : [ "player.spiderman.punch.impulse" ],
+					"transitions" : [
+						{ "timer" : "q.all_animations_finished && !q.is_using_item && q.is_on_ground" }
+					]
+				},
+				"punch" : {
+					"on_entry" : [ "/event entity @s spiderman:punch.up" ],
+					"animations" : [ "player.spiderman.punch" ],
+					"transitions" : [
+						{ "timer" : "q.all_animations_finished && !q.is_using_item" }
+					]
+				},
+				"timer" : {
+					"on_entry" : [ "/tag @s add spiderman_punch_timer" ],
+					"animations" : [ "player.spiderman.punch.timer" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.menu" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"on" : "q.is_sneaking && q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers')"
+						},
+						{
+							"spiderman_kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu')"
+						}
+					]
+				},
+				"on" : {
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers')"
+						},
+						{
+							"spiderman.kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_kick')"
+						},
+						{
+							"spiderman.spin_punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_spin_punch')"
+						},
+						{
+							"spiderman.punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch')"
+						},
+						{
+							"spiderman_kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu')"
+						}
+					]
+				},
+				"spiderman.punch" : {
+					"animations": [ "player.spiderman.menu.time" ],
+					"on_entry": [ "/function spiderman/menu" ],
+					"transitions" : [ 
+						{ "default" : "!q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu')" },
+						{ "spiderman_punch" : "!q.is_sneaking && q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu') && q.any_animation_finished" }
+					]
+				},
+				"spiderman_punch" : {
+					"on_entry": [ "/function spiderman/spiderman_punch" ],
+					"transitions" : [ { "on" : "(1.0)" }
+					]
+				},		
+				"spiderman.spin_punch" : {
+					"animations": [ "player.spiderman.menu.time" ],
+					"on_entry": [ "/function spiderman/menu" ],
+					"transitions" : [ 
+						{ "default" : "!q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu')" },
+						{ "spiderman_spin_punch" : "!q.is_sneaking && q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu') && q.any_animation_finished" }
+					]
+				},
+				"spiderman_spin_punch" : {
+					"on_entry": [ "/function spiderman/spiderman_spin_punch" ],
+					"transitions" : [ { "on" : "(1.0)" }
+					]
+				},				
+				"spiderman.kick" : {
+					"animations": [ "player.spiderman.menu.time" ],
+					"on_entry": [ "/function spiderman/menu" ],
+					"transitions" : [ 
+						{ "default" : "!q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu')" },
+						{ "spiderman_kick" : "!q.is_sneaking && q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_menu') && q.any_animation_finished" }
+					]
+				},
+				"spiderman_kick" : {
+					"on_entry": [ "/function spiderman/spiderman_kick" ],
+					"transitions" : [ { "on" : "(1.0)" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.skills" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/tag @s remove spiderman_kick", "/tag @s remove spiderman_kick_i", "/tag @s remove spiderman_spin", "/tag @s remove spiderman_kick_g", "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{ "kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_kick') && q.is_using_item && q.property('arathnido:ability0') == 0" },
+						{ "spin_punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_spin_punch') && q.is_using_item && q.property('arathnido:ability0') == 0" }
+					]
+				},
+				"kick" : {
+					"on_entry" : [ "/tag @s add spiderman_kick_i", "/event entity @s spiderman:kick" ],
+					"animations" : [ "player.spiderman.kick", "player.spiderman.kick.time" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && !q.is_using_item" },
+						{ "kick.ground" : "q.any_animation_finished && q.is_on_ground" }
+					]
+				},
+				"kick.ground" : {
+					"on_entry" : [ "/tag @s remove spiderman_kick_i", "/tag @s remove spiderman_kick_g", "/event entity @s spiderman:kick" ],
+					"animations" : [ "player.spiderman.kick.ground" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && !q.is_using_item && q.is_on_ground" }
+					]
+				},
+				"spin_punch" : {
+					"on_entry" : [ "/event entity @s spiderman:spin_punch" ],
+					"animations" : [ "player.spiderman.spin_attack" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && !q.is_using_item" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.symbiote.whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'player:spiderman_symbiont_knife') && q.is_using_item"
+						}
+					]
+				},
+				"attack.1" : {
+					"animations" : [ "player.spiderman.symbiote.whip.attack.1" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && !q.is_using_item" },
+						{ "attack.2" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'player:spiderman_symbiont_knife') && q.is_using_item" }
+					]
+				},
+				"attack.2" : {
+					"animations" : [ "player.spiderman.symbiote.whip.attack.2" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && !q.is_using_item" },
+						{ "attack.1" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'player:spiderman_symbiont_knife') && q.is_using_item" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.enchant" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/tag @s remove spiderman_a"
+					],
+					"transitions" : [
+						{ "on" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch')" },
+						{ "impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_balanceo') && q.property('arathnido:animation') == 3" }
+					]
+				},
+				"on" : {
+					"on_entry" : [ 
+						"/enchant @s knockback 1"
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch')" }
+					]
+				},
+				"impulse" : {
+					"animations": [ "player.spiderman.time" ],
+					"transitions" : [
+						{ "impulse.end" : "!q.is_using_item && q.all_animations_finished" }
+					]
+				},
+				"impulse.end" : {
+					"on_entry" : [ 
+						"/event entity @s guns:shoot.off"
+					],
+					"transitions" : [
+						{ "default" : "(1.0)" }
+					]
+				}
+			}
+		},
+		"controller.animation.web_shooter.particles": {
+		  "states": {
+			"default": {
+			  "transitions": [
+				{
+				  "blasters_shoot": "(1.0)"
+				}
+			  ],
+			  "on_entry": [
+				"/particle spidermanaddon:web_particle ^ ^ ^"
+			  ]
+			},
+			"blasters_shoot": {
+			  "transitions": [
+				{
+				  "default": "(1.0)"
+				}
+			  ],
+			  "on_entry": [
+				"/particle spidermanaddon:web_particle ^ ^ ^"
+			  ]
+			}
+		  }
+		},
+		"controller.animation.player.spiderman.super_jump" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/effect @s speed 0 3 true", "/effect @s jump_boost 0 30 true",
+						"/tag @s remove spider_super_jump", "/effect @s jump_boost infinite 3 true","/effect @s speed infinite 0 true"
+					],
+					"transitions" : [
+						{ "spiderman.super_jump" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'uncle_ben_camera') && q.is_sneaking && q.is_on_ground && q.head_x_rotation(0) < -15" },
+						{ "spiderman.run" : "q.is_on_ground && q.is_sprinting" }
+					]
+				},
+				"spiderman.run" : {
+					"animations" : [ 
+						"player.spiderman.run"
+					],
+					"transitions" : [
+						{ "default" : "!q.is_jumping && !q.is_sprinting" },
+						{ "salto_fe" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.is_jumping && !q.is_in_water && !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack') && (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || q.property('arathnido:animation') == 0)" }
+					]
+				},
+				"salto_fe" : {
+					"on_entry" : [ 
+						"/event entity @s spiderman:salto_fe"
+					],
+					"transitions" : [
+						{ "default" : "(1.0)" }
+					]
+				},
+				"spiderman.super_jump" : {
+					"on_entry" : [ 
+						"/effect @s jump_boost infinite 30 true",
+						"/tag @s add spider_super_jump"
+					],
+					"transitions" : [
+						{ "jump" : "q.is_sneaking && q.is_jumping" },
+						{ "default" : "!q.is_jumping && (!q.is_on_ground || !q.is_sneaking)" }
+					]
+				},
+				"jump" : {
+					"on_entry" : [ 
+						"/tag @s add spider_super_jump"
+					],
+					"animations" : [ 
+						"player.spiderman.super_jump"
+					],
+					"transitions" : [
+						{ "default" : "!q.is_sneaking || q.all_animations_finished || q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack')" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.agent_venom.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/event entity @s df:escalar.off",
+						"/event entity @s dragon_fly:fisicas_on",
+						"/event entity @s nido:flying.off",
+						"/effect @s speed 0 4 true",
+						"/effect @s resistance 0 1 true",
+						"/effect @s strength 0 0 true",
+						"/effect @s jump_boost 0 30 true",
+						"/effect @s haste 0 0 true",
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:wall.animation.off",
+						"/tag @s remove spiderman_climb",
+						"/tag @s remove spiderman_climb_run", "/effect @s slow_falling 0 9 true", "/event entity @s mutant_fly:fisicas_on", "/event entity @s spiderman:caida_picada.off",
+						"/tag @s remove surf:active",
+						"/tag @s remove surf:block",
+						"/tag @s add surf:airready", "/tag @s remove spiderman_damage_falling"
+					],
+					"transitions" : [
+						{
+							"on" : "q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') && q.is_alive"
+						}
+					]
+				},
+				"on" : {
+					"on_entry": [
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:caida_picada.off",
+						"/tag @s remove surf:active",
+						"/tag @s remove surf:block",
+						"/tag @s add surf:airready", "/tag @s remove spiderman_damage_falling"
+					],
+					"transitions" : [
+						{
+							"spiderman" : "(1.0)"
+						}
+					]
+				},
+				"spiderman" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/effect @s speed infinite 0 true",
+						"/effect @s resistance infinite 1 true",
+						"/effect @s strength infinite 0 true",
+						"/effect @s jump_boost infinite 2 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [ 
+						"player.spiderman.powers", "player.spiderman.super_jump.c", { "player.spiderman.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') || !q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/function spiderman/off",
+						"/event entity @s df:escalar.off",
+						"/event entity @s dragon_fly:fisicas_on",
+						"/event entity @s nido:flying.off",
+						"/effect @s speed 0 4 true",
+						"/effect @s strength 0 0 true",
+						"/effect @s jump_boost 0 30 true",
+						"/effect @s haste 0 0 true",
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:wall.animation.off",
+						"/tag @s remove spiderman_climb",
+						"/tag @s remove spiderman_climb_run", "/effect @s slow_falling 0 9 true", "/event entity @s mutant_fly:fisicas_on", "/event entity @s spiderman:caida_picada.off",
+						"/tag @s remove surf:active",
+						"/tag @s remove surf:block",
+						"/tag @s add surf:airready", "/tag @s remove spiderman_damage_falling"
+					],
+					"transitions" : [
+						{ "on" : "q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') && q.is_alive" }
+					]
+				},
+				"on" : {
+					"on_entry": [
+						"/function spiderman/off",
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:caida_picada.off",
+						"/tag @s remove surf:active",
+						"/tag @s remove surf:block",
+						"/tag @s add surf:airready", "/tag @s remove spiderman_damage_falling"
+					],
+					"transitions" : [
+						{ "spiderman" : "!q.equipped_item_any_tag('slot.armor.legs', 'miles_morales_powers')" },
+						{ "miles_morales_powers" : "q.equipped_item_any_tag('slot.armor.legs', 'miles_morales_powers')" }
+					]
+				},
+				"spiderman" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/function spiderman/on",
+						"/effect @s speed infinite 0 true",
+						"/effect @s strength infinite 0 true",
+						"/effect @s jump_boost infinite 2 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [ 
+						"player.spiderman.powers", "player.spiderman.super_jump.c", { "player.spiderman.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{ "default" : "q.equipped_item_any_tag('slot.armor.legs', 'miles_morales_powers') || !q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.is_alive" },
+						{ "man_spider" : "q.equipped_item_any_tag('slot.armor.head', 'man_spider')" }
+					]
+				},
+				"man_spider" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/function spiderman/off",
+						"/function spiderman/man_spider_on",
+						"/effect @s speed infinite 0 true",
+						"/effect @s strength infinite 0 true",
+						"/effect @s jump_boost infinite 2 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [ 
+						"player.spiderman.powers", "player.spiderman.super_jump.c", { "player.spiderman.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{ "default" : "q.equipped_item_any_tag('slot.armor.legs', 'miles_morales_powers') || !q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.is_alive" },
+						{ "man_spider.off" : "!q.equipped_item_any_tag('slot.armor.head', 'man_spider')" }
+					]
+				},
+				"man_spider.off" : {
+					"on_entry": [
+						"/function spiderman/man_spider_off"
+					],
+					"transitions" : [
+						{ "spiderman" : "(1.0)" }
+					]
+				},
+				"miles_morales_powers" : {
+					"on_entry": [
+						"/scoreboard objectives add spiderman_focus dummy", "/scoreboard objectives add spiderman_scan dummy",
+						"/function spiderman/miles_morales_on",
+						"/effect @s speed infinite 0 true",
+						"/effect @s strength infinite 0 true",
+						"/effect @s jump_boost infinite 2 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [ 
+						"player.spiderman.powers", "player.spiderman.super_jump.c", { "player.spiderman.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'miles_morales_powers') || !q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.iron_arms.items" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/function spiderman/iron_arms_off"
+					],
+					"transitions" : [
+						{
+							"on" : "q.equipped_item_any_tag('slot.armor.chest', 'iron_arms') && q.is_alive"
+						}
+					]
+				},
+				"on" : {
+					"on_entry": [
+						"/function spiderman/iron_arms_off"
+					],
+					"transitions" : [
+						{
+							"spiderman" : "(1.0)"
+						}
+					]
+				},
+				"spiderman" : {
+					"on_entry": [
+						"/function spiderman/iron_arms_on"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'iron_arms') || !q.is_alive"
+						}
+					]
+				}
+			}
+		}
+  }
+}

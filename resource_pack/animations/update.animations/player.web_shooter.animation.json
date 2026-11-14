@@ -1,0 +1,111 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.web_shoot.rot": {
+			"loop": true,
+			"bones": {
+				"web_shoot": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0]
+				},
+				"web_shoot2": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0]
+				},
+				"web_shoot3": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0]
+				}
+			}
+		},
+		"animation.player.web_shooter.idle": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [-7.5, 60, -50]
+				},
+				"second_arm": {
+					"rotation": [0, -35, 0],
+					"position": [7, 0, -5]
+				},
+				"rightArm_model": {
+					"rotation": [0, 35, 0],
+					"position": [0, 0, -5]
+				}
+			}
+		},
+		"animation.player.web_shooter.shoot.1": {
+			"animation_length": 0.25,
+			"bones": {
+				"rightArm_model": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, -5, 0],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.web_shooter.shoot.2": {
+			"animation_length": 0.25,
+			"bones": {
+				"second_arm": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, -5, 0],
+						"0.25": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.web_shoot.punch": {
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "web_shoot_particles",
+					"locator": "web_shoot"
+				}
+			}
+		},
+		"animation.web_shoot.gancho": {
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "web_shoot_particles",
+					"locator": "web_shoot2"
+				},
+				"0.01": {
+					"effect": "web_shoot_particles",
+					"locator": "web_shoot3"
+				}
+			}
+		},
+		"animation.player.web_shoot.balanceo.first": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [0, 22.5, 0],
+					"position": [9.27083, 8.79887, 5.79929]
+				},
+				"rightArm_model": {
+					"rotation": [-72.5, -47.5, -15],
+					"position": [4, 3, -12]
+				},
+				"second_arm": {
+					"rotation": [-80, 62.5, 2.5],
+					"position": [-3, 2, -13]
+				}
+			}
+		},
+		"animation.player.web_shoot.caida_picada.first": {
+			"loop": true,
+			"bones": {
+				"rightArm_model": {
+					"rotation": [55, 0, 40],
+					"position": [0, 0, 5]
+				},
+				"second_arm": {
+					"rotation": [57.5, 0, -55],
+					"position": [0, 0, 5]
+				}
+			}
+		}
+	}
+}

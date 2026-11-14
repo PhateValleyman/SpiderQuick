@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mystructure:prisoner_house_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/prisoner_house",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

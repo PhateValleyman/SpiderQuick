@@ -1,0 +1,1710 @@
+gui.spidermanaddon.upgrade_max=Vylepšit na maximum
+gui.spidermanaddon.upgrade_max_cost=Vylepšit zbývajících %1 úrovní za %2 komponent.
+gui.spidermanaddon.not_enough_components_max=Potřebujete %1 komponent k vylepšení tohoto vystřelovače pavučin na maximální úroveň.
+gui.spidermanaddon.upgraded_to_max=Vystřelovač pavučin vylepšen na maximální úroveň.
+
+item.spidermanaddon:black_cat_skin=Vzhled Black Cat
+item.spidermanaddon:norm_stone=Norm Stone
+
+ui.spiderman.settings.spider_sense_particles=Částice pavoučího smyslu
+ui.spiderman.settings.spider_sense_sound=Zvuk pavoučího smyslu
+ui.spiderman.settings.spider_sense_actionbar=Upozornění v akční liště při aktivaci pavoučího smyslu
+
+item.minecraft:leather=Kůže
+item.spidermanaddon:spider_gwen_skin=Vzhled Spider-Gwen
+item.spidermanaddon:mayday_skin=Vzhled Mayday Parker
+
+entity.spidermanaddon:hulk_boss.name=Hulk
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=Vyvolat Hulka
+
+dialogue.spidermanaddon.hulk_activation=?????:§r Jsi naprostý nepořádek. Nevstupuj mi do cesty. Protože pokud ne, tvoji přátelé nebudou jediní, kdo zapomene, kdo je Peter Parker.
+dialogue.spidermanaddon.hulk_defeated=?????:§r Vedl sis dobře. Příště už takové štěstí mít nebudeš.
+spidermanaddon:itemGroup.name.shocker=Arzenál Shockera
+item.spidermanaddon:shocker_mask=Maska Shockera
+item.spidermanaddon:shocker_suit=Oblek Shockera
+item.spidermanaddon:spider_punk_guitar=Kytara Spider-Punk
+item.spidermanaddon:shocker_gloves=Rukavice Shockera
+gui.spidermanaddon.symbiont_evil_dance=Ďábelský tanec
+tile.spiderman:spider_capsule.name=Radioaktivní pavoučí kapsle
+
+ui.spiderman.settings.button=§8Nastavení
+ui.spiderman.settings.title=§lNastavení schopností
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§bVolné běhání po stěnách
+ui.spiderman.settings.water_surf=§9Klouzání po vodní hladině
+ui.spiderman.settings.save=Uložit nastavení
+ui.spiderman.settings.saved=§aNastavení bylo úspěšně uloženo.
+
+item.spidermanaddon:organic_web_potion=Lektvar organické pavučiny
+
+item.minecraft:gunpowder=Střelný prach
+item.minecraft:glass=Sklo
+item.minecraft:slime_ball=Slizová koule
+item.minecraft:string=Vlákno
+item.minecraft:ender_pearl=Enderova perla
+
+ui.oscorp_table.title=§2Oscorpův technologický stůl
+ui.oscorp_table.body=§7Vyberte projekt padoucha Spider-Mana, který chcete vyrobit.
+ui.oscorp_table.category_body=§7Vyberte předmět, oblek nebo schopnost, kterou chcete vyrobit.
+ui.oscorp_table.category.green_goblin=§aGreen Goblin
+ui.oscorp_table.category.doctor_octopus=§6Doctor Octopus
+ui.oscorp_table.category.boomerang=§9Bumerang
+ui.oscorp_table.category.electro=§eElectro
+ui.oscorp_table.category.mysterio=§5Mysterio
+ui.oscorp_table.category.scorpion=§2Scorpion
+ui.oscorp_table.category.tarantula=§4Tarantule
+ui.oscorp_table.category.black_cat=§dBlack Cat
+ui.oscorp_table.category.modified_spider=§cUpravený Spider
+ui.oscorp_table.selected=Vybraný projekt
+ui.oscorp_table.required_materials=Potřebné materiály
+ui.oscorp_table.result=Výsledek
+ui.oscorp_table.craft=Vytvořit
+ui.oscorp_table.missing_materials=Chybějící materiály
+ui.oscorp_table.cancel=Zrušit
+ui.oscorp_table.back=Zpět
+ui.oscorp_table.crafted=Výroba dokončena
+ui.oscorp_table.no_materials=Nemáte potřebné materiály
+ui.oscorp_table.invalid_item=Předmět nelze vytvořit
+
+entity.spidermanaddon:oscorp_table.name=Oscorpův laboratorní stůl
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=Oscorpův laboratorní stůl
+
+item.spidermanaddon:tarantula_attack=Létající kop
+item.spidermanaddon:black_cat_mask=Maska Black Cat
+item.spidermanaddon:black_cat_suit=Oblek Black Cat
+
+item.spidermanaddon:boomerang_powers=Schopnosti bumerangu
+item.spidermanaddon:boomerang_skill_explosive=Výbušný bumerang
+item.spidermanaddon:boomerang_skill=Hoď bumerang
+item.spidermanaddon:boomerang_skill_electric=Elektrický bumerang
+
+item.minecraft:spider_eye=Pavoučí oko
+item.minecraft:fermented_spider_eye=Fermentované pavoučí oko
+item.minecraft:blaze_powder=Blazův prášek
+item.minecraft:ghast_tear=Ghastova slza
+item.minecraft:milk_bucket=Kbelík mléka
+
+ui.laboratory_workbench.upgrade_levels_body=§fAktuální úroveň: §e%1§f/§e%2
+§fCena vylepšení: §a%3 úrovní zkušeností
+ui.laboratory_workbench.no_levels=§cPotřebujete %1 úrovní zkušeností. Aktuálně máte %2.
+
+item.spidermanaddon:police_scanner=Policejní skener
+action.interact.police_scanner=Zapnout/Vypnout skener
+hud.police_scanner.crime.location=§cZjištěn zločin §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§bVzdálenost: §f%1 m
+
+hud.man_spider.web.ready=§2Organická pavučina §f%1/%2
+hud.man_spider.web.locked=§cPavučina uzamčena §f%1/%2
+hud.man_spider.acid.ready=§aKyselina připravená
+hud.man_spider.acid.cooldown=§2Kyselina §f%1s
+hud.man_spider.claw.ready=§cSkokový útok připraven
+hud.man_spider.claw.cooldown=§4Skokový útok §f%1s
+message.man_spider.mutation.requires_powers=§cMusíte mít vybavené schopnosti Spider-Mana.
+message.organic_web.requires_powers=§cMusíte mít vybavené schopnosti Spider-Mana.
+
+item.spidermanaddon:man_spider_web_shoot=Střílet pavučinu [Organická pavučina]
+item.spidermanaddon:man_spider_swing=Houpání na pavučině [Organická pavučina]
+item.spidermanaddon:man_spider_acid=Střílet kyselinu
+item.spidermanaddon:man_spider_claw=Útok
+item.spidermanaddon:spider_mutant=Mutagenní sérum
+item.spidermanaddon:mutation_antidote=Protijed proti mutacím
+item.spidermanaddon:six_arms=Šest paží
+item.spidermanaddon:man_spider=Man-Spider
+
+hud.spiderman.web_swing.ammo=§bHoupačka na pavučině §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ Bod houpačky nalezen: §f%1 bloků
+hud.spiderman.web_swing.target.none=§c◇ Žádný bod houpačky: §fmax. %1 bloků
+hud.spiderman.web_swing.target.no_ammo=§c✖ Žádná pavučinová tekutina
+hud.spiderman.web_swing.target.active=§a◆ Pavučina připojena
+
+item.spidermanaddon:spiderman_unlimited_sonic=Zvuková vlna
+item.spidermanaddon:spiderman_unlimited_invisibility=Neviditelnost
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=Náramek na proměnu Spider-Man: Unlimited
+menu.pizza.full_shift=§6Plná směna
+dialog.pizza.full_shift_started=§6Pan Aziz:§r Plná směna spuštěna. Objednávka %1/%2: doručte pizzy %3 zákazníkům. Počáteční čas: %4.
+dialog.pizza.full_shift_return_to_joe=§6Objednávka dokončena. Vraťte se k pan Aziz, abyste vyzvedli objednávku %1/%2.
+dialog.pizza.full_shift_return_for_reward=§6Dokončili jste poslední objednávku. Vraťte se k pan Aziz, abyste si vyzvedli odměnu.
+dialog.pizza.full_shift_next_order=§6Pan Aziz:§r Objednávka %1/%2 je připravena: doručte pizzy %3 zákazníkům. Nashromážděný čas: %4.
+dialog.pizza.full_shift_spawn_failed=§6Pan Aziz:§r Nepodařilo se mi najít zákazníky pro další objednávku. Plná směna selhala.
+dialog.pizza.full_shift_success=§6Pan Aziz:§r Plná směna dokončena! Dokončili jste %1 objednávek a obdrželi %2 zlatých ingotů, %3 komponent a %4 zkušenostních bodů.
+
+
+dialog.pizza.night_unavailable=§6Pan Aziz:§r Noční doručovací směna je uzavřena. Přijďte přes den.
+dialog.pizza.daily_limit=§6Pan Aziz:§r Dnes jste již dokončil %1 doručovacích misí. Přijďte zítra.
+
+item.spidermanaddon:pizza_backpack_offhand=Batoh na rozvoz pizzy
+
+pack.name=SpiderQuick
+pack.description=České názvy, texty a prostředky SpiderQuick pro Minecraft Bedrock.
+
+entity.spidermanaddon:joe_pizza.name=pan Aziz
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=Vyvolat pan Aziz
+entity.spidermanaddon:customer.name=Zákazník
+item.spawn_egg.entity.spidermanaddon:customer.name=Vyvolat zákazníka
+item.spidermanaddon:pizza_backpack=Horká pizza!
+
+action.interact.pizza_talk=Promluvte si s pan Aziz
+action.interact.deliver_pizza=Doručit pizzu
+
+menu.pizza.title=§6Rozvoz pizzy – pan Aziz
+menu.pizza.body=Chcete pracovat jako rozvozčí? Doručte každou objednávku a vraťte se dříve, než vyprší čas.
+menu.pizza.accept=§aPřijmout misi
+menu.pizza.decline=Ne teď
+
+dialog.pizza.busy=§6Pan Aziz:§r Kurýr už pracuje. Přijďte později.
+dialog.pizza.spawn_failed=§6Pan Aziz:§r Nepodařilo se mi najít bezpečná místa pro zákazníky. Zkuste jinou oblast.
+dialog.pizza.inventory_full=§6Pan Aziz:§r Potřebujete alespoň jedno volné místo v inventáři pro batoh.
+dialog.pizza.mission_started=§6Pan Aziz:§r Máte %2 na doručení %1 objednávek. Pospěšte!
+dialog.pizza.still_working=§6Pan Aziz:§r Zbývá doručit %1 objednávek. Zbývající čas: %2.
+dialog.pizza.not_your_customer=§6Pan Aziz:§r Ta objednávka patří jinému rozvozci.
+dialog.pizza.already_delivered=§eTento zákazník již obdržel svou pizzu.
+dialog.pizza.need_backpack=§cAbyste mohli zakázku doručit, musíte držet batoh na rozvoz pizzy.
+dialog.pizza.order_delivered=§aObjednávka doručena. Zákazníci: %1/%2.
+dialog.pizza.return_to_joe=§6Všechny pizzy jsou doručeny. Vraťte se k panu Azizovi, než vyprší čas!
+dialog.pizza.failed_time=§6Pan Aziz:§r Čas vypršel. Mise selhala.
+dialog.pizza.failed_customer=§6Pan Aziz:§r Zákazník zmizel nebo zemřel. Mise selhala.
+dialog.pizza.success=§6Pan Aziz:§r Dobrá práce. Doručili jste %1 zakázek a získali %2 zlatých ingotů.
+
+dialog.spider_sense.enemy_detected=§cNepřítel zjištěn na:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Maska Bena Reallyho
+item.spiderverse:ben_really_suit=Oblek Bena Reallyho
+
+item.spidermanaddon:scorpion_attack=Útok žihadlem
+item.spidermanaddon:scorpion_spin=Točivý úder
+item.spidermanaddon:scorpion_poison=Aktivovat jed
+item.spidermanaddon:scorpion_powers=Štíří ocas
+
+entity.spidermanaddon:electro_boss.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Vyvolat Electro
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Vyvolat Silk
+entity.spidermanaddon:punisher_van.name=Punisher Van
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=Punisher Van
+item.marveladdons:venom_transform=Proměňte se ve Venom
+item.marveladdons:venom_claw=Dráp Venoma
+item.marveladdons:venom_combat=Boj
+item.marveladdons:venom_powers=Schopnosti Venoma
+item.marveladdons:venom_shield=Štít
+item.spidermanaddon:agent_venom_ult=Schopnost Agenta Venoma
+item.spiderverse:spiderman_undies_suit=Spodní prádlo Spider-Mana
+item.spiderverse:electro_mask=Maska Electra
+item.spidermanaddon:electro_powers=Schopnosti Electra
+item.spidermanaddon:tarantula_suit=Oblek Tarantuly
+item.spidermanaddon:tarantula_mask=Maska Tarantuly
+item.spidermanaddon:boomerang_suit=Oblek Bumerangu
+item.spidermanaddon:boomerang_mask=Maska Bumerangu
+item.spidermanaddon:scorpion_suit=Oblek Scorpiona
+item.spidermanaddon:green_goblin_combat=Boj
+item.spidermanaddon:green_goblin_laser=Laser Green Goblina
+item.spidermanaddon:hobgoblin_pumpkin_bomb=Bomba Hobgoblina
+item.spidermanaddon:black_cat_powers=Schopnosti Black Cat
+item.spidermanaddon:spiderman_menu=Nabídka
+item.marveladdons:venom_wings=Křídla Venoma
+item.marveladdons:venom_whip=Bič na šplhání
+
+marveladdons:itemGroup.name.fabric=Látky
+marveladdons:itemGroup.name.spray=Barvy ve spreji
+spidermanaddon:itemGroup.name.powers=Schopnosti Spider-Mana
+spidermanaddon:itemGroup.name.web_shooters=Vystřelovače pavučin
+spidermanaddon:itemGroup.name.mask=Masky Spider-Mana
+spidermanaddon:itemGroup.name.suit=Obleky Spider-Mana
+spidermanaddon:itemGroup.name.mysterio=Arzenál Mysterio
+spidermanaddon:itemGroup.name.green_goblin=Arzenál Green Goblina
+spidermanaddon:itemGroup.name.sandman=Arzenál Sandmana
+spidermanaddon:itemGroup.name.electro=Arzenál Electra
+spidermanaddon:itemGroup.name.black_cat=Arzenál Black Cat
+spidermanaddon:itemGroup.name.scorpion=Arzenál Scorpiona
+spidermanaddon:itemGroup.name.dr_octopus=Arzenál Dr. Octopuse
+spidermanaddon:itemGroup.name.tarantula=Arzenál Tarantuly
+spidermanaddon:itemGroup.name.boomerang=Arzenál Bumerangu
+
+entity.spidermanaddon:symbiote_nests.name=Hnízda symbiotů
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=Hnízda symbiotů
+
+dialog.black_cat.heal.light=§dBlack Cat:§r Něco jednoduchého... ale užitečného. Nezvykej si, že mě uvidíš vděčnou.
+dialog.black_cat.heal.meal=§dBlack Cat:§r Tak se staráš o spojence. Hezký tah, Spider.
+dialog.black_cat.heal.golden=§dBlack Cat:§r Zlaté jablko pro mě? Zdá se, že si někdo chce zasloužit všech mých devět životů.
+dialog.black_cat.heal.full=§dBlack Cat:§r Teď se cítím perfektně. Snaž se to nezničit, dobře?
+dialog.black_cat.heal.bad=§dBlack Cat:§r Zkažené jídlo? Dávej pozor, drahoušku. Důvěra může být také otrávená.
+
+dialog.punisher.heal.light=§8Punisher:§r Zásoby přijaté. Dost na to, abych mohl pokračovat.
+dialog.punisher.heal.meal=§8Punisher:§r Dobré jídlo. Drží tým na nohou.
+dialog.punisher.heal.golden=§8Punisher:§r Zlaté jablko. Užitečné. Neplýtval jsi s ním.
+dialog.punisher.heal.full=§8Punisher:§r Úplné zotavení. Jsem zpátky v boji.
+dialog.punisher.heal.bad=§8Punisher:§r Tohle není pomoc. To bylo špatné rozhodnutí.
+
+dialog.punisher.night.1=§8Punisher:§r Noc nahrává zločincům... a i nám.
+dialog.punisher.night.2=§8Punisher:§r Tehdy vycházejí ze skrýše.
+dialog.punisher.night.3=§8Punisher:§r Měj oči otevřené.
+
+dialog.punisher.health.1=§8Punisher:§r Dostal jsem horší rány.
+dialog.punisher.health.2=§8Punisher:§r Stále můžu bojovat.
+
+item.spiderverse:electro_no_way_home_suit=Electro: oblek Spider-Man: No Way Home
+item.spiderverse:electro_no_way_home_mask=Electro: maska Spider-Man: No Way Home
+item.spiderverse:electro_tas2_suit=Electro: oblek The Amazing Spider-Man 2
+item.spiderverse:electro_tas2_mask=Electro: maska The Amazing Spider-Man 2
+
+item.spidermanaddon:electro_laser=Laser Electra
+item.spidermanaddon:electro_teleport=Teleportace
+item.spidermanaddon:electro_ray=Elektromagnet
+
+gui.uncle_ben_camera.title=§bRežim kamery
+gui.uncle_ben_camera.body=Vyberte možnost kamery.
+gui.uncle_ben_camera.camera=Kamera
+gui.uncle_ben_camera.poses=Pózy
+gui.uncle_ben_camera.camera.title=Kamera
+gui.uncle_ben_camera.camera.body=Zvolte režim kamery.
+gui.uncle_ben_camera.camera.free=Volná kamera
+gui.uncle_ben_camera.camera.selfie=Režim selfie
+gui.uncle_ben_camera.poses.title=Pózy
+gui.uncle_ben_camera.poses.body=Vyberte pózu.
+gui.uncle_ben_camera.poses.disable=Zakázat pózy
+gui.uncle_ben_camera.poses.pose=Póza
+
+dialog.punisher.interact.low.1=§8Punisher:§r Nepleť si spolupráci s přátelstvím.
+dialog.punisher.interact.low.2=§8Punisher:§r Když polevíš v ostražitosti, nepřijdu tě zachránit.
+dialog.punisher.interact.low.3=§8Punisher:§r Dokaž, že ti můžu věřit.
+dialog.punisher.interact.low.4=§8Punisher:§r Viděl jsem příliš mnoho hrdinů padnout, protože věřili špatným lidem.
+dialog.punisher.interact.low.5=§8Punisher:§r Mluv méně. Měj oči otevřené.
+
+dialog.punisher.interact.high.1=§8Punisher:§r Prokázal jsi, že umíš přežít.
+dialog.punisher.interact.high.2=§8Punisher:§r Tohle často neříkám... dobrá práce.
+dialog.punisher.interact.high.3=§8Punisher:§r Kryj mi záda a já pohlídám ta tvoje.
+dialog.punisher.interact.high.4=§8Punisher:§r Začínám si myslet, že něco znamenáš.
+dialog.punisher.interact.high.5=§8Punisher:§r Dokud bojujeme společně, ti zločinci nebudou mít chvíli klidu.
+
+dialog.punisher.follow=§8Punisher:§r Nevzdaluj se příliš daleko.
+dialog.punisher.free=§8Punisher:§r Když se něco objeví, já to vyřeším.
+
+dialog.punisher.recruit.1=§8Punisher:§r Ten průkaz dokazuje, že jsi s Avengers... Budu s tebou spolupracovat.
+dialog.punisher.recruit.2=§8Punisher:§r Neberu rozkazy od kohokoliv. Ale dám ti šanci.
+
+dialog.punisher.respect.1=§8Punisher:§r Učíš se.
+dialog.punisher.respect.2=§8Punisher:§r Dobrá práce.
+dialog.punisher.respect.3=§8Punisher:§r Začínám ti věřit.
+dialog.punisher.respect.4=§8Punisher:§r To bylo profesionální.
+
+dialog.punisher.assist.1=§8Punisher:§r Hezký zásah. Pokračuj.
+dialog.punisher.assist.2=§8Punisher:§r Bojuješ lépe, než jsem čekal.
+dialog.punisher.assist.3=§8Punisher:§r Dnes jsme jim dali lekci.
+dialog.punisher.assist.4=§8Punisher:§r Práce s tebou to usnadňuje.
+
+dialog.punisher.respect.25=§8Punisher:§r Vypadá to, že víš, co děláš.
+dialog.punisher.respect.50=§8Punisher:§r Začínám ti důvěřovat.
+dialog.punisher.respect.75=§8Punisher:§r Prokázal jsi, že jsi skutečný spojenec.
+dialog.punisher.respect.100=§8Punisher:§r Když budu někdy potřebovat někoho, kdo mi bude krýt záda, budeš to ty.
+
+dialog.punisher.idle.1=§8Punisher:§r Buď ve střehu.
+dialog.punisher.idle.2=§8Punisher:§r Město nikdy nespí.
+dialog.punisher.idle.3=§8Punisher:§r Zločinci se vždy vrací.
+dialog.punisher.idle.4=§8Punisher:§r Využij tuto tichou chvíli.
+dialog.punisher.idle.5=§8Punisher:§r Nesnižuj svou ostražitost.
+
+gui.punisher.interact=Promluvit
+gui.punisher.follow=Následuj mě
+gui.punisher.stop_follow=Přestaň mě následovat
+gui.punisher.title=The Punisher
+gui.punisher.respect=Úroveň respektu:
+
+dialog.punisher.enemy.1=§8Punisher:§r Tam jsou... neztrácej je z dohledu.
+dialog.punisher.enemy.2=§8Punisher:§r Máme společnost.
+dialog.punisher.enemy.3=§8Punisher:§r Je čas uklidit ulice.
+
+dialog.punisher.owner_hit.1=§8Punisher:§r Dávej pozor na své zásahy. Nejsem tu, abych dostával přátelskou palbu.
+dialog.punisher.owner_hit.2=§8Punisher:§r Špatné rozhodnutí. Příště míř na nepřítele.
+dialog.punisher.owner_hit.3=§8Punisher:§r Tahle chyba stojí důvěru. Zachovej disciplínu.
+
+menu.punisher.body.low_respect=Punisher tě pozoruje opatrně. Stále ti úplně nedůvěřuje.
+menu.punisher.body.high_respect=Punisher přichází se sebejistým úsměvem. Zdá se, že si užívá tvou společnost.
+
+item.marveladdons:avengers_id_card=Průkaz člena Avengers
+
+dialog.black_cat.enemy.1=§dBlack Cat:§r Máme poblíž společnost. A nevypadají, že by dávali spropitné.
+dialog.black_cat.enemy.2=§dBlack Cat:§r Slyším něco poblíž... připrav pavučiny, Spider.
+dialog.black_cat.enemy.3=§dBlack Cat:§r Nejsme sami. Je tu poblíž příšera, která kazí noc.
+
+dialog.black_cat.owner_hit.1=§dBlack Cat:§r Byl to zásah, nebo hrozný způsob, jak upoutat mou pozornost?
+dialog.black_cat.owner_hit.2=§dBlack Cat:§r Dávej pozor, Spider. Důvěru mohou zlomit i špatné drápy.
+dialog.black_cat.owner_hit.3=§dBlack Cat:§r Jestli se ke mně budeš tak chovat, možná bych se měla vrátit k práci o samotě.
+
+dialog.black_cat.approach.low.1=§dBlack Cat:§r No podívej, kdo přišel. Jsi tu, abys pomohl, nebo jen stylově překážíš?
+dialog.black_cat.approach.low.2=§dBlack Cat:§r Nebuď nadšený, ještě nejsme partneři. Ale můžeš se mnou chvíli chodit... prozatím.
+dialog.black_cat.approach.low.3=§dBlack Cat:§r Chceš-li mou důvěru, budeš si ji muset zasloužit. Svých devět životů nedávám zadarmo.
+
+dialog.black_cat.approach.high.1=§dBlack Cat:§r Tak ty jsi tady, Spider. Začínala jsem si myslet, že noc bude nudná.
+dialog.black_cat.approach.high.2=§dBlack Cat:§r Přesně na čas. S problémy je to obvykle zábavnější, když jsem poblíž.
+dialog.black_cat.approach.high.3=§dBlack Cat:§r Líbí se mi, když se takhle objevíš. Město pak působí o něco méně nebezpečně... skoro.
+
+dialog.black_cat.play_night.end.1=§dBlack Cat:§r Myslím, že ti ten oblek už neslušel.
+dialog.black_cat.play_night.end.2=§dBlack Cat:§r Dobré ráno... spal jsi docela hluboce.
+dialog.black_cat.play_night.end.3=§dBlack Cat:§r Doufám, že ti to nevadí... něco jsem si půjčila z tvého šatníku.
+dialog.black_cat.play_night.end.4=§dBlack Cat:§r Nedělej tu tvář... takhle vypadáš roztomile.
+dialog.black_cat.play_night.end.5=§dBlack Cat:§r Teď máme mezi sebou malé tajemství.
+dialog.black_cat.play_night.end.6=§dBlack Cat:§r Asi byla tahle noc nezapomenutelná.
+
+dialog.black_cat.play_night.start.1=§dBlack Cat:§r Dnes večer... jsi celý můj.
+dialog.black_cat.play_night.start.2=§dBlack Cat:§r Na jednu noc zapomeňme na padouchy.
+dialog.black_cat.play_night.start.3=§dBlack Cat:§r Pojď sem... mám něco speciálního připravené.
+dialog.black_cat.play_night.start.4=§dBlack Cat:§r Neboj se... slibuju, že se budu chovat.
+dialog.black_cat.play_night.start.5=§dBlack Cat:§r Po všem, čím jsme prošli... to sis zasloužil.
+dialog.black_cat.play_night.start.6=§dBlack Cat:§r Nedívej se tak moc... pojď sem.
+
+dialog.black_cat.theft.1=§dBlack Cat:§r Ups... to bylo tvoje?
+dialog.black_cat.theft.2=§dBlack Cat:§r Půjčím si to... možná ti to vrátím.
+dialog.black_cat.theft.3=§dBlack Cat:§r Příliš pomalý, Spider.
+dialog.black_cat.theft.4=§dBlack Cat:§r Opravdu sis myslel, že si toho nevšimnu?
+dialog.black_cat.theft.5=§dBlack Cat:§r Chyť mě, když na to máš!
+dialog.black_cat.theft.6=§dBlack Cat:§r Ty to vždycky děláš zábavné.
+
+dialog.black_cat.play_night.betrayal.1=§dBlack Cat:§r Byla to zábavná noc, Spider... ale nemíchej si zábavu s loajalitou.
+dialog.black_cat.play_night.betrayal.2=§dBlack Cat:§r Řekla jsem ti, že důvěřovat zlodějce je nebezpečné. Díky za vzpomínky... a za všechno ostatní.
+dialog.black_cat.play_night.betrayal.3=§dBlack Cat:§r Neber to osobně, drahoušku. Jen jsem následovala svou přirozenost: vlézt, ukrást a zmizet.
+
+dialog.black_cat.play_night.ready=Black Cat vypadá připraveně strávit s tebou speciální noc.
+menu.black_cat.play_night=Strávit noc
+menu.black_cat.aspect.spiderman_suit=Oblek Spider-Mana pro Black Cat
+menu.black_cat.aspect=Vzhled
+menu.black_cat.aspect.title=Vzhledy Black Cat
+menu.black_cat.aspect.body=Zvol vzhled, který Black Cat použije.
+menu.black_cat.aspect.default=Black Cat
+menu.black_cat.aspect.symbiont=Symbiotická Black Cat
+menu.black_cat.aspect.rivals=Black Cat: Marvel Rivals
+menu.black_cat.aspect.locked=%s [Zamčeno]
+dialog.black_cat.aspect.locked=Stále ti nedůvěřuje natolik, aby použila ten vzhled.
+dialog.black_cat.aspect.changed=Black Cat změnila svůj vzhled.
+
+dialog.black_cat.assist.1=§dBlack Cat:§r Není špatné. Možná jsi v boji užitečný.
+dialog.black_cat.assist.2=§dBlack Cat:§r Hezký zásah. Téměř jsi mě ohromil.
+dialog.black_cat.assist.3=§dBlack Cat:§r Jsme dobrý tým... nepřeháněj to.
+dialog.black_cat.assist.4=§dBlack Cat:§r Přiznávám, to bylo stylové.
+
+dialog.black_cat.try_tame=§dBlack Cat:§r Chceš-li, abych s tebou pracovala, použij smaragd.
+menu.black_cat.title=Black Cat
+
+menu.black_cat.respect=Respekt:
+menu.black_cat.interact=Promluvit
+menu.black_cat.follow_me=Následuj mě
+menu.black_cat.stop_following=Přestaň mě následovat
+
+menu.black_cat.body.low_respect=Black Cat vás opatrně pozoruje. Stále vám plně nedůvěřuje.
+menu.black_cat.body.high_respect=Black Cat přistoupí se sebevědomým úsměvem. Zdá se, že si užívá vaši společnost.
+
+dialog.black_cat.low_respect.1=§dBlack Cat:§r Nechápej to špatně. Stále ti nedůvěřuji.
+dialog.black_cat.low_respect.2=§dBlack Cat:§r Pokud se to zvrtne, nebudu tě zachraňovat dvakrát.
+dialog.black_cat.low_respect.3=§dBlack Cat:§r Jsi užitečný... zatím.
+dialog.black_cat.low_respect.4=§dBlack Cat:§r Nedávej mi důvod toho litovat.
+dialog.black_cat.low_respect.5=§dBlack Cat:§r Dlouho jsem pracovala sama. Nenič to.
+dialog.black_cat.low_respect.6=§dBlack Cat:§r Máš talent, ale máš taky spoustu problémů.
+dialog.black_cat.low_respect.7=§dBlack Cat:§r Neztrácej ostražitost. Já ne.
+dialog.black_cat.low_respect.8=§dBlack Cat:§r Možná si jednou zasloužíš mou důvěru.
+
+dialog.black_cat.high_respect.1=§dBlack Cat:§r Ráda s tebou pracuji, malý pavoučku.
+dialog.black_cat.high_respect.2=§dBlack Cat:§r Máš styl. Ne tolik jako já, ale blízko.
+dialog.black_cat.high_respect.3=§dBlack Cat:§r Věděla jsem, že ti můžu věřit.
+dialog.black_cat.high_respect.4=§dBlack Cat:§r Přiznávám, děláš to zábavnějším.
+dialog.black_cat.high_respect.5=§dBlack Cat:§r Dobrá práce. Téměř jsi mě ohromil.
+dialog.black_cat.high_respect.6=§dBlack Cat:§r S tebou poblíž je to méně nudné.
+dialog.black_cat.high_respect.7=§dBlack Cat:§r Nebuď příliš nadšený, ale jsem ráda, že tě vidím.
+dialog.black_cat.high_respect.8=§dBlack Cat:§r Kryj mi záda a já pohlídám ta tvoje.
+
+dialog.black_cat.follow_me=§dBlack Cat:§r Dobře, půjdu s tebou. Jen nechoď tak pomalu.
+dialog.black_cat.stop_following=§dBlack Cat:§r Perfektní, zůstanu tady poblíž. Příliš mi tu nechyběj.
+dialog.black_cat.not_owner=§dBlack Cat:§r Promiň, miláčku. Nepracuju pro tebe.
+
+action.interact.black_cat=Promluvit
+item.spidermanaddon:black_cat_contract.name=Smlouva s Black Cat
+dialog.black_cat.stolen=§dBlack Cat:§r Díky za diamant. Pokud ho chceš zpátky... chyť mě.
+dialog.black_cat.captured=§dBlack Cat:§r Dobře... přiznávám, jsi rychlejší, než jsem čekala.
+dialog.black_cat.escape=§dBlack Cat:§r Příliš pomalý, Spider. Do příště.
+dialog.black_cat.need_contract=§dBlack Cat:§r Myslíš, že pracuji zadarmo? Přines mi lepší nabídku.
+dialog.black_cat.recruited=§dBlack Cat:§r Dobře... budu s tebou spolupracovat. Ale nečekej, že budu dodržovat pravidla.
+item.spidermanaddon:uncle_ben_camera=Fotoaparát Uncle Bena
+
+action.interact.j_jonah_jameson=Promluvit
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=Jameson se podezíravě dívá zpoza svého stolu.
+menu.j_jonah_jameson.interact=Interagovat
+menu.j_jonah_jameson.sell_picture=Prodat fotografii
+menu.j_jonah_jameson.close=Zavřít
+
+dialogue.j_jonah_jameson.random.1=Spider-Man je hrozbou! Maskovanou hrozbou!
+dialogue.j_jonah_jameson.random.2=Chci fotografie Spider-Mana, ne výmluvy.
+dialogue.j_jonah_jameson.random.3=Jestli se ten lezec po zdech objeví, chci exkluzivitu na svém stole.
+dialogue.j_jonah_jameson.random.4=Město potřebuje skutečné zprávy, ne hrdiny skákající po střechách.
+dialogue.j_jonah_jameson.random.5=Parker! Počkej... nejsi Parker. Dobře, hýbej se rychle.
+
+dialogue.j_jonah_jameson.sell_picture=Fotka je hrozná, úhel je strašný, a Spider-Man stále vypadá jako hrozba... ale postačí to. Vezmi si svých 10 ingotů.
+dialogue.j_jonah_jameson.no_picture=Snažíš se mi prodat vzduch? Vrať se, až budeš mít opravdovou fotografii Spider-Mana!
+
+item.minecraft:planks=Dřevěná prkna
+item.minecraft:glowstone_dust=Glowstone prášek
+item.minecraft:redstone=Redstone
+item.minecraft:diamond=Diamant
+item.minecraft:copper_ingot=Měděný ingot
+item.minecraft:amethyst_shard=Úlomek ametystu
+item.minecraft:quartz=Netherový křemen
+item.minecraft:netherite_ingot=Netheritový ingot
+item.minecraft:gold_ingot=Zlatý ingot
+item.minecraft:iron_ingot=Železný ingot
+item.minecraft:emerald=Smaragd
+item.marveladdons:iron_arms=Paže Iron Spider
+
+ui.spiderman_accessories.title=Výroba doplňků
+ui.spiderman_accessories.body=Vyber doplněk, který chceš vyrobit.
+ui.spiderman_accessories.selected_accessory=Vybraný doplněk
+ui.spiderman_accessories.crafted=Vyrobeno:
+
+ui.laboratory_workbench.upgrades_menu=Vylepšit schopnosti Spider-Mana
+ui.laboratory_workbench.upgrades_body=Vyber schopnost k vylepšení.
+ui.laboratory_workbench.accessories=Výroba doplňků
+ui.laboratory_workbench.accessories_coming_soon=Výroba doplňků bude k dispozici později.
+ui.laboratory_workbench.back=Zpět
+
+ui.spiderman_suits.next_unlock=Další odemknutí
+
+gui.spidermanaddon.spiderman_level_up=Spider-Man dosáhl úrovně %1!
+gui.spidermanaddon.spiderman_max_level=Dosáhl jsi maximální úrovně Spider-Mana.
+ui.spiderman_suits.level=Úroveň Spider-Mana
+ui.spiderman_suits.locked=Uzamčeno
+ui.spiderman_suits.need_level=Požadovaná úroveň Spider-Mana
+ui.spiderman_suits.selected_suit=Vybraný oblek
+ui.spiderman_suits.required_level=Požadovaná úroveň
+ui.spiderman_suits.required_materials=Požadované materiály
+ui.spiderman_suits.result=Výsledek
+ui.spiderman_suits.mask_included=Tento oblek již obsahuje masku.
+ui.spiderman_suits.craft=Vytvořit
+ui.spiderman_suits.missing_materials=Chybějící materiály
+ui.spiderman_suits.cancel=Zrušit
+ui.spiderman_suits.no_materials=Už nemáte dostatek materiálů.
+ui.spiderman_suits.crafted=Vytvořili jste
+
+ui.laboratory_workbench.suits=Výroba obleků
+
+ui.spiderman_suits.title=Laboratoř na výrobu obleků
+ui.spiderman_suits.body=Vyber si oblek, který chceš vyrobit.
+
+item.marveladdons:blue_spray=§9modrý sprej
+item.marveladdons:brown_spray=§6hnědý sprej
+item.marveladdons:cyan_spray=§3tyrkysový sprej
+item.marveladdons:gray_spray=§8šedý sprej
+item.marveladdons:green_spray=§2zelený sprej
+item.marveladdons:light_blue_spray=§bsvětle modrý sprej
+item.marveladdons:light_gray_spray=§7světle šedý sprej
+item.marveladdons:lime_spray=§alimetkový sprej
+item.marveladdons:magenta_spray=§dfialovorůžový sprej
+item.marveladdons:orange_spray=§6oranžový sprej
+item.marveladdons:pink_spray=§drůžový sprej
+item.marveladdons:purple_spray=§5fialový sprej
+item.marveladdons:red_spray=§cčervený sprej
+item.marveladdons:white_spray=§fbílý sprej
+item.marveladdons:yellow_spray=§ežlutý sprej
+item.marveladdons:black_spray=černý sprej
+
+item.marveladdons:white_fabric=§fbílá látka
+item.marveladdons:light_gray_fabric=§7světle šedá látka
+item.marveladdons:gray_fabric=§8šedá látka
+item.marveladdons:black_fabric=černá látka
+item.marveladdons:red_fabric=§cčervená látka
+item.marveladdons:orange_fabric=§6oranžová látka
+item.marveladdons:yellow_fabric=§ežlutá látka
+item.marveladdons:lime_fabric=§asvětle zelená látka
+item.marveladdons:green_fabric=§2zelená látka
+item.marveladdons:cyan_fabric=§3tyrkysová látka
+item.marveladdons:light_blue_fabric=§bsvětle modrá látka
+item.marveladdons:blue_fabric=§9modrá látka
+item.marveladdons:purple_fabric=§5fialová látka
+item.marveladdons:magenta_fabric=§dfialovorůžová látka
+item.marveladdons:pink_fabric=§drůžová látka
+item.marveladdons:brown_fabric=§6hnědá látka
+item.marveladdons:glasses=§fskla do masky
+itemGroup.name.spray=§6Spreje
+itemGroup.name.fabric=§bRole látky
+
+entity.spidermanaddon:punisher.name=Punisher
+item.spawn_egg.entity.spidermanaddon:punisher.name=Vyvolat Punisher
+entity.spidermanaddon:electro.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro.name=Vyvolat Electro
+entity.spidermanaddon:mano_ninja.name=Ninja z organizace Hand
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=Vyvolat ninju z organizace Hand
+entity.spidermanaddon:scorpion.name=Scorpion
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Vyvolat Scorpion
+entity.spidermanaddon:tarantula.name=Tarantula
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Vyvolat Tarantula
+entity.spidermanaddon:symbiotes.name=Symbionti
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=Vyvolat symbionty
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Vyvolat Kraven
+entity.spidermanaddon:mayor_fisk.name=Kingpin
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Vyvolat Kingpin
+entity.spidermanaddon:boomerang.name=Bumerang
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Vyvolat bumerang
+
+item.spidermanaddon:miles_morales_sensor=Sken
+item.spidermanaddon:miles_morales_invisibility=Neviditelnost
+item.spidermanaddon:miles_morales_focus=Zaostření
+item.spidermanaddon:miles_morales_venom_punch=Venomův úder
+item.spidermanaddon:miles_morales_venom_jump=Venomův skok
+item.spidermanaddon:miles_morales_venom_smash=Venomův drtivý úder
+item.spidermanaddon:miles_morales_combat=Boj
+
+message.spiderman_resistance.shield=Vaše pavoučí odolnost vás ochránila na poslední chvíli.
+
+ui.laboratory_workbench.title=Laboratorní pracovní stůl
+ui.laboratory_workbench.body=Vyberte vylepšení pro své schopnosti Spider-Mana.
+
+ui.laboratory_workbench.health=Zdraví: úroveň %s/%s
+ui.laboratory_workbench.resistance=Odolnost: úroveň %s/%s
+ui.laboratory_workbench.focus=Zaostření: úroveň %s/%s
+
+ui.laboratory_workbench.health.title=Vylepšit zdraví
+ui.laboratory_workbench.resistance.title=Vylepšit odolnost
+ui.laboratory_workbench.focus.title=Vylepšit soustředění
+
+ui.laboratory_workbench.health.body=Aktuální úroveň: %s/%s\nCena: %s součástek.\n\nChcete vylepšit své zdraví?
+ui.laboratory_workbench.resistance.body=Aktuální úroveň: %s/%s\nCena: %s součástek.\n\nChcete vylepšit svou odolnost?
+ui.laboratory_workbench.focus.body=Aktuální úroveň: %s/%s\nCena: %s součástek.\n\nChcete vylepšit své soustředění?
+
+ui.laboratory_workbench.upgrade=Vylepšit
+ui.laboratory_workbench.cancel=Zrušit
+
+ui.laboratory_workbench.no_components=Nemáte dostatek součástek. Potřebujete %s součástek.
+ui.laboratory_workbench.max_level=Toto vylepšení je již na maximální úrovni.
+
+ui.laboratory_workbench.health.success=Zdraví vylepšeno na úroveň %s.
+ui.laboratory_workbench.resistance.success=Odolnost vylepšena na úroveň %s.
+ui.laboratory_workbench.focus.success=Soustředění vylepšeno na úroveň %s.
+
+item.spiderverse:spiderman_rivals_mask=Maska Spider-Man: Rivals
+item.spiderverse:spiderman_rivals_suit=Oblek Spider-Man: Rivals
+item.spiderverse:spiderman_2099_white_mask=Bílá maska Spider-Mana 2099
+item.spiderverse:spiderman_2099_white_suit=Bílý oblek Spider-Mana 2099
+item.spiderverse:spiderman_brand_new_day_mask=Maska Spider-Man: Brand New Day
+item.spiderverse:spiderman_brand_new_day_suit=Oblek Spider-Man: Brand New Day
+item.spiderverse:spider_oni_mask=Maska Spider-Oni
+item.spiderverse:spider_oni_suit=Oblek Spider-Oni
+item.spiderverse:spiderman_black_gold_mask=Černo-zlatá maska Spider-Mana
+item.spiderverse:spiderman_black_gold_suit=Černo-zlatý oblek Spider-Mana
+item.spiderverse:spiderman_mk1_mask=Maska Spider-Man MK I
+item.spiderverse:spiderman_mk1_suit=Oblek Spider-Man MK I
+item.spiderverse:spiderman_mk2_mask=Maska Spider-Man MK II
+item.spiderverse:spiderman_mk2_suit=Oblek Spider-Man MK II
+item.spiderverse:spiderman_mk3_mask=Maska Spider-Man MK III
+item.spiderverse:spiderman_mk3_suit=Oblek Spider-Man MK III
+item.spiderverse:spiderman_mk4_mask=Maska Spider-Man MK IV
+item.spiderverse:spiderman_mk4_suit=Oblek Spider-Man MK IV
+item.spiderverse:spiderman_miles_morales_2099_mask=Spider-Man: Miles Morales 2099 Maska
+item.spiderverse:spiderman_miles_morales_2099_suit=Spider-Man: Miles Morales 2099 Oblek
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Spider-Man: Miles Morales - Purple Reign Maska
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Spider-Man: Miles Morales - Purple Reign Oblek
+item.spiderverse:silk_web_mask=Silk: Web Oblek Maska
+item.spiderverse:silk_web_suit=Silk: Web Oblek
+item.spiderverse:scarlet_spider_2_mask=Scarlet Spider II Maska
+item.spiderverse:scarlet_spider_2_suit=Scarlet Spider II Oblek
+item.spiderverse:spiderman_dark_mask=Spider-Man Dark Maska
+item.spiderverse:spiderman_dark_suit=Spider-Man Dark Oblek
+item.spiderverse:spiderman_into_the_spiderverse_mask=Spider-Man: Into the Spider-Verse Maska
+item.spiderverse:spiderman_into_the_spiderverse_suit=Spider-Man: Into the Spider-Verse Oblek
+item.spiderverse:spiderman_miles_morales_2020_mask=Miles Morales 2020 Maska
+item.spiderverse:spiderman_miles_morales_2020_suit=Miles Morales 2020 Oblek
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Miles Morales 2020 Maska
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Miles Morales 2020 Oblek
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Miles Morales 2020 Maska
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Miles Morales 2020 Oblek
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Miles Morales 2020 Maska
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Miles Morales 2020 Oblek
+item.spiderverse:spiderman_blue_mask=Spider-Man Blue Maska
+item.spiderverse:spiderman_blue_suit=Spider-Man Blue Oblek
+item.spiderverse:spiderman_antivenom_classic_mask=Spider-Man Classic Anti-Venom Maska
+item.spiderverse:spiderman_antivenom_classic_suit=Spider-Man Classic Anti-Venom Oblek
+item.spiderverse:poison_mask=Spider-Man: Poison Maska
+item.spiderverse:poison_suit=Spider-Man: Poison Oblek
+item.spiderverse:spiderman_king_in_black_mask=Spider-Man: King in Black Maska
+item.spiderverse:spiderman_king_in_black_suit=Spider-Man: King in Black Oblek
+item.spiderverse:spidergwen_symbiont_mask=Gwenom Maska
+item.spiderverse:spidergwen_symbiont_suit=Gwenom Oblek
+item.spiderverse:spiderman_zombie_black_mask=Symbiote Zombie Spider-Man Maska
+item.spiderverse:spiderman_zombie_black_suit=Symbiote Zombie Spider-Man Oblek
+item.spiderverse:spiderman_zombie_mask=Maska Zombie Spider-Mana
+item.spiderverse:spiderman_zombie_suit=Oblek Zombie Spider-Mana
+item.spiderverse:arachknight_mask=Arachknight Maska
+item.spiderverse:arachknight_suit=Arachknight Oblek
+item.spiderverse:spiderman_cyborg_mask=Kyborgská maska Spider-Mana
+item.spiderverse:spiderman_cyborg_suit=Kyborgský oblek Spider-Mana
+item.spiderverse:spider_carnage_mask=Spider-Carnage Maska
+item.spiderverse:spider_carnage_suit=Spider-Carnage Oblek
+item.spiderverse:punisher_spiderman_mask=Spider-Punisher Maska
+item.spiderverse:punisher_spiderman_suit=Spider-Punisher Oblek
+item.spiderverse:assassin_spiderman_mask=Maska Spider-Man: Assassin
+item.spiderverse:assassin_spiderman_suit=Oblek Spider-Man: Assassin
+item.spiderverse:mayday_parker_black_mask=Symbiote Mayday Parker Maska
+item.spiderverse:mayday_parker_black_suit=Symbiote Mayday Parker Oblek
+item.spiderverse:mayday_parker_mask=Maska Mayday Parker
+item.spiderverse:mayday_parker_suit=Oblek Mayday Parker
+item.spiderverse:spiderman_classic_black_red_spider_mask=Symbiotická maska Spider-Mana (červený pavouk)
+item.spiderverse:spiderman_classic_black_red_spider_suit=Symbiotický oblek Spider-Mana (červený pavouk)
+item.spidermanaddon:agent_venom_powers=Schopnosti Agenta Venoma
+item.spidermanaddon:agent_venom_fusil=Útočná puška
+item.spidermanaddon:agent_venom_missiles=Raketomet
+item.spidermanaddon:agent_venom_pistols=Pistole
+item.marveladdons:venom_item=Symbiont
+
+gui.spidermanaddon.black=Černá
+gui.spidermanaddon.white=Bílá
+gui.spidermanaddon.dark_blue=Tmavě modrá
+gui.spidermanaddon.light_blue=Světle modrá
+gui.spidermanaddon.snow=Sněhová
+gui.spidermanaddon.purple=Fialová
+gui.spidermanaddon.red=Červená
+
+gui.spidermanaddon.symbiont_color=Barva symbionta
+gui.spidermanaddon.symbiont_color_body=Vyberte barvu svého symbionta
+gui.spidermanaddon.symbiont_color_changed=Barva symbionta změněna
+gui.spidermanaddon.symbiont_wings=Křídla symbionta
+gui.spidermanaddon.symbiont_wings_body=Zapnout nebo vypnout křídla symbionta
+gui.spidermanaddon.symbiont_wings_enable=Zapnout křídla
+gui.spidermanaddon.symbiont_wings_disable=Vypnout křídla
+gui.spidermanaddon.symbiont_wings_enabled=Křídla zapnuta
+gui.spidermanaddon.symbiont_wings_disabled=Křídla vypnuta
+
+gui.spidermanaddon.agent_venom_suits=Obleky Agenta Venoma
+gui.spidermanaddon.agent_venom_suits_body=Vyberte exkluzivní oblek Agenta Venoma
+gui.spidermanaddon.agent_venom_suit_unlocked=Oblek Agent Venom odemčen
+item.spidermanaddon:agent_venom_thunderbolts_mask=Agent Venom: maska Thunderbolts
+item.spidermanaddon:agent_venom_thunderbolts_suit=Agent Venom: oblek Thunderbolts
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=Agent Venom: Harry Osborn Maska (Spider Emblem)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=Agent Venom: Harry Osborn Oblek (Spider Emblem)
+item.spidermanaddon:agent_venom_spiderman2_mask=Agent Venom: maska Harryho Osborna
+item.spidermanaddon:agent_venom_spiderman2_suit=Agent Venom: oblek Harryho Osborna
+item.spidermanaddon:agent_anti_venom_mask=Maska Agenta Anti-Venoma
+item.spidermanaddon:agent_anti_venom_suit=Oblek Agenta Anti-Venoma
+item.spidermanaddon:agent_venom_mask=Maska Agenta Venoma
+item.spidermanaddon:agent_venom_suit=Oblek Agenta Venoma
+
+gui.spidermanaddon.symbiont_skins=Vzhledy
+gui.spidermanaddon.symbiont_skins_body=Vyberte vzhled pro Venom
+gui.spidermanaddon.symbiont_skin_need_capsule=K odemčení tohoto vzhledu potřebujete kapsli se symbiontem
+gui.spidermanaddon.symbiont_skin_unlocked=Vzhled odemčen
+gui.spidermanaddon.symbiont_skin_changed=Vzhled změněn
+gui.spidermanaddon.symbiont_venom_required=Musíte se proměnit ve Venoma
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=Agent Venom povolen
+gui.spidermanaddon.symbiont_agent_venom_disabled=Agent Venom deaktivován
+gui.spidermanaddon.symbiont_agent_venom_deactivate=Deaktivovat Agent Venom
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=Opravdu chcete deaktivovat Agent Venom?
+gui.spidermanaddon.symbiont_venom_enabled=Proměna na Venom povolena
+gui.spidermanaddon.symbiont_venom_disabled=Proměna na Venom deaktivována
+gui.spidermanaddon.symbiont_venom_deactivate=Deaktivovat proměnu na Venom
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=Opravdu chcete deaktivovat proměnu na Venom?
+gui.spidermanaddon.symbiont_venom_incompatible=Symbióza není kompatibilní: ve slotu pro nohy nesmíte mít nic nasazeno.
+
+item.spidermanaddon:venom_rage=Režim zuřivosti
+item.marveladdons:venom_cellular_corrosion=Buněčná koroze
+item.marveladdons:venom_eat=Nakrm
+item.marveladdons:venom_axe=Symbiontová sekera
+item.marveladdons:venom_knife_whip=Symbiontový nůž
+item.marveladdons:venom_explotion=Symbiontový výbuch
+
+gui.spidermanaddon.symbiont_deactivate=Deaktivovat symbionta
+gui.spidermanaddon.symbiont_deactivate_confirm=Opravdu chcete deaktivovat schopnosti symbionta?
+gui.spidermanaddon.symbiont_powers_enabled=Schopnosti symbionta povoleny
+gui.spidermanaddon.symbiont_powers_disabled=Schopnosti symbionta deaktivovány
+gui.spidermanaddon.confirm=Potvrdit
+gui.spidermanaddon.symbiont_menu_body=Systém Venomova symbionta
+gui.spidermanaddon.symbiont_progress=Zobrazit postup
+gui.spidermanaddon.symbiont_activate=Aktivovat symbionta
+gui.spidermanaddon.symbiont_unlock_suit=Odemknout oblek
+gui.spidermanaddon.symbiont_unlock_suit_body=Vyberte dostupný oblek symbionta
+gui.spidermanaddon.symbiont_level=Úroveň
+gui.spidermanaddon.symbiont_exp=Zkušenosti
+gui.spidermanaddon.symbiont_powers=Povolit schopnosti symbionta
+gui.spidermanaddon.symbiont_venom=Proměnit se ve Venoma
+gui.spidermanaddon.symbiont_venom_locked=Proměnit se ve Venoma §cZamčeno
+gui.spidermanaddon.symbiont_agent_venom=Agent Venom
+gui.spidermanaddon.symbiont_agent_venom_locked=Agent Venom §cZamčeno
+gui.spidermanaddon.symbiont_suit_missing=Musíte mít nasazený celý oblek
+gui.spidermanaddon.symbiont_suit_unlocked=Oblek symbionta odemčen
+gui.spidermanaddon.symbiont_bonded=Nyní jste hostitelem Venomova symbionta
+gui.spidermanaddon.not_symbiont_host=Nejste hostitelem symbionta
+gui.spidermanaddon.back=Zpět
+
+gui.spidermanaddon.symbiont_rank_0=Hostitel
+gui.spidermanaddon.symbiont_rank_1=Spojený
+gui.spidermanaddon.symbiont_rank_2=Zuřící hostitel
+gui.spidermanaddon.symbiont_rank_3=Smrtící ochránce
+gui.spidermanaddon.symbiont_rank_4=Dokonalé přizpůsobení
+gui.spidermanaddon.symbiont_rank_5=Agent Venom
+gui.spidermanaddon.symbiont_rank_6=Živoucí arzenál
+gui.spidermanaddon.symbiont_rank_7=Anti-Venom
+gui.spidermanaddon.symbiont_rank_8=Dokonalé pouto
+gui.spidermanaddon.symbiont_rank_9=Křídla krále
+gui.spidermanaddon.symbiont_rank_10=Král v černém
+
+item.spidermanaddon:black_cat_whip_thef=Hák pro štěstí
+item.spidermanaddon:black_cat_whip_claws=Drápový bič
+item.spidermanaddon:black_cat_swing=Hák na houpání
+item.spidermanaddon:black_cat_claws=Útok drápy
+
+item.spidermanaddon:mysterio_gas=Plyn iluzí
+item.spidermanaddon:mysterio_powers=Schopnosti Mysterio
+item.spidermanaddon:mysterio_invoke=Vypustit návnadu
+item.spidermanaddon:mysterio_drones=Útočné drony
+item.spidermanaddon:mysterio_laser=Mysterioův paprsek
+item.spidermanaddon:mysterio_clones=Přivolat klony
+item.spiderverse:mysterio_far_from_home_suit=Mysterio: oblek Far From Home
+item.spiderverse:mysterio_far_from_home_helmet=Helma Mysterio: Far From Home
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=Výbušné naváděcí čepele Green Goblina
+item.spidermanaddon:pumpkin_knife_guide=Naváděcí čepele Green Goblina
+item.spidermanaddon:green_goblin_powers=Schopnosti Green Goblina
+item.spidermanaddon:green_goblin_raimi_blades=Zasouvací čepele Green Goblina
+item.spidermanaddon:green_goblin_spiderman3_blades=Čepele Green Goblina
+item.spiderverse:green_goblin_spiderman3_suit=Green Goblin – oblek Spider-Man 3
+item.spiderverse:green_goblin_spiderman3_mask=Green Goblin – maska Spider-Man 3
+item.spiderverse:green_goblin_no_way_home_suit=Green Goblin – oblek Spider-Man: No Way Home
+item.spiderverse:green_goblin_no_way_home_mask=Green Goblin – maska Spider-Man: No Way Home
+item.spidermanaddon:planeador_spiderman3_item=Kluzák Green Goblina
+entity.spidermanaddon:planeador_spiderman3.name=Kluzák Green Goblina
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=Vyvolat kluzák Green Goblina
+
+gui.spidermanaddon.confirm_upgrade=Vylepšit vystřelovač pavučin
+gui.spidermanaddon.upgrade_cost=K vylepšení tohoto vystřelovače pavučin potřebujete 10 součástek
+gui.spidermanaddon.upgrade=Vylepšit
+gui.spidermanaddon.max_level=Tento vystřelovač pavučin je již na maximální úrovni
+gui.spidermanaddon.upgraded=Vystřelovač pavučin vylepšen
+
+gui.spidermanaddon.no_upgrades=Potřebujete vylepšitelný vystřelovač pavučin.
+gui.spidermanaddon.upgrade_menu=Vylepšit vystřelovač pavučin
+gui.spidermanaddon.select_upgrade=Vyberte vystřelovač pavučin
+gui.spidermanaddon.confirm_remove=Obnovit 5 součástek?
+gui.spidermanaddon.remove=Odebrat
+gui.spidermanaddon.shooter_removed=Vystřelovač pavučin odebrán
+gui.spidermanaddon.cannot_remove_equipped=Nasazený vystřelovač pavučin nelze odebrat
+
+gui.spidermanaddon.upgrade_shooter=Vylepšit vystřelovač pavučin
+gui.spidermanaddon.remove_shooter=Odebrat vystřelovač pavučin
+gui.spidermanaddon.settings=Konfigurovat vystřelovač pavučin
+
+gui.spidermanaddon.confirm_unlock=Odemknout vystřelovač pavučin
+gui.spidermanaddon.unlock_cost=Požadováno 10 součástek
+gui.spidermanaddon.unlock=Odemknout
+gui.spidermanaddon.cancel=Zrušit
+gui.spidermanaddon.not_enough_components=Nemáte dostatek součástek.
+gui.spidermanaddon.unlocked=Vystřelovač pavučin odemčen
+
+gui.spidermanaddon.select_unlock=Vyberte vystřelovač pavučin
+gui.spidermanaddon.unlock_menu=Odemknout vystřelovač pavučin
+gui.spidermanaddon:web_shot=Vystřelovač pavučin
+gui.spidermanaddon.loadout=§cVýbava vystřelovače pavučin
+gui.spidermanaddon.web_shooter_loadout=Načíst vystřelovač pavučin
+gui.spidermanaddon.empty=§cPrázdné
+gui.spidermanaddon.config=§aVystřelovač pavučin nakonfigurován.
+gui.spidermanaddon.no_info=§cNebyly nalezeny žádné informace.
+
+spidermanaddon.web_line.no_build=§cV okruhu 30 bloků není žádný druhý koncový bod.
+spidermanaddon.web_line.empty=§cNemáte dostatek tekutiny.
+
+item.spidermanaddon:web_shield=Pavučinový štít
+item.spidermanaddon:web_whip=Pavučinový bič
+item.spidermanaddon:web_line=Pavučinové lano
+item.spidermanaddon:web_bomb=Granát z pavučiny
+item.spidermanaddon:spider_drone=Pavoučí dron
+item.spidermanaddon:web_hook=Pavučinový hák
+
+item.mzaddon:spider_web_cartridge=Kazeta pavučiny
+item.spidermanaddon:spiderman_spin_punch=Otáčivý útok
+item.spidermanaddon:spiderman_kick=Létající kop
+item.spidermanaddon:spiderman_focus=Soustředění
+item.spidermanaddon:spiderman_sensor=Skenování
+item.spidermanaddon:spiderman_punch=Úder
+item.spidermanaddon:spiderman_combat=Boj
+
+item.spiderverse:silk_mask=Silk maska
+item.spiderverse:silk_suit=Silk oblek
+spidermanaddon.venom_wings=Nastavit létání
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Vyvolat Miles Morales
+entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Man
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Vyvolat Spectacular Spider-Man
+entity.spidermanaddon:spider_gwen.name=Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Vyvolat Spider-Gwen
+entity.spidermanaddon:spider_ham.name=Spider-Ham
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Vyvolat Spider-Ham
+entity.spidermanaddon:spider_punk.name=Spider-Punk
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Vyvolat Spider-Punk
+entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Vyvolat Spider-Man 2099
+entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way home
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Vyvolat Spider-Man: No way home
+entity.spidermanaddon:spiderman_noir.name=Spider-Noir
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Vyvolat Spider-Noir
+entity.spidermanaddon:spiderman_raimi.name=Spider-Man (Earth-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Vyvolat Spider-Man (Earth-96283)
+entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Vyvolat Spider-Man Unlimited
+entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (Earth-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Vyvolat Spider-Man (Earth-120703)
+
+item.spidermanaddon:spider_ham_skin=Vzhled Spider-Ham
+item.spidermanaddon:spider_ham_hammer=Kladivo Spider-Hama
+
+spidermanaddon.gizmo_camera_mode.title=Režim kamery
+spidermanaddon:camera.free=Volná kamera
+spidermanaddon:camera.selfie=Kamera na selfie
+spidermanaddon:camera.clear=Vypnout režim kamery
+spidermanaddon:camera.animations=Animace
+spidermanaddon:camera.lyla=Zapnout/vypnout Lylu
+
+spidermanaddon:camera.lyla.off=Vypnout
+spidermanaddon:camera.lyla.on=Zapnout
+
+item.spidermanaddon:multiversal_chip=Multiverzální čip
+item.spidermanaddon:gizmo_portal=Vytvořit portál
+item.spidermanaddon:gizmo_camera_mode=Režim kamery
+
+spidermanaddon.gizmo.title=Multiverzální přístroj
+spidermanaddon.portal=Vytvořit portál
+spidermanaddon.spiderman=Přivolat Spider-Mana
+spidermanaddon.villain=Přivolat padoucha
+spidermanaddon.miles_morales=Miles Morales (Earth 1610B)
+spidermanaddon.spectacular_spiderman=Spectacular Spider-Man (Earth 26496)
+spidermanaddon.spider_punk=Spider-Punk (Earth 138B)
+spidermanaddon.spider_gwen=Spider-Gwen (Earth 65B)
+spidermanaddon.spider_ham=Spider-Ham (Earth 8311B)
+spidermanaddon.spiderman_2099=Spider-Man 2099 (Earth 928B)
+spidermanaddon.spiderman_no_way_home=Spider-Man - MCU (Earth 199999)
+spidermanaddon.spiderman_noir=Spider-Noir (Earth 90214)
+spidermanaddon.spiderman_raimi=Spider-Man (Earth 96283)
+spidermanaddon.spiderman_unlimited=Spider-Man Unlimited (Earth 751263)
+spidermanaddon.the_amazing_spiderman=The Amazing Spider-Man (Earth 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=Domácí maska The Amazing Spider-Man
+item.spiderverse:the_amazing_spiderman_casero_suit=Domácí oblek The Amazing Spider-Man
+item.spiderverse:spiderman_new_blue_mask=Nová modrá maska Spider-Mana
+item.spiderverse:spiderman_new_blue_suit=Nový modrý oblek Spider-Mana
+item.spiderverse:yfn_spiderman_oscorp_mask=Maska obleku Oscorp – Your Friendly Neighborhood Spider-Man
+item.spiderverse:yfn_spiderman_oscorp_suit=Oblek Oscorp – Your Friendly Neighborhood Spider-Man
+item.spiderverse:yfn_spiderman_mask=Maska Your Friendly Neighborhood Spider-Man
+item.spiderverse:yfn_spiderman_suit=Oblek Your Friendly Neighborhood Spider-Man
+item.spiderverse:spiderman_bombastic_bag_man_mask=Maska Spider-Man: Bombastic Bag-Man
+item.spiderverse:spiderman_bombastic_bag_man_suit=Oblek Spider-Man: Bombastic Bag-Man
+
+item.spidermanaddon:web_bomb_item=Pavoučí bomba
+item.spidermanaddon:spider_drone_item=Pavoučí dron
+item.spidermanaddon:mobile=Mobilní telefon
+item.spidermanaddon:dr_octopus_take=Uchopit
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Maska Spider-Man Noir: Into the Spider-Verse
+item.spiderverse:the_amazing_spiderman_black_mask=The Amazing Spider-Man černá maska
+item.spidermanaddon:dr_octopus_chip=Čip k vyvolání Doctor Octopuse [Earth-616]
+item.spidermanaddon:multiversal_gizmo=Multiverzální přístroj
+item.spidermanaddon:web_shooter=Vystřelovač pavučiny
+item.spidermanaddon:web_shooter_balanceo=Vystřelovač pavučin [Houpání]
+entity.spidermanaddon:air_compressor.name=Vzduchový kompresor
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=Vzduchový kompresor
+entity.spidermanaddon:viento.name=Vítr
+item.spawn_egg.entity.spidermanaddon:viento.name=Vítr
+
+spidermanaddon.symbiont_pull_lock=Proveď symbiotické zatažení, které chytí 4 blízké nepřátele a rozdrtí je.
+spidermanaddon.antivenom_bomb_lock=Hoď Anti-Venom bombu, která způsobí velké poškození nepřátelům.
+spidermanaddon.antivenom_tempest_lock=Vytvoř Anti-Venom bouři, která způsobí velké poškození nepřátelům.
+spidermanaddon.symbiote_whip_lock=Bojujte pomocí symbiotických čepelí.
+spidermanaddon.rage_mode_lock=Aktivujte Režim hněvu pro zvýšení odolnosti a poškození v boji a získejte na pár sekund nesmrtelnost.
+spidermanaddon.rage_mode_unlock.price=Cena: 25 XP
+spidermanaddon.symbiote_powers_lock.price=Cena: 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=Green Goblin dýňová bomba [Raimi Saga]
+item.spidermanaddon:planeador_raimi_item=Green Goblin kluzák [Raimi Saga]
+item.spidermanaddon:dr_octopus_walk=Pohyb s kovovými pažemi
+item.spidermanaddon:dr_octopus_attack=Útok
+entity.spidermanaddon:suits_machine.name=Výrobník obleků
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=Výrobník obleků
+entity.spidermanaddon:taskmaster_drone.name=Taskmasterův dron
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=Vyvolat Taskmasterův dron
+item.spidermanaddon:iron_arms_menu=Nabídka
+item.spidermanaddon:concussive_blast=Vystřelovač pavučin: otřesový výboj
+item.spidermanaddon:web_grabber=Vystřelovač pavučin: pavučinový uchopovač
+item.spidermanaddon:impact_web=Vystřelovač pavučin: nárazová pavučina
+item.spiderverse:superior_spiderman_black_mask=Superior Spider-Man černá maska
+item.spiderverse:spiderman_raimi_black_mask=Spider-Man Raimiho černá maska
+item.spiderverse:spiderman_ps5_symbiote_mask=Maska symbiotického obleku Insomniac's Spider-Man 2
+item.spiderverse:spiderman_ps4_black_mask=Maska černého obleku Insomniac's Spider-Man 2
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Spider-Man Miles Morales: Across The Spider-Verse maska
+item.spiderverse:spiderman_classic_black_mask=Spider-Man Classic černá maska
+item.spiderverse:venom_s3_mask=Maska Venom [Spider-Man 3]
+item.spiderverse:spiderman_antivenom_mask=Spider-Man: Antivenom maska
+item.spiderverse:spirit_spider_mask=Maska Spirit Spider
+item.spiderverse:spectacular_spiderman_black_mask_3=Spectacular Spider-Man 3.0 černá maska
+item.spiderverse:spectacular_spiderman_black_mask_2=Spectacular Spider-Man 2.0 černá maska
+item.spiderverse:spectacular_spiderman_black_mask=Spectacular Spider-Man černá maska
+item.spiderverse:spectacular_spiderman_mask=Spectacular Spider-Man maska
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Spider-Man 2099: Across The Spider-Verse maska
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Spider-Man 2099: Across The Spider-Verse maska
+item.spiderverse:anti_ock_mask_3=maska obleku Anti-Ock
+item.spiderverse:anti_ock_mask_2=maska obleku Anti-Ock
+item.spiderverse:anti_ock_mask_1=maska obleku Anti-Ock
+item.spiderverse:anti_ock_mask=Maska obleku Anti-Ock
+item.spiderverse:aracnido_jr_mask=Arachnid Jr. maska
+item.spiderverse:ezekiel_sims_mask=Ezekiel Sims maska
+item.spiderverse:human_spider_mask=Maska Human Spider
+item.spiderverse:into_the_spiderverse_sb_mask=Into The Spider-Verse SB maska
+item.spiderverse:miles_morales_10th_mask_3=Spider-Man Miles Morales: maska k 10. výročí
+item.spiderverse:miles_morales_10th_mask_2=Spider-Man Miles Morales: maska k 10. výročí
+item.spiderverse:miles_morales_10th_mask_1=Spider-Man Miles Morales: maska k 10. výročí
+item.spiderverse:miles_morales_10th_mask=Spider-Man Miles Morales: maska k 10. výročí
+item.spiderverse:miles_morales_bodega_cat_mask=Spider-Man Miles Morales: Bodega Cat maska
+item.spiderverse:miles_morales_bodega_cat_mask_1=Spider-Man Miles Morales: Bodega Cat maska
+item.spiderverse:miles_morales_bodega_cat_mask_2=Spider-Man Miles Morales: Bodega Cat maska
+item.spiderverse:miles_morales_bodega_cat_mask_3=Spider-Man Miles Morales: Bodega Cat maska
+item.spiderverse:miles_morales_gold_mask=Spider-Man Miles Morales: Uptown Pride maska
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Miles Morales: Into The Spider-Verse maska
+item.spiderverse:miles_morales_wolverine_mask_3=Miles Morales: Wolverine maska
+item.spiderverse:miles_morales_wolverine_mask_2=Miles Morales: Wolverine maska
+item.spiderverse:miles_morales_wolverine_mask_1=Miles Morales: Wolverine maska
+item.spiderverse:miles_morales_wolverine_mask=Miles Morales: Wolverine maska
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Scarlet Spider: Across The Spider-Verse maska
+item.spiderverse:spiderman_67_mask=Spider-Man: 67° maska
+item.spiderverse:spiderman_90_black_mask_1=Spider-Man: The Animated Series [Red & Blue Borders] černá maska
+item.spiderverse:spiderman_90_black_mask=Spider-Man: The Animated Series černá maska
+item.spiderverse:spiderman_90_mask=Spider-Man: The Animated Series maska
+item.spiderverse:spiderman_cero_mask=Spider-Man: Zero maska
+item.spiderverse:spiderman_future_foundation_mask=Spider-Man: Future Foundation maska
+item.spiderverse:spiderman_homecoming_mask=Maska obleku Stark pro Spider-Mana
+item.spiderverse:spiderman_homemade_mask=Spider-Man: domácí maska
+item.spiderverse:spiderman_india_mask=Spider-Man India: Across The Spider-Verse oblek
+item.spiderverse:spiderman_far_from_home_mask=Spider-Man: vylepšená maska
+item.spiderverse:spiderman_last_stand_mask=Spider-Man: Last Stand maska
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Miles Morales: Leap of Faith maska
+item.spiderverse:spiderman_negative_mask=Negativní maska Spider-Mana
+item.spiderverse:spiderman_no_way_home_mask=Hybridní maska Spider-Mana
+item.spiderverse:spiderman_ps4_mask=Insomniac's Spider-Man: vylepšená maska
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Spider-Man: vylepšená maska 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Spider-Man: vylepšená maska 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Spider-Man: Pokročilá maska 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Spider-Man: Pokročilá maska 2.0
+item.spiderverse:spiderman_raimi_mask=Spider-Man: Raimiho maska
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Spider-Man: Secret Wars - Civil War maska
+item.spiderverse:spiderman_stealth_mask=Spider-Man: Big Time maska
+item.spiderverse:spiderman_steve_ditko_mask=Spider-Man: Amazing Fantasy #15 maska
+item.spiderverse:spiderman_unlimited_mask=Spider-Man: Unlimited maska
+item.spiderverse:spiderman_velocity_mask=Spider-Man Velocity maska
+item.spiderverse:spiderman_web_of_shadows_black_mask=Spider-Man: Web of Shadows černá maska
+item.spiderverse:spiderman_web_of_shadows_mask=Spider-Man: Web of Shadows maska
+item.spiderverse:spiderman_what_if_animated_mask=Spider-Man: What If Ep 5 maska
+item.spiderverse:spiderman_what_if_mask=Spider-Man: Disney Land maska
+item.spiderverse:spiderman_wrestler_mask=Zápasnická maska Spider-Mana
+item.spiderverse:superior_spiderman_mask_3=Superior Spider-Man maska
+item.spiderverse:superior_spiderman_mask_2=Superior Spider-Man maska
+item.spiderverse:superior_spiderman_mask_1=Superior Spider-Man maska
+item.spiderverse:superior_spiderman_mask=Superior Spider-Man maska
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Spider-Punk: Across The Spider-Verse maska
+item.spiderverse:the_amazing_spiderman_2_mask=The Amazing Spider-Man 2 maska
+item.spiderverse:spider_punk_mask=Spider-Punk maska
+item.spiderverse:the_amazing_spiderman_1_mask=The Amazing Spider-Man maska
+item.spiderverse:ultimate_spiderman_mask=Ultimate Spider-Man maska
+item.spiderverse:ultimate_spiderman_ucm_mask=Ultimate Spider-Man [MCU] maska
+item.spiderverse:ultimate_spiderman_black_mask=Ultimate Spider-Man černá maska
+item.spiderverse:yfn_spiderman_casero_mask=Your Friendly Neighborhood Spider-Man domácí maska
+item.spidermanaddon:green_goblin_chip=Čip vyvolání: Green Goblin [Earth-616]
+item.spidermanaddon:green_goblin_raimi_chip=Čip vyvolání: Green Goblin [Earth-96283]
+item.spidermanaddon:hobgoblin_chip=Čip vyvolání: Hobgoblin [Earth-616]
+item.spidermanaddon:doctor_octopus_chip=Čip vyvolání: Doctor Octopus [Earth-616]
+item.spidermanaddon:lizard_chip=Čip vyvolání: Lagarto [Earth-616]
+item.spidermanaddon:shocker_chip=Čip vyvolání: Shocker [Earth-616]
+
+item.spidermanaddon:iron_arms=Iron Spider paže
+item.spidermanaddon:spiderman_symbiote_powers=Symbiote Spider-Man schopnosti
+item.spidermanaddon:spiderman_powers=Spider-Man schopnosti
+item.spidermanaddon:web_wings=Pavučinová křídla
+item.spiderverse:green_goblin_raimi_suit=Green Goblin [Raimi] oblek
+item.spiderverse:green_goblin_raimi_mask=Green Goblin [Raimi] maska
+
+spidermanaddon.damage_player.text=Povolit nebo zakázat útoky na hráče; nastavení platí i pro ostatní schopnosti.
+spidermanaddon.activar=Povolit
+spidermanaddon.web_shooter_config=Nastavení
+spidermanaddon.desactivar=Zakázat
+spidermanaddon.symbiont_suit.unlock=Odemknout: 5 XP
+spidermanaddon.suit_lock=Odemknout symbiotický oblek [Režim zuřivosti]
+spidermanaddon.cancel=Zrušit
+spidermanaddon.back=Zpět
+spidermanaddon.none=Žádné
+spidermanaddon.venom=Venom
+spidermanaddon.antivenom=Antivenom
+spidermanaddon.carnage=Carnage
+spidermanaddon.ultimate_venom=Ultimate Venom
+spidermanaddon.symbiote_config=Nastavení
+spidermanaddon.damage_player=Poškození hráčů
+spidermanaddon.symbiote_skin=Typ symbiota
+spidermanaddon.symbiote_suit=Symbiotický oblek [Režim zuřivosti]
+spidermanaddon.spiderman_powers=Spider-Man schopnosti
+spidermanaddon.block_powers=Vylepšení zamčeno.
+spidermanaddon.block_powers_text=Nejprve odemkněte požadovaná vylepšení, abyste získali přístup k tomuto vylepšení.
+spidermanaddon.continuar=Pokračovat
+spidermanaddon.unlock_mejora=Odemknout vylepšení
+spidermanaddon.swing_1_lock=Houpání: Provádějte triky při střemhlavém letu. Za triky získáváte XP.
+spidermanaddon.combat_0_lock=Boj: Zvyšuje poškození útoků na blízko.
+spidermanaddon.combat_1_lock=Boj: Zvyšuje poškození zemních rázů a vzdušných úderů.
+spidermanaddon.combat_2_lock=Boj: Vzdušný úder může odpálit blízké nepřátele.
+spidermanaddon.health_0_lock=Zdraví: Další srdíčka.
+spidermanaddon.health_1_lock=Zdraví: Když vám zbývají méně než 2 srdíčka, získáte na 10 sekund efekt Absorpce. Obnoví se po 30 sekundách.
+spidermanaddon.health_2_lock=Zdraví: Obnovuje se každých 15 sekund, pokud neutrpíte žádné poškození.
+spidermanaddon.swing_1.unlock=Odemknout: 10 XP
+spidermanaddon.combat_0.unlock=Odemknout: 10 XP
+spidermanaddon.combat_1.unlock=Odemknout: 15 XP
+spidermanaddon.combat_2.unlock=Odemknout: 20 XP
+spidermanaddon.health_0.unlock=Odemknout: 10 XP
+spidermanaddon.health_1.unlock=Odemknout: 15 XP
+spidermanaddon.health_2.unlock=Odemknout: 20 XP
+
+item.spiderverse:spiderman_classic_mask=Klasická maska Spider-Mana
+item.spiderverse:spiderman_classic_mask_1=Spider-Man: Klasická maska
+item.spiderverse:spiderman_classic_mask_2=Spider-Man: Klasická maska
+item.spiderverse:spiderman_classic_mask_3=Spider-Man: Klasická maska
+item.spiderverse:scarlet_spider_mask=Maska Scarlet Spider
+item.spiderverse:scarlet_spider_mask_1=Maska Scarlet Spider
+item.spiderverse:scarlet_spider_mask_2=Maska Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Maska Scarlet Spider
+item.spiderverse:iron_spider_mask=Maska Iron Spider (klasická verze)
+item.spiderverse:iron_spider_mask_1=Iron Spider maska (Classic)
+item.spiderverse:iron_spider_mask_2=Iron Spider maska (Classic)
+item.spiderverse:iron_spider_mask_3=Iron Spider maska (Classic)
+item.spiderverse:iron_spider_ucm_mask=Maska Iron Spider [MCU]
+item.spiderverse:spiderman_2099_mask_1=Spider-Man 2099 maska
+item.spiderverse:spiderman_2099_mask_2=Spider-Man 2099 maska
+item.spiderverse:spiderman_2099_mask_3=Spider-Man 2099 maska
+item.spiderverse:spiderman_2099_mask=Maska Spider-Mana 2099
+item.spiderverse:miles_morales_mask=Maska Milese Moralese
+item.spiderverse:ghost_spider_mask=Maska Ghost Spider
+
+entity.spidermanaddon:taskmaster_sequels.name=Taskmasterovi poskoci
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=Vyvolat Taskmasterovy poskoky
+spidermanaddon.repetir=Zopakovat výzvu
+spidermanaddon.taskmaster_challenges.0=Výzva 1
+spidermanaddon.taskmaster_challenges.1=Výzva 2
+spidermanaddon.taskmaster_challenges.2=Výzva 3
+spidermanaddon.taskmaster_challenges.3=Výzva 4
+spidermanaddon.taskmaster_challenges.4=Výzva 5
+spidermanaddon.taskmaster_challenges.start=Spustit
+spidermanaddon.taskmaster_challenges.0.text=Porazte 5 poskoků Taskmastera.
+spidermanaddon.taskmaster_challenges.1.text=Zneškodněte bombu a porazte Taskmasterovy poskoky.
+spidermanaddon.taskmaster_challenges.2.text=Zničte Taskmasterovy drony.
+spidermanaddon.taskmaster_challenges.3.text=Zachraňte civilistu před Taskmasterovými poskoky.
+spidermanaddon.taskmaster_challenges.4.text=Porazte Taskmastera.
+
+spidermanaddon.suitsFabricForm=Vyrobit
+marveladdon:fabricar=Vyrobit
+spidermanaddon.venom_snow_lock=Venom: Snow Symbiote §l§6[Odemknout]
+spidermanaddon.venom_snow_lock.price=Cena: 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[Odemknout]
+spidermanaddon.venompool_lock.price=Cena: 20 XP
+spidermanaddon.venom_2099_lock=Venom 2099 §l§6[Odemknout]
+spidermanaddon.venom_2099_lock.price=Cena: 15 XP
+spidermanaddon.ultimate_venom_spider_lock=Ultimate Venom [s pavoučím emblémem] §l§6[Odemknout]
+spidermanaddon.ultimate_venom_spider_lock.price=Cena: 15 XP
+spidermanaddon.ultimate_venom_lock=Ultimate Venom §l§6[Odemknout]
+spidermanaddon.ultimate_venom_lock.price=Cena: 15 XP
+spidermanaddon.venom_lee_price_lock=Venom: Lee Price §l§6[Odemknout]
+spidermanaddon.venom_lee_price_lock.price=Cena: 15 XP
+spidermanaddon.blue_venom_lock=Venom: Blue §l§6[Odemknout]
+spidermanaddon.blue_venom_lock.price=Cena: 10 XP
+spidermanaddon.venom_movies_lock=Venom: Movies §l§6[Odemknout]
+spidermanaddon.venom_movies_lock.price=Cena: 15 XP
+spidermanaddon.venom.unlock=Odemknout
+
+entity.spidermanaddon:green_goblin_raimi.name=Green Goblin [Raimi Saga]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=Vyvolat Green Goblin [Raimi Saga]
+
+item.spidermanaddon:iron_arms_attack=Železné paže [Attack]
+item.spidermanaddon:spider_rush=Pavoučí nápor
+item.spidermanaddon:spider_shock=Pavoučí šok
+spidermanaddon.iron_arms.title=Kovové pavoučí paže
+item.spidermanaddon:symbiote_menu=Nabídka
+item.spidermanaddon:rage_mode=Režim zuřivosti
+item.spidermanaddon:symbiote_blast=Výbuch symbionta
+spidermanaddon.symbiote_blast=Výbuch symbionta
+item.spidermanaddon:symbiont_pull=Tah symbionta
+spidermanaddon.symbiont_pull=Tah symbionta
+item.spidermanaddon:symbiote_strike=Úder symbionta
+spidermanaddon.symbiote_strike=Úder symbionta
+item.spidermanaddon:antivenom_bomb=Anti-Venom bomba
+spidermanaddon.antivenom_bomb=Anti-Venom bomba
+item.spidermanaddon:antivenom_tempest=Anti-Venom vichřice
+spidermanaddon.antivenom_tempest=Anti-Venom vichřice
+item.spidermanaddon:symbiote_whip=Symbiontové čepele
+spidermanaddon.symbiote_whip=Symbiontové čepele
+
+spidermanaddon.web_grabber.price=Cena: §l§a15 úrovní XP
+spidermanaddon.web_grabber.price5=Cena: §l§a25 úrovní XP
+
+spidermanaddon.web_grabber_lv1=Chytač pavučin - §l§aÚroveň 0 §6[Vylepšit]
+spidermanaddon.web_grabber_lv1_title=Chytač pavučin - §l§aÚroveň 1
+spidermanaddon.web_grabber_lv1_text=Zvyšuje kapacitu zásobníku z 2 na 3 výstřely.
+
+spidermanaddon.web_grabber_lv2=Chytač pavučin - §l§aÚroveň 1 §6[Vylepšit]
+spidermanaddon.web_grabber_lv2_title=Chytač pavučin - §l§aÚroveň 2
+spidermanaddon.web_grabber_lv2_text=Snižuje čas obnovení z 55 sekund na 40 sekund.
+
+spidermanaddon.web_grabber_lv3=Chytač pavučin - §l§aÚroveň 2 §6[Vylepšit]
+spidermanaddon.web_grabber_lv3_title=Chytač pavučin - §l§aÚroveň 3
+spidermanaddon.web_grabber_lv3_text=Zvyšuje dosah uchopení z 6 na 12 bloků.
+
+spidermanaddon.web_grabber_lv4=Chytač pavučin - §l§aÚroveň 3 §6[Vylepšit]
+spidermanaddon.web_grabber_lv4_title=Chytač pavučin - §l§aÚroveň 4
+spidermanaddon.web_grabber_lv4_text=Zvyšuje kapacitu zásobníku z 3 na 4 výstřely.
+
+spidermanaddon.web_grabber_lv5=Pavučinový uchopovač – §l§aúroveň 4 §6[Vylepšit]
+spidermanaddon.web_grabber_lv5_title=Pavučinový uchopovač – §l§aúroveň 5
+spidermanaddon.web_grabber_lv5_text=Zvyšuje počet zajatých nepřátel z 4 na 8.
+
+spidermanaddon.web_grabber_full=Pavučinový uchopovač – §l§aúroveň 5
+spidermanaddon.web_grabber_full_text=Pavučinový uchopovač – §l§aúroveň 5
+spidermanaddon.web_grabber_unlock=Pavučinový uchopovač
+spidermanaddon.web_grabber_lock=Pavučinový uchopovač §l§6[odemknout]
+
+spidermanaddon.concussive_blast.price=Cena: §l§a15 úrovní XP
+spidermanaddon.concussive_blast.price5=Cena: §l§a25 úrovní XP
+
+spidermanaddon.concussive_blast_lv1=Otřesový výboj – §l§aúroveň 0 §6[Vylepšit]
+spidermanaddon.concussive_blast_lv1_title=Otřesový výboj – §l§aúroveň 1
+spidermanaddon.concussive_blast_lv1_text=Zvyšuje kapacitu zásobníku z 2 na 3 výstřely.
+
+spidermanaddon.concussive_blast_lv2=Otřesový výboj – §l§aúroveň 1 §6[Vylepšit]
+spidermanaddon.concussive_blast_lv2_title=Otřesový výboj – §l§aúroveň 2
+spidermanaddon.concussive_blast_lv2_text=Snižuje dobu obnovení z 45 sekund na 35 sekund.
+
+spidermanaddon.concussive_blast_lv3=Otřesový výboj – §l§aúroveň 2 §6[Vylepšit]
+spidermanaddon.concussive_blast_lv3_title=Otřesový výboj – §l§aúroveň 3
+spidermanaddon.concussive_blast_lv3_text=Zvyšuje kapacitu zásobníku z 3 na 4 výstřely.
+
+spidermanaddon.concussive_blast_lv4=Otřesový výboj – §l§aúroveň 3 §6[Vylepšit]
+spidermanaddon.concussive_blast_lv4_title=Otřesový výboj – §l§aúroveň 4
+spidermanaddon.concussive_blast_lv4_text=Snižuje dobu obnovení z 35 sekund na 24 sekund.
+
+spidermanaddon.concussive_blast_lv5=Otřesový výboj – §l§aúroveň 4 §6[Vylepšit]
+spidermanaddon.concussive_blast_lv5_title=Otřesový výboj – §l§aúroveň 5
+spidermanaddon.concussive_blast_lv5_text=Zvyšuje odmrštění při zásahu.
+
+spidermanaddon.concussive_blast_full=Otřesový výboj – §l§aúroveň 5
+spidermanaddon.concussive_blast_full_text=Otřesový výboj – §l§aúroveň 5
+spidermanaddon.concussive_blast_unlock=Otřesová vlna
+spidermanaddon.concussive_blast_lock=Otřesový výboj §l§6[Odemknout]
+
+spidermanaddon.electric_web.price=Cena: §l§a15 úrovní XP
+spidermanaddon.electric_web.price5=Cena: §l§a25 úrovní XP
+
+spidermanaddon.electric_web_lv1=Elektrická pavučina – §l§aúroveň 0 §6[Vylepšit]
+spidermanaddon.electric_web_lv1_title=Elektrická pavučina – §l§aúroveň 1
+spidermanaddon.electric_web_lv1_text=Zvyšuje kapacitu zásobníku z 2 na 3 výstřely.
+
+spidermanaddon.electric_web_lv2=Elektrická pavučina – §l§aúroveň 1 §6[Vylepšit]
+spidermanaddon.electric_web_lv2_title=Elektrická pavučina – §l§aúroveň 2
+spidermanaddon.electric_web_lv2_text=Prodlužuje trvání elektrické pavučiny z 5 na 10 sekund.
+
+spidermanaddon.electric_web_lv3=Elektrická pavučina – §l§aúroveň 2 §6[Vylepšit]
+spidermanaddon.electric_web_lv3_title=Elektrická pavučina – §l§aúroveň 3
+spidermanaddon.electric_web_lv3_text=Snižuje dobu obnovení z 45 sekund na 30 sekund.
+
+spidermanaddon.electric_web_lv4=Elektrická pavučina – §l§aúroveň 3 §6[Vylepšit]
+spidermanaddon.electric_web_lv4_title=Elektrická pavučina – §l§aúroveň 4
+spidermanaddon.electric_web_lv4_text=Zvyšuje kapacitu zásobníku z 3 na 4 výstřely.
+
+spidermanaddon.electric_web_lv5=Elektrická pavučina – §l§aúroveň 4 §6[Vylepšit]
+spidermanaddon.electric_web_lv5_title=Elektrická pavučina – §l§aúroveň 5
+spidermanaddon.electric_web_lv5_text=Zvyšuje poškození elektrické pavučiny.
+
+spidermanaddon.electric_web_full=Elektrická pavučina – §l§aúroveň 5
+spidermanaddon.electric_web_full_text=Elektrická pavučina – §l§aúroveň 5
+spidermanaddon.electric_web_unlock=Elektrická pavučina
+spidermanaddon.electric_web_lock=Elektrická pavučina §l§6[Odemknout]
+
+spidermanaddon.web_whip_full=Pavučinový bič
+spidermanaddon.web_whip_full_text=Vylepšení nejsou k dispozici.
+spidermanaddon.web_whip_unlock=Pavučinový bič
+spidermanaddon.web_whip_lock=Pavučinový bič §l§6[Odemknout]
+
+spidermanaddon.impact_web_lv1=Vystřelovač pavučin – §l§aúroveň 0 §6[Vylepšit]
+spidermanaddon.impact_web_lv1_title=Vystřelovač pavučin – §l§aúroveň 1
+spidermanaddon.impact_web_lv1_text=Zvyšuje kapacitu zásobníku z 6 na 8 výstřelů.
+
+spidermanaddon.impact_web_lv2=Vystřelovač pavučin – §l§aúroveň 1 §6[Vylepšit]
+spidermanaddon.impact_web_lv2_title=Vystřelovač pavučin – §l§aúroveň 2
+spidermanaddon.impact_web_lv2_text=Snižuje dobu obnovení z 2 sekund na 1,5 sekundy.
+
+spidermanaddon.impact_web_lv3=Vystřelovač pavučin – §l§aúroveň 2 §6[Vylepšit]
+spidermanaddon.impact_web_lv3_title=Vystřelovač pavučin – §l§aúroveň 3
+spidermanaddon.impact_web_lv3_text=Zvyšuje kapacitu zásobníku z 8 na 10 výstřelů.
+
+spidermanaddon.impact_web_lv4=Vystřelovač pavučin – §l§aúroveň 3 §6[Vylepšit]
+spidermanaddon.impact_web_lv4_title=Vystřelovač pavučin – §l§aúroveň 4
+spidermanaddon.impact_web_lv4_text=Snižuje dobu obnovení z 1,5 sekundy na 1 sekundu.
+
+spidermanaddon.impact_web_lv5=Vystřelovač pavučin – §l§aúroveň 4 §6[Vylepšit]
+spidermanaddon.impact_web_lv5_title=Vystřelovač pavučin – §l§aúroveň 5
+spidermanaddon.impact_web_lv5_text=Při zásahu nepřítele je malá šance, že se na něj použije efekt pavučiny. (Efekt vytvoří pavučinový blok.)
+
+spidermanaddon.impact_web_full=Vystřelovač pavučin – §l§aúroveň 5
+spidermanaddon.impact_web.price=Cena: §l§a15 úrovní XP
+spidermanaddon.impact_web.price5=Cena: §l§a25 úrovní XP
+
+spidermanaddon.web_shooter_shoot_lv1=Vystřelovač pavučin – §l§aúroveň 0 §6[Vylepšit]
+spidermanaddon.web_shooter_shoot_lv1_title=Vystřelovač pavučin – §l§aúroveň 1
+spidermanaddon.web_shooter_shoot_lv1_text=Zvyšuje kapacitu zásobníku z 6 na 8 výstřelů.
+
+spidermanaddon.web_shooter_shoot_lv2=Vystřelovač pavučin – §l§aúroveň 1 §6[Vylepšit]
+spidermanaddon.web_shooter_shoot_lv2_title=Vystřelovač pavučin – §l§aúroveň 2
+spidermanaddon.web_shooter_shoot_lv2_text=Snižuje dobu obnovení z 2 sekund na 1,5 sekundy.
+
+spidermanaddon.web_shooter_shoot_lv3=Vystřelovač pavučin – §l§aúroveň 2 §6[Vylepšit]
+spidermanaddon.web_shooter_shoot_lv3_title=Vystřelovač pavučin – §l§aúroveň 3
+spidermanaddon.web_shooter_shoot_lv3_text=Zvyšuje kapacitu zásobníku z 8 na 10 výstřelů.
+
+spidermanaddon.web_shooter_shoot_lv4=Vystřelovač pavučin - §l§aúroveň 3 §6[Vylepšit]
+spidermanaddon.web_shooter_shoot_lv4_title=Vystřelovač pavučin - §l§aúroveň 4
+spidermanaddon.web_shooter_shoot_lv4_text=Snižuje čas dobíjení z 1,5 sekundy na 1 sekundu.
+
+spidermanaddon.web_shooter_shoot_lv5=Vystřelovač pavučin - §l§aúroveň 4 §6[Vylepšit]
+spidermanaddon.web_shooter_shoot_lv5_title=Vystřelovač pavučin - §l§aúroveň 5
+spidermanaddon.web_shooter_shoot_lv5_text=Když je nepřítel zasažen, existuje malá šance přidat efekt pavučiny. (Efekt vyvolá blok pavučiny.)
+
+spidermanaddon.web_shooter_shoot_full=Vystřelovač pavučin - §l§aúroveň 5
+spidermanaddon.web_shooter_full_text=Dosáhli jste limitu vylepšení.
+spidermanaddon.web_shooter_shoot.price=Cena: §l§a15 úrovní XP
+spidermanaddon.web_shooter_shoot.price5=Cena: §l§a25 úrovní XP
+
+spidermanaddon.impact_web=Nárazová pavučina
+spidermanaddon.impact_web_lock=Nárazová pavučina §l§6[Odemknout]
+
+spidermanaddon.web_whip=Pavučinový bič
+spidermanaddon.electric_web=Elektrická pavučina
+spidermanaddon.concussive_blast=Otřesná rána
+spidermanaddon.web_bomb=Pavučinová bomba
+spidermanaddon.spider_drone=Pavoučí dron
+spidermanaddon.web_grabber=Pavučinový uchopovač
+
+item.spidermanaddon:web_blossom=Pavučinový květ
+item.spidermanaddon:holo_decoy=Holografická návnada
+item.spidermanaddon:low_gravity=Snížená gravitace
+item.spidermanaddon:arms_race=Závod zbraní
+item.spidermanaddon:blitz=Blitz
+item.spidermanaddon:electric_punch=Elektrický úder
+item.spidermanaddon:equaliser=Vyrovnávač
+item.spidermanaddon:negative_shockwave=Negativní rázová vlna
+item.spidermanaddon:rock_out=Rockový nářez
+item.spidermanaddon:spirit_fire=Duchovní oheň
+
+spidermanaddon.low_gravity_lock_text=Snižuje gravitaci ve vzduchu po dobu 10 sekund.
+spidermanaddon.low_gravity_lock=Nízká gravitace §l§6[Odemknout]
+spidermanaddon.web_blossom_text=Skočte a vystřelte pavučiny na vše v dohledu.
+spidermanaddon.holo_decoy_lock_text=Vytváří několik hologramů.
+spidermanaddon.holo_decoy_lock=Holografická návnada §l§6[Odemknout]
+spidermanaddon.arms_race_lock_text=Uvolní elektrický výboj, který omráčí nepřátele.
+spidermanaddon.arms_race_lock=Zbrojní závod §l§6[Odemknout]
+spidermanaddon.blitz_lock_text=Běhejte rychleji a přenášejte hybnost v reálném čase, abyste odhodili nepřátele.
+spidermanaddon.blitz_lock=Blitz §l§6[Odemknout]
+spidermanaddon.electric_punch_lock_text=Dočasně elektrizuje vaše pěsti a šokuje nepřátele.
+spidermanaddon.electric_punch_lock=Elektrický úder §l§6[Odemknout]
+spidermanaddon.equaliser_text=Všichni padnou na jedno zasažení, včetně vás, po dobu 5 sekund.
+spidermanaddon.equaliser_lock=Vyrovnání sil §l§6[Odemknout]
+spidermanaddon.negative_shockwave_text=Uvolněte vlnu negativní energie.
+spidermanaddon.negative_shockwave_lock=Negativní rázová vlna §l§6[Odemknout]
+spidermanaddon.rock_out_text=Zasaďte nepřátele mocnými zvukovými vlnami.
+spidermanaddon.rock_out_lock=Rockový nářez §l§6[Odemknout]
+spidermanaddon.spirit_fire_text=Přesměrujte nestabilní vlny škodlivé éterické energie od...někud...
+spidermanaddon.spirit_fire_lock=Duchovní oheň §l§6[Odemknout]
+
+spidermanaddon.regresar=Zpět
+spidermanaddon.salir=Ukončit
+spidermanaddon.usar=Použít
+
+item.spidermanaddon:spectacular_spiderman_chip=Spectacular Spider-Man [Earth-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [Earth-1610B]
+item.spidermanaddon:spider_gwen_chip=Spider-Gwen [Earth-65B]
+item.spidermanaddon:spider_ham_chip=Spider-Ham [Earth-8311]
+item.spidermanaddon:spider_punk_chip=Spider-Punk [Earth-138B]
+item.spidermanaddon:spiderman_2099_chip=Spider-Man 2099 [Earth-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Spider-Man [Earth-199999]
+item.spidermanaddon:spiderman_noir_chip=Spider-Man: Noir [Earth-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Spider-Man [Earth-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Spider-Man Unlimited [Earth-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=The Amazing Spider-Man [Earth-120703]
+
+item.spidermanaddon:green_goblin=Green Goblin [Earth-616]
+item.spidermanaddon:hobgoblin=Hobgoblin [Earth-616]
+item.spidermanaddon:shocker=Shocker [Earth-616]
+item.spidermanaddon:lizard=Lizard [Earth-616]
+
+spidermanaddon.multiversal_gizmo=Multiverzální přístroj
+spidermanaddon.accesorios=Příslušenství
+spidermanaddon.suit_skills=Schopnosti obleku
+spidermanaddon.upgrades_laboratoryWorkbench=Vylepšení
+spidermanaddon.laboratoryWorkbench=Laboratorní pracovní stůl
+spidermanaddon.web_shooter=Vystřelovač pavučin
+spidermanaddon.capsule=Kapsle
+spidermanaddon.hobgoblin_pumpkin_bomb=Dýňová bomba Hobgoblina
+spidermanaddon.fabricar=Vyrobit
+spidermanaddon.suitsFabric_form=Vyrobit
+spidermanaddon.suits_form=Vybrat oblek
+spidermanaddon.multiversal_chip=Čip [Padouši]
+spidermanaddon.spiderman_chip=Čip [Spider Society]
+
+item.spidermanaddon:symbiont_whip=Symbiontí bič
+item.spidermanaddon:venom_regeneration=Krmení
+item.spidermanaddon:symbiont_axe=Symbiontová sekera
+item.spidermanaddon:symbiont_claw=Symbiontový dráp
+item.spidermanaddon:venom_punch=Boj
+item.spidermanaddon:venom_impulse_whip=Symbiontový bič [Posílení]
+item.spidermanaddon:capsule=Kapsle
+tile.spidermanaddon:knull_block.name=Blok Knulla
+tile.spidermanaddon:meteorite_block.name=Meteoritový blok
+spidermanaddon.feed=Krmení
+spidermanaddon.symbiont_axe=Symbiontová sekera
+spidermanaddon.symbiont_claw=Symbiontový dráp
+spidermanaddon.symbiont_whip=Symbiontový bič
+spidermanaddon.transformation=Proměna
+spidermanaddon.skins=Vzhledy
+spidermanaddon.on=Povolit
+spidermanaddon.off=Zakázat
+spidermanaddon.camera=Herní kamera
+spidermanaddon.third=Třetí osoba
+spidermanaddon.first=První osoba
+entity.spidermanaddon:venom_horse.name=Venomův kůň
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=Vyvolat Venomova koně
+
+item.spidermanaddon:spiderman_2099_burger.name=Burger Spider-Mana 2099
+item.spiderverse:scarlet_spider_suit=Oblek Scarlet Spider
+item.spiderverse:spiderman_90_suit=Oblek ze seriálu Spider-Man: The Animated Series
+item.spiderverse:spiderman_67_suit=Oblek Spider-Man 67°
+item.spiderverse:spectacular_spiderman_suit=Oblek Spectacular Spider-Man
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Plyšák Ultimate Spider-Man
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Spider-Man India plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Plyšák Milese Moralese
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Iron Spider [MCU] plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Spider-Punk plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Spider-Man Hybrid plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Spider-Man Noir plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Superior Spider-Man plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Spider-Man Raimi černý oblek plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Spider-Man Raimi plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Spider-Man PS4 plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Spider-Man černý oblek plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Spider-Man 2099 [Across the Spider-Verse] plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Plyšák Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Scarlet Spider plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=The Amazing Spider-Man 2 plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=The Amazing Spider-Man plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (leap of faith) plyšák
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Spider-Mobile
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Spider-Bike
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Panenka Black Cat
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=Batoh Petera Parkera
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=Stojan na obleky Spider-Mana
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=Laboratorní pracovní stůl
+entity.spidermanaddon:lizard.name=Lizard
+item.spawn_egg.entity.spidermanaddon:lizard.name=Vyvolat Lizarda
+entity.spidermanaddon:prisoner.name=Vězeň
+item.spawn_egg.entity.spidermanaddon:prisoner.name=Vyvolat vězně
+item.spidermanaddon:research_token=Výzkumný žeton
+
+item.spidermanaddon:backpack_token=Žeton batohu
+item.spidermanaddon:web_shooters_plans=Systém vystřelovače pavučin [Houpačka]
+item.spiderverse:web_shooter_balanceo=Vystřelovač pavučin [Houpačka]
+item.spidermanaddon:usb=USB [Žádná data]
+
+item.spidermanaddon:base_token=Žeton základny
+item.spidermanaddon:challenge_token=Žeton výzvy
+item.spidermanaddon:tokens_crime=Žeton zločinu
+item.spiderverse:web_cartridge=Kazeta pavučiny
+item.spidermanaddon:spiderman_palette.name=Paleta Spider-Man
+
+item.spidermanaddon:miles_morales_invisibility_token=Schopnost Milese Moralese: neviditelnost
+item.spidermanaddon:fire_resistence_stealth_suit_token=Schopnost obleku: Odolnost proti ohni
+item.spidermanaddon:invisibility_stealth_suit_token=Schopnost obleku: Neviditelnost
+item.spidermanaddon:regeneration_stealth_suit_token=Schopnost obleku: Regenerace
+
+item.spiderverse:spiderman_classic_suit=Klasický oblek Spider-Mana
+item.spiderverse:spiderman_raimi_suit=Oblek Spider-Mana Raimiho
+item.spiderverse:spiderman_raimi_black_suit=Černý oblek Spider-Mana Raimiho
+item.spiderverse:miles_morales_suit=Klasický oblek Milese Moralese
+item.spiderverse:miles_morales_gold_suit=Oblek Milese Moralese: Uptown Pride
+item.spiderverse:iron_spider_ucm_suit=Iron Spider [UCM] oblek
+item.spiderverse:spiderman_stealth_suit=Oblek Spider-Man: Big Time
+item.spiderverse:spiderman_ps4_suit=Pokročilý oblek Insomniac's Spider-Man
+item.spiderverse:spiderman_ps4_black_suit=Insomniac's Spider-Man 2: černý oblek
+item.spiderverse:ultimate_spiderman_ucm_suit=Spider-Man: ultimátní oblek
+item.spiderverse:the_amazing_spiderman_1_suit=The Amazing Spider-Man oblek
+item.spiderverse:the_amazing_spiderman_2_suit=The Amazing Spider-Man 2 oblek
+item.spiderverse:spiderman_steve_ditko_suit=Spider-Man: Amazing Fantasy #15 oblek
+item.spiderverse:human_spider_suit=Oblek Human Spider
+item.spiderverse:spiderman_wrestler_suit=Zápasnický oblek Spider-Mana
+item.spiderverse:spiderman_homemade_suit=Domácí oblek Spider-Mana
+item.spiderverse:spiderman_far_from_home_suit=Vylepšený oblek Spider-Mana
+item.spiderverse:spiderman_no_way_home_suit=Hybridní oblek Spider-Mana
+item.spiderverse:spiderman_negative_suit=Spider-Man: negativní oblek
+item.spiderverse:spiderman_homecoming_suit=Oblek Spider-Mana: Stark
+item.spidermanaddon:genetically_engineered_super_spider=Geneticky upravený super pavouk
+item.spidermanaddon:spider_egg=Vyvolat pavouka
+item.spidermanaddon:radioactive_spider=Spider-Man schopnosti
+item.spidermanaddon:pumpkin_bomb=Dýňová bomba
+item.spiderverse:iron_arms=Iron Spider nohy
+item.spidermanaddon:nanotechnology_chip=Nanotechnologický čip
+item.spiderverse:miles_morales_bodega_cat_suit=Oblek Milese Moralese: Bodega Cat
+item.spiderverse:ultimate_spiderman_suit=Oblek Ultimate Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man: černý oblek
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man: černý oblek 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man: černý oblek 3.0
+item.spiderverse:spiderman_classic_black_suit=Klasický černý oblek Spider-Mana
+item.spiderverse:spiderman_black_suit_comic=Černý oblek Spider-Man: Secret Wars
+item.spiderverse:ultimate_spiderman_black_suit=Ultimate Spider-Man: černý oblek
+entity.spidermanaddon:green_goblin.name=Green Goblin
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=Vyvolat Green Goblin
+entity.spidermanaddon:shocker.name=Shocker
+item.spawn_egg.entity.spidermanaddon:shocker.name=Vyvolat Shocker
+entity.spidermanaddon:venom_boss.name=Venom
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Vyvolat Venom
+entity.spidermanaddon:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Vyvolat Hobgoblin
+entity.spidermanaddon:taskmaster.name=Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Vyvolat Taskmaster
+entity.spidermanaddon:dealer.name=Obchodník
+item.spawn_egg.entity.spidermanaddon:dealer.name=Vyvolat Dealer
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Vyvolat Black Cat
+entity.spidermanaddon:symbiot.name=Venomův symbiont
+item.spawn_egg.entity.spidermanaddon:symbiot.name=Venomův symbiont
+entity.spidermanaddon:sewing_machine.name=Šicí stroj
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=Šicí stroj
+entity.spidermanaddon:challenge_box.name=Krabice výzev
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=Krabice výzev
+entity.spidermanaddon:microscope.name=Mikroskop
+item.spawn_egg.entity.spidermanaddon:microscope.name=Mikroskop
+entity.spidermanaddon:symbiote_meteorite.name=Symbiotický meteorit
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=Vyvolat symbiotický meteorit
+entity.spidermanaddon:symbiote_meteorite_table.name=Symbiote meteorit
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=Symbiote meteorit
+entity.spidermanaddon:symbiont.name=Venomův symbiont
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Venomův symbiont
+
+item.spidermanaddon:venom=Venom [Transformace]
+
+item.spiderverse:spider_gwen=Spider-Gwen [Transformace]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Into the Spider-Verse [Transformace]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Into the Spider-Verse - Leap of Faith [Transformace]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Across the Spider-Verse [Transformace]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Into the Spider-Verse - Training [Transformace]
+item.spidermanaddon:comic1=Komiks: Amazing Fantasy #15
+item.spiderverse:hobgoblin_skin=Oblek Hobgoblina
+item.spiderverse:green_goblin_skin=Oblek Green Goblina
+
+item.spidermanaddon:planeador_item=Kluzák Green Goblina
+item.spidermanaddon:spider_mobile_item=Spider-Mobile
+item.spidermanaddon:spider_bike_item=Spider-Bike
+
+item.spidermanaddon:web_shot_empty=Vystřelovač pavučiny [prázdný]
+item.spidermanaddon:web_shot=Vystřelovač pavučiny
+item.spidermanaddon:sand_crystal_shard=Úlomek Sandmanova krystalu
+tile.spidermanaddon:sand_crystal.name=Sandmanův krystal
+tile.spidermanaddon:sand_crystal_block.name=Blok Sandmanova krystalu
+tile.spidermanaddon:prisoner_spawn.name=Vyvolat vězně
+
+item.spidermanaddon:combat_mode=Bojový režim
+item.spidermanaddon:delete_upgrades_token=Odebrat vylepšení
+item.spidermanaddon:escudo_token=Štít [Vylepšení]
+item.spidermanaddon:golpe_eletrico_token=Elektrický úder [Vylepšení]
+item.spidermanaddon:regeneracion_token=Regenerace [Vylepšení]
+item.spidermanaddon:salud_extra_token=Extra zdraví [Vylepšení]
+item.spidermanaddon:dano_token=Extra poškození [Vylepšení]
+item.spidermanaddon:mega_venom_blast=Megavýbuch Venoma
+item.spidermanaddon:venom_blast_punch=Úder Venoma
+item.spidermanaddon:bodega_cat=Batoh Bodega Cat
+item.spidermanaddon:multiversal_particles=Multiverzální částice
+item.spidermanaddon:component=Technologické komponenty
+item.spidermanaddon:gr_27_negative=Negativní GR-27
+item.spidermanaddon:web_flow=Tok pavučiny
+item.spidermanaddon:spider_powers=Pavoučí schopnosti
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=Kapsle Venomova symbionta
+
+item.spidermanaddon:symbiote_super_punch=Super úder symbionta
+item.spidermanaddon:symbiote_punch=Úder symbionta
+item.spidermanaddon:symbiont_blast=Výbuch symbionta
+item.spidermanaddon:backpack_empty=Prázdný batoh
+item.spidermanaddon:cat_hability_item=Kočičí schopnost
+item.spidermanaddon:comic2=Komiks Ultimate Spider-Man #1
+item.spidermanaddon:lizard_invoke=Vyvolávač Lizarda
+item.spidermanaddon:shocker_invoke=Vyvolávač Shockera
+item.spidermanaddon:green_goblin_invoke=Vyvolávač Green Goblina
+item.spidermanaddon:taskmaster_invoke=Vyvolávač Taskmastera
+item.spidermanaddon:hobgoblin_invoke=Vyvolávač Hobgoblina
+
+item.spiderverse:spiderman_classic_suit_damage=Klasický oblek Spider-Mana §c[poškozený]
+item.spiderverse:spiderman_raimi_suit_damage=Oblek Spider-Mana Raimiho §c[poškozený]
+item.spiderverse:miles_morales_suit_damage=Spider-Man Miles Morales: Classic oblek §c[poškozené]
+item.spiderverse:miles_morales_gold_suit_damage=Spider-Man Miles Morales: Uptown Pride oblek §c[poškozené]
+item.spiderverse:spiderman_stealth_suit_damage=Spider-Man: Stealth oblek §c[poškozené]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Spider-Man: Advanced oblek §c[poškozené]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=Spider-Man: Ultimate oblek §c[poškozené]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=The Amazing Spider-Man oblek §c[poškozené]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=The Amazing Spider-Man 2 oblek §c[poškozené]
+item.spiderverse:human_spider_suit_damage=Human Spider oblek §c[poškozené]
+item.spiderverse:spiderman_wrestler_suit_damage=Zápasnický oblek Spider-Mana §c[poškozený]
+item.spiderverse:spiderman_homemade_suit_damage=Spider-Man: Homemade oblek §c[poškozené]
+item.spiderverse:spiderman_far_from_home_suit_damage=Spider-Man: Upgraded oblek §c[poškozené]
+item.spiderverse:spiderman_no_way_home_suit_damage=Spider-Man: Hybrid oblek §c[poškozené]
+item.spiderverse:spiderman_homecoming_suit_damage=Oblek Spider-Mana: Stark §c[poškozený]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=Spider-Man Miles Morales: Bodega Cat oblek §c[poškozené]
+
+item.spiderverse:spiderman_ps5_suit=Pokročilý oblek Insomniac's Spider-Man 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Spider-Man: Advanced oblek 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Spider-Man: Advanced oblek 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Spider-Man: Advanced oblek 2.0
+item.spiderverse:ezekiel_sims_suit=Ezekiel Sims oblek
+item.spiderverse:iron_spider_suit=Oblek Iron Spider (klasická verze)
+item.spiderverse:iron_spider_suit_1=Iron Spider oblek (Classic)
+item.spiderverse:iron_spider_suit_2=Iron Spider oblek (Classic)
+item.spiderverse:iron_spider_suit_3=Iron Spider oblek (Classic)
+item.spiderverse:spiderman_velocity_suit=Oblek Spider-Man Velocity
+item.spiderverse:spiderman_future_foundation_suit=Oblek Spider-Man: Future Foundation
+item.spiderverse:spiderman_cero_suit=Oblek Spider-Man: Zero
+item.spiderverse:aracnido_jr_suit=Oblek Arachnid Jr.
+item.spiderverse:spiderman_classic_suit_1=Spider-Man: Classic oblek
+item.spiderverse:spiderman_classic_suit_2=Spider-Man: Classic oblek
+item.spiderverse:spiderman_classic_suit_3=Spider-Man: Classic oblek
+item.spiderverse:spiderman_2099_suit_1=Spider-Man 2099 oblek
+item.spiderverse:spiderman_2099_suit_2=Spider-Man 2099 oblek
+item.spiderverse:spiderman_2099_suit_3=Spider-Man 2099 oblek
+item.spiderverse:spiderman_2099_suit=Oblek Spider-Mana 2099
+item.spiderverse:spider_punk_suit=Oblek Spider-Punk
+item.spiderverse:spiderman_ps5_symbiote_suit=Insomniac's Spider-Man 2: Symbiote oblek
+item.spiderverse:scarlet_spider_suit_1=Scarlet Spider oblek
+item.spiderverse:scarlet_spider_suit_2=Scarlet Spider oblek
+item.spiderverse:scarlet_spider_suit_3=Scarlet Spider oblek
+item.spiderverse:anti_ock_suit=Oblek Anti-Ock
+item.spiderverse:taskmaster_suit=Oblek Taskmastera
+item.spiderverse:taskmaster_mask=Maska Taskmastera
+item.spiderverse:anti_ock_suit_damage=Anti-Ock oblek §c[poškozené]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Spider-Man: Advanced oblek 2.0 §c[poškozené]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Spider-Man: Advanced oblek 2.0 §c[poškozené]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Spider-Man: Advanced oblek 2.0 §c[poškozené]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Spider-Man: Advanced oblek 2.0 §c[poškozené]
+item.spiderverse:spiderman_classic_suit_1_damage=Spider-Man: Classic oblek §c[poškozené]
+item.spiderverse:spiderman_classic_suit_2_damage=Spider-Man: Classic oblek §c[poškozené]
+item.spiderverse:spiderman_classic_suit_3_damage=Spider-Man: Classic oblek §c[poškozené]
+item.spiderverse:scarlet_spider_suit_1_damage=Scarlet Spider oblek §c[poškozené]
+item.spiderverse:scarlet_spider_suit_2_damage=la Scarlet Spider oblek §c[poškozené]
+item.spiderverse:scarlet_spider_suit_3_damage=la Scarlet Spider oblek §c[poškozené]
+item.spiderverse:spiderman_2099_suit_1_damage=Spider-Man 2099 oblek §c[poškozené]
+item.spiderverse:spiderman_2099_suit_2_damage=Spider-Man 2099 oblek §c[poškozené]
+item.spiderverse:spiderman_2099_suit_3_damage=Spider-Man 2099 oblek §c[poškozené]
+item.spiderverse:spiderman_2099_suit_damage=Spider-Man 2099 oblek §c[poškozené]
+item.spiderverse:spider_punk_suit_damage=Spider-Punk oblek §c[poškozené]
+item.spiderverse:hobgoblin_mask=Maska Hobgoblina
+item.spiderverse:green_goblin_mask=Maska Green Goblina
+item.spidermanaddon:spiderman_picture=Fotografie Spider-Mana
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=Anya Corazon
+item.spidermanaddon:spider_bot_fly_controllers=Ovladače letu Spider-Botů
+item.spidermanaddon:spider_bots_controllers=Ovladače Spider-Botů
+item.spidermanaddon:camera_mode_emotes=Emoce
+item.spidermanaddon:camera_mode=Změnit pozici kamery
+item.spidermanaddon:spider_web_ball=Pavoučí koule
+tile.spidermanaddon:newspaper0.name=Noviny
+tile.spidermanaddon:newspaper1.name=Noviny
+tile.spidermanaddon:newspaper.name=Noviny
+entity.spidermanaddon:penguin_stacy.name=Penguin Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Vyvolat Penguin Stacy
+entity.spidermanaddon:robot_dog.name=Lovecký robot
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=Vyvolat loveckého robota
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=Vyvolat J. Jonaha Jamesona
+entity.spidermanaddon:hunters_drone.name=Lovecké drony
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=Vyvolat Lovecké drony
+entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. plyšák
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. plyšák
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=Kravenovi lovci
+item.spawn_egg.entity.spidermanaddon:hunter.name=Vyvolat Kravenovy lovce
+entity.spidermanaddon:hunter_crossbow.name=Kravenovi lovci s kušemi
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=Vyvolat Kravenovy lovce s kušemi
+item.spidermanaddon:delete_spider_powers=Odebrat schopnosti
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Oblek Spider-Man 2099: Across the Spider-Verse
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Spider-Man 2099: Across The Spider-Verse (Dark) oblek
+item.spiderverse:spiderman_90_black_suit=Černý oblek ze seriálu Spider-Man: The Animated Series
+item.spiderverse:spiderman_90_black_suit_1=Spider-Man: The Animated Series [Red & Blue Borders] černý oblek
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Scarlet Spider: Across The SpiderVerse oblek
+item.spiderverse:superior_spiderman_suit=Oblek Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_1=Superior Spider-Man oblek
+item.spiderverse:superior_spiderman_suit_2=Superior Spider-Man oblek
+item.spiderverse:superior_spiderman_suit_3=Superior Spider-Man oblek
+item.spiderverse:miles_morales_wolverine_suit=Oblek Milese Moralese: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_1=Miles Morales: Wolverine oblek
+item.spiderverse:miles_morales_wolverine_suit_2=Miles Morales: Wolverine oblek
+item.spiderverse:miles_morales_wolverine_suit_3=Miles Morales: Wolverine oblek
+item.spiderverse:the_amazing_spiderman_belt_suit=Oblek The Amazing Spider-Man s páskem
+item.spiderverse:the_amazing_spiderman_black_suit=Černý oblek The Amazing Spider-Man
+item.spiderverse:spider_gwen_classic_suit=Ghost Spider oblek
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Oblek Milese Moralese: Across the Spider-Verse
+item.spidermanaddon:dr_octopus_arms=Paže Doctor Octopus
+item.spidermanaddon:electric_web_empty=Elektrický vystřelovač pavučiny [Prázdný]
+item.spidermanaddon:electric_web=Elektrický vystřelovač pavučiny
+entity.spidermanaddon:dr_octopus.name=Doctor Octopus
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Vyvolat Doctor Octopus
+item.spiderverse:vulture_suit=Oblek Vulturea
+item.spiderverse:mysterio_suit_1=Mysterio oblek
+item.spiderverse:mysterio_suit=Mysterio oblek
+item.spiderverse:mysterio_helmet=Helma Mysterio
+item.spiderverse:ghost_spider_suit=Oblek Ghost Spider
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Miles Morales: Into the Spider-Verse oblek
+item.spiderverse:electro_suit=Oblek Electra
+item.spiderverse:electro_helmet=Maska Electra
+item.spidermanaddon:kraven_axe=Kravenova sekera
+item.spidermanaddon:robot_dog_pet_plans=Ovladače Kravenova robotického psa
+item.spidermanaddon:robot_dog_pet=Kravenův robotický pes [Mazlíček]
+item.spidermanaddon:miles_morales_powers=Schopnosti Milese Moralese
+item.spidermanaddon:symbiote_powers=Schopnosti symbiota
+item.spiderverse:superior_spiderman_suit_damage=Superior Spider-Man oblek §c[poškozené]
+item.spiderverse:superior_spiderman_suit_1_damage=Superior Spider-Man oblek §c[poškozené]
+item.spiderverse:superior_spiderman_suit_2_damage=Superior Spider-Man oblek §c[poškozené]
+item.spiderverse:superior_spiderman_suit_3_damage=Superior Spider-Man oblek §c[poškozené]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales: Wolverine oblek §c[poškozené]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales: Wolverine oblek §c[poškozené]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales: Wolverine oblek §c[poškozené]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales: Wolverine oblek §c[poškozené]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=The Amazing Spider-Man oblek s opaskem §c[poškozené]
+
+item.spiderverse:venom_s3=Oblek Venom [Spider-Man 3]
+item.spiderverse:spiderman_last_stand_suit=Oblek Spider-Man: Last Stand
+item.spiderverse:superior_spiderman_black_suit=Černý oblek Superior Spider-Man
+item.spiderverse:spiderman_web_of_shadows_black_suit=Černý oblek Spider-Man: Web of Shadows
+item.spiderverse:spiderman_web_of_shadows_suit=Oblek Spider-Man: Web of Shadows
+item.spiderverse:spiderman_what_if_suit=Spider-Man: Disney Land oblek
+item.spiderverse:spiderman_what_if_animated_suit=Spider-Man: What If Ep 5 oblek
+item.spiderverse:spirit_spider_suit=Spirit Spider oblek
+item.spiderverse:yfn_spiderman_casero_suit=Your Friendly Neighborhood Spider-Man domácí oblek
+item.spiderverse:into_the_spiderverse_sb_suit=Into The Spider-Verse SB oblek
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Miles Morales: Leap of Faith oblek
+item.spiderverse:miles_morales_bodega_cat_suit_3=Spider-Man Miles Morales: Bodega Cat oblek
+item.spiderverse:miles_morales_bodega_cat_suit_2=Spider-Man Miles Morales: Bodega Cat oblek
+item.spiderverse:miles_morales_bodega_cat_suit_1=Spider-Man Miles Morales: Bodega Cat oblek
+item.spiderverse:miles_morales_10th_suit_3=Miles Morales: 10. výroční oblek
+item.spiderverse:miles_morales_10th_suit_2=Miles Morales: 10. výroční oblek
+item.spiderverse:miles_morales_10th_suit_1=Miles Morales: 10. výroční oblek
+item.spiderverse:miles_morales_10th_suit=Miles Morales: 10. výroční oblek
+item.spiderverse:anti_ock_suit_1=Anti-Ock oblek
+item.spiderverse:anti_ock_suit_2=Anti-Ock oblek
+item.spiderverse:anti_ock_suit_3=Anti-Ock oblek
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Oblek Spider-Punk: Across the Spider-Verse
+item.spiderverse:spiderman_unlimited_suit=Oblek Spider-Man: Unlimited
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Oblek Spider-Noir: Into the Spider-Verse
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Spider-Man: Secret Wars - Civil War oblek
+item.spiderverse:spiderman_india_suit=Oblek Spider-Man India: Across the Spider-Verse
+item.spiderverse:spiderman_antivenom_suit=Spider-Man Anti-Venom oblek

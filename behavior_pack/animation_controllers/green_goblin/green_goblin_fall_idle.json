@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.green_goblin_fall_idle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_fall_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:campfire_smoke_particle ~0.2 ~ ~",
+			"/particle minecraft:basic_flame_particle ~0.2 ~ ~",
+			"/particle minecraft:campfire_smoke_particle ~-0.2 ~ -1",
+			"/particle minecraft:basic_flame_particle ~0.2 ~ ~-1"
+          ]
+        },
+        "green_goblin_fall_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:campfire_smoke_particle ~0.2 ~ ~",
+			"/particle minecraft:basic_flame_particle ~0.2 ~ ~",
+			"/particle minecraft:campfire_smoke_particle ~-0.2 ~ -1",
+			"/particle minecraft:basic_flame_particle ~0.2 ~ ~-1"
+          ]
+        }
+      }
+    }
+  }
+}

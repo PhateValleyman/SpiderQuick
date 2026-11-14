@@ -1,0 +1,281 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.challenge_box.1.timer": {
+      "loop": true,
+      "animation_length": 10.1,
+      "timeline": {
+        "0.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "1.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "2.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "3.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "4.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "5.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "6.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "7.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "8.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ],
+        "9.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_sequels] run event entity @s challenge:one.end",
+		  "/execute unless entity @p[r=50] run event entity @s challenge:destroy"
+        ]
+      }
+    },
+    "animation.challenge_box.1": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "1.0": [
+          "/function taskmaster/time3"
+        ],
+        "2.0": [
+          "/function taskmaster/time2"
+        ],
+        "3.0": [
+          "/function taskmaster/time1"
+        ],
+        "3.5": [
+          "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned"
+        ],
+        "4.0": [
+          "/function taskmaster/time4", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:spawn_task"
+        ]
+      }
+    },
+    "animation.challenge_box.2": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "1.0": [
+          "/function taskmaster/time3"
+        ],
+        "2.0": [
+          "/function taskmaster/time2"
+        ],
+        "3.0": [
+          "/function taskmaster/time1"
+        ],
+        "3.5": [
+          "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned"
+        ],
+        "4.0": [
+          "/function taskmaster/time4", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:spawn_task"
+        ]
+      }
+    },
+    "animation.challenge_box.2.timer": {
+      "loop": true,
+      "animation_length": 46.1,
+      "timeline": {
+        "1.0": [
+          "/msg @a[r=64] Timer: 0:45"
+        ],
+        "16.0": [
+          "/msg @a[r=64] Timer: 0:30"
+        ],
+        "31.0": [
+          "/msg @a[r=64] Timer: 0:15"
+        ],
+        "36.0": [
+          "/msg @a[r=64] Timer: 0:10"
+        ],
+        "37.0": [
+          "/msg @a[r=64] Timer: 0:09"
+        ],
+        "38.0": [
+          "/msg @a[r=64] Timer: 0:08"
+        ],
+        "39.0": [
+          "/msg @a[r=64] Timer: 0:07"
+        ],
+        "40.0": [
+          "/msg @a[r=64] Timer: 0:06"
+        ],
+        "41.0": [
+          "/msg @a[r=64] Timer: 0:05"
+        ],
+        "42.0": [
+          "/msg @a[r=64] Timer: 0:04"
+        ],
+        "43.0": [
+          "/msg @a[r=64] Timer: 0:03"
+        ],
+        "44.0": [
+          "/msg @a[r=64] Timer: 0:02"
+        ],
+        "45.0": [
+          "/msg @a[r=64] Timer: 0:01"
+        ],
+        "46.0": [
+          "/event entity @s challenge:explode"
+        ]
+      }
+    },
+    "animation.challenge_box.3": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "1.0": [
+          "/function taskmaster/time3"
+        ],
+        "2.0": [
+          "/function taskmaster/time2"
+        ],
+        "3.0": [
+          "/function taskmaster/time1"
+        ],
+        "3.5": [
+          "/summon spidermanaddon:taskmaster_drone ~ ~1 ~",
+		  "/summon spidermanaddon:taskmaster_drone ~ ~1 ~",
+		  "/summon spidermanaddon:taskmaster_drone ~ ~1 ~",
+		  "/summon spidermanaddon:taskmaster_drone ~ ~1 ~",
+		  "/summon spidermanaddon:taskmaster_drone ~ ~1 ~"
+        ],
+        "4.0": [
+          "/function taskmaster/time4", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:spawn_task"
+        ]
+      }
+    },
+    "animation.challenge_box.3.detect": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute unless entity @e[r=50, type=spidermanaddon:taskmaster_drone] run event entity @s challenge:three.end"
+        ]
+      }
+    },
+    "animation.challenge_box.4.timer": {
+      "loop": true,
+      "animation_length": 61.1,
+      "timeline": {
+        "1.0": [
+          "/msg @a[r=64] Timer: 1:00"
+        ],
+        "31.0": [
+          "/msg @a[r=64] Timer: 0:30"
+        ],
+        "46.0": [
+          "/msg @a[r=64] Timer: 0:15"
+        ],
+        "51.0": [
+          "/msg @a[r=64] Timer: 0:10"
+        ],
+        "52.0": [
+          "/msg @a[r=64] Timer: 0:09"
+        ],
+        "53.0": [
+          "/msg @a[r=64] Timer: 0:08"
+        ],
+        "54.0": [
+          "/msg @a[r=64] Timer: 0:07"
+        ],
+        "55.0": [
+          "/msg @a[r=64] Timer: 0:06"
+        ],
+        "56.0": [
+          "/msg @a[r=64] Timer: 0:05"
+        ],
+        "57.0": [
+          "/msg @a[r=64] Timer: 0:04"
+        ],
+        "58.0": [
+          "/msg @a[r=64] Timer: 0:03"
+        ],
+        "59.0": [
+          "/msg @a[r=64] Timer: 0:02"
+        ],
+        "60.0": [
+          "/msg @a[r=64] Timer: 0:01"
+        ],
+        "61.0": [
+          "/event entity @s challenge:explode"
+        ]
+      }
+    },
+    "animation.challenge_box.4": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "1.0": [
+          "/function taskmaster/time3"
+        ],
+        "2.0": [
+          "/function taskmaster/time2"
+        ],
+        "3.0": [
+          "/function taskmaster/time1"
+        ],
+        "3.5": [
+          "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned",
+		  "/summon spidermanaddon:taskmaster_sequels ~ ~1 ~ ~ ~ minecraft:entity_spawned"
+        ],
+        "4.0": [
+          "/function taskmaster/time4", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:spawn_task"
+        ]
+      }
+    },
+    "animation.challenge_box.5": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "1.0": [
+          "/function taskmaster/time3"
+        ],
+        "2.0": [
+          "/function taskmaster/time2"
+        ],
+        "3.0": [
+          "/function taskmaster/time1"
+        ],
+        "4.0": [
+          "/function taskmaster/time4",
+		  "/event entity @s challenge:five.taskmaster"
+        ]
+      }
+    }
+  }
+}

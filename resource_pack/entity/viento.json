@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:viento",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/punto_viento"
+			},
+			"geometry": {
+				"default": "geometry.punto_viento"
+			},
+            "particle_effects": {
+                "viento": "spidermanaddon:viento"
+            },
+			"animations": {
+				"loop": "animation.punto_viento.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "viento",
+				"texture_index": 0
+			}
+		}
+	}
+}

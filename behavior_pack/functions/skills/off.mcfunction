@@ -1,0 +1,10 @@
+clear @s spidermanaddon:web_blossom
+clear @s spidermanaddon:low_gravity
+clear @s spidermanaddon:holo_decoy
+clear @s spidermanaddon:arms_race
+clear @s spidermanaddon:blitz
+clear @s spidermanaddon:electric_punch
+clear @s spidermanaddon:equaliser
+clear @s spidermanaddon:negative_shockwave
+clear @s spidermanaddon:rock_out
+clear @s spidermanaddon:spirit_fire

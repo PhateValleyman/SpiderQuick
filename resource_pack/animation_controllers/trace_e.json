@@ -1,0 +1,190 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.trace_e.default" : {
+			"initial_state" : "off",
+			"states" : {
+				"default" : {
+					"animations" : [ "default" ],
+					"transitions" : [
+						{
+							"off" : "!q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"off" : {
+					"animations" : [ "mode_off" ],
+					"transitions" : [
+						{
+							"default" : "q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.trace_e.off" : {
+			"initial_state" : "off",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"off" : "!q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"off" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{
+							"default" : "q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.trace_e.shot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shot" : "q.has_target"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"shot" : {
+					"animations" : [ "shot" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.trace_e.happy" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"happy" : "q.is_celebrating"
+						}
+					]
+				},
+				"happy" : {
+					"animations" : [ "happy" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_celebrating"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.trace_e.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"fly" : "!q.is_wall_climbing && !q.is_on_ground && !q.is_sitting && q.is_sheared"
+						}
+					],
+          "blend_transition": 0.2
+				},
+				"fly" : {
+					"animations" : [ "fly", "fly_idle" ],
+					"transitions" : [
+						{
+							"default" : "q.is_wall_climbing || q.is_on_ground || q.is_sitting || !q.is_sheared"
+						}
+					],
+          "blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.trace_e.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"climb" : "q.is_wall_climbing"
+						}
+					],
+          "blend_transition": 0.2
+				},
+				"climb" : {
+					"animations" : [ "climb" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_wall_climbing"
+						}
+					],
+          "blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.trace_e.sit" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : 
+					[ 						
+						{
+							"walk" : "query.modified_move_speed > 0.05 && q.is_on_ground"
+						} 
+					],
+					"transitions" : [
+						{
+							"sit" : "q.is_sitting"
+						}
+					]
+				},
+				"sit" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_sitting"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.lizard.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack>0 && q.mark_variant == 0"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"attack.2" : "q.all_animations_finished && variable.attack>0"
+						}
+					]
+				},
+				"attack.2" : {
+					"animations" : [ "attack.2" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

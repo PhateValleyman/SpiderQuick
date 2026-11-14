@@ -1,0 +1,121 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:hobgoblin_laser",
+			"runtime_identifier": "minecraft:arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"green_goblin_laser": "controller.animation.hobgoblin_laser"
+			},
+			"scripts": {
+				"animate": [
+					"green_goblin_laser"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "hit",
+							"target": "self"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							9,
+							9.0
+						],
+						"knockback": true,
+						"destroy_on_hit": true,
+						"semi_random_diff_damage": false,
+						"filter": "query.has_any_family(\"bullet\")"
+					},
+					"particle_on_hit": {
+						"num_particles": 5,
+						"on_entity_hit": true,
+						"particle_type": "reddust"
+					}
+				},
+				"power": 3.5,
+				"gravity": 0.001,
+				"anchor": 1,
+				"destroy_on_hurt": true,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 1,
+				"should_bounce": false,
+				"inertia": 1,
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"multiple_targets": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.1,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"hit": {
+				"sequence": [
+              {
+                "queue_command": {
+                  "command": [
+                    "playsound bullet.hit"
+                  ]
+                }
+              },
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						},
+		"queue_command": {
+			"command": [
+					"particle spidermanaddon:electric_hit ~ ~1 ~",
+					"particle spidermanaddon:electric_hit2 ~ ~1 ~",
+					"particle spidermanaddon:electric_hit3 ~ ~1 ~"
+			]
+		}
+					}
+				]
+			}
+		}
+	}
+}

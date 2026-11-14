@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dr_octopus.campo_fuerza": {
+      "geometry": "Geometry.campo_fuerza",
+      "part_visibility": [
+        { "*": "q.mark_variant == 1" }
+      ],
+      "materials": [ { "*": "Material.campo_fuerza" } ],
+      "textures": [ "Texture.campo_fuerza" ]
+    }
+  }
+}

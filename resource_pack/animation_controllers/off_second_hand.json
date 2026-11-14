@@ -1,0 +1,45 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.item.off_hand" : {
+			"initial_state" : "default",
+			"states" : {
+				"off_second_hand" : {
+					"animations" : [ "player.item.off_hand" ],
+					"transitions" : [
+						{
+							"default" : "!variable.item.off_hand"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"off_second_hand" : "variable.item.off_hand"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.off_second_hand" : {
+			"initial_state" : "default",
+			"states" : {
+				"off_second_hand" : {
+					"animations" : [ "player.off_second_hand" ],
+					"transitions" : [
+						{
+							"default" : "!variable.off_second_hand"
+						}
+					]
+				},
+				"default" : {
+					"transitions" : [
+						{
+							"off_second_hand" : "variable.off_second_hand"
+						}
+					]
+				}
+			}
+		}
+	}
+}

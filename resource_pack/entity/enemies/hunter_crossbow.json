@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:hunter_crossbow",
+			"materials": {
+				"default": "slime",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/hunters/male_hunter_crossbow",
+				"crossbow": "textures/entity/hunters/hunter_crossbow",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"default": "geometry.male_hunter_crossbow",
+				"crossbow": "geometry.hunter_crossbow",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.girl_hunter.idle",
+				"look_off": "animation.girl_hunter.crossbow.off",
+				"look": "animation.girl_hunter.crossbow.look",
+				"walk": "animation.girl_hunter.crossbow.walk",
+				"run": "animation.girl_hunter.run",
+				"attack": "animation.girl_hunter.attack",
+				"special_attack": "animation.girl_hunter.special_attack",
+				"falling": "animation.girl_hunter.falling",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"look": "controller.animation.hunter.crossbow.look"
+				},
+				{
+					"walk": "controller.animation.hunter.walk"
+				},
+				{
+					"attack": "controller.animation.hunter.attack"
+				},
+				{
+					"special_attack": "controller.animation.hunter.special_attack"
+				},
+				{
+					"falling": "controller.animation.hunter.falling"
+				},
+				{
+					"look_at_target": "controller.animation.look_at_target"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.hunter.crossbow",
+				"controller.render.scan"
+			],
+			"spawn_egg": {
+				"texture": "egg_hunter",
+				"texture_index": 0
+			}
+		}
+	}
+}

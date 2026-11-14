@@ -1,0 +1,89 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.scorpion": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {"idle.eyes": "!variable.death"
+            },
+            {
+              "walk": "q.modified_move_speed > 0.1 && q.is_on_ground && query.property('spidermanaddon:scorpion_state') == 'default'"
+            },
+            {
+              "falling": "!q.is_on_ground && query.property('spidermanaddon:scorpion_state') == 'default'"
+            },
+            {
+              "look_at_target": "query.property('spidermanaddon:scorpion_state') == 'default'"
+            }
+          ],
+          "transitions": [
+            { "tail_attack": "query.property('spidermanaddon:scorpion_state') == 'tail_attack'" },
+            { "tail_attack_spin": "query.property('spidermanaddon:scorpion_state') == 'tail_attack_spin'" },
+            { "jump_attack": "query.property('spidermanaddon:scorpion_state') == 'jump_attack'" },
+            { "jump_attack_end": "query.property('spidermanaddon:scorpion_state') == 'jump_attack_end'" },
+            { "hide": "query.property('spidermanaddon:scorpion_state') == 'hide'" },
+            { "death": "query.property('spidermanaddon:scorpion_state') == 'death'" }
+          ]
+        },
+		"death": {
+		  "animations": [
+			"death"
+		  ],
+		  "transitions": []
+		},
+        "tail_attack": {
+          "animations": ["tail_attack"],
+          "transitions": [
+            { "default": "query.property('spidermanaddon:scorpion_state') == 'default' && q.all_animations_finished" }
+          ]
+        },
+        "tail_attack_spin": {
+          "animations": ["tail_attack_spin"],
+          "transitions": [
+            { "default": "query.property('spidermanaddon:scorpion_state') == 'default' && q.all_animations_finished" }
+          ]
+        },
+        "jump_attack": {
+          "animations": ["jump_attack"],
+          "transitions": [
+            { "jump_attack_end": "query.property('spidermanaddon:scorpion_state') == 'jump_attack_end'" },
+            { "default": "query.property('spidermanaddon:scorpion_state') == 'default' && q.all_animations_finished" }
+          ]
+        },
+        "jump_attack_end": {
+          "animations": ["jump_attack_end"],
+          "transitions": [
+            { "default": "query.property('spidermanaddon:scorpion_state') == 'default' && q.all_animations_finished" }
+          ]
+        },
+        "hide": {
+          "animations": ["hide"],
+          "transitions": [
+            { "jump_attack": "query.property('spidermanaddon:scorpion_state') == 'jump_attack'" },
+            { "default": "query.property('spidermanaddon:scorpion_state') == 'default'" }
+          ]
+        }
+      }
+    },
+    "controller.animation.scorpion.melee": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack > 0.0 && query.property('spidermanaddon:scorpion_state') == 'default'"
+            }
+          ]
+        },
+        "attack": {
+          "animations": ["attack"],
+          "transitions": [
+            { "default": "q.all_animations_finished" }
+          ]
+        }
+      }
+    }
+  }
+}

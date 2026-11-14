@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.spiderverse_portal.cinematic": {
+      "loop": false,
+      "animation_length": 3.4,
+      "timeline": {
+        "0.1": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "0.25": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "0.5": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "0.75": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "1.0": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "1.25": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "1.5": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "1.75": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "2.0": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "2.25": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "2.5": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "2.75": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		],
+        "3.0": [
+			"/ride @p[tag=player_tp_portal] start_riding @s",
+			"/camera @p[tag=player_tp_portal] fade time 0.5 1 0.5 color 255 255 255"
+		],
+        "3.2": [
+			"/ride @p[tag=player_tp_portal] start_riding @s"
+		]
+      }
+    }
+  }
+}

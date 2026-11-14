@@ -1,0 +1,119 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_web_ball",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1.25,
+				"height": 1.25
+			},
+				"minecraft:projectile": {
+					"on_hit": {
+					  "impact_damage": {
+						"damage": 4,
+						"knockback": false,
+						"should_bounce": true,
+						"destroy_on_hit": false
+					  },
+					  "stick_in_ground":{
+						"shake_time":0.1
+					  },
+					  "mob_effect": {
+						"effect": "slowness",
+						"durationeasy": 40,
+						"durationnormal": 40,
+						"durationhard": 40,
+						"amplifier": 2
+					  },
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit_lv5",
+								"target": "self"
+							}
+						}
+					},
+					"power": 1.9,
+					"gravity": 0.01,
+					"anchor": 1,
+					"destroy_on_hurt": true,
+					"uncertainty_base": 1,
+					"uncertainty_multiplier": 1,
+					"should_bounce": false,
+					"inertia": 1,
+					"offset": [ 0, 0, 0],
+					"multiple_targets": true
+				},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"timer_hit": {
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+			  }
+		}
+			}
+		},
+		"events": {
+			"timer_hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"timer_hit"
+							]
+						}
+					}
+				]
+			},
+			"hit_lv5": {
+				"queue_command": {
+					"command": [
+						"function web_shooter/web_impact",
+						"particle spidermanaddon:web_splash ~ ~0.5 ~"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"hit"
+					]
+				}
+			}
+		}
+	}
+}

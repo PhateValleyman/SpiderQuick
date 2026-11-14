@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spider_gwen": {
+      "geometry": "Geometry.spider_gwen",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.web_shooter_spider_gwen" ]
+    }
+  }
+}

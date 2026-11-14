@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "spiderverse:spidergwen_symbiont_mask",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/suits/spidergwen_symbiont_suit",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.spidergwen_symbiont_mask"
+      },
+      "render_controllers": [
+        {
+          "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')"
+        }
+      ]
+    }
+  }
+}

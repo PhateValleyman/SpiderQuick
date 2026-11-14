@@ -1,0 +1,82 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.suit.x16": {
+      "geometry": "Geometry.x16",
+      "materials": [
+        {
+          "*": "Material.x16"
+        }
+      ],
+      "textures": [
+        "Texture.x16"
+      ]
+    },
+    "controller.render.suit.x16.invisibility": {
+      "geometry": "Geometry.x16",
+      "materials": [
+        {
+          "*": "Material.x16_invisibility"
+        }
+      ],
+      "textures": [
+        "Texture.x16_invisibility"
+      ]
+    },
+    "controller.render.suit.x16.green": {
+      "geometry": "Geometry.x16",
+      "materials": [
+        {
+          "*": "Material.x16"
+        }
+      ],
+      "textures": [
+        "Texture.x16"
+      ]
+    },
+    "controller.render.suit.x16.blue": {
+      "geometry": "Geometry.x16",
+      "materials": [
+        {
+          "*": "Material.x16"
+        }
+      ],
+      "textures": [
+        "Texture.x16_blue"
+      ]
+    },
+    "controller.render.suit.x16.red": {
+      "geometry": "Geometry.x16",
+      "materials": [
+        {
+          "*": "Material.x16"
+        }
+      ],
+      "textures": [
+        "Texture.x16_red"
+      ]
+    },
+    "controller.render.yfn_spiderman_backpack": {
+      "geometry": "Geometry.yfn_spiderman_backpack",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.yfn_spiderman"
+      ]
+    },
+    "controller.render.yfn_spiderman_backpack.outline": {
+      "geometry": "Geometry.yfn_spiderman_backpack_outline",
+      "materials": [
+        {
+          "*": "Material.outline"
+        }
+      ],
+      "textures": [
+        "Texture.yfn_spiderman_backpack_outline"
+      ]
+    }
+  }
+}

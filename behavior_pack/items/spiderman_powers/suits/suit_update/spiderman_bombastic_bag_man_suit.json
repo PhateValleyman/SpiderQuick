@@ -1,0 +1,46 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spiderverse:spiderman_bombastic_bag_man_suit",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.suit"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"spiderman_suit",
+					"suit",
+					"spiderman_bombastic_bag_man_suit"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "spiderman_bombastic_bag_man_suit"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"spidermanaddon:sand_crystal_shard"
+						],
+						"repair_amount": 250
+					}
+				]
+			},
+			"minecraft:durability": {
+				"max_durability": 1800
+			},
+			"minecraft:wearable": {
+				"protection": 14,
+				"slot": "slot.armor.feet"
+			}
+		}
+	}
+}

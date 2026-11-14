@@ -1,0 +1,1740 @@
+gui.spidermanaddon.upgrade_max=Улучшить до максимума
+gui.spidermanaddon.upgrade_max_cost=Оставшиеся уровни: %1. Стоимость: %2 компонентов.
+gui.spidermanaddon.not_enough_components_max=Требуется компонентов: %1, чтобы улучшить этот паутиномёт до максимального уровня.
+gui.spidermanaddon.upgraded_to_max=Паутиномёт улучшен до максимального уровня.
+item.spidermanaddon:black_cat_skin=Облик Чёрной кошки
+item.spidermanaddon:norm_stone=Камень Норма
+
+ui.spiderman.settings.spider_sense_particles=Частицы паучьего чутья
+ui.spiderman.settings.spider_sense_sound=Звук паучьего чутья
+ui.spiderman.settings.spider_sense_actionbar=Панель предупреждения паучьего чутья
+
+item.minecraft:leather=Кожа
+item.spidermanaddon:spider_gwen_skin=Облик: Спайдер-Гвен
+item.spidermanaddon:mayday_skin=Облик: Mayday Parker
+
+entity.spidermanaddon:hulk_boss.name=Hulk
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=Hulk Призвать
+
+dialogue.spidermanaddon.hulk_activation=?????:§r Ты просто ходячая катастрофа. Не стой у меня на пути. Иначе не только твои друзья забудут, кто такой Питер Паркер.
+dialogue.spidermanaddon.hulk_defeated=?????:§r Ты неплохо справился. В следующий раз тебе так не повезёт.
+spidermanaddon:itemGroup.name.shocker=Шокер Арсенал
+item.spidermanaddon:shocker_mask=Маска: Шокер
+item.spidermanaddon:shocker_suit=Костюм: Шокер
+item.spidermanaddon:spider_punk_guitar=Спайдер-Панк Гитара
+item.spidermanaddon:shocker_gloves=Перчатки: Шокер
+gui.spidermanaddon.symbiont_evil_dance=Зловещий танец
+tile.spiderman:spider_capsule.name=Капсула с радиоактивным пауком
+
+ui.spiderman.settings.button=§8Настройки
+ui.spiderman.settings.title=§lНастройки способностей
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§bСвободный бег по стенам
+ui.spiderman.settings.water_surf=§9Сёрфинг по воде
+ui.spiderman.settings.save=Сохранить настройки
+ui.spiderman.settings.saved=§aНастройки успешно сохранены.
+
+item.spidermanaddon:organic_web_potion=Органическая паутина Зелье
+
+item.minecraft:gunpowder=Порох
+item.minecraft:glass=Стекло
+item.minecraft:slime_ball=Сгусток слизи
+item.minecraft:string=Нить
+item.minecraft:ender_pearl=Жемчуг Эндера
+
+ui.oscorp_table.title=§2Технологический стол Oscorp
+ui.oscorp_table.body=§7Выберите проект злодея Человека-паука, который хотите создать.
+ui.oscorp_table.category_body=§7Выберите предмет, костюм или способность, которую хотите создать.
+ui.oscorp_table.category.green_goblin=§aЗелёный гоблин
+ui.oscorp_table.category.doctor_octopus=§6Доктор Осьминог
+ui.oscorp_table.category.boomerang=§9Бумеранг
+ui.oscorp_table.category.electro=§eЭлектро
+ui.oscorp_table.category.mysterio=§5Мистерио
+ui.oscorp_table.category.scorpion=§2Скорпион
+ui.oscorp_table.category.tarantula=§4Тарантул
+ui.oscorp_table.category.black_cat=§dЧёрная кошка
+ui.oscorp_table.category.modified_spider=§cМодифицированный Паук
+ui.oscorp_table.selected=Выбранный проект
+ui.oscorp_table.required_materials=Необходимые материалы
+ui.oscorp_table.result=Результат
+ui.oscorp_table.craft=Создать
+ui.oscorp_table.missing_materials=Недостающие материалы
+ui.oscorp_table.cancel=Отмена
+ui.oscorp_table.back=Назад
+ui.oscorp_table.crafted=Создание завершено
+ui.oscorp_table.no_materials=У вас нет необходимых материалов
+ui.oscorp_table.invalid_item=Не удалось создать предмет
+
+entity.spidermanaddon:oscorp_table.name=Лабораторный стол Oscorp
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=Лабораторный стол Oscorp
+
+item.spidermanaddon:tarantula_attack=Летающий Удар ногой
+item.spidermanaddon:black_cat_mask=Маска: Чёрная кошка
+item.spidermanaddon:black_cat_suit=Костюм: Чёрная кошка
+
+item.spidermanaddon:boomerang_powers=Бумеранг Способности
+item.spidermanaddon:boomerang_skill_explosive=Взрывной Бумеранг
+item.spidermanaddon:boomerang_skill=Бросить Бумеранг
+item.spidermanaddon:boomerang_skill_electric=Электрический бумеранг
+
+item.minecraft:spider_eye=Паучий глаз
+item.minecraft:fermented_spider_eye=Ферментированный паучий глаз
+item.minecraft:blaze_powder=Огненный порошок
+item.minecraft:ghast_tear=Слеза гаста
+item.minecraft:milk_bucket=Ведро молока
+
+ui.laboratory_workbench.upgrade_levels_body=§fТекущий уровень: §e%1§f/§e%2
+§fУлучшить Стоимость: §a%3 уровней опыта
+ui.laboratory_workbench.no_levels=§cВам нужно %1 уровней опыта. Сейчас у вас %2.
+
+item.spidermanaddon:police_scanner=Полицейский Сканер
+action.interact.police_scanner=Включить/выключить сканер
+hud.police_scanner.crime.location=§cПреступление обнаружен §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§bРасстояние: §f%1 m
+
+hud.man_spider.web.ready=§2Органическая паутина §f%1/%2
+hud.man_spider.web.locked=§cПаутина Заблокировано §f%1/%2
+hud.man_spider.acid.ready=§aКислота Готово
+hud.man_spider.acid.cooldown=§2Кислота §f%1s
+hud.man_spider.claw.ready=§cПрыжок Атака Готово
+hud.man_spider.claw.cooldown=§4Прыжок Атака §f%1s
+message.man_spider.mutation.requires_powers=§cУ вас должны быть экипированы способности Человека-паука.
+message.organic_web.requires_powers=§cУ вас должны быть экипированы способности Человека-паука.
+
+item.spidermanaddon:man_spider_web_shoot=Выпустить паутину [Органическая паутина]
+item.spidermanaddon:man_spider_swing=Раскачивание на паутине [Органическая паутина]
+item.spidermanaddon:man_spider_acid=Выпустить Кислота
+item.spidermanaddon:man_spider_claw=Атака
+item.spidermanaddon:spider_mutant=Сыворотка мутации
+item.spidermanaddon:mutation_antidote=Мутант Антидот
+item.spidermanaddon:six_arms=Шесть Руки
+item.spidermanaddon:man_spider=Человек-Паук
+
+hud.spiderman.web_swing.ammo=§bРаскачивание на паутине §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ Раскачивание Точка Обнаружен: §f%1 блоков
+hud.spiderman.web_swing.target.none=§c◇ Нет Раскачивание Точка: §fмакс.. %1 блоков
+hud.spiderman.web_swing.target.no_ammo=§c✖ Нет жидкости для паутины
+hud.spiderman.web_swing.target.active=§a◆ Паутина подключена
+
+item.spidermanaddon:spiderman_unlimited_sonic=Звуковая Волна
+item.spidermanaddon:spiderman_unlimited_invisibility=Невидимость
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=Человек-паук: Безграничный Наручный трансформер
+menu.pizza.full_shift=§6Полная смена
+dialog.pizza.full_shift_started=§6Мистер Азиз:§r Полная смена началась. Заказ %1/%2: доставьте пиццу %3 клиентам. Время начала: %4.
+dialog.pizza.full_shift_return_to_joe=§6Заказ выполнен. Вернитесь к мистеру Азизу, чтобы получить заказ %1/%2.
+dialog.pizza.full_shift_return_for_reward=§6Вы выполнили последний заказ. Вернитесь к мистеру Азизу за наградой.
+dialog.pizza.full_shift_next_order=§6Мистер Азиз:§r Заказ %1/%2 готов: доставьте пиццу %3 клиентам. Общее время: %4.
+dialog.pizza.full_shift_spawn_failed=§6Мистер Азиз:§r Я не смог найти клиентов для следующего заказа. Полная смена провалена.
+dialog.pizza.full_shift_success=§6Мистер Азиз:§r Полная смена завершена! Вы выполнили %1 заказов и получили %2 золотых слитков, %3 компонентов и %4 очков опыта.
+
+
+dialog.pizza.night_unavailable=§6Мистер Азиз:§r Ночью смена доставки закрыта. Возвращайтесь днём.
+dialog.pizza.daily_limit=§6Мистер Азиз:§r Сегодня вы уже выполнили все %1 миссии доставки. Возвращайтесь завтра.
+
+item.spidermanaddon:pizza_backpack_offhand=Рюкзак: Пицца Доставка
+
+pack.name=SpiderQuick
+pack.description=Система доставки пиццы, вдохновлённая Spider-Man 2.
+
+entity.spidermanaddon:joe_pizza.name=Мистер. Aziz
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=Призвать Мистер. Aziz
+entity.spidermanaddon:customer.name=Клиент
+item.spawn_egg.entity.spidermanaddon:customer.name=Призвать Клиент
+item.spidermanaddon:pizza_backpack=Горячая пицца!
+
+action.interact.pizza_talk=Поговорить Мистер. Aziz
+action.interact.deliver_pizza=Доставить Пицца
+
+menu.pizza.title=§6Мистер. Aziz's Пицца
+menu.pizza.body=Хотите работать курьером? Доставьте все заказы и вернитесь до истечения времени.
+menu.pizza.accept=§aПринять миссию
+menu.pizza.decline=Не сейчас
+
+dialog.pizza.busy=§6Мистер Азиз:§r Другой курьер уже работает. Возвращайтесь позже.
+dialog.pizza.spawn_failed=§6Мистер Азиз:§r Я не смог найти безопасные места для клиентов. Попробуйте в другой области.
+dialog.pizza.inventory_full=§6Мистер Азиз:§r В инвентаре нужен хотя бы один свободный слот для рюкзака.
+dialog.pizza.mission_started=§6Мистер Азиз:§r У вас есть %2, чтобы доставить %1 заказ(ов). Живо!
+dialog.pizza.still_working=§6Мистер Азиз:§r Осталось доставить %1 заказ(ов). Оставшееся время: %2.
+dialog.pizza.not_your_customer=§6Мистер Азиз:§r Этот заказ принадлежит другому курьеру.
+dialog.pizza.already_delivered=§eЭтот клиент уже получил свою пиццу.
+dialog.pizza.need_backpack=§cЧтобы доставить заказ, нужно держать рюкзак для пиццы.
+dialog.pizza.order_delivered=§aЗаказ доставлен. Клиенты: %1/%2.
+dialog.pizza.return_to_joe=§6Все заказы готовы. Вернитесь к мистеру Азизу, пока не вышло время!
+dialog.pizza.failed_time=§6Мистер Азиз:§r Время вышло. Миссия провалена.
+dialog.pizza.failed_customer=§6Мистер Азиз:§r Клиент исчез или погиб. Миссия провалена.
+dialog.pizza.success=§6Мистер Азиз:§r Хорошая работа. Вы доставили %1 заказ(ов) и получили %2 золотых слитков.
+
+dialog.spider_sense.enemy_detected=§cВраг обнаружен:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Маска: Ben Действительно
+item.spiderverse:ben_really_suit=Костюм: Ben Действительно
+
+item.spidermanaddon:scorpion_attack=Жало Атака
+item.spidermanaddon:scorpion_spin=Вращающийся Удар
+item.spidermanaddon:scorpion_poison=Активировать Яд
+item.spidermanaddon:scorpion_powers=Хвост Скорпиона
+
+entity.spidermanaddon:electro_boss.name=Электро
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Призвать Электро
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Призвать Silk
+entity.spidermanaddon:punisher_van.name=Каратель Фургон
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=Каратель Фургон
+item.marveladdons:venom_transform=Превратиться в Венома
+item.marveladdons:venom_claw=Веном Коготь
+item.marveladdons:venom_combat=Бой
+item.marveladdons:venom_powers=Веном Способности
+item.marveladdons:venom_shield=Щит
+item.spidermanaddon:agent_venom_ult=Агент Веном Способность
+item.spiderverse:spiderman_undies_suit=Человек-паук Нижнее бельё
+item.spiderverse:electro_mask=Маска: Электро
+item.spidermanaddon:electro_powers=Электро Способности
+item.spidermanaddon:tarantula_suit=Костюм: Тарантул
+item.spidermanaddon:tarantula_mask=Маска: Тарантул
+item.spidermanaddon:boomerang_suit=Костюм: Бумеранг
+item.spidermanaddon:boomerang_mask=Маска: Бумеранг
+item.spidermanaddon:scorpion_suit=Костюм: Скорпион
+item.spidermanaddon:green_goblin_combat=Бой
+item.spidermanaddon:green_goblin_laser=Зелёный гоблин Лазер
+item.spidermanaddon:hobgoblin_pumpkin_bomb=Хобгоблин Бомба
+item.spidermanaddon:black_cat_powers=Чёрная кошка Способности
+item.spidermanaddon:spiderman_menu=Меню
+item.marveladdons:venom_wings=Веном Крылья
+item.marveladdons:venom_whip=Раскачивание Кнут
+
+marveladdons:itemGroup.name.fabric=Ткань Рулоны
+marveladdons:itemGroup.name.spray=Спрей Краски
+spidermanaddon:itemGroup.name.powers=Человек-паук Способности
+spidermanaddon:itemGroup.name.web_shooters=Веб-шутер
+spidermanaddon:itemGroup.name.mask=Человек-паук Маски
+spidermanaddon:itemGroup.name.suit=Человек-паук Костюмы
+spidermanaddon:itemGroup.name.mysterio=Мистерио Арсенал
+spidermanaddon:itemGroup.name.green_goblin=Зелёный гоблин Арсенал
+spidermanaddon:itemGroup.name.sandman=Песочный человек Арсенал
+spidermanaddon:itemGroup.name.electro=Электро Арсенал
+spidermanaddon:itemGroup.name.black_cat=Чёрная кошка Арсенал
+spidermanaddon:itemGroup.name.scorpion=Скорпион Арсенал
+spidermanaddon:itemGroup.name.dr_octopus=Dr. Octopus Арсенал
+spidermanaddon:itemGroup.name.tarantula=Тарантул Арсенал
+spidermanaddon:itemGroup.name.boomerang=Бумеранг Арсенал
+
+entity.spidermanaddon:symbiote_nests.name=Симбиот Гнёзда
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=Симбиот Гнёзда
+
+dialog.black_cat.heal.light=§dЧёрная кошка:§r Что-то простое... но полезное. Не привыкай видеть меня благодарной.
+dialog.black_cat.heal.meal=§dЧёрная кошка:§r Вот это я называю заботой о союзнице. Милый жест, Паучок.
+dialog.black_cat.heal.golden=§dЧёрная кошка:§r Золотое яблоко для меня? Похоже, кто-то хочет заслужить все девять моих жизней.
+dialog.black_cat.heal.full=§dЧёрная кошка:§r Теперь я чувствую себя превосходно. Постарайся всё не испортить, ладно?
+dialog.black_cat.heal.bad=§dЧёрная кошка:§r Гнилая еда? Осторожнее, милый. Доверие тоже можно отравить.
+
+dialog.punisher.heal.light=§8Каратель:§r Припасы получены. Этого хватит, чтобы двигаться дальше.
+dialog.punisher.heal.meal=§8Каратель:§r Хорошая еда. Помогает команде держаться на ногах.
+dialog.punisher.heal.golden=§8Каратель:§r Золотое яблоко. Полезно. Ты не потратил его зря.
+dialog.punisher.heal.full=§8Каратель:§r Полное восстановление. Я снова в бою.
+dialog.punisher.heal.bad=§8Каратель:§r Это не помощь. Это плохое решение.
+
+dialog.punisher.night.1=§8Каратель:§r Ночь благоволит преступникам... и нам тоже.
+dialog.punisher.night.2=§8Каратель:§r Именно тогда они выходят из укрытий.
+dialog.punisher.night.3=§8Каратель:§r Держи глаза открытыми.
+
+dialog.punisher.health.1=§8Каратель:§r Мне приходилось выдерживать удары и похуже.
+dialog.punisher.health.2=§8Каратель:§r Я ещё могу сражаться.
+
+item.spiderverse:electro_no_way_home_suit=Костюм: Электро: Человек-паук Нет Дорога Дом
+item.spiderverse:electro_no_way_home_mask=Маска: Электро: Человек-паук Нет Дорога Дом
+item.spiderverse:electro_tas2_suit=Костюм: Электро: Удивительный Человек-паук 2
+item.spiderverse:electro_tas2_mask=Маска: Электро: Удивительный Человек-паук 2
+
+item.spidermanaddon:electro_laser=Электро Лазер
+item.spidermanaddon:electro_teleport=Телепортация
+item.spidermanaddon:electro_ray=Электрическая Магнит
+
+gui.uncle_ben_camera.title=§bРежим камеры
+gui.uncle_ben_camera.body=Выберите параметр камеры.
+gui.uncle_ben_camera.camera=Камера
+gui.uncle_ben_camera.poses=Позы
+gui.uncle_ben_camera.camera.title=Камера
+gui.uncle_ben_camera.camera.body=Выберите Режим камеры.
+gui.uncle_ben_camera.camera.free=Свободная камера
+gui.uncle_ben_camera.camera.selfie=Режим селфи
+gui.uncle_ben_camera.poses.title=Позы
+gui.uncle_ben_camera.poses.body=Выберите поза.
+gui.uncle_ben_camera.poses.disable=Отключить позы
+gui.uncle_ben_camera.poses.pose=Поза
+
+dialog.punisher.interact.low.1=§8Каратель:§r Не путай совместную работу с дружбой.
+dialog.punisher.interact.low.2=§8Каратель:§r Если потеряешь бдительность, я не стану тебя спасать.
+dialog.punisher.interact.low.3=§8Каратель:§r Докажи, что тебе можно доверять.
+dialog.punisher.interact.low.4=§8Каратель:§r Я видел слишком много павших героев, которые доверились не тем людям.
+dialog.punisher.interact.low.5=§8Каратель:§r Меньше разговоров. Смотри в оба.
+
+dialog.punisher.interact.high.1=§8Каратель:§r Ты доказал, что умеешь выживать.
+dialog.punisher.interact.high.2=§8Каратель:§r Я редко такое говорю... хорошая работа.
+dialog.punisher.interact.high.3=§8Каратель:§r Прикрой меня, а я прикрою тебя.
+dialog.punisher.interact.high.4=§8Каратель:§r Я начинаю думать, что ты действительно что-то меняешь.
+dialog.punisher.interact.high.5=§8Каратель:§r Пока мы сражаемся вместе, этим преступникам не будет покоя.
+
+dialog.punisher.follow=§8Каратель:§r Не отходи слишком далеко.
+dialog.punisher.free=§8Каратель:§r Если кто-нибудь появится, я разберусь.
+
+dialog.punisher.recruit.1=§8Каратель:§r Это удостоверение доказывает, что ты с Мстителями... Я поработаю с тобой.
+dialog.punisher.recruit.2=§8Каратель:§r Я не выполняю приказы кого попало. Но дам тебе шанс.
+
+dialog.punisher.respect.1=§8Каратель:§r Ты учишься.
+dialog.punisher.respect.2=§8Каратель:§r Хорошая работа.
+dialog.punisher.respect.3=§8Каратель:§r Я начинаю тебе доверять.
+dialog.punisher.respect.4=§8Каратель:§r Это было профессионально.
+
+dialog.punisher.assist.1=§8Каратель:§r Хороший выстрел. Продолжай в том же духе.
+dialog.punisher.assist.2=§8Каратель:§r Ты сражаешься лучше, чем я ожидал.
+dialog.punisher.assist.3=§8Каратель:§r Сегодня мы преподали им урок.
+dialog.punisher.assist.4=§8Каратель:§r С тобой работать проще.
+
+dialog.punisher.respect.25=§8Каратель:§r Похоже, ты знаешь, что делаешь.
+dialog.punisher.respect.50=§8Каратель:§r Я начинаю тебе доверять.
+dialog.punisher.respect.75=§8Каратель:§r Ты доказал, что являешься настоящим союзником.
+dialog.punisher.respect.100=§8Каратель:§r Если мне когда-нибудь понадобится кто-то, кто прикроет спину, это будешь ты.
+
+dialog.punisher.idle.1=§8Каратель:§r Не теряй бдительности.
+dialog.punisher.idle.2=§8Каратель:§r Город никогда не спит.
+dialog.punisher.idle.3=§8Каратель:§r Преступники всегда возвращаются.
+dialog.punisher.idle.4=§8Каратель:§r Используй эту тихую минуту с пользой.
+dialog.punisher.idle.5=§8Каратель:§r Не теряй бдительности.
+
+gui.punisher.interact=Взаимодействовать
+gui.punisher.follow=Следовать меня
+gui.punisher.stop_follow=Остановить следование меня
+gui.punisher.title=Каратель
+gui.punisher.respect=Уважение Уровень:
+
+dialog.punisher.enemy.1=§8Каратель:§r Вот они... не упускай их из виду.
+dialog.punisher.enemy.2=§8Каратель:§r У нас компания.
+dialog.punisher.enemy.3=§8Каратель:§r Пора очистить улицы.
+
+dialog.punisher.owner_hit.1=§8Каратель:§r Следи за ударами. Я здесь не для того, чтобы попадать под дружественный огонь.
+dialog.punisher.owner_hit.2=§8Каратель:§r Плохое решение. В следующий раз целься во врага.
+dialog.punisher.owner_hit.3=§8Каратель:§r Эта ошибка стоит доверия. Соберись.
+
+menu.punisher.body.low_respect=Каратель настороженно наблюдает за вами. Он всё ещё не до конца вам доверяет.
+menu.punisher.body.high_respect=Каратель подходит с уверенной улыбкой. Похоже, ему нравится ваша компания.
+
+item.marveladdons:avengers_id_card=Мстители ID Card.
+
+dialog.black_cat.enemy.1=§dЧёрная кошка:§r Поблизости компания. И на щедрые чаевые они не похожи.
+dialog.black_cat.enemy.2=§dЧёрная кошка:§r Я слышу движение рядом... приготовь паутину, Паучок.
+dialog.black_cat.enemy.3=§dЧёрная кошка:§r Мы не одни. Поблизости монстр, который портит нам ночь.
+
+dialog.black_cat.owner_hit.1=§dЧёрная кошка:§r Это был удар или ужасный способ привлечь моё внимание?
+dialog.black_cat.owner_hit.2=§dЧёрная кошка:§r Осторожно, Паучок. Не те когти тоже могут разрушить доверие.
+dialog.black_cat.owner_hit.3=§dЧёрная кошка:§r Если будешь так со мной обращаться, может, мне снова работать одной.
+
+dialog.black_cat.approach.low.1=§dЧёрная кошка:§r Ну надо же, кто пришёл. Ты здесь, чтобы помочь, или просто стильно мешаться под ногами?
+dialog.black_cat.approach.low.2=§dЧёрная кошка:§r Не радуйся, мы ещё не напарники. Но можешь идти рядом со мной... пока что.
+dialog.black_cat.approach.low.3=§dЧёрная кошка:§r Хочешь доверия — заслужи его. Я не раздаю свои девять жизней.
+
+dialog.black_cat.approach.high.1=§dЧёрная кошка:§r А вот и ты, Паучок. Я уже начала думать, что ночь будет скучной.
+dialog.black_cat.approach.high.2=§dЧёрная кошка:§r Как раз вовремя. Неприятности обычно веселее, когда я рядом.
+dialog.black_cat.approach.high.3=§dЧёрная кошка:§r Мне нравится, когда ты так появляешься. Город кажется чуть менее опасным... почти.
+
+dialog.black_cat.play_night.end.1=§dЧёрная кошка:§r По-моему, тот костюм тебе уже не подходил.
+dialog.black_cat.play_night.end.2=§dЧёрная кошка:§r Доброе утро... ты спал довольно крепко.
+dialog.black_cat.play_night.end.3=§dЧёрная кошка:§r Надеюсь, ты не против... я одолжила кое-что из твоего шкафа.
+dialog.black_cat.play_night.end.4=§dЧёрная кошка:§r Не делай такое лицо... так ты выглядишь очаровательно.
+dialog.black_cat.play_night.end.5=§dЧёрная кошка:§r Теперь у нас есть маленький общий секрет.
+dialog.black_cat.play_night.end.6=§dЧёрная кошка:§r Похоже, эта ночь была незабываемой.
+
+dialog.black_cat.play_night.start.1=§dЧёрная кошка:§r Сегодня ночью... ты весь мой.
+dialog.black_cat.play_night.start.2=§dЧёрная кошка:§r Давай на одну ночь забудем о злодеях.
+dialog.black_cat.play_night.start.3=§dЧёрная кошка:§r Иди сюда... я приготовила кое-что особенное.
+dialog.black_cat.play_night.start.4=§dЧёрная кошка:§r Не волнуйся... обещаю вести себя хорошо.
+dialog.black_cat.play_night.start.5=§dЧёрная кошка:§r После всего, через что мы прошли... ты это заслужил.
+dialog.black_cat.play_night.start.6=§dЧёрная кошка:§r Не смотри так пристально... иди сюда.
+
+dialog.black_cat.theft.1=§dЧёрная кошка:§r Упс... это было твоё?
+dialog.black_cat.theft.2=§dЧёрная кошка:§r Я это одолжу... может быть, даже верну.
+dialog.black_cat.theft.3=§dЧёрная кошка:§r Слишком медленно, Паучок.
+dialog.black_cat.theft.4=§dЧёрная кошка:§r Неужели ты думал, что я не замечу?
+dialog.black_cat.theft.5=§dЧёрная кошка:§r Поймай меня, если сможешь!
+dialog.black_cat.theft.6=§dЧёрная кошка:§r С тобой всегда веселее.
+
+dialog.black_cat.play_night.betrayal.1=§dЧёрная кошка:§r Ночь была весёлой, Паучок... но не путай веселье с верностью.
+dialog.black_cat.play_night.betrayal.2=§dЧёрная кошка:§r Я предупреждала, что доверять воровке опасно. Спасибо за воспоминания... и за всё остальное.
+dialog.black_cat.play_night.betrayal.3=§dЧёрная кошка:§r Не принимай близко к сердцу, милый. Я просто последовала своей природе: проникнуть, украсть и исчезнуть.
+
+menu.black_cat.play_night=Ночь Веселье!
+dialog.black_cat.play_night.ready=Чёрная кошка, похоже, готова провести с вами особенную ночь.
+menu.black_cat.play_night=Play Ночь
+menu.black_cat.aspect.spiderman_suit=Чёрная кошка Человек-паук Костюм
+menu.black_cat.aspect=Облик
+menu.black_cat.aspect.title=Чёрная кошка Облики
+menu.black_cat.aspect.body=Выберите облик Чёрная кошка будет Использовать.
+menu.black_cat.aspect.default=Чёрная кошка
+menu.black_cat.aspect.symbiont=Симбиот Чёрная кошка
+menu.black_cat.aspect.rivals=Чёрная кошка Marvel Соперники
+menu.black_cat.aspect.locked=%s [Заблокировано]
+dialog.black_cat.aspect.locked=Она всё ещё недостаточно вам доверяет, чтобы использовать этот облик.
+dialog.black_cat.aspect.changed=Чёрная кошка изменила свой облик.
+
+dialog.black_cat.assist.1=§dЧёрная кошка:§r Неплохо. Может, в бою от тебя и правда есть польза.
+dialog.black_cat.assist.2=§dЧёрная кошка:§r Хороший удар. Ты меня почти впечатлил.
+dialog.black_cat.assist.3=§dЧёрная кошка:§r Мы неплохая команда... только не радуйся.
+dialog.black_cat.assist.4=§dЧёрная кошка:§r Признаю, это было стильно.
+
+dialog.black_cat.try_tame=§dЧёрная кошка:§r Хочешь, чтобы я работала с тобой, используй изумруд.
+menu.black_cat.title=Чёрная кошка
+
+menu.black_cat.respect=Уважение:
+menu.black_cat.interact=Взаимодействовать
+menu.black_cat.follow_me=Следовать меня
+menu.black_cat.stop_following=Остановить следование меня
+
+menu.black_cat.body.low_respect=Чёрная кошка настороженно наблюдает за вами. Она всё ещё не до конца вам доверяет.
+menu.black_cat.body.high_respect=Чёрная кошка подходит с уверенной улыбкой. Похоже, ей нравится ваша компания.
+
+dialog.black_cat.low_respect.1=§dЧёрная кошка:§r Не пойми неправильно. Я всё ещё тебе не доверяю.
+dialog.black_cat.low_respect.2=§dЧёрная кошка:§r Если всё пойдёт не так, во второй раз я тебя не спасу.
+dialog.black_cat.low_respect.3=§dЧёрная кошка:§r Ты полезен... пока что.
+dialog.black_cat.low_respect.4=§dЧёрная кошка:§r Не давай мне повода об этом пожалеть.
+dialog.black_cat.low_respect.5=§dЧёрная кошка:§r Я долго работала одна. Не испорть всё.
+dialog.black_cat.low_respect.6=§dЧёрная кошка:§r У тебя есть талант, но и проблем у тебя немало.
+dialog.black_cat.low_respect.7=§dЧёрная кошка:§r Не теряй бдительности. Я не потеряю.
+dialog.black_cat.low_respect.8=§dЧёрная кошка:§r Может быть, когда-нибудь ты заслужишь моё доверие.
+
+dialog.black_cat.high_respect.1=§dЧёрная кошка:§r Мне нравится работать с тобой, маленький паучок.
+dialog.black_cat.high_respect.2=§dЧёрная кошка:§r У тебя есть стиль. Не такой, как у меня, но близко.
+dialog.black_cat.high_respect.3=§dЧёрная кошка:§r Я знала, что тебе можно доверять.
+dialog.black_cat.high_respect.4=§dЧёрная кошка:§r Признаю, с тобой веселее.
+dialog.black_cat.high_respect.5=§dЧёрная кошка:§r Хорошая работа. Ты меня почти впечатлил.
+dialog.black_cat.high_respect.6=§dЧёрная кошка:§r Когда ты рядом, становится не так скучно.
+dialog.black_cat.high_respect.7=§dЧёрная кошка:§r Не радуйся, но я рада тебя видеть.
+dialog.black_cat.high_respect.8=§dЧёрная кошка:§r Прикрой меня, а я прикрою тебя.
+
+dialog.black_cat.follow_me=§dЧёрная кошка:§r Ладно, я пойду с тобой. Только не иди так медленно.
+dialog.black_cat.stop_following=§dЧёрная кошка:§r Прекрасно, я останусь здесь. Не скучай по мне слишком сильно.
+dialog.black_cat.not_owner=§dЧёрная кошка:§r Прости, милый. Я на тебя не работаю.
+
+entity.spidermanaddon:black_cat.name=Чёрная кошка
+action.interact.black_cat=Взаимодействовать
+item.spidermanaddon:black_cat_contract.name=Чёрная кошка Контракт
+dialog.black_cat.stolen=§dЧёрная кошка:§r Спасибо за алмаз. Хочешь вернуть... поймай меня.
+dialog.black_cat.captured=§dЧёрная кошка:§r Ладно... признаю, ты быстрее, чем я ожидала.
+dialog.black_cat.escape=§dЧёрная кошка:§r Слишком медленно, Паучок. До следующего раза.
+dialog.black_cat.need_contract=§dЧёрная кошка:§r Думаешь, я работаю бесплатно? Предложи что-нибудь получше.
+dialog.black_cat.recruited=§dЧёрная кошка:§r Ладно... я поработаю с тобой. Но не жди, что я стану соблюдать правила.
+item.spidermanaddon:uncle_ben_camera=Дядя Ben's Камера
+
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+action.interact.j_jonah_jameson=Поговорить
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=Джеймсон подозрительно смотрит на вас из-за своего стола.
+menu.j_jonah_jameson.interact=Взаимодействовать
+menu.j_jonah_jameson.sell_picture=Продать Фотография
+menu.j_jonah_jameson.close=Закрыть
+
+dialogue.j_jonah_jameson.random.1=Человек-паук — угроза! Угроза в маске!
+dialogue.j_jonah_jameson.random.2=Мне нужны фотографии Человека-паука, а не оправдания.
+dialogue.j_jonah_jameson.random.3=Если этот стенолаз объявится, эксклюзив должен лежать у меня на столе.
+dialogue.j_jonah_jameson.random.4=Городу нужны настоящие новости, а не герои, скачущие по крышам.
+dialogue.j_jonah_jameson.random.5=Паркер! Стой... ты не Паркер. Ладно, всё равно шевелись быстрее.
+
+dialogue.j_jonah_jameson.sell_picture=Фотография ужасная, ракурс отвратительный, а Человек-паук всё ещё выглядит как угроза... но сойдёт. Держи свои 10 слитков.
+dialogue.j_jonah_jameson.no_picture=Ты пытаешься продать мне воздух? Возвращайся, когда у тебя будет настоящая фотография Человека-паука!
+
+item.minecraft:planks=Деревянные доски
+item.minecraft:glowstone_dust=Светокаменная пыль
+item.minecraft:redstone=Редстоун
+item.minecraft:diamond=Алмаз
+item.minecraft:copper_ingot=Медный слиток
+item.minecraft:amethyst_shard=Осколок аметиста
+item.minecraft:quartz=Кварц Нижнего мира
+item.minecraft:netherite_ingot=Netherita Слиток
+item.minecraft:gold_ingot=Золотой слиток
+item.minecraft:iron_ingot=Железный Слиток
+item.minecraft:emerald=Изумруд
+item.marveladdons:iron_arms=Железный Паук Руки
+
+ui.spiderman_accessories.title=Создание аксессуаров
+ui.spiderman_accessories.body=Выберите аксессуар Создать.
+ui.spiderman_accessories.selected_accessory=Выбранный аксессуар
+ui.spiderman_accessories.crafted=Вы создано
+
+ui.laboratory_workbench.upgrades_menu=Улучшить Человек-паук Способности
+ui.laboratory_workbench.upgrades_body=Выберите способность Улучшить.
+ui.laboratory_workbench.accessories=Создание аксессуаров
+ui.laboratory_workbench.accessories_coming_soon=Создание аксессуаров будет быть доступно позже.
+ui.laboratory_workbench.back=Назад
+
+ui.spiderman_suits.next_unlock=Следующий Разблокировать
+
+gui.spidermanaddon.spiderman_level_up=Человек-паук достигли Уровень %1!
+gui.spidermanaddon.spiderman_max_level=Вы есть достигли Человек-паук's максимальный Уровень.
+ui.spiderman_suits.title=Лаборатория костюмов
+ui.spiderman_suits.body=Выберите костюм Создать.
+ui.spiderman_suits.level=Человек-паук Уровень
+ui.spiderman_suits.locked=Заблокировано
+ui.spiderman_suits.need_level=Необходимые Человек-паук Уровень
+ui.spiderman_suits.selected_suit=Выбранный костюм
+ui.spiderman_suits.required_level=Необходимые Уровень
+ui.spiderman_suits.required_materials=Необходимые материалы
+ui.spiderman_suits.result=Результат
+ui.spiderman_suits.mask_included=В этот костюм уже входит маска.
+ui.spiderman_suits.craft=Создать
+ui.spiderman_suits.missing_materials=Недостающие материалы
+ui.spiderman_suits.cancel=Отмена
+ui.spiderman_suits.no_materials=У вас больше недостаточно материалов.
+ui.spiderman_suits.crafted=Вы создано
+
+ui.laboratory_workbench.suits=Создание костюмов
+
+ui.spiderman_suits.title=Лаборатория костюмов
+ui.spiderman_suits.body=Выберите костюм Создать.
+
+item.marveladdons:blue_spray=§9синий Спрей Краска
+item.marveladdons:brown_spray=§6коричневый Спрей Краска
+item.marveladdons:cyan_spray=§3бирюзовый Спрей Краска
+item.marveladdons:gray_spray=§8серый Спрей Краска
+item.marveladdons:green_spray=§2зелёный Спрей Краска
+item.marveladdons:light_blue_spray=§bсиний лёгкий Спрей Краска
+item.marveladdons:light_gray_spray=§7серый лёгкий Спрей Краска
+item.marveladdons:lime_spray=§aлаймовый Спрей Краска
+item.marveladdons:magenta_spray=§dпурпурный Спрей Краска
+item.marveladdons:orange_spray=§6оранжевый Спрей Краска
+item.marveladdons:pink_spray=§dрозовый Спрей Краска
+item.marveladdons:purple_spray=§5фиолетовый Спрей Краска
+item.marveladdons:red_spray=§cкрасный Спрей Краска
+item.marveladdons:white_spray=§fбелый Спрей Краска
+item.marveladdons:yellow_spray=§eжёлтый Спрей Краска
+item.marveladdons:black_spray=чёрный Спрей Краска
+
+item.marveladdons:white_fabric=§fбелый Ткань Рулон
+item.marveladdons:light_gray_fabric=§7серый лёгкий Ткань Рулон
+item.marveladdons:gray_fabric=§8серый Ткань Рулон
+item.marveladdons:black_fabric=чёрный Ткань Рулон
+item.marveladdons:red_fabric=§cкрасный Ткань Рулон
+item.marveladdons:orange_fabric=§6оранжевый Ткань Рулон
+item.marveladdons:yellow_fabric=§eжёлтый Ткань Рулон
+item.marveladdons:lime_fabric=§aлаймовый Ткань Рулон
+item.marveladdons:green_fabric=§2зелёный Ткань Рулон
+item.marveladdons:cyan_fabric=§3бирюзовый Ткань Рулон
+item.marveladdons:light_blue_fabric=§bсиний лёгкий Ткань Рулон
+item.marveladdons:blue_fabric=§9синий Ткань Рулон
+item.marveladdons:purple_fabric=§5фиолетовый Ткань Рулон
+item.marveladdons:magenta_fabric=§dпурпурный Ткань Рулон
+item.marveladdons:pink_fabric=§dрозовый Ткань Рулон
+item.marveladdons:brown_fabric=§6коричневый Ткань Рулон
+item.marveladdons:glasses=§fМаска Линзы
+itemGroup.name.spray=§6Спрей Краски
+itemGroup.name.fabric=§bТкань Рулоны
+
+entity.spidermanaddon:black_cat.name=Чёрная кошка
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Призвать Чёрная кошка
+entity.spidermanaddon:punisher.name=Каратель
+item.spawn_egg.entity.spidermanaddon:punisher.name=Призвать Каратель
+entity.spidermanaddon:electro.name=Электро
+item.spawn_egg.entity.spidermanaddon:electro.name=Призвать Электро
+entity.spidermanaddon:mano_ninja.name=Рука Ниндзя
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=Призвать Рука Ниндзя
+entity.spidermanaddon:scorpion.name=Скорпион
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Призвать Скорпион
+entity.spidermanaddon:tarantula.name=Тарантул
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Призвать Тарантул
+entity.spidermanaddon:symbiotes.name=Симбиотs
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=Призвать Симбиотs
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Призвать Kraven
+entity.spidermanaddon:mayor_fisk.name=Кингпин
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Призвать Кингпин
+entity.spidermanaddon:boomerang.name=Бумеранг
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Призвать Бумеранг
+
+item.spidermanaddon:miles_morales_venom_punch=Веном Удар
+item.spidermanaddon:miles_morales_sensor=Сканирование
+item.spidermanaddon:miles_morales_invisibility=Невидимость
+item.spidermanaddon:miles_morales_focus=Концентрация
+item.spidermanaddon:miles_morales_venom_punch=Веном Удар
+item.spidermanaddon:miles_morales_venom_jump=Веном Прыжок
+item.spidermanaddon:miles_morales_venom_smash=Веном Сокрушение
+item.spidermanaddon:miles_morales_combat=Бой
+
+message.spiderman_resistance.shield=Паучья стойкость защитила вас в последний момент.
+
+ui.laboratory_workbench.title=Лабораторный верстак
+ui.laboratory_workbench.body=Выберите Улучшить для ваш Человек-паук способности.
+
+ui.laboratory_workbench.health=Здоровье: Уровень %s/%s
+ui.laboratory_workbench.resistance=Сопротивление: Уровень %s/%s
+ui.laboratory_workbench.focus=Концентрация: Уровень %s/%s
+
+ui.laboratory_workbench.health.title=Улучшить здоровье
+ui.laboratory_workbench.resistance.title=Улучшить сопротивление
+ui.laboratory_workbench.focus.title=Улучшить концентрацию
+
+ui.laboratory_workbench.health.body=Текущий уровень: %s/%s\nСтоимость: %s компонентов.\n\nУлучшить здоровье?
+ui.laboratory_workbench.resistance.body=Текущий уровень: %s/%s\nСтоимость: %s компонентов.\n\nУлучшить сопротивление?
+ui.laboratory_workbench.focus.body=Текущий уровень: %s/%s\nСтоимость: %s компонентов.\n\nУлучшить концентрацию?
+
+ui.laboratory_workbench.upgrade=Улучшить
+ui.laboratory_workbench.cancel=Отмена
+
+ui.laboratory_workbench.no_components=У вас недостаточно компонентов. Нужно %s компонентов.
+ui.laboratory_workbench.max_level=Это улучшение уже достигло максимального уровня.
+
+ui.laboratory_workbench.health.success=Здоровье улучшено Уровень %s.
+ui.laboratory_workbench.resistance.success=Сопротивление улучшено Уровень %s.
+ui.laboratory_workbench.focus.success=Концентрация улучшено Уровень %s.
+
+item.spiderverse:spiderman_rivals_mask=Маска: Человек-паук: Соперники
+item.spiderverse:spiderman_rivals_suit=Костюм: Человек-паук: Соперники
+item.spiderverse:spiderman_2099_white_mask=Маска: Человек-паук 2099 Белый
+item.spiderverse:spiderman_2099_white_suit=Костюм: Человек-паук 2099 Белый
+item.spiderverse:spiderman_brand_new_day_mask=Маска: Человек-паук: Бренд Новый День
+item.spiderverse:spiderman_brand_new_day_suit=Костюм: Человек-паук: Бренд Новый День
+item.spiderverse:spider_oni_mask=Маска: Паук-Oni
+item.spiderverse:spider_oni_suit=Костюм: Паук-Oni
+item.spiderverse:spiderman_black_gold_mask=Маска: Человек-паук Чёрный и Золото
+item.spiderverse:spiderman_black_gold_suit=Костюм: Человек-паук Чёрный и Золото
+item.spiderverse:spiderman_mk1_mask=Маска: Человек-паук MK Я
+item.spiderverse:spiderman_mk1_suit=Костюм: Человек-паук MK Я
+item.spiderverse:spiderman_mk2_mask=Маска: Человек-паук MK II
+item.spiderverse:spiderman_mk2_suit=Костюм: Человек-паук MK II
+item.spiderverse:spiderman_mk3_mask=Маска: Человек-паук MK III
+item.spiderverse:spiderman_mk3_suit=Костюм: Человек-паук MK III
+item.spiderverse:spiderman_mk4_mask=Маска: Человек-паук MK IV
+item.spiderverse:spiderman_mk4_suit=Костюм: Человек-паук MK IV
+item.spiderverse:spiderman_miles_morales_2099_mask=Маска: Человек-паук: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_2099_suit=Костюм: Человек-паук: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Маска: Человек-паук: Miles Morales - Фиолетовый Правление
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Костюм: Человек-паук: Miles Morales - Фиолетовый Правление
+item.spiderverse:silk_web_mask=Маска: Silk: Паутина Костюм
+item.spiderverse:silk_web_suit=Костюм: Silk: Паутина
+item.spiderverse:scarlet_spider_2_mask=Маска: Алый Паук II
+item.spiderverse:scarlet_spider_2_suit=Костюм: Алый Паук II
+item.spiderverse:spiderman_dark_mask=Маска: Человек-паук Тёмный
+item.spiderverse:spiderman_dark_suit=Костюм: Человек-паук Тёмный
+item.spiderverse:spiderman_into_the_spiderverse_mask=Маска: Человек-паук: Через вселенные
+item.spiderverse:spiderman_into_the_spiderverse_suit=Костюм: Человек-паук: Через вселенные
+item.spiderverse:spiderman_miles_morales_2020_mask=Маска: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_suit=Костюм: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Маска: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Костюм: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Маска: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Костюм: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Маска: Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Костюм: Miles Morales 2020
+item.spiderverse:spiderman_blue_mask=Маска: Человек-паук Синий
+item.spiderverse:spiderman_blue_suit=Костюм: Человек-паук Синий
+item.spiderverse:spiderman_antivenom_classic_mask=Маска: Человек-паук Классический Анти-Веном
+item.spiderverse:spiderman_antivenom_classic_suit=Костюм: Человек-паук Классический Анти-Веном
+item.spiderverse:poison_mask=Маска: Человек-паук: Яд
+item.spiderverse:poison_suit=Костюм: Человек-паук: Яд
+item.spiderverse:spiderman_king_in_black_mask=Маска: Человек-паук: Король в Чёрный
+item.spiderverse:spiderman_king_in_black_suit=Костюм: Человек-паук: Король в Чёрный
+item.spiderverse:spidergwen_symbiont_mask=Маска: Gwenom
+item.spiderverse:spidergwen_symbiont_suit=Костюм: Gwenom
+item.spiderverse:spiderman_zombie_black_mask=Маска: Симбиот Зомби Человек-паук
+item.spiderverse:spiderman_zombie_black_suit=Костюм: Симбиот Зомби Человек-паук
+item.spiderverse:spiderman_zombie_mask=Маска: Зомби Человек-паук
+item.spiderverse:spiderman_zombie_suit=Костюм: Зомби Человек-паук
+item.spiderverse:arachknight_mask=Маска: Arachknight
+item.spiderverse:arachknight_suit=Костюм: Arachknight
+item.spiderverse:spiderman_cyborg_mask=Маска: Человек-паук Киборг
+item.spiderverse:spiderman_cyborg_suit=Костюм: Человек-паук Киборг
+item.spiderverse:spider_carnage_mask=Маска: Паук-Карнаж
+item.spiderverse:spider_carnage_suit=Костюм: Паук-Карнаж
+item.spiderverse:punisher_spiderman_mask=Маска: Паук-Каратель
+item.spiderverse:punisher_spiderman_suit=Костюм: Паук-Каратель
+item.spiderverse:assassin_spiderman_mask=Маска: Ассасин Человек-паук
+item.spiderverse:assassin_spiderman_suit=Костюм: Ассасин Человек-паук
+item.spiderverse:mayday_parker_black_mask=Маска: Симбиот Mayday Parker
+item.spiderverse:mayday_parker_black_suit=Костюм: Симбиот Mayday Parker
+item.spiderverse:mayday_parker_mask=Маска: Mayday Parker
+item.spiderverse:mayday_parker_suit=Костюм: Mayday Parker
+item.spiderverse:spiderman_classic_black_red_spider_mask=Симбиот Человек-паук Маска (Красный Паук)
+item.spiderverse:spiderman_classic_black_red_spider_suit=Симбиот Человек-паук Костюм (Красный Паук)
+item.spidermanaddon:agent_venom_powers=Агент Веном Способности
+item.spidermanaddon:agent_venom_fusil=Штурмовая винтовка
+item.spidermanaddon:agent_venom_missiles=Ракетная установка
+item.spidermanaddon:agent_venom_pistols=Пистолеты
+item.marveladdons:venom_item=Симбиот
+
+gui.spidermanaddon.black=Чёрный
+gui.spidermanaddon.white=Белый
+gui.spidermanaddon.dark_blue=Тёмный Синий
+gui.spidermanaddon.light_blue=Лёгкий Синий
+gui.spidermanaddon.snow=Снег
+gui.spidermanaddon.purple=Фиолетовый
+gui.spidermanaddon.red=Красный
+
+gui.spidermanaddon.symbiont_color=Цвет симбиота
+gui.spidermanaddon.symbiont_color_body=Выберите ваш Цвет симбиота
+gui.spidermanaddon.symbiont_color_changed=Цвет симбиота изменён
+gui.spidermanaddon.symbiont_wings=Крылья симбиота
+gui.spidermanaddon.symbiont_wings_body=Включить или Отключить Крылья симбиота
+gui.spidermanaddon.symbiont_wings_enable=Включить Крылья
+gui.spidermanaddon.symbiont_wings_disable=Отключить Крылья
+gui.spidermanaddon.symbiont_wings_enabled=Крылья включено
+gui.spidermanaddon.symbiont_wings_disabled=Крылья отключено
+
+gui.spidermanaddon.agent_venom_suits=Агент Веном Костюмы
+gui.spidermanaddon.agent_venom_suits_body=Выберите эксклюзив Агент Веном костюм
+gui.spidermanaddon.agent_venom_suit_unlocked=Агент Веном костюм разблокировано
+item.spidermanaddon:agent_venom_thunderbolts_mask=Маска: Агент Веном: Громовержцы
+item.spidermanaddon:agent_venom_thunderbolts_suit=Костюм: Агент Веном: Громовержцы
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=Агент Веном: Harry Osborn Маска (Паук Эмблема)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=Агент Веном: Harry Osborn Костюм (Паук Эмблема)
+item.spidermanaddon:agent_venom_spiderman2_mask=Маска: Агент Веном: Harry Osborn
+item.spidermanaddon:agent_venom_spiderman2_suit=Костюм: Агент Веном: Harry Osborn
+item.spidermanaddon:agent_anti_venom_mask=Маска: Агент Анти-Веном
+item.spidermanaddon:agent_anti_venom_suit=Костюм: Агент Анти-Веном
+item.spidermanaddon:agent_venom_mask=Маска: Агент Веном
+item.spidermanaddon:agent_venom_suit=Костюм: Агент Веном
+
+gui.spidermanaddon.symbiont_skins=Облики
+gui.spidermanaddon.symbiont_skins_body=Выберите облик для Веном
+gui.spidermanaddon.symbiont_skin_need_capsule=Для разблокировки этого облика нужна капсула симбиота
+gui.spidermanaddon.symbiont_skin_unlocked=Облик разблокировано
+gui.spidermanaddon.symbiont_skin_changed=Облик изменён
+gui.spidermanaddon.symbiont_venom_required=Вы должны превратиться в Венома
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=Агент Веном включено
+gui.spidermanaddon.symbiont_agent_venom_disabled=Агент Веном отключено
+gui.spidermanaddon.symbiont_agent_venom_deactivate=Отключить Агент Веном
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=Вы уверены, что хотите отключить Агента Венома?
+gui.spidermanaddon.symbiont_venom_enabled=Веном трансформация включено
+gui.spidermanaddon.symbiont_venom_disabled=Веном трансформация отключено
+gui.spidermanaddon.symbiont_venom_deactivate=Отключить Веном трансформация
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=Вы уверены, что хотите отключить трансформацию Венома?
+gui.spidermanaddon.symbiont_venom_incompatible=Несовместимый симбиоз: в слоте ног не должно быть экипировано никаких предметов.
+
+item.spidermanaddon:venom_rage=Ярость Режим
+item.marveladdons:venom_cellular_corrosion=Клеточная коррозия
+item.marveladdons:venom_eat=Кормить
+item.marveladdons:venom_axe=Симбиот Топор
+item.marveladdons:venom_knife_whip=Симбиот Нож
+item.marveladdons:venom_explotion=Симбиот Взрыв
+
+gui.spidermanaddon.symbiont_deactivate=Отключить Симбиот
+gui.spidermanaddon.symbiont_deactivate_confirm=Вы уверены, что хотите отключить способности симбиота?
+gui.spidermanaddon.symbiont_powers_enabled=Симбиот способности включено
+gui.spidermanaddon.symbiont_powers_disabled=Симбиот способности отключено
+gui.spidermanaddon.confirm=Подтвердить
+gui.spidermanaddon.cancel=Отмена
+gui.spidermanaddon.symbiont_menu_body=Система симбиота Венома
+gui.spidermanaddon.symbiont_progress=Просмотреть прогресс
+gui.spidermanaddon.symbiont_activate=Активировать симбиота
+gui.spidermanaddon.symbiont_unlock_suit=Разблокировать Костюм
+gui.spidermanaddon.symbiont_unlock_suit_body=Выберите доступно симбиот костюм
+gui.spidermanaddon.symbiont_level=Уровень
+gui.spidermanaddon.symbiont_exp=Опыт
+gui.spidermanaddon.symbiont_powers=Включить способности симбиота
+gui.spidermanaddon.symbiont_venom=Превратиться в Венома
+gui.spidermanaddon.symbiont_venom_locked=Превратиться в Венома §cЗаблокировано
+gui.spidermanaddon.symbiont_agent_venom=Агент Веном
+gui.spidermanaddon.symbiont_agent_venom_locked=Агент Веном §cЗаблокировано
+gui.spidermanaddon.symbiont_suit_missing=Нужно экипировать полный костюм
+gui.spidermanaddon.symbiont_suit_unlocked=Симбиот костюм разблокировано
+gui.spidermanaddon.symbiont_bonded=Теперь вы носитель симбиота Венома
+gui.spidermanaddon.not_symbiont_host=Вы не являетесь носителем симбиота
+gui.spidermanaddon.back=Назад
+
+gui.spidermanaddon.symbiont_rank_0=Носитель
+gui.spidermanaddon.symbiont_rank_1=Связанный
+gui.spidermanaddon.symbiont_rank_2=Яростный Носитель
+gui.spidermanaddon.symbiont_rank_3=Смертоносный Защитник
+gui.spidermanaddon.symbiont_rank_4=Идеальный Адаптация
+gui.spidermanaddon.symbiont_rank_5=Агент Веном
+gui.spidermanaddon.symbiont_rank_6=Живой арсенал
+gui.spidermanaddon.symbiont_rank_7=Анти-Веном
+gui.spidermanaddon.symbiont_rank_8=Идеальный Связь
+gui.spidermanaddon.symbiont_rank_9=Крылья Король
+gui.spidermanaddon.symbiont_rank_10=Король в Чёрный
+
+item.spidermanaddon:black_cat_whip_thef=Крюк-кошка удачи
+item.spidermanaddon:black_cat_whip_claws=Коготь Кнут
+item.spidermanaddon:black_cat_swing=Раскачивание Крюк
+item.spidermanaddon:black_cat_claws=Коготь Атака
+
+item.spidermanaddon:mysterio_gas=Illusion Gas
+item.spidermanaddon:mysterio_powers=Мистерио Способности
+item.spidermanaddon:mysterio_invoke=Deploy Приманка
+item.spidermanaddon:mysterio_drones=Атака Дроны
+item.spidermanaddon:mysterio_laser=Мистерио Beam
+item.spidermanaddon:mysterio_clones=Призвать Clones
+item.spiderverse:mysterio_far_from_home_suit=Костюм: Мистерио: Далеко Из Дом
+item.spiderverse:mysterio_far_from_home_helmet=Мистерио Шлем: Далеко Из Дом
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=Зелёный гоблин Взрывной Отслеживание Клинки
+item.spidermanaddon:pumpkin_knife_guide=Зелёный гоблин Отслеживание Клинки
+item.spidermanaddon:green_goblin_powers=Зелёный гоблин Способности
+item.spidermanaddon:green_goblin_raimi_blades=Зелёный гоблин Retractable Клинки
+item.spidermanaddon:green_goblin_spiderman3_blades=Зелёный гоблин Клинки
+item.spiderverse:green_goblin_spiderman3_suit=Костюм: Зелёный гоблин - Человек-паук 3
+item.spiderverse:green_goblin_spiderman3_mask=Маска: Зелёный гоблин - Человек-паук 3
+item.spiderverse:green_goblin_no_way_home_suit=Костюм: Зелёный гоблин - Человек-паук: Нет Дорога Дом
+item.spiderverse:green_goblin_no_way_home_mask=Маска: Зелёный гоблин - Человек-паук: Нет Дорога Дом
+item.spidermanaddon:planeador_spiderman3_item=Зелёный гоблин Глайдер
+entity.spidermanaddon:planeador_spiderman3.name=Зелёный гоблин Глайдер
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=Зелёный гоблин Глайдер
+
+gui.spidermanaddon.confirm_upgrade=Улучшить веб-шутер
+gui.spidermanaddon.upgrade_cost=Для улучшения этого веб-шутера нужно 10 компонентов
+gui.spidermanaddon.upgrade=Улучшить
+gui.spidermanaddon.max_level=Этот веб-шутер уже максимального уровня
+gui.spidermanaddon.upgraded=Веб-шутер улучшено
+gui.spidermanaddon.not_enough_components=У вас недостаточно компонентов
+
+gui.spidermanaddon.no_upgrades=Нужен веб-шутер, который можно улучшить.
+gui.spidermanaddon.upgrade_menu=Улучшить веб-шутер
+gui.spidermanaddon.select_upgrade=Выберите Веб-шутер
+gui.spidermanaddon.confirm_remove=Recover 5 компоненты?
+gui.spidermanaddon.remove=Удалить
+gui.spidermanaddon.shooter_removed=Веб-шутер removed
+gui.spidermanaddon.cannot_remove_equipped=Экипированный веб-шутер нельзя удалить
+
+gui.spidermanaddon.upgrade_shooter=Улучшить веб-шутер
+gui.spidermanaddon.remove_shooter=Удалить веб-шутер
+gui.spidermanaddon.settings=Настроить веб-шутер
+
+gui.spidermanaddon.confirm_unlock=Разблокировать Веб-шутер
+gui.spidermanaddon.unlock_cost=10 компоненты необходимые
+gui.spidermanaddon.unlock=Разблокировать
+gui.spidermanaddon.cancel=Отмена
+gui.spidermanaddon.not_enough_components=Не достаточно компоненты
+gui.spidermanaddon.unlocked=Веб-шутер разблокировано
+
+gui.spidermanaddon.select_unlock=Выберите Веб-шутер
+gui.spidermanaddon.unlock_menu=Разблокировать веб-шутер
+gui.spidermanaddon:web_shot=Веб-шутер
+gui.spidermanaddon.loadout=§cКомплект веб-шутера
+gui.spidermanaddon.web_shooter_loadout=Load Веб-шутер
+gui.spidermanaddon.empty=§cПусто
+gui.spidermanaddon.config=§aВеб-шутер настроено.
+gui.spidermanaddon.no_info=§cНет информация найдена.
+
+spidermanaddon.web_line.no_build=§cВ пределах 30 блоков нет второй конечной точки.
+spidermanaddon.web_line.empty=§cВы делать не есть достаточно жидкость.
+
+item.spidermanaddon:web_shield=Паутина Щит
+item.spidermanaddon:web_whip=Паутина Крюк
+item.spidermanaddon:web_line=Паутина Line
+item.spidermanaddon:web_bomb=Паутина Граната
+item.spidermanaddon:spider_drone=Паук-Дрон
+item.spidermanaddon:web_hook=Паутина Крюк
+
+item.mzaddon:spider_web_cartridge=Паутина Картридж
+item.spidermanaddon:spiderman_spin_punch=Spin Атака
+item.spidermanaddon:spiderman_kick=Летающий Удар ногой
+item.spidermanaddon:spiderman_focus=Концентрация
+item.spidermanaddon:spiderman_sensor=Сканирование
+item.spidermanaddon:spiderman_punch=Удар
+item.spidermanaddon:spiderman_combat=Бой
+
+item.spiderverse:silk_mask=Маска: Silk
+item.spiderverse:silk_suit=Костюм: Silk
+spidermanaddon.venom_wings=Настроить Полёт
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Призвать Miles Morales
+entity.spidermanaddon:spectacular_spiderman.name=Впечатляющий Человек-паук
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Призвать Впечатляющий Человек-паук
+entity.spidermanaddon:spider_gwen.name=Спайдер-Гвен
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Призвать Спайдер-Гвен
+entity.spidermanaddon:spider_ham.name=Свин-паук
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Призвать Свин-паук
+entity.spidermanaddon:spider_punk.name=Спайдер-Панк
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Призвать Спайдер-Панк
+entity.spidermanaddon:spiderman_2099.name=Человек-паук 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Призвать Человек-паук 2099
+entity.spidermanaddon:spiderman_no_way_home.name=Человек-паук: Нет дорога дом
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Призвать Человек-паук: Нет дорога дом
+entity.spidermanaddon:spiderman_noir.name=Человек-паук Нуар
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Призвать Человек-паук Нуар
+entity.spidermanaddon:spiderman_raimi.name=Человек-паук (Земля-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Призвать Человек-паук (Земля-96283)
+entity.spidermanaddon:spiderman_unlimited.name=Человек-паук Безграничный
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Призвать Человек-паук Безграничный
+entity.spidermanaddon:the_amazing_spiderman.name=Человек-паук (Земля-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Призвать Человек-паук (Земля-120703)
+
+item.spidermanaddon:spider_ham_skin=Облик: Свин-паук
+item.spidermanaddon:spider_ham_hammer=Свин-паук Mallet
+
+spidermanaddon.gizmo_camera_mode.title=Режим камеры
+spidermanaddon:camera.free=Свободная камера
+spidermanaddon:camera.selfie=Селфи Камера
+spidermanaddon:camera.clear=Отключить Режим камеры
+spidermanaddon:camera.animations=Анимации
+spidermanaddon:camera.lyla=Включить/Отключить Lyla
+
+spidermanaddon:camera.lyla.off=Отключить
+spidermanaddon:camera.lyla.on=Включить
+
+item.spidermanaddon:multiversal_chip=Мультивселенский Чип
+item.spidermanaddon:gizmo_portal=Создать портал
+item.spidermanaddon:gizmo_camera_mode=Режим камеры
+
+spidermanaddon.gizmo.title=Мультивселенский гаджет
+spidermanaddon.portal=Создать портал
+spidermanaddon.spiderman=Нанять Человека-паука
+spidermanaddon.villain=Призвать злодея
+spidermanaddon.miles_morales=Miles Morales (Земля 1610B)
+spidermanaddon.spectacular_spiderman=Впечатляющий Человек-паук (Земля 26496)
+spidermanaddon.spider_punk=Спайдер-Панк (Земля 138B)
+spidermanaddon.spider_gwen=Спайдер-Гвен (Земля 65B)
+spidermanaddon.spider_ham=Свин-паук (Земля 8311B)
+spidermanaddon.spiderman_2099=Человек-паук 2099 (Земля 928B)
+spidermanaddon.spiderman_no_way_home=Человек-паук - MCU (Земля 199999)
+spidermanaddon.spiderman_noir=Человек-паук Нуар (Земля 90214)
+spidermanaddon.spiderman_raimi=Человек-паук (Земля 96283)
+spidermanaddon.spiderman_unlimited=Человек-паук Безграничный (Земля 751263)
+spidermanaddon.the_amazing_spiderman=Удивительный Человек-паук (Земля 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=Маска: Удивительный Человек-паук Самодельный
+item.spiderverse:the_amazing_spiderman_casero_suit=Костюм: Удивительный Человек-паук Самодельный
+item.spiderverse:spiderman_new_blue_mask=Маска: Человек-паук: Новый Синий
+item.spiderverse:spiderman_new_blue_suit=Костюм: Человек-паук: Новый Синий
+item.spiderverse:yfn_spiderman_oscorp_mask=Маска: Ваш Дружелюбный Соседский Человек-паук: Oscorp Костюм
+item.spiderverse:yfn_spiderman_oscorp_suit=Костюм: Ваш Дружелюбный Соседский Человек-паук: Oscorp Костюм
+item.spiderverse:yfn_spiderman_mask=Маска: Ваш Дружелюбный Соседский Человек-паук
+item.spiderverse:yfn_spiderman_suit=Костюм: Ваш Дружелюбный Соседский Человек-паук
+item.spiderverse:spiderman_bombastic_bag_man_mask=Маска: Человек-паук: Бомбастик Сумка-Человек
+item.spiderverse:spiderman_bombastic_bag_man_suit=Костюм: Человек-паук: Бомбастик Сумка-Человек
+
+item.spidermanaddon:web_bomb_item=Паутина Бомба
+item.spidermanaddon:spider_drone_item=Паук-Дрон
+item.spidermanaddon:mobile=Мобильный Телефон
+item.spidermanaddon:dr_octopus_take=Схватить
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Маска: Человек-паук Нуар: Через вселенные
+item.spiderverse:the_amazing_spiderman_black_mask=Маска: Удивительный Человек-паук Чёрный
+item.spidermanaddon:capsule=Капсула
+item.spidermanaddon:dr_octopus_chip=Призыв Чип: Доктор Осьминог [Земля-616]
+item.spidermanaddon:multiversal_gizmo=Мультивселенский гаджет
+item.spidermanaddon:web_shooter=Веб-шутер
+item.spidermanaddon:web_shooter_balanceo=Веб-шутер [Раскачивание]
+entity.spidermanaddon:air_compressor.name=Воздух Компрессор
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=Воздух Компрессор
+entity.spidermanaddon:viento.name=Ветер
+item.spawn_egg.entity.spidermanaddon:viento.name=Ветер
+
+spidermanaddon.symbiont_pull_lock=Выполните рывок симбиота, который захватывает 4 ближайших врагов и сокрушает их.
+spidermanaddon.antivenom_bomb_lock=Бросьте бомбу Анти-Венома, наносящую врагам большой урон.
+spidermanaddon.antivenom_tempest_lock=Создайте бурю Анти-Венома, наносящую врагам большой урон.
+spidermanaddon.symbiote_whip_lock=Сражайтесь клинками симбиота.
+spidermanaddon.rage_mode_lock=Активируйте режим ярости, чтобы повысить сопротивление и боевой урон, а также получить бессмертие на несколько секунд.
+spidermanaddon.rage_mode_unlock.price=Цена: 25 XP
+spidermanaddon.symbiote_powers_lock.price=Цена: 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=Зелёный гоблин Тыквенная Бомба [Raimi Saga]
+item.spidermanaddon:planeador_raimi_item=Зелёный гоблин Глайдер [Raimi Saga]
+item.spidermanaddon:iron_arms_menu=Меню
+item.spidermanaddon:dr_octopus_walk=Идти с Металлический Руки
+item.spidermanaddon:dr_octopus_attack=Атака
+entity.spidermanaddon:suits_machine.name=Костюм Фабрикатор
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=Костюм Фабрикатор
+entity.spidermanaddon:taskmaster_drone.name=Таскмастер Дрон
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=Призвать Таскмастер Дрон
+item.spidermanaddon:iron_arms_menu=Меню
+item.spidermanaddon:concussive_blast=Веб-шутер: Ударный Взрыв
+item.spidermanaddon:web_grabber=Веб-шутер: Паутина Захват
+item.spidermanaddon:impact_web=Веб-шутер: Паутина Удар
+item.spiderverse:superior_spiderman_black_mask=Маска: Превосходный Человек-паук Чёрный
+item.spiderverse:spiderman_raimi_black_mask=Маска: Человек-паук Raimi's Чёрный
+item.spiderverse:the_amazing_spiderman_black_suit=Маска: Удивительный Человек-паук Чёрный
+item.spiderverse:spiderman_ps5_symbiote_mask=Маска: Insomniac's Человек-паук 2: Симбиот Костюм
+item.spiderverse:spiderman_ps4_black_mask=Маска: Insomniac's Человек-паук 2: Чёрный Костюм
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Маска: Человек-паук Miles Morales: Через Паук-Вселенная
+item.spiderverse:spiderman_classic_black_mask=Маска: Человек-паук Классический Чёрный
+item.spiderverse:venom_s3_mask=Маска: Веном [Человек-паук 3]
+item.spiderverse:spiderman_antivenom_mask=Маска: Человек-паук: Анти-Веном
+item.spiderverse:spirit_spider_mask=Маска: Духовный Паук
+item.spiderverse:spectacular_spiderman_black_mask_3=Маска: Впечатляющий Человек-паук 3.0 Чёрный
+item.spiderverse:spectacular_spiderman_black_mask_2=Маска: Впечатляющий Человек-паук 2.0 Чёрный
+item.spiderverse:spectacular_spiderman_black_mask=Маска: Впечатляющий Человек-паук Чёрный
+item.spiderverse:spectacular_spiderman_mask=Маска: Впечатляющий Человек-паук
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Маска: Человек-паук 2099: Через Паук-Вселенная
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Маска: Человек-паук 2099: Через Паук-Вселенная
+item.spiderverse:anti_ock_mask_3=Маска: Анти-Ock Костюм
+item.spiderverse:anti_ock_mask_2=Маска: Анти-Ock Костюм
+item.spiderverse:anti_ock_mask_1=Маска: Анти-Ock Костюм
+item.spiderverse:anti_ock_mask=Маска: Анти-Ock Костюм
+item.spiderverse:aracnido_jr_mask=Маска: Arachnid Jr.
+item.spiderverse:ezekiel_sims_mask=Маска: Ezekiel Sims
+item.spiderverse:human_spider_mask=Маска: la Человек Паук
+item.spiderverse:into_the_spiderverse_sb_mask=Маска: Через вселенные SB
+item.spiderverse:miles_morales_10th_mask_3=Маска: Человек-паук Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_mask_2=Маска: Человек-паук Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_mask_1=Маска: Человек-паук Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_mask=Маска: Человек-паук Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_bodega_cat_mask=Маска: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_bodega_cat_mask_1=Маска: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_bodega_cat_mask_2=Маска: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_bodega_cat_mask_3=Маска: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_gold_mask=Маска: Человек-паук Miles Morales: Аптаун Гордость
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Маска: Miles Morales: Через вселенные
+item.spiderverse:miles_morales_wolverine_mask_3=Маска: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_mask_2=Маска: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_mask_1=Маска: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_mask=Маска: Miles Morales: Росомаха
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Маска: Алый Паук: Через Паук-Вселенная
+item.spiderverse:scarlet_spider_mask_3=Маска: Алый Паук
+item.spiderverse:scarlet_spider_mask_3=Маска: Алый Паук
+item.spiderverse:scarlet_spider_mask_3=Маска: Алый Паук
+item.spiderverse:scarlet_spider_mask_2=Маска: Алый Паук
+item.spiderverse:scarlet_spider_mask_1=Маска: Алый Паук
+item.spiderverse:scarlet_spider_mask=Маска: Алый Паук
+item.spiderverse:spiderman_67_mask=Маска: Человек-паук: 67°
+item.spiderverse:spiderman_90_black_mask_1=Маска: Человек-паук: Анимационный сериал [Красная и синяя окантовка] Чёрный
+item.spiderverse:spiderman_90_black_mask=Маска: Человек-паук: Анимационный сериал Чёрный
+item.spiderverse:spiderman_90_mask=Маска: Человек-паук: Анимационный сериал
+item.spiderverse:spiderman_cero_mask=Маска: Человек-паук: Zero
+item.spiderverse:spiderman_future_foundation_mask=Маска: Человек-паук: Future Основа
+item.spiderverse:spiderman_homecoming_mask=Маска: Человек-паук: Stark Костюм
+item.spiderverse:spiderman_homemade_mask=Маска: Человек-паук Самодельный
+item.spiderverse:spiderman_india_mask=Костюм: Человек-паук India: Через Паук-Вселенная
+item.spiderverse:spiderman_far_from_home_mask=Маска: Человек-паук: Улучшено
+item.spiderverse:spiderman_last_stand_mask=Маска: Человек-паук: Последний Последний рубеж
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Маска: Miles Morales: Прыжок веры
+item.spiderverse:spiderman_negative_mask=Маска: Человек-паук: Отрицательная
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Маска: Человек-паук Нуар: Через вселенные
+item.spiderverse:spiderman_no_way_home_mask=Маска: Человек-паук: Гибрид
+item.spiderverse:spiderman_ps4_mask=Маска: Insomniac's Человек-паук: Улучшенный
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Человек-паук: Улучшенный Маска 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Человек-паук: Улучшенный Маска 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Человек-паук: Улучшенный Маска 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Человек-паук: Улучшенный Маска 2.0
+item.spiderverse:spiderman_raimi_mask=Маска: Человек-паук Raimi's
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Маска: Человек-паук: Секретные войны - Гражданская война
+item.spiderverse:spiderman_stealth_mask=Маска: Человек-паук: Большой Время
+item.spiderverse:spiderman_steve_ditko_mask=Маска: Человек-паук: Удивительный Фэнтези #15
+item.spiderverse:spiderman_unlimited_mask=Маска: Человек-паук: Безграничный
+item.spiderverse:spiderman_velocity_mask=Маска: Человек-паук Скорость
+item.spiderverse:spiderman_web_of_shadows_black_mask=Маска: Человек-паук: Паутина Тени Чёрный
+item.spiderverse:spiderman_web_of_shadows_mask=Маска: Человек-паук: Паутина Тени
+item.spiderverse:spiderman_what_if_animated_mask=Маска: Человек-паук: Что Если Ep 5
+item.spiderverse:spiderman_what_if_mask=Маска: Человек-паук: Disney Ленд
+item.spiderverse:spiderman_wrestler_mask=Маска: Рестлер Человек-паук
+item.spiderverse:superior_spiderman_mask_3=Маска: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_mask_2=Маска: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_mask_1=Маска: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_mask=Маска: Превосходный Человек-паук
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Маска: Спайдер-Панк: Через Паук-Вселенная
+item.spiderverse:the_amazing_spiderman_2_mask=Маска: Удивительный Человек-паук 2
+item.spiderverse:spider_punk_mask=Маска: Спайдер-Панк
+item.spiderverse:the_amazing_spiderman_1_mask=Маска: Удивительный Человек-паук
+item.spiderverse:ultimate_spiderman_mask=Маска: Абсолютный Человек-паук
+item.spiderverse:ultimate_spiderman_ucm_mask=Маска: Абсолютный Человек-паук [MCU]
+item.spiderverse:ultimate_spiderman_black_mask=Маска: Абсолютный Человек-паук Чёрный
+item.spiderverse:yfn_spiderman_casero_mask=Маска: Ваш Дружелюбный Соседский Человек-паук Самодельный
+item.spidermanaddon:green_goblin_chip=Призыв Чип: Зелёный гоблин [Земля-616]
+item.spidermanaddon:green_goblin_raimi_chip=Призыв Чип: Зелёный гоблин [Земля-96283]
+item.spidermanaddon:hobgoblin_chip=Призыв Чип: Хобгоблин [Земля-616]
+item.spidermanaddon:doctor_octopus_chip=Призыв Чип: Доктор Осьминог [Земля-616]
+item.spidermanaddon:lizard_chip=Призыв Чип: Lagarto [Земля-616]
+item.spidermanaddon:shocker_chip=Призыв Чип: Шокер [Земля-616]
+
+item.spidermanaddon:iron_arms=Железный Паук Руки
+item.spidermanaddon:spiderman_symbiote_powers=Симбиот Человек-паук Способности
+item.spidermanaddon:spiderman_powers=Человек-паук Способности
+item.spidermanaddon:web_wings=Паутина Крылья
+item.spiderverse:green_goblin_raimi_suit=Костюм: Зелёный гоблин [Raimi]
+item.spiderverse:green_goblin_raimi_mask=Маска: Зелёный гоблин [Raimi]
+
+spidermanaddon.damage_player.text=Включить/отключить атаки по игрокам; настройка также применяется к другим способностям.
+spidermanaddon.activar=Включить
+spidermanaddon.web_shooter_config=Настройки
+spidermanaddon.desactivar=Отключить
+spidermanaddon.symbiont_suit.unlock=Разблокировать: 5 XP
+spidermanaddon.suit_lock=Разблокировать Симбиот Костюм [Ярость Режим]
+spidermanaddon.cancel=Отмена
+spidermanaddon.back=Назад
+spidermanaddon.none=Нет
+spidermanaddon.venom=Веном
+spidermanaddon.antivenom=Анти-Веном
+spidermanaddon.carnage=Карнаж
+spidermanaddon.ultimate_venom=Абсолютный Веном
+spidermanaddon.symbiote_config=Настройки
+spidermanaddon.damage_player=Игрок Урон
+spidermanaddon.symbiote_skin=Симбиот Type
+spidermanaddon.symbiote_suit=Симбиот Костюм [Ярость Режим]
+spidermanaddon.spiderman_powers=Человек-паук Способности
+spidermanaddon.block_powers=Улучшение заблокировано.
+spidermanaddon.block_powers_text=Разблокируйте предварительные улучшения, чтобы открыть это улучшение.
+spidermanaddon.continuar=Продолжить
+spidermanaddon.unlock_mejora=Разблокировать Улучшить
+spidermanaddon.swing_1_lock=Раскачивание: выполняйте трюки во время пикирования. Трюки приносят опыт.
+spidermanaddon.combat_0_lock=Бой: увеличивает урон атак ближнего боя.
+spidermanaddon.combat_1_lock=Бой: увеличивает урон от ударов по земле и воздушных атак.
+spidermanaddon.combat_2_lock=Бой: воздушный удар можете launch поблизости враги.
+spidermanaddon.health_0_lock=Здоровье: Дополнительные сердца.
+spidermanaddon.health_1_lock=Здоровье: если остаётся меньше 2 сердец, вы получаете поглощение на 10 секунд с перезарядкой 30 секунд.
+spidermanaddon.health_2_lock=Здоровье: восстанавливается каждые 15 секунд, пока вы не получаете урон.
+spidermanaddon.swing_1.unlock=Разблокировать: 10 XP
+spidermanaddon.combat_0.unlock=Разблокировать: 10 XP
+spidermanaddon.combat_1.unlock=Разблокировать: 15 XP
+spidermanaddon.combat_2.unlock=Разблокировать: 20 XP
+spidermanaddon.health_0.unlock=Разблокировать: 10 XP
+spidermanaddon.health_1.unlock=Разблокировать: 15 XP
+spidermanaddon.health_2.unlock=Разблокировать: 20 XP
+
+item.spiderverse:spiderman_classic_mask=Маска: Человек-паук: Классический
+item.spiderverse:spiderman_classic_mask_1=Маска: Человек-паук: Классический
+item.spiderverse:spiderman_classic_mask_2=Маска: Человек-паук: Классический
+item.spiderverse:spiderman_classic_mask_3=Маска: Человек-паук: Классический
+item.spiderverse:scarlet_spider_mask=Маска: la Алый Паук
+item.spiderverse:scarlet_spider_mask_1=Маска: la Алый Паук
+item.spiderverse:scarlet_spider_mask_2=Маска: la Алый Паук
+item.spiderverse:scarlet_spider_mask_3=Маска: la Алый Паук
+item.spiderverse:iron_spider_mask=Железный Паук Маска (Классический)
+item.spiderverse:iron_spider_mask_1=Железный Паук Маска (Классический)
+item.spiderverse:iron_spider_mask_2=Железный Паук Маска (Классический)
+item.spiderverse:iron_spider_mask_3=Железный Паук Маска (Классический)
+item.spiderverse:iron_spider_ucm_mask=Маска: Железный Паук [MCU]
+item.spiderverse:spiderman_2099_mask_1=Маска: Человек-паук 2099
+item.spiderverse:spiderman_2099_mask_2=Маска: Человек-паук 2099
+item.spiderverse:spiderman_2099_mask_3=Маска: Человек-паук 2099
+item.spiderverse:spiderman_2099_mask=Маска: Человек-паук 2099
+item.spiderverse:miles_morales_mask=Маска: Человек-паук Miles Morales
+item.spiderverse:ghost_spider_mask=Маска: Призрак Паук
+
+entity.spidermanaddon:taskmaster_sequels.name=Таскмастер Приспешники
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=Призвать Таскмастер Приспешники
+spidermanaddon.repetir=Повторить испытание
+spidermanaddon.taskmaster_challenges.0=Испытание 1
+spidermanaddon.taskmaster_challenges.1=Испытание 2
+spidermanaddon.taskmaster_challenges.2=Испытание 3
+spidermanaddon.taskmaster_challenges.3=Испытание 4
+spidermanaddon.taskmaster_challenges.4=Испытание 5
+spidermanaddon.taskmaster_challenges.start=Начать
+spidermanaddon.taskmaster_challenges.0.text=Победите 5 Таскмастер приспешники.
+spidermanaddon.taskmaster_challenges.1.text=Обезвредьте бомба и Победите Taskmaster's приспешники.
+spidermanaddon.taskmaster_challenges.2.text=Уничтожьте Taskmaster's дроны.
+spidermanaddon.taskmaster_challenges.3.text=Сохранить мирный житель из Taskmaster's приспешники.
+spidermanaddon.taskmaster_challenges.4.text=Победите Таскмастер.
+
+spidermanaddon.suitsFabricForm=Создать
+marveladdon:fabricar=Создать
+spidermanaddon.venom_snow_lock=Веном: Снег Симбиот §l§6[Разблокировать]
+spidermanaddon.venom_snow_lock.price=Цена: 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[Разблокировать]
+spidermanaddon.venompool_lock.price=Цена: 20 XP
+spidermanaddon.venom_2099_lock=Веном 2099 §l§6[Разблокировать]
+spidermanaddon.venom_2099_lock.price=Цена: 15 XP
+spidermanaddon.ultimate_venom_spider_lock=Абсолютный Веном [С Паук Эмблема] §l§6[Разблокировать]
+spidermanaddon.ultimate_venom_spider_lock.price=Цена: 15 XP
+spidermanaddon.ultimate_venom_lock=Абсолютный Веном §l§6[Разблокировать]
+spidermanaddon.ultimate_venom_lock.price=Цена: 15 XP
+spidermanaddon.venom_lee_price_lock=Веном: Lee Цена §l§6[Разблокировать]
+spidermanaddon.venom_lee_price_lock.price=Цена: 15 XP
+spidermanaddon.blue_venom_lock=Веном: Синий §l§6[Разблокировать]
+spidermanaddon.blue_venom_lock.price=Цена: 10 XP
+spidermanaddon.venom_movies_lock=Веном: Фильмы §l§6[Разблокировать]
+spidermanaddon.venom_movies_lock.price=Цена: 15 XP
+spidermanaddon.venom.unlock=Разблокировать
+
+entity.spidermanaddon:green_goblin_raimi.name=Зелёный гоблин [Raimi Saga]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=Призвать Зелёный гоблин [Raimi Saga]
+
+item.spidermanaddon:iron_arms_attack=Железный Руки [Атака]
+item.spidermanaddon:spider_rush=Паук Rush
+item.spidermanaddon:spider_shock=Паук Разряд
+spidermanaddon.iron_arms.title=Металлический Паук Руки
+item.spidermanaddon:symbiote_menu=Меню
+spidermanaddon.concussive_blast.price=Стоимость: §l§a15 XP Уровеньs
+item.spidermanaddon:rage_mode=Ярость Режим
+item.spidermanaddon:symbiote_blast=Симбиот Взрыв
+spidermanaddon.symbiote_blast=Симбиот Взрыв
+item.spidermanaddon:symbiont_pull=Симбиот Притяжение
+spidermanaddon.symbiont_pull=Симбиот Притяжение
+item.spidermanaddon:symbiote_strike=Симбиот Удар
+spidermanaddon.symbiote_strike=Симбиот Удар
+item.spidermanaddon:antivenom_bomb=Анти-Веном Бомба
+spidermanaddon.antivenom_bomb=Анти-Веном Бомба
+item.spidermanaddon:antivenom_tempest=Анти-Веном Буря
+spidermanaddon.antivenom_tempest=Анти-Веном Буря
+item.spidermanaddon:symbiote_whip=Симбиот Клинки
+spidermanaddon.symbiote_whip=Симбиот Клинки
+
+spidermanaddon.web_grabber.price=Стоимость: §l§a15 XP Уровеньs
+spidermanaddon.web_grabber.price5=Стоимость: §l§a25 XP Уровеньs
+
+spidermanaddon.web_grabber_lv1=Паутина Захват - §l§aУровень 0 §6[Улучшить]
+spidermanaddon.web_grabber_lv1_title=Паутина Захват - §l§aУровень 1
+spidermanaddon.web_grabber_lv1_text=Увеличивает ёмкость магазина с 2 до 3 выстрелов.
+
+spidermanaddon.web_grabber_lv2=Паутина Захват - §l§aУровень 1 §6[Улучшить]
+spidermanaddon.web_grabber_lv2_title=Паутина Захват - §l§aУровень 2
+spidermanaddon.web_grabber_lv2_text=Сокращает время перезарядки с 55 до 40 секунд.
+
+spidermanaddon.web_grabber_lv3=Паутина Захват - §l§aУровень 2 §6[Улучшить]
+spidermanaddon.web_grabber_lv3_title=Паутина Захват - §l§aУровень 3
+spidermanaddon.web_grabber_lv3_text=Увеличивает радиус захвата с 6 до 12 блоков.
+
+spidermanaddon.web_grabber_lv4=Паутина Захват - §l§aУровень 3 §6[Улучшить]
+spidermanaddon.web_grabber_lv4_title=Паутина Захват - §l§aУровень 4
+spidermanaddon.web_grabber_lv4_text=Увеличивает ёмкость магазина с 3 до 4 выстрелов.
+
+spidermanaddon.web_grabber_lv5=Паутина Захват - §l§aУровень 4 §6[Улучшить]
+spidermanaddon.web_grabber_lv5_title=Паутина Захват - §l§aУровень 5
+spidermanaddon.web_grabber_lv5_text=Увеличивает количество захваченных врагов с 4 до 8.
+
+spidermanaddon.web_grabber_full=Паутина Захват - §l§aУровень 5
+spidermanaddon.web_grabber_full_text=EWeb Захват - §l§aУровень 5
+spidermanaddon.web_grabber_unlock=Паутина Захват
+spidermanaddon.web_grabber_lock=Паутина Захват §l§6[Разблокировать]
+
+spidermanaddon.concussive_blast.price=Стоимость: §l§a15 XP Уровеньs
+spidermanaddon.concussive_blast.price5=Стоимость: §l§a25 XP Уровеньs
+
+spidermanaddon.concussive_blast_lv1=Ударный Взрыв - §l§aУровень 0 §6[Улучшить]
+spidermanaddon.concussive_blast_lv1_title=Ударный Взрыв - §l§aУровень 1
+spidermanaddon.concussive_blast_lv1_text=Увеличивает ёмкость магазина с 2 до 3 выстрелов.
+
+spidermanaddon.concussive_blast_lv2=Ударный Взрыв - §l§aУровень 1 §6[Улучшить]
+spidermanaddon.concussive_blast_lv2_title=Ударный Взрыв - §l§aУровень 2
+spidermanaddon.concussive_blast_lv2_text=Сокращает время перезарядки с 45 до 35 секунд.
+
+spidermanaddon.concussive_blast_lv3=Ударный Взрыв - §l§aУровень 2 §6[Улучшить]
+spidermanaddon.concussive_blast_lv3_title=Ударный Взрыв - §l§aУровень 3
+spidermanaddon.concussive_blast_lv3_text=Увеличивает ёмкость магазина с 3 до 4 выстрелов.
+
+spidermanaddon.concussive_blast_lv4=Ударный Взрыв - §l§aУровень 3 §6[Улучшить]
+spidermanaddon.concussive_blast_lv4_title=Ударный Взрыв - §l§aУровень 4
+spidermanaddon.concussive_blast_lv4_text=Сокращает время перезарядки с 35 до 24 секунд.
+
+spidermanaddon.concussive_blast_lv5=Ударный Взрыв - §l§aУровень 4 §6[Улучшить]
+spidermanaddon.concussive_blast_lv5_title=Ударный Взрыв - §l§aУровень 5
+spidermanaddon.concussive_blast_lv5_text=Увеличивает отбрасывание при попадании.
+
+spidermanaddon.concussive_blast_full=Ударный Взрыв - §l§aУровень 5
+spidermanaddon.concussive_blast_full_text=Ударный Взрыв - §l§aУровень 5
+spidermanaddon.concussive_blast_unlock=Ударный Взрыв
+spidermanaddon.concussive_blast_lock=Ударный Взрыв §l§6[Разблокировать]
+
+spidermanaddon.electric_web.price=Стоимость: §l§a15 XP Уровеньs
+spidermanaddon.electric_web.price5=Стоимость: §l§a25 XP Уровеньs
+
+spidermanaddon.electric_web_lv1=Электрическая Паутина - §l§aУровень 0 §6[Улучшить]
+spidermanaddon.electric_web_lv1_title=Электрическая Паутина - §l§aУровень 1
+spidermanaddon.electric_web_lv1_text=Увеличивает ёмкость магазина с 2 до 3 выстрелов.
+
+spidermanaddon.electric_web_lv2=Электрическая Паутина - §l§aУровень 1 §6[Улучшить]
+spidermanaddon.electric_web_lv2_title=Электрическая Паутина - §l§aУровень 2
+spidermanaddon.electric_web_lv2_text=Увеличивает длительность электрической паутины с 5 до 10 секунд.
+
+spidermanaddon.electric_web_lv3=Электрическая Паутина - §l§aУровень 2 §6[Улучшить]
+spidermanaddon.electric_web_lv3_title=Электрическая Паутина - §l§aУровень 3
+spidermanaddon.electric_web_lv3_text=Сокращает время перезарядки с 45 до 30 секунд.
+
+spidermanaddon.electric_web_lv4=Электрическая Паутина - §l§aУровень 3 §6[Улучшить]
+spidermanaddon.electric_web_lv4_title=Электрическая Паутина - §l§aУровень 4
+spidermanaddon.electric_web_lv4_text=Увеличивает ёмкость магазина с 3 до 4 выстрелов.
+
+spidermanaddon.electric_web_lv5=Электрическая Паутина - §l§aУровень 4 §6[Улучшить]
+spidermanaddon.electric_web_lv5_title=Электрическая Паутина - §l§aУровень 5
+spidermanaddon.electric_web_lv5_text=Увеличивает урон электрической паутины.
+
+spidermanaddon.electric_web_full=Электрическая Паутина - §l§aУровень 5
+spidermanaddon.electric_web_full_text=Электрическая Паутина - §l§aУровень 5
+spidermanaddon.electric_web_unlock=Электрическая Паутина
+spidermanaddon.electric_web_lock=Электрическая Паутина §l§6[Разблокировать]
+
+spidermanaddon.web_whip_full=Паутина Кнут
+spidermanaddon.web_whip_full_text=Улучшения недоступны
+spidermanaddon.web_whip_unlock=Паутина Кнут
+spidermanaddon.web_whip=Паутина Кнут
+spidermanaddon.web_whip_lock=Паутина Кнут §l§6[Разблокировать]
+
+spidermanaddon.impact_web_lv1=Веб-шутер - §l§aУровень 0 §6[Улучшить]
+spidermanaddon.impact_web_lv1_title=Веб-шутер - §l§aУровень 1
+spidermanaddon.impact_web_lv1_text=Увеличивает ёмкость магазина с 6 до 8 выстрелов.
+
+spidermanaddon.impact_web_lv2=Веб-шутер - §l§aУровень 1 §6[Улучшить]
+spidermanaddon.impact_web_lv2_title=Веб-шутер - §l§aУровень 2
+spidermanaddon.impact_web_lv2_text=Сокращает время перезарядки с 2 до 1,5 секунды.
+
+spidermanaddon.impact_web_lv3=Веб-шутер - §l§aУровень 2 §6[Улучшить]
+spidermanaddon.impact_web_lv3_title=Веб-шутер - §l§aУровень 3
+spidermanaddon.impact_web_lv3_text=Увеличивает ёмкость магазина с 8 до 10 выстрелов.
+
+spidermanaddon.impact_web_lv4=Веб-шутер - §l§aУровень 3 §6[Улучшить]
+spidermanaddon.impact_web_lv4_title=Веб-шутер - §l§aУровень 4
+spidermanaddon.impact_web_lv4_text=Сокращает время перезарядки с 1,5 до 1 секунды.
+
+spidermanaddon.impact_web_lv5=Веб-шутер - §l§aУровень 4 §6[Улучшить]
+spidermanaddon.impact_web_lv5_title=Веб-шутер - §l§aУровень 5
+spidermanaddon.impact_web_lv5_text=При попадании по врагу есть небольшой шанс наложить эффект паутины. (Эффект создаёт блок паутины.)
+
+spidermanaddon.impact_web_full=Веб-шутер - §l§aУровень 5
+spidermanaddon.web_shooter_full_text=Вы достигли предела улучшений.
+spidermanaddon.impact_web.price=Стоимость: §l§a15 XP Уровеньs
+spidermanaddon.impact_web.price5=Стоимость: §l§a25 XP Уровеньs
+
+spidermanaddon.web_shooter_shoot_lv1=Веб-шутер - §l§aУровень 0 §6[Улучшить]
+spidermanaddon.web_shooter_shoot_lv1_title=Веб-шутер - §l§aУровень 1
+spidermanaddon.web_shooter_shoot_lv1_text=Увеличивает ёмкость магазина с 6 до 8 выстрелов.
+
+spidermanaddon.web_shooter_shoot_lv2=Веб-шутер - §l§aУровень 1 §6[Улучшить]
+spidermanaddon.web_shooter_shoot_lv2_title=Веб-шутер - §l§aУровень 2
+spidermanaddon.web_shooter_shoot_lv2_text=Сокращает время перезарядки с 2 до 1,5 секунды.
+
+spidermanaddon.web_shooter_shoot_lv3=Веб-шутер - §l§aУровень 2 §6[Улучшить]
+spidermanaddon.web_shooter_shoot_lv3_title=Веб-шутер - §l§aУровень 3
+spidermanaddon.web_shooter_shoot_lv3_text=Увеличивает ёмкость магазина с 8 до 10 выстрелов.
+
+spidermanaddon.web_shooter_shoot_lv4=Веб-шутер - §l§aУровень 3 §6[Улучшить]
+spidermanaddon.web_shooter_shoot_lv4_title=Веб-шутер - §l§aУровень 4
+spidermanaddon.web_shooter_shoot_lv4_text=Сокращает время перезарядки с 1,5 до 1 секунды.
+
+spidermanaddon.web_shooter_shoot_lv5=Веб-шутер - §l§aУровень 4 §6[Улучшить]
+spidermanaddon.web_shooter_shoot_lv5_title=Веб-шутер - §l§aУровень 5
+spidermanaddon.web_shooter_shoot_lv5_text=При попадании по врагу есть небольшой шанс наложить эффект паутины. (Эффект создаёт блок паутины.)
+
+spidermanaddon.web_shooter_shoot_full=Веб-шутер - §l§aУровень 5
+spidermanaddon.web_shooter_full_text=Вы достигли предела улучшений.
+spidermanaddon.web_shooter_shoot.price=Стоимость: §l§a15 XP Уровеньs
+spidermanaddon.web_shooter_shoot.price5=Стоимость: §l§a25 XP Уровеньs
+
+spidermanaddon.impact_web=Удар Паутина
+spidermanaddon.impact_web_lock=Удар Паутина §l§6[Разблокировать]
+
+spidermanaddon.web_whip=Паутина Кнут
+spidermanaddon.electric_web=Электрическая Паутина
+spidermanaddon.concussive_blast=Ударный Взрыв
+spidermanaddon.web_bomb=Паутина Бомба
+spidermanaddon.spider_drone=Паук Дрон
+spidermanaddon.web_grabber=Паутина Захват
+
+item.spidermanaddon:web_blossom=Паутинный цветок
+item.spidermanaddon:holo_decoy=Голографическая приманка
+item.spidermanaddon:low_gravity=Низкий гравитация
+item.spidermanaddon:arms_race=Руки гонка
+item.spidermanaddon:blitz=Блиц
+item.spidermanaddon:electric_punch=Электрическая Удар
+item.spidermanaddon:equaliser=Уравнитель
+item.spidermanaddon:negative_shockwave=Отрицательная ударная волна
+item.spidermanaddon:rock_out=Рок наружу
+item.spidermanaddon:spirit_fire=Духовный огонь
+
+spidermanaddon.low_gravity_lock_text=Снижает гравитацию в воздухе на 10 секунд.
+spidermanaddon.low_gravity_lock=Низкий гравитация §l§6[Разблокировать]
+spidermanaddon.web_blossom_text=Подпрыгните и выпустите паутину во всё, что находится в поле зрения.
+spidermanaddon.holo_decoy_lock_text=Создаёт несколько голограмм.
+spidermanaddon.holo_decoy_lock=Голографическая приманка §l§6[Разблокировать]
+spidermanaddon.arms_race_lock_text=Выпускает электрический разряд, оглушающий врагов.
+spidermanaddon.arms_race_lock=Руки гонка §l§6[Разблокировать]
+spidermanaddon.blitz_lock_text=Бегите быстрее и в реальном времени передавайте импульс, отталкивая врагов.
+spidermanaddon.blitz_lock=Блиц §l§6[Разблокировать]
+spidermanaddon.electric_punch_lock_text=Временно наэлектризовывает ваши кулаки, поражая врагов током.
+spidermanaddon.electric_punch_lock=Электрическая Удар §l§6[Разблокировать]
+spidermanaddon.equaliser_text=В течение 5 секунд все, включая вас, падают от одного удара.
+spidermanaddon.equaliser_lock=Уравнитель §l§6[Разблокировать]
+spidermanaddon.negative_shockwave_text=Высвободите волну отрицательной энергии.
+spidermanaddon.negative_shockwave_lock=Отрицательная ударная волна §l§6[Разблокировать]
+spidermanaddon.rock_out_text=Сокрушите врагов мощными звуковыми волнами.
+spidermanaddon.rock_out_lock=Рок наружу §l§6[Разблокировать]
+spidermanaddon.spirit_fire_text=Направьте нестабильные волны разрушительной эфирной энергии из... откуда-то...
+spidermanaddon.spirit_fire_lock=Духовный огонь §l§6[Разблокировать]
+
+spidermanaddon.regresar=Назад
+spidermanaddon.salir=Выход
+spidermanaddon.usar=Использовать
+
+item.spidermanaddon:spectacular_spiderman_chip=Впечатляющий Человек-паук [Земля-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [Земля-1610B]
+item.spidermanaddon:spider_gwen_chip=Спайдер-Гвен [Земля-65B]
+item.spidermanaddon:spider_ham_chip=Свин-паук [Земля-8311]
+item.spidermanaddon:spider_punk_chip=Спайдер-Панк [Земля-138B]
+item.spidermanaddon:spiderman_2099_chip=Человек-паук 2099 [Земля-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Человек-паук [Земля-199999]
+item.spidermanaddon:spiderman_noir_chip=Человек-паук: Нуар [Земля-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Человек-паук [Земля-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Человек-паук: Inlimited [Земля-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=Удивительный Человек-паук [Земля-120703]
+
+item.spidermanaddon:green_goblin=Зелёный гоблин [Земля-616]
+item.spidermanaddon:hobgoblin=Хобгоблин [Земля-616]
+item.spidermanaddon:shocker=Шокер [Земля-616]
+item.spidermanaddon:lizard=Ящер [Земля-616]
+
+spidermanaddon.multiversal_gizmo=Мультивселенский гаджет
+spidermanaddon.accesorios=Аксессуары
+spidermanaddon.suit_skills=Костюм Skill
+spidermanaddon.upgrades_laboratoryWorkbench=Улучшения
+spidermanaddon.laboratoryWorkbench=Лабораторный верстак
+spidermanaddon.web_shooter=Веб-шутер
+spidermanaddon.capsule=Капсула
+spidermanaddon.hobgoblin_pumpkin_bomb=Хобгоблин Тыквенная Бомба
+spidermanaddon.fabricar=Создать
+spidermanaddon.suitsFabric_form=Создать
+spidermanaddon.suits_form=Выберите Костюм
+spidermanaddon.multiversal_chip=Чип [Злодеи]
+spidermanaddon.spiderman_chip=Чип [Паук Society]
+
+item.spidermanaddon:venom=Веном [Трансформация]
+item.spidermanaddon:symbiont_whip=Симбиот Кнут
+item.spidermanaddon:venom_regeneration=Кормить
+item.spidermanaddon:symbiont_axe=Симбиот Топор
+item.spidermanaddon:symbiont_claw=Симбиот Коготь
+item.spidermanaddon:venom_punch=Бой
+item.spidermanaddon:venom_impulse_whip=Симбиот Кнут [Boost]
+item.spidermanaddon:symbiote_capsule=Веном Симбиот Капсула
+item.spidermanaddon:capsule=Капсула
+tile.spidermanaddon:knull_block.name=Knull Блок
+tile.spidermanaddon:meteorite_block.name=Метеорит Блок
+spidermanaddon.feed=Кормить
+spidermanaddon.symbiont_axe=Симбиот Топор
+spidermanaddon.symbiont_claw=Симбиот Коготь
+spidermanaddon.symbiont_whip=Симбиот Кнут
+spidermanaddon.transformation=Трансформация
+spidermanaddon.skins=Облики
+spidermanaddon.on=Включить
+spidermanaddon.off=Отключить
+spidermanaddon.camera=Игровая Камера
+spidermanaddon.third=От третьего лица человек
+spidermanaddon.first=От первого лица человек
+entity.spidermanaddon:symbiont.name=Симбиот Венома
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Симбиот Венома
+entity.spidermanaddon:venom_horse.name=Лошадь Веном
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=Лошадь Веном
+
+item.spidermanaddon:spiderman_2099_burger.name=Человек-паук 2099 Burger
+item.spiderverse:scarlet_spider_suit=Костюм: la Алый Паук
+item.spiderverse:spiderman_90_suit=Костюм: Человек-паук: Анимационный сериал
+item.spiderverse:spiderman_67_suit=Костюм: Человек-паук 67°
+item.spiderverse:spectacular_spiderman_suit=Костюм: Впечатляющий Человек-паук
+item.spiderverse:spectacular_spiderman_black_suit=Костюм: Впечатляющий Человек-паук Чёрный
+item.spiderverse:spectacular_spiderman_black_suit_2=Костюм: Впечатляющий Человек-паук 2.0 Чёрный
+item.spiderverse:spectacular_spiderman_black_suit_3=Костюм: Впечатляющий Человек-паук 3.0 Чёрный
+item.spiderverse:spiderman_steve_ditko_suit=Костюм: Человек-паук: Удивительный Фэнтези #15
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Абсолютный Человек-паук Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Человек-паук India Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Miles Morales Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Железный Паук [MCU] Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Спайдер-Панк Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Человек-паук Гибрид Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Человек-паук Нуар Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Превосходный Человек-паук Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Человек-паук Raimi Чёрный Костюм Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Человек-паук Raimi Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Человек-паук PS4 Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Человек-паук Чёрный Костюм Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Человек-паук 2099 [Через Паук-Вселенная] Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Спайдер-Гвен Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Алый Паук Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=Удивительный Человек-паук 2 Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=Удивительный Человек-паук Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (Прыжок веры) Плюшевая игрушка
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Паук-Мобильный
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Паук-Мотоцикл
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Чёрная кошка Doll
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=Рюкзак: Peter Parker's
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=Человек-паук Костюм Последний рубеж
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=Лабораторный верстак
+entity.spidermanaddon:lizard.name=Ящер
+item.spawn_egg.entity.spidermanaddon:lizard.name=Призвать Lagarto
+entity.spidermanaddon:prisoner.name=Заключённый
+item.spawn_egg.entity.spidermanaddon:prisoner.name=Призвать Заключённый
+item.spidermanaddon:research_token=Research Жетон
+
+item.spidermanaddon:backpack_token=Рюкзак Жетон
+item.spidermanaddon:web_shooters_plans=Веб-шутер Система [Раскачивание]
+item.spiderverse:web_shooter_balanceo=Веб-шутер [Раскачивание]
+item.spidermanaddon:usb=USB [Нет Data]
+
+item.spidermanaddon:base_token=Base Жетон
+item.spidermanaddon:challenge_token=Испытание Жетон
+item.spidermanaddon:tokens_crime=Преступление Жетон
+item.spiderverse:web_cartridge=Паутина Картридж
+item.spidermanaddon:spiderman_palette.name=Человек-паук Palette
+
+item.spidermanaddon:miles_morales_invisibility_token=Miles Morales Способность: Невидимость
+item.spidermanaddon:fire_resistence_stealth_suit_token=Костюм Способность: Огонь Сопротивление
+item.spidermanaddon:invisibility_stealth_suit_token=Костюм Способность: Невидимость
+item.spidermanaddon:regeneration_stealth_suit_token=Костюм Способность: Регенерация
+
+item.spiderverse:spiderman_classic_suit=Костюм: Человек-паук: Классический
+item.spiderverse:spiderman_raimi_suit=Костюм: Человек-паук Raimi's
+item.spiderverse:spiderman_raimi_black_suit=Костюм: Человек-паук Raimi's Чёрный
+item.spiderverse:miles_morales_suit=Костюм: Человек-паук Miles Morales: Классический
+item.spiderverse:miles_morales_gold_suit=Костюм: Человек-паук Miles Morales: Аптаун Гордость
+item.spiderverse:iron_spider_ucm_suit=Костюм: Железный Паук [UCM]
+item.spiderverse:spiderman_stealth_suit=Костюм: Человек-паук: Большой Время
+item.spiderverse:spiderman_ps4_suit=Костюм: Insomniac's Человек-паук: Улучшенный
+item.spiderverse:spiderman_ps4_black_suit=Костюм: Insomniac's Человек-паук 2: Чёрный
+item.spiderverse:ultimate_spiderman_ucm_suit=Костюм: Человек-паук: Абсолютный
+item.spiderverse:the_amazing_spiderman_1_suit=Костюм: Удивительный Человек-паук
+item.spiderverse:the_amazing_spiderman_2_suit=Костюм: Удивительный Человек-паук 2
+item.spiderverse:spiderman_steve_ditko_suit=Костюм: Человек-паук: Удивительный Фэнтези #15
+item.spiderverse:human_spider_suit=Костюм: la Человек Паук
+item.spiderverse:spiderman_wrestler_suit=Костюм: Рестлер Человек-паук
+item.spiderverse:spiderman_homemade_suit=Костюм: Человек-паук: Самодельный
+item.spiderverse:spiderman_far_from_home_suit=Костюм: Человек-паук: Улучшено
+item.spiderverse:spiderman_no_way_home_suit=Костюм: Человек-паук: Гибрид
+item.spiderverse:spiderman_negative_suit=Костюм: Человек-паук: Отрицательная
+item.spiderverse:spiderman_homecoming_suit=Костюм: Человек-паук: Stark
+item.spidermanaddon:genetically_engineered_super_spider=Genetically Engineered Супер Паук
+item.spidermanaddon:spider_egg=Призвать Паук
+item.spidermanaddon:radioactive_spider=Человек-паук Способности
+item.spidermanaddon:pumpkin_bomb=Тыквенная Бомба
+item.spiderverse:iron_arms=Железный Паук Legs
+item.spidermanaddon:nanotechnology_chip=Nanotechnology Чип
+item.spiderverse:miles_morales_bodega_cat_suit=Костюм: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:ultimate_spiderman_suit=Костюм: Абсолютный Человек-паук
+item.spiderverse:spectacular_spiderman_black_suit=Костюм: Впечатляющий Человек-паук: Чёрный
+item.spiderverse:spectacular_spiderman_black_suit_2=Впечатляющий Человек-паук: Чёрный Костюм 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Впечатляющий Человек-паук: Чёрный Костюм 3.0
+item.spiderverse:spiderman_classic_black_suit=Костюм: Человек-паук: Классический Чёрный
+item.spiderverse:spiderman_black_suit_comic=Костюм: Человек-паук: Секретные войны Чёрный
+item.spiderverse:ultimate_spiderman_black_suit=Костюм: Абсолютный Человек-паук: Чёрный
+entity.spidermanaddon:green_goblin.name=Зелёный гоблин
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=Призвать Зелёный гоблин
+entity.spidermanaddon:shocker.name=Шокер
+item.spawn_egg.entity.spidermanaddon:shocker.name=Призвать Шокер
+entity.spidermanaddon:venom_boss.name=Веном
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Призвать Веном
+entity.spidermanaddon:hobgoblin.name=Хобгоблин
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Призвать Хобгоблин
+entity.spidermanaddon:taskmaster.name=Таскмастер
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Призвать Таскмастер
+entity.spidermanaddon:dealer.name=Торговец
+item.spawn_egg.entity.spidermanaddon:dealer.name=Призвать Торговец
+entity.spidermanaddon:black_cat.name=Чёрная кошка
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Призвать Чёрная кошка
+entity.spidermanaddon:symbiot.name=Симбиот Венома
+item.spawn_egg.entity.spidermanaddon:symbiot.name=Симбиот Венома
+entity.spidermanaddon:sewing_machine.name=Шитьё Машина
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=Шитьё Машина
+entity.spidermanaddon:challenge_box.name=Испытание Ящик
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=Испытание Ящик
+entity.spidermanaddon:microscope.name=Микроскоп
+item.spawn_egg.entity.spidermanaddon:microscope.name=Микроскоп
+entity.spidermanaddon:symbiote_meteorite.name=Симбиот Метеорит
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=Призвать Симбиот Метеорит
+entity.spidermanaddon:symbiote_meteorite_table.name=Симбиот Метеорит
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=Симбиот Метеорит
+entity.spidermanaddon:symbiont.name=Симбиот Венома
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Симбиот Венома
+
+item.spidermanaddon:venom=Веном [Трансформация]
+
+item.spiderverse:spider_gwen=Спайдер-Гвен [Трансформация]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Через вселенные [Трансформация]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Через вселенные - Прыжок веры [Трансформация]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Через Паук-Вселенная [Трансформация]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Через вселенные - Training [Трансформация]
+item.spidermanaddon:comic1=Комикс: Удивительный Фэнтези #15
+item.spiderverse:hobgoblin_skin=Костюм: Хобгоблин
+item.spiderverse:green_goblin_skin=Костюм: Зелёный гоблин
+
+item.spidermanaddon:planeador_item=Зелёный гоблин Глайдер
+item.spidermanaddon:spider_mobile_item=Паук-Мобильный
+item.spidermanaddon:spider_bike_item=Паук-Мотоцикл
+
+item.spidermanaddon:web_shot_empty=Веб-шутер [Пусто]
+item.spidermanaddon:web_shot=Веб-шутер
+item.spidermanaddon:sand_crystal_shard=Песочный человек Кристалл Осколок
+tile.spidermanaddon:sand_crystal.name=Песочный человек Кристалл
+tile.spidermanaddon:sand_crystal_block.name=Песочный человек Кристалл Блок
+tile.spidermanaddon:prisoner_spawn.name=Заключённый Призвать
+
+item.spidermanaddon:combat_mode=Бой Режим
+item.spidermanaddon:delete_upgrades_token=Удалить Улучшения
+item.spidermanaddon:escudo_token=Щит [Улучшить]
+item.spidermanaddon:golpe_eletrico_token=Электрическая Удар [Улучшить]
+item.spidermanaddon:regeneracion_token=Регенерация [Улучшить]
+item.spidermanaddon:salud_extra_token=Дополнительные Здоровье [Улучшить]
+item.spidermanaddon:dano_token=Дополнительные Урон [Улучшить]
+item.spidermanaddon:mega_venom_blast=Mega Веном Взрыв
+item.spidermanaddon:venom_blast_punch=Веном Удар
+item.spidermanaddon:bodega_cat=Рюкзак: Магазинчик Кошка
+item.spidermanaddon:multiversal_particles=Мультивселенский Частицы
+item.spidermanaddon:component=Технологий Компоненты
+item.spidermanaddon:gr_27_negative=Отрицательная GR-27
+item.spidermanaddon:web_flow=Паутина Flow
+item.spidermanaddon:spider_powers=Паук Способности
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=Веном Симбиот Капсула
+
+item.spidermanaddon:symbiote_super_punch=Супер Симбиот Удар
+item.spidermanaddon:symbiote_punch=Симбиот Удар
+item.spidermanaddon:symbiont_blast=Симбиот Взрыв
+item.spidermanaddon:backpack_empty=Рюкзак: Пусто
+item.spidermanaddon:cat_hability_item=Кошка Способность
+item.spidermanaddon:comic2=Абсолютный Человек-паук #1 Комикс
+item.spidermanaddon:lizard_invoke=Ящер Призыватель
+item.spidermanaddon:shocker_invoke=Шокер Призыватель
+item.spidermanaddon:green_goblin_invoke=Зелёный гоблин Призыватель
+item.spidermanaddon:taskmaster_invoke=Таскмастер Призыватель
+item.spidermanaddon:hobgoblin_invoke=Хобгоблин Призыватель
+
+item.spiderverse:spiderman_classic_suit_damage=Человек-паук: Классический Костюм §c[Повреждено]
+item.spiderverse:spiderman_raimi_suit_damage=Человек-паук Raimi's Костюм §c[Повреждено]
+item.spiderverse:miles_morales_suit_damage=Человек-паук Miles Morales: Классический Костюм §c[Повреждено]
+item.spiderverse:miles_morales_gold_suit_damage=Человек-паук Miles Morales: Аптаун Гордость Костюм §c[Повреждено]
+item.spiderverse:spiderman_stealth_suit_damage=Человек-паук: Stealth Костюм §c[Повреждено]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Человек-паук: Улучшенный Костюм §c[Повреждено]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=Человек-паук: Абсолютный Костюм §c[Повреждено]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=Удивительный Человек-паук Костюм §c[Повреждено]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=Удивительный Человек-паук 2 Костюм §c[Повреждено]
+item.spiderverse:human_spider_suit_damage=la Человек Паук Костюм §c[Повреждено]
+item.spiderverse:spiderman_wrestler_suit_damage=Рестлер Человек-паук Костюм §c[Повреждено]
+item.spiderverse:spiderman_homemade_suit_damage=Человек-паук: Самодельный Костюм §c[Повреждено]
+item.spiderverse:spiderman_far_from_home_suit_damage=Человек-паук: Улучшено Костюм §c[Повреждено]
+item.spiderverse:spiderman_no_way_home_suit_damage=Человек-паук: Гибрид Костюм §c[Повреждено]
+item.spiderverse:spiderman_homecoming_suit_damage=Человек-паук: Stark Костюм §c[Повреждено]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=Человек-паук Miles Morales: Магазинчик Кошка Костюм §c[Повреждено]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's Человек-паук: Улучшенный Костюм 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Человек-паук: Улучшенный Костюм 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Человек-паук: Улучшенный Костюм 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Человек-паук: Улучшенный Костюм 2.0
+item.spiderverse:ezekiel_sims_suit=Костюм: Ezekiel Sims
+item.spiderverse:iron_spider_suit=Железный Паук Костюм (Классический)
+item.spiderverse:iron_spider_suit_1=Железный Паук Костюм (Классический)
+item.spiderverse:iron_spider_suit_2=Железный Паук Костюм (Классический)
+item.spiderverse:iron_spider_suit_3=Железный Паук Костюм (Классический)
+item.spiderverse:spiderman_velocity_suit=Костюм: Человек-паук Скорость
+item.spiderverse:spiderman_future_foundation_suit=Костюм: Человек-паук: Future Основа
+item.spiderverse:spiderman_cero_suit=Костюм: Человек-паук: Zero
+item.spiderverse:aracnido_jr_suit=Костюм: Arachnid Jr.
+item.spiderverse:spiderman_classic_suit_1=Костюм: Человек-паук: Классический
+item.spiderverse:spiderman_classic_suit_2=Костюм: Человек-паук: Классический
+item.spiderverse:spiderman_classic_suit_3=Костюм: Человек-паук: Классический
+item.spiderverse:spiderman_2099_suit_1=Костюм: Человек-паук 2099
+item.spiderverse:spiderman_2099_suit_2=Костюм: Человек-паук 2099
+item.spiderverse:spiderman_2099_suit_3=Костюм: Человек-паук 2099
+item.spiderverse:spiderman_2099_suit=Костюм: Человек-паук 2099
+item.spiderverse:spider_punk_suit=Костюм: Спайдер-Панк
+item.spiderverse:spiderman_ps5_symbiote_suit=Костюм: Insomniac's Человек-паук 2: Симбиот
+item.spiderverse:scarlet_spider_suit_1=Костюм: la Алый Паук
+item.spiderverse:scarlet_spider_suit_2=Костюм: la Алый Паук
+item.spiderverse:scarlet_spider_suit_3=Костюм: la Алый Паук
+item.spiderverse:anti_ock_suit=Костюм: Анти-Ock
+item.spiderverse:taskmaster_suit=Костюм: Таскмастер
+item.spiderverse:taskmaster_mask=Маска: Таскмастер
+item.spiderverse:anti_ock_suit_damage=Анти-Ock Костюм §c[Повреждено]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Человек-паук: Улучшенный Костюм 2.0 §c[Повреждено]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Человек-паук: Улучшенный Костюм 2.0 §c[Повреждено]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Человек-паук: Улучшенный Костюм 2.0 §c[Повреждено]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Человек-паук: Улучшенный Костюм 2.0 §c[Повреждено]
+item.spiderverse:spiderman_classic_suit_1_damage=Человек-паук: Классический Костюм §c[Повреждено]
+item.spiderverse:spiderman_classic_suit_2_damage=Человек-паук: Классический Костюм §c[Повреждено]
+item.spiderverse:spiderman_classic_suit_3_damage=Человек-паук: Классический Костюм §c[Повреждено]
+item.spiderverse:scarlet_spider_suit_1_damage=la Алый Паук Костюм §c[Повреждено]
+item.spiderverse:scarlet_spider_suit_2_damage=la Алый Паук Костюм §c[Повреждено]
+item.spiderverse:scarlet_spider_suit_3_damage=la Алый Паук Костюм §c[Повреждено]
+item.spiderverse:spiderman_2099_suit_1_damage=Человек-паук 2099 Костюм §c[Повреждено]
+item.spiderverse:spiderman_2099_suit_2_damage=Человек-паук 2099 Костюм §c[Повреждено]
+item.spiderverse:spiderman_2099_suit_3_damage=Человек-паук 2099 Костюм §c[Повреждено]
+item.spiderverse:spiderman_2099_suit_damage=Человек-паук 2099 Костюм §c[Повреждено]
+item.spiderverse:spider_punk_suit_damage=Спайдер-Панк Костюм §c[Повреждено]
+item.spiderverse:hobgoblin_mask=Маска: Хобгоблин
+item.spiderverse:green_goblin_mask=Маска: Зелёный гоблин
+item.spidermanaddon:spiderman_picture=Человек-паук Фотография
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=Anya Corazon
+item.spidermanaddon:spider_bot_fly_controllers=Полёт Контроллеры для Паук-Bots
+item.spidermanaddon:spider_bots_controllers=Паук-Bot Контроллеры
+item.spidermanaddon:camera_mode_emotes=Emote
+item.spidermanaddon:camera_mode=Change Камера Позиция
+item.spidermanaddon:spider_web_ball=Паутина Ball
+tile.spidermanaddon:newspaper0.name=Газета
+tile.spidermanaddon:newspaper1.name=Газета
+tile.spidermanaddon:newspaper.name=Газета
+entity.spidermanaddon:penguin_stacy.name=Пингвин Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Призвать Пингвин Stacy
+entity.spidermanaddon:robot_dog.name=Охотник Робот
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=Призвать Охотник Робот
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=Призвать J. Jonah Jameson
+entity.spidermanaddon:hunters_drone.name=Охотник Дроны
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=Призвать Охотник Дроны
+entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. Плюшевая игрушка
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. Плюшевая игрушка
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=Kraven Охотники
+item.spawn_egg.entity.spidermanaddon:hunter.name=Призвать Kraven Охотники
+entity.spidermanaddon:hunter_crossbow.name=Kraven Охотники с Арбалеты
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=Призвать Kraven Охотники с Арбалеты
+item.spidermanaddon:delete_spider_powers=Удалить Способности
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Костюм: Человек-паук 2099: Через Паук-Вселенная
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Костюм: Человек-паук 2099: Через Паук-Вселенная (Тёмный)
+item.spiderverse:spiderman_90_black_suit=Костюм: Человек-паук: Анимационный сериал Чёрный
+item.spiderverse:spiderman_90_black_suit_1=Костюм: Человек-паук: Анимационный сериал [Красная и синяя окантовка] Чёрный
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Костюм: Алый Паук: Через SpiderVerse
+item.spiderverse:superior_spiderman_suit=Костюм: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_suit_1=Костюм: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_suit_2=Костюм: Превосходный Человек-паук
+item.spiderverse:superior_spiderman_suit_3=Костюм: Превосходный Человек-паук
+item.spiderverse:miles_morales_wolverine_suit=Костюм: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_suit_1=Костюм: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_suit_2=Костюм: Miles Morales: Росомаха
+item.spiderverse:miles_morales_wolverine_suit_3=Костюм: Miles Morales: Росомаха
+item.spiderverse:the_amazing_spiderman_belt_suit=Костюм: Удивительный Человек-паук с Пояс
+item.spiderverse:the_amazing_spiderman_black_suit=Костюм: Удивительный Человек-паук Чёрный
+item.spiderverse:spider_gwen_classic_suit=Костюм: Призрак ️Паук
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Костюм: Miles Morales: Через Паук-Вселенная
+item.spidermanaddon:dr_octopus_arms=Доктор Осьминог Руки
+item.spidermanaddon:electric_web_empty=Электрическая Веб-шутер [Пусто]
+item.spidermanaddon:electric_web=Электрическая Веб-шутер
+entity.spidermanaddon:dr_octopus.name=Доктор Осьминог
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Призвать Доктор Осьминог
+item.spiderverse:vulture_suit=Костюм: Стервятник
+item.spiderverse:mysterio_suit_1=Костюм: Мистерио
+item.spiderverse:mysterio_suit=Костюм: Мистерио
+item.spiderverse:mysterio_helmet=Шлем: Мистерио
+item.spiderverse:ghost_spider_suit=Костюм: Призрак Паук
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Костюм: Miles Morales: Через вселенные
+item.spiderverse:electro_suit=Костюм: Электро
+item.spiderverse:electro_helmet=Маска: Электро
+item.spidermanaddon:kraven_axe=Kraven Топор
+item.spidermanaddon:robot_dog_pet_plans=Kraven Робот Собака Контроллеры
+item.spidermanaddon:robot_dog_pet=Kraven Робот Собака [Питомец]
+item.spidermanaddon:miles_morales_powers=Miles Morales Способности
+item.spidermanaddon:symbiote_powers=Симбиот Способности
+item.spiderverse:superior_spiderman_suit_damage=Превосходный Человек-паук Костюм §c[Повреждено]
+item.spiderverse:superior_spiderman_suit_1_damage=Превосходный Человек-паук Костюм §c[Повреждено]
+item.spiderverse:superior_spiderman_suit_2_damage=Превосходный Человек-паук Костюм §c[Повреждено]
+item.spiderverse:superior_spiderman_suit_3_damage=Превосходный Человек-паук Костюм §c[Повреждено]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales: Росомаха Костюм §c[Повреждено]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales: Росомаха Костюм §c[Повреждено]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales: Росомаха Костюм §c[Повреждено]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales: Росомаха Костюм §c[Повреждено]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=Удивительный Человек-паук с Пояс Костюм §c[Повреждено]
+
+item.spiderverse:venom_s3=Костюм: Веном [Человек-паук 3]
+item.spiderverse:spiderman_last_stand_suit=Костюм: Человек-паук: Последний Последний рубеж
+item.spiderverse:superior_spiderman_black_suit=Костюм: Превосходный Человек-паук Чёрный
+item.spiderverse:spiderman_web_of_shadows_black_suit=Костюм: Человек-паук: Паутина Тени Чёрный
+item.spiderverse:spiderman_web_of_shadows_suit=Костюм: Человек-паук: Паутина Тени
+item.spiderverse:spiderman_what_if_suit=Костюм: Человек-паук: Disney Ленд
+item.spiderverse:spiderman_what_if_animated_suit=Костюм: Человек-паук: Что Если Ep 5
+item.spiderverse:spirit_spider_suit=Костюм: Духовный Паук
+item.spiderverse:yfn_spiderman_casero_suit=Костюм: Ваш Дружелюбный Соседский Человек-паук Самодельный
+item.spiderverse:into_the_spiderverse_sb_suit=Костюм: Через вселенные SB
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Костюм: Miles Morales: Прыжок веры
+item.spiderverse:miles_morales_bodega_cat_suit_3=Костюм: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_bodega_cat_suit_2=Костюм: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_bodega_cat_suit_1=Костюм: Человек-паук Miles Morales: Магазинчик Кошка
+item.spiderverse:miles_morales_10th_suit_3=Костюм: Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_suit_2=Костюм: Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_suit_1=Костюм: Miles Morales: 10th Годовщина
+item.spiderverse:miles_morales_10th_suit=Костюм: Miles Morales: 10th Годовщина
+item.spiderverse:anti_ock_suit_1=Костюм: Анти-Ock
+item.spiderverse:anti_ock_suit_2=Костюм: Анти-Ock
+item.spiderverse:anti_ock_suit_3=Костюм: Анти-Ock
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Костюм: Спайдер-Панк: Через Паук-Вселенная
+item.spiderverse:spiderman_unlimited_suit=Костюм: Человек-паук: Безграничный
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Костюм: Человек-паук Нуар: Через вселенные
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Костюм: Человек-паук: Секретные войны - Гражданская война
+item.spiderverse:spiderman_india_suit=Костюм: Человек-паук India: Через Паук-Вселенная
+item.spiderverse:spiderman_antivenom_suit=Костюм: Человек-паук Анти-Веном

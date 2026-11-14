@@ -1,0 +1,25 @@
+{
+    "materials": {
+        "version": "1.0.0",
+        "entity_emissive_alpha_hitbox:entity_beam_additive": {
+            "+samplerStates": [{"textureWrap": "Repeat", "samplerIndex": 0}],
+            "+defines": ["USE_UV_ANIM"],
+			"depthFunc": "Always"
+        },
+        "scan:entity_alphablend":{
+            "depthFunc": "NotEqual"
+        },
+        "ghost_rider_fire:entity_nocull": {
+            "+samplerStates": [{"textureWrap": "Repeat", "samplerIndex": 0}],
+            "+defines": ["ALPHA_TEST", "USE_UV_ANIM", "USE_EMISSIVE" ]
+        },
+        "outline_light:entity_beam_additive": {
+            "+samplerStates": [{"textureWrap": "Repeat", "samplerIndex": 0}],
+            "+defines": ["USE_UV_ANIM"]
+        },
+        "outline:entity_static": {
+            "+states": ["InvertCulling"],
+            "+defines": ["ALPHA_TEST","USE_OVERLAY"]
+        }
+    }
+}

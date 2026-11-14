@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:boomerang_mask",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.boomerang"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"boomerang_mask",
+					"mask"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "boomerang_mask"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_head"
+			},
+			"minecraft:wearable": {
+				"protection": 3,
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

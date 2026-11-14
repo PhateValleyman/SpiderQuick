@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.symbiote_claw": {
+      "geometry": "Geometry.symbiote_claw",
+      "part_visibility": [
+        { "*": "q.equipped_item_any_tag('slot.weapon.mainhand', 'symbiont_claw')" }
+      ],
+      "materials": [ { "*": "Material.venom_skin" } ],
+      "textures": [ "Texture.symbiote_claw" ]
+    }
+  }
+}

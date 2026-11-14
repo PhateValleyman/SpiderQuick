@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:peter_backpack",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/peter_backpack"
+			},
+			"geometry": {
+				"default": "geometry.peter_backpack"
+			},
+			"animations": {
+				"loop": "animation.peter_backpack.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "peter_backpack",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:police_scanner",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/3d_items/police_scanner"
+			},
+			"geometry": {
+				"default": "geometry.police_scanner"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+                "animate": [
+                    "idle",
+					{ "main": "v.main_hand" },
+					{ "offhand": "v.off_hand" }
+                ]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "animations": {
+                "idle": "animation.police_scanner.idle",
+				"main": "animation.police_scanner.main",
+				"offhand": "animation.police_scanner.offhand"
+            }
+		}
+	}
+}

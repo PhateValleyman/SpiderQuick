@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:glasses"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "marveladdons:glasses",
+        "data": 0,
+      "count": 8
+    }
+  }
+}

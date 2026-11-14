@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:robot_dog",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/robot_dog/robot_dog_wild",
+				"angry": "textures/entity/robot_dog/robot_dog_angry"
+			},
+			"geometry": {
+				"default": "geometry.robot_dog"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.robot_dog.idle",
+				"walk": "animation.robot_dog.walk",
+				"jump_on": "animation.robot_dog.jump_active",
+				"attack": "animation.robot_dog.attack"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"walk": "controller.animation.robot_dog.walk"
+				},
+				{
+					"attack": "controller.animation.robot_dog.attack"
+				},
+				{
+					"jump_on": "controller.animation.robot_dog.jump_on"
+				}
+			],
+			"render_controllers": [
+				"controller.render.robot_dog.wild",
+				"controller.render.robot_dog.angry"
+			],
+			"spawn_egg": {
+				"texture": "egg_robot_dog",
+				"texture_index": 0
+			}
+		}
+	}
+}

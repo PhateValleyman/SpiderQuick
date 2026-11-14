@@ -1,0 +1,100 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.suits_machine.venom_s3" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ { "venom_s3": "q.variant == 98" } ]
+				}
+			}
+		},
+		"controller.animation.suits_machine" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "fabricar" ],
+					"transitions" : [
+						{
+							"on" : "!q.is_sheared"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"on" : {
+					"animations" : [ "on" ],
+					"transitions" : [
+						{
+							"default" : "q.is_sheared"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.laboratory_workbench" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"suits" : "q.variant == 0"
+						},
+						{
+							"update_suits" : "q.variant == 1"
+						},
+						{
+							"equipment" : "q.variant == 2"
+						},
+						{
+							"usb" : "q.variant == 3"
+						},
+						{
+							"mejoras" : "q.variant == 4"
+						}
+					]
+				},
+				"suits" : {
+					"animations" : [ "suits" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 4"
+						}
+					]
+				},
+				"update_suits" : {
+					"animations" : [ "update_suits" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 4 || q.variant == 2 || q.variant == 3 || q.variant == 0"
+						}
+					]
+				},
+				"equipment" : {
+					"animations" : [ "equipment" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 || q.variant == 1 || q.variant == 3 || q.variant == 4"
+						}
+					]
+				},
+				"usb" : {
+					"animations" : [ "usb" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 4"
+						}
+					]
+				},
+				"mejoras" : {
+					"animations" : [ "mejoras" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3"
+						}
+					]
+				}
+			}
+		}
+			}
+		}

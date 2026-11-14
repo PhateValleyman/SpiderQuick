@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kraven_axe.first": {
+			"loop": true,
+			"bones": {
+				"kraven_axe": {
+					"rotation": [0, 70, -50]
+				}
+			}
+		},
+		"animation.kraven_axe.shoot": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"kraven_axe": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

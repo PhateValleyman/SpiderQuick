@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kingpin.idle": {
+			"loop": true,
+			"bones": {
+				"kingpin": {
+					"scale": 1
+				},
+				"dedos": {
+					"scale": 0.75
+				},
+				"dedos2": {
+					"scale": 0.75
+				}
+			}
+		},
+		"animation.kingpin.pose": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [12.5, 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+tellraw @s {"rawtext": [{"translate": "spidermanaddon.web_line.empty"}]}

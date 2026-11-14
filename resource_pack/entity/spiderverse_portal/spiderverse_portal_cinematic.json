@@ -1,0 +1,46 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spiderverse_portal_cinematic",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"outline": "outline_light",
+				"spiderverse_skybox": "outline"
+			},
+			"textures": {
+				"spiderverse_skybox": "textures/entity/spiderverse_skybox",
+				"default": "textures/entity/spiderverse_portal_outline",
+				"outline": "textures/entity/spiderverse_portal"
+			},
+			"geometry": {
+				"spiderverse_skybox": "geometry.spiderverse_skybox",
+				"default": "geometry.spiderverse_portals",
+				"outline": "geometry.spiderverse_portals_outline"
+			},
+			  "particle_effects": {
+				 "spiderverse_porta_light": "spidermanaddon:spiderverse_porta_light",
+				 "spiderverse_porta_light_pink": "spidermanaddon:spiderverse_porta_light_pink",
+				 "multiverse_particle": "spidermanaddon:multiverse_particle"
+			  },
+			"animations": {
+				"idle": "animation.spiderverse_skybox.idle",
+				"enter": "animation.spiderverse_portal.player.enter"
+			},
+            "scripts": {
+                "animate": [
+                    "idle", "enter"
+                ]
+            },
+			"render_controllers": [
+				"controller.render.spiderverse_skybox",
+				"controller.render.spiderverse_portal",
+				"controller.render.spiderverse_portal.outline"
+			],
+            "spawn_egg": {
+                "base_color": "#d3d3d1",
+                "overlay_color": "#aab0ab"
+            }
+		}
+	}
+}

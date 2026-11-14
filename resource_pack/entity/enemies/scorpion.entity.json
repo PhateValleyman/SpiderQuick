@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:scorpion",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/scorpion/scorpion" },
+      "geometry": { "default": "geometry.scorpion" },
+      "animations": {
+        "controller": "controller.animation.scorpion",
+        "melee_controller": "controller.animation.scorpion.melee",
+        "idle": "animation.scorpion.idle",
+        "idle.eyes": "animation.scorpion.idle.eyes",
+        "falling": "animation.scorpion.jump_attack",
+        "look_at_target": "animation.mayor_fisk.look_at_target",
+        "walk": "animation.scorpion.walk",
+        "attack": "animation.scorpion.attack",
+        "tail_attack": "animation.scorpion.tail_attack",
+        "tail_attack_spin": "animation.scorpion.tail_attack_spin",
+        "jump_attack": "animation.scorpion.jump_attack",
+        "jump_attack_end": "animation.scorpion.jump_attack.end",
+        "hide": "animation.scorpion.hide",
+        "death": "animation.scorpion.death"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+		  "variable.death = query.property('spidermanaddon:scorpion_state') == 'death';"
+        ],
+        "animate": ["controller", "melee_controller",{"idle": "!variable.death" }]
+      },
+      "render_controllers": ["controller.render.scorpion"],
+      "spawn_egg": { "base_color": "#26351f", "overlay_color": "#7a8a6d" }
+    }
+  }
+}

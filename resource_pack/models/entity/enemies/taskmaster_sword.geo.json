@@ -1,0 +1,102 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.taskmaster_sword",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rotation",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "rotation",
+					"pivot": [2.15, 12, 0]
+				},
+				{
+					"name": "ll",
+					"parent": "leftLeg",
+					"pivot": [2.15, 6, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "rotation",
+					"pivot": [-2.15, 12, 0]
+				},
+				{
+					"name": "rl",
+					"parent": "rightLeg",
+					"pivot": [-2.15, 6, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "rotation",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "nose",
+					"parent": "head",
+					"pivot": [0, 27.25118, -3.98065],
+					"rotation": [7, 0, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5.5, 22, 0]
+				},
+				{
+					"name": "la",
+					"parent": "leftArm",
+					"pivot": [6.5, 18, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5.5, 22, 0]
+				},
+				{
+					"name": "ra",
+					"parent": "rightArm",
+					"pivot": [-6.5, 18, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "ra",
+					"pivot": [-6, 15, 1]
+				},
+				{
+					"name": "sword",
+					"parent": "rightItem",
+					"pivot": [-6.5, 15, -2],
+					"cubes": [
+						{"origin": [-7, 14.5, -3], "size": [1, 1, 6], "uv": [0, 108]},
+						{"origin": [-7.5, 13.5, -3.8], "size": [2, 3, 1], "inflate": -0.2, "uv": [0, 117]},
+						{"origin": [-23.35, 14, -20], "size": [24, 2, 1], "inflate": -0.25, "pivot": [-11.1, 18.5, -15.1], "rotation": [0, -90, 0], "uv": [58, 94]}
+					]
+				}
+			]
+		}
+	]
+}

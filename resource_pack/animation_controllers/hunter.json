@@ -1,0 +1,180 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.hunter.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hunter.walk" : "q.modified_move_speed > 0.1 && q.mark_variant == 0 && q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"hunter.walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || q.mark_variant == 1 || !q.is_on_ground"
+						},
+						{
+							"hunter.run" : "q.has_target"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"hunter.run" : {
+					"animations" : [ "run" ],
+					"transitions" : [
+						{
+							"hunter.walk" : "!q.has_target"
+						},
+						{
+							"default" : "q.modified_move_speed < 0.1 || q.mark_variant == 1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.hunter.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.hunter.special_attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"special_attack" : "q.mark_variant == 1"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"special_attack" : {
+					"animations" : [ "special_attack" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished && q.mark_variant == 0"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.hunter.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack>0"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.hunter.jump_on" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"jump_on" : "q.mark_variant == 1"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"jump_on" : {
+					"animations" : [ "jump_on" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0 && q.all_animations_finished"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.hunter.look" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "normal" ],
+					"transitions" : [
+						{
+							"on_look" : "q.has_target"
+						}
+					]
+				},
+				"on_look" : {
+					"animations" : [ "on_look" ],
+					"transitions" : [
+						{
+							"look" : "q.all_animations_finished"
+						}
+					]
+				},
+				"look" : {
+					"animations" : [ "look" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.hunter.crossbow.look" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "look_off" ],
+					"transitions" : [
+						{
+							"look" : "q.has_target"
+						}
+					]
+				},
+				"look" : {
+					"animations" : [ "look" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.multiversal_gizmo.camera" : {
+			"initial_state" : "ac",
+			"states" : {
+				"ac" : {
+					"transitions" : [
+						{ "default" : "(1.0)" }
+					]
+				},
+				"default" : {
+					"on_entry" : [ "/camera @s clear", "/scoreboard players set @s gizmo_camera_mode 0", "/event entity @s gizmo_camera_mode:0" ],
+					"transitions" : [
+						{ "gizmo_camera_mode.free" : "q.scoreboard('gizmo_camera_mode') == 1 && q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo')" },
+						{ "gizmo_camera_mode.selfie" : "q.scoreboard('gizmo_camera_mode') == 2 && q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo')" }
+					]
+				},
+				"gizmo_camera_mode.free" : {
+					"on_entry" : [ "/camera @s set minecraft:free ease 0.1 linear pos ~ ~1.65 ~ rot ~ ~" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo') || q.scoreboard('gizmo_camera_mode') == 0 || q.is_sneaking" },
+						{ "gizmo_camera_mode.selfie" : "q.scoreboard('gizmo_camera_mode') == 2" }
+					]
+				},
+				"gizmo_camera_mode.selfie" : {
+					"animations" : [ "multiversal_gizmo.camera.selfie" ],
+					"on_entry" : [ "/event entity @s gizmo_camera_mode_selfie" ],
+					"transitions" : [
+						{ "gizmo_camera_mode.free" : "q.scoreboard('gizmo_camera_mode') == 1" },
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo') || q.scoreboard('gizmo_camera_mode') == 0 || q.is_sneaking" }
+					]
+				}
+			}
+		},
+		"controller.animation.multiversal_gizmo.offhand" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/function gizmo/off" ],
+					"transitions" : [
+						{
+							"active" : "q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo')"
+						}
+					]
+				},
+				"active" : {
+					"on_entry" : [ "/function gizmo/off" ],
+					"transitions" : [
+						{
+							"on" : "(1.0)"
+						}
+					]
+				},
+				"on" : {
+					"on_entry" : [ "/function gizmo/on" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'multiversal_gizmo')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

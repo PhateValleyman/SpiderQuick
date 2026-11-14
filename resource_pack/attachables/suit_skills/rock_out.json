@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:rock_out",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/items_3d/spider_punk_guitar"
+			},
+			"geometry": {
+				"default": "geometry.spider_punk_guitar"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "q.property('arathnido:suit_ability0') == 4" }
+			]
+		}
+	}
+}

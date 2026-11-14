@@ -1,0 +1,124 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_drone_shoot",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"shoot": "controller.animation.spider_drone_shoot"
+			},
+			"scripts": {
+				"animate": [
+					"shoot"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "hit",
+							"target": "self"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							6,
+							6
+						],
+						"knockback": true,
+						"destroy_on_hit": false,
+						"semi_random_diff_damage": false
+					}
+				},
+				"power": 2.0,
+				"gravity": 0.001,
+				"anchor": 1,
+				"destroy_on_hurt": true,
+				"uncertaintyBase": 0.0,
+				"should_bounce": false,
+				"inertia": 1,
+				"offset": [
+					0,
+					0.5,
+					0
+				],
+				"multiple_targets": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"timer_hit": {
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.25,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+			  }
+		}
+			}
+		},
+		"events": {
+			"timer_hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"timer_hit"
+							]
+						}
+					}
+				]
+			},
+			"hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						},
+				"queue_command": {
+					"command": [
+							"particle spidermanaddon:white_electric_hit ~ ~ ~",
+							"particle spidermanaddon:electric_hit2 ~ ~ ~",
+							"playsound spiderman_effects.electric_web_shooter @a[r=15]"
+					]
+				}
+					}
+				]
+			}
+		}
+	}
+}

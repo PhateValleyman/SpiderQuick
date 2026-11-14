@@ -1,0 +1,154 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.shocker.sense": {
+      "loop": true,
+      "animation_length": 3.9,
+      "timeline": {
+        "0.1": [
+					"/event entity @s shocker:shoot_off"
+        ],
+        "2.0": [
+					"/event entity @s shocker:shoot_on"
+        ]
+      }
+	},
+    "animation.dr_octopus.off_move": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.2": [
+		  "/event entity @s spidermanaddon:timeout"
+        ]
+      }
+    },
+    "animation.dr_octopus.idle": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+		  "/effect @s resistance 5 0 true"
+        ]
+      }
+    },
+
+    "animation.dr_octopus.hability_2.off": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+		  "/playsound dr_octopus.arms.attack @a[r=20] ~ ~ ~",
+		  "/summon spidermanaddon:dr_octopus_boss_take_effect ^ ^2 ^3",
+		  "/damage @e[family=!dr_octopus, r=8] 16",
+		  "/event entity @e[type=spidermanaddon:dr_octopus_take, r=10] spidermanaddon:timeout"
+        ],
+        "0.01": [
+		  "/event entity @s dr_octopus:attack_mode"
+        ]
+      }
+    },
+    "animation.dr_octopus.hability_2.take": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+		  "/tp @e[type=spidermanaddon:dr_octopus_take, c=1] ^ ^3 ^4",
+		  "/tp @e[family=!dr_octopus, family=!player, c=1, r=8] ^ ^3 ^4"
+        ]
+      }
+    },
+    "animation.dr_octopus.take.time": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.05": [
+			"/ride @p[r=2, tag=web_whip_owner] start_riding @e[type=spidermanaddon:web_whip_sit,c=1]"
+        ]
+      }
+    },
+    "animation.dr_octopus.take.loop": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+			"/ride @p[r=2, tag=web_whip_owner] start_riding @e[type=spidermanaddon:web_whip_sit,c=1]"
+        ]
+      }
+    },
+    "animation.dr_octopus.hability_2": {
+      "loop": false,
+      "animation_length": 4.0,
+      "timeline": {
+        "0.4": [
+		  "/playsound dr_octopus.arms.jump @a[r=20] ~ ~ ~",
+		  "/tag @s add octopus_hb2",
+		  "/tag @p[r=8] add octopus_take"
+        ],
+        "0.5": [
+		  "/summon spidermanaddon:dr_octopus_take ~ ~ ~",
+		  "/damage @e[family=!dr_octopus, r=8] 4",
+		  "/event entity @p[r=8] animacion:dano_on"
+        ]
+      }
+    },
+    "animation.dr_octopus.hability_1": {
+      "loop": false,
+      "animation_length": 1.6,
+      "timeline": {
+        "0.0": [
+		  "/effect @s slowness 2 9 true"
+        ],
+        "0.5": [
+		  "/summon spiderverse:dr_octopus_jump ^ ^ ^-1",
+		  "/effect @s levitation 1 31 true",
+		  "/playsound dr_octopus.arms.jump @a[r=20] ~ ~ ~",
+		  "/particle minecraft:spiderman_combo ~ ~ ~"
+        ],
+        "0.65": [
+		  "/effect @s levitation 0 32 true"
+        ],
+        "1.5": [
+		  "/event entity @s dr_octopus:attack_mode",
+		  "/summon spiderverse:dr_octopus_jump_down ^ ^2 ^-1"
+        ]
+      }
+    },
+    "animation.dr_octopus.escudo": {
+      "loop": true,
+      "animation_length": 6.0,
+      "timeline": {
+        "0.0": [
+		  "/effect @s regeneration 8 0 true"
+        ]
+      }
+    },
+    "animation.dr_octopus.walk": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.0": [
+		  "/playsound dr_octopus.walk @a[r=25] ~ ~ ~"
+        ]
+      }
+    },
+    "animation.dr_octopus.ia": {
+      "loop": true,
+      "animation_length": 25.5,
+      "timeline": {
+        "0.0": [
+		  "/event entity @s dr_octopus:attack_mode"
+        ],
+        "9.15": [
+		  "/event entity @s dr_octopus:hability_on"
+        ],
+        "15.5": [
+		  "/event entity @s dr_octopus:campo_fuerza",
+		  "/playsound dr_octopus.campo_fuerza @a[r=20]"
+        ],
+        "19.15": [
+		  "/event entity @s dr_octopus:hability_on"
+        ]
+      }
+    }
+  }
+}

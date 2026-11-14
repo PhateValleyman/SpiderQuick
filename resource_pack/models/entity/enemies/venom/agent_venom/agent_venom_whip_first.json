@@ -1,0 +1,207 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.agent_venom_whip_first",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve2",
+					"parent": "rightArm_model",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "tentacles_attack0",
+					"parent": "rightArm_model",
+					"pivot": [-7.5, 13, -0.5],
+					"rotation": [90, 0, 0]
+				},
+				{
+					"name": "tentacle_attack0",
+					"parent": "tentacles_attack0",
+					"pivot": [-6, 13.5, 0],
+					"cubes": [
+						{"origin": [-7.5, 12, -6], "size": [3, 3, 6], "uv": [48, 16]}
+					]
+				},
+				{
+					"name": "regene0_81",
+					"parent": "tentacle_attack0",
+					"pivot": [-6, 13.5, -6],
+					"cubes": [
+						{"origin": [-7.5, 12, -11.75], "size": [3, 3, 6], "inflate": -0.25, "uv": [32, 52]}
+					]
+				},
+				{
+					"name": "regene0_82",
+					"parent": "regene0_81",
+					"pivot": [-6, 13.5, -11.5],
+					"cubes": [
+						{"origin": [-7, 12.5, -17.5], "size": [2, 2, 6], "uv": [50, 61]}
+					]
+				},
+				{
+					"name": "regene0_83",
+					"parent": "regene0_82",
+					"pivot": [-6.5, 14, -17.5],
+					"cubes": [
+						{"origin": [-7, 12.5, -23.25], "size": [2, 2, 6], "inflate": -0.25, "uv": [66, 16]}
+					]
+				},
+				{
+					"name": "regene0_84",
+					"parent": "regene0_83",
+					"pivot": [-6.5, 14, -23],
+					"cubes": [
+						{"origin": [-6.5, 13, -29], "size": [1, 1, 6], "uv": [74, 7]}
+					]
+				},
+				{
+					"name": "tentacle_attack1",
+					"parent": "tentacles_attack0",
+					"pivot": [-7, 12.5, 1],
+					"cubes": [
+						{"origin": [-8.5, 11, -5], "size": [3, 3, 6], "uv": [50, 52]}
+					]
+				},
+				{
+					"name": "regene0_85",
+					"parent": "tentacle_attack1",
+					"pivot": [-7, 12.5, -5],
+					"cubes": [
+						{"origin": [-8.5, 11, -10.75], "size": [3, 3, 6], "inflate": -0.25, "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "regene0_86",
+					"parent": "regene0_85",
+					"pivot": [-7, 12.5, -10.5],
+					"cubes": [
+						{"origin": [-8, 11.5, -16.5], "size": [2, 2, 6], "uv": [66, 61]}
+					]
+				},
+				{
+					"name": "regene0_87",
+					"parent": "regene0_86",
+					"pivot": [-7.5, 13, -16.5],
+					"cubes": [
+						{"origin": [-8, 11.5, -22.25], "size": [2, 2, 6], "inflate": -0.25, "uv": [68, 50]}
+					]
+				},
+				{
+					"name": "regene0_88",
+					"parent": "regene0_87",
+					"pivot": [-7.5, 13, -22],
+					"cubes": [
+						{"origin": [-7.5, 12, -28], "size": [1, 1, 6], "uv": [32, 76]}
+					]
+				},
+				{
+					"name": "tentacle_attack2",
+					"parent": "tentacles_attack0",
+					"pivot": [-5, 12.5, 1],
+					"cubes": [
+						{"origin": [-6.5, 11, -5], "size": [3, 3, 6], "uv": [0, 60]}
+					]
+				},
+				{
+					"name": "regene0_89",
+					"parent": "tentacle_attack2",
+					"pivot": [-5, 12.5, -5],
+					"cubes": [
+						{"origin": [-6.5, 11, -10.75], "size": [3, 3, 6], "inflate": -0.25, "uv": [60, 25]}
+					]
+				},
+				{
+					"name": "regene0_90",
+					"parent": "regene0_89",
+					"pivot": [-5, 12.5, -10.5],
+					"cubes": [
+						{"origin": [-6, 11.5, -16.5], "size": [2, 2, 6], "uv": [0, 69]}
+					]
+				},
+				{
+					"name": "regene0_91",
+					"parent": "regene0_90",
+					"pivot": [-5.5, 13, -16.5],
+					"cubes": [
+						{"origin": [-6, 11.5, -22.25], "size": [2, 2, 6], "inflate": -0.25, "uv": [16, 69]}
+					]
+				},
+				{
+					"name": "regene0_92",
+					"parent": "regene0_91",
+					"pivot": [-5.5, 13, -22],
+					"cubes": [
+						{"origin": [-5.5, 12, -28], "size": [1, 1, 6], "uv": [46, 76]}
+					]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve2",
+					"parent": "second_arm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 17, 2]
+				}
+			]
+		}
+	]
+}

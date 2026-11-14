@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:spiderman_unlimited_wrist_morpher",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/3d_items/spiderman_unlimited_wrist_morpher"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_unlimited_wrist_morpher"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				]
+			},
+			"render_controllers": [
+				{ "controller.render.default": "!c.is_first_person && v.off_hand && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit')" }
+			]
+		}
+	}
+}

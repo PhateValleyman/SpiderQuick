@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:black_cat_skin",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"black_cat_rivals": "textures/entity/black_cat/black_cat_rivals",
+				"black_cat": "textures/entity/black_cat/black_cat",
+				"black_cat_spiderman_suit": "textures/entity/black_cat/black_cat_spiderman_suit"
+			},
+			"geometry": {
+				"black_cat_rivals": "geometry.black_cat_rivals",
+				"black_cat": "geometry.black_cat",
+				"black_cat_spiderman_suit": "geometry.black_cat_spiderman_suit"
+			},
+			"render_controllers": [
+			    { "controller.render.black_cat_rivals.skin": "!q.equipped_item_any_tag('slot.armor.feet', 'black_cat_suit') && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit')" },
+				{ "controller.render.black_cat.skin": "q.equipped_item_any_tag('slot.armor.feet', 'black_cat_suit')" },
+				{ "controller.render.black_cat_spiderman_suit.skin": "q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit')" }
+			],
+			"scripts": {
+                "animate": [
+					"idle", "smile"
+                ]
+			},
+            "animations": {
+                "smile": "animation.black_cat.smile",
+                "idle": "animation.black_cat.idle.eyes"
+            }
+		}
+	}
+}

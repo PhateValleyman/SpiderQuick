@@ -1,0 +1,32 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:web_grabber_invoke",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/blocks/web_grabber"
+			},
+			"geometry": {
+				"default": "geometry.web_grabber"
+			},
+			"animations": {
+				"loop": "animation.web_grabber.on"
+			},
+			"scripts": {
+				"animate": [
+					"loop"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "web_grabber_invoke",
+				"texture_index": 0
+			}
+		}
+	}
+}

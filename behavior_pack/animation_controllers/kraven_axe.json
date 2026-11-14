@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.kraven_axe_autorang_thrown": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @p add autorangOwner",
+
+						"/tag @e[type=zombie,r=20] add autorangTarget",
+						"/tag @e[type=skeleton,r=20] add autorangTarget",
+						"/tag @e[type=husk,r=20] add autorangTarget",
+						"/tag @e[type=stray,r=20] add autorangTarget",
+						"/tag @e[type=drowned,r=20] add autorangTarget",
+						"/tag @e[type=wither_skeleton,r=20] add autorangTarget",
+						"/tag @e[type=zombie_pigman,r=20] add autorangTarget",
+						"/tag @e[type=enderman,r=20] add autorangTarget",
+						"/tag @e[type=endermite,r=20] add autorangTarget",
+						"/tag @e[type=shulker,r=20] add autorangTarget",
+						"/tag @e[type=spider,r=20] add autorangTarget",
+						"/tag @e[type=cave_spider,r=20] add autorangTarget",
+						"/tag @e[type=pillager,r=20] add autorangTarget",
+						"/tag @e[type=ravager,r=20] add autorangTarget",
+						"/tag @e[type=vindicator,r=20] add autorangTarget",
+						"/tag @e[type=evocation_illager,r=20] add autorangTarget",
+						"/tag @e[type=witch,r=20] add autorangTarget",
+						"/tag @e[type=zombie_villager,r=20] add autorangTarget",
+						"/tag @e[type=silverfish,r=20] add autorangTarget",
+						"/tag @e[type=guardian,r=20] add autorangTarget",
+						"/tag @e[type=elder_guardian,r=20] add autorangTarget",
+						"/tag @e[type=ghast,r=20] add autorangTarget",
+						"/tag @e[type=blaze,r=20] add autorangTarget",
+						"/tag @e[type=slime,r=20] add autorangTarget",
+						"/tag @e[type=magma_cube,r=20] add autorangTarget",
+						"/tag @e[type=phantom,r=20] add autorangTarget",
+						"/tag @e[type=wither,r=20] add autorangTarget",
+						"/tag @e[type=ender_dragon,r=100] add autorangTarget"
+					],
+					"animations": [
+						"mini_delay"
+					],
+					"transitions": [ { "repeat_A": "query.any_animation_finished" } ]
+				}
+			}
+		},
+		"controller.animation.kraven_axe_on": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tag @p add kraven_axe_owner"
+					],
+					"animations": [
+						"mini_delay"
+					],
+					"transitions": [ { "repeat_A": "query.any_animation_finished" } ]
+				}
+			}
+		},
+		"controller.animation.kraven_axe_return": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tp ^^^3 facing @p[tag=kraven_axe_owner]",
+						"/execute at @p[r=0.5,tag=kraven_axe_owner] run tag @e[type=spidermanaddon:kraven_axe_return,c=1] add kraven_axeReturned"
+					],
+					"transitions": [
+						{ "returned": "query.variant == 1" },
+						{ "repeat": "1" }
+					]
+				},
+				"repeat": {
+					"on_entry": [
+						"/tp ^^^3 facing @p[tag=kraven_axe_owner]"
+					],
+					"transitions": [ { "default": "1" } ]
+				},
+				"returned": {
+					"animations": [
+						"kraven_axe_returned"
+					]
+				}
+			}
+		}
+	}
+}

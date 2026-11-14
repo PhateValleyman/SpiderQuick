@@ -1,0 +1,614 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.peni_parker.idle": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -0.5, 0],
+					"scale": 1.25
+				},
+				"leftArm": {
+					"rotation": [0, 0, -7.5],
+					"position": [0, -0.5, 0],
+					"scale": [0.8, 1, 0.8]
+				},
+				"rightArm": {
+					"rotation": [0, 0, 7.5],
+					"position": [0, -0.5, 0],
+					"scale": [0.8, 1, 0.8]
+				},
+				"ceja0": {
+					"scale": [0.8, 0.5, 1]
+				},
+				"ceja1": {
+					"scale": [0.8, 0.5, 1]
+				},
+				"backpack": {
+					"position": [0, 1, 0],
+					"scale": 1.1
+				}
+			}
+		},
+		"animation.peni_parker.separar": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"position": [2, 0, 0]
+				},
+				"rightLeg": {
+					"position": [-2, 0, 0]
+				},
+				"waist": {
+					"position": [0, 9, 0]
+				},
+				"head": {
+					"position": [0, 4, 0]
+				},
+				"leftArm": {
+					"position": [5, 0, 0]
+				},
+				"rightArm": {
+					"position": [-5, 0, 0]
+				},
+				"gota": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_0": {
+			"loop": true,
+			"bones": {
+				"boca0": {
+					"scale": 0
+				},
+				"boca1": {
+					"scale": [0.9, 0.4, 1]
+				},
+				"pupila0": {
+					"position": [0, 0, -0.2],
+					"scale": 0.4
+				},
+				"pupila1": {
+					"position": [0, 0, -0.2],
+					"scale": 0.4
+				},
+				"boca2": {
+					"scale": 0
+				},
+				"eyes2": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"position": [-0.1, -0.3, 0],
+					"scale": [0.75, 0.2, 1]
+				},
+				"mejilla0": {
+					"position": [-0.1, -0.3, 0],
+					"scale": [0.75, 0.2, 1]
+				},
+				"angry": {
+					"scale": 0
+				},
+				"boca3": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"boca4": {
+					"scale": 0
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"boca5": {
+					"scale": 0
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_1": {
+			"loop": true,
+			"bones": {
+				"eyes": {
+					"scale": 0
+				},
+				"boca0": {
+					"scale": 0
+				},
+				"pestana0": {
+					"position": [0, -0.2, 0]
+				},
+				"pestana1": {
+					"position": [0, -0.2, 0]
+				},
+				"boca1": {
+					"scale": 0
+				},
+				"boca2": {
+					"position": [0, -0.1, 0],
+					"scale": 1
+				},
+				"eye2": {
+					"scale": [1, 0.7, 1]
+				},
+				"eye3": {
+					"scale": [1, 0.7, 1]
+				},
+				"mejilla0": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"scale": 0
+				},
+				"angry": {
+					"scale": 0
+				},
+				"boca3": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 1
+				},
+				"boca4": {
+					"scale": 0
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"boca5": {
+					"scale": 0
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_3": {
+			"loop": true,
+			"bones": {
+				"eyes": {
+					"scale": 0
+				},
+				"boca0": {
+					"scale": 0
+				},
+				"pestana0": {
+					"rotation": [0, 0, -12.5],
+					"position": [-0.3, -0.3, 0],
+					"scale": [1, 0.7, 1]
+				},
+				"pestana1": {
+					"rotation": [0, 0, 12.5],
+					"position": [0.3, -0.3, 0],
+					"scale": [1, 0.7, 1]
+				},
+				"boca1": {
+					"scale": 0
+				},
+				"boca2": {
+					"position": [0, -0.1, 0],
+					"scale": 0
+				},
+				"eye2": {
+					"rotation": [0, 0, 12.5],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0.6, 1]
+				},
+				"eye3": {
+					"rotation": [0, 0, -12.5],
+					"scale": [1, 0.7, 1]
+				},
+				"mejilla0": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"scale": 0
+				},
+				"pestana0_0": {
+					"rotation": [0, 0, -45],
+					"position": [-2.05, 0.65, 0],
+					"scale": 1
+				},
+				"ceja0": {
+					"scale": 0
+				},
+				"ceja1": {
+					"scale": 0
+				},
+				"pestana1_1": {
+					"rotation": [0, 0, 45],
+					"position": [2.05, 0.65, 0],
+					"scale": 1
+				},
+				"angry": {
+					"rotation": [0, 0, 25],
+					"position": [0, 0, -0.2],
+					"scale": 0.4
+				},
+				"boca3": {
+					"rotation": [0, 0, 7.5],
+					"scale": [1, 0.75, 1]
+				},
+				"boca4": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"angry0": {
+					"rotation": [0, 0, -10],
+					"scale": 1
+				},
+				"boca5": {
+					"scale": 0
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_4": {
+			"loop": true,
+			"bones": {
+				"mejilla0": {
+					"position": [0.2, -0.2, 0],
+					"scale": [0.6, 0.2, 1]
+				},
+				"mejilla1": {
+					"position": [-0.2, -0.2, 0],
+					"scale": [0.6, 0.2, 1]
+				},
+				"eyes": {
+					"position": [0, 0.3, 0]
+				},
+				"pupila1": {
+					"position": [0.1, 0, 0]
+				},
+				"pupila0": {
+					"position": [-0.1, 0, 0]
+				},
+				"eyes2": {
+					"scale": 0
+				},
+				"boca0": {
+					"position": [0, 0.1, 0],
+					"scale": [0.9, 0.4, 1]
+				},
+				"boca1": {
+					"scale": 0
+				},
+				"boca2": {
+					"scale": 0
+				},
+				"pestana0": {
+					"position": [0, 0.3, 0]
+				},
+				"ceja0": {
+					"rotation": [0, 0, 10]
+				},
+				"ceja1": {
+					"rotation": [0, 0, -10]
+				},
+				"pestana1": {
+					"position": [0, 0.3, 0]
+				},
+				"angry": {
+					"scale": 0
+				},
+				"boca3": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"boca4": {
+					"scale": 0
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"boca5": {
+					"scale": 0
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_5": {
+			"loop": true,
+			"bones": {
+				"mejilla0": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"scale": 0
+				},
+				"eye0": {
+					"rotation": [0, 0, 7.5],
+					"scale": [1, 0.5, 1]
+				},
+				"pupila1": {
+					"position": [0, 0.7, 0],
+					"scale": [0.3, 0.7, 1]
+				},
+				"eye1": {
+					"rotation": [0, 0, -5],
+					"scale": [1, 0.5, 1]
+				},
+				"pupila0": {
+					"position": [0, 0.7, 0],
+					"scale": [0.3, 0.7, 1]
+				},
+				"eyes2": {
+					"scale": 0
+				},
+				"boca0": {
+					"scale": 0
+				},
+				"boca1": {
+					"scale": 0
+				},
+				"boca2": {
+					"scale": 0
+				},
+				"pestana0": {
+					"rotation": [0, 0, -10],
+					"position": [-0.2, -0.4, 0],
+					"scale": [1, 0.6, 1]
+				},
+				"pestana0_0": {
+					"position": [-0.3, 0, 0],
+					"scale": [0.3, 1.3, 1]
+				},
+				"ceja0": {
+					"rotation": [0, 0, -15],
+					"position": [-0.5, -1, 0]
+				},
+				"ceja1": {
+					"rotation": [0, 0, 15],
+					"position": [0.5, -1, 0]
+				},
+				"pestana1": {
+					"rotation": [0, 0, 10],
+					"position": [0.2, -0.4, 0],
+					"scale": [1, 0.6, 1]
+				},
+				"pestana1_1": {
+					"position": [0.3, 0, 0],
+					"scale": [0.3, 1.3, 1]
+				},
+				"angry": {
+					"scale": 0
+				},
+				"boca3": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"boca4": {
+					"position": [0.5, -0.3, 0],
+					"scale": [0.7, 0.5, 1]
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"boca5": {
+					"scale": 0
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_6": {
+			"loop": true,
+			"bones": {
+				"mejilla0": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"scale": 0
+				},
+				"eyes2": {
+					"scale": 0
+				},
+				"boca0": {
+					"scale": 0
+				},
+				"boca1": {
+					"scale": 0
+				},
+				"boca2": {
+					"scale": 0
+				},
+				"boca3": {
+					"scale": 0
+				},
+				"boca4": {
+					"scale": 0
+				},
+				"pestana0": {
+					"rotation": [0, 0, -6],
+					"position": [-0.1, 0, 0]
+				},
+				"pestana0_0": {
+					"position": [-0.25, 0, 0]
+				},
+				"ceja0": {
+					"rotation": [0, 0, -12.5],
+					"position": [-0.3, -0.2, 0]
+				},
+				"ceja1": {
+					"rotation": [0, 0, 17.5],
+					"position": [0.3, 0.1, 0]
+				},
+				"pestana1": {
+					"rotation": [0, 0, 5],
+					"position": [0.1, 0, 0]
+				},
+				"pestana1_1": {
+					"position": [0.25, 0, 0]
+				},
+				"angry": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"boca5": {
+					"rotation": [0, 0, 12.5],
+					"position": [0.2, 0, 0],
+					"scale": [1, 0.6, 1]
+				},
+				"bocas2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.peni_parker.expresion_7": {
+			"loop": true,
+			"bones": {
+				"mejilla0": {
+					"scale": 0
+				},
+				"mejilla1": {
+					"scale": 0
+				},
+				"pupila1": {
+					"position": [0, 0.1, 0.15],
+					"scale": 1.25
+				},
+				"pupila0": {
+					"position": [0, 0.1, 0.15],
+					"scale": 1.25
+				},
+				"eyes2": {
+					"scale": 0
+				},
+				"bocas": {
+					"scale": 0
+				},
+				"pestana0": {
+					"rotation": [0, 0, 5]
+				},
+				"pestana0_0": {
+					"position": [-0.2, 0, 0]
+				},
+				"ceja0": {
+					"rotation": [0, 0, 12.5],
+					"position": [-0.4, -0.3, 0]
+				},
+				"ceja1": {
+					"rotation": [0, 0, -12.5],
+					"position": [0.3, -0.3, 0]
+				},
+				"pestana1": {
+					"rotation": [0, 0, -5]
+				},
+				"pestana1_1": {
+					"position": [0.2, 0, 0]
+				},
+				"angry0": {
+					"scale": 0
+				},
+				"angry": {
+					"scale": 0
+				},
+				"gota": {
+					"scale": 0
+				},
+				"boca6": {
+					"scale": [0.5, 0.3, 1]
+				},
+				"pb3": {
+					"position": [0.3, 0.3, -1],
+					"scale": [0.5, 0.5, 1]
+				},
+				"pb0": {
+					"position": [-0.1, 0, 0],
+					"scale": [0.8, 0.8, 1]
+				},
+				"pb1": {
+					"position": [-0.2, 0, 0],
+					"scale": [0.8, 0.8, 1]
+				},
+				"pb2": {
+					"position": [-0.3, 0.3, -1],
+					"scale": [0.5, 0.5, 1]
+				}
+			}
+		},
+		"animation.peni_parker.pose": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"rotation": [-67.5, 0, 0]
+				},
+				"ll": {
+					"rotation": [72.5, 0, 0],
+					"position": [0, 1.8, -0.2]
+				},
+				"rightLeg": {
+					"rotation": [-75, 30, 5]
+				},
+				"rl": {
+					"rotation": [97.5, 0, 0],
+					"position": [0, 1.4, 0.1]
+				},
+				"waist": {
+					"rotation": [17.5, 0, 0]
+				},
+				"head": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"pupila1": {
+					"position": [0.1, 0, 0.075],
+					"scale": 1.1
+				},
+				"pupila0": {
+					"position": [-0.1, 0, 0.075],
+					"scale": 1.1
+				},
+				"leftArm": {
+					"rotation": [45, 0, -115],
+					"position": [0, 1, 0.5]
+				},
+				"la": {
+					"rotation": [-22.5, 0, 0],
+					"position": [0, 0.7, 0]
+				},
+				"rightArm": {
+					"rotation": [-35, 0, -10]
+				}
+			}
+		},
+		"animation.peni_parker.pose2": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [0, 0, -15]
+				},
+				"la": {
+					"rotation": [0, 0, 72.5],
+					"position": [0.6, 0.9, 0]
+				},
+				"rightArm": {
+					"rotation": [0, 0, 17.5]
+				},
+				"ra": {
+					"rotation": [0, 0, -75],
+					"position": [-0.7, 0.9, 0]
+				}
+			}
+		}
+	}
+}

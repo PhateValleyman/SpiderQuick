@@ -1,0 +1,132 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:spider_bike",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+			"animations": {
+				"spider_mobile_c": "controller.animation.spider_mobile.walk",
+				"spider_mobile.walk": "animation.spider_bike.walk",
+				"vehicles.motor": "animation.vehicles.motor",
+				"bike.motor.particle": "animation.bike.particle",
+				"bike.walk.particle": "animation.bike.walk.particle",
+				"bike.particle_c": "controller.animation.bike.particle",
+				"bike.player.animation": "controller.animation.bike.player.animation"
+			},
+			"scripts": {
+				"animate": [
+					"spider_mobile_c",
+					"vehicles.motor",
+					"vehicles.motor.particle",
+					"bike.particle_c",
+					"bike.player.animation"
+				]
+			}
+    },
+		"component_groups": {
+
+		},
+
+	"components": {
+		"minecraft:type_family": {
+		"family": [ "car", "vehicle" ]
+	},
+	"minecraft:loot": {
+		"table": "loot_tables/entities/spider_bike.json"
+	},
+	"minecraft:breathable": {
+		"totalSupply": 15,
+		"suffocateTime": 0
+	},
+      "minecraft:fire_immune": {
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	"minecraft:healable": {
+		"items": [
+		{
+			"item": "redstone",
+			"heal_amount": 2
+		}
+	]
+},
+	"minecraft:scale": {                   "value":1.0
+	},
+	"minecraft:collision_box": {
+		"width": 1.4,
+		"height": 1.7
+	},
+	"minecraft:health": {
+		"value": {
+			"range_min": 40,
+			"range_max": 40
+		}
+	},
+	"minecraft:movement": {
+		"value": {
+			"range_min": 0.65,
+			"range_max": 0.65
+		}
+	},
+	"minecraft:underwater_movement": {
+		"value": 0.05
+	},
+	"minecraft:navigation.walk": {
+		"can_path_over_water": true,
+		"avoid_water": true,
+		"avoid_damage_blocks": true
+	},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+	"minecraft:movement.basic": {
+	},
+	"minecraft:jump.static": {
+	},
+	"minecraft:nameable": {
+	},
+	"minecraft:rideable": {
+		"priority": 0,
+		"seat_count": 1,
+		"crouching_skip_interact": true,
+		"interact_text": "Drive",
+		"family_types": [
+			"player"
+		],
+			"seats": [
+		{
+			"position": [ 0.0, 0.5, -0.2]
+		}
+	]
+},
+	"minecraft:input_ground_controlled": {
+	},
+	"minecraft:behavior.float": {
+		"priority": 0
+	},
+	"minecraft:physics": {
+	},
+	"minecraft:leashable": {
+		"soft_distance": 4.0,
+		"hard_distance": 6.0,
+		"max_distance": 10.0
+	},
+	"minecraft:balloonable": {
+	},
+	"minecraft:pushable": {
+		"is_pushable": true,
+		"is_pushable_by_piston": true
+		}
+	},
+    "events": {
+
+		
+	}
+}
+}

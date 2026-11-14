@@ -1,0 +1,81 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:jjj_invoke",
+      "is_spawnable": false,
+
+      "is_summonable": true,
+
+      "is_experimental": false
+    },
+    "component_groups": {
+      "spidermanaddon:destroy": {
+		"minecraft:instant_despawn": {
+			"remove_child_entities": true
+		}
+	  }
+	},
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/laboratory_workbench.json"
+      },
+      "minecraft:type_family": {
+        "family": [ "laboratory_workbench" ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+			"minecraft:timer": {
+			  "looping": false,
+			  "time": 0.1,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "spidermanaddon:destroy"
+			  }
+		},
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:physics": {
+      },
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+      "minecraft:collision_box": {
+        "width": 1.5,
+        "height": 3
+      }
+    },
+        
+	"events": {
+      "spidermanaddon:destroy": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:destroy"
+          ]
+        },
+          "queue_command": {
+            "command": [
+			   "function jjj_invoke"
+            ]
+          }
+      }
+	}
+  }
+}

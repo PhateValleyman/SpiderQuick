@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.trace_c": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:trace_c_particle ~ ~ ~"
+
+
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:trace_c_particle ~ ~ ~"
+          ]
+        }
+      }
+    },
+    "controller.animation.twist_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:twist_e_particle ~ ~ ~"
+
+
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:twist_e_particle ~ ~ ~"
+          ]
+        }
+      }
+    },
+    "controller.animation.twirl_e": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:twirl_e_particle ~ ~ ~"
+
+
+          ]
+        },
+        "shoot": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:twirl_e_particle ~ ~ ~"
+          ]
+        }
+      }
+    }
+  }
+}

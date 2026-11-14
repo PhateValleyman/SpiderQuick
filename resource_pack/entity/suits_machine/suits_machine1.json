@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:suits_machine1",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/blocks/black_cat_doll"
+			},
+			"geometry": {
+				"default": "geometry.no"
+			},
+			"animations": {
+				"loop": "animation.black_cat_doll.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "black_cat_doll",
+				"texture_index": 0
+			}
+		}
+	}
+}

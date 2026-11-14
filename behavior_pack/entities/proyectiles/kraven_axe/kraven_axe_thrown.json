@@ -1,0 +1,144 @@
+{
+  "format_version": "1.15.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:kraven_axe_on",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "cont_kraven_axe_thrown",
+          "efecto_sonido"
+        ]
+      },
+      "animations": {
+        "cont_kraven_axe_thrown": "controller.animation.kraven_axe_on",
+        "mini_delay": "animation.spidermanaddon.mini_delay",
+        "efecto_sonido": "animation.kraven_axe.giro"
+      }
+    },
+    "component_groups": {
+      "minecraft:return": {
+        "minecraft:timer": {
+          "looping": false,
+          "randomInterval": false,
+          "time": 0.25,
+          "time_down_event": {
+            "event": "minecraft:transformarse"
+          }
+        }
+      },
+      "minecraft:transformarse": {
+        "minecraft:transformation": {
+          "into": "spidermanaddon:kraven_axe_return"
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "randomInterval": false,
+        "time": 0.7,
+        "time_down_event": {
+          "event": "minecraft:event_return"
+        }
+      },
+      "minecraft:health": {
+        "value": 1000
+      },
+      "minecraft:spell_effects": {
+        "add_effects": [
+          {
+            "effect": "resistance",
+            "duration": 7000,
+            "visible": false
+          },
+          {
+            "effect": "instant_health",
+            "duration": 7000,
+            "visible": false
+          }
+        ]
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 9,
+            "knockback": true,
+            "destroy_on_hit": false,
+            "semirandomdiffdamage": false
+          },
+          "definition_event": {
+            "event_trigger": {
+              "event": "minecraft:event_return",
+              "target": "self"
+            }
+          }
+        },
+        "power": 2.7,
+        "gravity": 0.0001,
+        "anchor": 1,
+        "destroy_on_hurt": true,
+        "uncertainty_base": 1,
+        "uncertainty_multiplier": 1,
+        "should_bounce": false,
+        "inertia": 1,
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "multiple_targets": true
+      },
+      "minecraft:fire_immune": {},
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:navigation.float": {},
+      "minecraft:type_family": {
+        "family": [
+          "bullet"
+        ]
+      }
+    },
+    "events": {
+      "minecraft:transformarse": {
+        "queue_command": {
+          "command": [
+            "fill ~ ~ ~ ~ ~0 ~ air 0 destroy"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:transformarse"
+          ]
+        }
+      },
+      "minecraft:event_return": {
+        "queue_command": {
+          "command": [
+            "playsound spiderman_effects.kick_blast @a[r=15]",
+            "particle spidermanaddon:yellow_electric_hit ~ ~ ~",
+            "particle spidermanaddon:yellow_electric_hit2 ~ ~ ~",
+            "particle spidermanaddon:yellow_electric_hit3 ~ ~ ~"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:return"
+          ]
+        }
+      }
+    }
+  }
+}

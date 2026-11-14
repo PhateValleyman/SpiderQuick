@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mystructure:prisoner_tower_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/prisoner_tower",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

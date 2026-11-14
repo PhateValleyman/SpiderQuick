@@ -1,0 +1,67 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humanoid.mask": {
+			"loop": true,
+			"bones": {
+				"hat": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.humanoid.suit": {
+			"loop": true,
+			"bones": {
+				"leftSleeve": {
+					"scale": 0
+				},
+				"rightSleeve": {
+					"scale": 0
+				},
+				"jacket": {
+					"scale": 0
+				},
+				"leftPants": {
+					"scale": 0
+				},
+				"rightPants": {
+					"scale": 0
+				},
+				"leftPants2": {
+					"scale": 0
+				},
+				"leftPants3": {
+					"scale": 0
+				},
+				"leftSleeve2": {
+					"scale": 0
+				},
+				"rightSleeve2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mask.on": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 1
+				},
+				"mask0": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mask.off": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 0
+				},
+				"mask0": {
+					"scale": 1
+				}
+			}
+		}
+	}
+}

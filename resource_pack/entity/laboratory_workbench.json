@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:laboratory_workbench",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/blocks/laboratory_workbench"
+			},
+			"geometry": {
+				"default": "geometry.laboratory_workbench"
+			},
+			"animations": {
+				"loop": "animation.laboratory_workbench.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "laboratory_workbench",
+				"texture_index": 0
+			}
+		}
+	}
+}

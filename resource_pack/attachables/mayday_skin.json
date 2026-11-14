@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:mayday_skin",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"mayday_skin": "textures/suits/mayday_skin",
+				"mayday_black_suit_skin": "textures/suits/mayday_black_suit_skin",
+				"web_wings": "textures/web_wings",
+				"head": "textures/suits/mayday_head"
+			},
+			"geometry": {
+				"default": "geometry.mayday_skin",
+				"web_wings": "geometry.web_wings",
+				"head": "geometry.mayday_head"
+			},
+			"render_controllers": [
+			    { "controller.render.spiderman_suit.web_wings": "q.is_gliding" },
+				{ "controller.render.mayday_skin": "!q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_black_suit')" },
+				{ "controller.render.mayday_skin.black_suit": "q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_black_suit')" },
+				{ "controller.render.mayday_skin.head": "q.property('arathnido:skins') == 0" }
+			],
+			"scripts": {
+                "animate": [
+					{ "mask.off": "q.property('arathnido:skins') == 0" },
+					"idle"
+                ]
+			},
+            "animations": {
+                "mask.off": "animation.spider_woman.mask.off",
+				"idle": "animation.spider_woman.idle"
+            }
+		}
+	}
+}

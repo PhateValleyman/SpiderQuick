@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+    "animation.spidermanaddon.kraven_axe_sensor": {
+      "loop": true,
+      "animation_length": 0.8,
+      "timeline": {
+        "0.0": [
+		"/execute at @p[tag=kraven_axe_owner, r=2] run event entity @e[type=spidermanaddon:kraven_axe_return, r=3, c=1] minecraft:event_returned"
+		]
+      }
+    },
+    "animation.kraven_axe.giro": {
+      "loop": true,
+      "animation_length": 0.8,
+      "timeline": {
+        "0.0": [
+		"/playsound thor.kraven_axe_giro @a[r=35] ~ ~ ~"
+		]
+      }
+    },
+		"animation.spidermanaddon.kraven_axe_drop": {
+			"animation_length": 0.1,
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/give @p[tag=kraven_axe_owner] spidermanaddon:kraven_axe",
+					"/tag @p[tag=kraven_axe_owner] remove kraven_axe_owner",
+					"@s minecraft:event_despawn",
+					"/playsound escudo.finish @a[r=35] ~ ~ ~"
+				]
+			}
+		},
+		"animation.spidermanaddon.mini_delay": {
+			"animation_length": 0.1,
+			"loop": false
+		}
+	}
+}

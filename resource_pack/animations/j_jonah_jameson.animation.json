@@ -1,0 +1,304 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.j_jonah_jameson.idle": {
+			"loop": true,
+			"animation_length": 4,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [-2.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [2.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [2.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.0": [2.5, 0, 0],
+						"4.0": [0, 0, 0]
+					}
+				},
+				"b0_0": {
+					"position": [0, -0.3, 0],
+					"scale": [0.8, 1, 1]
+				},
+				"b0_1": {
+					"position": [0, 0, 1]
+				}
+			},
+			"particle_effects": {
+				"0.4": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"0.5": {
+					"effect": "jj_smoke",
+					"locator": "smoke"
+				},
+				"0.7": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"1.0": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"1.3": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"1.6": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"1.9": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"2.0": {
+					"effect": "jj_smoke",
+					"locator": "smoke"
+				},
+				"2.2": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"2.5": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"2.8": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"3.1": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"3.4": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"3.7": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				},
+				"4.0": {
+					"effect": "miles_morales_light2",
+					"locator": "smoke"
+				}
+			}
+		},
+		"animation.j_jonah_jameson.expresion.0": {
+			"loop": true,
+			"bones": {
+				"squirrel_teeth": {
+					"position": [0, 0.4, -0.1]
+				},
+				"waist": {
+					"rotation": [-7.5, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-20, 0, -20]
+				},
+				"rightArm": {
+					"rotation": [-15, 0, 22.5]
+				},
+				"head": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"boca0": {
+					"position": [0, 0, 1]
+				},
+				"boca3": {
+					"position": [0, -2, -1]
+				},
+				"boca1": {
+					"position": [0, 0.75, 0],
+					"scale": [1.4, 2.75, 1]
+				},
+				"teeth2": {
+					"position": [0, -0.375, -1],
+					"scale": [1.25, 0.7, 1]
+				},
+				"teeth3": {
+					"position": [0, 0.325, -0.9],
+					"scale": [0.7, 0.6, 1]
+				},
+				"cejas": {
+					"position": [0, 0.3, 0]
+				},
+				"pestana2": {
+					"position": [0, 0.4, 0]
+				},
+				"pestana1": {
+					"position": [0, 0.4, 0]
+				},
+				"eye0": {
+					"position": [0, -0.3, 0],
+					"scale": [0.5, 0.5, 1]
+				},
+				"eye1": {
+					"position": [0, -0.3, 0],
+					"scale": [0.5, 0.5, 1]
+				}
+			}
+		},
+		"animation.j_jonah_jameson.expresion.2": {
+			"loop": true,
+			"bones": {
+				"squirrel_teeth": {
+					"position": [0, 0.4, -0.1]
+				},
+				"leftArm": {
+					"rotation": [-30, 0, -32.5]
+				},
+				"rightArm": {
+					"rotation": [-75, 15, 22.5]
+				},
+				"boca0": {
+					"position": [0, 0, 1]
+				},
+				"boca3": {
+					"position": [0, -2, -1]
+				},
+				"boca1": {
+					"position": [0, 0.75, 0],
+					"scale": [1.4, 2.75, 1]
+				},
+				"teeth2": {
+					"position": [0, -0.375, -1],
+					"scale": [1.25, 0.7, 1]
+				},
+				"teeth3": {
+					"position": [0, 0.325, -0.9],
+					"scale": [0.7, 0.6, 1]
+				},
+				"cejas": {
+					"position": [0, 0.3, 0]
+				},
+				"ceja0": {
+					"rotation": [0, 0, -7.5]
+				},
+				"ceja1": {
+					"rotation": [0, 0, 7.5]
+				},
+				"pestana2": {
+					"position": [0, 0.4, 0]
+				},
+				"pestana1": {
+					"position": [0, 0.4, 0]
+				},
+				"smok0": {
+					"rotation": [-2.5, 20, 0],
+					"position": [0, -1, 0.1],
+					"scale": [1, 1, 1.6]
+				}
+			}
+		},
+		"animation.j_jonah_jameson.new": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"position": [8, 0, 0]
+				},
+				"rightLeg": {
+					"position": [-8, 0, 0]
+				},
+				"waist": {
+					"position": [0, 9, 0]
+				},
+				"head": {
+					"position": [0, 6, 0]
+				},
+				"leftArm": {
+					"position": [5, 0, 0]
+				},
+				"rightArm": {
+					"position": [-5, 0, 0]
+				}
+			}
+		},
+		"animation.j_jonah_jameson.smoke": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [10, 0, 0],
+						"0.75": [-2.5, 0, 0],
+						"2.0": [-2.5, 0, 0],
+						"2.25": [10, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-45, 0, 10],
+						"0.75": [-45, 0, 10],
+						"2.0": [-45, 0, 10],
+						"2.25": [-45, 0, 10],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"ra": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-117.5, 0, 40],
+						"0.75": [-45, 0, 0],
+						"2.0": [-45, 0, 0],
+						"2.25": [-117.5, 0, 40],
+						"3.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [1, 0, 0],
+						"0.75": [0, 0, 0],
+						"2.0": [0, 0, 0],
+						"2.25": [1, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"cigarro": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0],
+						"0.75": [-30, -5, 0],
+						"2.0": [-30, -5, 0],
+						"2.25": [0, 0, 0],
+						"3.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 0, 0],
+						"0.2917": [-0.6, -0.35, -0.38],
+						"0.375": [-2.7, -0.05, -1.15],
+						"0.5": [-2.93, -1.1, -2.3],
+						"0.625": [-3.46, -2.55, -3.45],
+						"0.75": [-4, -4.2, -4.6],
+						"2.0": [-4, -4.2, -4.6],
+						"2.25": [0, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

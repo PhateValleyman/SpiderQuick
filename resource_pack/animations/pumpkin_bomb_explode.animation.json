@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pumpkin_bomb_explode.loop": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"grenade": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

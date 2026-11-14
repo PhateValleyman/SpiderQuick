@@ -1,0 +1,1 @@
+replaceitem entity @s slot.armor.head 1 spiderverse:iron_spider_mask 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}

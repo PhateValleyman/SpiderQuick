@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster_sword",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+				"minecraft:tags": {
+					"tags": [
+						"taskmaster_sword", "item_hand", "custom_attack", "off_move_hands"
+					]
+				},
+				"minecraft:damage": 9,
+				"minecraft:enchantable": {
+					"value": 14,
+					"slot": "sword"
+				},
+				"minecraft:can_destroy_in_creative": false,
+			  "minecraft:stacked_by_data": true,
+				"minecraft:display_name": {
+					"value": "Taskmaster Sword"
+				},
+			  "minecraft:allow_off_hand": false,
+			  "minecraft:hand_equipped": true,
+			  "minecraft:use_animation": "bow",
+			  "minecraft:max_stack_size": 1,
+			  "minecraft:icon": {
+				"texture": "taskmaster_sword"
+			  }
+		}
+	}
+}

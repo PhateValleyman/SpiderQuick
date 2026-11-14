@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:red_spray"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " A ",
+	  "ABA",
+	  "CCC"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:red_dye"
+      },
+	  "B": {
+		   "item": "minecraft:slime_ball"
+      },
+	  "C": {
+		   "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "marveladdons:red_spray",
+        "data": 0,
+      "count": 3
+    }
+  }
+}

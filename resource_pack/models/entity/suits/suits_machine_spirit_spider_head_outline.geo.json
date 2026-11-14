@@ -1,0 +1,67 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.suits_machine_spirit_spider_head_outline",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 6.5, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 18.5, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 30.5, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 30.5, 0]
+				},
+				{
+					"name": "head_particle",
+					"parent": "head",
+					"pivot": [0, 30.5, 0],
+					"locators": {
+						"head_particle": {
+							"offset": [0, 33.5, 0],
+							"rotation": [0, -28, 0]
+						}
+					}
+				},
+				{
+					"name": "skull",
+					"parent": "body",
+					"pivot": [0, 30.5, 0],
+					"cubes": [
+						{"origin": [-4, 32.5, -4], "size": [8, 6, 8], "inflate": 0.25, "uv": [0, 0]},
+						{"origin": [-1.5, 32.4, -4.3], "size": [3, 2, 1], "inflate": 0, "uv": [0, 25]},
+						{"origin": [-4, 30.5, -0.5], "size": [8, 2, 4], "inflate": 0.25, "uv": [0, 14]},
+						{"origin": [-3, 31.7, -3.75], "size": [6, 1, 4], "inflate": 0.25, "uv": [22, 20]}
+					]
+				},
+				{
+					"name": "boca0",
+					"parent": "skull",
+					"pivot": [-0.1, 30, -0.5],
+					"cubes": [
+						{"origin": [-3.5, 30, -4], "size": [7, 1, 4], "inflate": 0.25, "uv": [0, 20]},
+						{"origin": [-3, 30.7, -3.75], "size": [6, 1, 4], "inflate": 0.25, "uv": [24, 14]}
+					]
+				}
+			]
+		}
+	]
+}

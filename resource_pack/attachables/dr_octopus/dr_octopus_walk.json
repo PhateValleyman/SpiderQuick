@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:dr_octopus_walk",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/entity/dr_octopus/dr_octopus",
+				"superior_octopus_arms": "textures/entity/dr_octopus/superior_octopus_arms"
+			},
+			"geometry": {
+				"default": "geometry.dr_octopus_arms"
+			},
+			"scripts": {
+                "animate": [
+                    "idle",
+					"attack.c",
+					"suit",
+					{ "first": "c.is_first_person" },
+					"take.1.c",
+					"take.2.c",
+					"take.3.c",
+					"take.4.c",
+					"take.end.c",
+					"walk.c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.dr_octopus_arms": "!q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit_3') && c.is_first_person" },
+				{ "controller.render.superior_octopus_arms": "q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit_3') && c.is_first_person" }
+			],
+            "animations": {
+				"take.1.c": "controller.animation.dr_octopus.take.1",
+				"take.1": "animation.dr_octopus.take.1",
+				"take.2.c": "controller.animation.dr_octopus.take.2",
+				"take.2": "animation.dr_octopus.take.2",
+				"take.3.c": "controller.animation.dr_octopus.take.3",
+				"take.3": "animation.dr_octopus.take.3",
+				"take.4.c": "controller.animation.dr_octopus.take.4",
+				"take.4": "animation.dr_octopus.take.4",
+				"take.end.c": "controller.animation.dr_octopus.take.end",
+				"dr_octopus.suit.c": "controller.animation.player.dr_octopus.suit",
+				"suit": "animation.player.dr_octopus.suit_on",
+				"attack.c": "controller.animation.player.dr_octopus_arms.combat",
+                "player.dr_octopus_arms.attack.0": "animation.player.dr_octopus.attack.0",
+				"player.dr_octopus_arms.attack.1": "animation.player.dr_octopus.attack.1",
+				"player.dr_octopus_arms.attack.2": "animation.player.dr_octopus.attack.2",
+				"player.dr_octopus_arms.attack.aire": "animation.player.dr_octopus.attack.aire.2",
+				"player.dr_octopus_arms.attack.time": "animation.player.dr_octopus.attack.time",
+                "idle": "animation.player.dr_octopus.idle",
+                "off": "animation.player.dr_octopus.arms.off",
+                "first": "animation.player.dr_octopus.first",
+                "walk.c": "controller.animation.dr_octopus.arms.walk",
+                "walk": "animation.dr_octopus.arms.walk",
+				"climb.stop": "animation.player.dr_octopus.climb.stop",
+				"climb": "animation.player.dr_octopus.climb",
+				"move.idle": "animation.dr_octopus.move.idle"
+            }
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:hobgoblin",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"shock_gloves": "armor_enchanted",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/green_goblin/hobgoblin",
+				"shock_gloves": "textures/misc/enchanted_item_glint",
+				"scan": "textures/entity/green_goblin/green_goblin_scan"
+			},
+			"geometry": {
+				"default": "geometry.hobgoblin",
+				"shock_gloves": "geometry.green_goblin_shock_gloves",
+				"scan": "geometry.green_goblin_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.green_goblin.idle",
+				"hability": "animation.green_goblin.hability_1",
+				"hability_2": "animation.green_goblin.hability_2",
+				"hability_3": "animation.green_goblin.hability_3",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"hability": "controller.animation.green_goblin.hability"
+				}
+			],
+			"render_controllers": [
+				"controller.render.green_goblin",
+				"controller.render.green_goblin_shock_gloves",
+				"controller.render.scan"
+			],
+			"spawn_egg": {
+				"texture": "egg_hobgoblin",
+				"texture_index": 0
+			}
+		}
+	}
+}

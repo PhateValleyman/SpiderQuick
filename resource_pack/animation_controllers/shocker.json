@@ -1,0 +1,85 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.shocker.shoot2" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shoot2" : "q.mark_variant == 1"
+						}
+					]
+				},
+				"shoot2" : {
+					"animations" : [ "shoot2" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.shocker.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shoot" : "q.mark_variant == 2"
+						}
+					]
+				},
+				"shoot" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.shocker.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk.normal" : "query.modified_move_speed > 0.1"
+						}
+					]
+				},
+				"walk.normal" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.shocker.apuntar" : {
+			"initial_state" : "default",
+			"states" : {
+				"shoot_normal" : {
+					"transitions" : [
+						{
+							"apuntar" : "query.has_target"
+						}
+					]
+				},
+				"apuntar" : {
+					"animations" : [ "apuntar" ],
+					"transitions" : [
+						{
+							"shoot_normal" : "!query.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

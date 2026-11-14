@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "spidermanaddon:oscorp_lab_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 68310427,
+      "separation": 4,
+      "spacing": 20,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "spidermanaddon:oscorp_lab_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

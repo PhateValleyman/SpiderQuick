@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spider_radioactive_player": {
+      "geometry": "Geometry.spider_radioactive_player",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.entity_emissive" } ],
+      "textures": [ "Texture.spider_radioactive_player" ]
+    }
+  }
+}

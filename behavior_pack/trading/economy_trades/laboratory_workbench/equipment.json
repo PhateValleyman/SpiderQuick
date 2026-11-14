@@ -1,0 +1,432 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 23,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 16
+                },
+                {
+                  "item": "spidermanaddon:spider_egg",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:genetically_engineered_super_spider",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:redstone",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:nanotechnology_chip",
+                  "quantity": 8
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:redstone",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:mobile",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_egg",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:slime_ball",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:web_shot_empty"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_shot_empty",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:web_shooters_plans",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:web_shooter_balanceo"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:web_cartridge",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:web_bomb",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component"
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spider_drone_item"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 42
+                },
+                {
+                  "item": "spidermanaddon:nanotechnology_chip",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_arms"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 8
+                },
+                {
+                  "item": "minecraft:redstone_block",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:spider_bike_item"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:redstone_block",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:spider_mobile_item"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 8
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:planeador_item"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 3
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:pumpkin_bomb"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:gunpowder",
+                  "quantity": 5
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:hobgoblin_pumpkin_bomb"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:phantom_membrane",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:elytra"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 64
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:trace_c"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 64
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:twirl_e"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 64
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:twist_e"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 42
+                },
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:dr_octopus_arms"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_shot_empty",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:redstone",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:electric_web_empty"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:robot_dog_pet_plans",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:diamond",
+                  "quantity": 24
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:robot_dog_pet"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 4
+                },
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:miles_morales_powers"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

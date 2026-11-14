@@ -1,0 +1,69 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:kraven",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/kraven/kraven"
+			},
+			"geometry": {
+				"default": "geometry.kraven"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"idle": "animation.kraven.idle",
+				"eyes": "animation.kraven.eyes",
+				"walk": "animation.prisoner.walk",
+				"walk.weapon": "animation.prisoner.walk_fusil",
+				"crossbow.off": "animation.kraven.crossbow.off",
+				"rifle.off": "animation.kraven.rifle.off",
+				"apuntar": "animation.kraven.apuntar",
+				"granadas": "animation.kraven.granadas",
+				"axe_attack": "animation.kraven.axe_attack",
+				"shoot_axe": "animation.kraven.shoot_axe",
+				"lanza_habilidad": "animation.kraven.lanza_habilidad",
+				"lanzar": "animation.kraven.lanzar"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.kraven.idle"
+				},
+				{
+					"walk": "controller.animation.kraven.walk"
+				},
+				{
+					"crossbow": "controller.animation.kraven.crossbow"
+				},
+				{
+					"rifle": "controller.animation.kraven.rifle"
+				},
+				{
+					"apuntar": "controller.animation.kraven.apuntar"
+				},
+				{
+					"granadas": "controller.animation.kraven.granadas"
+				},
+				{
+					"axe": "controller.animation.kraven.axe"
+				},
+				{
+					"lanza": "controller.animation.kraven.lanza"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "spawn_egg": {
+                "base_color": "#5d4727",
+                "overlay_color": "#815025"
+            }
+		}
+	}
+}

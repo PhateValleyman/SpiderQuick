@@ -1,0 +1,111 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.venom.skin0.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin0" ]
+    },
+    "controller.render.venom.skin1.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin1" ]
+    },
+    "controller.render.venom.skin2.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin2" ]
+    },
+    "controller.render.venom.skin3.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin3" ]
+    },
+    "controller.render.venom.skin4.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin4" ]
+    },
+    "controller.render.venom.skin5.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin5" ]
+    },
+    "controller.render.venom.skin6.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin6" ]
+    },
+    "controller.render.venom.skin7.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin7" ]
+    },
+    "controller.render.venom.skin8.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin8" ]
+    },
+    "controller.render.venom.skin9.hands": {
+      "geometry": "Geometry.venom_hands",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.venom.skin9" ]
+    },
+
+    "controller.render.venom.skin.0": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin0" ]
+    },
+    "controller.render.venom.skin.1": {
+      "geometry": "Geometry.venom_movie",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin1" ]
+    },
+    "controller.render.venom.skin.2": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin2" ]
+    },
+    "controller.render.venom.skin.3": {
+      "geometry": "Geometry.venom_lee_price",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin3" ]
+    },
+    "controller.render.venom.skin.4": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin4" ]
+    },
+    "controller.render.venom.skin.5": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin5" ]
+    },
+    "controller.render.venom.skin.6": {
+      "geometry": "Geometry.venom_2099",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin6" ]
+    },
+    "controller.render.venom.skin.7": {
+      "geometry": "Geometry.venompool",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin7" ]
+    },
+    "controller.render.venom.skin.8": {
+      "geometry": "Geometry.venom_snow",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin8" ]
+    },
+    "controller.render.venom.skin.9": {
+      "geometry": "Geometry.antivenom",
+      "materials": [ { "*": "Material.antivenom" } ],
+      "textures": [ "Texture.skin9" ]
+    },
+    "controller.render.venom.skin.red": {
+      "geometry": "Geometry.red",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.red" ]
+    }
+  }
+}

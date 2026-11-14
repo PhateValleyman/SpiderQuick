@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+      "identifier": "spidermanaddon:web_bomb_explode",
+      "materials": { "default": "slime" },
+      "textures": { "default": "textures/items_3d/web_bomb_explode" },
+      "geometry": { "default": "geometry.web_bomb_explode" },
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.pumpkin_bomb_explode.loop"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.green_goblin"
+			],
+			"spawn_egg": {
+				"texture": "egg_prisoner",
+				"texture_index": 0
+			}
+		}
+	}
+}

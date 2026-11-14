@@ -1,0 +1,1 @@
+structure load mystructure:prisoner_tower ~ ~-1 ~

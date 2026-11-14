@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "marveladdons:venom_whip",
+			"materials": {
+				"default": "armor",
+				"antivenom": "entity_emissive_alpha"
+			},
+			"textures": {
+				"skin0": "textures/entity/venom/venom",
+				"skin1": "textures/entity/venom/venom_movie",
+				"skin2": "textures/entity/venom/blue_venom",
+				"skin3": "textures/entity/venom/venom_lee_price",
+				"skin4": "textures/entity/venom/ultimate_venom",
+				"skin5": "textures/entity/venom/ultimate_venom_spider",
+				"skin6": "textures/entity/venom/venom_2099",
+				"skin7": "textures/entity/venom/venompool",
+				"skin8": "textures/entity/venom/venom_snow_symbiote",
+				"skin9": "textures/entity/venom/antivenom",
+				
+				"knife0": "textures/entity/venom/venom",
+				"knife1": "textures/entity/venom/venom_movie",
+				"knife2": "textures/entity/venom/blue_venom",
+				"knife3": "textures/entity/venom/venom_lee_price",
+				"knife4": "textures/entity/venom/ultimate_venom",
+				"knife5": "textures/entity/venom/ultimate_venom_spider",
+				"knife6": "textures/entity/venom/venom_2099",
+				"knife7": "textures/entity/venom/venompool",
+				"knife8": "textures/entity/venom/venom_snow_symbiote",
+				"knife9": "textures/entity/venom/antivenom"
+			},
+			"geometry": {
+				"default": "geometry.player_symbiont_whip",
+				"antivenom": "geometry.player_symbiont_whip",
+				"venom_lee_price": "geometry.player_symbiont_whip",
+				"venom_movie": "geometry.player_symbiont_whip",
+				"first": "geometry.player_symbiont_whip_first",
+				"knife_third": "geometry.player_symbiont_whip"
+			},
+			"scripts": {
+                "animate": [
+					"whip.c", "whip.idle.c", "venom.impulse_whip.c"
+                ]
+			},
+			"render_controllers": [
+				{"controller.render.symbiont_whip.skin.0":"q.property('arathnido:skins') == 0 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.1":"q.property('arathnido:skins') == 1 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.2":"q.property('arathnido:skins') == 2 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.3":"q.property('arathnido:skins') == 3 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.4":"q.property('arathnido:skins') == 4 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.5":"q.property('arathnido:skins') == 5 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.6":"q.property('arathnido:skins') == 6 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.7":"q.property('arathnido:skins') == 7 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.8":"q.property('arathnido:skins') == 8 && c.is_first_person"},
+				{"controller.render.symbiont_whip.skin.9":"q.property('arathnido:skins') == 9 && c.is_first_person"},
+
+				{"controller.render.venom.knife_third.0":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 0 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.1":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 1 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.2":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 2 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.3":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 3 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.4":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 4 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.5":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 5 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.6":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 6 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.7":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 7 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.8":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 8 && !c.is_first_person"},
+				{"controller.render.venom.knife_third.9":"!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9 && !c.is_first_person"}
+			],
+			"animations": {
+				"venom.impulse_whip.c": "controller.animation.venom.impulse_whip",
+				"impulse_whip": "animation.venom.impulse_whip",
+				"whip.idle.c": "animation.venom.whip.idle",
+				"whip.c": "controller.animation.venom.whip",
+				"whip.1": "animation.venom.whip.attack.1",
+				"whip.2": "animation.venom.whip.attack.2",
+				"whip.3": "animation.venom.whip.attack.3",
+				"whip.4": "animation.venom.whip.attack.4"
+			}
+		}
+	}
+}

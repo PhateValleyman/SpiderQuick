@@ -1,0 +1,118 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:crawl_up",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "destroy": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "crawl_up"
+        ]
+      },
+
+      "minecraft:fire_immune": {},
+
+      "minecraft:loot": {
+        "table": "loot_tables/entities/crawl_up.json"
+      },
+
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+
+      "minecraft:flying_speed": {
+        "value": 0.075
+      },
+
+      "minecraft:scale": {
+        "value": 1.0
+      },
+
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+
+      "minecraft:movement": {
+        "value": 0.075
+      },
+
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "controlling_seat": 0,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.ride.horse",
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [0.0, -0.75, 0.0],
+            "min_rider_count": 0,
+            "max_rider_count": 1
+          }
+        ]
+      },
+
+      "minecraft:behavior.player_ride_tamed": {
+        "priority": 0
+      },
+
+      "minecraft:is_tamed": {},
+
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+        "minecraft:physics": {
+          "has_gravity": false
+        },
+
+        "minecraft:movement.hover": {},
+
+        "minecraft:input_air_controlled": {
+          "strafe_speed_modifier": 2.0,
+          "backwards_movement_modifier": 0.85
+        },
+
+        "minecraft:vertical_movement_action": {
+          "vertical_velocity": 0.0
+        }
+    },
+
+    "events": {
+      "destroy": {
+        "add": {
+          "component_groups": [
+            "destroy"
+          ]
+        }
+      }
+    }
+  }
+}

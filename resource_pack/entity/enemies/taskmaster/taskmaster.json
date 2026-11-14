@@ -1,0 +1,70 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"default": "geometry.taskmaster",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"idle": "animation.taskmaster.idle",
+				"combat_pose": "animation.taskmaster.combat_pose",
+				"combat_idle": "animation.taskmaster.combate.idle",
+				"attack": "animation.taskmaster.attack",
+				"attack.2": "animation.taskmaster.attack.2",
+				"walk": "animation.taskmaster.walk",
+				"cubrirse": "animation.taskmaster.cubrirse",
+				"cubrirse2": "animation.taskmaster.cubrirse2",
+				"hability": "animation.taskmaster.hability",
+				"hability2": "animation.taskmaster.hability_2",
+				"kick": "animation.taskmaster.kick",
+				"kick2": "animation.taskmaster.kick2",
+				"falling": "animation.taskmaster.falling",
+				"shoot": "animation.taskmaster.shoot",
+				"teleport": "animation.taskmaster.teleport"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.taskmaster.combat_mode"
+				},
+				{
+					"walk": "controller.animation.taskmaster.walk"
+				},
+				{
+					"attack": "controller.animation.taskmaster.attack"
+				},
+				{
+					"cubrirse": "controller.animation.taskmaster.cubrirse"
+				},
+				{
+					"hability": "controller.animation.taskmaster.hability"
+				},
+				{
+					"falling": "controller.animation.taskmaster.falling"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.scan"
+			],
+			"spawn_egg": {
+				"texture": "egg_taskmaster",
+				"texture_index": 0
+			}
+		}
+	}
+}

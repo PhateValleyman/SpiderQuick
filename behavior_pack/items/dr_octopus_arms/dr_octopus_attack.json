@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:dr_octopus_attack",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"dr_octopus_attack", "dr_octopus_item"
+                ]
+            },
+		  "minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 1.0
+			},
+			  "minecraft:cooldown": {
+				"category": "dr_octopus_attack",
+				"duration": 0.9
+			  },
+			  "minecraft:food": {
+				"can_always_eat": true
+			  },
+			"minecraft:icon": {
+				"texture": "dr_octopus_attack"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": false
+		}
+	}
+}

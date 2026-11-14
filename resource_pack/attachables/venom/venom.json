@@ -1,0 +1,250 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "marveladdons:venom_powers.player",
+      "item": {
+        "marveladdons:venom_powers": "query.owner_identifier == 'minecraft:player'"
+      },
+      "materials": {
+        "default": "armor",
+        "antivenom": "entity_emissive_alpha"
+      },
+      "textures": {
+        "skin0": "textures/entity/venom/venom",
+        "skin1": "textures/entity/venom/venom_movie",
+        "skin2": "textures/entity/venom/blue_venom",
+        "skin3": "textures/entity/venom/venom_lee_price",
+        "skin4": "textures/entity/venom/ultimate_venom",
+        "skin5": "textures/entity/venom/ultimate_venom_spider",
+        "skin6": "textures/entity/venom/venom_2099",
+        "skin7": "textures/entity/venom/venompool",
+        "skin8": "textures/entity/venom/venom_snow_symbiote",
+        "skin9": "textures/entity/venom/antivenom",
+        "symbiote": "textures/symbiote_powers"
+      },
+      "geometry": {
+        "default": "geometry.venom",
+        "venom_lee_price": "geometry.venom_lee_price",
+        "venom_movie": "geometry.venom_movie",
+        "venompool": "geometry.venompool",
+        "venom_2099": "geometry.venom_2099",
+        "antivenom": "geometry.antivenom",
+        "venom_snow": "geometry.venom_snow_symbiote",
+        "venom_head": "geometry.venom_head",
+        "venom_movie_head": "geometry.venom_movie_head",
+        "venompool_head": "geometry.venompool_head",
+        "venom_snow_head": "geometry.venom_snow_head",
+        "symbiote": "geometry.venom_antivenom_tempest"
+      },
+      "scripts": {
+        "animate": [
+          "c",
+          "symbiote",
+          {
+            "antivenom.idle": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9"
+          }
+        ]
+      },
+      "render_controllers": [
+        {
+          "controller.render.venom.skin.0": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 0"
+        },
+        {
+          "controller.render.venom.skin.1": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 1"
+        },
+        {
+          "controller.render.venom.skin.2": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 2"
+        },
+        {
+          "controller.render.venom.skin.3": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 3"
+        },
+        {
+          "controller.render.venom.skin.4": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 4"
+        },
+        {
+          "controller.render.venom.skin.5": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 5"
+        },
+        {
+          "controller.render.venom.skin.6": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 6"
+        },
+        {
+          "controller.render.venom.skin.7": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 7"
+        },
+        {
+          "controller.render.venom.skin.8": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 8"
+        },
+        {
+          "controller.render.venom.skin.9": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9"
+        },
+        {
+          "controller.render.venom.symbiote.0": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 0"
+        },
+        {
+          "controller.render.venom.symbiote.1": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 1"
+        },
+        {
+          "controller.render.venom.symbiote.2": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 2"
+        },
+        {
+          "controller.render.venom.symbiote.3": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 3"
+        },
+        {
+          "controller.render.venom.symbiote.4": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 4"
+        },
+        {
+          "controller.render.venom.symbiote.5": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 5"
+        },
+        {
+          "controller.render.venom.symbiote.6": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 6"
+        },
+        {
+          "controller.render.venom.symbiote.7": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 7"
+        },
+        {
+          "controller.render.venom.symbiote.8": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 8"
+        },
+        {
+          "controller.render.venom.symbiote.9": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9"
+        },
+        {
+          "controller.render.venom_head.skin.0": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 0"
+        },
+        {
+          "controller.render.venom_head.skin.1": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 1"
+        },
+        {
+          "controller.render.venom_head.skin.2": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 2"
+        },
+        {
+          "controller.render.venom_head.skin.3": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 3"
+        },
+        {
+          "controller.render.venom_head.skin.4": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 4"
+        },
+        {
+          "controller.render.venom_head.skin.5": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 5"
+        },
+        {
+          "controller.render.venom_head.skin.6": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 6"
+        },
+        {
+          "controller.render.venom_head.skin.7": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 7"
+        },
+        {
+          "controller.render.venom_head.skin.8": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 8"
+        },
+        {
+          "controller.render.venom_head.skin.9": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9"
+        }
+      ],
+      "animations": {
+        "antivenom.idle": "animation.antivenom.idle",
+        "symbiote": "animation.player.new_spiderman.symbiote.idle",
+        "symbiote.off": "animation.new_spiderman.symbiote.off",
+        "antivenom_tempest.c": "controller.animation.venom.antivenom_tempest",
+        "symbiote.antivenom_tempest": "animation.new_spiderman.symbiote.antivenom_tempest",
+        "antivenom_tempest": "animation.venom.antivenom_tempest",
+        "antivenom_bomb.c": "controller.animation.venom.antivenom_bomb",
+        "antivenom_bomb": "animation.venom.antivenom_bomb",
+        "venom_head.take.off": "animation.venom_head.take.off",
+        "venom_head.c": "controller.animation.venom_head",
+        "venom_head.on": "animation.venom_head.on",
+        "venom_head.off": "animation.venom_head.off",
+        "venom_head.super_jump.c": "controller.animation.venom_head.super_jump",
+        "venom_head.super_jump.up": "animation.venom_head.super_jump.up",
+        "venom_head.super_jump.down": "animation.venom_head.super_jump.down",
+        "head.random": "animation.venom_head.random",
+        "idle.head": "animation.venom_head.idle",
+        "knife.attack.c": "controller.animation.venom.knife.attack",
+        "fly.controller.c": "controller.animation.venom.fly.controller",
+        "knife.attack.1": "animation.venom.knife.attack.1",
+        "axe.attack.1": "animation.venom.axe.attack.1",
+        "axe.attack.2": "animation.venom.axe.attack.2",
+        "explotion.c": "controller.animation.venom.explotion",
+        "explotion": "animation.venom.explotion",
+        "wings.c": "controller.animation.venom.wings",
+        "wings.fly": "animation.venom.wings.fly",
+        "wings.off": "animation.venom.wings.off",
+        "wings.active": "animation.venom.wings.active",
+        "wings.on": "animation.venom.wings.on",
+        "wings.apagar": "animation.venom.wings.apagar",
+        "combat.c": "controller.animation.venom.combat",
+        "attack.1": "animation.venom.attack.1",
+        "attack.2": "animation.venom.attack.2",
+        "attack.3": "animation.venom.attack.3",
+        "attack.4": "animation.venom.attack.4",
+        "whip.attack.c": "controller.animation.venom.whip.attack",
+        "whip.attack.1": "animation.venom.whip.attack.1",
+        "whip.attack.2": "animation.venom.whip.attack.2",
+        "whip.attack.3": "animation.venom.whip.attack.3",
+        "whip.attack.4": "animation.venom.whip.attack.4",
+        "smash": "animation.venom.smash",
+        "attack.time": "animation.venom.attack.time",
+        "venom.attack.time.2": "animation.venom.attack.time.2",
+        "impulse_whip.c": "controller.animation.venom.impulse_whip",
+        "impulse_whip": "animation.venom.impulse_whip",
+        "swing.legs": "animation.venom.swing.legs",
+        "swing": "animation.venom.swing",
+        "whip.rotation": "animation.venom.whip.rotation",
+        "whip.idle.c": "animation.venom.whip.idle",
+        "whip.c": "controller.animation.venom.whip",
+        "whip.1": "animation.venom.whip.attack.1",
+        "whip.2": "animation.venom.whip.attack.2",
+        "whip.3": "animation.venom.whip.attack.3",
+        "whip.4": "animation.venom.whip.attack.4",
+        "super_jump.c": "controller.animation.venom.super_jump",
+        "hability.idle": "animation.venom.hability.idle",
+        "hability.attack": "animation.venom.hability.attack",
+        "hability": "animation.venom.hability",
+        "hability.off": "animation.venom.hability.off",
+        "special_attack": "animation.venom.special_attack",
+        "sneaking": "animation.venom.sneaking",
+        "walk.sneaking": "animation.venom.walk.sneaking",
+        "super_jump": "animation.venom.super_jump",
+        "falling": "animation.venom.falling",
+        "c": "controller.animation.venom",
+        "walk.c": "controller.animation.venom.walk",
+        "walk": "animation.venom.walk",
+        "walk.rotation": "animation.venom.walk.rotation",
+        "run.c": "controller.animation.venom.run",
+        "run": "animation.venom.run",
+        "look": "animation.venom.look",
+        "idle": "animation.venom.idle",
+        "transformation.c": "controller.animation.venom.transformation",
+        "transformation": "animation.venom.transformation",
+        "in_water.c": "controller.animation.venom.in_water",
+        "in_water": "animation.venom.in_water",
+        "swim": "animation.venom.swim",
+        "riding.c": "controller.animation.venom.riding",
+        "riding": "animation.venom.riding",
+        "axe.c": "controller.animation.venom.axe",
+        "axe.off": "animation.venom.axe_off",
+        "axe.on": "animation.venom.axe_on",
+        "knife.c": "controller.animation.venom.knife",
+        "knife.off": "animation.venom.knife.off",
+        "knife.on": "animation.venom.knife.on",
+        "escalar.colgado.c": "controller.animation.venom.escalar.colgado",
+        "escalar.colgado.left": "animation.venom.escalar.colgado.left",
+        "escalar.colgado.right": "animation.venom.escalar.colgado.right",
+        "escalar.colgado": "animation.venom.escalar.colgado",
+        "climb.c": "controller.animation.venom.climb",
+        "climb.impulse": "animation.venom.climb.impulse",
+        "climb.down": "animation.venom.climb.down",
+        "climb": "animation.venom.climb",
+        "regeneration.c": "controller.animation.venom.regeneration",
+        "regeneration": "animation.venom.regeneration",
+        "shield.c": "controller.animation.venom.shield",
+        "shield": "animation.venom.shield",
+        "changes_skin.c": "controller.animation.venom.changes_skin",
+        "changes_skin": "animation.venom.changes_skin",
+        "fly": "animation.venom.elytra",
+        "take.c": "controller.animation.venom.take",
+        "take": "animation.venom.take.on",
+        "take.smash": "animation.venom.take.smash",
+        "vibrant.c": "controller.animation.venom.vibrant",
+        "vibrant": "animation.venom.vibrants"
+      }
+    }
+  }
+}

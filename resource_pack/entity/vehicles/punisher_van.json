@@ -1,0 +1,64 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:punisher_van",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/vehicles/punisher_van"
+			},
+			"geometry": {
+				"default": "geometry.punisher_van"
+			},
+		    "particle_effects": {
+			   "smoke": "mzaddon:car_smoke_particle",
+			   "car_brake": "mzaddon:car_brake",
+			   "car_white_light": "mzaddon:car_white_light",
+			   "car_orange_light": "mzaddon:car_orange_light",
+			   "car_red_light": "mzaddon:car_red_light"
+		    },
+		    "scripts": {
+			  "pre_animation": [
+			    "variable.attack = Math.sin(variable.attack_time * 38.17);"
+			  ]
+		    },
+			"animations": {
+				"walk": "animation.vehicle.drive",
+				"idle": "animation.volante.look_at_target",
+				"car_body": "animation.car_body.look_at_target",
+				"acelerar": "animation.vehicle.acelerar",
+				"frenar": "animation.vehicle.frenar",
+				"falling": "animation.vehicle.falling",
+				"falling.end": "animation.vehicle.falling.end",
+				"smoke": "animation.vehicle.smoke",
+				"lights": "animation.vehicle.lights"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.vehicle.idle"
+				},
+				{
+					"walk": "controller.animation.vehicle.walk"
+				},
+				{
+					"car_body": "controller.animation.vehicle.car_body"
+				},
+				{
+					"falling": "controller.animation.vehicle.falling"
+				},
+				{
+					"smoke": "controller.animation.vehicle.smoke"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "punisher_van",
+				"texture_index": 0
+			}
+		}
+	}
+}

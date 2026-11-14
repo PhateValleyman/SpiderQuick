@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.super_slingshot_effect.idle": {
+			"loop": true,
+			"bones": {
+				"telarana0": {
+					"rotation": [0, 0, -5],
+					"scale": [0.1, 1000, 0.1]
+				},
+				"telarana1": {
+					"rotation": [0, 0, 5],
+					"scale": [0.1, 1000, 0.1]
+				}
+			}
+		},
+		"animation.super_slingshot_effect.off": {
+			"loop": true,
+			"bones": {
+				"telarana0": {
+					"scale": 0
+				},
+				"telarana1": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

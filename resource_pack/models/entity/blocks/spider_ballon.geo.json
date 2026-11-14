@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spider_ballon",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "ballon",
+					"pivot": [0, 5, 0],
+					"cubes": [
+						{"origin": [-0.5, 5, -0.5], "size": [1, 48, 1], "uv": [0, 48]},
+						{"origin": [-1.5, 51, -1.5], "size": [3, 2, 3], "uv": [0, 0]},
+						{"origin": [-12, 53, -12], "size": [24, 24, 24], "uv": [0, 0]},
+						{"origin": [-12, 53, -12], "size": [24, 24, 24], "inflate": 0.25, "uv": [0, 80]}
+					]
+				}
+			]
+		}
+	]
+}

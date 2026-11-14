@@ -1,0 +1,105 @@
+{
+  "format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.green_goblin" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						"player.green_goblin.laser.c",
+						"player.green_goblin.laser_give.c"
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.laser_give" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [ "/function green_goblin/laser_off" ],
+					"transitions" : [
+						{ "on" : "q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_laser_give') && q.is_alive" }
+					]
+				},
+				"on" : {
+					"on_entry": [ "/function green_goblin/laser_off" ],
+					"transitions" : [
+						{ "green_goblin" : "(1.0)" }
+					]
+				},
+				"green_goblin" : {
+					"on_entry": [ "/function green_goblin/laser_on" ],
+					"animations" : [ "player.green_goblin.powers" ],
+					"transitions" : [ { "default" : "!q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_laser_give') || !q.is_alive" } ]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.laser" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/stopsound @a[r=10] ray_laser.loop", "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"laser" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_laser') && q.is_using_item"
+						}
+					]
+				},
+				"laser" : {
+					"on_entry" : [ "/playsound ray_laser.on @a[r=10]", "/event entity @s guns:shoot" ],
+					"animations" : [ 
+						"player.green_goblin.laser",
+						"player.green_goblin.laser.sound"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'green_goblin_laser')"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.green_goblin.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/function green_goblin/off",
+						"/effect @s speed 0 1 true",
+						"/effect @s resistance 0 2 true",
+						"/effect @s strength 0 1 true",
+						"/effect @s jump_boost 0 1 true",
+						"/effect @s haste 0 1 true",
+						"/effect @s regeneration 0 1 true"
+					],
+					"transitions" : [
+						{
+							"on" : "q.equipped_item_any_tag('slot.armor.legs', 'green_goblin_powers') && q.is_alive"
+						}
+					]
+				},
+				"on" : {
+					"on_entry": [
+						"/function green_goblin/off"
+					],
+					"transitions" : [
+						{
+							"green_goblin" : "(1.0)"
+						}
+					]
+				},
+				"green_goblin" : {
+					"on_entry": [
+						"/function green_goblin/on"
+					],
+					"animations" : [ "player.green_goblin.powers" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'green_goblin_powers') || !q.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}

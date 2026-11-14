@@ -1,0 +1,385 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.vehicle.drive": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"motor0": {
+					"rotation": {
+						"0.0": [0, 0, -150],
+						"0.0833": [0, 0, -120],
+						"0.1667": [0, 0, -150],
+						"0.25": [0, 0, -120]
+					}
+				},
+				"motor1": {
+					"rotation": {
+						"0.0": [0, 0, -150],
+						"0.0833": [0, 0, -120],
+						"0.1667": [0, 0, -150],
+						"0.25": [0, 0, -120]
+					}
+				},
+				"rueda0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				},
+				"rueda3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				},
+				"rueda1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				},
+				"rueda2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				},
+				"rueda4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				},
+				"rueda5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vehicle.destroy.falling": {
+			"loop": true,
+			"animation_length": 0.75,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.75": [-360, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vehicle.acelerar": {
+			"loop": true,
+			"bones": {
+				"car_body": {
+					"rotation": [-2.5, 0, 0]
+				}
+			}
+		},
+		"animation.vehicle.frenar": {
+			"animation_length": 1.25,
+			"bones": {
+				"car_body": {
+					"rotation": {
+						"0.0": [-2.5, 0, 0],
+						"0.25": [2, 0, 0],
+						"0.75": [2, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -0.75, 0],
+						"0.75": [0, -0.75, 0],
+						"1.0": [0, 0.25, 0],
+						"1.25": [0, 0, 0]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "car_red_light",
+					"locator": "freno0"
+				},
+				"0.01": {
+					"effect": "car_red_light",
+					"locator": "freno1"
+				},
+				"0.08": {
+					"effect": "car_brake",
+					"locator": "van_particle2"
+				},
+				"0.17": {
+					"effect": "car_brake",
+					"locator": "van_particle3"
+				},
+				"0.25": {
+					"effect": "car_brake",
+					"locator": "van_particle2"
+				},
+				"0.33": {
+					"effect": "car_brake",
+					"locator": "van_particle3"
+				}
+			}
+		},
+		"animation.vehicle.falling": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [-5, 0, 0],
+					"position": [0, -1.5, -0.5]
+				},
+				"rueda0": {
+					"position": [0, -4, 0]
+				},
+				"rueda3": {
+					"position": [0, -4, 0]
+				},
+				"rueda1": {
+					"position": [0, -4, 0]
+				},
+				"rueda2": {
+					"position": [0, -4, 0]
+				}
+			}
+		},
+		"animation.vehicle.falling.end": {
+			"animation_length": 1.25,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [-5, 0, 0],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -1.5, -0.5],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"car_body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [2.5, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -1.5, 0],
+						"0.5833": [0, 1, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 1, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"rueda0": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -4, 0],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"rueda3": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -4, 0],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"rueda1": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -4, 0],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				},
+				"rueda2": {
+					"rotation": {
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, -4, 0],
+						"0.25": [0, 0, 0],
+						"0.5833": [0, 0, 0],
+						"0.75": [0, 0, 0],
+						"0.9167": [0, 0, 0],
+						"1.25": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vehicle.particles_smoke": {
+			"loop": true,
+			"animation_length": 0.0833,
+			"particle_effects": {
+				"0.0": {
+					"effect": "car_smoke_particle",
+					"locator": "van_particle0"
+				},
+				"0.0417": {
+					"effect": "car_smoke_particle",
+					"locator": "van_particle1"
+				}
+			}
+		},
+		"animation.vehicle.particles": {
+			"loop": true,
+			"animation_length": 0.9167,
+			"particle_effects": {
+				"0.0": {
+					"effect": "car_brake",
+					"locator": "van_particle0"
+				},
+				"0.0417": {
+					"effect": "car_brake",
+					"locator": "van_particle1"
+				}
+			}
+		},
+		"animation.vehicle.smoke": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "smoke",
+					"locator": "van_particle0"
+				},
+				"0.01": {
+					"effect": "smoke",
+					"locator": "van_particle1"
+				}
+			}
+		},
+		"animation.vehicle.lights": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "car_white_light",
+					"locator": "light_white1"
+				},
+				"0.01": {
+					"effect": "car_white_light",
+					"locator": "light_white0"
+				},
+				"0.02": {
+					"effect": "car_orange_light",
+					"locator": "light_orange1"
+				},
+				"0.03": {
+					"effect": "car_orange_light",
+					"locator": "light_orange2"
+				},
+				"0.04": {
+					"effect": "car_orange_light",
+					"locator": "light_orange3"
+				},
+				"0.05": {
+					"effect": "car_orange_light",
+					"locator": "light_orange4"
+				},
+				"0.06": {
+					"effect": "car_white_light",
+					"locator": "light_white2"
+				}
+			}
+		},
+		"animation.vehicle.destroy": {
+			"animation_length": 1.0833,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4167": [-5, 0, 0],
+						"0.7083": [-7.5, 0, 5],
+						"1.0833": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4167": [0, 16, 0],
+						"0.7083": [0, 3, 0],
+						"0.7917": [0, 3.67, 0],
+						"1.0833": [0, 0, 0]
+					}
+				},
+				"rueda0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4167": [0, 0, -2.5],
+						"0.7917": [0, 0, -2.5],
+						"1.0833": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.vehicle.hydra_schmidt_coupe.light": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "car_white_light",
+					"locator": "light_white2"
+				},
+				"0.01": {
+					"effect": "car_white_light",
+					"locator": "light_white3"
+				},
+				"0.02": {
+					"effect": "car_white_light",
+					"locator": "light_white0"
+				},
+				"0.03": {
+					"effect": "car_white_light",
+					"locator": "light_white1"
+				}
+			}
+		}
+	}
+}

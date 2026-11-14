@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster_drone",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster_sequels/taskmaster_drone",
+				"scan": "textures/entity/taskmaster_sequels/scan"
+			},
+			"geometry": {
+				"default": "geometry.hunters_drone",
+				"scan": "geometry.hunters_drone_scan"
+			},
+			"animations": {
+				"loop": "animation.hunters_drone.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton",
+				"controller.render.scan"
+			],
+		  "spawn_egg": {
+			 "base_color": "#49455b",
+			 "overlay_color": "#565656"
+		  }
+		}
+	}
+}

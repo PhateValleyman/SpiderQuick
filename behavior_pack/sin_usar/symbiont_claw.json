@@ -1,0 +1,75 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:symbiont_claw",
+			"category": "equipment"
+		},
+		"components": {
+			"tag:symbiont_claw": {},"tag:special_item": {}, "tag:combat_camera": {},
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.tools"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:cooldown": {
+        "category": "symbiote_claw",
+        "duration": 1.0
+      },
+      "minecraft:food": {
+        "can_always_eat": true
+      },
+			"minecraft:display_name": {
+				"value": "Symbiot claw"
+			},
+      "minecraft:allow_off_hand": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_animation": "bow",
+      "minecraft:use_duration": 999999.0,
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "symbiote_claw"
+      },
+"minecraft:render_offsets": {
+    "main_hand": { //off_hand
+       "first_person": {
+           "scale": [ 0.0, 0.0, 0.0 ]
+         },
+       "third_person": {
+           "scale": [ 0.0, 0.0, 0.0 ]
+           }
+      },
+    "off_hand": { //off_hand
+       "first_person": {
+          "rotation": [ 0.0, 0.0, 0.0 ],
+           "position": [ 0.0, 0.0, 0.0 ],
+           "scale": [ 0.0, 0.0, 0.0 ]
+         },
+       "third_person": {
+           "rotation": [ 0.0, 0.0, 0.0 ],
+           "position": [ 0.0, 0.0, 0.0 ],
+           "scale": [ 0.0, 0.0, 0.0 ]
+					}
+				}
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "throw",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"throw": {
+				"run_command": {
+					"command": [
+							"spiderman_effects.symbiont_claw"
+					]
+				},
+				"shoot": {
+					"projectile": "spidermanaddon:symbiont_claw_shoot",
+					"launch_power": 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "mystructure:prisoner_house_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "spread_type": "linear",
+      "salt": 23948012,
+      "spacing": 12,
+      "separation": 4
+    },
+    "structures": [
+      {
+        "structure": "mystructure:prisoner_house_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

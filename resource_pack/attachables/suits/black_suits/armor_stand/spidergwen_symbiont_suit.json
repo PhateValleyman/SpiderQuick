@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spidergwen_symbiont_suit.armor_stand",
+			"item": {
+				"spiderverse:spidergwen_symbiont_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor",
+				"outline": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/spidergwen_symbiont_suit",
+				"outline": "textures/suits/spidergwen_symbiont_suit"
+			},
+			"geometry": {
+				"default": "geometry.spidergwen_symbiont_suit",
+				"outline": "geometry.spidergwen_symbiont_mask"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			]
+		}
+	}
+}

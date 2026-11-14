@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.scan_icon.enemy": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [ 
+			"/tp @s @e[family=monster, type=!player, type=!item, type=!xp_orb, r=2, c=1]"
+        ]
+      }
+    },
+    "animation.scan_icon.pasive": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [ 
+			"/tp @s @e[family=!monster, type=!player, type=!item, family=!furniture, type=!xp_orb, r=2, c=1]"
+        ]
+      }
+    }
+  }
+}

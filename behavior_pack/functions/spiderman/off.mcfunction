@@ -1,0 +1,14 @@
+clear @s spidermanaddon:spiderman_combat
+clear @s spidermanaddon:spiderman_kick
+clear @s spidermanaddon:spiderman_menu
+clear @s spidermanaddon:spiderman_spin_punch
+clear @s spidermanaddon:spiderman_punch
+clear @s spidermanaddon:spiderman_focus
+clear @s spidermanaddon:spiderman_sensor
+clear @s spidermanaddon:miles_morales_combat
+clear @s spidermanaddon:miles_morales_venom_smash
+clear @s spidermanaddon:miles_morales_venom_jump
+clear @s spidermanaddon:miles_morales_focus
+clear @s spidermanaddon:miles_morales_invisibility
+clear @s spidermanaddon:miles_morales_sensor
+clear @s spidermanaddon:miles_morales_venom_punch

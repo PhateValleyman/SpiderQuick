@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.symbiot_transform": {
+      "geometry": "Geometry.symbiot_transform",
+      "materials": [ { "*": "Material.venom_skin" } ],
+      "textures": [ "Texture.symbiot_transform" ]
+    }
+  }
+}

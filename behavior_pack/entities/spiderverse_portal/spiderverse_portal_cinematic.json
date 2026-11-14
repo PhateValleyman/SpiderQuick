@@ -1,0 +1,103 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:spiderverse_portal_cinematic",
+      "is_spawnable": false,
+
+      "is_summonable": true,
+
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ 
+			"cinematic"
+		]
+      },
+      "animations": {
+		  "cinematic": "animation.spiderverse_portal.cinematic"
+      }
+    },
+    "component_groups": {
+		"spidermanaddon:death": {
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		}
+	},
+    "components": {
+	  "minecraft:rideable": {
+		"controlling_seat": 1,
+		"interact_text": "web",
+		"family_types": ["player"],
+		"pull_in_entities": true,
+		"seat_count": 1,
+		"rider_can_interact": false,
+		"seats": [
+			{	
+				"max_rider_count": 1,
+				"min_rider_count": 0,
+				"rotate_rider_by": 0.0,
+				"position": [0.0,0.2,0.0]
+			}
+		]
+	  },
+		"minecraft:on_death": {
+			"event": "spidermanaddon:death",
+			"target": "self"
+		},
+		"minecraft:timer": { "looping": true, "time": 3.3, "time_down_event": { "event": "spidermanaddon:death" } },
+      "minecraft:type_family": {
+        "family": [ "omniman_train", "furniture" ]
+      },
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+			"minecraft:fire_immune": {},
+			"minecraft:persistent": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    },
+
+		"events": {
+		  "spidermanaddon:death": {
+			"add": {
+			  "component_groups": [
+				"spidermanaddon:death"
+			  ]
+			}
+		  }
+		}
+	}
+  }

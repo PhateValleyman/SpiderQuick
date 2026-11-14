@@ -1,0 +1,198 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.black_cat.npc": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+			 "sit.c", "look_at_target",
+            {
+              "walk": "query.modified_move_speed > 0.1 && query.is_on_ground"
+            },
+            {
+              "falling": "!query.is_on_ground"
+            }
+		  ],
+          "transitions": [
+            {
+              "theft": "query.property('spidermanaddon:black_cat_state') == 'theft'"
+            },
+            {
+              "theft_off": "query.property('spidermanaddon:black_cat_state') == 'theft_off'"
+            },
+            {
+              "theft_jump": "query.property('spidermanaddon:black_cat_state') == 'theft_jump'"
+            },
+            {
+              "whip_thef": "query.property('spidermanaddon:black_cat_state') == 'whip_thef'"
+            },
+            {
+              "impulse": "query.property('spidermanaddon:black_cat_state') == 'impulse'"
+            },
+            {
+              "wall_run": "query.property('spidermanaddon:black_cat_state') == 'wall_run'"
+            },
+            {
+              "run": "query.property('spidermanaddon:black_cat_state') == 'chase' && query.modified_move_speed > 0.1"
+            },
+            {
+              "fun_time": "query.property('spidermanaddon:black_cat_state') == 'fun_time'"
+            },
+            {
+              "fun_time_end": "query.property('spidermanaddon:black_cat_state') == 'fun_time_end'"
+            }
+          ]
+        },
+        "fun_time": {
+          "animations": [ "fun_time"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'fun_time' && q.all_animations_finished"
+            }
+          ]
+        },
+        "fun_time_end": {
+          "animations": [ "fun_time_end"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'fun_time_end' && q.all_animations_finished"
+            }
+          ]
+        },
+
+        "run": {
+		  "animations": [ { "run": "q.is_on_ground" }, { "falling": "!q.is_on_ground" } ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'chase'"
+            }
+          ]
+        },
+        "wall_run": {
+          "animations": [ "wall_run"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'wall_run'"
+            }
+          ]
+        },
+
+        "theft": {
+          "animations": [ "theft"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'theft' && q.all_animations_finished"
+            }
+          ]
+        },
+
+        "theft_jump": {
+          "animations": [ "theft_jump"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'theft_jump' && q.all_animations_finished"
+            },
+            {
+              "wall_run": "query.property('spidermanaddon:black_cat_state') == 'wall_run'"
+            }
+          ]
+        },
+
+        "whip_thef": {
+          "animations": [ "whip_thef"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'whip_thef' && q.all_animations_finished"
+            }
+          ]
+        },
+
+        "impulse": {
+          "animations": [ "impulse"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'impulse' && q.all_animations_finished"
+            }
+          ]
+        },
+
+        "theft_off": {
+          "animations": [ "theft_off"],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:black_cat_state') != 'theft_off' && q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+	"controller.animation.black_cat.sit" : {
+		"initial_state" : "default",
+		"states" : {
+			"default" : {
+				"transitions" : [
+					{
+						"sit" : "q.is_sitting && !q.is_riding"
+					}
+				],
+          "blend_transition": 0.5
+			},
+			"sit" : {
+				"animations" : [ "sit" ],
+				"transitions" : [
+					{
+						"default" : "!q.is_sitting || q.is_riding"
+					}
+				],
+          "blend_transition": 0.5
+			}
+		}
+	},
+    "controller.animation.black_cat.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack_0": "variable.attack > 0.0"
+            }
+          ]
+        },
+
+        "attack_0": {
+          "animations": [
+            "attack_0"
+          ],
+          "transitions": [
+			{
+			  "attack_1": "q.all_animations_finished && variable.attack > 0.0"
+			}
+          ]
+        },
+
+        "attack_1": {
+          "animations": [
+            "attack_1"
+          ],
+          "transitions": [
+            {
+              "attack_2": "q.all_animations_finished && variable.attack > 0.0"
+            }
+          ]
+        },
+
+        "attack_2": {
+          "animations": [
+            "attack_2"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

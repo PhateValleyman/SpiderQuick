@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.green_goblin.combat_mode": {
+      "loop": true,
+      "animation_length": 10.0,
+      "timeline": {
+        "0.0": [
+          "/event entity @s minecraft:hability_active"
+        ]
+      }
+    }
+  }
+}

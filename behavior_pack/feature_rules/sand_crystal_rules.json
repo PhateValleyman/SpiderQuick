@@ -1,0 +1,47 @@
+//bridge-file-version: #19
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "spidermanaddon:sand_crystal_rules",
+			"places_feature": "spidermanaddon:sand_crystal"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"all_of": [
+						{
+							"any_of": [
+								{
+									"test": "has_biome_tag",
+									"operator": "==",
+									"value": "desert"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"scatter_chance": 8,
+			"iterations": 11,
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			},
+			"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					16
+				]
+			}
+		}
+	}
+}

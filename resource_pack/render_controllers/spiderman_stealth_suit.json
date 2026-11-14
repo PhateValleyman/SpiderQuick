@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spiderverse.head": {
+      "geometry": "Geometry.head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.head" ]
+    },
+    "controller.render.spiderverse.sit": {
+      "geometry": "Geometry.sit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.property('sp:sit') == 1 && q.is_sitting" }
+      ],
+      "textures": [ "Texture.sit" ]
+    },
+    "controller.render.spiderverse.multiversal_gizmo": {
+      "geometry": "Geometry.multiversal_gizmo",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.is_tamed" }
+      ],
+      "textures": [ "Texture.multiversal_gizmo" ]
+    },
+    "controller.render.spiderverse.glitch": {
+      "geometry": "Geometry.glitch",
+      "materials": [ { "*": "Material.glitch" } ],
+      "part_visibility": [
+        { "*": "q.property('sp:glitch') == true" }
+      ],
+      "textures": [ "Texture.glitch" ]
+    },
+    "controller.render.spirit_spider_suit": {
+      "geometry": "Geometry.spirit_spider_suit",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spirit_spider_suit" ]
+    },
+    "controller.render.spiderman_stealth_suit.green": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.green", "Texture.enchanted" ]
+    },
+    "controller.render.spiderman_stealth_suit.blue": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.blue", "Texture.enchanted" ]
+    },
+    "controller.render.spiderman_stealth_suit.red": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.red", "Texture.enchanted" ]
+    },
+    "controller.render.spiderman_stealth_suit.invisibility": {
+      "geometry": "Geometry.invisibility",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.invisibility" } ],
+      "textures": [ "Texture.invisibility", "Texture.enchanted" ]
+    }
+  }
+}

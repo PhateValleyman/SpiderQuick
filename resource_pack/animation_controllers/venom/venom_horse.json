@@ -1,0 +1,116 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.venom_horse.idle": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"animations": [ "idle", "idle.2" ]
+				}
+			}
+		},
+		"controller.animation.venom_horse.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack > 0.1"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.venom_horse.jump" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"jump" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"jump" : {
+					"animations" : [ "jump" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.venom_horse.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "q.modified_move_speed > 0.01 && q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "(q.modified_move_speed < 0.1 || !q.is_on_ground) && q.any_animation_finished"
+						},
+						{
+							"run" : "q.modified_move_speed > 0.9"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"run" : {
+					"animations" : [ "run" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_on_ground"
+						},
+						{
+							"walk" : "q.modified_move_speed < 0.9"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.venom_horse.spawn" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spawn" : "q.property('venom:spawn') == true"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"spawn" : {
+					"animations" : [ "spawn" ],
+					"transitions" : [
+						{
+							"default" : "q.property('venom:spawn') == false"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

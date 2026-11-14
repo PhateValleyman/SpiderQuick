@@ -1,0 +1,115 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.scorpion": {
+			"states": {
+				"default": {
+					"animations": [
+						{ "player.scorpion.skills.c": "!v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.scorpion.skills": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "tail_attack": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') && q.property('arathnido:animation') == 1" },
+						{ "tail_attack_spin": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') && q.property('arathnido:animation') == 2" },
+						{ "jump_attack": "q.equipped_item_any_tag('slot.armor.legs', 'scorpion_powers') && q.property('nido:ability1') == 1" },
+						{ "hide": "q.equipped_item_any_tag('slot.armor.legs', 'scorpion_powers') && q.property('nido:ability1') == 2" }
+					]
+				},
+				"tail_attack": {
+					"animations": [
+						"player.scorpion.tail_attack"
+					],
+					"transitions": [
+						{ "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				},
+				"tail_attack_spin": {
+					"animations": [
+						"player.scorpion.tail_attack_spin"
+					],
+					"transitions": [
+						{ "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				},
+				"jump_attack": {
+					"animations": [
+						"player.scorpion.jump_attack"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && q.property('nido:ability1') == 0" }
+					]
+				},
+				"hide": {
+					"animations": [
+						"player.scorpion.hide"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && (!q.equipped_item_any_tag('slot.armor.legs', 'scorpion_powers') || q.property('nido:ability1') == 0)" },
+						{ "tail_attack": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') && q.property('arathnido:animation') == 1" },
+						{ "tail_attack_spin": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') && q.property('arathnido:animation') == 2" },
+						{ "jump_attack": "q.equipped_item_any_tag('slot.armor.legs', 'scorpion_powers') && q.property('nido:ability1') == 1" }
+					]
+				}
+			}
+		},
+		"controller.animation.scorpion.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "tail_attack": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') && q.property('arathnido:animation') == 1" },
+						{ "tail_attack_spin": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') && q.property('arathnido:animation') == 2" },
+						{ "jump_attack": "q.property('nido:ability1') == 1" },
+						{ "hide": "q.property('nido:ability1') == 2" }
+					]
+				},
+				"tail_attack": {
+					"animations": [
+						"tail_attack"
+					],
+					"transitions": [
+						{ "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') || q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					]
+				},
+				"tail_attack_spin": {
+					"animations": [
+						"tail_attack_spin"
+					],
+					"transitions": [
+						{ "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') || q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					]
+				},
+				"jump_attack2": {
+					"transitions": [
+						{ "default": "(1.0)" }
+					],
+					"blend_transition": 0.5
+				},
+				"jump_attack": {
+					"animations": [
+						"jump_attack"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && q.property('nido:ability1') == 0" }
+					],
+					"blend_transition": 0.5
+				},
+				"hide": {
+					"animations": [
+						"hide"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && (!q.equipped_item_any_tag('slot.armor.legs', 'scorpion_powers') || q.property('nido:ability1') == 0)" },
+						{ "tail_attack": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_attack') && q.property('arathnido:animation') == 1" },
+						{ "tail_attack_spin": "q.equipped_item_any_tag('slot.weapon.mainhand', 'scorpion_spin') && q.property('arathnido:animation') == 2" },
+						{ "jump_attack": "q.property('nido:ability1') == 1" }
+					]
+				}
+			}
+		}
+	}
+}

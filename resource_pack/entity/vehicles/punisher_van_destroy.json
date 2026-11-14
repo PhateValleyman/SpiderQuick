@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:punisher_van_destroy",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/vehicles/punisher_van_destroy"
+			},
+			"geometry": {
+				"default": "geometry.punisher_van_destroy"
+			},
+			"animations": {
+				"loop": "animation.vehicle.destroy"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "punisher_van",
+				"texture_index": 0
+			}
+		}
+	}
+}

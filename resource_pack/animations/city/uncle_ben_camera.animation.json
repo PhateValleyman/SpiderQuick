@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.police_scanner.idle": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"warning": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.99": [1, 1, 1],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"warning2": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.99": [1, 1, 1],
+						"1.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.police_scanner.main": {
+			"loop": true,
+			"bones": {
+				"scan1": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.police_scanner.offhand": {
+			"loop": true,
+			"bones": {
+				"scan0": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

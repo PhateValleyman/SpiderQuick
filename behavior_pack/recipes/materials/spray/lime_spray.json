@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:lime_spray"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " A ",
+	  "ABA",
+	  "CCC"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:lime_dye"
+      },
+	  "B": {
+		   "item": "minecraft:slime_ball"
+      },
+	  "C": {
+		   "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "marveladdons:lime_spray",
+        "data": 0,
+      "count": 3
+    }
+  }
+}

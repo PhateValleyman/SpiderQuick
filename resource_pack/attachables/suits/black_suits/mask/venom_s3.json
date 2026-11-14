@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:venom_s3_mask",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/venom/venom_s3"
+			},
+			"geometry": {
+				"default": "geometry.venom_s3_mask"
+			},
+			"scripts": {
+                "animate": [
+					"idle", "spirit_spider_head.look"
+                ]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "animations": {
+				"idle": "animation.venom_s3.idle",
+				"spirit_spider_head.look": "animation.spirit_spider_head.idle"
+            }
+		}
+	}
+}

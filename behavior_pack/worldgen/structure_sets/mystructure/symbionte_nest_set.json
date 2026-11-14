@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "mystructure:symbionte_nest_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 76835149,
+      "separation": 4,
+      "spacing": 24,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "mystructure:symbionte_nest_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,636 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.player.symbiont": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "player.agent_venom.blast.c",
+            "player.symbiont.cellular_corrosion.c",
+            "player.symbiont.symbiont_pull.c",
+            "player.symbiont.symbiote_strike.c",
+            "player.symbiont.antivenom_bomb.c",
+            "player.symbiont.antivenom_tempest.c",
+            {
+              "player.symbiont.venom_rage.c": "!v.is_first_person"
+            },
+            {
+              "player.symbiont.combat.c": "!v.is_first_person"
+            },
+            {
+              "player.venom.first.c": "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && v.is_first_person"
+            },
+            {
+              "player.venom.first": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && v.is_first_person"
+            },
+            {
+              "player.agent_venom_fusil.first": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && v.is_first_person"
+            },
+            {
+              "player.agent_venom_pistol.third": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && !v.is_first_person"
+            },
+            {
+              "player.agent_venom_fusil.third": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && !v.is_first_person"
+            },
+            "player.agent_venom.fusil.c",
+            "player.agent_venom.pistols.c",
+            {
+              "player.spirit_spider_head.idle": "q.equipped_item_any_tag('slot.armor.head', 'spiderman_special_mask') && !v.is_first_person"
+            },
+            {
+              "player.spirit_spider_head.fire": "q.equipped_item_any_tag('slot.armor.head', 'spirit_spider_mask') && !v.is_first_person"
+            },
+            "player.symbiont.evil_dance.c"
+          ]
+        }
+      }
+    },
+    "controller.animation.player.symbiont.evil_dance": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "on": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && q.property('arathnido:animation') == 26"
+            }
+          ]
+        },
+        "on": {
+          "animations": [
+            "player.symbiont.dance.on"
+          ],
+          "transitions": [
+            {
+              "default": "q.ground_speed > 0.1 || !q.is_on_ground || q.is_in_water || q.is_gliding || q.is_sneaking || q.is_sprinting"
+            },
+            {
+              "dance": "q.all_animations_finished"
+            }
+          ]
+        },
+        "dance": {
+          "animations": [
+            "player.symbiont.dance"
+          ],
+          "transitions": [
+            {
+              "default": "q.ground_speed > 0.1 || !q.is_on_ground || q.is_in_water || q.is_gliding || q.is_sneaking || q.is_sprinting"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.agent_venom.fusil": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && q.property('arathnido:animation') == 2"
+            },
+            {
+              "reload": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && q.property('arathnido:animation') == 3"
+            }
+          ]
+        },
+        "shoot": {
+          "animations": [
+            {
+              "player.agent_venom.fusil.shoot.third": "!v.is_first_person"
+            },
+            {
+              "player.agent_venom.fusil.shoot.first": "v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') || q.property('arathnido:animation') == 0) && q.any_animation_finished"
+            },
+            {
+              "reload": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && q.property('arathnido:animation') == 3"
+            }
+          ]
+        },
+        "reload": {
+          "animations": [
+            {
+              "player.agent_venom.fusil.reload.third": "!v.is_first_person"
+            },
+            {
+              "player.agent_venom.fusil.reload.first": "v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') && q.property('arathnido:animation') == 2"
+            },
+            {
+              "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_fusil') || q.property('arathnido:animation') == 0) && q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.agent_venom.pistols": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 2"
+            },
+            {
+              "reload": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 3"
+            }
+          ]
+        },
+        "shoot": {
+          "animations": [
+            {
+              "player.agent_venom.pistols.shoot.third": "!v.is_first_person"
+            },
+            {
+              "player.agent_venom.pistols.shoot.first": "v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') || q.property('arathnido:animation') == 0) && q.any_animation_finished"
+            },
+            {
+              "reload": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 3"
+            }
+          ]
+        },
+        "reload": {
+          "animations": [
+            {
+              "player.agent_venom.fusil.reload.third": "!v.is_first_person"
+            },
+            {
+              "player.agent_venom.pistols.reload.first": "v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 2"
+            },
+            {
+              "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') || q.property('arathnido:animation') == 0) && q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.venom.first": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "player.venom.first": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item')"
+            }
+          ],
+          "transitions": [
+            {
+              "player.symbiote.combat.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && !q.property('arathnido:animation') == 0"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.1": {
+          "animations": [
+            "player.venom.use"
+          ],
+          "transitions": [
+            {
+              "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') || q.property('arathnido:animation') == 0"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.combat": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.symbiote.combat.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 13"
+            },
+            {
+              "player.symbiote.combat.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.1": {
+          "animations": [
+            "player.symbiote.combat.1"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')"
+            },
+            {
+              "player.symbiote.combat.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.2": {
+          "animations": [
+            "player.symbiote.combat.2"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')"
+            },
+            {
+              "player.symbiote.combat.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 13"
+            },
+            {
+              "player.symbiote.combat.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.3": {
+          "animations": [
+            "player.symbiote.combat.3"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')"
+            },
+            {
+              "player.symbiote.combat.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.property('arathnido:animation') == 13"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.symbiont.combat": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "off"
+          ],
+          "transitions": [
+            {
+              "player.symbiote.combat.1": "q.property('arathnido:animation') == 13"
+            },
+            {
+              "player.symbiote.combat.2": "q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.3": "q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.1": {
+          "animations": [
+            "combat.1"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0"
+            },
+            {
+              "player.symbiote.combat.2": "q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.3": "q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.2": {
+          "animations": [
+            "combat.2"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0"
+            },
+            {
+              "player.symbiote.combat.1": "q.property('arathnido:animation') == 13"
+            },
+            {
+              "player.symbiote.combat.3": "q.property('arathnido:animation') == 15"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.symbiote.combat.3": {
+          "animations": [
+            "combat.3"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0"
+            },
+            {
+              "player.symbiote.combat.2": "q.property('arathnido:animation') == 14"
+            },
+            {
+              "player.symbiote.combat.1": "q.property('arathnido:animation') == 13"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.venom_rage": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.venom_rage": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_rage') && q.property('arathnido:animation') == 8"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.venom_rage": {
+          "animations": [
+            "player.symbiont.venom_rage"
+          ],
+          "transitions": [
+            {
+              "idle": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "idle": {
+          "animations": [
+            "player.symbiote.rage.time",
+            {
+              "player.symbiote.rage.idle": "!q.is_sprinting && q.property('arathnido:animation') == 0 && q.property('arathnido:escalar') == false && q.property('arathnido:ability0') == 0 && !q.is_gliding && !q.is_in_water"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.symbiont.venom_rage": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "off"
+          ],
+          "transitions": [
+            {
+              "venom_rage": "q.property('arathnido:animation') == 8"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "venom_rage": {
+          "animations": [
+            "venom_rage"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.antivenom_tempest": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.antivenom_tempest": "q.equipped_item_any_tag('slot.weapon.mainhand', 'antivenom_tempest') && q.property('arathnido:animation') == 7"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.antivenom_tempest": {
+          "animations": [
+            {
+              "player.symbiont.antivenom_tempest": "!v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.symbiont.antivenom_tempest": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "off"
+          ],
+          "transitions": [
+            {
+              "antivenom_tempest": "q.property('arathnido:animation') == 7"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "antivenom_tempest": {
+          "animations": [
+            "antivenom_tempest"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.antivenom_bomb": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.antivenom_bomb": "q.equipped_item_any_tag('slot.weapon.mainhand', 'antivenom_bomb') && q.property('arathnido:animation') == 6"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.antivenom_bomb": {
+          "animations": [
+            {
+              "player.symbiont.antivenom_bomb": "!v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.symbiont.antivenom_bomb": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "off"
+          ],
+          "transitions": [
+            {
+              "antivenom_bomb": "q.property('arathnido:animation') == 6"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "antivenom_bomb": {
+          "animations": [
+            "antivenom_bomb"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.symbiote_strike": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.symbiote_strike": "q.equipped_item_any_tag('slot.weapon.mainhand', 'symbiote_strike') && q.property('arathnido:animation') == 4"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.symbiote_strike": {
+          "animations": [
+            {
+              "player.symbiont.symbiote_strike": "!v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.symbiont_pull": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.symbiont_pull": "q.equipped_item_any_tag('slot.weapon.mainhand', 'symbiont_pull') && q.property('arathnido:animation') == 5"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.symbiont_pull": {
+          "animations": [
+            {
+              "player.symbiont.symbiont_pull": "!v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.symbiont.symbiote_strike": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "off"
+          ],
+          "transitions": [
+            {
+              "symbiote_strike": "q.property('arathnido:animation') == 4"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "symbiote_strike": {
+          "animations": [
+            "symbiote_strike"
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    },
+    "controller.animation.player.symbiont.cellular_corrosion": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "player.agent_venom.blast": "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_cellular_corrosion') && q.property('arathnido:animation') == 3"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "player.agent_venom.blast": {
+          "animations": [
+            {
+              "player.symbiont.cellular_corrosion": "!v.is_first_person"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:challenge_complete",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {},
+      "minecraft:fire_immune": {}
+    },
+    "component_groups": {
+	  "challenge.on": {
+		  "minecraft:is_sheared": {
+		  }
+	  },
+	  "challenge1": {
+		  "minecraft:loot": {
+			"table": "loot_tables/challenge_complete/challenge1.json"
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.1,
+				  "time_down_event": {
+					"event": "spidermanaddon:despawn"
+				}
+			}
+		},
+	  "challenge2": {
+		  "minecraft:loot": {
+			"table": "loot_tables/challenge_complete/challenge2.json"
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.1,
+				  "time_down_event": {
+					"event": "spidermanaddon:despawn"
+				}
+			}
+		},
+	  "challenge3": {
+		  "minecraft:loot": {
+			"table": "loot_tables/challenge_complete/challenge3.json"
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.1,
+				  "time_down_event": {
+					"event": "spidermanaddon:despawn"
+				}
+			}
+		},
+	  "challenge4": {
+		  "minecraft:loot": {
+			"table": "loot_tables/challenge_complete/challenge4.json"
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.1,
+				  "time_down_event": {
+					"event": "spidermanaddon:despawn"
+				}
+			}
+		},
+	  "challenge5": {
+		  "minecraft:loot": {
+			"table": "loot_tables/challenge_complete/challenge5.json"
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.1,
+				  "time_down_event": {
+					"event": "spidermanaddon:despawn"
+				}
+			}
+		}
+	},
+    "events": {
+      "challenge1": {
+		"add": {
+		"component_groups": [
+			"challenge1",
+			"challenge.on"
+		  ]
+		}
+      },
+      "challenge2": {
+		"add": {
+		"component_groups": [
+			"challenge2",
+			"challenge.on"
+		  ]
+		}
+      },
+      "challenge3": {
+		"add": {
+		"component_groups": [
+			"challenge3",
+			"challenge.on"
+		  ]
+		}
+      },
+      "challenge4": {
+		"add": {
+		"component_groups": [
+			"challenge4",
+			"challenge.on"
+		  ]
+		}
+      },
+      "challenge5": {
+		"add": {
+		"component_groups": [
+			"challenge5",
+			"challenge.on"
+		  ]
+		}
+      },
+      "spidermanaddon:despawn": {
+		"queue_command": {
+			"command": [
+				"kill @s"
+			]
+		}
+      }
+    }
+  }
+}

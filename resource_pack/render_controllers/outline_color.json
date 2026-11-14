@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.outline_color": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "Material.outline_color" } ],
+      "textures": [ "Texture.outline_color" ]
+    },
+    "controller.render.shadows_color": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.shadows_color" ]
+    }
+  }
+}

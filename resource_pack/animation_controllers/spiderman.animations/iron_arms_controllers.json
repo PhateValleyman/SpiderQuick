@@ -1,0 +1,295 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.spiderman.iron_arms.skill" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "spider_shock" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_shock') && q.property('arathnido:animation') == 25" },
+						{ "spider_rush" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_rush') && q.property('arathnido:animation') == 24" }
+					]
+				},
+				"spider_shock" : {
+					"animations" : [ "player.iron_arms.spider_shock" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && q.property('arathnido:animation') == 0"
+						}
+					]
+				},
+				"spider_rush" : {
+					"animations" : [ "player.iron_arms.spider_rush"],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && q.property('arathnido:animation') == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spiderman.iron_arms.skill" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "spider_shock" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_shock') && q.property('arathnido:animation') == 25" },
+						{ "spider_rush" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_rush') && q.property('arathnido:animation') == 24" }
+					]
+				},
+				"spider_shock" : {
+					"animations" : [ "spider_shock" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && q.property('arathnido:animation') == 0"
+						}
+					]
+				},
+				"spider_rush" : {
+					"animations" : [ "spider_rush"],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && q.property('arathnido:animation') == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.iron_arms.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{
+							"iron_arms.on" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item')"
+						}
+					]
+				},
+				"iron_arms.on" : {
+					"animations" : [ 
+						{ "on": "!q.any_animation_finished" },
+						{ "idle": "q.any_animation_finished" } 
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item')"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.iron_arms.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "iron_arms.off" ],
+					"transitions" : [
+						{
+							"iron_arms.on" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') || q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_menu')"
+						}
+					]
+				},
+				"iron_arms.on" : {
+					"animations" : [ "iron_arms.on" ],
+					"transitions" : [
+						{
+							"iron_arms.idle" : "q.any_animation_finished"
+						}
+					]
+				},
+				"iron_arms.idle" : {
+					"animations" : [ "iron_arms.idle" ],
+					"transitions" : [
+						{
+							"iron_arms.end" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_menu')"
+						}
+					]
+				},
+				"iron_arms.end" : {
+					"animations" : [ "iron_arms.end" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.iron_arms" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.0" : {
+					"animations" : [ "player.iron_arms.attack" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21 && q.all_animations_finished"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22 && q.all_animations_finished"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23 && q.all_animations_finished"
+						}
+					]
+				},
+				"iron_arms.attack.1" : {
+					"animations" : [ "player.iron_arms.attack.2" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.2" : {
+					"animations" : [ "player.iron_arms.attack.4" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.air" : {
+					"animations" : [ "player.iron_arms.attack.3" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished" },
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spiderman.iron_arms" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.0" : {
+					"animations" : [ "iron_arms.attack" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21 && q.all_animations_finished"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22 && q.all_animations_finished"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23 && q.all_animations_finished"
+						}
+					]
+				},
+				"iron_arms.attack.1" : {
+					"animations" : [ "iron_arms.attack.2" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						},
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.2" : {
+					"animations" : [ "iron_arms.attack.4" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 23"
+						}
+					]
+				},
+				"iron_arms.attack.air" : {
+					"animations" : [ "iron_arms.attack.3" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished" },
+						{
+							"iron_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 20"
+						},
+						{
+							"iron_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 21"
+						},
+						{
+							"iron_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item') && q.property('arathnido:animation') == 22"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:miles_morales_venom_jump",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/venom/no"
+			},
+			"geometry": {
+				"default": "geometry.no"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

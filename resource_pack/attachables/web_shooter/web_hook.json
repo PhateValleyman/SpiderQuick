@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:web_hook",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/items_3d/web_shooter_default",
+				"super_slingshot_effect": "textures/super_slingshot_effect"
+			},
+			"geometry": {
+				"default": "geometry.web_shooter_default",
+				"web_shooter_third": "geometry.web_shooter_default_third",
+				"super_slingshot_effect": "geometry.super_slingshot_effect"
+			},
+			"scripts": {
+                "animate": [
+				  "super_slingshot_effect.c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.head', 'off_hands') && c.is_first_person && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit')" },
+				"controller.render.web_shooter.super_slingshot_effect",
+				{ "controller.render.web_shooter.third": "!c.is_first_person && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+				"super_slingshot_effect.c": "controller.animation.super_slingshot_effect",
+				"super_slingshot_effect": "animation.super_slingshot_effect.idle",
+				"off": "animation.super_slingshot_effect.off"
+            }
+		}
+	}
+}

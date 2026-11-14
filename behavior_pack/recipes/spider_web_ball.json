@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:spider_web_ball"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A"
+    ],
+    "key": {
+	  "A": {
+        "item": "spiderverse:web_cartridge"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:spider_web_ball",
+        "data": 0,
+      "count": 8
+    }
+  }
+}

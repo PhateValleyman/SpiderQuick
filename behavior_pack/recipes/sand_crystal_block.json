@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:sand_crystal_block"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AA",
+	  "AA"
+    ],
+    "key": {
+	  "A": {
+        "item": "spidermanaddon:sand_crystal_shard"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:sand_crystal_block",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

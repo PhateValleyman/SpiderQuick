@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spider_shock_shoot",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "spider_shock",
+					"pivot": [0, 8, 0],
+					"locators": {
+						"spider_shock": [-20, 8, 0],
+						"spider_shock2": [19, 8, 0]
+					}
+				}
+			]
+		}
+	]
+}

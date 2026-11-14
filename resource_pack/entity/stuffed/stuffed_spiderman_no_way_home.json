@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:stuffed_spiderman_no_way_home",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/stuffed/spiderman_no_way_home_suit"
+			},
+			"geometry": {
+				"default": "geometry.stuffed_spiderman"
+			},
+			"animations": {
+				"loop": "animation.stuffed_spiderman.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "stuffed_spiderman_no_way_home",
+				"texture_index": 0
+			}
+		}
+	}
+}

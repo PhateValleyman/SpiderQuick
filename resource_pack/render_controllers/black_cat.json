@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.black_cat_rivals.skin": {
+      "geometry": "Geometry.black_cat_rivals",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.black_cat_rivals" ]
+    },
+    "controller.render.black_cat.skin": {
+      "geometry": "Geometry.black_cat",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.black_cat" ]
+    },
+    "controller.render.black_cat_spiderman_suit.skin": {
+      "geometry": "Geometry.black_cat_spiderman_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.black_cat_spiderman_suit" ]
+    },
+    "controller.render.black_cat.npc": {
+      "arrays": {
+        "geometries": {
+          "Array.geometry": [
+            "Geometry.black_cat",
+            "Geometry.black_cat_rivals",
+            "Geometry.black_cat_symbiont",
+            "Geometry.black_cat_spiderman_suit"
+          ]
+        },
+        "textures": {
+          "Array.variant": [
+            "Texture.black_cat",
+            "Texture.black_cat_rivals",
+            "Texture.black_cat_symbiont",
+            "Texture.black_cat_spiderman_suit"
+          ]
+        }
+      },
+      "geometry": "Array.geometry[query.variant]",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.variant[query.variant]"
+      ]
+    }
+  }
+}

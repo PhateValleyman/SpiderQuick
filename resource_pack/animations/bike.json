@@ -1,0 +1,117 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.bike.idle": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [-15, -10, 0],
+					"position": [0, 0, -2.5]
+				},
+				"rightArm": {
+					"rotation": [-80, 5, 0],
+					"position": [0, -0.5, -2]
+				},
+				"head": {
+					"rotation": [15, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-80, -5, 0],
+					"position": [0, -0.5, -2]
+				},
+				"rightLeg": {
+					"rotation": [-55, 30, 0]
+				},
+				"rl": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 0.7, -0.1]
+				},
+				"leftLeg": {
+					"rotation": [-55, -30, 0]
+				},
+				"ll": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 0.7, -0.1]
+				}
+			}
+		},
+		"animation.player.bike.jump_time": {
+			"animation_length": 1.08333,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [-15, -10, 0],
+						"1.0833": [-15, -10, 0]
+					},
+					"position": {
+						"0.0": [0, 0, -2.5],
+						"1.0833": [0, 0, -2.5]
+					}
+				},
+				"rightArm": {
+					"rotation": [-80, 5, 0],
+					"position": [0, -0.5, -2]
+				},
+				"head": {
+					"rotation": [15, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-80, -5, 0],
+					"position": [0, -0.5, -2]
+				},
+				"rightLeg": {
+					"rotation": [-55, 30, 0]
+				},
+				"rl": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 0.7, -0.1]
+				},
+				"leftLeg": {
+					"rotation": [-55, -30, 0]
+				},
+				"ll": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 0.7, -0.1]
+				}
+			}
+		},
+		"animation.player.bike.jump": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [0, 10, -10]
+				},
+				"rightArm": {
+					"rotation": [-142.5, 0, 0]
+				},
+				"body": {
+					"rotation": [122.5, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"head": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"leftArm": {
+					"rotation": [-142.5, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [180, 0, -20],
+					"position": [0, 15.9, 8.7]
+				},
+				"rl": {
+					"rotation": [12.5, 0, 0],
+					"position": [0, 0.2, 0]
+				},
+				"leftLeg": {
+					"rotation": [180, 0, 12.5],
+					"position": [0, 15.9, 8.7]
+				},
+				"ll": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 0.9, 0]
+				}
+			}
+		}
+	}
+}

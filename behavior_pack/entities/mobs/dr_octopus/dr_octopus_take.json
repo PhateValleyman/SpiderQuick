@@ -1,0 +1,92 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:dr_octopus_take",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "dr_octopus_take.c"
+        ]
+      },
+      "animations": {
+        "dr_octopus_take.c": "controller.animation.dr_octopus_take",
+        "dr_octopus_take": "animation.dr_octopus.take.loop",
+        "take.time": "animation.dr_octopus.take.time"
+      }
+    },
+    "component_groups": {
+      "spidermanaddon:timeout": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "dr_octopus_take"
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 5,
+        "time_down_event": {
+          "event": "spidermanaddon:timeout"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:rideable": {
+        "controlling_seat": 1,
+        "interact_text": "web_hook",
+        "pull_in_entities": true,
+        "seat_count": 1,
+        "rider_can_interact": false,
+        "seats": [
+          {
+            "max_rider_count": 1,
+            "min_rider_count": 0,
+            "rotate_rider_by": 0,
+            "position": [
+              0,
+              0.25,
+              0
+            ]
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "spidermanaddon:timeout": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:timeout"
+          ]
+        }
+      }
+    }
+  }
+}

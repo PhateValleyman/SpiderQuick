@@ -1,0 +1,27 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.riding.bike" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"player.riding.bike" : "q.property('arathnido:custom_riding') == 3"
+						}
+					]
+				},
+				"player.riding.bike" : {
+					"animations" : [ 
+						{ "player.riding.bike": "!variable.is_first_person" }, { "riding.legs": "!variable.is_first_person" }
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:custom_riding') == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

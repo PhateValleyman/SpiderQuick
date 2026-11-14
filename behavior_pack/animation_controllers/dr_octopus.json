@@ -1,0 +1,179 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.dr_octopus_take":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"animations":["take.time", "dr_octopus_take"],
+					"transitions": [
+						{
+							"dr_octopus.off": "q.all_animations_finished"
+						},
+						{
+							"dr_octopus.on": "q.has_rider"
+						}
+					]
+				},
+				"dr_octopus.off":{
+					"on_entry": [
+						"/event entity @s spidermanaddon:timeout"
+					]
+				},
+				"dr_octopus.on":{
+					"on_entry": [
+						"/effect @p weakness 5 0 true",
+						"/effect @p mining_fatigue 5 4 true"
+					],
+					"animations":["dr_octopus_take"]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.hability_2":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"transitions": [
+						{
+							"dr_octopus.hability_2": "q.variant == 2"
+						}
+					]
+				},
+				"dr_octopus.hability_2":{
+					"animations":["hability_2", "hability_2.take"],
+					"transitions":[
+						{
+							"default":	"q.variant == 0"
+						},
+						{
+							"dr_octopus.off": "q.all_animations_finished"
+						}
+					]
+				},
+				"dr_octopus.off":{
+					"on_entry": [
+						"/event entity @s dr_octopus:attack_mode"
+					],
+					"animations":["hability_2.off"],
+					"transitions":[
+						{
+							"default":	"q.variant == 0 && q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.escudo":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"on_entry": [
+						"/effect @s regeneration 0 1 true"
+					],
+					"transitions": [
+						{
+							"dr_octopus.escudo": "q.mark_variant == 1"
+						}
+					]
+				},
+				"dr_octopus.escudo":{
+					"animations":["escudo"],
+					"transitions":[
+						{
+							"default":	"q.mark_variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.hability_1":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"on_entry": [
+						"/effect @s slow_falling 2 0 true"
+					],
+					"transitions": [
+						{
+							"dr_octopus.hability_1": "q.variant == 1"
+						}
+					]
+				},
+				"dr_octopus.hability_1":{
+					"animations":["hability_1"],
+					"transitions":[
+						{
+							"default":	"q.variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.walk":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"transitions": [
+						{
+							"dr_octopus.walk": "q.modified_move_speed > 0.05 && q.has_target"
+						}
+					]
+				},
+				"dr_octopus.walk":{
+					"animations":["dr_octopus.walk"],
+					"transitions":[
+						{
+							"default":"q.modified_move_speed < 0.05 || !q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.ia":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"on_entry": [
+						"/event entity @s dr_octopus:off"
+					],
+					"transitions": [
+						{
+							"dr_octopus_IA":"q.has_target && (q.mark_variant == 0 || q.mark_variant == 1)"
+						}
+					]
+				},
+				"dr_octopus_IA":{
+					"on_entry": [
+						"/effect @s slowness 2 9 true"
+					],
+					"animations":["dr_octopus_IA"],
+					"transitions":[
+					{
+						"default":"!q.has_target || q.mark_variant == 11"}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.on":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"transitions": [
+						{
+							"dr_octopus_IA":"q.is_angry"
+						}
+					]
+				},
+				"dr_octopus_IA":{
+					"on_entry": [
+						"/playsound dr_octopus.arms.on @a[r=20]"
+					],
+					"transitions":[
+					{
+						"default":"!q.is_angry"}
+					]
+				}
+			}
+		}
+	}
+}

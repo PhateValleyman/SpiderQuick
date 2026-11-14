@@ -1,0 +1,322 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "spidermanaddon:lizard",
+         "is_spawnable":true,
+         "is_summonable":true,
+         "is_experimental":false,
+      "scripts": {
+        "animate": [ 
+			"lizard_IA.c",
+			"jump",
+			"roar.c"
+		]
+      },
+      "animations": {
+		  "lizard_IA.c": "controller.animation.lizard.ia",
+		  "lizard_IA": "animation.lizard.ia",
+		  "jump": "controller.animation.lizard.jump",
+		  "roar.c": "controller.animation.lizard.roar",
+		  "lizard.roar.time": "animation.lizard.roar.time",
+		  "lizard.roar": "animation.lizard.roar"
+      }
+    },
+    "components": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(10,50)",
+          "on_death": "query.last_hit_by_player ? Math.Random(5,30) : 0"
+        },
+      "minecraft:knockback_resistance": {
+        "value": 0.65
+      },
+      "minecraft:boss": {
+        "should_darken_sky": false,
+		"name":"Lizard",
+        "hud_range": 100
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster", "lizard", "mob" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 1.9
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/lizard.json"
+      },
+      "minecraft:health": {
+        "value": 1200,
+		"max": 1200
+      },
+      "minecraft:scale": {
+        "value": 1.5
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+        
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 30.0,
+        "max_distance": 30.0,
+        "on_leash": {
+          "event": "minecraft:on_leash",
+          "target": "self"
+        },
+        "on_unleash": {
+          "event": "minecraft:on_unleash",
+          "target": "self"
+        }
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.break_door": {
+        "priority": 1
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	    "minecraft:physics": {
+      }
+    },
+    "component_groups": {
+      "lizard:no_suit": {
+        "minecraft:variant": {
+          "value": 0
+        }
+	  },
+      "lizard:suit": {
+        "minecraft:variant": {
+          "value": 1
+        }
+	  },
+      "lizard:attack_mode": {
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 45.5,
+        "entity_types": [
+          {
+            "filters": { "other_with_families": [ "player" ] },
+            "max_dist": 45.5
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.4, 
+          "range_max": 0.4
+        }
+      },
+      "minecraft:attack": {
+        "damage": 4.5
+	  },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "speed_multiplier": 1.4,
+        "track_target": false
+	  },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+	  },
+      "lizard:roar_on": {
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.0, 
+          "range_max": 0.0
+        }
+      },
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 3.5,
+			  "time_down_event": {
+				"event": "minecraft:attack_mode"
+			}
+		},
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+	  },
+      "lizard:jump_active": {
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.0, 
+          "range_max": 0.0
+        }
+      },
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "time_down_event": {
+				"event": "minecraft:jump_on"
+			}
+		},
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+	  },
+      "lizard:jump_on": {
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.0, 
+          "range_max": 0.0
+        }
+      },
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "time_down_event": {
+				"event": "minecraft:attack_mode"
+			}
+		},
+	   "minecraft:area_attack" : {
+          "damage_range": 3.25,
+          "damage_per_tick": 18.0,
+          "cause": "contact",
+			"entity_filter": {
+				"any_of": [
+					{ "test": "is_family", "subject": "other", "operator": "==", "value": "monster" },
+					{ "test": "is_family", "subject": "other", "operator": "==", "value": "mob" },
+					{ "test": "is_family", "subject": "other", "operator": "==", "value": "player" }
+				]    
+			}
+        },
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+	  }
+	},
+	"events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "lizard:attack_mode",
+				"lizard:no_suit"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "lizard:attack_mode",
+				"lizard:suit"
+              ]
+            }
+          }
+        ]
+      },
+	"minecraft:hability_active": {
+        "randomize": [
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "lizard:jump_active"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "lizard:roar_on"
+              ]
+            }
+          }
+        ]
+      },	
+      "minecraft:jump_on": {
+        "add": {
+          "component_groups": [
+            "lizard:jump_on"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "lizard:jump_active"
+          ]
+        }
+      },
+      "minecraft:roar_on": {
+        "add": {
+          "component_groups": [
+            "lizard:roar_on"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "lizard:attack_mode",
+			"lizard:jump_active",
+			"lizard:jump_on"
+          ]
+        }
+      },
+      "minecraft:attack_mode": {
+        "add": {
+          "component_groups": [
+            "lizard:attack_mode"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "lizard:roar_on",
+			"lizard:jump_active",
+			"lizard:jump_on"
+          ]
+        }
+      },
+      "minecraft:jump_active": {
+        "add": {
+          "component_groups": [
+            "lizard:jump_active"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "lizard:roar_on",
+			"lizard:attack_mode",
+			"lizard:jump_on"
+          ]
+        }
+      }
+	}
+  }
+}

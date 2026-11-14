@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.lizard.ia": {
+      "loop": true,
+      "animation_length": 15.0,
+      "timeline": {
+        "8.0": [
+          "/event entity @s minecraft:hability_active"
+        ]
+      }
+    },
+    "animation.lizard.roar.time": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          
+        ]
+      }
+    },
+    "animation.lizard.roar": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/summon spiderverse:lizard_roar ^ ^ ^",
+		  "/particle minecraft:spiderman_combo ~ ~ ~"
+        ]
+      }
+    }
+  }
+}

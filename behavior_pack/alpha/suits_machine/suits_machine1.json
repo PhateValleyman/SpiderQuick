@@ -1,0 +1,120 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:suits_machine1",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ 
+			"suits_machine"
+		]
+      },
+      "animations": {
+		  "suits_machine": "controller.animation.suits_machine.destroy"
+      }
+    },
+    "component_groups": {
+      "suits:spiderman_classic_suit": { "minecraft:variant": { "value": 0 }
+      },
+      "suits:spiderman_classic_suit_1": { "minecraft:variant": { "value": 1 }
+      },
+      "suits:spiderman_classic_suit_2": { "minecraft:variant": { "value": 2 }
+      },
+      "suits:spiderman_classic_suit_3": { "minecraft:variant": { "value": 3 }
+      },
+		"despawn": {
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		}
+	},
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "ui_suits" ]
+      },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "invisibility",
+              "duration": 999000,
+              "visible": false,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand"},
+                "event": "form"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_leather"
+            }
+          ]
+        },
+      "minecraft:health": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+		"minecraft:pushable": {
+			"is_pushable": true,
+			"is_pushable_by_piston": true
+		},
+
+      "minecraft:scale": {
+        "value": 1.0
+      },      
+      "minecraft:physics": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.35,
+        "height": 0.45
+      }
+    },
+
+    "events": {
+		  //spiderman_classic_suit
+		  "suits:spiderman_classic_suit": { "add": { "component_groups": [ "suits:spiderman_classic_suit" ] }
+		  },
+		  "suits:spiderman_classic_suit_1": { "add": { "component_groups": [ "suits:spiderman_classic_suit_1" ] }
+		  },
+		  "suits:spiderman_classic_suit_2": { "add": { "component_groups": [ "suits:spiderman_classic_suit_2" ] }
+		  },
+		  "suits:spiderman_classic_suit_3": { "add": { "component_groups": [ "suits:spiderman_classic_suit_3" ] }
+		  },
+		"despawn": {
+			"add": {
+			  "component_groups": [
+				"despawn"
+			  ]
+			}
+		},
+      "form": {
+		"queue_command": {
+			"command": [
+					"event entity @e[type=spidermanaddon:suits_machine, c=1] spidermanaddon:form_fabric"
+			]
+		}
+      }
+	}
+  }
+}

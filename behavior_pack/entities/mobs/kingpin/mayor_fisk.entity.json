@@ -1,0 +1,358 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:mayor_fisk",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+		  "nido:scan":{ "type": "bool", "default": true, "client_sync": true },
+        "spidermanaddon:boss_state": {
+          "type": "enum",
+          "values": [
+            "default",
+            "jump",
+            "jump_end",
+            "charge",
+            "charge_end",
+            "laser",
+            "shield",
+            "shield_end",
+            "debility",
+            "attack0",
+            "attack1",
+			"death"
+          ],
+          "default": "default",
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+		"spidermanaddon:death_mode": {
+		  "minecraft:movement": {
+			"value": 0.0
+		  },
+		  "minecraft:knockback_resistance": {
+			"value": 1.0
+		  },
+		  "minecraft:damage_sensor": {
+			"triggers": {
+			  "cause": "all",
+			  "deals_damage": false
+			}
+		  },
+		  "minecraft:timer": {
+			"looping": true,
+			"time": 5.0,
+			"time_down_event": {
+			  "event": "spidermanaddon:death_destroy",
+			  "target": "self"
+			}
+		  }
+		},
+		"spidermanaddon:laser_ai": {
+		  "minecraft:movement": {
+			"value": 0.0
+		  },
+		  "minecraft:shooter": {
+			"def": "minecraft:none"
+		  },
+		  "minecraft:behavior.ranged_attack": {
+			"priority": 1,
+			"attack_radius": 48,
+			"attack_interval_min": 999,
+			"attack_interval_max": 999,
+			"speed_multiplier": 0.0,
+			"target_in_sight_time": 0.0
+		  }
+		},
+      "spidermanaddon:default_ai": {
+        "minecraft:attack": {
+          "damage": 16
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.1,
+          "track_target": true,
+          "reach_multiplier": 2.2
+        },
+        "minecraft:behavior.move_towards_target": {
+          "priority": 4,
+          "speed_multiplier": 1.0,
+          "within_radius": 32
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 7,
+          "speed_multiplier": 0.55
+        },
+        "minecraft:movement": {
+          "value": 0.34
+        }
+      },
+      "spidermanaddon:no_target_ai": {
+        "minecraft:movement": {
+          "value": 0.35
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 7,
+          "speed_multiplier": 0.45
+        }
+      },
+      "spidermanaddon:skill_ai": {
+        "minecraft:movement": {
+          "value": 0.0
+        }
+      },
+      "spidermanaddon:debilitated": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:attack": {
+          "damage": 0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "mayor_fisk",
+          "boss",
+          "monster",
+          "mob"
+        ]
+      },
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(200,440)",
+          "on_death": "query.last_hit_by_player ? Math.Random(200,440) : 0"
+        },
+      "minecraft:boss": {
+        "name": "Kingpin",
+        "hud_range": 64,
+        "should_darken_sky": false
+      },
+      "minecraft:health": {
+        "value": 2000,
+        "max": 2000
+      },
+      "minecraft:collision_box": {
+        "width": 1.45,
+        "height": 2.9
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.85,
+        "max": 0.85
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/kingpin.json"
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:follow_range": {
+        "value": 48,
+        "max": 64
+      },
+		"minecraft:damage_sensor": {
+		  "triggers": {
+			"on_damage": {
+			  "filters": {
+				"all_of": [
+				  {
+					"test": "has_damage",
+					"subject": "self",
+					"operator": "==",
+					"value": "fatal"
+				  },
+				  {
+					"test": "has_damage",
+					"subject": "self",
+					"operator": "!=",
+					"value": "void"
+				  }
+				]
+			  },
+			  "event": "spidermanaddon:death_start",
+			  "target": "self"
+			},
+			"deals_damage": false
+		  }
+		},
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "must_see_forget_duration": 1.0,
+        "reselect_targets": true,
+        "within_radius": 32,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 32
+          }
+        ]
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:no_target_ai"
+          ]
+        }
+      },
+		"spidermanaddon:death_start": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:default_ai",
+			  "spidermanaddon:no_target_ai",
+			  "spidermanaddon:skill_ai",
+			  "spidermanaddon:laser_ai",
+			  "spidermanaddon:debilitated"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:death_mode"
+			]
+		  },
+		  "set_property": {
+			"spidermanaddon:boss_state": "death"
+		  },
+		  "queue_command": {
+			"target": "self",
+			"command": [
+			  "effect @s instant_health 1 10 true",
+			  "effect @s resistance 6 255 true",
+			  "effect @s slowness 6 255 true"
+			]
+		  }
+		},
+		"spidermanaddon:death_destroy": {
+		  "queue_command": {
+			"target": "self",
+			"command": [
+			  "effect @s invisibility 6 0 true",
+			  "kill @s"
+			]
+		  }
+		},
+		"spidermanaddon:laser_on": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:default_ai",
+			  "spidermanaddon:no_target_ai",
+			  "spidermanaddon:skill_ai",
+			  "spidermanaddon:debilitated"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:laser_ai"
+			]
+		  }
+		},
+      "spidermanaddon:target_visible": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:no_target_ai",
+            "spidermanaddon:skill_ai",
+            "spidermanaddon:debilitated"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:default_ai"
+          ]
+        }
+      },
+      "spidermanaddon:target_hidden": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:default_ai",
+            "spidermanaddon:no_target_ai",
+            "spidermanaddon:skill_ai",
+            "spidermanaddon:debilitated"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:no_target_ai"
+          ]
+        }
+      },
+      "spidermanaddon:skill_on": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:default_ai",
+            "spidermanaddon:no_target_ai",
+            "spidermanaddon:debilitated"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:skill_ai"
+          ]
+        }
+      },
+		"spidermanaddon:skill_off": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:skill_ai",
+			  "spidermanaddon:laser_ai",
+			  "spidermanaddon:debilitated"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:no_target_ai"
+			]
+		  }
+		},
+      "nido:scan": { "set_property":{ "nido:scan": false }, "queue_command": { "command": [ "tag @s add nido_scan" ] }
+      },
+      "nido:scan.off": { "set_property":{ "nido:scan": true }, "queue_command": { "command": [ "tag @s remove nido_scan" ] }
+      },
+      "spidermanaddon:debilitated_on": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:default_ai",
+            "spidermanaddon:no_target_ai",
+            "spidermanaddon:skill_ai"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:debilitated"
+          ]
+        }
+      }
+    }
+  }
+}

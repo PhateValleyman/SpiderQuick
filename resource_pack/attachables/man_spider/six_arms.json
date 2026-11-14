@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:six_arms",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/3d_items/six_arms"
+			},
+			"geometry": {
+				"default": "geometry.six_arms"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+                "animate": [
+                    "idle",
+					"on",
+					{ "falling": "!q.is_on_ground" },
+					{ "climb.default": "!q.is_on_ground && q.property('arathnido:escalar') == true" },
+					{ "climb.walk": "!q.is_on_ground && q.property('arathnido:escalar') == true && !q.is_sneaking" }
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.head', 'man_spider')" }
+			],
+            "animations": {
+				"idle": "animation.man_spider.idle",
+				"on": "animation.man_spider.on",
+				"falling": "animation.man_spider.falling",
+				"climb.default": "animation.man_spider.climb.default",
+				"climb.walk": "animation.man_spider.climb.walk"
+            }
+		}
+	}
+}

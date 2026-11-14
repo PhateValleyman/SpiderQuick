@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:green_goblin_raimi_suit",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/green_goblin/green_goblin_raimi",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.green_goblin_raimi_suit",
+				"armor_skin": "geometry.player_ironman"
+			},
+			"scripts": {
+                "animate": [
+                    "default_c",
+					"mask_c",
+					"selfie_hand_c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+                "mask_c": "controller.animation.suit.mask",
+                "mask.off": "animation.spider_female.mask_on",
+				"mask.on": "animation.spider_female.mask_off",
+				"mask.time": "animation.spider_female.mask_time",
+
+				
+                "default_c": "controller.animation.spiderman_suit.web_default",
+                "web_off": "animation.spiderman.web_shooters.off",
+				"web_on": "animation.spiderman.web_shooters.on",
+				"selfie_hand_c": "controller.animation.spiderman_suit.selfie_hand",
+				"selfie_hand": "animation.spiderman.web_shooters.selfie_hand"
+            }
+		}
+	}
+}

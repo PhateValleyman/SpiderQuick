@@ -1,0 +1,6036 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:suits_machine",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "sp:form_fabric": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      },
+      "scripts": {
+        "animate": [
+          "suits_machine",
+          "form_fabric",
+          "fabricar.c"
+        ]
+      },
+      "animations": {
+        "suits_machine": "controller.animation.suits_machine",
+        "form_fabric": "controller.animation.form_fabric",
+        "fabricar.c": "controller.animation.suits_machine.fabricar",
+        "spiderman_classic_suit": "animation.suits_machine.spiderman_classic_suit",
+        "spiderman_classic_suit_1": "animation.suits_machine.spiderman_classic_suit_1",
+        "spiderman_classic_suit_2": "animation.suits_machine.spiderman_classic_suit_2",
+        "spiderman_classic_suit_3": "animation.suits_machine.spiderman_classic_suit_3",
+        "human_spider_suit": "animation.suits_machine.human_spider_suit",
+        "spiderman_raimi_suit": "animation.suits_machine.spiderman_raimi_suit",
+        "the_amazing_spiderman_1_suit": "animation.suits_machine.the_amazing_spiderman_1_suit",
+        "spiderman_miles_morales_suit": "animation.suits_machine.spiderman_miles_morales_suit",
+        "anti_ock_suit": "animation.suits_machine.anti_ock_suit",
+        "anti_ock_suit_1": "animation.suits_machine.anti_ock_suit_1",
+        "anti_ock_suit_2": "animation.suits_machine.anti_ock_suit_2",
+        "anti_ock_suit_3": "animation.suits_machine.anti_ock_suit_3",
+        "iron_spider_suit": "animation.suits_machine.iron_spider_suit",
+        "iron_spider_suit_1": "animation.suits_machine.iron_spider_suit_1",
+        "iron_spider_suit_2": "animation.suits_machine.iron_spider_suit_2",
+        "iron_spider_suit_3": "animation.suits_machine.iron_spider_suit_3",
+        "miles_morales_wolverine_suit": "animation.suits_machine.miles_morales_wolverine_suit",
+        "miles_morales_wolverine_suit_1": "animation.suits_machine.miles_morales_wolverine_suit_1",
+        "miles_morales_wolverine_suit_2": "animation.suits_machine.miles_morales_wolverine_suit_2",
+        "miles_morales_wolverine_suit_3": "animation.suits_machine.miles_morales_wolverine_suit_3",
+        "aracnido_jr_suit": "animation.suits_machine.aracnido_jr_suit",
+        "ezekiel_sims_suit": "animation.suits_machine.ezekiel_sims_suit",
+        "ghost_spider_suit": "animation.suits_machine.ghost_spider_suit",
+        "iron_spider_ucm_suit": "animation.suits_machine.iron_spider_ucm_suit",
+        "miles_morales_into_the_spiderverse_suit": "animation.suits_machine.miles_morales_into_the_spiderverse_suit",
+        "miles_morales_across_the_spiderverse_suit": "animation.suits_machine.miles_morales_across_the_spiderverse_suit",
+        "miles_morales_10th_suit": "animation.suits_machine.miles_morales_10th_suit",
+        "miles_morales_10th_suit_1": "animation.suits_machine.miles_morales_10th_suit_1",
+        "miles_morales_10th_suit_2": "animation.suits_machine.miles_morales_10th_suit_2",
+        "miles_morales_10th_suit_3": "animation.suits_machine.miles_morales_10th_suit_3",
+        "miles_morales_bodega_cat_suit": "animation.suits_machine.miles_morales_bodega_cat_suit",
+        "miles_morales_bodega_cat_suit_1": "animation.suits_machine.miles_morales_bodega_cat_suit_1",
+        "miles_morales_bodega_cat_suit_2": "animation.suits_machine.miles_morales_bodega_cat_suit_2",
+        "miles_morales_bodega_cat_suit_3": "animation.suits_machine.miles_morales_bodega_cat_suit_3",
+        "miles_morales_gold_suit": "animation.suits_machine.miles_morales_gold_suit",
+        "scarlet_spider_suit": "animation.suits_machine.scarlet_spider_suit",
+        "scarlet_spider_suit_1": "animation.suits_machine.scarlet_spider_suit_1",
+        "scarlet_spider_suit_2": "animation.suits_machine.scarlet_spider_suit_2",
+        "scarlet_spider_suit_3": "animation.suits_machine.scarlet_spider_suit_3",
+        "scarlet_spider_across_the_spiderverse_suit": "animation.suits_machine.scarlet_spider_across_the_spiderverse_suit",
+        "spectacular_spiderman_suit": "animation.suits_machine.spectacular_spiderman_suit",
+        "spectacular_spiderman_black_suit": "animation.suits_machine.spectacular_spiderman_black_suit",
+        "spectacular_spiderman_black_suit_2": "animation.suits_machine.spectacular_spiderman_black_suit_2",
+        "spectacular_spiderman_black_suit_3": "animation.suits_machine.spectacular_spiderman_black_suit_3",
+        "spider_punk_suit": "animation.suits_machine.spider_punk_suit",
+        "spiderman_67_suit": "animation.suits_machine.spiderman_67_suit",
+        "spiderman_90_suit": "animation.suits_machine.spiderman_90_suit",
+        "spiderman_90_black_suit": "animation.suits_machine.spiderman_90_black_suit",
+        "spiderman_90_black_suit_1": "animation.suits_machine.spiderman_90_black_suit_1",
+        "spiderman_2099_suit": "animation.suits_machine.spiderman_2099_suit",
+        "spiderman_2099_suit_1": "animation.suits_machine.spiderman_2099_suit_1",
+        "spiderman_2099_suit_2": "animation.suits_machine.spiderman_2099_suit_2",
+        "spiderman_2099_suit_3": "animation.suits_machine.spiderman_2099_suit_3",
+        "spiderman_2099_across_the_spiderverse_suit": "animation.suits_machine.spiderman_2099_across_the_spiderverse_suit",
+        "spiderman_2099_across_the_spiderverse_suit_1": "animation.suits_machine.spiderman_2099_across_the_spiderverse_suit_1",
+        "spiderman_antivenom_suit": "animation.suits_machine.spiderman_antivenom_suit",
+        "spiderman_cero_suit": "animation.suits_machine.spiderman_cero_suit",
+        "spiderman_classic_black_suit": "animation.suits_machine.spiderman_classic_black_suit",
+        "spiderman_homemade_suit": "animation.suits_machine.spiderman_homemade_suit",
+        "spiderman_homecoming_suit": "animation.suits_machine.spiderman_homecoming_suit",
+        "spiderman_far_from_home_suit": "animation.suits_machine.spiderman_far_from_home_suit",
+        "spiderman_future_foundation_suit": "animation.suits_machine.spiderman_future_foundation_suit",
+        "spiderman_india_suit": "animation.suits_machine.spiderman_india_suit",
+        "spiderman_last_stand_suit": "animation.suits_machine.spiderman_last_stand_suit",
+        "spiderman_negative_suit": "animation.suits_machine.spiderman_negative_suit",
+        "spiderman_no_way_home_suit": "animation.suits_machine.spiderman_no_way_home_suit",
+        "spiderman_noir_into_the_spiderverse_suit": "animation.suits_machine.spiderman_noir_into_the_spiderverse_suit",
+        "spiderman_ps4_suit": "animation.suits_machine.spiderman_ps4_suit",
+        "spiderman_ps5_suit": "animation.suits_machine.spiderman_ps5_suit",
+        "spiderman_ps5_suit_1": "animation.suits_machine.spiderman_ps5_suit_1",
+        "spiderman_ps5_suit_2": "animation.suits_machine.spiderman_ps5_suit_2",
+        "spiderman_ps5_suit_3": "animation.suits_machine.spiderman_ps5_suit_3",
+        "spiderman_ps4_black_suit": "animation.suits_machine.spiderman_ps4_black_suit",
+        "spiderman_ps5_symbiote_suit": "animation.suits_machine.spiderman_ps5_symbiote_suit",
+        "spiderman_raimi_black_suit": "animation.suits_machine.spiderman_raimi_black_suit",
+        "spiderman_secret_wars_civil_war_suit": "animation.suits_machine.spiderman_secret_wars_civil_war_suit",
+        "spiderman_stealth_suit": "animation.suits_machine.spiderman_stealth_suit",
+        "spiderman_steve_ditko_suit": "animation.suits_machine.spiderman_steve_ditko_suit",
+        "spiderman_unlimited_suit": "animation.suits_machine.spiderman_unlimited_suit",
+        "spiderman_velocity_suit": "animation.suits_machine.spiderman_velocity_suit",
+        "spiderman_web_of_shadows_suit": "animation.suits_machine.spiderman_web_of_shadows_suit",
+        "spiderman_web_of_shadows_black_suit": "animation.suits_machine.spiderman_web_of_shadows_black_suit",
+        "spiderman_what_if_suit": "animation.suits_machine.spiderman_what_if_suit",
+        "spiderman_what_if_animated_suit": "animation.suits_machine.spiderman_what_if_animated_suit",
+        "spiderman_wrestler_suit": "animation.suits_machine.spiderman_wrestler_suit",
+        "spirit_spider_suit": "animation.suits_machine.spirit_spider_suit",
+        "superior_spiderman_suit": "animation.suits_machine.superior_spiderman_suit",
+        "superior_spiderman_suit_1": "animation.suits_machine.superior_spiderman_suit_1",
+        "superior_spiderman_suit_2": "animation.suits_machine.superior_spiderman_suit_2",
+        "superior_spiderman_suit_3": "animation.suits_machine.superior_spiderman_suit_3",
+        "superior_spiderman_black_suit": "animation.suits_machine.superior_spiderman_black_suit",
+        "the_amazing_spiderman_2_suit": "animation.suits_machine.the_amazing_spiderman_2_suit",
+        "the_amazing_spiderman_belt_suit": "animation.suits_machine.the_amazing_spiderman_belt_suit",
+        "the_amazing_spiderman_black_suit": "animation.suits_machine.the_amazing_spiderman_black_suit",
+        "ultimate_spiderman_suit": "animation.suits_machine.ultimate_spiderman_suit",
+        "ultimate_spiderman_black_suit": "animation.suits_machine.ultimate_spiderman_black_suit",
+        "ultimate_spiderman_ucm_suit": "animation.suits_machine.ultimate_spiderman_ucm_suit",
+        "yfn_spiderman_casero_suit": "animation.suits_machine.yfn_spiderman_casero_suit",
+        "venom_spiderman3": "animation.suits_machine.venom_spiderman3",
+        "into_the_spiderverse_sb_suit": "animation.suits_machine.into_the_spiderverse_sb_suit",
+        "spiderman_miles_morales_leap_of_faith_suit": "animation.suits_machine.spiderman_miles_morales_leap_of_faith_suit",
+        "spiderman_bombastic_bag_man_suit": "animation.suits_machine.spiderman_bombastic_bag_man_suit",
+        "yfn_spiderman_suit": "animation.suits_machine.yfn_spiderman_suit",
+        "yfn_spiderman_oscorp_suit": "animation.suits_machine.yfn_spiderman_oscorp_suit",
+        "spiderman_new_blue_suit": "animation.suits_machine.spiderman_new_blue_suit",
+        "the_amazing_spiderman_casero_suit": "animation.suits_machine.the_amazing_spiderman_casero_suit",
+        "silk_suit": "animation.suits_machine.silk_suit"
+      }
+    },
+    "component_groups": {
+      "suits:spiderman_classic_suit": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "suits:spiderman_classic_suit_1": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "suits:spiderman_classic_suit_2": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "suits:spiderman_classic_suit_3": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "suits:human_spider_suit": {
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "suits:spiderman_raimi_suit": {
+        "minecraft:variant": {
+          "value": 5
+        }
+      },
+      "suits:the_amazing_spiderman_1_suit": {
+        "minecraft:variant": {
+          "value": 6
+        }
+      },
+      "suits:spiderman_miles_morales_suit": {
+        "minecraft:variant": {
+          "value": 7
+        }
+      },
+      "suits:anti_ock_suit": {
+        "minecraft:variant": {
+          "value": 8
+        }
+      },
+      "suits:anti_ock_suit_1": {
+        "minecraft:variant": {
+          "value": 9
+        }
+      },
+      "suits:anti_ock_suit_2": {
+        "minecraft:variant": {
+          "value": 10
+        }
+      },
+      "suits:anti_ock_suit_3": {
+        "minecraft:variant": {
+          "value": 11
+        }
+      },
+      "suits:iron_spider_suit": {
+        "minecraft:variant": {
+          "value": 12
+        }
+      },
+      "suits:iron_spider_suit_1": {
+        "minecraft:variant": {
+          "value": 13
+        }
+      },
+      "suits:iron_spider_suit_2": {
+        "minecraft:variant": {
+          "value": 14
+        }
+      },
+      "suits:iron_spider_suit_3": {
+        "minecraft:variant": {
+          "value": 15
+        }
+      },
+      "suits:miles_morales_wolverine_suit": {
+        "minecraft:variant": {
+          "value": 16
+        }
+      },
+      "suits:miles_morales_wolverine_suit_1": {
+        "minecraft:variant": {
+          "value": 17
+        }
+      },
+      "suits:miles_morales_wolverine_suit_2": {
+        "minecraft:variant": {
+          "value": 18
+        }
+      },
+      "suits:miles_morales_wolverine_suit_3": {
+        "minecraft:variant": {
+          "value": 19
+        }
+      },
+      "suits:aracnido_jr_suit": {
+        "minecraft:variant": {
+          "value": 20
+        }
+      },
+      "suits:ezekiel_sims_suit": {
+        "minecraft:variant": {
+          "value": 21
+        }
+      },
+      "suits:ghost_spider_suit": {
+        "minecraft:variant": {
+          "value": 22
+        }
+      },
+      "suits:iron_spider_ucm_suit": {
+        "minecraft:variant": {
+          "value": 23
+        }
+      },
+      "suits:miles_morales_into_the_spiderverse_suit": {
+        "minecraft:variant": {
+          "value": 24
+        }
+      },
+      "suits:miles_morales_across_the_spiderverse_suit": {
+        "minecraft:variant": {
+          "value": 25
+        }
+      },
+      "suits:miles_morales_10th_suit": {
+        "minecraft:variant": {
+          "value": 26
+        }
+      },
+      "suits:miles_morales_10th_suit_1": {
+        "minecraft:variant": {
+          "value": 27
+        }
+      },
+      "suits:miles_morales_10th_suit_2": {
+        "minecraft:variant": {
+          "value": 28
+        }
+      },
+      "suits:miles_morales_10th_suit_3": {
+        "minecraft:variant": {
+          "value": 29
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit": {
+        "minecraft:variant": {
+          "value": 30
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_1": {
+        "minecraft:variant": {
+          "value": 31
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_2": {
+        "minecraft:variant": {
+          "value": 32
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_3": {
+        "minecraft:variant": {
+          "value": 33
+        }
+      },
+      "suits:miles_morales_gold_suit": {
+        "minecraft:variant": {
+          "value": 34
+        }
+      },
+      "suits:scarlet_spider_suit": {
+        "minecraft:variant": {
+          "value": 35
+        }
+      },
+      "suits:scarlet_spider_suit_1": {
+        "minecraft:variant": {
+          "value": 36
+        }
+      },
+      "suits:scarlet_spider_suit_2": {
+        "minecraft:variant": {
+          "value": 37
+        }
+      },
+      "suits:scarlet_spider_suit_3": {
+        "minecraft:variant": {
+          "value": 38
+        }
+      },
+      "suits:scarlet_spider_across_the_spiderverse_suit": {
+        "minecraft:variant": {
+          "value": 39
+        }
+      },
+      "suits:spectacular_spiderman_suit": {
+        "minecraft:variant": {
+          "value": 40
+        }
+      },
+      "suits:spectacular_spiderman_black_suit": {
+        "minecraft:variant": {
+          "value": 41
+        }
+      },
+      "suits:spectacular_spiderman_black_suit_2": {
+        "minecraft:variant": {
+          "value": 42
+        }
+      },
+      "suits:spectacular_spiderman_black_suit_3": {
+        "minecraft:variant": {
+          "value": 43
+        }
+      },
+      "suits:spider_punk_suit": {
+        "minecraft:variant": {
+          "value": 44
+        }
+      },
+      "suits:spiderman_67_suit": {
+        "minecraft:variant": {
+          "value": 45
+        }
+      },
+      "suits:spiderman_90_suit": {
+        "minecraft:variant": {
+          "value": 46
+        }
+      },
+      "suits:spiderman_90_black_suit": {
+        "minecraft:variant": {
+          "value": 47
+        }
+      },
+      "suits:spiderman_90_black_suit_1": {
+        "minecraft:variant": {
+          "value": 48
+        }
+      },
+      "suits:spiderman_2099_suit": {
+        "minecraft:variant": {
+          "value": 49
+        }
+      },
+      "suits:spiderman_2099_suit_1": {
+        "minecraft:variant": {
+          "value": 50
+        }
+      },
+      "suits:spiderman_2099_suit_2": {
+        "minecraft:variant": {
+          "value": 51
+        }
+      },
+      "suits:spiderman_2099_suit_3": {
+        "minecraft:variant": {
+          "value": 52
+        }
+      },
+      "suits:spiderman_2099_across_the_spiderverse_suit": {
+        "minecraft:variant": {
+          "value": 53
+        }
+      },
+      "suits:spiderman_2099_across_the_spiderverse_suit_1": {
+        "minecraft:variant": {
+          "value": 54
+        }
+      },
+      "suits:spiderman_antivenom_suit": {
+        "minecraft:variant": {
+          "value": 55
+        }
+      },
+      "suits:spiderman_cero_suit": {
+        "minecraft:variant": {
+          "value": 56
+        }
+      },
+      "suits:spiderman_classic_black_suit": {
+        "minecraft:variant": {
+          "value": 57
+        }
+      },
+      "suits:spiderman_homemade_suit": {
+        "minecraft:variant": {
+          "value": 58
+        }
+      },
+      "suits:spiderman_homecoming_suit": {
+        "minecraft:variant": {
+          "value": 59
+        }
+      },
+      "suits:spiderman_far_from_home_suit": {
+        "minecraft:variant": {
+          "value": 60
+        }
+      },
+      "suits:spiderman_future_foundation_suit": {
+        "minecraft:variant": {
+          "value": 61
+        }
+      },
+      "suits:spiderman_india_suit": {
+        "minecraft:variant": {
+          "value": 62
+        }
+      },
+      "suits:spiderman_last_stand_suit": {
+        "minecraft:variant": {
+          "value": 63
+        }
+      },
+      "suits:spiderman_negative_suit": {
+        "minecraft:variant": {
+          "value": 64
+        }
+      },
+      "suits:spiderman_no_way_home_suit": {
+        "minecraft:variant": {
+          "value": 65
+        }
+      },
+      "suits:spiderman_noir_into_the_spiderverse_suit": {
+        "minecraft:variant": {
+          "value": 66
+        }
+      },
+      "suits:spiderman_ps4_suit": {
+        "minecraft:variant": {
+          "value": 67
+        }
+      },
+      "suits:spiderman_ps5_suit": {
+        "minecraft:variant": {
+          "value": 68
+        }
+      },
+      "suits:spiderman_ps5_suit_1": {
+        "minecraft:variant": {
+          "value": 69
+        }
+      },
+      "suits:spiderman_ps5_suit_2": {
+        "minecraft:variant": {
+          "value": 70
+        }
+      },
+      "suits:spiderman_ps5_suit_3": {
+        "minecraft:variant": {
+          "value": 71
+        }
+      },
+      "suits:spiderman_ps4_black_suit": {
+        "minecraft:variant": {
+          "value": 72
+        }
+      },
+      "suits:spiderman_ps5_symbiote_suit": {
+        "minecraft:variant": {
+          "value": 73
+        }
+      },
+      "suits:spiderman_raimi_black_suit": {
+        "minecraft:variant": {
+          "value": 74
+        }
+      },
+      "suits:spiderman_secret_wars_civil_war_suit": {
+        "minecraft:variant": {
+          "value": 75
+        }
+      },
+      "suits:spiderman_stealth_suit": {
+        "minecraft:variant": {
+          "value": 76
+        }
+      },
+      "suits:spiderman_steve_ditko_suit": {
+        "minecraft:variant": {
+          "value": 77
+        }
+      },
+      "suits:spiderman_unlimited_suit": {
+        "minecraft:variant": {
+          "value": 78
+        }
+      },
+      "suits:spiderman_velocity_suit": {
+        "minecraft:variant": {
+          "value": 79
+        }
+      },
+      "suits:spiderman_web_of_shadows_suit": {
+        "minecraft:variant": {
+          "value": 80
+        }
+      },
+      "suits:spiderman_web_of_shadows_black_suit": {
+        "minecraft:variant": {
+          "value": 81
+        }
+      },
+      "suits:spiderman_what_if_suit": {
+        "minecraft:variant": {
+          "value": 82
+        }
+      },
+      "suits:spiderman_what_if_animated_suit": {
+        "minecraft:variant": {
+          "value": 83
+        }
+      },
+      "suits:spiderman_wrestler_suit": {
+        "minecraft:variant": {
+          "value": 84
+        }
+      },
+      "suits:spirit_spider_suit": {
+        "minecraft:variant": {
+          "value": 85
+        }
+      },
+      "suits:superior_spiderman_suit": {
+        "minecraft:variant": {
+          "value": 86
+        }
+      },
+      "suits:superior_spiderman_suit_1": {
+        "minecraft:variant": {
+          "value": 87
+        }
+      },
+      "suits:superior_spiderman_suit_2": {
+        "minecraft:variant": {
+          "value": 88
+        }
+      },
+      "suits:superior_spiderman_suit_3": {
+        "minecraft:variant": {
+          "value": 89
+        }
+      },
+      "suits:superior_spiderman_black_suit": {
+        "minecraft:variant": {
+          "value": 90
+        }
+      },
+      "suits:the_amazing_spiderman_2_suit": {
+        "minecraft:variant": {
+          "value": 91
+        }
+      },
+      "suits:the_amazing_spiderman_belt_suit": {
+        "minecraft:variant": {
+          "value": 92
+        }
+      },
+      "suits:the_amazing_spiderman_black_suit": {
+        "minecraft:variant": {
+          "value": 93
+        }
+      },
+      "suits:ultimate_spiderman_suit": {
+        "minecraft:variant": {
+          "value": 94
+        }
+      },
+      "suits:ultimate_spiderman_black_suit": {
+        "minecraft:variant": {
+          "value": 95
+        }
+      },
+      "suits:ultimate_spiderman_ucm_suit": {
+        "minecraft:variant": {
+          "value": 96
+        }
+      },
+      "suits:yfn_spiderman_casero_suit": {
+        "minecraft:variant": {
+          "value": 97
+        }
+      },
+      "suits:venom_spiderman3": {
+        "minecraft:variant": {
+          "value": 98
+        }
+      },
+      "suits:into_the_spiderverse_sb_suit": {
+        "minecraft:variant": {
+          "value": 99
+        }
+      },
+      "suits:spiderman_miles_morales_leap_of_faith_suit": {
+        "minecraft:variant": {
+          "value": 100
+        }
+      },
+      "suits:spiderman_bombastic_bag_man_suit": {
+        "minecraft:variant": {
+          "value": 101
+        }
+      },
+      "suits:yfn_spiderman_suit": {
+        "minecraft:variant": {
+          "value": 102
+        }
+      },
+      "suits:yfn_spiderman_oscorp_suit": {
+        "minecraft:variant": {
+          "value": 103
+        }
+      },
+      "suits:spiderman_new_blue_suit": {
+        "minecraft:variant": {
+          "value": 104
+        }
+      },
+      "suits:the_amazing_spiderman_casero_suit": {
+        "minecraft:variant": {
+          "value": 105
+        }
+      },
+      "suits:silk_suit": {
+        "minecraft:variant": {
+          "value": 106
+        }
+      },
+      "spiderman_classic_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_classic_mask"
+          }
+        }
+      },
+      "spiderman_classic_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_classic_mask_1"
+          }
+        }
+      },
+      "spiderman_classic_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_classic_mask_2"
+          }
+        }
+      },
+      "spiderman_classic_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_classic_mask_3"
+          }
+        }
+      },
+      "human_spider_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:human_spider_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "human_spider_mask"
+          }
+        }
+      },
+      "spiderman_raimi_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_raimi_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_raimi_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_1_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_1_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "the_amazing_spiderman_1_mask"
+          }
+        }
+      },
+      "spiderman_miles_morales_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_mask"
+          }
+        }
+      },
+      "anti_ock_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "anti_ock_mask"
+          }
+        }
+      },
+      "anti_ock_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "anti_ock_mask_1"
+          }
+        }
+      },
+      "anti_ock_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "anti_ock_mask_2"
+          }
+        }
+      },
+      "anti_ock_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "anti_ock_mask_3"
+          }
+        }
+      },
+      "iron_spider_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "iron_spider_mask"
+          }
+        }
+      },
+      "iron_spider_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "iron_spider_mask_1"
+          }
+        }
+      },
+      "iron_spider_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "iron_spider_mask_2"
+          }
+        }
+      },
+      "iron_spider_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "iron_spider_mask_3"
+          }
+        }
+      },
+      "miles_morales_wolverine_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_wolverine_mask"
+          }
+        }
+      },
+      "miles_morales_wolverine_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_wolverine_mask_1"
+          }
+        }
+      },
+      "miles_morales_wolverine_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_wolverine_mask_2"
+          }
+        }
+      },
+      "miles_morales_wolverine_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_wolverine_mask_3"
+          }
+        }
+      },
+      "aracnido_jr_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:aracnido_jr_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "aracnido_jr_mask"
+          }
+        }
+      },
+      "ezekiel_sims_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ezekiel_sims_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "ezekiel_sims_mask"
+          }
+        }
+      },
+      "ghost_spider_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ghost_spider_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "ghost_spider_mask"
+          }
+        }
+      },
+      "iron_spider_ucm_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_ucm_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "iron_spider_ucm_mask"
+          }
+        }
+      },
+      "miles_morales_into_the_spiderverse_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_into_the_spiderverse_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_into_the_spiderverse_mask"
+          }
+        }
+      },
+      "miles_morales_across_the_spiderverse_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_across_the_spiderverse_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "miles_morales_10th_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_10th_mask"
+          }
+        }
+      },
+      "miles_morales_10th_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_10th_mask_1"
+          }
+        }
+      },
+      "miles_morales_10th_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_10th_mask_2"
+          }
+        }
+      },
+      "miles_morales_10th_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_10th_mask_3"
+          }
+        }
+      },
+      "miles_morales_bodega_cat_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_bodega_cat_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_bodega_cat_mask"
+          }
+        }
+      },
+      "miles_morales_bodega_cat_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_bodega_cat_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_bodega_cat_mask"
+          }
+        }
+      },
+      "miles_morales_bodega_cat_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_bodega_cat_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_bodega_cat_mask"
+          }
+        }
+      },
+      "miles_morales_bodega_cat_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_bodega_cat_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_bodega_cat_mask"
+          }
+        }
+      },
+      "miles_morales_gold_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_gold_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "miles_morales_gold_mask"
+          }
+        }
+      },
+      "scarlet_spider_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "scarlet_spider_mask"
+          }
+        }
+      },
+      "scarlet_spider_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "scarlet_spider_mask_1"
+          }
+        }
+      },
+      "scarlet_spider_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "scarlet_spider_mask_2"
+          }
+        }
+      },
+      "scarlet_spider_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "scarlet_spider_mask_3"
+          }
+        }
+      },
+      "scarlet_spider_across_the_spiderverse_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_across_the_spiderverse_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "scarlet_spider_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "spectacular_spiderman_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spectacular_spiderman_mask"
+          }
+        }
+      },
+      "spectacular_spiderman_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_suit"
+          }
+        }
+      },
+      "spectacular_spiderman_black_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_suit_2"
+          }
+        }
+      },
+      "spectacular_spiderman_black_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_suit_3"
+          }
+        }
+      },
+      "spider_punk_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spider_punk_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spider_punk_mask"
+          }
+        }
+      },
+      "spiderman_67_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_67_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_67_mask"
+          }
+        }
+      },
+      "spiderman_90_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_90_mask"
+          }
+        }
+      },
+      "spiderman_90_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_black_suit"
+          }
+        }
+      },
+      "spiderman_90_black_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_black_suit_1"
+          }
+        }
+      },
+      "spiderman_2099_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_mask"
+          }
+        }
+      },
+      "spiderman_2099_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_mask_1"
+          }
+        }
+      },
+      "spiderman_2099_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_mask_2"
+          }
+        }
+      },
+      "spiderman_2099_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_mask_3"
+          }
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_across_the_spiderverse_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_across_the_spiderverse_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_2099_across_the_spiderverse_mask_1"
+          }
+        }
+      },
+      "spiderman_antivenom_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_antivenom_suit"
+          }
+        }
+      },
+      "spiderman_cero_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_cero_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_cero_mask"
+          }
+        }
+      },
+      "spiderman_classic_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_black_suit"
+          }
+        }
+      },
+      "spiderman_homemade_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_homemade_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_homemade_mask"
+          }
+        }
+      },
+      "spiderman_homecoming_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_homecoming_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_homecoming_mask"
+          }
+        }
+      },
+      "spiderman_far_from_home_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_far_from_home_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_far_from_home_mask"
+          }
+        }
+      },
+      "spiderman_future_foundation_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_future_foundation_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_future_foundation_mask"
+          }
+        }
+      },
+      "spiderman_india_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_india_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_india_mask"
+          }
+        }
+      },
+      "spiderman_last_stand_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_last_stand_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_last_stand_mask"
+          }
+        }
+      },
+      "spiderman_negative_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_negative_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_negative_mask"
+          }
+        }
+      },
+      "spiderman_no_way_home_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_no_way_home_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_no_way_home_mask"
+          }
+        }
+      },
+      "spiderman_noir_into_the_spiderverse_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_noir_into_the_spiderverse_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_noir_into_the_spiderverse_mask"
+          }
+        }
+      },
+      "spiderman_ps4_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps4_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_ps4_mask"
+          }
+        }
+      },
+      "spiderman_ps5_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_ps5_mask"
+          }
+        }
+      },
+      "spiderman_ps5_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_ps5_mask_1"
+          }
+        }
+      },
+      "spiderman_ps5_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_ps5_mask_2"
+          }
+        }
+      },
+      "spiderman_ps5_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_ps5_mask_3"
+          }
+        }
+      },
+      "spiderman_ps4_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps4_black_suit"
+          }
+        }
+      },
+      "spiderman_ps5_symbiote_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_symbiote_suit"
+          }
+        }
+      },
+      "spiderman_raimi_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_raimi_black_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_raimi_black_mask"
+          }
+        }
+      },
+      "spiderman_secret_wars_civil_war_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_secret_wars_civil_war_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_secret_wars_civil_war_mask"
+          }
+        }
+      },
+      "spiderman_stealth_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_stealth_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_stealth_mask"
+          }
+        }
+      },
+      "spiderman_steve_ditko_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_steve_ditko_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_steve_ditko_mask"
+          }
+        }
+      },
+      "spiderman_unlimited_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_unlimited_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_unlimited_mask"
+          }
+        }
+      },
+      "spiderman_velocity_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_velocity_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_velocity_mask"
+          }
+        }
+      },
+      "spiderman_web_of_shadows_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_web_of_shadows_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_web_of_shadows_mask"
+          }
+        }
+      },
+      "spiderman_web_of_shadows_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_web_of_shadows_black_suit"
+          }
+        }
+      },
+      "spiderman_what_if_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_what_if_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_what_if_mask"
+          }
+        }
+      },
+      "spiderman_what_if_animated_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_what_if_animated_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_what_if_animated_mask"
+          }
+        }
+      },
+      "spiderman_wrestler_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_wrestler_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_wrestler_mask"
+          }
+        }
+      },
+      "spirit_spider_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spirit_spider_suit"
+          }
+        }
+      },
+      "superior_spiderman_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "superior_spiderman_mask"
+          }
+        }
+      },
+      "superior_spiderman_suit_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_suit_1"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "superior_spiderman_mask_1"
+          }
+        }
+      },
+      "superior_spiderman_suit_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_suit_2"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "superior_spiderman_mask_2"
+          }
+        }
+      },
+      "superior_spiderman_suit_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_suit_3"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "superior_spiderman_mask_3"
+          }
+        }
+      },
+      "superior_spiderman_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_black_suit"
+          }
+        }
+      },
+      "the_amazing_spiderman_2_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_2_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "the_amazing_spiderman_2_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_belt_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_belt_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "the_amazing_spiderman_1_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_black_suit"
+          }
+        }
+      },
+      "ultimate_spiderman_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "ultimate_spiderman_mask"
+          }
+        }
+      },
+      "ultimate_spiderman_black_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_black_suit"
+          }
+        }
+      },
+      "ultimate_spiderman_ucm_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_ucm_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "ultimate_spiderman_ucm_mask"
+          }
+        }
+      },
+      "yfn_spiderman_casero_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_casero_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "yfn_spiderman_casero_mask"
+          }
+        }
+      },
+      "venom_spiderman3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:venom_s3"
+          }
+        }
+      },
+      "into_the_spiderverse_sb_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:into_the_spiderverse_sb_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "into_the_spiderverse_sb_mask"
+          }
+        }
+      },
+      "spiderman_miles_morales_leap_of_faith_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_miles_morales_leap_of_faith_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_miles_morales_leap_of_faith_mask"
+          }
+        }
+      },
+      "spiderman_bombastic_bag_man_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_bombastic_bag_man_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_bombastic_bag_man_mask"
+          }
+        }
+      },
+      "yfn_spiderman_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "yfn_spiderman_mask"
+          }
+        }
+      },
+      "yfn_spiderman_oscorp_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_oscorp_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "yfn_spiderman_oscorp_mask"
+          }
+        }
+      },
+      "spiderman_new_blue_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_new_blue_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "spiderman_new_blue_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_casero_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_casero_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "the_amazing_spiderman_casero_mask"
+          }
+        }
+      },
+      "silk_suit": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:silk_suit"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "silk_mask"
+          }
+        }
+      },
+      "suits:fabricar": {
+        "minecraft:is_sheared": {}
+      },
+      "silk_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:silk_mask"
+          }
+        }
+      },
+      "spiderman_classic_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_mask"
+          }
+        }
+      },
+      "spiderman_classic_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_mask_1"
+          }
+        }
+      },
+      "spiderman_classic_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_mask_2"
+          }
+        }
+      },
+      "spiderman_classic_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_mask_3"
+          }
+        }
+      },
+      "human_spider_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:human_spider_mask"
+          }
+        }
+      },
+      "spiderman_raimi_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_raimi_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_1_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_1_mask"
+          }
+        }
+      },
+      "spiderman_miles_morales_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_mask"
+          }
+        }
+      },
+      "anti_ock_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_mask"
+          }
+        }
+      },
+      "anti_ock_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_mask_1"
+          }
+        }
+      },
+      "anti_ock_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_mask_2"
+          }
+        }
+      },
+      "anti_ock_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:anti_ock_mask_3"
+          }
+        }
+      },
+      "iron_spider_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_mask"
+          }
+        }
+      },
+      "iron_spider_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_mask_1"
+          }
+        }
+      },
+      "iron_spider_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_mask_2"
+          }
+        }
+      },
+      "iron_spider_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_mask_3"
+          }
+        }
+      },
+      "miles_morales_wolverine_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_mask"
+          }
+        }
+      },
+      "miles_morales_wolverine_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_mask_1"
+          }
+        }
+      },
+      "miles_morales_wolverine_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_mask_2"
+          }
+        }
+      },
+      "miles_morales_wolverine_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_wolverine_mask_3"
+          }
+        }
+      },
+      "aracnido_jr_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:aracnido_jr_mask"
+          }
+        }
+      },
+      "ezekiel_sims_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ezekiel_sims_mask"
+          }
+        }
+      },
+      "ghost_spider_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ghost_spider_mask"
+          }
+        }
+      },
+      "iron_spider_ucm_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:iron_spider_ucm_mask"
+          }
+        }
+      },
+      "miles_morales_into_the_spiderverse_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_into_the_spiderverse_mask"
+          }
+        }
+      },
+      "miles_morales_across_the_spiderverse_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "miles_morales_10th_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_mask"
+          }
+        }
+      },
+      "miles_morales_10th_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_mask_1"
+          }
+        }
+      },
+      "miles_morales_10th_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_mask_2"
+          }
+        }
+      },
+      "miles_morales_10th_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_10th_mask_3"
+          }
+        }
+      },
+      "miles_morales_bodega_cat_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_bodega_cat_mask"
+          }
+        }
+      },
+      "miles_morales_gold_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:miles_morales_gold_mask"
+          }
+        }
+      },
+      "scarlet_spider_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_mask"
+          }
+        }
+      },
+      "scarlet_spider_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_mask_1"
+          }
+        }
+      },
+      "scarlet_spider_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_mask_2"
+          }
+        }
+      },
+      "scarlet_spider_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_mask_3"
+          }
+        }
+      },
+      "scarlet_spider_across_the_spiderverse_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:scarlet_spider_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "spectacular_spiderman_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_mask"
+          }
+        }
+      },
+      "spectacular_spiderman_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_mask"
+          }
+        }
+      },
+      "spectacular_spiderman_black_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_mask_2"
+          }
+        }
+      },
+      "spectacular_spiderman_black_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spectacular_spiderman_black_mask_3"
+          }
+        }
+      },
+      "spider_punk_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spider_punk_mask"
+          }
+        }
+      },
+      "spiderman_67_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_67_mask"
+          }
+        }
+      },
+      "spiderman_90_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_mask"
+          }
+        }
+      },
+      "spiderman_90_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_black_mask"
+          }
+        }
+      },
+      "spiderman_90_black_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_90_black_mask_1"
+          }
+        }
+      },
+      "spiderman_2099_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_mask"
+          }
+        }
+      },
+      "spiderman_2099_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_mask_1"
+          }
+        }
+      },
+      "spiderman_2099_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_mask_2"
+          }
+        }
+      },
+      "spiderman_2099_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_mask_3"
+          }
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_across_the_spiderverse_mask"
+          }
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_2099_across_the_spiderverse_mask_1"
+          }
+        }
+      },
+      "spiderman_antivenom_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_antivenom_mask"
+          }
+        }
+      },
+      "spiderman_cero_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_cero_mask"
+          }
+        }
+      },
+      "spiderman_classic_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_classic_black_mask"
+          }
+        }
+      },
+      "spiderman_homemade_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_homemade_mask"
+          }
+        }
+      },
+      "spiderman_homecoming_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_homecoming_mask"
+          }
+        }
+      },
+      "spiderman_far_from_home_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_far_from_home_mask"
+          }
+        }
+      },
+      "spiderman_future_foundation_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_future_foundation_mask"
+          }
+        }
+      },
+      "spiderman_india_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_india_mask"
+          }
+        }
+      },
+      "spiderman_last_stand_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_last_stand_mask"
+          }
+        }
+      },
+      "spiderman_negative_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_negative_mask"
+          }
+        }
+      },
+      "spiderman_no_way_home_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_no_way_home_mask"
+          }
+        }
+      },
+      "spiderman_noir_into_the_spiderverse_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_noir_into_the_spiderverse_mask"
+          }
+        }
+      },
+      "spiderman_ps4_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps4_mask"
+          }
+        }
+      },
+      "spiderman_ps5_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_mask"
+          }
+        }
+      },
+      "spiderman_ps5_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_mask_1"
+          }
+        }
+      },
+      "spiderman_ps5_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_mask_2"
+          }
+        }
+      },
+      "spiderman_ps5_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_mask_3"
+          }
+        }
+      },
+      "spiderman_ps4_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps4_black_mask"
+          }
+        }
+      },
+      "spiderman_ps5_symbiote_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_ps5_symbiote_mask"
+          }
+        }
+      },
+      "spiderman_raimi_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_raimi_black_mask"
+          }
+        }
+      },
+      "spiderman_secret_wars_civil_war_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_secret_wars_civil_war_mask"
+          }
+        }
+      },
+      "spiderman_stealth_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_stealth_mask"
+          }
+        }
+      },
+      "spiderman_steve_ditko_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_steve_ditko_mask"
+          }
+        }
+      },
+      "spiderman_unlimited_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_unlimited_mask"
+          }
+        }
+      },
+      "spiderman_velocity_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_velocity_mask"
+          }
+        }
+      },
+      "spiderman_web_of_shadows_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_web_of_shadows_mask"
+          }
+        }
+      },
+      "spiderman_web_of_shadows_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_web_of_shadows_black_mask"
+          }
+        }
+      },
+      "spiderman_what_if_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_what_if_mask"
+          }
+        }
+      },
+      "spiderman_what_if_animated_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_what_if_animated_mask"
+          }
+        }
+      },
+      "spiderman_wrestler_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_wrestler_mask"
+          }
+        }
+      },
+      "spirit_spider_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spirit_spider_mask"
+          }
+        }
+      },
+      "superior_spiderman_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_mask"
+          }
+        }
+      },
+      "superior_spiderman_mask_1": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_mask_1"
+          }
+        }
+      },
+      "superior_spiderman_mask_2": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_mask_2"
+          }
+        }
+      },
+      "superior_spiderman_mask_3": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_mask_3"
+          }
+        }
+      },
+      "superior_spiderman_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:superior_spiderman_black_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_2_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_2_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_belt_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_belt_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_black_mask"
+          }
+        }
+      },
+      "ultimate_spiderman_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_mask"
+          }
+        }
+      },
+      "ultimate_spiderman_black_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_black_mask"
+          }
+        }
+      },
+      "ultimate_spiderman_ucm_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:ultimate_spiderman_ucm_mask"
+          }
+        }
+      },
+      "yfn_spiderman_casero_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_casero_mask"
+          }
+        }
+      },
+      "into_the_spiderverse_sb_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:into_the_spiderverse_sb_mask"
+          }
+        }
+      },
+      "spiderman_miles_morales_leap_of_faith_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_miles_morales_leap_of_faith_mask"
+          }
+        }
+      },
+      "spiderman_bombastic_bag_man_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_bombastic_bag_man_mask"
+          }
+        }
+      },
+      "yfn_spiderman_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_mask"
+          }
+        }
+      },
+      "yfn_spiderman_oscorp_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:yfn_spiderman_oscorp_mask"
+          }
+        }
+      },
+      "spiderman_new_blue_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:spiderman_new_blue_mask"
+          }
+        }
+      },
+      "the_amazing_spiderman_casero_mask": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spiderverse:the_amazing_spiderman_casero_mask"
+          }
+        }
+      },
+      "marveladdons:death": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "num_to_spawn": 1,
+            "spawn_item": "spidermanaddon:suits_machine_spawn_egg"
+          }
+        },
+        "minecraft:timer": {
+          "looping": true,
+          "time": 0.1,
+          "time_down_event": {
+            "event": "marveladdons:death_on"
+          }
+        }
+      },
+      "marveladdons:death_on": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      },
+      "suits_machine:idle": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "play_sounds": "armor.equip_generic",
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_sneaking",
+                      "subject": "other"
+                    }
+                  ]
+                },
+                "event": "marveladdons:death"
+              }
+            }
+          ]
+        }
+      },
+      "suits": {
+        "minecraft:addrider": {
+          "entity_type": "spidermanaddon:suits_machine0"
+        }
+      },
+      "suits:machine": {
+        "minecraft:addrider": {
+          "entity_type": "spidermanaddon:suits_machine1"
+        }
+      }
+    },
+    "components": {
+      "minecraft:on_death": {
+        "event": "marveladdons:death",
+        "target": "self"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/suits_machine.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "suits_machine"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "ui_suits"
+        ],
+        "seats": [
+          {
+            "position": [
+              -0.75,
+              1.3,
+              1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 4
+          },
+          {
+            "position": [
+              0.75,
+              1.3,
+              1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 4
+          }
+        ]
+      },
+      "minecraft:navigation.walk": {},
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2.25
+      }
+    },
+    "events": {
+      "suits:spiderman_classic_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_classic_suit"
+          ]
+        }
+      },
+      "suits:spiderman_classic_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_classic_suit_1"
+          ]
+        }
+      },
+      "suits:spiderman_classic_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_classic_suit_2"
+          ]
+        }
+      },
+      "suits:spiderman_classic_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_classic_suit_3"
+          ]
+        }
+      },
+      "suits:human_spider_suit": {
+        "add": {
+          "component_groups": [
+            "suits:human_spider_suit"
+          ]
+        }
+      },
+      "suits:spiderman_raimi_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_raimi_suit"
+          ]
+        }
+      },
+      "suits:the_amazing_spiderman_1_suit": {
+        "add": {
+          "component_groups": [
+            "suits:the_amazing_spiderman_1_suit"
+          ]
+        }
+      },
+      "suits:spiderman_miles_morales_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_miles_morales_suit"
+          ]
+        }
+      },
+      "suits:iron_spider_suit": {
+        "add": {
+          "component_groups": [
+            "suits:iron_spider_suit"
+          ]
+        }
+      },
+      "suits:iron_spider_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:iron_spider_suit_1"
+          ]
+        }
+      },
+      "suits:iron_spider_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:iron_spider_suit_2"
+          ]
+        }
+      },
+      "suits:iron_spider_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:iron_spider_suit_3"
+          ]
+        }
+      },
+      "suits:anti_ock_suit": {
+        "add": {
+          "component_groups": [
+            "suits:anti_ock_suit"
+          ]
+        }
+      },
+      "suits:anti_ock_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:anti_ock_suit_1"
+          ]
+        }
+      },
+      "suits:anti_ock_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:anti_ock_suit_2"
+          ]
+        }
+      },
+      "suits:anti_ock_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:anti_ock_suit_3"
+          ]
+        }
+      },
+      "suits:miles_morales_wolverine_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_wolverine_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_wolverine_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_wolverine_suit_1"
+          ]
+        }
+      },
+      "suits:miles_morales_wolverine_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_wolverine_suit_2"
+          ]
+        }
+      },
+      "suits:miles_morales_wolverine_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_wolverine_suit_3"
+          ]
+        }
+      },
+      "suits:aracnido_jr_suit": {
+        "add": {
+          "component_groups": [
+            "suits:aracnido_jr_suit"
+          ]
+        }
+      },
+      "suits:ezekiel_sims_suit": {
+        "add": {
+          "component_groups": [
+            "suits:ezekiel_sims_suit"
+          ]
+        }
+      },
+      "suits:ghost_spider_suit": {
+        "add": {
+          "component_groups": [
+            "suits:ghost_spider_suit"
+          ]
+        }
+      },
+      "suits:iron_spider_ucm_suit": {
+        "add": {
+          "component_groups": [
+            "suits:iron_spider_ucm_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_into_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_into_the_spiderverse_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_10th_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_10th_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_10th_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_10th_suit_1"
+          ]
+        }
+      },
+      "suits:miles_morales_10th_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_10th_suit_2"
+          ]
+        }
+      },
+      "suits:miles_morales_10th_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_10th_suit_3"
+          ]
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_bodega_cat_suit"
+          ]
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_bodega_cat_suit_1"
+          ]
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_bodega_cat_suit_2"
+          ]
+        }
+      },
+      "suits:miles_morales_bodega_cat_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_bodega_cat_suit_3"
+          ]
+        }
+      },
+      "suits:miles_morales_gold_suit": {
+        "add": {
+          "component_groups": [
+            "suits:miles_morales_gold_suit"
+          ]
+        }
+      },
+      "suits:scarlet_spider_suit": {
+        "add": {
+          "component_groups": [
+            "suits:scarlet_spider_suit"
+          ]
+        }
+      },
+      "suits:scarlet_spider_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:scarlet_spider_suit_1"
+          ]
+        }
+      },
+      "suits:scarlet_spider_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:scarlet_spider_suit_2"
+          ]
+        }
+      },
+      "suits:scarlet_spider_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:scarlet_spider_suit_3"
+          ]
+        }
+      },
+      "suits:scarlet_spider_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "suits:scarlet_spider_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "suits:spectacular_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spectacular_spiderman_suit"
+          ]
+        }
+      },
+      "suits:spectacular_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spectacular_spiderman_black_suit"
+          ]
+        }
+      },
+      "suits:spectacular_spiderman_black_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:spectacular_spiderman_black_suit_2"
+          ]
+        }
+      },
+      "suits:spectacular_spiderman_black_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:spectacular_spiderman_black_suit_3"
+          ]
+        }
+      },
+      "suits:spider_punk_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spider_punk_suit"
+          ]
+        }
+      },
+      "suits:spiderman_67_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_67_suit"
+          ]
+        }
+      },
+      "suits:spiderman_90_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_90_suit"
+          ]
+        }
+      },
+      "suits:spiderman_90_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_90_black_suit"
+          ]
+        }
+      },
+      "suits:spiderman_90_black_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_90_black_suit_1"
+          ]
+        }
+      },
+      "suits:spiderman_2099_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_suit"
+          ]
+        }
+      },
+      "suits:spiderman_2099_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_suit_1"
+          ]
+        }
+      },
+      "suits:spiderman_2099_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_suit_2"
+          ]
+        }
+      },
+      "suits:spiderman_2099_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_suit_3"
+          ]
+        }
+      },
+      "suits:spiderman_2099_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "suits:spiderman_2099_across_the_spiderverse_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_2099_across_the_spiderverse_suit_1"
+          ]
+        }
+      },
+      "suits:spiderman_antivenom_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_antivenom_suit"
+          ]
+        }
+      },
+      "suits:spiderman_cero_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_cero_suit"
+          ]
+        }
+      },
+      "suits:spiderman_classic_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_classic_black_suit"
+          ]
+        }
+      },
+      "suits:spiderman_homemade_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_homemade_suit"
+          ]
+        }
+      },
+      "suits:spiderman_homecoming_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_homecoming_suit"
+          ]
+        }
+      },
+      "suits:spiderman_far_from_home_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_far_from_home_suit"
+          ]
+        }
+      },
+      "suits:spiderman_future_foundation_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_future_foundation_suit"
+          ]
+        }
+      },
+      "suits:spiderman_india_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_india_suit"
+          ]
+        }
+      },
+      "suits:spiderman_last_stand_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_last_stand_suit"
+          ]
+        }
+      },
+      "suits:spiderman_negative_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_negative_suit"
+          ]
+        }
+      },
+      "suits:spiderman_no_way_home_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_no_way_home_suit"
+          ]
+        }
+      },
+      "suits:spiderman_noir_into_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_noir_into_the_spiderverse_suit"
+          ]
+        }
+      },
+      "suits:spiderman_ps4_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps4_suit"
+          ]
+        }
+      },
+      "suits:spiderman_ps5_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps5_suit"
+          ]
+        }
+      },
+      "suits:spiderman_ps5_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps5_suit_1"
+          ]
+        }
+      },
+      "suits:spiderman_ps5_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps5_suit_2"
+          ]
+        }
+      },
+      "suits:spiderman_ps5_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps5_suit_3"
+          ]
+        }
+      },
+      "suits:spiderman_ps4_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps4_black_suit"
+          ]
+        }
+      },
+      "suits:spiderman_ps5_symbiote_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_ps5_symbiote_suit"
+          ]
+        }
+      },
+      "suits:spiderman_raimi_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_raimi_black_suit"
+          ]
+        }
+      },
+      "suits:spiderman_secret_wars_civil_war_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_secret_wars_civil_war_suit"
+          ]
+        }
+      },
+      "suits:spiderman_stealth_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_stealth_suit"
+          ]
+        }
+      },
+      "suits:spiderman_steve_ditko_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_steve_ditko_suit"
+          ]
+        }
+      },
+      "suits:spiderman_unlimited_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_unlimited_suit"
+          ]
+        }
+      },
+      "suits:spiderman_velocity_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_velocity_suit"
+          ]
+        }
+      },
+      "suits:spiderman_web_of_shadows_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_web_of_shadows_suit"
+          ]
+        }
+      },
+      "suits:spiderman_web_of_shadows_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_web_of_shadows_black_suit"
+          ]
+        }
+      },
+      "suits:spiderman_what_if_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_what_if_suit"
+          ]
+        }
+      },
+      "suits:spiderman_what_if_animated_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_what_if_animated_suit"
+          ]
+        }
+      },
+      "suits:spiderman_wrestler_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_wrestler_suit"
+          ]
+        }
+      },
+      "suits:spirit_spider_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spirit_spider_suit"
+          ]
+        }
+      },
+      "suits:superior_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "suits:superior_spiderman_suit"
+          ]
+        }
+      },
+      "suits:superior_spiderman_suit_1": {
+        "add": {
+          "component_groups": [
+            "suits:superior_spiderman_suit_1"
+          ]
+        }
+      },
+      "suits:superior_spiderman_suit_2": {
+        "add": {
+          "component_groups": [
+            "suits:superior_spiderman_suit_2"
+          ]
+        }
+      },
+      "suits:superior_spiderman_suit_3": {
+        "add": {
+          "component_groups": [
+            "suits:superior_spiderman_suit_3"
+          ]
+        }
+      },
+      "suits:superior_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:superior_spiderman_black_suit"
+          ]
+        }
+      },
+      "suits:the_amazing_spiderman_2_suit": {
+        "add": {
+          "component_groups": [
+            "suits:the_amazing_spiderman_2_suit"
+          ]
+        }
+      },
+      "suits:the_amazing_spiderman_belt_suit": {
+        "add": {
+          "component_groups": [
+            "suits:the_amazing_spiderman_belt_suit"
+          ]
+        }
+      },
+      "suits:the_amazing_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:the_amazing_spiderman_black_suit"
+          ]
+        }
+      },
+      "suits:ultimate_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "suits:ultimate_spiderman_suit"
+          ]
+        }
+      },
+      "suits:ultimate_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "suits:ultimate_spiderman_black_suit"
+          ]
+        }
+      },
+      "suits:ultimate_spiderman_ucm_suit": {
+        "add": {
+          "component_groups": [
+            "suits:ultimate_spiderman_ucm_suit"
+          ]
+        }
+      },
+      "suits:yfn_spiderman_casero_suit": {
+        "add": {
+          "component_groups": [
+            "suits:yfn_spiderman_casero_suit"
+          ]
+        }
+      },
+      "suits:venom_spiderman3": {
+        "add": {
+          "component_groups": [
+            "suits:venom_spiderman3"
+          ]
+        }
+      },
+      "suits:into_the_spiderverse_sb_suit": {
+        "add": {
+          "component_groups": [
+            "suits:into_the_spiderverse_sb_suit"
+          ]
+        }
+      },
+      "suits:spiderman_miles_morales_leap_of_faith_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_miles_morales_leap_of_faith_suit"
+          ]
+        }
+      },
+      "suits:spiderman_bombastic_bag_man_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_bombastic_bag_man_suit"
+          ]
+        }
+      },
+      "suits:yfn_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "suits:yfn_spiderman_suit"
+          ]
+        }
+      },
+      "suits:yfn_spiderman_oscorp_suit": {
+        "add": {
+          "component_groups": [
+            "suits:yfn_spiderman_oscorp_suit"
+          ]
+        }
+      },
+      "suits:spiderman_new_blue_suit": {
+        "add": {
+          "component_groups": [
+            "suits:spiderman_new_blue_suit"
+          ]
+        }
+      },
+      "suits:the_amazing_spiderman_casero_suit": {
+        "add": {
+          "component_groups": [
+            "suits:the_amazing_spiderman_casero_suit"
+          ]
+        }
+      },
+      "suits:silk_suit": {
+        "add": {
+          "component_groups": [
+            "suits:silk_suit"
+          ]
+        }
+      },
+      "spiderman_classic_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_suit"
+          ]
+        }
+      },
+      "spiderman_classic_suit_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_suit_1"
+          ]
+        }
+      },
+      "spiderman_classic_suit_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_suit_2"
+          ]
+        }
+      },
+      "spiderman_classic_suit_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_suit_3"
+          ]
+        }
+      },
+      "human_spider_suit": {
+        "add": {
+          "component_groups": [
+            "human_spider_suit"
+          ]
+        }
+      },
+      "spiderman_raimi_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_raimi_suit"
+          ]
+        }
+      },
+      "the_amazing_spiderman_1_suit": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_1_suit"
+          ]
+        }
+      },
+      "spiderman_miles_morales_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_miles_morales_suit"
+          ]
+        }
+      },
+      "iron_spider_suit": {
+        "add": {
+          "component_groups": [
+            "iron_spider_suit"
+          ]
+        }
+      },
+      "iron_spider_suit_1": {
+        "add": {
+          "component_groups": [
+            "iron_spider_suit_1"
+          ]
+        }
+      },
+      "iron_spider_suit_2": {
+        "add": {
+          "component_groups": [
+            "iron_spider_suit_2"
+          ]
+        }
+      },
+      "iron_spider_suit_3": {
+        "add": {
+          "component_groups": [
+            "iron_spider_suit_3"
+          ]
+        }
+      },
+      "anti_ock_suit": {
+        "add": {
+          "component_groups": [
+            "anti_ock_suit"
+          ]
+        }
+      },
+      "anti_ock_suit_1": {
+        "add": {
+          "component_groups": [
+            "anti_ock_suit_1"
+          ]
+        }
+      },
+      "anti_ock_suit_2": {
+        "add": {
+          "component_groups": [
+            "anti_ock_suit_2"
+          ]
+        }
+      },
+      "anti_ock_suit_3": {
+        "add": {
+          "component_groups": [
+            "anti_ock_suit_3"
+          ]
+        }
+      },
+      "miles_morales_wolverine_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_suit"
+          ]
+        }
+      },
+      "miles_morales_wolverine_suit_1": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_suit_1"
+          ]
+        }
+      },
+      "miles_morales_wolverine_suit_2": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_suit_2"
+          ]
+        }
+      },
+      "miles_morales_wolverine_suit_3": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_suit_3"
+          ]
+        }
+      },
+      "aracnido_jr_suit": {
+        "add": {
+          "component_groups": [
+            "aracnido_jr_suit"
+          ]
+        }
+      },
+      "ezekiel_sims_suit": {
+        "add": {
+          "component_groups": [
+            "ezekiel_sims_suit"
+          ]
+        }
+      },
+      "ghost_spider_suit": {
+        "add": {
+          "component_groups": [
+            "ghost_spider_suit"
+          ]
+        }
+      },
+      "iron_spider_ucm_suit": {
+        "add": {
+          "component_groups": [
+            "iron_spider_ucm_suit"
+          ]
+        }
+      },
+      "miles_morales_into_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_into_the_spiderverse_suit"
+          ]
+        }
+      },
+      "miles_morales_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "miles_morales_10th_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_suit"
+          ]
+        }
+      },
+      "miles_morales_10th_suit_1": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_suit_1"
+          ]
+        }
+      },
+      "miles_morales_10th_suit_2": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_suit_2"
+          ]
+        }
+      },
+      "miles_morales_10th_suit_3": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_suit_3"
+          ]
+        }
+      },
+      "miles_morales_bodega_cat_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_bodega_cat_suit"
+          ]
+        }
+      },
+      "miles_morales_bodega_cat_suit_1": {
+        "add": {
+          "component_groups": [
+            "miles_morales_bodega_cat_suit_1"
+          ]
+        }
+      },
+      "miles_morales_bodega_cat_suit_2": {
+        "add": {
+          "component_groups": [
+            "miles_morales_bodega_cat_suit_2"
+          ]
+        }
+      },
+      "miles_morales_bodega_cat_suit_3": {
+        "add": {
+          "component_groups": [
+            "miles_morales_bodega_cat_suit_3"
+          ]
+        }
+      },
+      "miles_morales_gold_suit": {
+        "add": {
+          "component_groups": [
+            "miles_morales_gold_suit"
+          ]
+        }
+      },
+      "scarlet_spider_suit": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_suit"
+          ]
+        }
+      },
+      "scarlet_spider_suit_1": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_suit_1"
+          ]
+        }
+      },
+      "scarlet_spider_suit_2": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_suit_2"
+          ]
+        }
+      },
+      "scarlet_spider_suit_3": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_suit_3"
+          ]
+        }
+      },
+      "scarlet_spider_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "spectacular_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_suit"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_suit"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_suit_2": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_suit_2"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_suit_3": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_suit_3"
+          ]
+        }
+      },
+      "spider_punk_suit": {
+        "add": {
+          "component_groups": [
+            "spider_punk_suit"
+          ]
+        }
+      },
+      "spiderman_67_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_67_suit"
+          ]
+        }
+      },
+      "spiderman_90_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_suit"
+          ]
+        }
+      },
+      "spiderman_90_black_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_black_suit"
+          ]
+        }
+      },
+      "spiderman_90_black_suit_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_black_suit_1"
+          ]
+        }
+      },
+      "spiderman_2099_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_suit"
+          ]
+        }
+      },
+      "spiderman_2099_suit_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_suit_1"
+          ]
+        }
+      },
+      "spiderman_2099_suit_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_suit_2"
+          ]
+        }
+      },
+      "spiderman_2099_suit_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_suit_3"
+          ]
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_across_the_spiderverse_suit"
+          ]
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_suit_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_across_the_spiderverse_suit_1"
+          ]
+        }
+      },
+      "spiderman_antivenom_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_antivenom_suit"
+          ]
+        }
+      },
+      "spiderman_cero_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_cero_suit"
+          ]
+        }
+      },
+      "spiderman_classic_black_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_black_suit"
+          ]
+        }
+      },
+      "spiderman_homemade_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_homemade_suit"
+          ]
+        }
+      },
+      "spiderman_homecoming_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_homecoming_suit"
+          ]
+        }
+      },
+      "spiderman_far_from_home_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_far_from_home_suit"
+          ]
+        }
+      },
+      "spiderman_future_foundation_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_future_foundation_suit"
+          ]
+        }
+      },
+      "spiderman_india_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_india_suit"
+          ]
+        }
+      },
+      "spiderman_last_stand_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_last_stand_suit"
+          ]
+        }
+      },
+      "spiderman_negative_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_negative_suit"
+          ]
+        }
+      },
+      "spiderman_no_way_home_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_no_way_home_suit"
+          ]
+        }
+      },
+      "spiderman_noir_into_the_spiderverse_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_noir_into_the_spiderverse_suit"
+          ]
+        }
+      },
+      "spiderman_ps4_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps4_suit"
+          ]
+        }
+      },
+      "spiderman_ps5_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_suit"
+          ]
+        }
+      },
+      "spiderman_ps5_suit_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_suit_1"
+          ]
+        }
+      },
+      "spiderman_ps5_suit_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_suit_2"
+          ]
+        }
+      },
+      "spiderman_ps5_suit_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_suit_3"
+          ]
+        }
+      },
+      "spiderman_ps4_black_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps4_black_suit"
+          ]
+        }
+      },
+      "spiderman_ps5_symbiote_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_symbiote_suit"
+          ]
+        }
+      },
+      "spiderman_raimi_black_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_raimi_black_suit"
+          ]
+        }
+      },
+      "spiderman_secret_wars_civil_war_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_secret_wars_civil_war_suit"
+          ]
+        }
+      },
+      "spiderman_stealth_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_stealth_suit"
+          ]
+        }
+      },
+      "spiderman_steve_ditko_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_steve_ditko_suit"
+          ]
+        }
+      },
+      "spiderman_unlimited_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_unlimited_suit"
+          ]
+        }
+      },
+      "spiderman_velocity_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_velocity_suit"
+          ]
+        }
+      },
+      "spiderman_web_of_shadows_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_web_of_shadows_suit"
+          ]
+        }
+      },
+      "spiderman_web_of_shadows_black_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_web_of_shadows_black_suit"
+          ]
+        }
+      },
+      "spiderman_what_if_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_what_if_suit"
+          ]
+        }
+      },
+      "spiderman_what_if_animated_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_what_if_animated_suit"
+          ]
+        }
+      },
+      "spiderman_wrestler_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_wrestler_suit"
+          ]
+        }
+      },
+      "spirit_spider_suit": {
+        "add": {
+          "component_groups": [
+            "spirit_spider_suit"
+          ]
+        }
+      },
+      "superior_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_suit"
+          ]
+        }
+      },
+      "superior_spiderman_suit_1": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_suit_1"
+          ]
+        }
+      },
+      "superior_spiderman_suit_2": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_suit_2"
+          ]
+        }
+      },
+      "superior_spiderman_suit_3": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_suit_3"
+          ]
+        }
+      },
+      "superior_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_black_suit"
+          ]
+        }
+      },
+      "the_amazing_spiderman_2_suit": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_2_suit"
+          ]
+        }
+      },
+      "the_amazing_spiderman_belt_suit": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_belt_suit"
+          ]
+        }
+      },
+      "the_amazing_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_black_suit"
+          ]
+        }
+      },
+      "ultimate_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_suit"
+          ]
+        }
+      },
+      "ultimate_spiderman_black_suit": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_black_suit"
+          ]
+        }
+      },
+      "ultimate_spiderman_ucm_suit": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_ucm_suit"
+          ]
+        }
+      },
+      "yfn_spiderman_casero_suit": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_casero_suit"
+          ]
+        }
+      },
+      "venom_spiderman3": {
+        "add": {
+          "component_groups": [
+            "venom_spiderman3"
+          ]
+        }
+      },
+      "into_the_spiderverse_sb_suit": {
+        "add": {
+          "component_groups": [
+            "into_the_spiderverse_sb_suit"
+          ]
+        }
+      },
+      "spiderman_miles_morales_leap_of_faith_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_miles_morales_leap_of_faith_suit"
+          ]
+        }
+      },
+      "spiderman_bombastic_bag_man_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_bombastic_bag_man_suit"
+          ]
+        }
+      },
+      "yfn_spiderman_suit": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_suit"
+          ]
+        }
+      },
+      "yfn_spiderman_oscorp_suit": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_oscorp_suit"
+          ]
+        }
+      },
+      "spiderman_new_blue_suit": {
+        "add": {
+          "component_groups": [
+            "spiderman_new_blue_suit"
+          ]
+        }
+      },
+      "the_amazing_spiderman_casero_suit": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_casero_suit"
+          ]
+        }
+      },
+      "silk_suit": {
+        "add": {
+          "component_groups": [
+            "silk_suit"
+          ]
+        }
+      },
+      "spiderman_classic_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_mask"
+          ]
+        }
+      },
+      "spiderman_classic_mask_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_mask_1"
+          ]
+        }
+      },
+      "spiderman_classic_mask_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_mask_2"
+          ]
+        }
+      },
+      "spiderman_classic_mask_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_mask_3"
+          ]
+        }
+      },
+      "human_spider_mask": {
+        "add": {
+          "component_groups": [
+            "human_spider_mask"
+          ]
+        }
+      },
+      "spiderman_raimi_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_raimi_mask"
+          ]
+        }
+      },
+      "the_amazing_spiderman_1_mask": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_1_mask"
+          ]
+        }
+      },
+      "spiderman_miles_morales_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_miles_morales_mask"
+          ]
+        }
+      },
+      "iron_spider_mask": {
+        "add": {
+          "component_groups": [
+            "iron_spider_mask"
+          ]
+        }
+      },
+      "iron_spider_mask_1": {
+        "add": {
+          "component_groups": [
+            "iron_spider_mask_1"
+          ]
+        }
+      },
+      "iron_spider_mask_2": {
+        "add": {
+          "component_groups": [
+            "iron_spider_mask_2"
+          ]
+        }
+      },
+      "iron_spider_mask_3": {
+        "add": {
+          "component_groups": [
+            "iron_spider_mask_3"
+          ]
+        }
+      },
+      "anti_ock_mask": {
+        "add": {
+          "component_groups": [
+            "anti_ock_mask"
+          ]
+        }
+      },
+      "anti_ock_mask_1": {
+        "add": {
+          "component_groups": [
+            "anti_ock_mask_1"
+          ]
+        }
+      },
+      "anti_ock_mask_2": {
+        "add": {
+          "component_groups": [
+            "anti_ock_mask_2"
+          ]
+        }
+      },
+      "anti_ock_mask_3": {
+        "add": {
+          "component_groups": [
+            "anti_ock_mask_3"
+          ]
+        }
+      },
+      "miles_morales_wolverine_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_mask"
+          ]
+        }
+      },
+      "miles_morales_wolverine_mask_1": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_mask_1"
+          ]
+        }
+      },
+      "miles_morales_wolverine_mask_2": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_mask_2"
+          ]
+        }
+      },
+      "miles_morales_wolverine_mask_3": {
+        "add": {
+          "component_groups": [
+            "miles_morales_wolverine_mask_3"
+          ]
+        }
+      },
+      "aracnido_jr_mask": {
+        "add": {
+          "component_groups": [
+            "aracnido_jr_mask"
+          ]
+        }
+      },
+      "ezekiel_sims_mask": {
+        "add": {
+          "component_groups": [
+            "ezekiel_sims_mask"
+          ]
+        }
+      },
+      "ghost_spider_mask": {
+        "add": {
+          "component_groups": [
+            "ghost_spider_mask"
+          ]
+        }
+      },
+      "iron_spider_ucm_mask": {
+        "add": {
+          "component_groups": [
+            "iron_spider_ucm_mask"
+          ]
+        }
+      },
+      "miles_morales_into_the_spiderverse_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_into_the_spiderverse_mask"
+          ]
+        }
+      },
+      "miles_morales_across_the_spiderverse_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_across_the_spiderverse_mask"
+          ]
+        }
+      },
+      "miles_morales_10th_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_mask"
+          ]
+        }
+      },
+      "miles_morales_10th_mask_1": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_mask_1"
+          ]
+        }
+      },
+      "miles_morales_10th_mask_2": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_mask_2"
+          ]
+        }
+      },
+      "miles_morales_10th_mask_3": {
+        "add": {
+          "component_groups": [
+            "miles_morales_10th_mask_3"
+          ]
+        }
+      },
+      "miles_morales_bodega_cat_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_bodega_cat_mask"
+          ]
+        }
+      },
+      "miles_morales_gold_mask": {
+        "add": {
+          "component_groups": [
+            "miles_morales_gold_mask"
+          ]
+        }
+      },
+      "scarlet_spider_mask": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_mask"
+          ]
+        }
+      },
+      "scarlet_spider_mask_1": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_mask_1"
+          ]
+        }
+      },
+      "scarlet_spider_mask_2": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_mask_2"
+          ]
+        }
+      },
+      "scarlet_spider_mask_3": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_mask_3"
+          ]
+        }
+      },
+      "scarlet_spider_across_the_spiderverse_mask": {
+        "add": {
+          "component_groups": [
+            "scarlet_spider_across_the_spiderverse_mask"
+          ]
+        }
+      },
+      "spectacular_spiderman_mask": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_mask"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_mask": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_mask"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_mask_2": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_mask_2"
+          ]
+        }
+      },
+      "spectacular_spiderman_black_mask_3": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman_black_mask_3"
+          ]
+        }
+      },
+      "spider_punk_mask": {
+        "add": {
+          "component_groups": [
+            "spider_punk_mask"
+          ]
+        }
+      },
+      "spiderman_67_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_67_mask"
+          ]
+        }
+      },
+      "spiderman_90_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_mask"
+          ]
+        }
+      },
+      "spiderman_90_black_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_black_mask"
+          ]
+        }
+      },
+      "spiderman_90_black_mask_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_90_black_mask_1"
+          ]
+        }
+      },
+      "spiderman_2099_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_mask"
+          ]
+        }
+      },
+      "spiderman_2099_mask_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_mask_1"
+          ]
+        }
+      },
+      "spiderman_2099_mask_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_mask_2"
+          ]
+        }
+      },
+      "spiderman_2099_mask_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_mask_3"
+          ]
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_across_the_spiderverse_mask"
+          ]
+        }
+      },
+      "spiderman_2099_across_the_spiderverse_mask_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099_across_the_spiderverse_mask_1"
+          ]
+        }
+      },
+      "spiderman_antivenom_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_antivenom_mask"
+          ]
+        }
+      },
+      "spiderman_cero_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_cero_mask"
+          ]
+        }
+      },
+      "spiderman_classic_black_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_classic_black_mask"
+          ]
+        }
+      },
+      "spiderman_homemade_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_homemade_mask"
+          ]
+        }
+      },
+      "spiderman_homecoming_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_homecoming_mask"
+          ]
+        }
+      },
+      "spiderman_far_from_home_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_far_from_home_mask"
+          ]
+        }
+      },
+      "spiderman_future_foundation_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_future_foundation_mask"
+          ]
+        }
+      },
+      "spiderman_india_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_india_mask"
+          ]
+        }
+      },
+      "spiderman_last_stand_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_last_stand_mask"
+          ]
+        }
+      },
+      "spiderman_negative_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_negative_mask"
+          ]
+        }
+      },
+      "spiderman_no_way_home_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_no_way_home_mask"
+          ]
+        }
+      },
+      "spiderman_noir_into_the_spiderverse_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_noir_into_the_spiderverse_mask"
+          ]
+        }
+      },
+      "spiderman_ps4_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps4_mask"
+          ]
+        }
+      },
+      "spiderman_ps5_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_mask"
+          ]
+        }
+      },
+      "spiderman_ps5_mask_1": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_mask_1"
+          ]
+        }
+      },
+      "spiderman_ps5_mask_2": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_mask_2"
+          ]
+        }
+      },
+      "spiderman_ps5_mask_3": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_mask_3"
+          ]
+        }
+      },
+      "spiderman_ps4_black_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps4_black_mask"
+          ]
+        }
+      },
+      "spiderman_ps5_symbiote_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_ps5_symbiote_mask"
+          ]
+        }
+      },
+      "spiderman_raimi_black_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_raimi_black_mask"
+          ]
+        }
+      },
+      "spiderman_secret_wars_civil_war_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_secret_wars_civil_war_mask"
+          ]
+        }
+      },
+      "spiderman_stealth_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_stealth_mask"
+          ]
+        }
+      },
+      "spiderman_steve_ditko_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_steve_ditko_mask"
+          ]
+        }
+      },
+      "spiderman_unlimited_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_unlimited_mask"
+          ]
+        }
+      },
+      "spiderman_velocity_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_velocity_mask"
+          ]
+        }
+      },
+      "spiderman_web_of_shadows_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_web_of_shadows_mask"
+          ]
+        }
+      },
+      "spiderman_web_of_shadows_black_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_web_of_shadows_black_mask"
+          ]
+        }
+      },
+      "spiderman_what_if_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_what_if_mask"
+          ]
+        }
+      },
+      "spiderman_what_if_animated_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_what_if_animated_mask"
+          ]
+        }
+      },
+      "spiderman_wrestler_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_wrestler_mask"
+          ]
+        }
+      },
+      "spirit_spider_mask": {
+        "add": {
+          "component_groups": [
+            "spirit_spider_mask"
+          ]
+        }
+      },
+      "superior_spiderman_mask": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_mask"
+          ]
+        }
+      },
+      "superior_spiderman_mask_1": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_mask_1"
+          ]
+        }
+      },
+      "superior_spiderman_mask_2": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_mask_2"
+          ]
+        }
+      },
+      "superior_spiderman_mask_3": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_mask_3"
+          ]
+        }
+      },
+      "superior_spiderman_black_mask": {
+        "add": {
+          "component_groups": [
+            "superior_spiderman_black_mask"
+          ]
+        }
+      },
+      "the_amazing_spiderman_2_mask": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_2_mask"
+          ]
+        }
+      },
+      "the_amazing_spiderman_belt_mask": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_belt_mask"
+          ]
+        }
+      },
+      "the_amazing_spiderman_black_mask": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_black_mask"
+          ]
+        }
+      },
+      "ultimate_spiderman_mask": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_mask"
+          ]
+        }
+      },
+      "ultimate_spiderman_black_mask": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_black_mask"
+          ]
+        }
+      },
+      "ultimate_spiderman_ucm_mask": {
+        "add": {
+          "component_groups": [
+            "ultimate_spiderman_ucm_mask"
+          ]
+        }
+      },
+      "yfn_spiderman_casero_mask": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_casero_mask"
+          ]
+        }
+      },
+      "into_the_spiderverse_sb_mask": {
+        "add": {
+          "component_groups": [
+            "into_the_spiderverse_sb_mask"
+          ]
+        }
+      },
+      "spiderman_miles_morales_leap_of_faith_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_miles_morales_leap_of_faith_mask"
+          ]
+        }
+      },
+      "spiderman_bombastic_bag_man_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_bombastic_bag_man_mask"
+          ]
+        }
+      },
+      "yfn_spiderman_mask": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_mask"
+          ]
+        }
+      },
+      "yfn_spiderman_oscorp_mask": {
+        "add": {
+          "component_groups": [
+            "yfn_spiderman_oscorp_mask"
+          ]
+        }
+      },
+      "spiderman_new_blue_mask": {
+        "add": {
+          "component_groups": [
+            "spiderman_new_blue_mask"
+          ]
+        }
+      },
+      "the_amazing_spiderman_casero_mask": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman_casero_mask"
+          ]
+        }
+      },
+      "silk_mask": {
+        "add": {
+          "component_groups": [
+            "silk_mask"
+          ]
+        }
+      },
+      "spidermanaddon:form_fabric": {
+        "set_property": {
+          "sp:form_fabric": true
+        }
+      },
+      "spidermanaddon:form_fabric_off": {
+        "set_property": {
+          "sp:form_fabric": false
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": [
+                "suits:spiderman_classic_suit",
+                "suits_machine:idle"
+              ]
+            }
+          }
+        ]
+      },
+      "marveladdons:death_on": {
+        "add": {
+          "component_groups": [
+            "marveladdons:death_on"
+          ]
+        }
+      },
+      "marveladdons:death": {
+        "add": {
+          "component_groups": [
+            "marveladdons:death"
+          ]
+        }
+      },
+      "suits:machine": {
+        "add": {
+          "component_groups": [
+            "suits:machine"
+          ]
+        }
+      },
+      "suits": {
+        "add": {
+          "component_groups": [
+            "suits"
+          ]
+        }
+      },
+      "suits:fabricar": {
+        "add": {
+          "component_groups": [
+            "suits:fabricar"
+          ]
+        }
+      },
+      "suits:fabricar_off": {
+        "remove": {
+          "component_groups": [
+            "suits:fabricar"
+          ]
+        }
+      }
+    }
+  }
+}

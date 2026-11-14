@@ -1,0 +1,23 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:bodega_cat",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"bodega_cat", "item_off_hand", "off_backpack_yfn"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "bodega_cat"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

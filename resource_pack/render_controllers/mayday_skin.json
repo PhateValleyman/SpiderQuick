@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.mayday_skin": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.mayday_skin" ]
+    },
+    "controller.render.mayday_skin.black_suit": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.mayday_black_suit_skin" ]
+    },
+    "controller.render.mayday_skin.head": {
+      "geometry": "Geometry.head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.head" ]
+    }
+  }
+}

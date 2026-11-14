@@ -1,0 +1,60 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "marveladdons:venom_player_explotion",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"skin0": "textures/3d_items/venom/agent_venom_blast",
+				"skin1": "textures/3d_items/venom/agent_venom_blast",
+				"skin2": "textures/3d_items/venom/blue_venom_blast",
+				"skin3": "textures/3d_items/venom/agent_venom_blast",
+				"skin4": "textures/3d_items/venom/ultimate_venom_blast",
+				"skin5": "textures/3d_items/venom/ultimate_venom_blast",
+				"skin6": "textures/3d_items/venom/agent_venom_blast",
+				"skin7": "textures/3d_items/venom/agent_venom_blast",
+				"skin8": "textures/3d_items/venom/snow_venom_blast",
+				"skin9": "textures/3d_items/venom/antivenom_blast",
+				"red": "textures/3d_items/venom/carnage_blast"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_blast",
+				"venom_lee_price": "geometry.agent_venom_blast",
+				"venom_movie": "geometry.agent_venom_blast",
+				"venompool": "geometry.agent_venom_blast",
+				"venom_2099": "geometry.agent_venom_blast",
+				"venom_snow": "geometry.agent_venom_blast",
+				"red": "geometry.agent_venom_blast"
+			},
+			"render_controllers": [
+				{"controller.render.venom.skin.0":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 0) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 0)"},
+				{"controller.render.venom.skin.1":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 1)"},
+				{"controller.render.venom.skin.2":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 3) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 2)"},
+				{"controller.render.venom.skin.3":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 3)"},
+				{"controller.render.venom.skin.4":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 4) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 4)"},
+				{"controller.render.venom.skin.5":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 5)"},
+				{"controller.render.venom.skin.6":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 2) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 6)"},
+				{"controller.render.venom.skin.7":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 7)"},
+				{"controller.render.venom.skin.8":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 5) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 8)"},
+				{"controller.render.venom.skin.9":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 1) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 8)"},
+				{"controller.render.venom.skin.red":"!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 6"}
+			],
+			"animations": {
+				"idle": "animation.agent_venom.blast.idle",
+				"blast.c": "controller.animation.agent_venom.blast",
+				"blast": "animation.agent_venom.blast"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';"
+				],
+				"animate": [
+					"idle",
+					"blast.c"
+				]
+			}
+		}
+	}
+} 

@@ -1,0 +1,508 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.suits_machine.fabricar" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"fabricar" : "q.is_sheared"
+						}
+					]
+				},
+				"fabricar" : {
+					"on_entry" : [ "/playsound suits_machine.1 @a[r=10]", "/playsound suits_machine.2 @a[r=10]" ],
+					"animations" : [ 
+						{ "spiderman_classic_suit": "q.variant == 0" },
+						{ "spiderman_classic_suit_1": "q.variant == 1" },
+						{ "spiderman_classic_suit_2": "q.variant == 2" },
+						{ "spiderman_classic_suit_3": "q.variant == 3" },
+						{ "human_spider_suit": "q.variant == 4" },
+						{ "spiderman_raimi_suit": "q.variant == 5" },
+						{ "the_amazing_spiderman_1_suit": "q.variant == 6" },
+						{ "spiderman_miles_morales_suit": "q.variant == 7" },
+						{ "anti_ock_suit": "q.variant == 8" },
+						{ "anti_ock_suit_1": "q.variant == 9" },
+						{ "anti_ock_suit_2": "q.variant == 10" },
+						{ "anti_ock_suit_3": "q.variant == 11" },
+						{ "iron_spider_suit": "q.variant == 12" },
+						{ "iron_spider_suit_1": "q.variant == 13" },
+						{ "iron_spider_suit_2": "q.variant == 14" },
+						{ "iron_spider_suit_3": "q.variant == 15" },
+						{ "miles_morales_wolverine_suit": "q.variant == 16" },
+						{ "miles_morales_wolverine_suit_1": "q.variant == 17" },
+						{ "miles_morales_wolverine_suit_2": "q.variant == 18" },
+						{ "miles_morales_wolverine_suit_3": "q.variant == 19" },
+						{ "aracnido_jr_suit": "q.variant == 20" },
+						{ "ezekiel_sims_suit": "q.variant == 21" },
+						{ "ghost_spider_suit": "q.variant == 22" },
+						{ "iron_spider_ucm_suit": "q.variant == 23" },
+						{ "miles_morales_into_the_spiderverse_suit": "q.variant == 24" },
+						{ "miles_morales_across_the_spiderverse_suit": "q.variant == 25" },
+						{ "miles_morales_10th_suit": "q.variant == 26" },
+						{ "miles_morales_10th_suit_1": "q.variant == 27" },
+						{ "miles_morales_10th_suit_2": "q.variant == 28" },
+						{ "miles_morales_10th_suit_3": "q.variant == 29" },
+						{ "miles_morales_bodega_cat_suit": "q.variant == 30" },
+						{ "miles_morales_bodega_cat_suit_1": "q.variant == 31" },
+						{ "miles_morales_bodega_cat_suit_2": "q.variant == 32" },
+						{ "miles_morales_bodega_cat_suit_3": "q.variant == 33" },
+						{ "miles_morales_gold_suit": "q.variant == 34" },
+						{ "scarlet_spider_suit": "q.variant == 35" },
+						{ "scarlet_spider_suit_1": "q.variant == 36" },
+						{ "scarlet_spider_suit_2": "q.variant == 37" },
+						{ "scarlet_spider_suit_3": "q.variant == 38" },
+						{ "scarlet_spider_across_the_spiderverse_suit": "q.variant == 39" },
+						{ "spectacular_spiderman_suit": "q.variant == 40" },
+						{ "spectacular_spiderman_black_suit": "q.variant == 41" },
+						{ "spectacular_spiderman_black_suit_2": "q.variant == 42" },
+						{ "spectacular_spiderman_black_suit_3": "q.variant == 43" },
+						{ "spider_punk_suit": "q.variant == 44" },
+						{ "spiderman_67_suit": "q.variant == 45" },
+						{ "spiderman_90_suit": "q.variant == 46" },
+						{ "spiderman_90_black_suit": "q.variant == 47" },
+						{ "spiderman_90_black_suit_1": "q.variant == 48" },
+						{ "spiderman_2099_suit": "q.variant == 49" },
+						{ "spiderman_2099_suit_1": "q.variant == 50" },
+						{ "spiderman_2099_suit_2": "q.variant == 51" },
+						{ "spiderman_2099_suit_3": "q.variant == 52" },
+						{ "spiderman_2099_across_the_spiderverse_suit": "q.variant == 53" },
+						{ "spiderman_2099_across_the_spiderverse_suit_1": "q.variant == 54" },
+						{ "spiderman_antivenom_suit": "q.variant == 55" },
+						{ "spiderman_cero_suit": "q.variant == 56" },
+						{ "spiderman_classic_black_suit": "q.variant == 57" },
+						{ "spiderman_homemade_suit": "q.variant == 58" },
+						{ "spiderman_homecoming_suit": "q.variant == 59" },
+						{ "spiderman_far_from_home_suit": "q.variant == 60" },
+						{ "spiderman_future_foundation_suit": "q.variant == 61" },
+						{ "spiderman_india_suit": "q.variant == 62" },
+						{ "spiderman_last_stand_suit": "q.variant == 63" },
+						{ "spiderman_negative_suit": "q.variant == 64" },
+						{ "spiderman_no_way_home_suit": "q.variant == 65" },
+						{ "spiderman_noir_into_the_spiderverse_suit": "q.variant == 66" },
+						{ "spiderman_ps4_suit": "q.variant == 67" },
+						{ "spiderman_ps5_suit": "q.variant == 68" },
+						{ "spiderman_ps5_suit_1": "q.variant == 69" },
+						{ "spiderman_ps5_suit_2": "q.variant == 70" },
+						{ "spiderman_ps5_suit_3": "q.variant == 71" },
+						{ "spiderman_ps4_black_suit": "q.variant == 72" },
+						{ "spiderman_ps5_symbiote_suit": "q.variant == 73" },
+						{ "spiderman_raimi_black_suit": "q.variant == 74" },
+						{ "spiderman_secret_wars_civil_war_suit": "q.variant == 75" },
+						{ "spiderman_stealth_suit": "q.variant == 76" },
+						{ "spiderman_steve_ditko_suit": "q.variant == 77" },
+						{ "spiderman_unlimited_suit": "q.variant == 78" },
+						{ "spiderman_velocity_suit": "q.variant == 79" },
+						{ "spiderman_web_of_shadows_suit": "q.variant == 80" },
+						{ "spiderman_web_of_shadows_black_suit": "q.variant == 81" },
+						{ "spiderman_what_if_suit": "q.variant == 82" },
+						{ "spiderman_what_if_animated_suit": "q.variant == 83" },
+						{ "spiderman_wrestler_suit": "q.variant == 84" },
+						{ "spirit_spider_suit": "q.variant == 85" },
+						{ "superior_spiderman_suit": "q.variant == 86" },
+						{ "superior_spiderman_suit_1": "q.variant == 87" },
+						{ "superior_spiderman_suit_2": "q.variant == 88" },
+						{ "superior_spiderman_suit_3": "q.variant == 89" },
+						{ "superior_spiderman_black_suit": "q.variant == 90" },
+						{ "the_amazing_spiderman_2_suit": "q.variant == 91" },
+						{ "the_amazing_spiderman_belt_suit": "q.variant == 92" },
+						{ "the_amazing_spiderman_black_suit": "q.variant == 93" },
+						{ "ultimate_spiderman_suit": "q.variant == 94" },
+						{ "ultimate_spiderman_black_suit": "q.variant == 95" },
+						{ "ultimate_spiderman_ucm_suit": "q.variant == 96" },
+						{ "yfn_spiderman_casero_suit": "q.variant == 97" },
+						{ "venom_spiderman3": "q.variant == 98" },
+						{ "into_the_spiderverse_sb_suit": "q.variant == 99" },
+						{ "spiderman_miles_morales_leap_of_faith_suit": "q.variant == 100" },
+						{ "spiderman_bombastic_bag_man_suit": "q.variant == 101" },
+						{ "yfn_spiderman_suit": "q.variant == 102" },
+						{ "yfn_spiderman_oscorp_suit": "q.variant == 103" },
+						{ "spiderman_new_blue_suit": "q.variant == 104" },
+						{ "the_amazing_spiderman_casero_suit": "q.variant == 105" },
+						{ "silk_suit": "q.variant == 106" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sheared"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.form_fabric" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "classic_suit" : "q.property('sp:form_fabric') == true && q.variant == 0" },
+						{ "classic_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 1" },
+						{ "classic_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 2" },
+						{ "classic_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 3" },
+						{ "human_spider_suit" : "q.property('sp:form_fabric') == true && q.variant == 4" },
+						{ "spiderman_raimi_suit" : "q.property('sp:form_fabric') == true && q.variant == 5" },
+						{ "the_amazing_spiderman_1_suit" : "q.property('sp:form_fabric') == true && q.variant == 6" },
+						{ "spiderman_miles_morales_suit" : "q.property('sp:form_fabric') == true && q.variant == 7" },
+						{ "anti_ock_suit" : "q.property('sp:form_fabric') == true && q.variant == 8" },
+						{ "anti_ock_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 9" },
+						{ "anti_ock_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 10" },
+						{ "anti_ock_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 11" },
+						{ "iron_spider_suit" : "q.property('sp:form_fabric') == true && q.variant == 12" },
+						{ "iron_spider_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 13" },
+						{ "iron_spider_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 14" },
+						{ "iron_spider_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 15" },
+						{ "miles_morales_wolverine_suit" : "q.property('sp:form_fabric') == true && q.variant == 16" },
+						{ "miles_morales_wolverine_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 17" },
+						{ "miles_morales_wolverine_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 18" },
+						{ "miles_morales_wolverine_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 19" },
+						{ "aracnido_jr_suit" : "q.property('sp:form_fabric') == true && q.variant == 20" },
+						{ "ezekiel_sims_suit" : "q.property('sp:form_fabric') == true && q.variant == 21" },
+						{ "ghost_spider_suit" : "q.property('sp:form_fabric') == true && q.variant == 22" },
+						{ "iron_spider_ucm_suit" : "q.property('sp:form_fabric') == true && q.variant == 23" },
+						{ "miles_morales_into_the_spiderverse_suit" : "q.property('sp:form_fabric') == true && q.variant == 24" },
+						{ "miles_morales_across_the_spiderverse_suit" : "q.property('sp:form_fabric') == true && q.variant == 25" },
+						{ "miles_morales_10th_suit" : "q.property('sp:form_fabric') == true && q.variant == 26" },
+						{ "miles_morales_10th_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 27" },
+						{ "miles_morales_10th_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 28" },
+						{ "miles_morales_10th_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 29" },
+						{ "miles_morales_bodega_cat_suit" : "q.property('sp:form_fabric') == true && q.variant == 30" },
+						{ "miles_morales_bodega_cat_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 31" },
+						{ "miles_morales_bodega_cat_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 32" },
+						{ "miles_morales_bodega_cat_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 33" },
+						{ "miles_morales_gold_suit" : "q.property('sp:form_fabric') == true && q.variant == 34" },
+						{ "scarlet_spider_suit" : "q.property('sp:form_fabric') == true && q.variant == 35" },
+						{ "scarlet_spider_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 36" },
+						{ "scarlet_spider_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 37" },
+						{ "scarlet_spider_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 38" },
+						{ "scarlet_spider_across_the_spiderverse_suit" : "q.property('sp:form_fabric') == true && q.variant == 39" },
+						{ "spectacular_spiderman_suit" : "q.property('sp:form_fabric') == true && q.variant == 40" },
+						{ "spectacular_spiderman_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 41" },
+						{ "spectacular_spiderman_black_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 42" },
+						{ "spectacular_spiderman_black_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 43" },
+						{ "spider_punk_suit" : "q.property('sp:form_fabric') == true && q.variant == 44" },
+						{ "spiderman_67_suit" : "q.property('sp:form_fabric') == true && q.variant == 45" },
+						{ "spiderman_90_suit" : "q.property('sp:form_fabric') == true && q.variant == 46" },
+						{ "spiderman_90_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 47" },
+						{ "spiderman_90_black_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 48" },
+						{ "spiderman_2099_suit" : "q.property('sp:form_fabric') == true && q.variant == 49" },
+						{ "spiderman_2099_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 50" },
+						{ "spiderman_2099_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 51" },
+						{ "spiderman_2099_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 52" },
+						{ "spiderman_2099_across_the_spiderverse_suit" : "q.property('sp:form_fabric') == true && q.variant == 53" },
+						{ "spiderman_2099_across_the_spiderverse_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 54" },
+						{ "spiderman_antivenom_suit" : "q.property('sp:form_fabric') == true && q.variant == 55" },
+						{ "spiderman_cero_suit" : "q.property('sp:form_fabric') == true && q.variant == 56" },
+						{ "spiderman_classic_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 57" },
+						{ "spiderman_homemade_suit" : "q.property('sp:form_fabric') == true && q.variant == 58" },
+						{ "spiderman_homecoming_suit" : "q.property('sp:form_fabric') == true && q.variant == 59" },
+						{ "spiderman_far_from_home_suit" : "q.property('sp:form_fabric') == true && q.variant == 60" },
+						{ "spiderman_future_foundation_suit" : "q.property('sp:form_fabric') == true && q.variant == 61" },
+						{ "spiderman_india_suit" : "q.property('sp:form_fabric') == true && q.variant == 62" },
+						{ "spiderman_last_stand_suit" : "q.property('sp:form_fabric') == true && q.variant == 63" },
+						{ "spiderman_negative_suit" : "q.property('sp:form_fabric') == true && q.variant == 64" },
+						{ "spiderman_no_way_home_suit" : "q.property('sp:form_fabric') == true && q.variant == 65" },
+						{ "spiderman_noir_into_the_spiderverse_suit" : "q.property('sp:form_fabric') == true && q.variant == 66" },
+						{ "spiderman_ps4_suit" : "q.property('sp:form_fabric') == true && q.variant == 67" },
+						{ "spiderman_ps5_suit" : "q.property('sp:form_fabric') == true && q.variant == 68" },
+						{ "spiderman_ps5_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 69" },
+						{ "spiderman_ps5_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 70" },
+						{ "spiderman_ps5_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 71" },
+						{ "spiderman_ps4_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 72" },
+						{ "spiderman_ps5_symbiote_suit" : "q.property('sp:form_fabric') == true && q.variant == 73" },
+						{ "spiderman_raimi_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 74" },
+						{ "spiderman_secret_wars_civil_war_suit" : "q.property('sp:form_fabric') == true && q.variant == 75" },
+						{ "spiderman_stealth_suit" : "q.property('sp:form_fabric') == true && q.variant == 76" },
+						{ "spiderman_steve_ditko_suit" : "q.property('sp:form_fabric') == true && q.variant == 77" },
+						{ "spiderman_unlimited_suit" : "q.property('sp:form_fabric') == true && q.variant == 78" },
+						{ "spiderman_velocity_suit" : "q.property('sp:form_fabric') == true && q.variant == 79" },
+						{ "spiderman_web_of_shadows_suit" : "q.property('sp:form_fabric') == true && q.variant == 80" },
+						{ "spiderman_web_of_shadows_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 81" },
+						{ "spiderman_what_if_suit" : "q.property('sp:form_fabric') == true && q.variant == 82" },
+						{ "spiderman_what_if_animated_suit" : "q.property('sp:form_fabric') == true && q.variant == 83" },
+						{ "spiderman_wrestler_suit" : "q.property('sp:form_fabric') == true && q.variant == 84" },
+						{ "spirit_spider_suit" : "q.property('sp:form_fabric') == true && q.variant == 85" },
+						{ "superior_spiderman_suit" : "q.property('sp:form_fabric') == true && q.variant == 86" },
+						{ "superior_spiderman_suit_1" : "q.property('sp:form_fabric') == true && q.variant == 87" },
+						{ "superior_spiderman_suit_2" : "q.property('sp:form_fabric') == true && q.variant == 88" },
+						{ "superior_spiderman_suit_3" : "q.property('sp:form_fabric') == true && q.variant == 89" },
+						{ "superior_spiderman_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 90" },
+						{ "the_amazing_spiderman_2_suit" : "q.property('sp:form_fabric') == true && q.variant == 91" },
+						{ "the_amazing_spiderman_belt_suit" : "q.property('sp:form_fabric') == true && q.variant == 92" },
+						{ "the_amazing_spiderman_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 93" },
+						{ "ultimate_spiderman_suit" : "q.property('sp:form_fabric') == true && q.variant == 94" },
+						{ "ultimate_spiderman_black_suit" : "q.property('sp:form_fabric') == true && q.variant == 95" },
+						{ "ultimate_spiderman_ucm_suit" : "q.property('sp:form_fabric') == true && q.variant == 96" },
+						{ "yfn_spiderman_casero_suit" : "q.property('sp:form_fabric') == true && q.variant == 97" },
+						{ "venom_spiderman3" : "q.property('sp:form_fabric') == true && q.variant == 98" },
+						{ "into_the_spiderverse_sb_suit" : "q.property('sp:form_fabric') == true && q.variant == 99" },
+						{ "spiderman_miles_morales_leap_of_faith_suit" : "q.property('sp:form_fabric') == true && q.variant == 100" },
+						{ "spiderman_bombastic_bag_man_suit" : "q.property('sp:form_fabric') == true && q.variant == 101" },
+						{ "yfn_spiderman_suit" : "q.property('sp:form_fabric') == true && q.variant == 102" },
+						{ "yfn_spiderman_oscorp_suit" : "q.property('sp:form_fabric') == true && q.variant == 103" },
+						{ "spiderman_new_blue_suit" : "q.property('sp:form_fabric') == true && q.variant == 104" },
+						{ "the_amazing_spiderman_casero_suit" : "q.property('sp:form_fabric') == true && q.variant == 105" },
+						{ "silk_suit" : "q.property('sp:form_fabric') == true && q.variant == 106" }
+					]
+				},
+				"silk_suit" : { "on_entry" : [ "/tag @p add silk_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"the_amazing_spiderman_casero_suit" : { "on_entry" : [ "/tag @p add the_amazing_spiderman_casero_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_new_blue_suit" : { "on_entry" : [ "/tag @p add spiderman_new_blue_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"yfn_spiderman_oscorp_suit" : { "on_entry" : [ "/tag @p add yfn_spiderman_oscorp_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"yfn_spiderman_suit" : { "on_entry" : [ "/tag @p add yfn_spiderman_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_bombastic_bag_man_suit" : { "on_entry" : [ "/tag @p add spiderman_bombastic_bag_man_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_miles_morales_leap_of_faith_suit" : { "on_entry" : [ "/tag @p add spiderman_miles_morales_leap_of_faith_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"into_the_spiderverse_sb_suit" : { "on_entry" : [ "/tag @p add into_the_spiderverse_sb_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"venom_spiderman3" : { "on_entry" : [ "/tag @p add venom_spiderman3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"yfn_spiderman_casero_suit" : { "on_entry" : [ "/tag @p add yfn_spiderman_casero_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"ultimate_spiderman_ucm_suit" : { "on_entry" : [ "/tag @p add ultimate_spiderman_ucm_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"ultimate_spiderman_black_suit" : { "on_entry" : [ "/tag @p add ultimate_spiderman_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"ultimate_spiderman_suit" : { "on_entry" : [ "/tag @p add ultimate_spiderman_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"the_amazing_spiderman_black_suit" : { "on_entry" : [ "/tag @p add the_amazing_spiderman_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"the_amazing_spiderman_belt_suit" : { "on_entry" : [ "/tag @p add the_amazing_spiderman_belt_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"the_amazing_spiderman_2_suit" : { "on_entry" : [ "/tag @p add the_amazing_spiderman_2_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"superior_spiderman_black_suit" : { "on_entry" : [ "/tag @p add superior_spiderman_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"superior_spiderman_suit_3" : { "on_entry" : [ "/tag @p add superior_spiderman_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"superior_spiderman_suit_2" : { "on_entry" : [ "/tag @p add superior_spiderman_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"superior_spiderman_suit_1" : { "on_entry" : [ "/tag @p add superior_spiderman_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"superior_spiderman_suit" : { "on_entry" : [ "/tag @p add superior_spiderman_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spirit_spider_suit" : { "on_entry" : [ "/tag @p add spirit_spider_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_wrestler_suit" : { "on_entry" : [ "/tag @p add spiderman_wrestler_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_what_if_animated_suit" : { "on_entry" : [ "/tag @p add spiderman_what_if_animated_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_what_if_suit" : { "on_entry" : [ "/tag @p add spiderman_what_if_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_web_of_shadows_black_suit" : { "on_entry" : [ "/tag @p add spiderman_web_of_shadows_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_web_of_shadows_suit" : { "on_entry" : [ "/tag @p add spiderman_web_of_shadows_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_velocity_suit" : { "on_entry" : [ "/tag @p add spiderman_velocity_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_unlimited_suit" : { "on_entry" : [ "/tag @p add spiderman_unlimited_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_steve_ditko_suit" : { "on_entry" : [ "/tag @p add spiderman_steve_ditko_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_stealth_suit" : { "on_entry" : [ "/tag @p add spiderman_stealth_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_secret_wars_civil_war_suit" : { "on_entry" : [ "/tag @p add spiderman_secret_wars_civil_war_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_raimi_black_suit" : { "on_entry" : [ "/tag @p add spiderman_raimi_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps5_symbiote_suit" : { "on_entry" : [ "/tag @p add spiderman_ps5_symbiote_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps4_black_suit" : { "on_entry" : [ "/tag @p add spiderman_ps4_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps5_suit_3" : { "on_entry" : [ "/tag @p add spiderman_ps5_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps5_suit_2" : { "on_entry" : [ "/tag @p add spiderman_ps5_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps5_suit_1" : { "on_entry" : [ "/tag @p add spiderman_ps5_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps5_suit" : { "on_entry" : [ "/tag @p add spiderman_ps5_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_ps4_suit" : { "on_entry" : [ "/tag @p add spiderman_ps4_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_noir_into_the_spiderverse_suit" : { "on_entry" : [ "/tag @p add spiderman_noir_into_the_spiderverse_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_no_way_home_suit" : { "on_entry" : [ "/tag @p add spiderman_no_way_home_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_negative_suit" : { "on_entry" : [ "/tag @p add spiderman_negative_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_last_stand_suit" : { "on_entry" : [ "/tag @p add spiderman_last_stand_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_india_suit" : { "on_entry" : [ "/tag @p add spiderman_india_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_future_foundation_suit" : { "on_entry" : [ "/tag @p add spiderman_future_foundation_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_far_from_home_suit" : { "on_entry" : [ "/tag @p add spiderman_far_from_home_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_homecoming_suit" : { "on_entry" : [ "/tag @p add spiderman_homecoming_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_homemade_suit" : { "on_entry" : [ "/tag @p add spiderman_homemade_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_classic_black_suit" : { "on_entry" : [ "/tag @p add spiderman_classic_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_cero_suit" : { "on_entry" : [ "/tag @p add spiderman_cero_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_antivenom_suit" : { "on_entry" : [ "/tag @p add spiderman_antivenom_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_across_the_spiderverse_suit_1" : { "on_entry" : [ "/tag @p add spiderman_2099_across_the_spiderverse_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_across_the_spiderverse_suit" : { "on_entry" : [ "/tag @p add spiderman_2099_across_the_spiderverse_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_suit" : { "on_entry" : [ "/tag @p add spiderman_2099_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_suit_1" : { "on_entry" : [ "/tag @p add spiderman_2099_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_suit_2" : { "on_entry" : [ "/tag @p add spiderman_2099_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_2099_suit_3" : { "on_entry" : [ "/tag @p add spiderman_2099_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_90_black_suit_1" : { "on_entry" : [ "/tag @p add spiderman_90_black_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_90_black_suit" : { "on_entry" : [ "/tag @p add spiderman_90_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_90_suit" : { "on_entry" : [ "/tag @p add spiderman_90_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_67_suit" : { "on_entry" : [ "/tag @p add spiderman_67_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_gold_suit" : { "on_entry" : [ "/tag @p add miles_morales_gold_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"scarlet_spider_suit" : { "on_entry" : [ "/tag @p add scarlet_spider_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"scarlet_spider_suit_1" : { "on_entry" : [ "/tag @p add scarlet_spider_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"scarlet_spider_suit_2" : { "on_entry" : [ "/tag @p add scarlet_spider_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"scarlet_spider_suit_3" : { "on_entry" : [ "/tag @p add scarlet_spider_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"scarlet_spider_across_the_spiderverse_suit" : { "on_entry" : [ "/tag @p add scarlet_spider_across_the_spiderverse_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spectacular_spiderman_suit" : { "on_entry" : [ "/tag @p add spectacular_spiderman_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spectacular_spiderman_black_suit" : { "on_entry" : [ "/tag @p add spectacular_spiderman_black_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spectacular_spiderman_black_suit_2" : { "on_entry" : [ "/tag @p add spectacular_spiderman_black_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spectacular_spiderman_black_suit_3" : { "on_entry" : [ "/tag @p add spectacular_spiderman_black_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spider_punk_suit" : { "on_entry" : [ "/tag @p add spider_punk_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"aracnido_jr_suit" : { "on_entry" : [ "/tag @p add aracnido_jr_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"ezekiel_sims_suit" : { "on_entry" : [ "/tag @p add ezekiel_sims_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"ghost_spider_suit" : { "on_entry" : [ "/tag @p add ghost_spider_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"iron_spider_ucm_suit" : { "on_entry" : [ "/tag @p add iron_spider_ucm_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_into_the_spiderverse_suit" : { "on_entry" : [ "/tag @p add miles_morales_into_the_spiderverse_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_across_the_spiderverse_suit" : { "on_entry" : [ "/tag @p add miles_morales_across_the_spiderverse_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_10th_suit" : { "on_entry" : [ "/tag @p add miles_morales_10th_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_10th_suit_1" : { "on_entry" : [ "/tag @p add miles_morales_10th_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_10th_suit_2" : { "on_entry" : [ "/tag @p add miles_morales_10th_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_10th_suit_3" : { "on_entry" : [ "/tag @p add miles_morales_10th_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_bodega_cat_suit" : { "on_entry" : [ "/tag @p add miles_morales_bodega_cat_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_bodega_cat_suit_1" : { "on_entry" : [ "/tag @p add miles_morales_bodega_cat_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_bodega_cat_suit_2" : { "on_entry" : [ "/tag @p add miles_morales_bodega_cat_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_bodega_cat_suit_3" : { "on_entry" : [ "/tag @p add miles_morales_bodega_cat_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+
+				"classic_suit" : { "on_entry" : [ "/tag @p add classic_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"classic_suit_1" : { "on_entry" : [ "/tag @p add classic_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"classic_suit_2" : { "on_entry" : [ "/tag @p add classic_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"classic_suit_3" : { "on_entry" : [ "/tag @p add classic_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"human_spider_suit" : { "on_entry" : [ "/tag @p add human_spider_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_raimi_suit" : { "on_entry" : [ "/tag @p add spiderman_raimi_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"the_amazing_spiderman_1_suit" : { "on_entry" : [ "/tag @p add the_amazing_spiderman_1_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"spiderman_miles_morales_suit" : { "on_entry" : [ "/tag @p add spiderman_miles_morales_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"anti_ock_suit" : { "on_entry" : [ "/tag @p add anti_ock_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"anti_ock_suit_1" : { "on_entry" : [ "/tag @p add anti_ock_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"anti_ock_suit_2" : { "on_entry" : [ "/tag @p add anti_ock_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"anti_ock_suit_3" : { "on_entry" : [ "/tag @p add anti_ock_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"iron_spider_suit" : { "on_entry" : [ "/tag @p add iron_spider_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"iron_spider_suit_1" : { "on_entry" : [ "/tag @p add iron_spider_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"iron_spider_suit_2" : { "on_entry" : [ "/tag @p add iron_spider_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"iron_spider_suit_3" : { "on_entry" : [ "/tag @p add iron_spider_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_wolverine_suit" : { "on_entry" : [ "/tag @p add miles_morales_wolverine_suit", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_wolverine_suit_1" : { "on_entry" : [ "/tag @p add miles_morales_wolverine_suit_1", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_wolverine_suit_2" : { "on_entry" : [ "/tag @p add miles_morales_wolverine_suit_2", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				},
+				"miles_morales_wolverine_suit_3" : { "on_entry" : [ "/tag @p add miles_morales_wolverine_suit_3", "/event entity @s spidermanaddon:form_fabric_off" ], "transitions" : [ { "default" : "q.property('sp:form_fabric') == false" } ]
+				}
+			}
+		},
+		"controller.animation.suits_machine.destroy" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"destroy" : "!q.is_riding"
+						}
+					]
+				},
+				"destroy" : {
+					"on_entry" : [ "/event entity @s despawn" ]
+				}
+			}
+		},
+		"controller.animation.suits_machine" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"suits_machine" : "!q.has_rider"
+						}
+					]
+				},
+				"suits_machine" : {
+					"on_entry" : [ "/event entity @s suits" ],
+					"transitions" : [
+						{
+							"suits" : "(1.0)"
+						}
+					]
+				},
+				"suits" : {
+					"on_entry" : [ "/event entity @s suits:machine" ],
+					"transitions" : [
+						{
+							"default" : "q.has_rider"
+						}
+					]
+				}
+			}
+		}
+	}
+}

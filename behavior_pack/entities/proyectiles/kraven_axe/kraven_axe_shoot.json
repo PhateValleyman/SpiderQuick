@@ -1,0 +1,109 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:kraven_axe_shoot",
+			"runtime_identifier": "minecraft:arrow",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "hit",
+							"target": "self"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							9,
+							9.0
+						],
+						"knockback": true,
+						"destroy_on_hit": true,
+						"semi_random_diff_damage": false,
+						"filter": "query.has_any_family(\"bullet\")"
+					},
+					"particle_on_hit": {
+						"num_particles": 5,
+						"on_entity_hit": true,
+						"particle_type": "reddust"
+					}
+				},
+				"power": 1.65,
+				"gravity": 0.0,
+				"anchor": 1,
+				"destroy_on_hurt": true,
+				"uncertainty_base": 1,
+				"uncertainty_multiplier": 1,
+				"should_bounce": false,
+				"inertia": 1,
+				"offset": [
+					0,
+					0,
+					0
+				],
+				"multiple_targets": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"hit": {
+				"sequence": [
+              {
+                "queue_command": {
+                  "command": [
+						"playsound spiderman_effects.kick_blast @a[r=15]",
+						"particle spidermanaddon:yellow_electric_hit ~ ~ ~",
+						"particle spidermanaddon:yellow_electric_hit2 ~ ~ ~",
+						"particle spidermanaddon:yellow_electric_hit3 ~ ~ ~"
+                  ]
+                }
+              },
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

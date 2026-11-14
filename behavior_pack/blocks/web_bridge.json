@@ -1,0 +1,116 @@
+{
+	"format_version": "1.21.60",
+	"minecraft:block": {
+		"description": {
+			"identifier": "spidermanaddon:web_bridge",
+			"states": {
+				"spidermanaddon:north": [
+					false,
+					true
+				],
+				"spidermanaddon:south": [
+					false,
+					true
+				],
+				"spidermanaddon:east": [
+					false,
+					true
+				],
+				"spidermanaddon:west": [
+					false,
+					true
+				],
+				"spidermanaddon:on_placed": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction",
+				"group": "minecraft:itemGroup.name.fence"
+			}
+		},
+		"components": {
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 45,
+				"catch_chance_modifier": 80
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					12,
+					10
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					16,
+					12
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "web_bridge",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.web_bridge",
+				"bone_visibility": {
+					"preview": "query.block_state('spidermanaddon:on_placed') == false",
+					"fence": "query.block_state('spidermanaddon:on_placed') == true",
+					"north": "query.block_state('spidermanaddon:north') == true",
+					"south": "query.block_state('spidermanaddon:south') == true",
+					"east": "query.block_state('spidermanaddon:east') == true",
+					"west": "query.block_state('spidermanaddon:west') == true"
+				}
+			},
+			"minecraft:transformation": {
+				"translation": [
+					0,
+					0.255,
+					0
+				]
+			},
+			"minecraft:destructible_by_explosion": true,
+			"tag:spidermanaddon:fence": {},
+			"tag:wood": {},
+			"minecraft:custom_components": [
+				"spidermanaddon:web_bridge"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('spidermanaddon:on_placed') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.web_bridge",
+						"bone_visibility": {
+							"north": "query.block_state('spidermanaddon:north')",
+							"south": "query.block_state('spidermanaddon:south')",
+							"east": "query.block_state('spidermanaddon:east')",
+							"west": "query.block_state('spidermanaddon:west')",
+							"preview": false,
+							"fence": true
+						}
+					}
+				}
+			}
+		]
+	}
+}

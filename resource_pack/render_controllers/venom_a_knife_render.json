@@ -1,0 +1,117 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.venom.a_knife.0": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife0" ]
+    },
+    "controller.render.venom.a_knife.1": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife1" ]
+    },
+    "controller.render.venom.a_knife.2": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife2" ]
+    },
+    "controller.render.venom.a_knife.3": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife3" ]
+    },
+    "controller.render.venom.a_knife.4": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife4" ]
+    },
+    "controller.render.venom.a_knife.5": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife5" ]
+    },
+    "controller.render.venom.a_knife.6": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife6" ]
+    },
+    "controller.render.venom.a_knife.7": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife7" ]
+    },
+    "controller.render.venom.a_knife.8": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife8" ]
+    },
+    "controller.render.venom.a_knife.9": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife9" ]
+    },
+    "controller.render.venom.a_knife.red": {
+      "geometry": "Geometry.a_knife_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife_red" ]
+    },
+
+
+    "controller.render.venom.a_knife_third.0": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife0" ]
+    },
+    "controller.render.venom.a_knife_third.1": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife1" ]
+    },
+    "controller.render.venom.a_knife_third.2": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife2" ]
+    },
+    "controller.render.venom.a_knife_third.3": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife3" ]
+    },
+    "controller.render.venom.a_knife_third.4": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife4" ]
+    },
+    "controller.render.venom.a_knife_third.5": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife5" ]
+    },
+    "controller.render.venom.a_knife_third.6": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife6" ]
+    },
+    "controller.render.venom.a_knife_third.7": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife7" ]
+    },
+    "controller.render.venom.a_knife_third.8": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife8" ]
+    },
+    "controller.render.venom.a_knife_third.9": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife9" ]
+    },
+    "controller.render.venom.a_knife_third.red": {
+      "geometry": "Geometry.a_knife_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.a_knife_red" ]
+    }
+  }
+}

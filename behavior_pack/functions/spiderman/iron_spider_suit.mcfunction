@@ -1,0 +1,1 @@
+give @s spiderverse:iron_spider_mask 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}

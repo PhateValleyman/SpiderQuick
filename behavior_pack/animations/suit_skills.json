@@ -1,0 +1,494 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.player.suit_skills.spirit_fire": {
+      "loop": false,
+      "animation_length": 10.1,
+      "timeline": {
+        "0.0": [
+		  "/effect @s fire_resistance 10 0 true",
+		  "/event entity @s spiderman:spirit_fire",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.25 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~0.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~0.25 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "0.5": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "3": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "4.5": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "6": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "7.5": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "9": [
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run summon marveladdons:spirit_fire ~ ~1.75 ~",
+		  "/execute at @e[type=!item, type=!xp_orb, type=!player, family=monster, r=10] run particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~",
+		  "/particle spidermanaddon:spirit_fire_skull ~ ~1.75 ~"
+        ],
+        "10": [
+		  "/event entity @s spiderman:spirit_fire"
+        ]
+      }
+    },
+    "animation.player.suit_skills.equaliser": {
+      "loop": false,
+      "animation_length": 5.1,
+      "timeline": {
+        "0.0": [
+		  "/effect @s strength 5 255",
+		  "/event entity @s spiderman:equaliser"
+        ],
+        "5.0": [
+		  "/event entity @s spiderman:equaliser_off"
+        ]
+      }
+    },
+    "animation.player.suit_skills.electric_punch": {
+      "loop": false,
+      "animation_length": 10.0,
+      "timeline": {
+        "0.0": [
+		  
+        ]
+      }
+    },
+    "animation.player.suit_skills.electric_punch.shoot": {
+      "loop": false,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.0": [
+		  "/event entity @s spiderman:electric_punch"
+        ]
+      }
+    },
+    "animation.player.suit_skills.blitz.run": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+		  "/event entity @s spiderman:blitz.run",
+		  "/playanimation @s animation.player.new_spiderman.blitz",
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ],
+        "0.1": [
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ],
+        "0.2": [
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ],
+        "0.3": [
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ],
+        "0.4": [
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ],
+        "0.49": [
+		  "/particle spidermanaddon:blitz_run ^-0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^0.5 ^1 ^",
+		  "/particle spidermanaddon:blitz_run ^-0.1 ^0.25 ^",
+		  "/particle spidermanaddon:blitz_run ^0.1 ^0.25 ^"
+        ]
+      }
+    },
+    "animation.player.suit_skills.blitz": {
+      "loop": false,
+      "animation_length": 15.1,
+      "timeline": {
+        "0.0": [
+		  "/effect @s speed 15 5 true", 
+		  "/event entity @s spiderman:blitz"
+        ],
+        "15.0": [
+		  "/event entity @s spiderman:blitz.off"
+        ]
+      }
+    },
+    "animation.player.suit_skills.arms_race": {
+      "loop": false,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.0": [
+		  "/tag @s add arms_race_p"
+        ],
+        "0.1": [
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!arms_race_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:electric_web_invoke ~ ~1.25 ~ ~ ~ level0.pvp",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:electric_web_invoke ~ ~1.25 ~ ~ ~ level0"
+        ],
+        "0.2": [
+		  "/tag @s remove arms_race_p"
+        ]
+      }
+    },
+    "animation.player.suit_skills.holo_decoy": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+		  "/summon spidermanaddon:holo_decoy_punch ~ ~1.75 ~",
+		  "/summon spidermanaddon:holo_decoy_entity ~-0.1 ~1.75 ~",
+		  "/summon spidermanaddon:holo_decoy_entity ~0.1 ~1.75 ~",
+		  "/summon spidermanaddon:holo_decoy_entity ~ ~1.75 ~-0.1"
+        ]
+      }
+    },
+    "animation.player.suit_skills.low_gravity": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+		  "/effect @s slow_falling 10 4 true"
+        ]
+      }
+    },
+    "animation.player.suit_skills.rock_out": {
+      "loop": false,
+      "animation_length": 1.8,
+      "timeline": {
+        "0.0": [
+		  "/tag @s add rock_out_p"
+        ],
+        "0.1": [
+		  "/event entity @s spiderman:rock_out",
+		  "/playanimation @s animation.player.suit_skills.rock_out",
+		  "/execute at @s[tag=pvp_player] run effect @e[type=!item, type=!xp_orb, tag=!rock_out_p, type=!spidermanaddon:web_shooter, r=8] levitation 1 0 true",
+		  "/execute at @s[tag=!pvp_player] run effect @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] levitation 1 0 true",
+		  "/playsound spiderman_effects.rock_out @a[r=10] ~ ~1 ~ 1 1.1"
+        ],
+        "0.8": [
+		  "/execute at @s[tag=pvp_player] run damage @e[type=!item, type=!xp_orb, tag=!rock_out_p, type=!spidermanaddon:web_shooter, r=8] 25",
+		  "/execute at @s[tag=!pvp_player] run effect @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] levitation 1 19 true",
+		  
+		  "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] 25",
+		  "/execute at @s[tag=!pvp_player] run effect @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] levitation 1 19 true",
+		  
+		  "/particle spidermanaddon:rock_out ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out1 ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out2 ~ ~0.25 ~",
+		  "/playsound spiderman_effects.negative_shockwave @a[r=10] ~ ~1 ~ 0.5 1.5"
+        ],
+        "0.9": [
+		  "/particle spidermanaddon:rock_out3 ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out4 ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out5 ~ ~0.25 ~",
+		  "/playsound spiderman_effects.negative_shockwave @a[r=10] ~ ~1 ~ 0.5 1.5"
+        ],
+        "1.0": [
+		  "/particle spidermanaddon:rock_out6 ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out7 ~ ~0.25 ~",
+		  "/particle spidermanaddon:rock_out8 ~ ~0.25 ~"
+        ],
+        "1.4": [
+		  "/execute at @s[tag=pvp_player] run damage @e[type=!item, type=!xp_orb, tag=!rock_out_p, type=!spidermanaddon:web_shooter, r=8] 25",
+		  "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] 25"
+        ],
+        "1.75": [
+		  "/event entity @s spiderman:rock_out.off",
+		  "/tag @s remove rock_out_p"
+        ]
+      }
+    },
+    "animation.player.suit_skills.negative_shockwave": {
+      "loop": false,
+      "animation_length": 1.1,
+      "timeline": {
+        "0.0": [
+		  "/tag @s add negative_shockwave_p"
+        ],
+        "0.1": [
+		  "/event entity @s spiderman:web_blossom",
+		  "/playanimation @s animation.player.suit_skills.negative_shockwave"
+        ],
+        "0.45": [
+		  "/execute at @s[tag=pvp_player] run damage @e[type=!item, type=!xp_orb, tag=!negative_shockwave_p, type=!spidermanaddon:web_shooter, r=8] 35",
+		  "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=8] 35",
+		  "/particle spidermanaddon:negative_shockwave ~ ~ ~",
+		  "/particle spidermanaddon:negative_shockwave1 ~ ~ ~",
+		  "/playsound spiderman_effects.negative_shockwave @a[r=10]"
+        ],
+        "1.0": [
+		  "/event entity @s spiderman:skills.off",
+		  "/tag @s remove negative_shockwave_p"
+        ]
+      }
+    },
+    "animation.player.suit_skills.web_blossom": {
+      "loop": false,
+      "animation_length": 3.0,
+      "timeline": {
+        "0.0": [
+          "/event entity @s spiderman:web_blossom",
+		  "/effect @s levitation 1 20 true",
+		  "/effect @s slow_falling 2 0 true",
+		  "/playanimation @s animation.player.suit_skills.web_blossom",
+		  "/tag @s add web_blossom_p"
+        ],
+        "0.25": [
+          "/playsound spiderman_effects.reflexes @a[r=10]"
+        ],
+        "0.4": [
+		  "/effect @s levitation 0 13 true"
+        ],
+        "0.5": [
+		  "/effect @s slow_falling 2 0 true",
+		  "/effect @s levitation 1 0 true"
+        ],
+        "0.75": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "0.8": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "0.9": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.0": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.1": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.2": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.3": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.4": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.5": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.6": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.7": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.8": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "1.9": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.0": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.1": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.2": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.3": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.4": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.5": [
+		  "/playsound web_shooter_sounds.shoot @a[r=10]",
+		  "/particle spidermanaddon:web_blossom.0 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.1 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.2 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.3 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.4 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.5 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.6 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.7 ~ ~1 ~",
+		  "/particle spidermanaddon:web_blossom.8 ~ ~1 ~",
+		  "/execute at @s[tag=pvp_player] at @e[type=!item, type=!xp_orb, tag=!web_blossom_p, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1",
+		  "/execute at @s[tag=!pvp_player] at @e[type=!item, type=!xp_orb, type=!player, type=!spidermanaddon:web_shooter, r=15] run summon spidermanaddon:web_shooter ~ ~1 ~ ~ ~ level1"
+        ],
+        "2.6": [
+		  "/tag @s remove web_blossom_p"
+        ],
+        "2.9": [
+		  "/event entity @s spiderman:skills.off"
+        ]
+      }
+    }
+  }
+}

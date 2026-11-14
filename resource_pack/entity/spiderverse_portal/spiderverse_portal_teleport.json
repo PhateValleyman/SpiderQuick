@@ -1,0 +1,41 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spiderverse_portal_teleport",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"outline": "outline_light"
+			},
+			"textures": {
+				"default": "textures/entity/spiderverse_portal_outline",
+				"outline": "textures/entity/spiderverse_portal"
+			},
+			"geometry": {
+				"default": "geometry.spiderverse_portal",
+				"outline": "geometry.spiderverse_portal_outline"
+			},
+			"animations": {
+				"idle": "animation.spiderverse_portal.idle",
+				"on": "animation.spiderverse_portal.teleport.on"
+			},
+            "scripts": {
+				"pre_animation": [
+					"v.y_rot = query.property('spidermanaddon:y_rot');"
+				],
+                "animate": [
+                    "idle",
+					"on"
+                ]
+            },
+			"render_controllers": [
+				"controller.render.spiderverse_portal",
+				"controller.render.spiderverse_portal.outline"
+			],
+            "spawn_egg": {
+                "base_color": "#d3d3d1",
+                "overlay_color": "#aab0ab"
+            }
+		}
+	}
+}

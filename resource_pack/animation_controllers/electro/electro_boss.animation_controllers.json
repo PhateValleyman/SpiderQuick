@@ -1,0 +1,66 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.electro_boss": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "look_at_target",
+			{ "laser": "q.has_target && q.property('spidermanaddon:electro_phase') == 1" },
+			{ "blue_laser": "q.has_target && q.property('spidermanaddon:electro_phase') == 0" }
+          ],
+          "transitions": [
+            {
+              "death": "query.property('spidermanaddon:electro_dead')"
+            },
+            {
+              "angry": "query.property('spidermanaddon:electro_angry')"
+            }
+          ]
+        },
+        "angry": {
+          "animations": [
+            "angry"
+          ],
+          "transitions": [
+            {
+              "idle": "!query.property('spidermanaddon:electro_angry')"
+            }
+          ]
+        },
+        "death": {
+          "animations": [
+            "death"
+          ],
+          "transitions": []
+        }
+      }
+    },
+    "controller.animation.electro_boss.phases": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            "phase1"
+          ],
+          "transitions": [
+            {
+              "angry": "query.property('spidermanaddon:electro_phase') == 1"
+            }
+          ]
+        },
+        "angry": {
+          "animations": [
+            "phase2"
+          ],
+          "transitions": [
+            {
+              "idle": "query.property('spidermanaddon:electro_phase') == 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

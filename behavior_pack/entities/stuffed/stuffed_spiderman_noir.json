@@ -1,0 +1,49 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:stuffed_spiderman_noir",
+      "is_spawnable": true,
+
+      "is_summonable": true,
+
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/stuffed/stuffed_spiderman_noir.json"
+      },
+      "minecraft:type_family": {
+        "family": [ "stuffed_spiderman_noir" ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+
+      "minecraft:scale": {
+        "value": 1.15
+      },"minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    },
+        
+		"events": {
+
+		}
+  }
+}

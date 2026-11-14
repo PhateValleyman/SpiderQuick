@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:iron_spider_suit.armor_stand",
+			"item": {
+				"spiderverse:iron_spider_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor",
+				"outline": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/iron_spider_suit",
+				"outline": "textures/suits/iron_spider_suit"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_suit_x64",
+				"outline": "geometry.spiderman_mask_x64"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			]
+		}
+	}
+}

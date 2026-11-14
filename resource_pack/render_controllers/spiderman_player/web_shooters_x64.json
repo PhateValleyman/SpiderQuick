@@ -1,0 +1,277 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.web_shooter_x64.default": {
+      "geometry": "Geometry.web_shooter_x64_default",
+      "part_visibility": [
+        { "*": "!q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.web_shooter_x64_default" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_classic_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_classic_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.spiderman_classic_suit" ]
+    },
+    "controller.render.web_shooter_x64.miles_morales_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'miles_morales_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.miles_morales_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_steve_ditko_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_steve_ditko_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_steve_ditko_suit" ]
+    },
+    "controller.render.web_shooter_x64.miles_morales_gold_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'miles_morales_gold_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.miles_morales_gold_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_raimi_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_raimi_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.spiderman_raimi_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_raimi_black_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_raimi_black_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.spiderman_raimi_black_suit" ]
+    },
+    "controller.render.web_shooter_x64.iron_spider_ucm_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'iron_spider_ucm_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.iron_spider_ucm_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_stealth_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_stealth_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.spiderman_stealth_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_ps4_black_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_ps4_black_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.spiderman_ps4_black_suit" ]
+    },
+    "controller.render.web_shooter_x64.spider_gwen": {
+      "geometry": "Geometry.web_shooter_x64_female",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spider_gwen')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter_x64" } ],
+      "textures": [ "Texture.web_shooter_spider_gwen" ]
+    },
+    "controller.render.web_shooter_x64.the_amazing_spiderman_1_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'the_amazing_spiderman_1_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.the_amazing_spiderman_1_suit" ]
+    },
+    "controller.render.web_shooter_x64.the_amazing_spiderman_2_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'the_amazing_spiderman_2_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.the_amazing_spiderman_2_suit" ]
+    },
+    "controller.render.web_shooter_x64.ultimate_spiderman_ucm_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'ultimate_spiderman_ucm_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.ultimate_spiderman_ucm_suit" ]
+    },
+    "controller.render.web_shooter_x64.scarlet_spider_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'scarlet_spider_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.scarlet_spider_suit" ]
+    },
+    "controller.render.web_shooter_x64.spectacular_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spectacular_spiderman_black_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit" ]
+    },
+    "controller.render.web_shooter_x64.spectacular_spiderman_black_suit_2": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spectacular_spiderman_black_suit_2')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit_2" ]
+    },
+    "controller.render.web_shooter_x64.spectacular_spiderman_black_suit_3": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spectacular_spiderman_black_suit_3')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit_3" ]
+    },
+    "controller.render.web_shooter_x64.spectacular_spiderman_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spectacular_spiderman_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spectacular_spiderman_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_90_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_90_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_90_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_67_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_67_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_67_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_wrestler_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_wrestler_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_wrestler_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_homecoming_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_homecoming_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_homecoming_suit" ]
+    },
+    "controller.render.web_shooter_x64.ultimate_spiderman_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'ultimate_spiderman_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.ultimate_spiderman_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_far_from_home_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_far_from_home_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_far_from_home_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_no_way_home_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_no_way_home_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_no_way_home_suit" ]
+    },
+    "controller.render.web_shooter_x64.ultimate_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'ultimate_spiderman_black_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.ultimate_spiderman_black_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_classic_black_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_classic_black_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_classic_black_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_black_suit_comic": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_black_suit_comic')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_black_suit_comic" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_homemade_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_homemade_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.spiderman_homemade_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_ps4_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_ps4_suit')" }
+      ],
+      "materials": [ { "*": "Material.guns" } ],
+      "textures": [ "Texture.spiderman_ps4_suit" ]
+    },
+    "controller.render.web_shooter_x64.spiderman_negative_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'spiderman_negative_suit')" }
+      ],
+      "materials": [ { "*": "Material.guns" } ],
+      "textures": [ "Texture.spiderman_negative_suit" ]
+    },
+    "controller.render.web_shooter_x64.human_spider_suit": {
+      "geometry": "Geometry.web_shooter_x64",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'human_spider_suit')" }
+      ],
+      "materials": [ { "*": "Material.web_shooter" } ],
+      "textures": [ "Texture.human_spider_suit" ]
+    },
+    "controller.render.web_shooter_x64.outline": {
+      "geometry": "Geometry.web_shooter_x64_outline",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'outline_suit')" }
+      ],
+      "materials": [ { "*": "Material.outline" } ],
+      "textures": [ "Texture.outline" ]
+    }
+  }
+}

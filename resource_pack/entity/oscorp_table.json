@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:oscorp_table",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/blocks/oscorp_table"
+			},
+			"geometry": {
+				"default": "geometry.oscorp_table"
+			},
+			"animations": {
+				"loop": "animation.oscorp_table.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "oscorp_table",
+				"texture_index": 0
+			}
+		}
+	}
+}

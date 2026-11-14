@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "spidermanaddon:punisher_house_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 45281763,
+      "separation": 4,
+      "spacing": 32,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "spidermanaddon:punisher_house_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

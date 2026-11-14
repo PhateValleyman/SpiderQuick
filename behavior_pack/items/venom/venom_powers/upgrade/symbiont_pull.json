@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:symbiont_pull",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"symbiont_pull","item_hand","off_second_hand","venom_item","spiderman:off_falling"
+                ]
+            },
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "symbiont_pull"
+			}
+		}
+	}
+}

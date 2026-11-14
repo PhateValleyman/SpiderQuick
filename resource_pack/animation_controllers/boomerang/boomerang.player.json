@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.player.boomerang" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.boomerang.shoot.c",
+						"player.tarantula.attack.c"
+					]
+				}
+			}
+		},
+    "controller.animation.player.boomerang.shoot": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'boomerang_shooter') && q.property('arathnido:animation') == 2"
+            }
+          ]
+        },
+        "shoot": {
+          "animations": [
+            "player.boomerang.shoot"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.player.tarantula.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "q.equipped_item_any_tag('slot.weapon.mainhand', 'tarantula_attack') && q.property('arathnido:animation') == 2"
+            }
+          ],
+					"blend_transition": 0.1
+        },
+        "shoot": {
+          "animations": [
+            "player.tarantula.attack"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ],
+					"blend_transition": 0.1
+        }
+      }
+    }
+  }
+}

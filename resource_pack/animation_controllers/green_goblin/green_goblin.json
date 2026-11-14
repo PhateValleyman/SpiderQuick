@@ -1,0 +1,47 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.green_goblin.hability" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hability" : "q.variant == 1"
+						},
+						{
+							"hability_2" : "q.variant == 2"
+						},
+						{
+							"hability_3" : "q.variant == 3"
+						}
+					]
+				},
+				"hability" : {
+					"animations" : [ "hability" ],
+					"transitions" : [
+						{
+							"default" : "(q.variant == 0 || q.variant == 3 || q.variant == 2)"
+						}
+					]
+				},
+				"hability_2" : {
+					"animations" : [ "hability_2" ],
+					"transitions" : [
+						{
+							"default" : "(q.variant == 0 || q.variant == 1 || q.variant == 3)"
+						}
+					]
+				},
+				"hability_3" : {
+					"animations" : [ "hability_3" ],
+					"transitions" : [
+						{
+							"default" : "(q.variant == 0 || q.variant == 1 || q.variant == 2)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:air_compressor_spawn_egg"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      "DDD",
+      "BCB"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:phantom_membrane"
+      },
+      "B": {
+        "item": "minecraft:iron_block"
+      },
+      "C": {
+        "item": "minecraft:piston"
+      },
+      "D": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:air_compressor_spawn_egg",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

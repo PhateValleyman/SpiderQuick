@@ -1,0 +1,305 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:criminal_gang",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties":{
+		"nido:scan":{ "type": "bool", "default": true, "client_sync": true }
+      },
+	"animations": {
+		"prisoner.armor": "animation.prisoner.armor"
+	},
+	"scripts": {
+		"animate": [
+			{ "prisoner.armor": "q.is_pregnant"}
+		]
+	}
+    },
+    "component_groups": {
+      "spidermanaddon:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "prisoner:variant0": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+	  },
+      "prisoner:variant1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+	  },
+      "prisoner:variant2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+	  },
+      "prisoner:variant3": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+	  },
+		"prisoner:armor": {
+      "minecraft:knockback_resistance": {
+        "value": 0.5
+      },
+        "minecraft:is_pregnant": {
+        }
+		},
+      "prisoner:default": {
+        "minecraft:variant": {
+          "value": 0
+        },
+		"minecraft:behavior.melee_attack": {
+		  "priority": 2,
+		  "speed_multiplier": 2.25,
+		  "track_target": true,
+		  "reach_multiplier": 1.4
+		},
+      "minecraft:attack": {
+        "damage": 4
+      }
+	  },
+      "prisoner:melee": {
+        "minecraft:variant": {
+          "value": 1
+        },
+		"minecraft:behavior.melee_attack": {
+		  "priority": 2,
+		  "speed_multiplier": 2.25,
+		  "track_target": true,
+		  "reach_multiplier": 1.4
+		},
+      "minecraft:attack": {
+        "damage": 11
+      }
+	  },
+      "prisoner:pistol": {
+		  "minecraft:shooter": {
+			"def": "spidermanaddon:pistol_shoot"
+		  },
+		  "minecraft:behavior.ranged_attack": {
+			"priority": 0,
+			"burst_shots": 3,
+			"burst_interval": 0.25,
+			"attack_interval_min": 6.0,
+			"attack_interval_max": 7.5,
+			"attack_radius": 16.0
+		  },
+        "minecraft:variant": {
+          "value": 2
+        }
+	  },
+      "prisoner:weapon": {
+		"minecraft:timer": {
+			  "looping": false,
+			  "time": 2.5,
+			  "time_down_event": {
+				"event": "spiderman:shoot_fusil_off"
+			}
+		},
+		  "minecraft:shooter": {
+			"def": "spidermanaddon:fusil_shoot"
+		  },
+		  "minecraft:behavior.ranged_attack": {
+			"priority": 0,
+			"burst_shots": 10,
+			"burst_interval": 0.1,
+			"attack_interval_min": 6.75,
+			"attack_interval_max": 8.5,
+			"attack_radius": 16.0
+		  },
+        "minecraft:variant": {
+          "value": 3
+        }
+	  }
+	},
+    "components": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(10,50)",
+          "on_death": "query.last_hit_by_player ? Math.Random(5,30) : 0"
+        },
+      "minecraft:type_family": {
+        "family": [ "mob", "prisoner", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/prisoner.json"
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 2
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 32
+          }
+        ],
+        "must_see": false
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0.1,
+        "max": 0.1
+      },
+		"minecraft:pushable": {
+			"is_pushable": true,
+			"is_pushable_by_piston": true
+		},
+
+      "minecraft:scale": {
+        "value": 1.05
+      },      
+	  "minecraft:physics": {
+		"has_gravity":true,
+		"has_collision":true
+      },
+      "minecraft:collision_box": {
+          "width": 0.6,
+          "height": 1.8
+      }
+    },
+        
+		"events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 25,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "prisoner:variant0"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "prisoner:variant1"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "prisoner:variant2"
+                  ]
+                }
+              },
+              {
+                "weight": 25,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "prisoner:variant3"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "prisoner:armor"
+                  ]
+                }
+              },
+              {
+                "weight": 50,
+                "remove": {
+                },
+                "add": {
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "prisoner:pistol" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "prisoner:melee" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "prisoner:weapon" ] }
+              },
+              {
+                "weight": 5,
+                "add": { "component_groups": [ "prisoner:default" ] }
+              }
+            ]
+          }
+        ]
+      },
+      "spidermanaddon:destroy": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:despawn"
+          ]
+        }
+      },
+      "nido:scan": { "set_property":{ "nido:scan": false }, "queue_command": { "command": [ "tag @s add nido_scan" ] }
+      },
+      "nido:scan.off": { "set_property":{ "nido:scan": true }, "queue_command": { "command": [ "tag @s remove nido_scan" ] }
+      },
+      "minecraft:prisoner_fall": {
+        "add": {
+          "component_groups": [
+            "off:reload"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "scar_silencer:reload"
+          ]
+        }
+      }
+	}
+  }
+}

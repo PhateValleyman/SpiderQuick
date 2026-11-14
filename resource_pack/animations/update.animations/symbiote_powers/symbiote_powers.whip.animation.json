@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.symbiote_powers.whip.effect": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.0": {
+					"effect": "whip",
+					"locator": "whip"
+				}
+			}
+		},
+		"animation.symbiote_powers.whip.move": {
+			"loop": true,
+			"bones": {
+				"whip": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

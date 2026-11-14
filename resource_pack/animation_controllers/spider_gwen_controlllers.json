@@ -1,0 +1,112 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.spider_gwen.mask":{
+			"states":{
+				"default":{
+					"transitions": [
+						{
+							"mask.on":"q.equipped_item_any_tag('slot.armor.head', 'spiderman_suit')"
+						}
+					]
+				},
+				"mask.on":{
+					"animations":["spider_gwen.mask.off"],
+						"transitions": [
+							{
+								"mask.time":"q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_mask') && q.is_using_item"
+							},
+							{
+								"default":"!q.equipped_item_any_tag('slot.armor.head', 'spiderman_suit')"
+							}
+							]
+						},
+				"mask.time":{
+					"animations":["spider_gwen.mask.time.off"],
+						"transitions":[
+							{
+								"mask.off":"q.any_animation_finished"}
+							]
+						},
+				"mask.time.2":{
+					"animations":["spider_gwen.mask.time.on"],
+						"transitions":[
+							{
+								"mask.on":"q.any_animation_finished"}
+							]
+						},
+				"mask.off":{
+					"animations":["spider_gwen.mask.on"],
+						"transitions":[
+							{
+								"mask.time.2":"q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_mask') && q.is_using_item"
+							},
+							{
+								"default":"!q.equipped_item_any_tag('slot.armor.head', 'spiderman_suit')"
+							}
+							]
+						}
+					}
+				},
+		"controller.animation.spider_woman.suit" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_woman.suit" : "q.equipped_item_any_tag('slot.armor.feet', 'spider_woman')"
+						}
+					]
+				},
+				"spider_woman.suit" : {
+					"animations" : [ "spider_woman.suit" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.feet', 'spider_woman')"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spider_gwen.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_gwen.idle" : "q.equipped_item_any_tag('slot.armor.head', 'spider_gwen')"
+						}
+					]
+				},
+				"spider_gwen.idle" : {
+					"animations" : [ "spider_gwen.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.head', 'spider_gwen')"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.anya_corazon.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"anya_corazon.idle" : "q.equipped_item_any_tag('slot.armor.head', 'anya_corazon')"
+						}
+					]
+				},
+				"anya_corazon.idle" : {
+					"animations" : [ "spider_gwen.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.head', 'anya_corazon')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

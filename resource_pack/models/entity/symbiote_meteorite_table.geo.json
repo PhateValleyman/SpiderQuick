@@ -1,0 +1,112 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.symbiote_meteorite_table",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "meteorite",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-3.5, 17, -4], "size": [6, 6, 6], "pivot": [-2, 21, 0], "rotation": [0, 0, 42.5], "uv": [0, 14]},
+						{"origin": [-2.15, 21.5, -3], "size": [6, 6, 4], "inflate": 0.2, "pivot": [-2, 21, 0], "rotation": [0, 0, 17.5], "uv": [20, 22]},
+						{"origin": [-8.15, 22.5, -2], "size": [6, 6, 4], "inflate": 0.2, "pivot": [-2, 21, 0], "rotation": [0, 0, 45], "uv": [0, 26]},
+						{"origin": [-6.5, 19, -3.5], "size": [8, 8, 6], "pivot": [-2, 21, 0], "rotation": [0, 0, 42.5], "uv": [0, 0]},
+						{"origin": [1.5, 18, -3], "size": [2, 8, 5], "inflate": 0.3, "pivot": [-2, 21, 0], "rotation": [0, 0, 42.5], "uv": [24, 9]}
+					]
+				},
+				{
+					"name": "ten0",
+					"pivot": [3, 0, 0],
+					"cubes": [
+						{"origin": [1.5, 0, -1.5], "size": [3, 6, 3], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "ten1",
+					"parent": "ten0",
+					"pivot": [3, 6, 0],
+					"rotation": [0, 0, -27.5],
+					"cubes": [
+						{"origin": [2, 6.2, -1], "size": [2, 6, 2], "inflate": 0.2, "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "ten2",
+					"parent": "ten1",
+					"pivot": [3, 12.2, 0],
+					"rotation": [0, 0, 45],
+					"cubes": [
+						{"origin": [2, 12.2, -1], "size": [2, 6, 2], "uv": [40, 0]}
+					]
+				},
+				{
+					"name": "ten3",
+					"pivot": [-4, 0, 3],
+					"rotation": [0, -132.5, 0],
+					"cubes": [
+						{"origin": [-5.5, 0, 1.5], "size": [3, 6, 3], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "ten4",
+					"parent": "ten3",
+					"pivot": [-4, 6, 3],
+					"rotation": [0, 0, -27.5],
+					"cubes": [
+						{"origin": [-5, 6.2, 2], "size": [2, 6, 2], "inflate": 0.2, "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "ten5",
+					"parent": "ten4",
+					"pivot": [-4, 12.2, 3],
+					"rotation": [0, 0, 45],
+					"cubes": [
+						{"origin": [-5, 12.2, 2], "size": [2, 6, 2], "uv": [40, 0]}
+					]
+				},
+				{
+					"name": "ten6",
+					"pivot": [-4, 0, -3],
+					"rotation": [0, 157.5, 0],
+					"cubes": [
+						{"origin": [-5.5, 0, -4.5], "size": [3, 6, 3], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "ten7",
+					"parent": "ten6",
+					"pivot": [-4, 6, -3],
+					"rotation": [0, 0, -27.5],
+					"cubes": [
+						{"origin": [-5, 6.2, -4], "size": [2, 6, 2], "inflate": 0.2, "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "ten8",
+					"parent": "ten7",
+					"pivot": [-4, 12.2, -3],
+					"rotation": [0, 0, 45],
+					"cubes": [
+						{"origin": [-5, 12.2, -4], "size": [2, 6, 2], "uv": [40, 0]}
+					]
+				},
+				{
+					"name": "p0",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, -2.85, -8], "size": [16, 1, 16], "inflate": 2, "uv": [0, 36]}
+					]
+				}
+			]
+		}
+	]
+}

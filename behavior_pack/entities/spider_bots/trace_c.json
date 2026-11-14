@@ -1,0 +1,286 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:trace_c",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ 
+			"spider_bot.walk.c",
+			"spider_bot.fly.c",
+			{"spider_bot.slow_falling": "!q.is_sitting && q.is_tamed && q.is_sheared"}
+		]
+      },
+      "animations": {
+		  "spider_bot.fly.c": "controller.animation.spider_bot.fly",
+		  "spider_bot.fly": "animation.spider_bot.fly",
+		  "spider_bot.walk.c": "controller.animation.spider_bot.walk",
+		  "spider_bot.walk": "animation.spider_bot.walk",
+		  "spider_bot.slow_falling": "animation.spider_bot.slow_falling"
+      }
+    },
+
+    "component_groups": {
+      "trace_c:no_can_fly": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "value": "spidermanaddon:spider_bot_fly_controllers"},
+                "event": "trace_c:can_fly"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "spiderman_effects.pop"
+            }
+          ]
+        }
+      },
+      "trace_c:can_fly": {
+        "minecraft:is_sheared": {
+        }
+      },
+      "minecraft:trace_c_wild": {
+        "minecraft:tameable": {
+          "probability": 1.0,
+          "tame_items": "spidermanaddon:spider_bots_controllers",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:trace_c_tame": {
+      "minecraft:shooter": {
+        "def": "spidermanaddon:trace_c_shoot"
+      },
+      "minecraft:celebrate": {
+        "minecraft:behavior.celebrate": {
+          "priority": 5,
+          "celebration_sound": "celebrate",
+          "sound_interval": {
+            "range_min": 2.0,
+            "range_max": 7.0
+          },
+          "jump_interval": {
+            "range_min": 1.0,
+            "range_max": 3.5
+          },
+          "duration": 30.0,
+          "on_celebration_end_event": {
+            "event": "minecraft:stop_celebrating",
+            "target": "self"
+          }
+        }
+      },
+        "minecraft:celebrate_hunt": {
+          "celebration_targets": {
+            "all_of": [
+              {
+                "test": "is_family",
+                "value": "monster"
+              }
+            ]
+          },
+          "broadcast": true,
+          "duration": 10,
+          "celebrate_sound": "celebrate",
+          "sound_interval": {
+            "range_min": 2.0,
+            "range_max": 5.0
+          },
+          "radius": 16
+        },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 0,
+		"burst_shots": 1,
+		"burst_interval": 0.1,
+        "attack_interval_min": 1.0,
+        "attack_interval_max": 1.5,
+        "attack_radius": 16.0
+      },
+        "minecraft:is_tamed": {
+        },
+        "minecraft:health": {
+          "value": 100,
+          "max": 100
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.breed": {
+          "priority": 7
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+
+        "minecraft:sittable": {
+        },
+
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+
+    "components": {
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "trace_c", "mob" ]
+      },
+        "minecraft:scale": {
+          "value": 0.85
+        },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.8
+      },
+      "minecraft:health": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:navigation.climb": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "redstone",
+            "heal_amount": 3
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "target_dist": 0.4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.beg": {
+        "priority": 9,
+        "look_distance": 8,
+        "look_time": [ 2, 4 ],
+        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
+                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:trace_c_wild"
+          ]
+        }
+      },
+      "trace_c:can_fly": {
+        "add": {
+          "component_groups": [
+            "trace_c:can_fly"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "trace_c:no_can_fly"
+          ]
+        },
+          "queue_command": {
+            "command": [
+              "playsound spiderman_effects.pop @a[r=10]"
+            ]
+          }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:trace_c_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:trace_c_tame",
+			"trace_c:no_can_fly"
+          ]
+        }
+      }
+    }
+  }
+}

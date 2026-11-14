@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spider_man_suits_stand",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "stand",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-16, 0, -5], "size": [32, 2, 11], "inflate": 0.05, "uv": [0, 0]},
+						{"origin": [11, 0.025, -5], "size": [5, 2, 11], "pivot": [16, 2, 0], "rotation": [0, 0, 29], "uv": [52, 54]},
+						{"origin": [-16, 0.025, -5], "size": [5, 2, 11], "pivot": [-16, 2, 0], "rotation": [0, 0, -29], "uv": [42, 23]},
+						{"origin": [-10, 1.5, 5], "size": [20, 38, 1], "inflate": -0.025, "uv": [0, 13]},
+						{"origin": [10, 1.55, -5], "size": [2, 38, 11], "inflate": 0.025, "pivot": [12, 2, 0.5], "rotation": [0, 0, -2.25], "uv": [26, 54]},
+						{"origin": [-10.5, 37.5, -5], "size": [21, 2, 11], "inflate": 0.05, "uv": [31, 41]},
+						{"origin": [-7.5, 37.25, -4.5], "size": [15, 1, 9], "inflate": 0.05, "uv": [42, 13]},
+						{"origin": [-12, 1.55, -5], "size": [2, 38, 11], "inflate": 0.025, "pivot": [-12, 2, 0.5], "rotation": [0, 0, 2.25], "uv": [0, 52]}
+					]
+				}
+			]
+		}
+	]
+}

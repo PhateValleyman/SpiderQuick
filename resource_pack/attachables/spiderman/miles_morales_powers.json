@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:miles_morales_powers",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/rubik"
+			},
+			"geometry": {
+				"default": "geometry.rubik"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "q.is_sneaking && q.is_jumping && !q.is_on_ground && q.property('arathnido:ability0') == 1" }
+			],
+			"scripts": {
+                "animate": [
+                    "rubik",
+					"rubik.c"
+                ]
+			},
+            "animations": {
+                "rubik": "animation.rubik.acrobacia.2",
+				"rubik.anim": "animation.player.new_spiderman.balanceo.acrobacia.2",
+				"rubik.c": "controller.animation.rubik"
+            }
+		}
+	}
+}

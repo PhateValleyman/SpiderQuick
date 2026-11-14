@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:backpack_empty.player",
+			"item": {
+				"spidermanaddon:backpack_empty": "query.owner_identifier == 'minecraft:player'"
+			},
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/entity/miles_morales_bodega_cat",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.backpack_empty"
+			},
+			"scripts": {
+                "animate": [
+                    "idle",
+					"on"
+                ]
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			],
+            "animations": {
+                "idle": "animation.miles_morales_bodega_cat.idle",
+                "on": "animation.miles_morales_bodega_cat.on"
+            }
+		}
+	}
+}

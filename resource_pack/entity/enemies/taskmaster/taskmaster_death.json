@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster_death",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster"
+			},
+			"geometry": {
+				"default": "geometry.taskmaster"
+			},
+			"animations": {
+				"loop": "animation.taskmaster.death"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+		  "spawn_egg": {
+			 "base_color": "#3a4d28",
+			 "overlay_color": "#4a4a4a"
+		  }
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.spiderman_sw_cw_wings.idle" : {
+			"initial_state" : "off",
+			"states" : {
+				"off" : {
+					"animations" : [ 
+						"spiderman_sw_cw_wings.off"
+					],
+					"transitions" : [
+						{
+							"spiderman_sw_cw_wings.on" : "q.is_gliding"
+						}
+					]
+				},
+				"spiderman_sw_cw_wings.on" : {
+					"animations" : [ 
+						"spiderman_sw_cw_wings.on"
+					],
+					"transitions" : [
+						{
+							"spiderman_sw_cw_wings.idle" : "q.any_animation_finished"
+						}
+					]
+				},
+				"spiderman_sw_cw_wings.idle" : {
+					"animations" : [ 
+						"spiderman_sw_cw_wings.idle"
+					],
+					"transitions" : [
+						{
+							"off" : "!q.is_gliding"
+						}
+					]
+				}
+			}
+		}
+	}
+}

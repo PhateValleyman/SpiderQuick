@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spiderverse_portal",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"outline": "outline_light"
+			},
+			"textures": {
+				"default": "textures/entity/spiderverse_portal_outline",
+				"outline": "textures/entity/spiderverse_portal"
+			},
+			"geometry": {
+				"default": "geometry.spiderverse_portal",
+				"outline": "geometry.spiderverse_portal_outline"
+			},
+		    "particle_effects": {
+			   "spiderverse_portal": "spidermanaddon:spiderverse_portal",
+			   "spiderverse_portal1": "spidermanaddon:spiderverse_portal1",
+			   "spiderverse_portal2": "spidermanaddon:spiderverse_portal2"
+		    },
+			"animations": {
+				"loop": "animation.spiderverse_portal.idle",
+				"idle": "animation.spiderverse_portal.on"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"idle": "controller.animation.spiderverse_portal.idle"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.spiderverse_portal.outline"
+			],
+			"spawn_egg": {
+				"texture": "spiderverse_portal",
+				"texture_index": 0
+			}
+		}
+	}
+}

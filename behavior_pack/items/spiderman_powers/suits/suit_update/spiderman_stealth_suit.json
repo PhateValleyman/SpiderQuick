@@ -1,0 +1,46 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spiderverse:spiderman_stealth_suit",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.suit"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"spiderman_suit",
+					"suit",
+					"spiderman_stealth_suit"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "spiderman_stealth_suit"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_feet"
+			},
+			"minecraft:durability": {
+				"max_durability": 2000
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"spidermanaddon:sand_crystal_shard"
+						],
+						"repair_amount": 350
+					}
+				]
+			},
+			"minecraft:wearable": {
+				"protection": 16,
+				"slot": "slot.armor.feet"
+			}
+		}
+	}
+}

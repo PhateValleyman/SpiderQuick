@@ -1,0 +1,88 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.miguel_ohara.idle": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 0.9
+				},
+				"leftArm": {
+					"scale": 1.1
+				},
+				"la": {
+					"scale": 0.95
+				},
+				"rightArm": {
+					"scale": 1.1
+				},
+				"ra": {
+					"scale": 0.95
+				}
+			}
+		},
+		"animation.miguel_ohara.mask_on": {
+			"loop": true,
+			"bones": {
+				"mask": {
+					"scale": 1
+				},
+				"cabeza": {
+					"scale": "'"
+				}
+			}
+		},
+		"animation.miguel_ohara.mask_off": {
+			"loop": true,
+			"bones": {
+				"mask": {
+					"scale": 0
+				},
+				"cabeza": {
+					"scale": 1
+				},
+				"pestanas2": {
+					"position": [0, 0.7, 0],
+					"scale": [1, 0.5, 1]
+				},
+				"ceja0": {
+					"rotation": [0, 0, -7.5]
+				},
+				"ceja1": {
+					"rotation": [0, 0, 7.5]
+				}
+			}
+		},
+		"animation.miguel_ohara.pose": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [-2, -22.5, 0]
+				}
+			}
+		},
+		"animation.miguel_ohara.separar": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"position": [4, 0, 0]
+				},
+				"rightLeg": {
+					"position": [-4, 0, 0]
+				},
+				"waist": {
+					"position": [0, 7, 0]
+				},
+				"head": {
+					"position": [0, 4, 0]
+				},
+				"leftArm": {
+					"position": [4, 0, 0]
+				},
+				"rightArm": {
+					"position": [-4, 0, 0]
+				}
+			}
+		}
+	}
+}

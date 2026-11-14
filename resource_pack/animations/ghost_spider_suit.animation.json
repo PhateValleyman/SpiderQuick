@@ -1,0 +1,175 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spider_woman.idle": {
+			"loop": true,
+			"animation_length": 11.0417,
+			"bones": {
+				"boca0": {
+					"rotation": [0, 0, -180],
+					"position": [0, 0.2, 0],
+					"scale": [0.9, 0.75, 1]
+				},
+				"pestana2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"8.5": [0, 0, 0],
+						"8.7917": [0, -2, 0],
+						"9.0": [0, 0, 0]
+					}
+				},
+				"pestana2_0": {
+					"position": {
+						"8.5": [0, 0, 0],
+						"8.7917": [0, 0.5, 0],
+						"9.0": [0, 0, 0]
+					},
+					"scale": {
+						"8.5": [1, 1, 1],
+						"8.7917": [1, 2, 1],
+						"9.0": [1, 1, 1]
+					}
+				},
+				"pestana1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"8.5": [0, 0, 0],
+						"8.7917": [0, -2, 0],
+						"9.0": [0, 0, 0]
+					}
+				},
+				"pestana1_0": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"8.5": [0, 0, 0],
+						"8.7917": [0, 0.5, 0],
+						"9.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"8.5": [1, 1, 1],
+						"8.7917": [1, 2, 1],
+						"9.0": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.ghost_spider_suit_x64.new": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"position": [8, 0, 0]
+				},
+				"rightLeg": {
+					"position": [-8, 0, 0]
+				},
+				"waist": {
+					"position": [0, 9, 0]
+				},
+				"head": {
+					"position": [0, 11, 0]
+				},
+				"leftArm": {
+					"position": [10, 0, 0]
+				},
+				"rightArm": {
+					"position": [-10, 0, 0]
+				}
+			}
+		},
+		"animation.spider_woman.suit": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"position": [-0.25, -0.75, 0],
+					"scale": [0.75, 1, 1]
+				},
+				"rightArm": {
+					"position": [0.25, -0.75, 0],
+					"scale": [0.75, 1, 1]
+				},
+				"rightItem": {
+					"scale": [1.25, 1, 1]
+				},
+				"leftItem": {
+					"scale": [1.25, 1, 1]
+				}
+			}
+		},
+		"animation.spider_woman.pose": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"position": [0, -0.1, 0]
+				},
+				"leftLeg": {
+					"rotation": [0, 0, -5]
+				},
+				"rightLeg": {
+					"rotation": [0, 0, 5]
+				},
+				"waist": {
+					"rotation": [-2, 0, 0]
+				},
+				"head": {
+					"rotation": [7.5, -25, 0]
+				},
+				"leftArm": {
+					"rotation": [0, 0, -12.5]
+				},
+				"rightArm": {
+					"rotation": [0, 0, 12.5]
+				}
+			}
+		},
+		"animation.spiderman.skin.idle_eyes": {
+			"loop": true,
+			"animation_length": 8,
+			"bones": {
+				"cejas": {
+					"position": {
+						"0.0": [0, 0.5, 0],
+						"2.6667": [0, 0.5, 0],
+						"2.8333": [0, -0.5, 0],
+						"3.2917": [0, -0.5, 0],
+						"3.5": [0, 0.5, 0]
+					}
+				},
+				"pestanas": {
+					"position": {
+						"0.0": [0, 0.7, 0],
+						"2.6667": [0, 0.7, 0],
+						"2.8333": [0, -1, 0],
+						"3.2917": [0, -1, 0],
+						"3.5": [0, 0.7, 0]
+					}
+				},
+				"pestanas2": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"2.6667": [1, 1, 1],
+						"2.8333": [1, 2, 1],
+						"3.2917": [1, 2, 1],
+						"3.5": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.spider_woman.mask.off": {
+			"loop": true,
+			"bones": {
+				"mask": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.spider_woman.mask": {
+			"loop": true,
+			"bones": {
+				"mask0": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

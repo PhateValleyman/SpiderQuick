@@ -1,0 +1,87 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.venom_wings",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 21,
+				"visible_bounds_height": 16,
+				"visible_bounds_offset": [0, 4, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "symb",
+					"parent": "body",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.25, "uv": [68, 141]}
+					]
+				},
+				{
+					"name": "venom_wings",
+					"parent": "body",
+					"pivot": [0, 19, 3.5],
+					"rotation": [-7.5, 0, 0]
+				},
+				{
+					"name": "venom_wing0",
+					"parent": "venom_wings",
+					"pivot": [0, 19, 3.5],
+					"cubes": [
+						{"origin": [0, 5, 3.5], "size": [12, 32, 2], "uv": [58, 54]},
+						{"origin": [0, 18, 2.5], "size": [14, 2, 2], "pivot": [0, 19, 3.5], "rotation": [0, 0, -45], "uv": [106, 106]},
+						{"origin": [8.5, 28.25, 2.5], "size": [2, 12, 2], "inflate": -0.05, "pivot": [9.5, 28.25, 3.5], "rotation": [0, 0, 12.5], "uv": [116, 124]}
+					]
+				},
+				{
+					"name": "venom_wing0_0",
+					"parent": "venom_wing0",
+					"pivot": [12, 28.25, 3.5],
+					"cubes": [
+						{"origin": [12, 4, 3.5], "size": [27, 36, 2], "uv": [0, 38]},
+						{"origin": [10.3, 37.25, 2.5], "size": [12, 2, 2], "inflate": -0.1, "pivot": [9.5, 28.25, 3.5], "rotation": [0, 0, 12.5], "uv": [113, 24]},
+						{"origin": [16.5, 40.95, 2.5], "size": [12, 2, 2], "inflate": -0.15, "pivot": [9.5, 28.25, 3.5], "rotation": [0, 0, 35], "uv": [113, 20]},
+						{"origin": [22, 46.55, 2.5], "size": [12, 2, 2], "inflate": -0.25, "pivot": [9.5, 28.25, 3.5], "rotation": [0, 0, 55], "uv": [112, 16]}
+					]
+				},
+				{
+					"name": "venom_wing1",
+					"parent": "venom_wings",
+					"pivot": [0, 19, 3.5],
+					"cubes": [
+						{"origin": [-12, 5, 3.5], "size": [12, 32, 2], "uv": [58, 20]},
+						{"origin": [-14, 18, 2.5], "size": [14, 2, 2], "pivot": [0, 19, 3.5], "rotation": [0, 0, 45], "uv": [104, 85]},
+						{"origin": [-10.5, 28.25, 2.5], "size": [2, 12, 2], "inflate": -0.05, "pivot": [-9.5, 28.25, 3.5], "rotation": [0, 0, -12.5], "uv": [108, 124]}
+					]
+				},
+				{
+					"name": "venom_wing1_0",
+					"parent": "venom_wing1",
+					"pivot": [-12, 28.25, 3.5],
+					"cubes": [
+						{"origin": [-39, 4, 3.5], "size": [27, 36, 2], "uv": [0, 0]},
+						{"origin": [-28.5, 40.95, 2.5], "size": [12, 2, 2], "inflate": -0.15, "pivot": [-9.5, 28.25, 3.5], "rotation": [0, 0, -35], "uv": [110, 59]},
+						{"origin": [-22.3, 37.25, 2.5], "size": [12, 2, 2], "inflate": -0.1, "pivot": [-9.5, 28.25, 3.5], "rotation": [0, 0, -12.5], "uv": [110, 55]},
+						{"origin": [-34, 46.55, 2.5], "size": [12, 2, 2], "inflate": -0.25, "pivot": [-9.5, 28.25, 3.5], "rotation": [0, 0, -55], "uv": [61, 107]}
+					]
+				}
+			]
+		}
+	]
+}

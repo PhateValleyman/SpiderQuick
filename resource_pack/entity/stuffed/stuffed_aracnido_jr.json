@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:stuffed_aracnido_jr",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/stuffed/aracnido_jr_suit"
+			},
+			"geometry": {
+				"default": "geometry.stuffed_spiderman"
+			},
+			"animations": {
+				"loop": "animation.stuffed_spiderman.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "stuffed_aracnido_jr",
+				"texture_index": 0
+			}
+		}
+	}
+}

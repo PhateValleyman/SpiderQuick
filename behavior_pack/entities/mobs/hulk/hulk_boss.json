@@ -1,0 +1,518 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:hulk_boss",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "spidermanaddon:hulk_state": {
+          "type": "enum",
+          "values": [
+            "default",
+            "active",
+            "combat",
+            "falling",
+            "falling_end",
+            "clap_on",
+            "clap",
+            "super_attack",
+            "death"
+          ],
+          "default": "default",
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "spidermanaddon:hulk_dormant": {
+        "minecraft:movement": {
+          "value": 0.0
+        }
+      },
+      "spidermanaddon:death_mode": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 5.0,
+          "time_down_event": {
+            "event": "spidermanaddon:death_destroy",
+            "target": "self"
+          }
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        }
+      },
+      "spidermanaddon:hulk_boss_hud": {
+        "minecraft:boss": {
+          "name": "§2Hulk",
+          "hud_range": 64,
+          "should_darken_sky": false
+        }
+      },
+      "spidermanaddon:hulk_combat": {
+        "minecraft:movement": {
+          "value": 0.42
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:navigation.walk": {
+          "avoid_damage_blocks": true,
+          "avoid_water": false,
+          "can_path_over_water": true,
+          "can_pass_doors": true,
+          "can_open_doors": true
+        },
+        "minecraft:jump.static": {},
+        "minecraft:attack": {
+          "damage": 20
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "must_see_forget_duration": 1.0,
+          "reselect_targets": true,
+          "within_radius": 48,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 48
+            }
+          ]
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 3,
+          "speed_multiplier": 1.25,
+          "track_target": true,
+          "reach_multiplier": 2.2
+        },
+        "minecraft:behavior.move_towards_target": {
+          "priority": 4,
+          "speed_multiplier": 1.2,
+          "within_radius": 48
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 7,
+          "speed_multiplier": 0.8
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 8
+        }
+      },
+      "spidermanaddon:hulk_falling": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      },
+      "spidermanaddon:hulk_falling_end": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      },
+      "spidermanaddon:hulk_clap_on": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      },
+      "spidermanaddon:hulk_clap": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      },
+      "spidermanaddon:hulk_super_attack": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "hulk",
+          "boss",
+          "monster",
+          "mob"
+        ]
+      },
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(500,1500)",
+          "on_death": "query.last_hit_by_player ? Math.Random(500,1500) : 0"
+        },
+		  "minecraft:break_blocks": {
+			"breakable_blocks": [
+			  "short_grass",
+			  "tall_grass",
+			  "reeds",
+			  "rose_bush",
+			  "glass_pane",
+			  "glass",
+			  "planks",
+			  "wooden_door",
+			  "cobblestone",
+			  "wool",
+			  "log",
+			  "leaves",
+			  "fence"
+			]
+		  },
+      "minecraft:health": {
+        "value": 3000,
+        "max": 3000
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/hulk_boss.json"
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "has_damage",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": "void"
+                  }
+                ]
+              },
+              "event": "spidermanaddon:death_start",
+              "target": "self"
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fall"
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:collision_box": {
+        "width": 1.8,
+        "height": 3.8
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:nameable": {},
+      "minecraft:persistent": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": false
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "default"
+        }
+      },
+      "spidermanaddon:hulk_reset": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:death_mode",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "default"
+        }
+      },
+      "spidermanaddon:hulk_active": {
+        "set_property": {
+          "spidermanaddon:hulk_state": "active"
+        }
+      },
+      "spidermanaddon:hulk_combat": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:death_mode",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "combat"
+        }
+      },
+      "spidermanaddon:death_start": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:death_mode"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "death"
+        },
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "effect @s instant_health 1 10 true",
+            "effect @s resistance 6 255 true",
+            "tag @s remove spidermanaddon:hulk_cinematic_running",
+            "tag @s remove spidermanaddon:hulk_combat_started"
+          ]
+        }
+      },
+      "spidermanaddon:death_destroy": {
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "effect @s invisibility 6 0 true",
+            "kill @s"
+          ]
+        }
+      },
+      "spidermanaddon:hulk_falling_start": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling_end"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_falling"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "falling"
+        }
+      },
+      "spidermanaddon:hulk_falling_end": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_falling_end"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "falling_end"
+        }
+      },
+      "spidermanaddon:hulk_falling_finish": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:death_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "combat"
+        }
+      },
+      "spidermanaddon:hulk_clap_on": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_clap_on"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "clap_on"
+        }
+      },
+      "spidermanaddon:hulk_clap_fire": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_clap"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "clap"
+        }
+      },
+      "spidermanaddon:hulk_clap_finish": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack",
+            "spidermanaddon:death_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "combat"
+        }
+      },
+      "spidermanaddon:hulk_super_attack_start": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_combat",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_super_attack"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "super_attack"
+        }
+      },
+      "spidermanaddon:hulk_super_attack_finish": {
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:hulk_dormant",
+            "spidermanaddon:hulk_falling",
+            "spidermanaddon:hulk_falling_end",
+            "spidermanaddon:hulk_clap_on",
+            "spidermanaddon:hulk_clap",
+            "spidermanaddon:hulk_super_attack",
+            "spidermanaddon:death_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:hulk_boss_hud",
+            "spidermanaddon:hulk_combat"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:hulk_state": "combat"
+        }
+      }
+    }
+  }
+}

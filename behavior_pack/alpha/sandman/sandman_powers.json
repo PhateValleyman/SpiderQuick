@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:sandman_powers",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.sandman"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "sandman_powers", "off_rightitem"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "sandman_powers"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 5,
+				"slot": "slot.armor.legs"
+			}
+		}
+	}
+}

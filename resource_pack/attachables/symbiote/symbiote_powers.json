@@ -1,0 +1,104 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:spiderman_symbiote_powers",
+			"materials": {
+				"default": "slime",
+				"outline": "outline",
+				"outline_color": "outline",
+				"rubik": "slime"
+			},
+			"textures": {
+				"default": "textures/symbiote_powers",
+				"antivenom": "textures/antivenom_powers",
+				"spiderman_ps5_symbiote_suit": "textures/suits/spiderman_ps5_symbiote_suit",
+				"spiderman_ps4_black_suit": "textures/suits/spiderman_ps4_black_suit",
+				"spiderman_antivenom_suit": "textures/suits/spiderman_antivenom_suit",
+				"spectacular_spiderman_black_suit": "textures/suits/spectacular_spiderman_black_suit",
+				"spectacular_spiderman_black_suit_2": "textures/suits/spectacular_spiderman_black_suit_2",
+				"spectacular_spiderman_black_suit_3": "textures/suits/spectacular_spiderman_black_suit_3",
+				"spiderman_90_black_suit": "textures/suits/spiderman_90_black_suit",
+				"spiderman_90_blue": "textures/suits/spiderman_90_blue",
+				"spiderman_90_red": "textures/suits/spiderman_90_red",
+				"spiderman_classic_black_suit": "textures/suits/spiderman_classic_black_suit",
+				"spiderman_raimi_black_suit": "textures/suits/spiderman_raimi_black_suit",
+				"spiderman_web_of_shadows_black_suit": "textures/suits/spiderman_web_of_shadows_black_suit",
+				"superior_spiderman_black_suit": "textures/suits/superior_spiderman_black_suit",
+				"the_amazing_spiderman_black_suit": "textures/suits/the_amazing_spiderman_black_suit",
+				"ultimate_spiderman_black_suit": "textures/suits/ultimate_spiderman_black_suit",
+				"venom_s3": "textures/entity/venom/venom_s3",
+				"outline": "textures/suits/spiderman_outline",
+				"rubik": "textures/rubik"
+			},
+			"geometry": {
+				"default": "geometry.symbiote_powers",
+				"suit": "geometry.spiderman_suit_rage_mode",
+				"venom_s3": "geometry.venom_s3_suit",
+				"venom_s3_mask": "geometry.venom_s3_mask",
+				"outline": "geometry.spiderman_suit_x64_outline",
+				"outline_color": "geometry.spiderman_suit_x64_outline_color",
+				"rubik": "geometry.rubik"
+			},
+			"render_controllers": [
+				{ "controller.render.rubik": "q.is_sneaking && !q.is_on_ground && q.property('arathnido:animation') == 5 && q.property('arathnido:custom_riding') == 11" },
+				{ "controller.render.symbiote_skin.venom": "q.property('arathnido:skins') == 0"},
+				{ "controller.render.symbiote_skin.antivenom": "q.property('arathnido:skins') == 1"},
+				{ "controller.render.symbiote_powers.spiderman_ps5_symbiote_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 1" },
+				{ "controller.render.symbiote_powers.spiderman_ps4_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 2" },
+				{ "controller.render.symbiote_powers.spiderman_antivenom_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 3" },
+				{ "controller.render.symbiote_powers.spectacular_spiderman_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 4" },
+				{ "controller.render.symbiote_powers.spectacular_spiderman_black_suit_2": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 5" },
+				{ "controller.render.symbiote_powers.spectacular_spiderman_black_suit_3": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 6" },
+				{ "controller.render.symbiote_powers.spiderman_90_black_suit": "q.property('arathnido:ability0') == 3 && (q.property('arathnido:texture') == 7 || q.property('arathnido:texture') == 8)" },
+				{ "controller.render.symbiote_powers.spiderman_90_blue": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 7" },
+				{ "controller.render.symbiote_powers.spiderman_90_red": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 8" },
+				{ "controller.render.symbiote_powers.outline": "q.property('arathnido:ability0') == 3 && variable.outline" },
+				{ "controller.render.symbiote_powers.spiderman_classic_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 9" },
+				{ "controller.render.symbiote_powers.spiderman_raimi_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 10" },
+				{ "controller.render.symbiote_powers.spiderman_web_of_shadows_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 11" },
+				{ "controller.render.symbiote_powers.superior_spiderman_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 12" },
+				{ "controller.render.symbiote_powers.the_amazing_spiderman_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 13" },
+				{ "controller.render.symbiote_powers.ultimate_spiderman_black_suit": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 14" },
+				{ "controller.render.symbiote_powers.venom_s3": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 15" },
+				{ "controller.render.symbiote_powers.venom_s3.mask": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 15" }
+			],
+			"scripts": {
+				"pre_animation": [
+					"variable.outline = q.property('arathnido:texture') == 4 || q.property('arathnido:texture') == 5 || q.property('arathnido:texture') == 6 || q.property('arathnido:texture') == 7 || q.property('arathnido:texture') == 8;"
+				  ],
+                "animate": [
+                    "rage.c", "idle.c", "symbiote_powers.c", "symbiote_powers.whip.c",
+                    "rubik",
+					"rubik.c",
+					{ "venom_s3.c": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 15" },
+					{ "spirit_spider_head.look": "q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 15" }
+                ]
+			},
+            "animations": {
+				"venom_s3.c": "animation.venom_s3.idle",
+				"spirit_spider_head.look": "animation.spirit_spider_head.look",
+                "rubik": "animation.rubik.acrobacia.2",
+				"rubik.anim": "animation.player.new_spiderman.balanceo.acrobacia.2",
+				"rubik.c": "controller.animation.rubik",
+				"symbiote_powers.whip.c": "controller.animation.spiderman.symbiote_powers.whip",
+				"player.symbiote.whip.attack.1": "animation.spiderman.symbiote.whip.attack.1",
+				"player.symbiote.whip.attack.2": "animation.spiderman.symbiote.whip.attack.2",
+				"player.symbiote.whip.attack.3": "animation.spiderman.symbiote.whip.attack.3",
+				"symbiote_powers.c": "controller.animation.player.spiderman.symbiote_powers",
+				"spiderman.symbiote_powers.antivenom_tempest": "animation.new_spiderman.symbiote.antivenom_tempest",
+				"spiderman.symbiote_powers.symbiont_pull": "animation.new_spiderman.symbiote.symbiont_pull",
+				"spiderman.symbiote_powers.antivenom_bomb": "animation.new_spiderman.symbiote.antivenom_bomb",
+				"spiderman.symbiote_powers.symbiote_strike": "animation.new_spiderman.symbiote.strike",
+				"spiderman.symbiote_powers.blast": "animation.new_spiderman.symbiote.blast",
+				"idle.c": "animation.player.new_spiderman.symbiote.idle",
+                "rage.c": "controller.animation.spiderman.symbiote_powers.rage",
+				"player.symbiote.combat.1": "animation.new_spiderman.symbiote.combat.1",
+				"player.symbiote.combat.2": "animation.new_spiderman.symbiote.combat.2",
+				"player.symbiote.combat.3": "animation.new_spiderman.symbiote.combat.3",
+				"player.symbiote.attacks.using": "animation.new_spiderman.symbiote.punch.using",
+                "spiderman.symbiote_powers.rage": "animation.new_spiderman.symbiote.rage"
+            }
+		}
+	}
+}

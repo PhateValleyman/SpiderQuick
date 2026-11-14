@@ -1,0 +1,1941 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.black_cat_suit.hands": {
+      "geometry": "Geometry.black_cat_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.black_cat_suit"
+      ]
+    },
+    "controller.render.shocker_suit.hands": {
+      "geometry": "Geometry.shocker_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.shocker_suit"
+      ]
+    },
+    "controller.render.man_spider.hands": {
+      "geometry": "Geometry.man_spider",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.man_spider"
+      ]
+    },
+    "controller.render.boomerang_suit.hands": {
+      "geometry": "Geometry.boomerang_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.boomerang_suit"
+      ]
+    },
+    "controller.render.tarantula_suit.hands": {
+      "geometry": "Geometry.tarantula_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.tarantula_suit"
+      ]
+    },
+    "controller.render.scorpion_suit.hands": {
+      "geometry": "Geometry.scorpion_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scorpion_suit"
+      ]
+    },
+    "controller.render.web_shooter.ben_really_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ben_really_suit"
+      ]
+    },
+    "controller.render.electro_suit.hands": {
+      "geometry": "Geometry.electro_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.electro_suit"
+      ]
+    },
+    "controller.render.electro_tas2_suit.hands": {
+      "geometry": "Geometry.electro_tas2_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.electro_tas2_suit"
+      ]
+    },
+    "controller.render.electro_no_way_home_suit.hands": {
+      "geometry": "Geometry.electro_no_way_home_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.electro_no_way_home_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_rivals_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_rivals_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_white_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_white_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_brand_new_day_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_brand_new_day_suit"
+      ]
+    },
+    "controller.render.web_shooter.spider_oni_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spider_oni_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_black_gold_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_black_gold_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_mk1_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_mk1_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_mk2_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_mk2_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_mk3_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_mk3_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_mk4_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_mk4_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_2099_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_2099_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_purple_reign_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_purple_reign_suit"
+      ]
+    },
+    "controller.render.web_shooter.silk_web_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.silk_web_suit"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_2_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_2_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_dark_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_dark_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_into_the_spiderverse_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_into_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_2020_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_2020_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_2020_v2_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_2020_v2_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_2020_v3_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_2020_v3_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_2020_v4_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_2020_v4_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_blue_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_blue_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_antivenom_classic_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_antivenom_classic_suit"
+      ]
+    },
+    "controller.render.web_shooter.poison_suit": {
+      "geometry": "Geometry.poison_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.poison_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_king_in_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_king_in_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spidergwen_symbiont_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spidergwen_symbiont_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_cyborg_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_cyborg_suit"
+      ]
+    },
+    "controller.render.web_shooter.punisher_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.punisher_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.assassin_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.assassin_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_black_red_spider_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_black_red_spider_suit"
+      ]
+    },
+    "controller.render.web_shooter.mayday_parker_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.mayday_parker_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.mayday_parker_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.mayday_parker_suit"
+      ]
+    },
+    "controller.render.web_shooter.arachknight_suit": {
+      "geometry": "Geometry.arachknight_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.arachknight_suit"
+      ]
+    },
+    "controller.render.web_shooter.spider_carnage_suit": {
+      "geometry": "Geometry.spider_carnage_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spider_carnage_suit"
+      ]
+    },
+    "controller.render.web_shooter.zombie_spiderman_suit": {
+      "geometry": "Geometry.zombie_spiderman_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.zombie_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.zombie_spiderman_black_suit": {
+      "geometry": "Geometry.zombie_spiderman_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.zombie_spiderman_black_suit"
+      ]
+    },
+    "controller.render.green_goblin_no_way_home.hands": {
+      "geometry": "Geometry.green_goblin_no_way_home",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.green_goblin_no_way_home"
+      ]
+    },
+    "controller.render.green_goblin_spiderman3.hands": {
+      "geometry": "Geometry.green_goblin_spiderman3",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.green_goblin_spiderman3"
+      ]
+    },
+    "controller.render.agent_venom.hands": {
+      "geometry": "Geometry.agent_venom",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.agent_venom"
+      ]
+    },
+    "controller.render.agent_antivenom.hands": {
+      "geometry": "Geometry.agent_venom",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.agent_antivenom"
+      ]
+    },
+    "controller.render.agent_venom_spiderman2.hands": {
+      "geometry": "Geometry.agent_venom",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.agent_venom_spiderman2"
+      ]
+    },
+    "controller.render.agent_venom_spiderman2_v2.hands": {
+      "geometry": "Geometry.agent_venom",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.agent_venom_spiderman2_v2"
+      ]
+    },
+    "controller.render.agent_venom_thunderbolts.hands": {
+      "geometry": "Geometry.agent_venom",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.agent_venom_thunderbolts"
+      ]
+    },
+    "controller.render.mysterio_far_from_home_suit.hands": {
+      "geometry": "Geometry.mysterio_far_from_home_suit",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.mysterio_far_from_home_suit"
+      ]
+    },
+    "controller.render.mysterio1_suit.hands": {
+      "geometry": "Geometry.mysterio_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.mysterio1_suit"
+      ]
+    },
+    "controller.render.mysterio_suit.hands": {
+      "geometry": "Geometry.mysterio_suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.mysterio_suit"
+      ]
+    },
+    "controller.render.green_goblin_raimi.hands": {
+      "geometry": "Geometry.green_goblin_raimi",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.green_goblin_raimi"
+      ]
+    },
+    "controller.render.green_goblin.hands": {
+      "geometry": "Geometry.green_goblin",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.green_goblin"
+      ]
+    },
+    "controller.render.hobgoblin.hands": {
+      "geometry": "Geometry.green_goblin",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.hobgoblin"
+      ]
+    },
+    "controller.render.web_shooter.spider_ham": {
+      "geometry": "Geometry.spider_ham",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spider_ham"
+      ]
+    },
+    "controller.render.web_shooter.the_amazing_spiderman_casero_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.the_amazing_spiderman_casero_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_new_blue_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_new_blue_suit"
+      ]
+    },
+    "controller.render.web_shooter.yfn_spiderman_oscorp_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.yfn_spiderman_oscorp_suit"
+      ]
+    },
+    "controller.render.web_shooter.yfn_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.yfn_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_bombastic_bag_man_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_bombastic_bag_man_suit"
+      ]
+    },
+    "controller.render.web_shooter.super_slingshot_effect": {
+      "geometry": "Geometry.super_slingshot_effect",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.super_slingshot_effect"
+      ]
+    },
+    "controller.render.web_shooter.spirit_spider_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spirit_spider_suit"
+      ]
+    },
+    "controller.render.taskmaster.hands": {
+      "geometry": "Geometry.taskmaster_hands",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.taskmaster"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_miles_morales_leap_of_faith_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_miles_morales_leap_of_faith_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_last_stand_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_last_stand_suit"
+      ]
+    },
+    "controller.render.web_shooter.venom_s3": {
+      "geometry": "Geometry.venom_s3_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.venom_s3"
+      ]
+    },
+    "controller.render.web_shooter.into_the_spiderverse_sb_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.into_the_spiderverse_sb_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_web_of_shadows_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_web_of_shadows_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.superior_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_bodega_cat_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_bodega_cat_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_bodega_cat_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_bodega_cat_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_bodega_cat_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_bodega_cat_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_10th_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_10th_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_10th_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_10th_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_10th_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_10th_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_10th_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_10th_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_india_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_india_suit"
+      ]
+    },
+    "controller.render.web_shooter.silk": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.silk"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_noir_into_the_spiderverse_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_noir_into_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.spider_punk_across_the_spider_verse_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spider_punk_across_the_spider_verse_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_antivenom_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_antivenom_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_secret_wars_civil_war_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_secret_wars_civil_war_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_unlimited_suit": {
+      "geometry": "Geometry.spiderman_unlimited_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_unlimited_suit"
+      ]
+    },
+    "controller.render.web_shooter.yfn_spiderman_casero_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.yfn_spiderman_casero_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_web_of_shadows_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_web_of_shadows_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_what_if_animated_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_what_if_animated_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_what_if_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_what_if_suit"
+      ]
+    },
+    "controller.render.web_shooter.third": {
+      "geometry": "Geometry.web_shooter_third",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_gold_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_gold_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_raimi_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_raimi_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_steve_ditko_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_steve_ditko_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_raimi_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_raimi_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.iron_spider_ucm_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.guns"
+        }
+      ],
+      "textures": [
+        "Texture.iron_spider_ucm_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps4_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps4_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spider_gwen": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.web_shooter_spider_gwen"
+      ]
+    },
+    "controller.render.web_shooter.the_amazing_spiderman_1_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.the_amazing_spiderman_1_suit"
+      ]
+    },
+    "controller.render.web_shooter.the_amazing_spiderman_2_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.the_amazing_spiderman_2_suit"
+      ]
+    },
+    "controller.render.web_shooter.ultimate_spiderman_ucm_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ultimate_spiderman_ucm_suit"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_suit"
+      ]
+    },
+    "controller.render.web_shooter.spectacular_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spectacular_spiderman_black_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.spectacular_spiderman_black_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.spectacular_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_90_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_67_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_67_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_wrestler_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_wrestler_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_homecoming_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_homecoming_suit"
+      ]
+    },
+    "controller.render.web_shooter.ultimate_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ultimate_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_far_from_home_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_far_from_home_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_no_way_home_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_no_way_home_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps4_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.guns"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps4_suit"
+      ]
+    },
+    "controller.render.web_shooter.ultimate_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ultimate_spiderman_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_black_suit_comic": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_black_suit_comic"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_homemade_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_homemade_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_negative_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.guns"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_negative_suit"
+      ]
+    },
+    "controller.render.web_shooter.human_spider_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.human_spider_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_into_the_spiderverse": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_into_the_spiderverse"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_across_the_spiderverse": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_into_the_spiderverse"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_into_the_spiderverse_training": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_into_the_spiderverse_training"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_bodega_cat_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_bodega_cat_suit"
+      ]
+    },
+    "controller.render.web_shooter.outline": {
+      "geometry": "Geometry.web_shooter_outline",
+      "materials": [
+        {
+          "*": "Material.outline"
+        }
+      ],
+      "textures": [
+        "Texture.outline"
+      ]
+    },
+    "controller.render.web_shooter.anti_ock_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.anti_ock_suit"
+      ]
+    },
+    "controller.render.web_shooter.anti_ock_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.anti_ock_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.anti_ock_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.anti_ock_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.anti_ock_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.anti_ock_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.aracnido_jr_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.aracnido_jr_suit"
+      ]
+    },
+    "controller.render.web_shooter.ezekiel_sims_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ezekiel_sims_suit"
+      ]
+    },
+    "controller.render.web_shooter.iron_spider_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.iron_spider_suit"
+      ]
+    },
+    "controller.render.web_shooter.iron_spider_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.iron_spider_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.iron_spider_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.iron_spider_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.iron_spider_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.iron_spider_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.spider_punk_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spider_punk_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_suit_1": {
+      "geometry": "Geometry.spiderman_2099_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_suit_2": {
+      "geometry": "Geometry.spiderman_2099_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_suit_3": {
+      "geometry": "Geometry.spiderman_2099_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_suit": {
+      "geometry": "Geometry.spiderman_2099_web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_cero_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_cero_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_classic_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_future_foundation_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_future_foundation_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps5_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps5_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps5_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps5_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_ps5_symbiote_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_symbiote_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_velocity_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_velocity_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_stealth_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_stealth_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_across_the_spiderverse_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_across_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_2099_across_the_spiderverse_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_2099_across_the_spiderverse_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.superior_spiderman_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_suit"
+      ]
+    },
+    "controller.render.web_shooter.superior_spiderman_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.superior_spiderman_suit_2": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.superior_spiderman_suit_3": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_wolverine_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_wolverine_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_wolverine_suit_1": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_wolverine_suit_1"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_wolverine_suit_2": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_wolverine_suit_2"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_wolverine_suit_3": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_wolverine_suit_3"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_into_the_spiderverse_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_into_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.miles_morales_across_the_spiderverse_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.miles_morales_across_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.the_amazing_spiderman_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.the_amazing_spiderman_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.scarlet_spider_across_the_spiderverse_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.scarlet_spider_across_the_spiderverse_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_90_black_suit": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_90_black_suit_1": {
+      "geometry": "Geometry.web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_black_suit"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_90_red": {
+      "geometry": "Geometry.web_shooter_90_outline",
+      "materials": [
+        {
+          "*": "Material.outline_color"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_red"
+      ]
+    },
+    "controller.render.web_shooter.spiderman_90_blue": {
+      "geometry": "Geometry.web_shooter_90_outline",
+      "materials": [
+        {
+          "*": "Material.outline_color"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_blue"
+      ]
+    },
+    "controller.render.web_shooter.ghost_spider_suit": {
+      "geometry": "Geometry.miles_morales_w_web_shooter",
+      "materials": [
+        {
+          "*": "Material.entity_emissive"
+        }
+      ],
+      "textures": [
+        "Texture.ghost_spider_suit"
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.shocker_particle2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "clap": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:shocker_particle2 ~ ~-0.5 ~",
+			"/fill ~-2 ~-2 ~-2 ~4 ~4 ~4 air 0 destroy"
+
+          ]
+        },
+        "clap": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:shocker_particle2 ~ ~-0.5 ~",
+			"/fill ~-2 ~1 ~-2 ~4 ~3 ~4 air 0 destroy"
+          ]
+        }
+      }
+    },
+    "controller.animation.shocker_particle": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "clap": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:shocker_particle ~ ~-0.5 ~"
+
+
+          ]
+        },
+        "clap": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle spidermanaddon:shocker_particle ~ ~-0.5 ~"
+          ]
+        }
+      }
+    }
+  }
+}

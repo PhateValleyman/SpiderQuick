@@ -1,0 +1,1740 @@
+gui.spidermanaddon.upgrade_max=升級至最高級
+gui.spidermanaddon.upgrade_max_cost=將剩餘 %1 級全部升級，消耗 %2 個組件。
+gui.spidermanaddon.not_enough_components_max=你需要 %1 個組件才能將這個蛛網發射器升至最高級。
+gui.spidermanaddon.upgraded_to_max=蛛網發射器已升至最高級。
+item.spidermanaddon:black_cat_skin=黑貓外觀
+item.spidermanaddon:norm_stone=諾姆之石
+
+ui.spiderman.settings.spider_sense_particles=蜘蛛感應粒子
+ui.spiderman.settings.spider_sense_sound=蜘蛛感應音效
+ui.spiderman.settings.spider_sense_actionbar=蜘蛛感應警告列
+
+item.minecraft:leather=皮革
+item.spidermanaddon:spider_gwen_skin=蜘蛛格溫外觀
+item.spidermanaddon:mayday_skin=Mayday Parker外觀
+
+entity.spidermanaddon:hulk_boss.name=Hulk
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=Hulk 生成
+
+dialogue.spidermanaddon.hulk_activation=?????:§r 你現在簡直一團糟。別擋我的路。否則，你的朋友不會是唯一忘記彼得·帕克是誰的人。
+dialogue.spidermanaddon.hulk_defeated=?????:§r 你表現得不錯。下次你就沒這麼走運了。
+spidermanaddon:itemGroup.name.shocker=震撼者武器庫
+item.spidermanaddon:shocker_mask=震撼者面具
+item.spidermanaddon:shocker_suit=震撼者戰衣
+item.spidermanaddon:spider_punk_guitar=蜘蛛朋克吉他
+item.spidermanaddon:shocker_gloves=震撼者手套
+gui.spidermanaddon.symbiont_evil_dance=邪惡之舞
+tile.spiderman:spider_capsule.name=放射性蜘蛛膠囊
+
+ui.spiderman.settings.button=§8設定
+ui.spiderman.settings.title=§l能力設定
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§b自由跑牆
+ui.spiderman.settings.water_surf=§9水上衝浪
+ui.spiderman.settings.save=儲存設定
+ui.spiderman.settings.saved=§a設定已成功儲存。
+
+item.spidermanaddon:organic_web_potion=有機蛛絲藥水
+
+item.minecraft:gunpowder=火藥
+item.minecraft:glass=玻璃
+item.minecraft:slime_ball=黏液球
+item.minecraft:string=線
+item.minecraft:ender_pearl=終界珍珠
+
+ui.oscorp_table.title=§2奧斯本科技工作台
+ui.oscorp_table.body=§7選擇你想製作的蜘蛛人反派項目。
+ui.oscorp_table.category_body=§7選擇你想製作的物品、戰衣或能力。
+ui.oscorp_table.category.green_goblin=§a綠惡魔
+ui.oscorp_table.category.doctor_octopus=§6章魚博士
+ui.oscorp_table.category.boomerang=§9回旋鏢
+ui.oscorp_table.category.electro=§e電光人
+ui.oscorp_table.category.mysterio=§5神秘客
+ui.oscorp_table.category.scorpion=§2蠍子
+ui.oscorp_table.category.tarantula=§4狼蛛
+ui.oscorp_table.category.black_cat=§d黑貓
+ui.oscorp_table.category.modified_spider=§c改造蜘蛛
+ui.oscorp_table.selected=已選項目
+ui.oscorp_table.required_materials=所需材料
+ui.oscorp_table.result=結果
+ui.oscorp_table.craft=製作
+ui.oscorp_table.missing_materials=缺少材料
+ui.oscorp_table.cancel=取消
+ui.oscorp_table.back=返回
+ui.oscorp_table.crafted=製作完成
+ui.oscorp_table.no_materials=你沒有所需材料
+ui.oscorp_table.invalid_item=無法製作該物品
+
+entity.spidermanaddon:oscorp_table.name=奧斯本實驗室工作台
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=奧斯本實驗室工作台
+
+item.spidermanaddon:tarantula_attack=飛行踢擊
+item.spidermanaddon:black_cat_mask=黑貓面具
+item.spidermanaddon:black_cat_suit=黑貓戰衣
+
+item.spidermanaddon:boomerang_powers=回旋鏢能力
+item.spidermanaddon:boomerang_skill_explosive=爆炸回旋鏢
+item.spidermanaddon:boomerang_skill=投擲回旋鏢
+item.spidermanaddon:boomerang_skill_electric=電擊回旋鏢
+
+item.minecraft:spider_eye=蜘蛛眼
+item.minecraft:fermented_spider_eye=發酵蜘蛛眼
+item.minecraft:blaze_powder=烈焰粉
+item.minecraft:ghast_tear=惡魂之淚
+item.minecraft:milk_bucket=牛奶桶
+
+ui.laboratory_workbench.upgrade_levels_body=§f當前等級： §e%1§f/§e%2
+§f升級花費： §a%3 經驗等級
+ui.laboratory_workbench.no_levels=§c你需要 %1 級經驗。你當前有 %2 級。
+
+item.spidermanaddon:police_scanner=警用掃描儀
+action.interact.police_scanner=開啓/關閉掃描儀
+hud.police_scanner.crime.location=§c犯罪已偵測 §fX：%1 Y：%2 Z：%3
+hud.police_scanner.crime.distance=§b距離： §f%1 m
+
+hud.man_spider.web.ready=§2有機蛛絲 §f%1/%2
+hud.man_spider.web.locked=§c蛛絲已鎖定 §f%1/%2
+hud.man_spider.acid.ready=§a酸液就緒
+hud.man_spider.acid.cooldown=§2酸液 §f%1s
+hud.man_spider.claw.ready=§c躍擊攻擊就緒
+hud.man_spider.claw.cooldown=§4躍擊攻擊 §f%1s
+message.man_spider.mutation.requires_powers=§c你需要裝備蜘蛛人能力。
+message.organic_web.requires_powers=§c你需要裝備蜘蛛人能力。
+
+item.spidermanaddon:man_spider_web_shoot=發射蛛絲 [有機蛛絲]
+item.spidermanaddon:man_spider_swing=蛛絲擺蕩 [有機蛛絲]
+item.spidermanaddon:man_spider_acid=發射酸液
+item.spidermanaddon:man_spider_claw=攻擊
+item.spidermanaddon:spider_mutant=突變血清
+item.spidermanaddon:mutation_antidote=突變體解藥
+item.spidermanaddon:six_arms=六隻手臂
+item.spidermanaddon:man_spider=俠-蜘蛛
+
+hud.spiderman.web_swing.ammo=§b蛛絲擺蕩 §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ 擺蕩點已偵測： §f%1 方塊
+hud.spiderman.web_swing.target.none=§c◇ 無擺蕩點： §f最大。 %1 方塊
+hud.spiderman.web_swing.target.no_ammo=§c✖ 沒有蛛絲液
+hud.spiderman.web_swing.target.active=§a◆ 蛛絲已連接
+
+item.spidermanaddon:spiderman_unlimited_sonic=音波波
+item.spidermanaddon:spiderman_unlimited_invisibility=隱身
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=蜘蛛人： 無限腕部變形器
+menu.pizza.full_shift=§6完整班次
+dialog.pizza.full_shift_started=§6阿齊茲先生：§r 完整班次已開始。訂單 %1/%2：向 %3 位顧客配送披薩。開始時間：%4。
+dialog.pizza.full_shift_return_to_joe=§6訂單已完成。返回阿齊茲先生處領取訂單 %1/%2。
+dialog.pizza.full_shift_return_for_reward=§6你已完成最後一單。返回阿齊茲先生處領取獎勵。
+dialog.pizza.full_shift_next_order=§6阿齊茲先生：§r 訂單 %1/%2 已準備好：向 %3 位顧客配送披薩。累計時間：%4。
+dialog.pizza.full_shift_spawn_failed=§6阿齊茲先生：§r 我找不到下一單的顧客。完整班次失敗。
+dialog.pizza.full_shift_success=§6阿齊茲先生：§r 完整班次完成！你完成了 %1 個訂單，並獲得 %2 個金錠、%3 個組件和 %4 點經驗值。
+
+
+dialog.pizza.night_unavailable=§6阿齊茲先生：§r 夜間不營業。請在白天回來。
+dialog.pizza.daily_limit=§6阿齊茲先生：§r 你今天已經完成了 %1 個配送任務。明天再來吧。
+
+item.spidermanaddon:pizza_backpack_offhand=披薩配送背包
+
+pack.name=SpiderQuick
+pack.description=靈感源自《蜘蛛人 2》的披薩配送系統。
+
+entity.spidermanaddon:joe_pizza.name=先生。 Aziz
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=生成先生。 Aziz
+entity.spidermanaddon:customer.name=顧客
+item.spawn_egg.entity.spidermanaddon:customer.name=生成顧客
+item.spidermanaddon:pizza_backpack=熱騰騰的披薩！
+
+action.interact.pizza_talk=交談到先生。 Aziz
+action.interact.deliver_pizza=配送披薩
+
+menu.pizza.title=§6先生。 Aziz's 披薩
+menu.pizza.body=你想當配送員嗎？送完所有訂單，並在時間結束前回來。
+menu.pizza.accept=§a接受任務
+menu.pizza.decline=暫時不要
+
+dialog.pizza.busy=§6阿齊茲先生：§r 已經有一名配送員在工作了。請稍後再來。
+dialog.pizza.spawn_failed=§6阿齊茲先生：§r 我找不到適合顧客的安全地點。換個區域試試。
+dialog.pizza.inventory_full=§6阿齊茲先生：§r 你的背包至少需要一個空的物品欄槽位。
+dialog.pizza.mission_started=§6阿齊茲先生：§r 你有 %2 的時間配送 %1 個訂單。趕快行動！
+dialog.pizza.still_working=§6阿齊茲先生：§r 還有 %1 個訂單尚未送達。剩餘時間：%2。
+dialog.pizza.not_your_customer=§6阿齊茲先生：§r 那個訂單屬於另一名配送員。
+dialog.pizza.already_delivered=§e這位顧客已經收到披薩了。
+dialog.pizza.need_backpack=§c你必須手持披薩配送背包才能交付訂單。
+dialog.pizza.order_delivered=§a訂單已送達。顧客：%1/%2。
+dialog.pizza.return_to_joe=§6所有訂單都已準備好。請在時間結束前返回阿齊茲先生處！
+dialog.pizza.failed_time=§6阿齊茲先生：§r 時間到了。任務失敗。
+dialog.pizza.failed_customer=§6阿齊茲先生：§r 一位顧客消失或死亡。任務失敗。
+dialog.pizza.success=§6阿齊茲先生：§r 乾得好。你送達了 %1 個訂單，並獲得 %2 個金錠。
+
+dialog.spider_sense.enemy_detected=§c偵測到敵人：§r X：%1，Y：%2，Z：%3。
+
+item.spiderverse:ben_really_mask=Ben 真的面具
+item.spiderverse:ben_really_suit=Ben 真的戰衣
+
+item.spidermanaddon:scorpion_attack=毒刺攻擊
+item.spidermanaddon:scorpion_spin=旋轉打擊
+item.spidermanaddon:scorpion_poison=激活毒素
+item.spidermanaddon:scorpion_powers=蠍子尾巴
+
+entity.spidermanaddon:electro_boss.name=電光人
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=生成電光人
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=生成 Silk
+entity.spidermanaddon:punisher_van.name=制裁者貨車
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=制裁者貨車
+item.marveladdons:venom_transform=變身為猛毒
+item.marveladdons:venom_claw=猛毒利爪
+item.marveladdons:venom_combat=戰鬥
+item.marveladdons:venom_powers=猛毒能力
+item.marveladdons:venom_shield=護盾
+item.spidermanaddon:agent_venom_ult=特工猛毒技能
+item.spiderverse:spiderman_undies_suit=蜘蛛人內衣
+item.spiderverse:electro_mask=電光人面具
+item.spidermanaddon:electro_powers=電光人能力
+item.spidermanaddon:tarantula_suit=狼蛛戰衣
+item.spidermanaddon:tarantula_mask=狼蛛面具
+item.spidermanaddon:boomerang_suit=回旋鏢戰衣
+item.spidermanaddon:boomerang_mask=回旋鏢面具
+item.spidermanaddon:scorpion_suit=蠍子戰衣
+item.spidermanaddon:green_goblin_combat=戰鬥
+item.spidermanaddon:green_goblin_laser=綠惡魔激光
+item.spidermanaddon:hobgoblin_pumpkin_bomb=惡鬼炸彈
+item.spidermanaddon:black_cat_powers=黑貓能力
+item.spidermanaddon:spiderman_menu=菜單
+item.marveladdons:venom_wings=猛毒翅膀
+item.marveladdons:venom_whip=擺蕩鞭
+
+marveladdons:itemGroup.name.fabric=布料卷
+marveladdons:itemGroup.name.spray=噴霧塗料
+spidermanaddon:itemGroup.name.powers=蜘蛛人能力
+spidermanaddon:itemGroup.name.web_shooters=蛛絲發射器
+spidermanaddon:itemGroup.name.mask=蜘蛛人面具
+spidermanaddon:itemGroup.name.suit=蜘蛛人戰衣
+spidermanaddon:itemGroup.name.mysterio=神秘客武器庫
+spidermanaddon:itemGroup.name.green_goblin=綠惡魔武器庫
+spidermanaddon:itemGroup.name.sandman=沙人武器庫
+spidermanaddon:itemGroup.name.electro=電光人武器庫
+spidermanaddon:itemGroup.name.black_cat=黑貓武器庫
+spidermanaddon:itemGroup.name.scorpion=蠍子武器庫
+spidermanaddon:itemGroup.name.dr_octopus=Dr。 Octopus 武器庫
+spidermanaddon:itemGroup.name.tarantula=狼蛛武器庫
+spidermanaddon:itemGroup.name.boomerang=回旋鏢武器庫
+
+entity.spidermanaddon:symbiote_nests.name=共生體巢穴
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=共生體巢穴
+
+dialog.black_cat.heal.light=§d黑貓：§r 簡單的東西……但很有用。別習慣看到我道謝。
+dialog.black_cat.heal.meal=§d黑貓：§r 這才叫照顧盟友。挺貼心的，蜘蛛。
+dialog.black_cat.heal.golden=§d黑貓：§r 給我的金蘋果？看來有人想贏得我的九條命。
+dialog.black_cat.heal.full=§d黑貓：§r 現在我感覺棒極了。盡量別把它毀了，好嗎？
+dialog.black_cat.heal.bad=§d黑貓：§r 腐爛的食物？小心點，親愛的。信任也會中毒。
+
+dialog.punisher.heal.light=§8制裁者：§r 補給已收到。足夠繼續前進。
+dialog.punisher.heal.meal=§8制裁者：§r 不錯的食物。能讓隊伍保持戰鬥力。
+dialog.punisher.heal.golden=§8制裁者：§r 金蘋果。很有用。你沒浪費它。
+dialog.punisher.heal.full=§8制裁者：§r 完全恢復。我重返戰鬥。
+dialog.punisher.heal.bad=§8制裁者：§r 這不叫幫忙。這是個糟糕的決定。
+
+dialog.punisher.night.1=§8制裁者：§r 夜晚有利於罪犯……也有利於我們。
+dialog.punisher.night.2=§8制裁者：§r 他們會在這時離開藏身處。
+dialog.punisher.night.3=§8制裁者：§r 保持警惕。
+
+dialog.punisher.health.1=§8制裁者：§r 我挨過更重的打。
+dialog.punisher.health.2=§8制裁者：§r 我還能戰鬥。
+
+item.spiderverse:electro_no_way_home_suit=電光人： 蜘蛛人無路家園戰衣
+item.spiderverse:electro_no_way_home_mask=電光人： 蜘蛛人無路家園面具
+item.spiderverse:electro_tas2_suit=電光人： 超凡蜘蛛人 2戰衣
+item.spiderverse:electro_tas2_mask=電光人： 超凡蜘蛛人 2面具
+
+item.spidermanaddon:electro_laser=電光人激光
+item.spidermanaddon:electro_teleport=傳送
+item.spidermanaddon:electro_ray=電擊磁力
+
+gui.uncle_ben_camera.title=§b鏡頭模式
+gui.uncle_ben_camera.body=選擇鏡頭選項。
+gui.uncle_ben_camera.camera=鏡頭
+gui.uncle_ben_camera.poses=姿勢
+gui.uncle_ben_camera.camera.title=鏡頭
+gui.uncle_ben_camera.camera.body=選擇鏡頭模式。
+gui.uncle_ben_camera.camera.free=自由鏡頭
+gui.uncle_ben_camera.camera.selfie=自拍模式
+gui.uncle_ben_camera.poses.title=姿勢
+gui.uncle_ben_camera.poses.body=選擇姿勢。
+gui.uncle_ben_camera.poses.disable=禁用姿勢
+gui.uncle_ben_camera.poses.pose=姿勢
+
+dialog.punisher.interact.low.1=§8制裁者：§r 別把合作誤認為友誼。
+dialog.punisher.interact.low.2=§8制裁者：§r 如果你放松警惕，我不會來救你。
+dialog.punisher.interact.low.3=§8制裁者：§r 證明我可以信任你。
+dialog.punisher.interact.low.4=§8制裁者：§r 我見過太多英雄因為信錯了人而倒下。
+dialog.punisher.interact.low.5=§8制裁者：§r 少說話。保持警惕。
+
+dialog.punisher.interact.high.1=§8制裁者：§r 你已經證明自己懂得如何生存。
+dialog.punisher.interact.high.2=§8制裁者：§r 我很少這麼說……乾得好。
+dialog.punisher.interact.high.3=§8制裁者：§r 掩護我，我也會掩護你。
+dialog.punisher.interact.high.4=§8制裁者：§r 我開始覺得你真的能帶來改變。
+dialog.punisher.interact.high.5=§8制裁者：§r 只要我們並肩戰鬥，那些罪犯就別想休息。
+
+dialog.punisher.follow=§8制裁者：§r 別離得太遠。
+dialog.punisher.free=§8制裁者：§r 如果有甚麼東西出現，我會處理。
+
+dialog.punisher.recruit.1=§8制裁者：§r 那張證件證明你是復仇者聯盟的人……我會和你合作。
+dialog.punisher.recruit.2=§8制裁者：§r 我不會隨便聽命於任何人。但我會給你一次機會。
+
+dialog.punisher.respect.1=§8制裁者：§r 你在進步。
+dialog.punisher.respect.2=§8制裁者：§r 乾得好。
+dialog.punisher.respect.3=§8制裁者：§r 我開始信任你了。
+dialog.punisher.respect.4=§8制裁者：§r 很專業。
+
+dialog.punisher.assist.1=§8制裁者：§r 好槍法。繼續保持。
+dialog.punisher.assist.2=§8制裁者：§r 你比我預想的更會戰鬥。
+dialog.punisher.assist.3=§8制裁者：§r 今天我們給了他們一個教訓。
+dialog.punisher.assist.4=§8制裁者：§r 和你合作讓事情簡單多了。
+
+dialog.punisher.respect.25=§8制裁者：§r 看來你知道自己在做甚麼。
+dialog.punisher.respect.50=§8制裁者：§r 我開始信任你了。
+dialog.punisher.respect.75=§8制裁者：§r 你已經證明自己是真正的盟友。
+dialog.punisher.respect.100=§8制裁者：§r 如果有一天我需要有人掩護後背，那個人會是你。
+
+dialog.punisher.idle.1=§8制裁者：§r 保持警惕。
+dialog.punisher.idle.2=§8制裁者：§r 這座城市從不入睡。
+dialog.punisher.idle.3=§8制裁者：§r 罪犯總會回來。
+dialog.punisher.idle.4=§8制裁者：§r 好好利用這片刻的安靜。
+dialog.punisher.idle.5=§8制裁者：§r 別放松警惕。
+
+gui.punisher.interact=互動
+gui.punisher.follow=跟隨我
+gui.punisher.stop_follow=停止跟隨我
+gui.punisher.title=制裁者
+gui.punisher.respect=尊重等級：
+
+dialog.punisher.enemy.1=§8制裁者：§r 他們在那裡……別跟丟了。
+dialog.punisher.enemy.2=§8制裁者：§r 有客人來了。
+dialog.punisher.enemy.3=§8制裁者：§r 是時候清理街道了。
+
+dialog.punisher.owner_hit.1=§8制裁者：§r 注意你的攻擊。我不是來承受友軍傷害的。
+dialog.punisher.owner_hit.2=§8制裁者：§r 糟糕的決定。下次瞄准敵人。
+dialog.punisher.owner_hit.3=§8制裁者：§r 這個錯誤會損害信任。保持紀律。
+
+menu.punisher.body.low_respect=制裁者警惕地看著你。他仍然沒有完全信任你。
+menu.punisher.body.high_respect=制裁者帶著自信的微笑走近。看來他很享受與你並肩行動。
+
+item.marveladdons:avengers_id_card=復仇者聯盟 ID Card。
+
+dialog.black_cat.enemy.1=§d黑貓：§r 附近有客人。而且他們看起來不像會給小費的類型。
+dialog.black_cat.enemy.2=§d黑貓：§r 我聽到附近有東西在動……準備好你的蛛絲，蜘蛛。
+dialog.black_cat.enemy.3=§d黑貓：§r 我們不是獨處。附近有只怪物在破壞這個夜晚。
+
+dialog.black_cat.owner_hit.1=§d黑貓：§r 那是一次攻擊，還是吸引我注意力的糟糕方式？
+dialog.black_cat.owner_hit.2=§d黑貓：§r 小心點，蜘蛛。錯誤的爪子也會破壞信任。
+dialog.black_cat.owner_hit.3=§d黑貓：§r 如果你打算這樣對我，也許我該回去獨自行動。
+
+dialog.black_cat.approach.low.1=§d黑貓：§r 瞧瞧誰來了。你是來幫忙的，還是只是來優雅地礙事？
+dialog.black_cat.approach.low.2=§d黑貓：§r 別太興奮，我們還不是搭檔。不過現在你可以走在我身邊……暫時而已。
+dialog.black_cat.approach.low.3=§d黑貓：§r 想得到信任，就得自己贏得。我可不會隨便送出九條命。
+
+dialog.black_cat.approach.high.1=§d黑貓：§r 你終於來了，蜘蛛。我還以為今晚會變得無聊。
+dialog.black_cat.approach.high.2=§d黑貓：§r 來得正好。有我在的時候，麻煩通常更有趣。
+dialog.black_cat.approach.high.3=§d黑貓：§r 我喜歡你這樣出現。整座城市似乎沒那麼危險了……差不多吧。
+
+dialog.black_cat.play_night.end.1=§d黑貓：§r 我覺得那套戰衣已經不適合你了。
+dialog.black_cat.play_night.end.2=§d黑貓：§r 早上好……你睡得很沈。
+dialog.black_cat.play_night.end.3=§d黑貓：§r 希望你別介意……我從你的衣櫃里借了點東西。
+dialog.black_cat.play_night.end.4=§d黑貓：§r 別擺出那種表情……你這樣看起來很可愛。
+dialog.black_cat.play_night.end.5=§d黑貓：§r 現在我們之間有一個小秘密了。
+dialog.black_cat.play_night.end.6=§d黑貓：§r 我猜今晚令人難忘。
+
+dialog.black_cat.play_night.start.1=§d黑貓：§r 今晚……你完全屬於我。
+dialog.black_cat.play_night.start.2=§d黑貓：§r 今晚就把那些反派忘掉吧。
+dialog.black_cat.play_night.start.3=§d黑貓：§r 過來……我準備了特別的東西。
+dialog.black_cat.play_night.start.4=§d黑貓：§r 別擔心……我保證會乖乖的。
+dialog.black_cat.play_night.start.5=§d黑貓：§r 經歷了這一切之後……這是你應得的。
+dialog.black_cat.play_night.start.6=§d黑貓：§r 別一直盯著……過來。
+
+dialog.black_cat.theft.1=§d黑貓：§r 哎呀……那是你的嗎？
+dialog.black_cat.theft.2=§d黑貓：§r 我先借走……也許會還給你。
+dialog.black_cat.theft.3=§d黑貓：§r 太慢了，蜘蛛。
+dialog.black_cat.theft.4=§d黑貓：§r 你真的以為我不會注意到嗎？
+dialog.black_cat.theft.5=§d黑貓：§r 有本事就來抓我！
+dialog.black_cat.theft.6=§d黑貓：§r 你總能讓這件事變得有趣。
+
+dialog.black_cat.play_night.betrayal.1=§d黑貓：§r 今晚很有趣，蜘蛛……但別把樂趣和忠誠混為一談。
+dialog.black_cat.play_night.betrayal.2=§d黑貓：§r 我早就告訴你，信任一個小偷很危險。謝謝這些回憶……還有其他一切。
+dialog.black_cat.play_night.betrayal.3=§d黑貓：§r 別往心裡去，親愛的。我只是順從本性：闖入、偷走，然後消失。
+
+menu.black_cat.play_night=夜晚的有趣！
+dialog.black_cat.play_night.ready=黑貓似乎已經準備好和你度過一個特別的夜晚。
+menu.black_cat.play_night=Play 夜晚
+menu.black_cat.aspect.spiderman_suit=黑貓蜘蛛人戰衣
+menu.black_cat.aspect=外觀
+menu.black_cat.aspect.title=黑貓外觀
+menu.black_cat.aspect.body=選擇外觀黑貓將使用。
+menu.black_cat.aspect.default=黑貓
+menu.black_cat.aspect.symbiont=共生體黑貓
+menu.black_cat.aspect.rivals=黑貓 Marvel 爭鋒
+menu.black_cat.aspect.locked=%s [已鎖定]
+dialog.black_cat.aspect.locked=她仍然不夠信任你，所以不會使用此外觀。
+dialog.black_cat.aspect.changed=黑貓更換了外觀。
+
+dialog.black_cat.assist.1=§d黑貓：§r 還不錯。也許你在戰鬥中確實有點用。
+dialog.black_cat.assist.2=§d黑貓：§r 漂亮的一擊。你差點讓我刮目相看。
+dialog.black_cat.assist.3=§d黑貓：§r 我們是個不錯的團隊……別太興奮。
+dialog.black_cat.assist.4=§d黑貓：§r 我承認，那很有風格。
+
+dialog.black_cat.try_tame=§d黑貓：§r 如果你想讓我和你合作，就使用綠寶石。
+menu.black_cat.title=黑貓
+
+menu.black_cat.respect=尊重：
+menu.black_cat.interact=互動
+menu.black_cat.follow_me=跟隨我
+menu.black_cat.stop_following=停止跟隨我
+
+menu.black_cat.body.low_respect=黑貓警惕地看著你。她仍然沒有完全信任你。
+menu.black_cat.body.high_respect=黑貓帶著自信的微笑走近。看來她很享受與你相處。
+
+dialog.black_cat.low_respect.1=§d黑貓：§r 別想多了。我還是不信任你。
+dialog.black_cat.low_respect.2=§d黑貓：§r 如果事情出了問題，我不會救你第二次。
+dialog.black_cat.low_respect.3=§d黑貓：§r 你還有點用……暫時而已。
+dialog.black_cat.low_respect.4=§d黑貓：§r 別給我後悔的理由。
+dialog.black_cat.low_respect.5=§d黑貓：§r 我獨自行動很久了。別把這一切毀掉。
+dialog.black_cat.low_respect.6=§d黑貓：§r 你有天賦，但你也有一大堆問題。
+dialog.black_cat.low_respect.7=§d黑貓：§r 別放松警惕。我不會。
+dialog.black_cat.low_respect.8=§d黑貓：§r 也許有一天，你能贏得我的信任。
+
+dialog.black_cat.high_respect.1=§d黑貓：§r 我喜歡和你合作，小蜘蛛。
+dialog.black_cat.high_respect.2=§d黑貓：§r 你挺有風格。雖然不如我，但很接近了。
+dialog.black_cat.high_respect.3=§d黑貓：§r 我就知道可以信任你。
+dialog.black_cat.high_respect.4=§d黑貓：§r 我承認，有你在更有趣。
+dialog.black_cat.high_respect.5=§d黑貓：§r 乾得好。你差點讓我刮目相看。
+dialog.black_cat.high_respect.6=§d黑貓：§r 有你在身邊，就沒那麼無聊了。
+dialog.black_cat.high_respect.7=§d黑貓：§r 別太興奮，不過我很高興見到你。
+dialog.black_cat.high_respect.8=§d黑貓：§r 掩護我，我也會掩護你。
+
+dialog.black_cat.follow_me=§d黑貓：§r 好吧，我和你一起走。只是別走得那麼慢。
+dialog.black_cat.stop_following=§d黑貓：§r 很好，我會留在這附近。別太想我。
+dialog.black_cat.not_owner=§d黑貓：§r 抱歉，親愛的。我不為你工作。
+
+entity.spidermanaddon:black_cat.name=黑貓
+action.interact.black_cat=互動
+item.spidermanaddon:black_cat_contract.name=黑貓合同
+dialog.black_cat.stolen=§d黑貓：§r 謝謝你的鑽石。想要拿回去……就來抓我。
+dialog.black_cat.captured=§d黑貓：§r 好吧……我承認你比預想的更快。
+dialog.black_cat.escape=§d黑貓：§r 太慢了，蜘蛛。下次見。
+dialog.black_cat.need_contract=§d黑貓：§r 你以為我免費工作嗎？給我一個更好的條件。
+dialog.black_cat.recruited=§d黑貓：§r 好吧……我會和你合作。但別指望我遵守規則。
+item.spidermanaddon:uncle_ben_camera=叔叔 Ben's 鏡頭
+
+entity.spidermanaddon:j_jonah_jameson.name=J。 Jonah Jameson
+action.interact.j_jonah_jameson=交談
+
+menu.j_jonah_jameson.title=J。 Jonah Jameson
+menu.j_jonah_jameson.body=詹姆森在辦公桌後懷疑地看著你。
+menu.j_jonah_jameson.interact=互動
+menu.j_jonah_jameson.sell_picture=出售照片
+menu.j_jonah_jameson.close=關閉
+
+dialogue.j_jonah_jameson.random.1=蜘蛛人是個威脅！一個戴面具的威脅！
+dialogue.j_jonah_jameson.random.2=我要的是蜘蛛人的照片，不是藉口。
+dialogue.j_jonah_jameson.random.3=如果那個爬牆怪出現，我要他的獨家新聞擺在我的桌上。
+dialogue.j_jonah_jameson.random.4=這座城市需要真正的新聞，不是到處跳屋頂的英雄。
+dialogue.j_jonah_jameson.random.5=帕克！等等……你不是帕克。算了，動作還是快點。
+
+dialogue.j_jonah_jameson.sell_picture=照片很糟，角度也很差，而且蜘蛛人看起來還是個威脅……不過勉強能用。拿好你的 10 個金錠。
+dialogue.j_jonah_jameson.no_picture=你想賣空氣給我嗎？等你有一張真正的蜘蛛人照片再回來！
+
+item.minecraft:planks=木板
+item.minecraft:glowstone_dust=熒石粉
+item.minecraft:redstone=紅石
+item.minecraft:diamond=鑽石
+item.minecraft:copper_ingot=銅錠
+item.minecraft:amethyst_shard=紫水晶碎片
+item.minecraft:quartz=地獄石英
+item.minecraft:netherite_ingot=Netherita 錠
+item.minecraft:gold_ingot=金錠
+item.minecraft:iron_ingot=鋼鐵錠
+item.minecraft:emerald=綠寶石
+item.marveladdons:iron_arms=鋼鐵蜘蛛手臂
+
+ui.spiderman_accessories.title=配件製作
+ui.spiderman_accessories.body=選擇配件到製作。
+ui.spiderman_accessories.selected_accessory=已選配件
+ui.spiderman_accessories.crafted=你已製作
+
+ui.laboratory_workbench.upgrades_menu=升級蜘蛛人技能
+ui.laboratory_workbench.upgrades_body=選擇技能到升級。
+ui.laboratory_workbench.accessories=配件製作
+ui.laboratory_workbench.accessories_coming_soon=配件製作將成為可用稍後。
+ui.laboratory_workbench.back=返回
+
+ui.spiderman_suits.next_unlock=下一個解鎖
+
+gui.spidermanaddon.spiderman_level_up=蜘蛛人達到等級 %1！
+gui.spidermanaddon.spiderman_max_level=你擁有達到蜘蛛人's 最高等級。
+ui.spiderman_suits.title=戰衣實驗室
+ui.spiderman_suits.body=選擇戰衣到製作。
+ui.spiderman_suits.level=蜘蛛人等級
+ui.spiderman_suits.locked=已鎖定
+ui.spiderman_suits.need_level=所需蜘蛛人等級
+ui.spiderman_suits.selected_suit=已選戰衣
+ui.spiderman_suits.required_level=所需等級
+ui.spiderman_suits.required_materials=所需材料
+ui.spiderman_suits.result=結果
+ui.spiderman_suits.mask_included=這套戰衣已經包含面具。
+ui.spiderman_suits.craft=製作
+ui.spiderman_suits.missing_materials=缺少材料
+ui.spiderman_suits.cancel=取消
+ui.spiderman_suits.no_materials=你的材料已經不夠。
+ui.spiderman_suits.crafted=你已製作
+
+ui.laboratory_workbench.suits=戰衣製作
+
+ui.spiderman_suits.title=戰衣實驗室
+ui.spiderman_suits.body=選擇戰衣到製作。
+
+item.marveladdons:blue_spray=§9藍色噴霧塗料
+item.marveladdons:brown_spray=§6棕色噴霧塗料
+item.marveladdons:cyan_spray=§3青色噴霧塗料
+item.marveladdons:gray_spray=§8灰色噴霧塗料
+item.marveladdons:green_spray=§2綠色噴霧塗料
+item.marveladdons:light_blue_spray=§b藍色輕度噴霧塗料
+item.marveladdons:light_gray_spray=§7灰色輕度噴霧塗料
+item.marveladdons:lime_spray=§a黃綠色噴霧塗料
+item.marveladdons:magenta_spray=§d品紅色噴霧塗料
+item.marveladdons:orange_spray=§6橙色噴霧塗料
+item.marveladdons:pink_spray=§d粉色噴霧塗料
+item.marveladdons:purple_spray=§5紫色噴霧塗料
+item.marveladdons:red_spray=§c紅色噴霧塗料
+item.marveladdons:white_spray=§f白色噴霧塗料
+item.marveladdons:yellow_spray=§e黃色噴霧塗料
+item.marveladdons:black_spray=黑色噴霧塗料
+
+item.marveladdons:white_fabric=§f白色布料卷
+item.marveladdons:light_gray_fabric=§7灰色輕度布料卷
+item.marveladdons:gray_fabric=§8灰色布料卷
+item.marveladdons:black_fabric=黑色布料卷
+item.marveladdons:red_fabric=§c紅色布料卷
+item.marveladdons:orange_fabric=§6橙色布料卷
+item.marveladdons:yellow_fabric=§e黃色布料卷
+item.marveladdons:lime_fabric=§a黃綠色布料卷
+item.marveladdons:green_fabric=§2綠色布料卷
+item.marveladdons:cyan_fabric=§3青色布料卷
+item.marveladdons:light_blue_fabric=§b藍色輕度布料卷
+item.marveladdons:blue_fabric=§9藍色布料卷
+item.marveladdons:purple_fabric=§5紫色布料卷
+item.marveladdons:magenta_fabric=§d品紅色布料卷
+item.marveladdons:pink_fabric=§d粉色布料卷
+item.marveladdons:brown_fabric=§6棕色布料卷
+item.marveladdons:glasses=§f面具鏡片
+itemGroup.name.spray=§6噴霧塗料
+itemGroup.name.fabric=§b布料卷
+
+entity.spidermanaddon:black_cat.name=黑貓
+item.spawn_egg.entity.spidermanaddon:black_cat.name=生成黑貓
+entity.spidermanaddon:punisher.name=制裁者
+item.spawn_egg.entity.spidermanaddon:punisher.name=生成制裁者
+entity.spidermanaddon:electro.name=電光人
+item.spawn_egg.entity.spidermanaddon:electro.name=生成電光人
+entity.spidermanaddon:mano_ninja.name=手忍者
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=生成手忍者
+entity.spidermanaddon:scorpion.name=蠍子
+item.spawn_egg.entity.spidermanaddon:scorpion.name=生成蠍子
+entity.spidermanaddon:tarantula.name=狼蛛
+item.spawn_egg.entity.spidermanaddon:tarantula.name=生成狼蛛
+entity.spidermanaddon:symbiotes.name=共生體s
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=生成共生體s
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=生成 Kraven
+entity.spidermanaddon:mayor_fisk.name=金霸王
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=生成金霸王
+entity.spidermanaddon:boomerang.name=回旋鏢
+item.spawn_egg.entity.spidermanaddon:boomerang.name=生成回旋鏢
+
+item.spidermanaddon:miles_morales_venom_punch=猛毒拳擊
+item.spidermanaddon:miles_morales_sensor=掃描
+item.spidermanaddon:miles_morales_invisibility=隱身
+item.spidermanaddon:miles_morales_focus=專注
+item.spidermanaddon:miles_morales_venom_punch=猛毒拳擊
+item.spidermanaddon:miles_morales_venom_jump=猛毒跳躍
+item.spidermanaddon:miles_morales_venom_smash=猛毒猛擊
+item.spidermanaddon:miles_morales_combat=戰鬥
+
+message.spiderman_resistance.shield=蜘蛛抗性在最後一刻保護了你。
+
+ui.laboratory_workbench.title=實驗室工作台
+ui.laboratory_workbench.body=選擇升級用於你的蜘蛛人能力。
+
+ui.laboratory_workbench.health=生命值： 等級 %s/%s
+ui.laboratory_workbench.resistance=抗性： 等級 %s/%s
+ui.laboratory_workbench.focus=專注： 等級 %s/%s
+
+ui.laboratory_workbench.health.title=升級生命值
+ui.laboratory_workbench.resistance.title=升級抗性
+ui.laboratory_workbench.focus.title=升級專注
+
+ui.laboratory_workbench.health.body=當前等級：%s/%s\n花費：%s 個組件。\n\n要升級生命值嗎？
+ui.laboratory_workbench.resistance.body=當前等級：%s/%s\n花費：%s 個組件。\n\n要升級抗性嗎？
+ui.laboratory_workbench.focus.body=當前等級：%s/%s\n花費：%s 個組件。\n\n要升級專注嗎？
+
+ui.laboratory_workbench.upgrade=升級
+ui.laboratory_workbench.cancel=取消
+
+ui.laboratory_workbench.no_components=你的組件不足。需要 %s 個組件。
+ui.laboratory_workbench.max_level=該升級已達到最高等級。
+
+ui.laboratory_workbench.health.success=生命值已升級到等級 %s。
+ui.laboratory_workbench.resistance.success=抗性已升級到等級 %s。
+ui.laboratory_workbench.focus.success=專注已升級到等級 %s。
+
+item.spiderverse:spiderman_rivals_mask=蜘蛛人： 爭鋒面具
+item.spiderverse:spiderman_rivals_suit=蜘蛛人： 爭鋒戰衣
+item.spiderverse:spiderman_2099_white_mask=蜘蛛人 2099 白色面具
+item.spiderverse:spiderman_2099_white_suit=蜘蛛人 2099 白色戰衣
+item.spiderverse:spiderman_brand_new_day_mask=蜘蛛人： 品牌新白天面具
+item.spiderverse:spiderman_brand_new_day_suit=蜘蛛人： 品牌新白天戰衣
+item.spiderverse:spider_oni_mask=蜘蛛-Oni面具
+item.spiderverse:spider_oni_suit=蜘蛛-Oni戰衣
+item.spiderverse:spiderman_black_gold_mask=蜘蛛人黑色和金面具
+item.spiderverse:spiderman_black_gold_suit=蜘蛛人黑色和金戰衣
+item.spiderverse:spiderman_mk1_mask=蜘蛛人 MK 我面具
+item.spiderverse:spiderman_mk1_suit=蜘蛛人 MK 我戰衣
+item.spiderverse:spiderman_mk2_mask=蜘蛛人 MK II面具
+item.spiderverse:spiderman_mk2_suit=蜘蛛人 MK II戰衣
+item.spiderverse:spiderman_mk3_mask=蜘蛛人 MK III面具
+item.spiderverse:spiderman_mk3_suit=蜘蛛人 MK III戰衣
+item.spiderverse:spiderman_mk4_mask=蜘蛛人 MK IV面具
+item.spiderverse:spiderman_mk4_suit=蜘蛛人 MK IV戰衣
+item.spiderverse:spiderman_miles_morales_2099_mask=蜘蛛人： Miles Morales 2099面具
+item.spiderverse:spiderman_miles_morales_2099_suit=蜘蛛人： Miles Morales 2099戰衣
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=蜘蛛人： Miles Morales - 紫色統治面具
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=蜘蛛人： Miles Morales - 紫色統治戰衣
+item.spiderverse:silk_web_mask=Silk： 蛛絲戰衣面具
+item.spiderverse:silk_web_suit=Silk： 蛛絲戰衣
+item.spiderverse:scarlet_spider_2_mask=猩紅蜘蛛 II面具
+item.spiderverse:scarlet_spider_2_suit=猩紅蜘蛛 II戰衣
+item.spiderverse:spiderman_dark_mask=蜘蛛人暗色面具
+item.spiderverse:spiderman_dark_suit=蜘蛛人暗色戰衣
+item.spiderverse:spiderman_into_the_spiderverse_mask=蜘蛛人： 平行宇宙面具
+item.spiderverse:spiderman_into_the_spiderverse_suit=蜘蛛人： 平行宇宙戰衣
+item.spiderverse:spiderman_miles_morales_2020_mask=Miles Morales 2020面具
+item.spiderverse:spiderman_miles_morales_2020_suit=Miles Morales 2020戰衣
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Miles Morales 2020面具
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Miles Morales 2020戰衣
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Miles Morales 2020面具
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Miles Morales 2020戰衣
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Miles Morales 2020面具
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Miles Morales 2020戰衣
+item.spiderverse:spiderman_blue_mask=蜘蛛人藍色面具
+item.spiderverse:spiderman_blue_suit=蜘蛛人藍色戰衣
+item.spiderverse:spiderman_antivenom_classic_mask=蜘蛛人經典反-猛毒面具
+item.spiderverse:spiderman_antivenom_classic_suit=蜘蛛人經典反-猛毒戰衣
+item.spiderverse:poison_mask=蜘蛛人： 毒素面具
+item.spiderverse:poison_suit=蜘蛛人： 毒素戰衣
+item.spiderverse:spiderman_king_in_black_mask=蜘蛛人： 之王在黑色面具
+item.spiderverse:spiderman_king_in_black_suit=蜘蛛人： 之王在黑色戰衣
+item.spiderverse:spidergwen_symbiont_mask=Gwenom面具
+item.spiderverse:spidergwen_symbiont_suit=Gwenom戰衣
+item.spiderverse:spiderman_zombie_black_mask=共生體僵屍蜘蛛人面具
+item.spiderverse:spiderman_zombie_black_suit=共生體僵屍蜘蛛人戰衣
+item.spiderverse:spiderman_zombie_mask=僵屍蜘蛛人面具
+item.spiderverse:spiderman_zombie_suit=僵屍蜘蛛人戰衣
+item.spiderverse:arachknight_mask=Arachknight面具
+item.spiderverse:arachknight_suit=Arachknight戰衣
+item.spiderverse:spiderman_cyborg_mask=蜘蛛人半機械人面具
+item.spiderverse:spiderman_cyborg_suit=蜘蛛人半機械人戰衣
+item.spiderverse:spider_carnage_mask=蜘蛛-屠殺面具
+item.spiderverse:spider_carnage_suit=蜘蛛-屠殺戰衣
+item.spiderverse:punisher_spiderman_mask=蜘蛛-制裁者面具
+item.spiderverse:punisher_spiderman_suit=蜘蛛-制裁者戰衣
+item.spiderverse:assassin_spiderman_mask=刺客蜘蛛人面具
+item.spiderverse:assassin_spiderman_suit=刺客蜘蛛人戰衣
+item.spiderverse:mayday_parker_black_mask=共生體 Mayday Parker面具
+item.spiderverse:mayday_parker_black_suit=共生體 Mayday Parker戰衣
+item.spiderverse:mayday_parker_mask=Mayday Parker面具
+item.spiderverse:mayday_parker_suit=Mayday Parker戰衣
+item.spiderverse:spiderman_classic_black_red_spider_mask=共生體蜘蛛人面具 (紅色蜘蛛)
+item.spiderverse:spiderman_classic_black_red_spider_suit=共生體蜘蛛人戰衣 (紅色蜘蛛)
+item.spidermanaddon:agent_venom_powers=特工猛毒能力
+item.spidermanaddon:agent_venom_fusil=突擊步槍
+item.spidermanaddon:agent_venom_missiles=火箭發射器
+item.spidermanaddon:agent_venom_pistols=手槍
+item.marveladdons:venom_item=共生體
+
+gui.spidermanaddon.black=黑色
+gui.spidermanaddon.white=白色
+gui.spidermanaddon.dark_blue=暗色藍色
+gui.spidermanaddon.light_blue=輕度藍色
+gui.spidermanaddon.snow=雪
+gui.spidermanaddon.purple=紫色
+gui.spidermanaddon.red=紅色
+
+gui.spidermanaddon.symbiont_color=共生體顏色
+gui.spidermanaddon.symbiont_color_body=選擇你的共生體顏色
+gui.spidermanaddon.symbiont_color_changed=共生體顏色已更改
+gui.spidermanaddon.symbiont_wings=共生體翅膀
+gui.spidermanaddon.symbiont_wings_body=啓用或禁用共生體翅膀
+gui.spidermanaddon.symbiont_wings_enable=啓用翅膀
+gui.spidermanaddon.symbiont_wings_disable=禁用翅膀
+gui.spidermanaddon.symbiont_wings_enabled=翅膀已啓用
+gui.spidermanaddon.symbiont_wings_disabled=翅膀已禁用
+
+gui.spidermanaddon.agent_venom_suits=特工猛毒戰衣
+gui.spidermanaddon.agent_venom_suits_body=選擇獨家新聞特工猛毒戰衣
+gui.spidermanaddon.agent_venom_suit_unlocked=特工猛毒戰衣已解鎖
+item.spidermanaddon:agent_venom_thunderbolts_mask=特工猛毒： 雷霆特攻隊面具
+item.spidermanaddon:agent_venom_thunderbolts_suit=特工猛毒： 雷霆特攻隊戰衣
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=特工猛毒： Harry Osborn 面具 (蜘蛛徽標)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=特工猛毒： Harry Osborn 戰衣 (蜘蛛徽標)
+item.spidermanaddon:agent_venom_spiderman2_mask=特工猛毒： Harry Osborn面具
+item.spidermanaddon:agent_venom_spiderman2_suit=特工猛毒： Harry Osborn戰衣
+item.spidermanaddon:agent_anti_venom_mask=特工反-猛毒面具
+item.spidermanaddon:agent_anti_venom_suit=特工反-猛毒戰衣
+item.spidermanaddon:agent_venom_mask=特工猛毒面具
+item.spidermanaddon:agent_venom_suit=特工猛毒戰衣
+
+gui.spidermanaddon.symbiont_skins=外觀
+gui.spidermanaddon.symbiont_skins_body=選擇外觀用於猛毒
+gui.spidermanaddon.symbiont_skin_need_capsule=你需要共生體膠囊才能解鎖此外觀
+gui.spidermanaddon.symbiont_skin_unlocked=外觀已解鎖
+gui.spidermanaddon.symbiont_skin_changed=外觀已更改
+gui.spidermanaddon.symbiont_venom_required=你必須變身為猛毒
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=特工猛毒已啓用
+gui.spidermanaddon.symbiont_agent_venom_disabled=特工猛毒已禁用
+gui.spidermanaddon.symbiont_agent_venom_deactivate=禁用特工猛毒
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=確定要禁用特工猛毒嗎？
+gui.spidermanaddon.symbiont_venom_enabled=猛毒變身已啓用
+gui.spidermanaddon.symbiont_venom_disabled=猛毒變身已禁用
+gui.spidermanaddon.symbiont_venom_deactivate=禁用猛毒變身
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=確定要禁用猛毒變身嗎？
+gui.spidermanaddon.symbiont_venom_incompatible=共生不兼容：腿部槽位不能裝備任何物品。
+
+item.spidermanaddon:venom_rage=狂怒模式
+item.marveladdons:venom_cellular_corrosion=細胞腐蝕
+item.marveladdons:venom_eat=餵食
+item.marveladdons:venom_axe=共生體斧頭
+item.marveladdons:venom_knife_whip=共生體刀
+item.marveladdons:venom_explotion=共生體爆破
+
+gui.spidermanaddon.symbiont_deactivate=禁用共生體
+gui.spidermanaddon.symbiont_deactivate_confirm=確定要禁用共生體能力嗎？
+gui.spidermanaddon.symbiont_powers_enabled=共生體能力已啓用
+gui.spidermanaddon.symbiont_powers_disabled=共生體能力已禁用
+gui.spidermanaddon.confirm=確認
+gui.spidermanaddon.cancel=取消
+gui.spidermanaddon.symbiont_menu_body=猛毒共生體系統
+gui.spidermanaddon.symbiont_progress=查看進度
+gui.spidermanaddon.symbiont_activate=激活共生體
+gui.spidermanaddon.symbiont_unlock_suit=解鎖戰衣
+gui.spidermanaddon.symbiont_unlock_suit_body=選擇可用共生體戰衣
+gui.spidermanaddon.symbiont_level=等級
+gui.spidermanaddon.symbiont_exp=經驗
+gui.spidermanaddon.symbiont_powers=啓用共生體能力
+gui.spidermanaddon.symbiont_venom=變身為猛毒
+gui.spidermanaddon.symbiont_venom_locked=變身為猛毒 §c已鎖定
+gui.spidermanaddon.symbiont_agent_venom=特工猛毒
+gui.spidermanaddon.symbiont_agent_venom_locked=特工猛毒 §c已鎖定
+gui.spidermanaddon.symbiont_suit_missing=你需要裝備完整戰衣
+gui.spidermanaddon.symbiont_suit_unlocked=共生體戰衣已解鎖
+gui.spidermanaddon.symbiont_bonded=你現在是猛毒共生體的宿主
+gui.spidermanaddon.not_symbiont_host=你不是共生體宿主
+gui.spidermanaddon.back=返回
+
+gui.spidermanaddon.symbiont_rank_0=宿主
+gui.spidermanaddon.symbiont_rank_1=已結合
+gui.spidermanaddon.symbiont_rank_2=狂暴宿主
+gui.spidermanaddon.symbiont_rank_3=致命守護者
+gui.spidermanaddon.symbiont_rank_4=完美適應
+gui.spidermanaddon.symbiont_rank_5=特工猛毒
+gui.spidermanaddon.symbiont_rank_6=活體武器庫
+gui.spidermanaddon.symbiont_rank_7=反-猛毒
+gui.spidermanaddon.symbiont_rank_8=完美羈絆
+gui.spidermanaddon.symbiont_rank_9=翅膀的之王
+gui.spidermanaddon.symbiont_rank_10=之王在黑色
+
+item.spidermanaddon:black_cat_whip_thef=幸運抓鈎
+item.spidermanaddon:black_cat_whip_claws=利爪鞭
+item.spidermanaddon:black_cat_swing=擺蕩鈎
+item.spidermanaddon:black_cat_claws=利爪攻擊
+
+item.spidermanaddon:mysterio_gas=Illusion Gas
+item.spidermanaddon:mysterio_powers=神秘客能力
+item.spidermanaddon:mysterio_invoke=Deploy 誘餌
+item.spidermanaddon:mysterio_drones=攻擊無人機
+item.spidermanaddon:mysterio_laser=神秘客 Beam
+item.spidermanaddon:mysterio_clones=召喚 Clones
+item.spiderverse:mysterio_far_from_home_suit=神秘客： 遠從家園戰衣
+item.spiderverse:mysterio_far_from_home_helmet=神秘客頭盔： 遠從家園
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=綠惡魔爆炸追蹤刀刃
+item.spidermanaddon:pumpkin_knife_guide=綠惡魔追蹤刀刃
+item.spidermanaddon:green_goblin_powers=綠惡魔能力
+item.spidermanaddon:green_goblin_raimi_blades=綠惡魔 Retractable 刀刃
+item.spidermanaddon:green_goblin_spiderman3_blades=綠惡魔刀刃
+item.spiderverse:green_goblin_spiderman3_suit=綠惡魔 - 蜘蛛人 3戰衣
+item.spiderverse:green_goblin_spiderman3_mask=綠惡魔 - 蜘蛛人 3面具
+item.spiderverse:green_goblin_no_way_home_suit=綠惡魔 - 蜘蛛人： 無路家園戰衣
+item.spiderverse:green_goblin_no_way_home_mask=綠惡魔 - 蜘蛛人： 無路家園面具
+item.spidermanaddon:planeador_spiderman3_item=綠惡魔滑翔翼
+entity.spidermanaddon:planeador_spiderman3.name=綠惡魔滑翔翼
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=綠惡魔滑翔翼
+
+gui.spidermanaddon.confirm_upgrade=升級蛛絲發射器
+gui.spidermanaddon.upgrade_cost=升級這個蛛絲發射器需要 10 個組件
+gui.spidermanaddon.upgrade=升級
+gui.spidermanaddon.max_level=這個蛛絲發射器已達到最高等級
+gui.spidermanaddon.upgraded=蛛絲發射器已升級
+gui.spidermanaddon.not_enough_components=你的組件不足
+
+gui.spidermanaddon.no_upgrades=你需要一個可升級的蛛絲發射器。
+gui.spidermanaddon.upgrade_menu=升級蛛絲發射器
+gui.spidermanaddon.select_upgrade=選擇蛛絲發射器
+gui.spidermanaddon.confirm_remove=Recover 5 組件？
+gui.spidermanaddon.remove=移除
+gui.spidermanaddon.shooter_removed=蛛絲發射器 removed
+gui.spidermanaddon.cannot_remove_equipped=無法移除已裝備的蛛絲發射器
+
+gui.spidermanaddon.upgrade_shooter=升級蛛絲發射器
+gui.spidermanaddon.remove_shooter=移除蛛絲發射器
+gui.spidermanaddon.settings=配置蛛絲發射器
+
+gui.spidermanaddon.confirm_unlock=解鎖蛛絲發射器
+gui.spidermanaddon.unlock_cost=10 組件是所需
+gui.spidermanaddon.unlock=解鎖
+gui.spidermanaddon.cancel=取消
+gui.spidermanaddon.not_enough_components=不足夠組件
+gui.spidermanaddon.unlocked=蛛絲發射器已解鎖
+
+gui.spidermanaddon.select_unlock=選擇蛛絲發射器
+gui.spidermanaddon.unlock_menu=解鎖蛛絲發射器
+gui.spidermanaddon:web_shot=蛛絲發射器
+gui.spidermanaddon.loadout=§c蛛絲發射器配置
+gui.spidermanaddon.web_shooter_loadout=Load 蛛絲發射器
+gui.spidermanaddon.empty=§c空
+gui.spidermanaddon.config=§a蛛絲發射器已配置。
+gui.spidermanaddon.no_info=§c無資訊找到。
+
+spidermanaddon.web_line.no_build=§c30 個方塊內沒有第二個端點。
+spidermanaddon.web_line.empty=§c你做不擁有足夠蛛絲液。
+
+item.spidermanaddon:web_shield=蛛絲護盾
+item.spidermanaddon:web_whip=蛛絲鈎
+item.spidermanaddon:web_line=蛛絲 Line
+item.spidermanaddon:web_bomb=蛛絲手榴彈
+item.spidermanaddon:spider_drone=蜘蛛-無人機
+item.spidermanaddon:web_hook=蛛絲鈎
+
+item.mzaddon:spider_web_cartridge=蛛絲彈匣
+item.spidermanaddon:spiderman_spin_punch=Spin 攻擊
+item.spidermanaddon:spiderman_kick=飛行踢擊
+item.spidermanaddon:spiderman_focus=專注
+item.spidermanaddon:spiderman_sensor=掃描
+item.spidermanaddon:spiderman_punch=拳擊
+item.spidermanaddon:spiderman_combat=戰鬥
+
+item.spiderverse:silk_mask=Silk面具
+item.spiderverse:silk_suit=Silk戰衣
+spidermanaddon.venom_wings=配置飛行
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=生成 Miles Morales
+entity.spidermanaddon:spectacular_spiderman.name=神奇蜘蛛人
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=生成神奇蜘蛛人
+entity.spidermanaddon:spider_gwen.name=蜘蛛格溫
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=生成蜘蛛格溫
+entity.spidermanaddon:spider_ham.name=豬豬俠
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=生成豬豬俠
+entity.spidermanaddon:spider_punk.name=蜘蛛朋克
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=生成蜘蛛朋克
+entity.spidermanaddon:spiderman_2099.name=蜘蛛人 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=生成蜘蛛人 2099
+entity.spidermanaddon:spiderman_no_way_home.name=蜘蛛人： 無路家園
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=生成蜘蛛人： 無路家園
+entity.spidermanaddon:spiderman_noir.name=暗影蜘蛛人
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=生成暗影蜘蛛人
+entity.spidermanaddon:spiderman_raimi.name=蜘蛛人 (地球-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=生成蜘蛛人 (地球-96283)
+entity.spidermanaddon:spiderman_unlimited.name=蜘蛛人無限
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=生成蜘蛛人無限
+entity.spidermanaddon:the_amazing_spiderman.name=蜘蛛人 (地球-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=生成蜘蛛人 (地球-120703)
+
+item.spidermanaddon:spider_ham_skin=豬豬俠外觀
+item.spidermanaddon:spider_ham_hammer=豬豬俠 Mallet
+
+spidermanaddon.gizmo_camera_mode.title=鏡頭模式
+spidermanaddon:camera.free=自由鏡頭
+spidermanaddon:camera.selfie=自拍鏡頭
+spidermanaddon:camera.clear=禁用鏡頭模式
+spidermanaddon:camera.animations=動畫
+spidermanaddon:camera.lyla=啓用/禁用 Lyla
+
+spidermanaddon:camera.lyla.off=禁用
+spidermanaddon:camera.lyla.on=啓用
+
+item.spidermanaddon:multiversal_chip=多元宇宙芯片
+item.spidermanaddon:gizmo_portal=創建傳送門
+item.spidermanaddon:gizmo_camera_mode=鏡頭模式
+
+spidermanaddon.gizmo.title=多元宇宙裝置
+spidermanaddon.portal=創建傳送門
+spidermanaddon.spiderman=招募蜘蛛人
+spidermanaddon.villain=召喚反派
+spidermanaddon.miles_morales=Miles Morales (地球 1610B)
+spidermanaddon.spectacular_spiderman=神奇蜘蛛人 (地球 26496)
+spidermanaddon.spider_punk=蜘蛛朋克 (地球 138B)
+spidermanaddon.spider_gwen=蜘蛛格溫 (地球 65B)
+spidermanaddon.spider_ham=豬豬俠 (地球 8311B)
+spidermanaddon.spiderman_2099=蜘蛛人 2099 (地球 928B)
+spidermanaddon.spiderman_no_way_home=蜘蛛人 - MCU (地球 199999)
+spidermanaddon.spiderman_noir=暗影蜘蛛人 (地球 90214)
+spidermanaddon.spiderman_raimi=蜘蛛人 (地球 96283)
+spidermanaddon.spiderman_unlimited=蜘蛛人無限 (地球 751263)
+spidermanaddon.the_amazing_spiderman=超凡蜘蛛人 (地球 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=超凡蜘蛛人自制面具
+item.spiderverse:the_amazing_spiderman_casero_suit=超凡蜘蛛人自制戰衣
+item.spiderverse:spiderman_new_blue_mask=蜘蛛人： 新藍色面具
+item.spiderverse:spiderman_new_blue_suit=蜘蛛人： 新藍色戰衣
+item.spiderverse:yfn_spiderman_oscorp_mask=你的友好街區蜘蛛人： Oscorp 戰衣面具
+item.spiderverse:yfn_spiderman_oscorp_suit=你的友好街區蜘蛛人： Oscorp 戰衣戰衣
+item.spiderverse:yfn_spiderman_mask=你的友好街區蜘蛛人面具
+item.spiderverse:yfn_spiderman_suit=你的友好街區蜘蛛人戰衣
+item.spiderverse:spiderman_bombastic_bag_man_mask=蜘蛛人： 爆裂袋子-俠面具
+item.spiderverse:spiderman_bombastic_bag_man_suit=蜘蛛人： 爆裂袋子-俠戰衣
+
+item.spidermanaddon:web_bomb_item=蛛絲炸彈
+item.spidermanaddon:spider_drone_item=蜘蛛-無人機
+item.spidermanaddon:mobile=移動手機
+item.spidermanaddon:dr_octopus_take=抓住
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=蜘蛛人暗影： 平行宇宙面具
+item.spiderverse:the_amazing_spiderman_black_mask=超凡蜘蛛人黑色面具
+item.spidermanaddon:capsule=膠囊
+item.spidermanaddon:dr_octopus_chip=召喚芯片： 章魚博士 [地球-616]
+item.spidermanaddon:multiversal_gizmo=多元宇宙裝置
+item.spidermanaddon:web_shooter=蛛絲發射器
+item.spidermanaddon:web_shooter_balanceo=蛛絲發射器 [擺蕩]
+entity.spidermanaddon:air_compressor.name=空氣壓縮器
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=空氣壓縮器
+entity.spidermanaddon:viento.name=風
+item.spawn_egg.entity.spidermanaddon:viento.name=風
+
+spidermanaddon.symbiont_pull_lock=施展共生體牽引，抓住附近 4 個敵人並將其重創。
+spidermanaddon.antivenom_bomb_lock=投擲反猛毒炸彈，對敵人造成大量傷害。
+spidermanaddon.antivenom_tempest_lock=製造反猛毒風暴，對敵人造成大量傷害。
+spidermanaddon.symbiote_whip_lock=使用共生體利刃戰鬥。
+spidermanaddon.rage_mode_lock=激活狂暴模式，提高抗性和戰鬥傷害，並在數秒內獲得不死效果。
+spidermanaddon.rage_mode_unlock.price=價格： 25 XP
+spidermanaddon.symbiote_powers_lock.price=價格： 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=綠惡魔南瓜炸彈 [Raimi Saga]
+item.spidermanaddon:planeador_raimi_item=綠惡魔滑翔翼 [Raimi Saga]
+item.spidermanaddon:iron_arms_menu=菜單
+item.spidermanaddon:dr_octopus_walk=走帶有金屬手臂
+item.spidermanaddon:dr_octopus_attack=攻擊
+entity.spidermanaddon:suits_machine.name=戰衣製造機
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=戰衣製造機
+entity.spidermanaddon:taskmaster_drone.name=模仿大師無人機
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=生成模仿大師無人機
+item.spidermanaddon:iron_arms_menu=菜單
+item.spidermanaddon:concussive_blast=蛛絲發射器： 震蕩爆破
+item.spidermanaddon:web_grabber=蛛絲發射器： 蛛絲抓取器
+item.spidermanaddon:impact_web=蛛絲發射器： 蛛絲衝擊
+item.spiderverse:superior_spiderman_black_mask=究極蜘蛛人黑色面具
+item.spiderverse:spiderman_raimi_black_mask=蜘蛛人 Raimi's 黑色面具
+item.spiderverse:the_amazing_spiderman_black_suit=超凡蜘蛛人黑色面具
+item.spiderverse:spiderman_ps5_symbiote_mask=Insomniac's 蜘蛛人 2： 共生體戰衣面具
+item.spiderverse:spiderman_ps4_black_mask=Insomniac's 蜘蛛人 2： 黑色戰衣面具
+item.spiderverse:miles_morales_across_the_spiderverse_mask=蜘蛛人 Miles Morales： 縱橫蜘蛛-宇宙面具
+item.spiderverse:spiderman_classic_black_mask=蜘蛛人經典黑色面具
+item.spiderverse:venom_s3_mask=猛毒 [蜘蛛人 3]面具
+item.spiderverse:spiderman_antivenom_mask=蜘蛛人： 反猛毒面具
+item.spiderverse:spirit_spider_mask=靈魂蜘蛛面具
+item.spiderverse:spectacular_spiderman_black_mask_3=神奇蜘蛛人 3.0 黑色面具
+item.spiderverse:spectacular_spiderman_black_mask_2=神奇蜘蛛人 2.0 黑色面具
+item.spiderverse:spectacular_spiderman_black_mask=神奇蜘蛛人黑色面具
+item.spiderverse:spectacular_spiderman_mask=神奇蜘蛛人面具
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=蜘蛛人 2099： 縱橫蜘蛛-宇宙面具
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=蜘蛛人 2099： 縱橫蜘蛛-宇宙面具
+item.spiderverse:anti_ock_mask_3=反-Ock 戰衣面具
+item.spiderverse:anti_ock_mask_2=反-Ock 戰衣面具
+item.spiderverse:anti_ock_mask_1=反-Ock 戰衣面具
+item.spiderverse:anti_ock_mask=反-Ock 戰衣面具
+item.spiderverse:aracnido_jr_mask=Arachnid Jr。面具
+item.spiderverse:ezekiel_sims_mask=Ezekiel Sims面具
+item.spiderverse:human_spider_mask=la 人類蜘蛛面具
+item.spiderverse:into_the_spiderverse_sb_mask=平行宇宙 SB面具
+item.spiderverse:miles_morales_10th_mask_3=蜘蛛人 Miles Morales： 10th 週年紀念面具
+item.spiderverse:miles_morales_10th_mask_2=蜘蛛人 Miles Morales： 10th 週年紀念面具
+item.spiderverse:miles_morales_10th_mask_1=蜘蛛人 Miles Morales： 10th 週年紀念面具
+item.spiderverse:miles_morales_10th_mask=蜘蛛人 Miles Morales： 10th 週年紀念面具
+item.spiderverse:miles_morales_bodega_cat_mask=蜘蛛人 Miles Morales： 雜貨店貓面具
+item.spiderverse:miles_morales_bodega_cat_mask_1=蜘蛛人 Miles Morales： 雜貨店貓面具
+item.spiderverse:miles_morales_bodega_cat_mask_2=蜘蛛人 Miles Morales： 雜貨店貓面具
+item.spiderverse:miles_morales_bodega_cat_mask_3=蜘蛛人 Miles Morales： 雜貨店貓面具
+item.spiderverse:miles_morales_gold_mask=蜘蛛人 Miles Morales： 上城區驕傲面具
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Miles Morales： 平行宇宙面具
+item.spiderverse:miles_morales_wolverine_mask_3=Miles Morales： 金剛狼面具
+item.spiderverse:miles_morales_wolverine_mask_2=Miles Morales： 金剛狼面具
+item.spiderverse:miles_morales_wolverine_mask_1=Miles Morales： 金剛狼面具
+item.spiderverse:miles_morales_wolverine_mask=Miles Morales： 金剛狼面具
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=猩紅蜘蛛： 縱橫蜘蛛-宇宙面具
+item.spiderverse:scarlet_spider_mask_3=猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_3=猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_3=猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_2=猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_1=猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask=猩紅蜘蛛面具
+item.spiderverse:spiderman_67_mask=蜘蛛人： 67°面具
+item.spiderverse:spiderman_90_black_mask_1=蜘蛛人： 動畫系列 [紅藍邊框] 黑色面具
+item.spiderverse:spiderman_90_black_mask=蜘蛛人： 動畫系列黑色面具
+item.spiderverse:spiderman_90_mask=蜘蛛人： 動畫系列面具
+item.spiderverse:spiderman_cero_mask=蜘蛛人： Zero面具
+item.spiderverse:spiderman_future_foundation_mask=蜘蛛人： Future 基金會面具
+item.spiderverse:spiderman_homecoming_mask=蜘蛛人： Stark 戰衣面具
+item.spiderverse:spiderman_homemade_mask=蜘蛛人自制面具
+item.spiderverse:spiderman_india_mask=蜘蛛人 India： 縱橫蜘蛛-宇宙戰衣
+item.spiderverse:spiderman_far_from_home_mask=蜘蛛人： 已升級面具
+item.spiderverse:spiderman_last_stand_mask=蜘蛛人： 最後背水一戰面具
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Miles Morales： 信仰之躍面具
+item.spiderverse:spiderman_negative_mask=蜘蛛人： 負能量面具
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=暗影蜘蛛人： 平行宇宙面具
+item.spiderverse:spiderman_no_way_home_mask=蜘蛛人： 混合體面具
+item.spiderverse:spiderman_ps4_mask=Insomniac's 蜘蛛人： 高級面具
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's 蜘蛛人： 高級面具 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's 蜘蛛人： 高級面具 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's 蜘蛛人： 高級面具 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's 蜘蛛人： 高級面具 2.0
+item.spiderverse:spiderman_raimi_mask=蜘蛛人 Raimi's面具
+item.spiderverse:spiderman_secret_wars_civil_war_mask=蜘蛛人： 秘密戰爭 - 內戰面具
+item.spiderverse:spiderman_stealth_mask=蜘蛛人： 大時間面具
+item.spiderverse:spiderman_steve_ditko_mask=蜘蛛人： 超凡幻想 #15面具
+item.spiderverse:spiderman_unlimited_mask=蜘蛛人： 無限面具
+item.spiderverse:spiderman_velocity_mask=蜘蛛人速度面具
+item.spiderverse:spiderman_web_of_shadows_black_mask=蜘蛛人： 蛛絲的暗影黑色面具
+item.spiderverse:spiderman_web_of_shadows_mask=蜘蛛人： 蛛絲的暗影面具
+item.spiderverse:spiderman_what_if_animated_mask=蜘蛛人： 甚麼如果 Ep 5面具
+item.spiderverse:spiderman_what_if_mask=蜘蛛人： 迪士尼樂園面具
+item.spiderverse:spiderman_wrestler_mask=摔角手蜘蛛人面具
+item.spiderverse:superior_spiderman_mask_3=究極蜘蛛人面具
+item.spiderverse:superior_spiderman_mask_2=究極蜘蛛人面具
+item.spiderverse:superior_spiderman_mask_1=究極蜘蛛人面具
+item.spiderverse:superior_spiderman_mask=究極蜘蛛人面具
+item.spiderverse:spider_punk_across_the_spider_verse_mask=蜘蛛朋克： 縱橫蜘蛛-宇宙面具
+item.spiderverse:the_amazing_spiderman_2_mask=超凡蜘蛛人 2面具
+item.spiderverse:spider_punk_mask=蜘蛛朋克面具
+item.spiderverse:the_amazing_spiderman_1_mask=超凡蜘蛛人面具
+item.spiderverse:ultimate_spiderman_mask=終極蜘蛛人面具
+item.spiderverse:ultimate_spiderman_ucm_mask=終極蜘蛛人 [MCU]面具
+item.spiderverse:ultimate_spiderman_black_mask=終極蜘蛛人黑色面具
+item.spiderverse:yfn_spiderman_casero_mask=你的友好街區蜘蛛人自制面具
+item.spidermanaddon:green_goblin_chip=召喚芯片： 綠惡魔 [地球-616]
+item.spidermanaddon:green_goblin_raimi_chip=召喚芯片： 綠惡魔 [地球-96283]
+item.spidermanaddon:hobgoblin_chip=召喚芯片： 惡鬼 [地球-616]
+item.spidermanaddon:doctor_octopus_chip=召喚芯片： 章魚博士 [地球-616]
+item.spidermanaddon:lizard_chip=召喚芯片： Lagarto [地球-616]
+item.spidermanaddon:shocker_chip=召喚芯片： 震撼者 [地球-616]
+
+item.spidermanaddon:iron_arms=鋼鐵蜘蛛手臂
+item.spidermanaddon:spiderman_symbiote_powers=共生體蜘蛛人能力
+item.spidermanaddon:spiderman_powers=蜘蛛人能力
+item.spidermanaddon:web_wings=蛛絲翅膀
+item.spiderverse:green_goblin_raimi_suit=綠惡魔 [Raimi]戰衣
+item.spiderverse:green_goblin_raimi_mask=綠惡魔 [Raimi]面具
+
+spidermanaddon.damage_player.text=啓用或禁用對玩家的攻擊；此設定也適用於其他能力。
+spidermanaddon.activar=啓用
+spidermanaddon.web_shooter_config=設定
+spidermanaddon.desactivar=禁用
+spidermanaddon.symbiont_suit.unlock=解鎖： 5 XP
+spidermanaddon.suit_lock=解鎖共生體戰衣 [狂怒模式]
+spidermanaddon.cancel=取消
+spidermanaddon.back=返回
+spidermanaddon.none=無
+spidermanaddon.venom=猛毒
+spidermanaddon.antivenom=反猛毒
+spidermanaddon.carnage=屠殺
+spidermanaddon.ultimate_venom=終極猛毒
+spidermanaddon.symbiote_config=設定
+spidermanaddon.damage_player=玩家傷害
+spidermanaddon.symbiote_skin=共生體 Type
+spidermanaddon.symbiote_suit=共生體戰衣 [狂怒模式]
+spidermanaddon.spiderman_powers=蜘蛛人能力
+spidermanaddon.block_powers=升級已鎖定。
+spidermanaddon.block_powers_text=先解鎖前置升級，才能解鎖此升級。
+spidermanaddon.continuar=繼續
+spidermanaddon.unlock_mejora=解鎖升級
+spidermanaddon.swing_1_lock=擺蕩：俯衝時完成特技。完成特技可獲得經驗。
+spidermanaddon.combat_0_lock=戰鬥：提高近戰攻擊傷害。
+spidermanaddon.combat_1_lock=戰鬥：提高地面猛擊和空中打擊的傷害。
+spidermanaddon.combat_2_lock=戰鬥： 空中打擊可以 launch 附近敵人。
+spidermanaddon.health_0_lock=生命值： 額外顆心。
+spidermanaddon.health_1_lock=生命值：低於 2 顆心時，獲得持續 10 秒的傷害吸收，冷卻時間為 30 秒。
+spidermanaddon.health_2_lock=生命值：只要未受到傷害，每 15 秒恢復一次。
+spidermanaddon.swing_1.unlock=解鎖： 10 XP
+spidermanaddon.combat_0.unlock=解鎖： 10 XP
+spidermanaddon.combat_1.unlock=解鎖： 15 XP
+spidermanaddon.combat_2.unlock=解鎖： 20 XP
+spidermanaddon.health_0.unlock=解鎖： 10 XP
+spidermanaddon.health_1.unlock=解鎖： 15 XP
+spidermanaddon.health_2.unlock=解鎖： 20 XP
+
+item.spiderverse:spiderman_classic_mask=蜘蛛人： 經典面具
+item.spiderverse:spiderman_classic_mask_1=蜘蛛人： 經典面具
+item.spiderverse:spiderman_classic_mask_2=蜘蛛人： 經典面具
+item.spiderverse:spiderman_classic_mask_3=蜘蛛人： 經典面具
+item.spiderverse:scarlet_spider_mask=la 猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_1=la 猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_2=la 猩紅蜘蛛面具
+item.spiderverse:scarlet_spider_mask_3=la 猩紅蜘蛛面具
+item.spiderverse:iron_spider_mask=鋼鐵蜘蛛面具 (經典)
+item.spiderverse:iron_spider_mask_1=鋼鐵蜘蛛面具 (經典)
+item.spiderverse:iron_spider_mask_2=鋼鐵蜘蛛面具 (經典)
+item.spiderverse:iron_spider_mask_3=鋼鐵蜘蛛面具 (經典)
+item.spiderverse:iron_spider_ucm_mask=鋼鐵蜘蛛 [MCU]面具
+item.spiderverse:spiderman_2099_mask_1=蜘蛛人 2099面具
+item.spiderverse:spiderman_2099_mask_2=蜘蛛人 2099面具
+item.spiderverse:spiderman_2099_mask_3=蜘蛛人 2099面具
+item.spiderverse:spiderman_2099_mask=蜘蛛人 2099面具
+item.spiderverse:miles_morales_mask=蜘蛛人 Miles Morales面具
+item.spiderverse:ghost_spider_mask=幽靈蜘蛛面具
+
+entity.spidermanaddon:taskmaster_sequels.name=模仿大師手下
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=生成模仿大師手下
+spidermanaddon.repetir=重復挑戰
+spidermanaddon.taskmaster_challenges.0=挑戰 1
+spidermanaddon.taskmaster_challenges.1=挑戰 2
+spidermanaddon.taskmaster_challenges.2=挑戰 3
+spidermanaddon.taskmaster_challenges.3=挑戰 4
+spidermanaddon.taskmaster_challenges.4=挑戰 5
+spidermanaddon.taskmaster_challenges.start=開始
+spidermanaddon.taskmaster_challenges.0.text=擊敗 5 模仿大師手下。
+spidermanaddon.taskmaster_challenges.1.text=拆除炸彈和擊敗 Taskmaster's 手下。
+spidermanaddon.taskmaster_challenges.2.text=摧毀 Taskmaster's 無人機。
+spidermanaddon.taskmaster_challenges.3.text=儲存平民從 Taskmaster's 手下。
+spidermanaddon.taskmaster_challenges.4.text=擊敗模仿大師。
+
+spidermanaddon.suitsFabricForm=製作
+marveladdon:fabricar=製作
+spidermanaddon.venom_snow_lock=猛毒： 雪共生體 §l§6[解鎖]
+spidermanaddon.venom_snow_lock.price=價格： 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[解鎖]
+spidermanaddon.venompool_lock.price=價格： 20 XP
+spidermanaddon.venom_2099_lock=猛毒 2099 §l§6[解鎖]
+spidermanaddon.venom_2099_lock.price=價格： 15 XP
+spidermanaddon.ultimate_venom_spider_lock=終極猛毒 [帶有蜘蛛徽標] §l§6[解鎖]
+spidermanaddon.ultimate_venom_spider_lock.price=價格： 15 XP
+spidermanaddon.ultimate_venom_lock=終極猛毒 §l§6[解鎖]
+spidermanaddon.ultimate_venom_lock.price=價格： 15 XP
+spidermanaddon.venom_lee_price_lock=猛毒： Lee 價格 §l§6[解鎖]
+spidermanaddon.venom_lee_price_lock.price=價格： 15 XP
+spidermanaddon.blue_venom_lock=猛毒： 藍色 §l§6[解鎖]
+spidermanaddon.blue_venom_lock.price=價格： 10 XP
+spidermanaddon.venom_movies_lock=猛毒： 電影版 §l§6[解鎖]
+spidermanaddon.venom_movies_lock.price=價格： 15 XP
+spidermanaddon.venom.unlock=解鎖
+
+entity.spidermanaddon:green_goblin_raimi.name=綠惡魔 [Raimi Saga]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=生成綠惡魔 [Raimi Saga]
+
+item.spidermanaddon:iron_arms_attack=鋼鐵手臂 [攻擊]
+item.spidermanaddon:spider_rush=蜘蛛 Rush
+item.spidermanaddon:spider_shock=蜘蛛電擊
+spidermanaddon.iron_arms.title=金屬蜘蛛手臂
+item.spidermanaddon:symbiote_menu=菜單
+spidermanaddon.concussive_blast.price=花費： §l§a15 XP 等級s
+item.spidermanaddon:rage_mode=狂怒模式
+item.spidermanaddon:symbiote_blast=共生體爆破
+spidermanaddon.symbiote_blast=共生體爆破
+item.spidermanaddon:symbiont_pull=共生體牽引
+spidermanaddon.symbiont_pull=共生體牽引
+item.spidermanaddon:symbiote_strike=共生體打擊
+spidermanaddon.symbiote_strike=共生體打擊
+item.spidermanaddon:antivenom_bomb=反-猛毒炸彈
+spidermanaddon.antivenom_bomb=反-猛毒炸彈
+item.spidermanaddon:antivenom_tempest=反-猛毒風暴
+spidermanaddon.antivenom_tempest=反-猛毒風暴
+item.spidermanaddon:symbiote_whip=共生體刀刃
+spidermanaddon.symbiote_whip=共生體刀刃
+
+spidermanaddon.web_grabber.price=花費： §l§a15 XP 等級s
+spidermanaddon.web_grabber.price5=花費： §l§a25 XP 等級s
+
+spidermanaddon.web_grabber_lv1=蛛絲抓取器 - §l§a等級 0 §6[升級]
+spidermanaddon.web_grabber_lv1_title=蛛絲抓取器 - §l§a等級 1
+spidermanaddon.web_grabber_lv1_text=將彈匣容量從 2 發提高至 3 發。
+
+spidermanaddon.web_grabber_lv2=蛛絲抓取器 - §l§a等級 1 §6[升級]
+spidermanaddon.web_grabber_lv2_title=蛛絲抓取器 - §l§a等級 2
+spidermanaddon.web_grabber_lv2_text=將冷卻時間從 55 秒縮短至 40 秒。
+
+spidermanaddon.web_grabber_lv3=蛛絲抓取器 - §l§a等級 2 §6[升級]
+spidermanaddon.web_grabber_lv3_title=蛛絲抓取器 - §l§a等級 3
+spidermanaddon.web_grabber_lv3_text=將抓取半徑從 6 個方塊提高至 12 個方塊。
+
+spidermanaddon.web_grabber_lv4=蛛絲抓取器 - §l§a等級 3 §6[升級]
+spidermanaddon.web_grabber_lv4_title=蛛絲抓取器 - §l§a等級 4
+spidermanaddon.web_grabber_lv4_text=將彈匣容量從 3 發提高至 4 發。
+
+spidermanaddon.web_grabber_lv5=蛛絲抓取器 - §l§a等級 4 §6[升級]
+spidermanaddon.web_grabber_lv5_title=蛛絲抓取器 - §l§a等級 5
+spidermanaddon.web_grabber_lv5_text=將可抓取的敵人數量從 4 個提高至 8 個。
+
+spidermanaddon.web_grabber_full=蛛絲抓取器 - §l§a等級 5
+spidermanaddon.web_grabber_full_text=EWeb 抓取器 - §l§a等級 5
+spidermanaddon.web_grabber_unlock=蛛絲抓取器
+spidermanaddon.web_grabber_lock=蛛絲抓取器 §l§6[解鎖]
+
+spidermanaddon.concussive_blast.price=花費： §l§a15 XP 等級s
+spidermanaddon.concussive_blast.price5=花費： §l§a25 XP 等級s
+
+spidermanaddon.concussive_blast_lv1=震蕩爆破 - §l§a等級 0 §6[升級]
+spidermanaddon.concussive_blast_lv1_title=震蕩爆破 - §l§a等級 1
+spidermanaddon.concussive_blast_lv1_text=將彈匣容量從 2 發提高至 3 發。
+
+spidermanaddon.concussive_blast_lv2=震蕩爆破 - §l§a等級 1 §6[升級]
+spidermanaddon.concussive_blast_lv2_title=震蕩爆破 - §l§a等級 2
+spidermanaddon.concussive_blast_lv2_text=將冷卻時間從 45 秒縮短至 35 秒。
+
+spidermanaddon.concussive_blast_lv3=震蕩爆破 - §l§a等級 2 §6[升級]
+spidermanaddon.concussive_blast_lv3_title=震蕩爆破 - §l§a等級 3
+spidermanaddon.concussive_blast_lv3_text=將彈匣容量從 3 發提高至 4 發。
+
+spidermanaddon.concussive_blast_lv4=震蕩爆破 - §l§a等級 3 §6[升級]
+spidermanaddon.concussive_blast_lv4_title=震蕩爆破 - §l§a等級 4
+spidermanaddon.concussive_blast_lv4_text=將冷卻時間從 35 秒縮短至 24 秒。
+
+spidermanaddon.concussive_blast_lv5=震蕩爆破 - §l§a等級 4 §6[升級]
+spidermanaddon.concussive_blast_lv5_title=震蕩爆破 - §l§a等級 5
+spidermanaddon.concussive_blast_lv5_text=提高命中時的擊退效果。
+
+spidermanaddon.concussive_blast_full=震蕩爆破 - §l§a等級 5
+spidermanaddon.concussive_blast_full_text=震蕩爆破 - §l§a等級 5
+spidermanaddon.concussive_blast_unlock=震蕩爆破
+spidermanaddon.concussive_blast_lock=震蕩爆破 §l§6[解鎖]
+
+spidermanaddon.electric_web.price=花費： §l§a15 XP 等級s
+spidermanaddon.electric_web.price5=花費： §l§a25 XP 等級s
+
+spidermanaddon.electric_web_lv1=電擊蛛絲 - §l§a等級 0 §6[升級]
+spidermanaddon.electric_web_lv1_title=電擊蛛絲 - §l§a等級 1
+spidermanaddon.electric_web_lv1_text=將彈匣容量從 2 發提高至 3 發。
+
+spidermanaddon.electric_web_lv2=電擊蛛絲 - §l§a等級 1 §6[升級]
+spidermanaddon.electric_web_lv2_title=電擊蛛絲 - §l§a等級 2
+spidermanaddon.electric_web_lv2_text=將電擊蛛絲的持續時間從 5 秒延長至 10 秒。
+
+spidermanaddon.electric_web_lv3=電擊蛛絲 - §l§a等級 2 §6[升級]
+spidermanaddon.electric_web_lv3_title=電擊蛛絲 - §l§a等級 3
+spidermanaddon.electric_web_lv3_text=將冷卻時間從 45 秒縮短至 30 秒。
+
+spidermanaddon.electric_web_lv4=電擊蛛絲 - §l§a等級 3 §6[升級]
+spidermanaddon.electric_web_lv4_title=電擊蛛絲 - §l§a等級 4
+spidermanaddon.electric_web_lv4_text=將彈匣容量從 3 發提高至 4 發。
+
+spidermanaddon.electric_web_lv5=電擊蛛絲 - §l§a等級 4 §6[升級]
+spidermanaddon.electric_web_lv5_title=電擊蛛絲 - §l§a等級 5
+spidermanaddon.electric_web_lv5_text=提高電擊蛛絲的傷害。
+
+spidermanaddon.electric_web_full=電擊蛛絲 - §l§a等級 5
+spidermanaddon.electric_web_full_text=電擊蛛絲 - §l§a等級 5
+spidermanaddon.electric_web_unlock=電擊蛛絲
+spidermanaddon.electric_web_lock=電擊蛛絲 §l§6[解鎖]
+
+spidermanaddon.web_whip_full=蛛絲鞭
+spidermanaddon.web_whip_full_text=升級不可用
+spidermanaddon.web_whip_unlock=蛛絲鞭
+spidermanaddon.web_whip=蛛絲鞭
+spidermanaddon.web_whip_lock=蛛絲鞭 §l§6[解鎖]
+
+spidermanaddon.impact_web_lv1=蛛絲發射器 - §l§a等級 0 §6[升級]
+spidermanaddon.impact_web_lv1_title=蛛絲發射器 - §l§a等級 1
+spidermanaddon.impact_web_lv1_text=將彈匣容量從 6 發提高至 8 發。
+
+spidermanaddon.impact_web_lv2=蛛絲發射器 - §l§a等級 1 §6[升級]
+spidermanaddon.impact_web_lv2_title=蛛絲發射器 - §l§a等級 2
+spidermanaddon.impact_web_lv2_text=將冷卻時間從 2 秒縮短至 1.5 秒。
+
+spidermanaddon.impact_web_lv3=蛛絲發射器 - §l§a等級 2 §6[升級]
+spidermanaddon.impact_web_lv3_title=蛛絲發射器 - §l§a等級 3
+spidermanaddon.impact_web_lv3_text=將彈匣容量從 8 發提高至 10 發。
+
+spidermanaddon.impact_web_lv4=蛛絲發射器 - §l§a等級 3 §6[升級]
+spidermanaddon.impact_web_lv4_title=蛛絲發射器 - §l§a等級 4
+spidermanaddon.impact_web_lv4_text=將冷卻時間從 1.5 秒縮短至 1 秒。
+
+spidermanaddon.impact_web_lv5=蛛絲發射器 - §l§a等級 4 §6[升級]
+spidermanaddon.impact_web_lv5_title=蛛絲發射器 - §l§a等級 5
+spidermanaddon.impact_web_lv5_text=擊中敵人時，有較小概率施加蛛絲效果。（該效果會生成一個蛛網方塊。）
+
+spidermanaddon.impact_web_full=蛛絲發射器 - §l§a等級 5
+spidermanaddon.web_shooter_full_text=你已達到升級上限。
+spidermanaddon.impact_web.price=花費： §l§a15 XP 等級s
+spidermanaddon.impact_web.price5=花費： §l§a25 XP 等級s
+
+spidermanaddon.web_shooter_shoot_lv1=蛛絲發射器 - §l§a等級 0 §6[升級]
+spidermanaddon.web_shooter_shoot_lv1_title=蛛絲發射器 - §l§a等級 1
+spidermanaddon.web_shooter_shoot_lv1_text=將彈匣容量從 6 發提高至 8 發。
+
+spidermanaddon.web_shooter_shoot_lv2=蛛絲發射器 - §l§a等級 1 §6[升級]
+spidermanaddon.web_shooter_shoot_lv2_title=蛛絲發射器 - §l§a等級 2
+spidermanaddon.web_shooter_shoot_lv2_text=將冷卻時間從 2 秒縮短至 1.5 秒。
+
+spidermanaddon.web_shooter_shoot_lv3=蛛絲發射器 - §l§a等級 2 §6[升級]
+spidermanaddon.web_shooter_shoot_lv3_title=蛛絲發射器 - §l§a等級 3
+spidermanaddon.web_shooter_shoot_lv3_text=將彈匣容量從 8 發提高至 10 發。
+
+spidermanaddon.web_shooter_shoot_lv4=蛛絲發射器 - §l§a等級 3 §6[升級]
+spidermanaddon.web_shooter_shoot_lv4_title=蛛絲發射器 - §l§a等級 4
+spidermanaddon.web_shooter_shoot_lv4_text=將冷卻時間從 1.5 秒縮短至 1 秒。
+
+spidermanaddon.web_shooter_shoot_lv5=蛛絲發射器 - §l§a等級 4 §6[升級]
+spidermanaddon.web_shooter_shoot_lv5_title=蛛絲發射器 - §l§a等級 5
+spidermanaddon.web_shooter_shoot_lv5_text=擊中敵人時，有較小概率施加蛛絲效果。（該效果會生成一個蛛網方塊。）
+
+spidermanaddon.web_shooter_shoot_full=蛛絲發射器 - §l§a等級 5
+spidermanaddon.web_shooter_full_text=你已達到升級上限。
+spidermanaddon.web_shooter_shoot.price=花費： §l§a15 XP 等級s
+spidermanaddon.web_shooter_shoot.price5=花費： §l§a25 XP 等級s
+
+spidermanaddon.impact_web=衝擊蛛絲
+spidermanaddon.impact_web_lock=衝擊蛛絲 §l§6[解鎖]
+
+spidermanaddon.web_whip=蛛絲鞭
+spidermanaddon.electric_web=電擊蛛絲
+spidermanaddon.concussive_blast=震蕩爆破
+spidermanaddon.web_bomb=蛛絲炸彈
+spidermanaddon.spider_drone=蜘蛛無人機
+spidermanaddon.web_grabber=蛛絲抓取器
+
+item.spidermanaddon:web_blossom=蛛網綻放
+item.spidermanaddon:holo_decoy=全息誘餌
+item.spidermanaddon:low_gravity=低重力
+item.spidermanaddon:arms_race=手臂競賽
+item.spidermanaddon:blitz=閃擊
+item.spidermanaddon:electric_punch=電擊拳擊
+item.spidermanaddon:equaliser=平衡器
+item.spidermanaddon:negative_shockwave=負能量衝擊波
+item.spidermanaddon:rock_out=搖滾出去
+item.spidermanaddon:spirit_fire=靈魂火焰
+
+spidermanaddon.low_gravity_lock_text=在空中時降低重力，持續 10 秒。
+spidermanaddon.low_gravity_lock=低重力 §l§6[解鎖]
+spidermanaddon.web_blossom_text=跳起並向視野內的所有目標發射蛛絲。
+spidermanaddon.holo_decoy_lock_text=生成多個全息投影。
+spidermanaddon.holo_decoy_lock=全息誘餌 §l§6[解鎖]
+spidermanaddon.arms_race_lock_text=釋放電擊，使敵人眩暈。
+spidermanaddon.arms_race_lock=手臂競賽 §l§6[解鎖]
+spidermanaddon.blitz_lock_text=提高衝刺速度，並實時傳遞動量來推開敵人。
+spidermanaddon.blitz_lock=閃擊 §l§6[解鎖]
+spidermanaddon.electric_punch_lock_text=暫時讓雙拳充滿電能，對敵人造成電擊。
+spidermanaddon.electric_punch_lock=電擊拳擊 §l§6[解鎖]
+spidermanaddon.equaliser_text=持續 5 秒，所有人（包括你）都會被一擊擊倒。
+spidermanaddon.equaliser_lock=平衡器 §l§6[解鎖]
+spidermanaddon.negative_shockwave_text=釋放一股負能量衝擊波。
+spidermanaddon.negative_shockwave_lock=負能量衝擊波 §l§6[解鎖]
+spidermanaddon.rock_out_text=用強力音波轟擊敵人。
+spidermanaddon.rock_out_lock=搖滾出去 §l§6[解鎖]
+spidermanaddon.spirit_fire_text=從……某個地方……引導不穩定且有害的以太能量波。
+spidermanaddon.spirit_fire_lock=靈魂火焰 §l§6[解鎖]
+
+spidermanaddon.regresar=返回
+spidermanaddon.salir=退出
+spidermanaddon.usar=使用
+
+item.spidermanaddon:spectacular_spiderman_chip=神奇蜘蛛人 [地球-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [地球-1610B]
+item.spidermanaddon:spider_gwen_chip=蜘蛛格溫 [地球-65B]
+item.spidermanaddon:spider_ham_chip=豬豬俠 [地球-8311]
+item.spidermanaddon:spider_punk_chip=蜘蛛朋克 [地球-138B]
+item.spidermanaddon:spiderman_2099_chip=蜘蛛人 2099 [地球-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=蜘蛛人 [地球-199999]
+item.spidermanaddon:spiderman_noir_chip=蜘蛛人： 暗影 [地球-90214B]
+item.spidermanaddon:spiderman_raimi_chip=蜘蛛人 [地球-96283]
+item.spidermanaddon:spiderman_unlimited_chip=蜘蛛人： Inlimited [地球-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=超凡蜘蛛人 [地球-120703]
+
+item.spidermanaddon:green_goblin=綠惡魔 [地球-616]
+item.spidermanaddon:hobgoblin=惡鬼 [地球-616]
+item.spidermanaddon:shocker=震撼者 [地球-616]
+item.spidermanaddon:lizard=蜥蜴 [地球-616]
+
+spidermanaddon.multiversal_gizmo=多元宇宙裝置
+spidermanaddon.accesorios=配件
+spidermanaddon.suit_skills=戰衣 Skill
+spidermanaddon.upgrades_laboratoryWorkbench=升級
+spidermanaddon.laboratoryWorkbench=實驗室工作台
+spidermanaddon.web_shooter=蛛絲發射器
+spidermanaddon.capsule=膠囊
+spidermanaddon.hobgoblin_pumpkin_bomb=惡鬼南瓜炸彈
+spidermanaddon.fabricar=製作
+spidermanaddon.suitsFabric_form=製作
+spidermanaddon.suits_form=選擇戰衣
+spidermanaddon.multiversal_chip=芯片 [反派]
+spidermanaddon.spiderman_chip=芯片 [蜘蛛 Society]
+
+item.spidermanaddon:venom=猛毒 [變身]
+item.spidermanaddon:symbiont_whip=共生體鞭
+item.spidermanaddon:venom_regeneration=餵食
+item.spidermanaddon:symbiont_axe=共生體斧頭
+item.spidermanaddon:symbiont_claw=共生體利爪
+item.spidermanaddon:venom_punch=戰鬥
+item.spidermanaddon:venom_impulse_whip=共生體鞭 [Boost]
+item.spidermanaddon:symbiote_capsule=猛毒共生體膠囊
+item.spidermanaddon:capsule=膠囊
+tile.spidermanaddon:knull_block.name=Knull 方塊
+tile.spidermanaddon:meteorite_block.name=隕石方塊
+spidermanaddon.feed=餵食
+spidermanaddon.symbiont_axe=共生體斧頭
+spidermanaddon.symbiont_claw=共生體利爪
+spidermanaddon.symbiont_whip=共生體鞭
+spidermanaddon.transformation=變身
+spidermanaddon.skins=外觀
+spidermanaddon.on=啓用
+spidermanaddon.off=禁用
+spidermanaddon.camera=游戲鏡頭
+spidermanaddon.third=第三人稱人
+spidermanaddon.first=第一人稱人
+entity.spidermanaddon:symbiont.name=猛毒共生體
+item.spawn_egg.entity.spidermanaddon:symbiont.name=猛毒共生體
+entity.spidermanaddon:venom_horse.name=馬猛毒
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=馬猛毒
+
+item.spidermanaddon:spiderman_2099_burger.name=蜘蛛人 2099 Burger
+item.spiderverse:scarlet_spider_suit=la 猩紅蜘蛛戰衣
+item.spiderverse:spiderman_90_suit=蜘蛛人： 動畫系列戰衣
+item.spiderverse:spiderman_67_suit=蜘蛛人 67°戰衣
+item.spiderverse:spectacular_spiderman_suit=神奇蜘蛛人戰衣
+item.spiderverse:spectacular_spiderman_black_suit=神奇蜘蛛人黑色戰衣
+item.spiderverse:spectacular_spiderman_black_suit_2=神奇蜘蛛人 2.0 黑色戰衣
+item.spiderverse:spectacular_spiderman_black_suit_3=神奇蜘蛛人 3.0 黑色戰衣
+item.spiderverse:spiderman_steve_ditko_suit=蜘蛛人： 超凡幻想 #15戰衣
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=終極蜘蛛人毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=蜘蛛人 India 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Miles Morales 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=鋼鐵蜘蛛 [MCU] 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=蜘蛛朋克毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=蜘蛛人混合體毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=蜘蛛人暗影毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=究極蜘蛛人毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=蜘蛛人 Raimi 黑色戰衣毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=蜘蛛人 Raimi 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=蜘蛛人 PS4 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=蜘蛛人黑色戰衣毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=蜘蛛人 2099 [縱橫蜘蛛-宇宙] 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=蜘蛛格溫毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=猩紅蜘蛛毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=超凡蜘蛛人 2 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=超凡蜘蛛人毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (信仰之躍) 毛絨玩具
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=蜘蛛-移動
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=蜘蛛-摩托車
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=黑貓 Doll
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=Peter Parker's背包
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=蜘蛛人戰衣背水一戰
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=實驗室工作台
+entity.spidermanaddon:lizard.name=蜥蜴
+item.spawn_egg.entity.spidermanaddon:lizard.name=生成 Lagarto
+entity.spidermanaddon:prisoner.name=囚犯
+item.spawn_egg.entity.spidermanaddon:prisoner.name=生成囚犯
+item.spidermanaddon:research_token=Research 代幣
+
+item.spidermanaddon:backpack_token=背包代幣
+item.spidermanaddon:web_shooters_plans=蛛絲發射器系統 [擺蕩]
+item.spiderverse:web_shooter_balanceo=蛛絲發射器 [擺蕩]
+item.spidermanaddon:usb=USB [無 Data]
+
+item.spidermanaddon:base_token=Base 代幣
+item.spidermanaddon:challenge_token=挑戰代幣
+item.spidermanaddon:tokens_crime=犯罪代幣
+item.spiderverse:web_cartridge=蛛絲彈匣
+item.spidermanaddon:spiderman_palette.name=蜘蛛人 Palette
+
+item.spidermanaddon:miles_morales_invisibility_token=Miles Morales 技能： 隱身
+item.spidermanaddon:fire_resistence_stealth_suit_token=戰衣技能： 火焰抗性
+item.spidermanaddon:invisibility_stealth_suit_token=戰衣技能： 隱身
+item.spidermanaddon:regeneration_stealth_suit_token=戰衣技能： 再生
+
+item.spiderverse:spiderman_classic_suit=蜘蛛人： 經典戰衣
+item.spiderverse:spiderman_raimi_suit=蜘蛛人 Raimi's戰衣
+item.spiderverse:spiderman_raimi_black_suit=蜘蛛人 Raimi's 黑色戰衣
+item.spiderverse:miles_morales_suit=蜘蛛人 Miles Morales： 經典戰衣
+item.spiderverse:miles_morales_gold_suit=蜘蛛人 Miles Morales： 上城區驕傲戰衣
+item.spiderverse:iron_spider_ucm_suit=鋼鐵蜘蛛 [UCM]戰衣
+item.spiderverse:spiderman_stealth_suit=蜘蛛人： 大時間戰衣
+item.spiderverse:spiderman_ps4_suit=Insomniac's 蜘蛛人： 高級戰衣
+item.spiderverse:spiderman_ps4_black_suit=Insomniac's 蜘蛛人 2： 黑色戰衣
+item.spiderverse:ultimate_spiderman_ucm_suit=蜘蛛人： 終極戰衣
+item.spiderverse:the_amazing_spiderman_1_suit=超凡蜘蛛人戰衣
+item.spiderverse:the_amazing_spiderman_2_suit=超凡蜘蛛人 2戰衣
+item.spiderverse:spiderman_steve_ditko_suit=蜘蛛人： 超凡幻想 #15戰衣
+item.spiderverse:human_spider_suit=la 人類蜘蛛戰衣
+item.spiderverse:spiderman_wrestler_suit=摔角手蜘蛛人戰衣
+item.spiderverse:spiderman_homemade_suit=蜘蛛人： 自制戰衣
+item.spiderverse:spiderman_far_from_home_suit=蜘蛛人： 已升級戰衣
+item.spiderverse:spiderman_no_way_home_suit=蜘蛛人： 混合體戰衣
+item.spiderverse:spiderman_negative_suit=蜘蛛人： 負能量戰衣
+item.spiderverse:spiderman_homecoming_suit=蜘蛛人： Stark戰衣
+item.spidermanaddon:genetically_engineered_super_spider=Genetically Engineered 超級蜘蛛
+item.spidermanaddon:spider_egg=生成蜘蛛
+item.spidermanaddon:radioactive_spider=蜘蛛人能力
+item.spidermanaddon:pumpkin_bomb=南瓜炸彈
+item.spiderverse:iron_arms=鋼鐵蜘蛛 Legs
+item.spidermanaddon:nanotechnology_chip=Nanotechnology 芯片
+item.spiderverse:miles_morales_bodega_cat_suit=蜘蛛人 Miles Morales： 雜貨店貓戰衣
+item.spiderverse:ultimate_spiderman_suit=終極蜘蛛人戰衣
+item.spiderverse:spectacular_spiderman_black_suit=神奇蜘蛛人： 黑色戰衣
+item.spiderverse:spectacular_spiderman_black_suit_2=神奇蜘蛛人： 黑色戰衣 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=神奇蜘蛛人： 黑色戰衣 3.0
+item.spiderverse:spiderman_classic_black_suit=蜘蛛人： 經典黑色戰衣
+item.spiderverse:spiderman_black_suit_comic=蜘蛛人： 秘密戰爭黑色戰衣
+item.spiderverse:ultimate_spiderman_black_suit=終極蜘蛛人： 黑色戰衣
+entity.spidermanaddon:green_goblin.name=綠惡魔
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=生成綠惡魔
+entity.spidermanaddon:shocker.name=震撼者
+item.spawn_egg.entity.spidermanaddon:shocker.name=生成震撼者
+entity.spidermanaddon:venom_boss.name=猛毒
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=生成猛毒
+entity.spidermanaddon:hobgoblin.name=惡鬼
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=生成惡鬼
+entity.spidermanaddon:taskmaster.name=模仿大師
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=生成模仿大師
+entity.spidermanaddon:dealer.name=商人
+item.spawn_egg.entity.spidermanaddon:dealer.name=生成商人
+entity.spidermanaddon:black_cat.name=黑貓
+item.spawn_egg.entity.spidermanaddon:black_cat.name=生成黑貓
+entity.spidermanaddon:symbiot.name=猛毒共生體
+item.spawn_egg.entity.spidermanaddon:symbiot.name=猛毒共生體
+entity.spidermanaddon:sewing_machine.name=縫紉機器
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=縫紉機器
+entity.spidermanaddon:challenge_box.name=挑戰箱子
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=挑戰箱子
+entity.spidermanaddon:microscope.name=顯微鏡
+item.spawn_egg.entity.spidermanaddon:microscope.name=顯微鏡
+entity.spidermanaddon:symbiote_meteorite.name=共生體隕石
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=生成共生體隕石
+entity.spidermanaddon:symbiote_meteorite_table.name=共生體隕石
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=共生體隕石
+entity.spidermanaddon:symbiont.name=猛毒共生體
+item.spawn_egg.entity.spidermanaddon:symbiont.name=猛毒共生體
+
+item.spidermanaddon:venom=猛毒 [變身]
+
+item.spiderverse:spider_gwen=蜘蛛格溫 [變身]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales： 平行宇宙 [變身]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales： 平行宇宙 - 信仰之躍 [變身]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales： 縱橫蜘蛛-宇宙 [變身]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales： 平行宇宙 - Training [變身]
+item.spidermanaddon:comic1=漫畫： 超凡幻想 #15
+item.spiderverse:hobgoblin_skin=惡鬼戰衣
+item.spiderverse:green_goblin_skin=綠惡魔戰衣
+
+item.spidermanaddon:planeador_item=綠惡魔滑翔翼
+item.spidermanaddon:spider_mobile_item=蜘蛛-移動
+item.spidermanaddon:spider_bike_item=蜘蛛-摩托車
+
+item.spidermanaddon:web_shot_empty=蛛絲發射器 [空]
+item.spidermanaddon:web_shot=蛛絲發射器
+item.spidermanaddon:sand_crystal_shard=沙人水晶碎片
+tile.spidermanaddon:sand_crystal.name=沙人水晶
+tile.spidermanaddon:sand_crystal_block.name=沙人水晶方塊
+tile.spidermanaddon:prisoner_spawn.name=囚犯生成
+
+item.spidermanaddon:combat_mode=戰鬥模式
+item.spidermanaddon:delete_upgrades_token=移除升級
+item.spidermanaddon:escudo_token=護盾 [升級]
+item.spidermanaddon:golpe_eletrico_token=電擊打擊 [升級]
+item.spidermanaddon:regeneracion_token=再生 [升級]
+item.spidermanaddon:salud_extra_token=額外生命值 [升級]
+item.spidermanaddon:dano_token=額外傷害 [升級]
+item.spidermanaddon:mega_venom_blast=Mega 猛毒爆破
+item.spidermanaddon:venom_blast_punch=猛毒打擊
+item.spidermanaddon:bodega_cat=雜貨店貓背包
+item.spidermanaddon:multiversal_particles=多元宇宙粒子
+item.spidermanaddon:component=科技組件
+item.spidermanaddon:gr_27_negative=負能量 GR-27
+item.spidermanaddon:web_flow=蛛絲 Flow
+item.spidermanaddon:spider_powers=蜘蛛能力
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=猛毒共生體膠囊
+
+item.spidermanaddon:symbiote_super_punch=超級共生體拳擊
+item.spidermanaddon:symbiote_punch=共生體打擊
+item.spidermanaddon:symbiont_blast=共生體爆破
+item.spidermanaddon:backpack_empty=空背包
+item.spidermanaddon:cat_hability_item=貓技能
+item.spidermanaddon:comic2=終極蜘蛛人 #1 漫畫
+item.spidermanaddon:lizard_invoke=蜥蜴召喚器
+item.spidermanaddon:shocker_invoke=震撼者召喚器
+item.spidermanaddon:green_goblin_invoke=綠惡魔召喚器
+item.spidermanaddon:taskmaster_invoke=模仿大師召喚器
+item.spidermanaddon:hobgoblin_invoke=惡鬼召喚器
+
+item.spiderverse:spiderman_classic_suit_damage=蜘蛛人： 經典戰衣 §c[損壞]
+item.spiderverse:spiderman_raimi_suit_damage=蜘蛛人 Raimi's 戰衣 §c[損壞]
+item.spiderverse:miles_morales_suit_damage=蜘蛛人 Miles Morales： 經典戰衣 §c[損壞]
+item.spiderverse:miles_morales_gold_suit_damage=蜘蛛人 Miles Morales： 上城區驕傲戰衣 §c[損壞]
+item.spiderverse:spiderman_stealth_suit_damage=蜘蛛人： Stealth 戰衣 §c[損壞]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's 蜘蛛人： 高級戰衣 §c[損壞]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=蜘蛛人： 終極戰衣 §c[損壞]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=超凡蜘蛛人戰衣 §c[損壞]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=超凡蜘蛛人 2 戰衣 §c[損壞]
+item.spiderverse:human_spider_suit_damage=la 人類蜘蛛戰衣 §c[損壞]
+item.spiderverse:spiderman_wrestler_suit_damage=摔角手蜘蛛人戰衣 §c[損壞]
+item.spiderverse:spiderman_homemade_suit_damage=蜘蛛人： 自制戰衣 §c[損壞]
+item.spiderverse:spiderman_far_from_home_suit_damage=蜘蛛人： 已升級戰衣 §c[損壞]
+item.spiderverse:spiderman_no_way_home_suit_damage=蜘蛛人： 混合體戰衣 §c[損壞]
+item.spiderverse:spiderman_homecoming_suit_damage=蜘蛛人： Stark 戰衣 §c[損壞]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=蜘蛛人 Miles Morales： 雜貨店貓戰衣 §c[損壞]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's 蜘蛛人： 高級戰衣 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's 蜘蛛人： 高級戰衣 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's 蜘蛛人： 高級戰衣 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's 蜘蛛人： 高級戰衣 2.0
+item.spiderverse:ezekiel_sims_suit=Ezekiel Sims戰衣
+item.spiderverse:iron_spider_suit=鋼鐵蜘蛛戰衣 (經典)
+item.spiderverse:iron_spider_suit_1=鋼鐵蜘蛛戰衣 (經典)
+item.spiderverse:iron_spider_suit_2=鋼鐵蜘蛛戰衣 (經典)
+item.spiderverse:iron_spider_suit_3=鋼鐵蜘蛛戰衣 (經典)
+item.spiderverse:spiderman_velocity_suit=蜘蛛人速度戰衣
+item.spiderverse:spiderman_future_foundation_suit=蜘蛛人： Future 基金會戰衣
+item.spiderverse:spiderman_cero_suit=蜘蛛人： Zero戰衣
+item.spiderverse:aracnido_jr_suit=Arachnid Jr。戰衣
+item.spiderverse:spiderman_classic_suit_1=蜘蛛人： 經典戰衣
+item.spiderverse:spiderman_classic_suit_2=蜘蛛人： 經典戰衣
+item.spiderverse:spiderman_classic_suit_3=蜘蛛人： 經典戰衣
+item.spiderverse:spiderman_2099_suit_1=蜘蛛人 2099戰衣
+item.spiderverse:spiderman_2099_suit_2=蜘蛛人 2099戰衣
+item.spiderverse:spiderman_2099_suit_3=蜘蛛人 2099戰衣
+item.spiderverse:spiderman_2099_suit=蜘蛛人 2099戰衣
+item.spiderverse:spider_punk_suit=蜘蛛朋克戰衣
+item.spiderverse:spiderman_ps5_symbiote_suit=Insomniac's 蜘蛛人 2： 共生體戰衣
+item.spiderverse:scarlet_spider_suit_1=la 猩紅蜘蛛戰衣
+item.spiderverse:scarlet_spider_suit_2=la 猩紅蜘蛛戰衣
+item.spiderverse:scarlet_spider_suit_3=la 猩紅蜘蛛戰衣
+item.spiderverse:anti_ock_suit=反-Ock戰衣
+item.spiderverse:taskmaster_suit=模仿大師戰衣
+item.spiderverse:taskmaster_mask=模仿大師面具
+item.spiderverse:anti_ock_suit_damage=反-Ock 戰衣 §c[損壞]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's 蜘蛛人： 高級戰衣 2.0 §c[損壞]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's 蜘蛛人： 高級戰衣 2.0 §c[損壞]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's 蜘蛛人： 高級戰衣 2.0 §c[損壞]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's 蜘蛛人： 高級戰衣 2.0 §c[損壞]
+item.spiderverse:spiderman_classic_suit_1_damage=蜘蛛人： 經典戰衣 §c[損壞]
+item.spiderverse:spiderman_classic_suit_2_damage=蜘蛛人： 經典戰衣 §c[損壞]
+item.spiderverse:spiderman_classic_suit_3_damage=蜘蛛人： 經典戰衣 §c[損壞]
+item.spiderverse:scarlet_spider_suit_1_damage=la 猩紅蜘蛛戰衣 §c[損壞]
+item.spiderverse:scarlet_spider_suit_2_damage=la 猩紅蜘蛛戰衣 §c[損壞]
+item.spiderverse:scarlet_spider_suit_3_damage=la 猩紅蜘蛛戰衣 §c[損壞]
+item.spiderverse:spiderman_2099_suit_1_damage=蜘蛛人 2099 戰衣 §c[損壞]
+item.spiderverse:spiderman_2099_suit_2_damage=蜘蛛人 2099 戰衣 §c[損壞]
+item.spiderverse:spiderman_2099_suit_3_damage=蜘蛛人 2099 戰衣 §c[損壞]
+item.spiderverse:spiderman_2099_suit_damage=蜘蛛人 2099 戰衣 §c[損壞]
+item.spiderverse:spider_punk_suit_damage=蜘蛛朋克戰衣 §c[損壞]
+item.spiderverse:hobgoblin_mask=惡鬼面具
+item.spiderverse:green_goblin_mask=綠惡魔面具
+item.spidermanaddon:spiderman_picture=蜘蛛人照片
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=Anya Corazon
+item.spidermanaddon:spider_bot_fly_controllers=飛行控制器用於蜘蛛-Bots
+item.spidermanaddon:spider_bots_controllers=蜘蛛-Bot 控制器
+item.spidermanaddon:camera_mode_emotes=Emote
+item.spidermanaddon:camera_mode=Change 鏡頭位置
+item.spidermanaddon:spider_web_ball=蛛絲 Ball
+tile.spidermanaddon:newspaper0.name=報紙
+tile.spidermanaddon:newspaper1.name=報紙
+tile.spidermanaddon:newspaper.name=報紙
+entity.spidermanaddon:penguin_stacy.name=企鵝 Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=生成企鵝 Stacy
+entity.spidermanaddon:robot_dog.name=獵人機器人
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=生成獵人機器人
+entity.spidermanaddon:j_jonah_jameson.name=J。 Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=生成 J。 Jonah Jameson
+entity.spidermanaddon:hunters_drone.name=獵人無人機
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=生成獵人無人機
+entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr。 毛絨玩具
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr。 毛絨玩具
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=Kraven 獵人
+item.spawn_egg.entity.spidermanaddon:hunter.name=生成 Kraven 獵人
+entity.spidermanaddon:hunter_crossbow.name=Kraven 獵人帶有弩
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=生成 Kraven 獵人帶有弩
+item.spidermanaddon:delete_spider_powers=移除能力
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=蜘蛛人 2099： 縱橫蜘蛛-宇宙戰衣
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=蜘蛛人 2099： 縱橫蜘蛛-宇宙 (暗色)戰衣
+item.spiderverse:spiderman_90_black_suit=蜘蛛人： 動畫系列黑色戰衣
+item.spiderverse:spiderman_90_black_suit_1=蜘蛛人： 動畫系列 [紅藍邊框] 黑色戰衣
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=猩紅蜘蛛： 縱橫 SpiderVerse戰衣
+item.spiderverse:superior_spiderman_suit=究極蜘蛛人戰衣
+item.spiderverse:superior_spiderman_suit_1=究極蜘蛛人戰衣
+item.spiderverse:superior_spiderman_suit_2=究極蜘蛛人戰衣
+item.spiderverse:superior_spiderman_suit_3=究極蜘蛛人戰衣
+item.spiderverse:miles_morales_wolverine_suit=Miles Morales： 金剛狼戰衣
+item.spiderverse:miles_morales_wolverine_suit_1=Miles Morales： 金剛狼戰衣
+item.spiderverse:miles_morales_wolverine_suit_2=Miles Morales： 金剛狼戰衣
+item.spiderverse:miles_morales_wolverine_suit_3=Miles Morales： 金剛狼戰衣
+item.spiderverse:the_amazing_spiderman_belt_suit=超凡蜘蛛人帶有腰帶戰衣
+item.spiderverse:the_amazing_spiderman_black_suit=超凡蜘蛛人黑色戰衣
+item.spiderverse:spider_gwen_classic_suit=幽靈 ️蜘蛛戰衣
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Miles Morales： 縱橫蜘蛛-宇宙戰衣
+item.spidermanaddon:dr_octopus_arms=章魚博士手臂
+item.spidermanaddon:electric_web_empty=電擊蛛絲發射器 [空]
+item.spidermanaddon:electric_web=電擊蛛絲發射器
+entity.spidermanaddon:dr_octopus.name=章魚博士
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=生成章魚博士
+item.spiderverse:vulture_suit=禿鷹戰衣
+item.spiderverse:mysterio_suit_1=神秘客戰衣
+item.spiderverse:mysterio_suit=神秘客戰衣
+item.spiderverse:mysterio_helmet=神秘客頭盔
+item.spiderverse:ghost_spider_suit=幽靈蜘蛛戰衣
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Miles Morales： 平行宇宙戰衣
+item.spiderverse:electro_suit=電光人戰衣
+item.spiderverse:electro_helmet=電光人面具
+item.spidermanaddon:kraven_axe=Kraven 斧頭
+item.spidermanaddon:robot_dog_pet_plans=Kraven 機器人狗控制器
+item.spidermanaddon:robot_dog_pet=Kraven 機器人狗 [寵物]
+item.spidermanaddon:miles_morales_powers=Miles Morales 能力
+item.spidermanaddon:symbiote_powers=共生體能力
+item.spiderverse:superior_spiderman_suit_damage=究極蜘蛛人戰衣 §c[損壞]
+item.spiderverse:superior_spiderman_suit_1_damage=究極蜘蛛人戰衣 §c[損壞]
+item.spiderverse:superior_spiderman_suit_2_damage=究極蜘蛛人戰衣 §c[損壞]
+item.spiderverse:superior_spiderman_suit_3_damage=究極蜘蛛人戰衣 §c[損壞]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales： 金剛狼戰衣 §c[損壞]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales： 金剛狼戰衣 §c[損壞]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales： 金剛狼戰衣 §c[損壞]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales： 金剛狼戰衣 §c[損壞]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=超凡蜘蛛人帶有腰帶戰衣 §c[損壞]
+
+item.spiderverse:venom_s3=猛毒 [蜘蛛人 3]戰衣
+item.spiderverse:spiderman_last_stand_suit=蜘蛛人： 最後背水一戰戰衣
+item.spiderverse:superior_spiderman_black_suit=究極蜘蛛人黑色戰衣
+item.spiderverse:spiderman_web_of_shadows_black_suit=蜘蛛人： 蛛絲的暗影黑色戰衣
+item.spiderverse:spiderman_web_of_shadows_suit=蜘蛛人： 蛛絲的暗影戰衣
+item.spiderverse:spiderman_what_if_suit=蜘蛛人： 迪士尼樂園戰衣
+item.spiderverse:spiderman_what_if_animated_suit=蜘蛛人： 甚麼如果 Ep 5戰衣
+item.spiderverse:spirit_spider_suit=靈魂蜘蛛戰衣
+item.spiderverse:yfn_spiderman_casero_suit=你的友好街區蜘蛛人自制戰衣
+item.spiderverse:into_the_spiderverse_sb_suit=平行宇宙 SB戰衣
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Miles Morales： 信仰之躍戰衣
+item.spiderverse:miles_morales_bodega_cat_suit_3=蜘蛛人 Miles Morales： 雜貨店貓戰衣
+item.spiderverse:miles_morales_bodega_cat_suit_2=蜘蛛人 Miles Morales： 雜貨店貓戰衣
+item.spiderverse:miles_morales_bodega_cat_suit_1=蜘蛛人 Miles Morales： 雜貨店貓戰衣
+item.spiderverse:miles_morales_10th_suit_3=Miles Morales： 10th 週年紀念戰衣
+item.spiderverse:miles_morales_10th_suit_2=Miles Morales： 10th 週年紀念戰衣
+item.spiderverse:miles_morales_10th_suit_1=Miles Morales： 10th 週年紀念戰衣
+item.spiderverse:miles_morales_10th_suit=Miles Morales： 10th 週年紀念戰衣
+item.spiderverse:anti_ock_suit_1=反-Ock戰衣
+item.spiderverse:anti_ock_suit_2=反-Ock戰衣
+item.spiderverse:anti_ock_suit_3=反-Ock戰衣
+item.spiderverse:spider_punk_across_the_spider_verse_suit=蜘蛛朋克： 縱橫蜘蛛-宇宙戰衣
+item.spiderverse:spiderman_unlimited_suit=蜘蛛人： 無限戰衣
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=暗影蜘蛛人： 平行宇宙戰衣
+item.spiderverse:spiderman_secret_wars_civil_war_suit=蜘蛛人： 秘密戰爭 - 內戰戰衣
+item.spiderverse:spiderman_india_suit=蜘蛛人 India： 縱橫蜘蛛-宇宙戰衣
+item.spiderverse:spiderman_antivenom_suit=蜘蛛人反-猛毒戰衣

@@ -1,0 +1,1914 @@
+{
+  "resource_pack_name": "SpiderQuick",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "black_cat_skin": {
+      "textures": "textures/items/black_cat_skin"
+    },
+    "norm_stone": {
+      "textures": "textures/items/norm_stone"
+    },
+    "spider_gwen_skin": {
+      "textures": "textures/items/spider_gwen_skin"
+    },
+    "mayday_skin": {
+      "textures": "textures/items/mayday_skin"
+    },
+    "shocker_mask": {
+      "textures": "textures/items/shocker_mask"
+    },
+    "shocker_suit": {
+      "textures": "textures/items/shocker_suit"
+    },
+    "spider_punk_guitar": {
+      "textures": "textures/items/spider_punk_guitar"
+    },
+    "shocker_gloves": {
+      "textures": "textures/items/shocker_gloves"
+    },
+    "organic_web_potion": {
+      "textures": "textures/items/organic_web_potion"
+    },
+    "oscorp_table": {
+      "textures": "textures/items/oscorp_table"
+    },
+    "tarantula_attack": {
+      "textures": "textures/items/tarantula_attack"
+    },
+    "black_cat_suit": {
+      "textures": "textures/items/black_cat_suit"
+    },
+    "black_cat_mask": {
+      "textures": "textures/items/black_cat_mask"
+    },
+    "boomerang_skill_electric": {
+      "textures": "textures/items/boomerang_electric"
+    },
+    "boomerang_skill": {
+      "textures": "textures/items/boomerang_shoot"
+    },
+    "boomerang_skill_explosive": {
+      "textures": "textures/items/boomerang_explosive"
+    },
+    "boomerang_powers": {
+      "textures": "textures/items/boomerang_powers"
+    },
+    "police_scanner": {
+      "textures": "textures/items/police_scanner"
+    },
+    "man_spider": {
+      "textures": "textures/items/man_spider"
+    },
+    "six_arms": {
+      "textures": "textures/items/six_arms"
+    },
+    "man_spider_web_shoot": {
+      "textures": "textures/items/man_spider_web_shoot"
+    },
+    "man_spider_swing": {
+      "textures": "textures/items/man_spider_swing"
+    },
+    "man_spider_acid": {
+      "textures": "textures/items/man_spider_acid"
+    },
+    "man_spider_claw": {
+      "textures": "textures/items/man_spider_claw"
+    },
+    "spiderman_unlimited_sonic": {
+      "textures": "textures/items/spiderman_unlimited_sonic"
+    },
+    "spiderman_unlimited_invisibility": {
+      "textures": "textures/items/spiderman_unlimited_invisibility"
+    },
+    "spiderman_unlimited_wrist_morpher": {
+      "textures": "textures/items/spiderman_unlimited_wrist_morpher"
+    },
+    "pizza_backpack_offhand": {
+      "textures": "textures/items/pizza_backpack_offhand"
+    },
+    "pizza_backpack": {
+      "textures": "textures/items/pizza_backpack"
+    },
+    "ben_really_mask": {
+      "textures": "textures/items/mask/ben_really_mask"
+    },
+    "ben_really_suit": {
+      "textures": "textures/items/suits/ben_really_suit"
+    },
+    "scorpion_spin": {
+      "textures": "textures/items/scorpion_spin"
+    },
+    "scorpion_poison": {
+      "textures": "textures/items/scorpion_poison"
+    },
+    "scorpion_attack": {
+      "textures": "textures/items/scorpion_attack"
+    },
+    "boomerang_mask": {
+      "textures": "textures/items/boomerang_mask"
+    },
+    "boomerang_suit": {
+      "textures": "textures/items/boomerang_suit"
+    },
+    "tarantula_mask": {
+      "textures": "textures/items/tarantula_mask"
+    },
+    "tarantula_suit": {
+      "textures": "textures/items/tarantula_suit"
+    },
+    "scorpion_suit": {
+      "textures": "textures/items/scorpion_suit"
+    },
+    "symbiote_nests": {
+      "textures": "textures/items/symbiote_nests"
+    },
+    "electro_laser": {
+      "textures": "textures/items/electro_laser"
+    },
+    "electro_teleport": {
+      "textures": "textures/items/electro_teleport"
+    },
+    "electro_ray": {
+      "textures": "textures/items/electro_ray"
+    },
+    "electro_no_way_home_mask": {
+      "textures": "textures/items/electro_no_way_home_mask"
+    },
+    "electro_no_way_home_suit": {
+      "textures": "textures/items/electro_no_way_home_suit"
+    },
+    "electro_tas2_mask": {
+      "textures": "textures/items/electro_tas2_mask"
+    },
+    "electro_tas2_suit": {
+      "textures": "textures/items/electro_tas2_suit"
+    },
+    "punisher_van": {
+      "textures": "textures/items/punisher_van"
+    },
+    "avengers_id_card": {
+      "textures": "textures/items/avengers_id_card"
+    },
+    "spiderman_undies_suit": {
+      "textures": "textures/items/spiderman_undies_suit"
+    },
+    "uncle_ben_camera": {
+      "textures": "textures/items/uncle_ben_camera"
+    },
+    "glasses": {
+      "textures": "textures/items/glasses"
+    },
+    "black_spray": {
+      "textures": "textures/items/spray_paint/black"
+    },
+    "brown_spray": {
+      "textures": "textures/items/spray_paint/brown"
+    },
+    "blue_spray": {
+      "textures": "textures/items/spray_paint/blue"
+    },
+    "cyan_spray": {
+      "textures": "textures/items/spray_paint/cyan"
+    },
+    "gray_spray": {
+      "textures": "textures/items/spray_paint/gray"
+    },
+    "green_spray": {
+      "textures": "textures/items/spray_paint/green"
+    },
+    "light_blue_spray": {
+      "textures": "textures/items/spray_paint/light_blue"
+    },
+    "light_gray_spray": {
+      "textures": "textures/items/spray_paint/light_gray"
+    },
+    "lime_spray": {
+      "textures": "textures/items/spray_paint/lime"
+    },
+    "magenta_spray": {
+      "textures": "textures/items/spray_paint/magenta"
+    },
+    "orange_spray": {
+      "textures": "textures/items/spray_paint/orange"
+    },
+    "pink_spray": {
+      "textures": "textures/items/spray_paint/pink"
+    },
+    "purple_spray": {
+      "textures": "textures/items/spray_paint/purple"
+    },
+    "red_spray": {
+      "textures": "textures/items/spray_paint/red"
+    },
+    "yellow_spray": {
+      "textures": "textures/items/spray_paint/yellow"
+    },
+    "white_spray": {
+      "textures": "textures/items/spray_paint/white"
+    },
+    "black_fabric": {
+      "textures": "textures/items/fabric/black_fabric"
+    },
+    "brown_fabric": {
+      "textures": "textures/items/fabric/brown_fabric"
+    },
+    "blue_fabric": {
+      "textures": "textures/items/fabric/blue_fabric"
+    },
+    "cyan_fabric": {
+      "textures": "textures/items/fabric/cyan_fabric"
+    },
+    "gray_fabric": {
+      "textures": "textures/items/fabric/gray_fabric"
+    },
+    "green_fabric": {
+      "textures": "textures/items/fabric/green_fabric"
+    },
+    "light_blue_fabric": {
+      "textures": "textures/items/fabric/light_blue_fabric"
+    },
+    "light_gray_fabric": {
+      "textures": "textures/items/fabric/light_gray_fabric"
+    },
+    "lime_fabric": {
+      "textures": "textures/items/fabric/lime_fabric"
+    },
+    "magenta_fabric": {
+      "textures": "textures/items/fabric/magenta_fabric"
+    },
+    "orange_fabric": {
+      "textures": "textures/items/fabric/orange_fabric"
+    },
+    "pink_fabric": {
+      "textures": "textures/items/fabric/pink_fabric"
+    },
+    "purple_fabric": {
+      "textures": "textures/items/fabric/purple_fabric"
+    },
+    "red_fabric": {
+      "textures": "textures/items/fabric/red_fabric"
+    },
+    "yellow_fabric": {
+      "textures": "textures/items/fabric/yellow_fabric"
+    },
+    "white_fabric": {
+      "textures": "textures/items/fabric/white_fabric"
+    },
+    "miles_morales_venom_punch": {
+      "textures": "textures/items/miles_morales_venom_punch"
+    },
+    "miles_morales_sensor": {
+      "textures": "textures/items/miles_morales_sensor"
+    },
+    "miles_morales_invisibility": {
+      "textures": "textures/items/miles_morales_invisibility"
+    },
+    "miles_morales_focus": {
+      "textures": "textures/items/miles_morales_focus"
+    },
+    "miles_morales_venom_jump": {
+      "textures": "textures/items/miles_morales_venom_jump"
+    },
+    "miles_morales_venom_smash": {
+      "textures": "textures/items/miles_morales_venom_smash"
+    },
+    "miles_morales_combat": {
+      "textures": "textures/items/miles_morales_combat"
+    },
+    "spiderman_rivals_suit": {
+      "textures": "textures/items/suits/spiderman_rivals_suit"
+    },
+    "spiderman_rivals_mask": {
+      "textures": "textures/items/mask/spiderman_rivals_mask"
+    },
+    "spiderman_2099_white_suit": {
+      "textures": "textures/items/suits/spiderman_2099_white_suit"
+    },
+    "spiderman_2099_white_mask": {
+      "textures": "textures/items/mask/spiderman_2099_white_mask"
+    },
+    "spiderman_brand_new_day_suit": {
+      "textures": "textures/items/suits/spiderman_brand_new_day_suit"
+    },
+    "spiderman_brand_new_day_mask": {
+      "textures": "textures/items/mask/spiderman_brand_new_day_mask"
+    },
+    "spider_oni_suit": {
+      "textures": "textures/items/suits/spider_oni_suit"
+    },
+    "spider_oni_mask": {
+      "textures": "textures/items/mask/spider_oni_mask"
+    },
+    "spiderman_black_gold_suit": {
+      "textures": "textures/items/suits/spiderman_black_gold_suit"
+    },
+    "spiderman_black_gold_mask": {
+      "textures": "textures/items/mask/spiderman_black_gold_mask"
+    },
+    "spiderman_mk1_suit": {
+      "textures": "textures/items/suits/spiderman_mk1_suit"
+    },
+    "spiderman_mk1_mask": {
+      "textures": "textures/items/mask/spiderman_mk1_mask"
+    },
+    "spiderman_mk2_suit": {
+      "textures": "textures/items/suits/spiderman_mk2_suit"
+    },
+    "spiderman_mk2_mask": {
+      "textures": "textures/items/mask/spiderman_mk2_mask"
+    },
+    "spiderman_mk3_suit": {
+      "textures": "textures/items/suits/spiderman_mk3_suit"
+    },
+    "spiderman_mk3_mask": {
+      "textures": "textures/items/mask/spiderman_mk3_mask"
+    },
+    "spiderman_mk4_suit": {
+      "textures": "textures/items/suits/spiderman_mk4_suit"
+    },
+    "spiderman_mk4_mask": {
+      "textures": "textures/items/mask/spiderman_mk4_mask"
+    },
+    "spiderman_miles_morales_2099_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_2099_suit"
+    },
+    "spiderman_miles_morales_2099_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_2099_mask"
+    },
+    "spiderman_miles_morales_purple_reign_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_purple_reign_suit"
+    },
+    "spiderman_miles_morales_purple_reign_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_purple_reign_mask"
+    },
+    "silk_web_suit": {
+      "textures": "textures/items/suits/silk_web_suit"
+    },
+    "silk_web_mask": {
+      "textures": "textures/items/mask/silk_web_mask"
+    },
+    "scarlet_spider_2_suit": {
+      "textures": "textures/items/suits/scarlet_spider_2_suit"
+    },
+    "scarlet_spider_2_mask": {
+      "textures": "textures/items/mask/scarlet_spider_2_mask"
+    },
+    "spiderman_dark_suit": {
+      "textures": "textures/items/suits/spiderman_dark_suit"
+    },
+    "spiderman_dark_mask": {
+      "textures": "textures/items/mask/spiderman_dark_mask"
+    },
+    "spiderman_into_the_spiderverse_suit": {
+      "textures": "textures/items/suits/spiderman_into_the_spiderverse_suit"
+    },
+    "spiderman_into_the_spiderverse_mask": {
+      "textures": "textures/items/mask/spiderman_into_the_spiderverse_mask"
+    },
+    "spiderman_miles_morales_2020_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_2020_suit"
+    },
+    "spiderman_miles_morales_2020_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_2020_mask"
+    },
+    "spiderman_miles_morales_2020_v2_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_2020_v2_suit"
+    },
+    "spiderman_miles_morales_2020_v2_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_2020_v2_mask"
+    },
+    "spiderman_miles_morales_2020_v3_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_2020_v3_suit"
+    },
+    "spiderman_miles_morales_2020_v3_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_2020_v3_mask"
+    },
+    "spiderman_miles_morales_2020_v4_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_2020_v4_suit"
+    },
+    "spiderman_miles_morales_2020_v4_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_2020_v4_mask"
+    },
+    "spiderman_blue_suit": {
+      "textures": "textures/items/suits/spiderman_blue_suit"
+    },
+    "spiderman_blue_mask": {
+      "textures": "textures/items/mask/spiderman_blue_mask"
+    },
+    "spiderman_antivenom_classic_suit": {
+      "textures": "textures/items/suits/spiderman_antivenom_classic_suit"
+    },
+    "spiderman_antivenom_classic_mask": {
+      "textures": "textures/items/mask/spiderman_antivenom_classic_mask"
+    },
+    "poison_suit": {
+      "textures": "textures/items/suits/poison_suit"
+    },
+    "poison_mask": {
+      "textures": "textures/items/mask/poison_mask"
+    },
+    "spiderman_king_in_black_suit": {
+      "textures": "textures/items/suits/spiderman_king_in_black_suit"
+    },
+    "spiderman_king_in_black_mask": {
+      "textures": "textures/items/mask/spiderman_king_in_black_mask"
+    },
+    "spidergwen_symbiont_suit": {
+      "textures": "textures/items/suits/spidergwen_symbiont_suit"
+    },
+    "spidergwen_symbiont_mask": {
+      "textures": "textures/items/mask/spidergwen_symbiont_mask"
+    },
+    "spiderman_zombie_black_mask": {
+      "textures": "textures/items/mask/spiderman_zombie_black_mask"
+    },
+    "spiderman_zombie_black_suit": {
+      "textures": "textures/items/suits/spiderman_zombie_black_suit"
+    },
+    "spiderman_zombie_mask": {
+      "textures": "textures/items/mask/spiderman_zombie_mask"
+    },
+    "spiderman_zombie_suit": {
+      "textures": "textures/items/suits/spiderman_zombie_suit"
+    },
+    "arachknight_mask": {
+      "textures": "textures/items/mask/arachknight_mask"
+    },
+    "arachknight_suit": {
+      "textures": "textures/items/suits/arachknight_suit"
+    },
+    "spiderman_cyborg_mask": {
+      "textures": "textures/items/mask/spiderman_cyborg_mask"
+    },
+    "spiderman_cyborg_suit": {
+      "textures": "textures/items/suits/spiderman_cyborg_suit"
+    },
+    "spider_carnage_mask": {
+      "textures": "textures/items/mask/spider_carnage_mask"
+    },
+    "spider_carnage_suit": {
+      "textures": "textures/items/suits/spider_carnage_suit"
+    },
+    "punisher_spiderman_mask": {
+      "textures": "textures/items/mask/punisher_spiderman_mask"
+    },
+    "punisher_spiderman_suit": {
+      "textures": "textures/items/suits/punisher_spiderman_suit"
+    },
+    "assassin_spiderman_mask": {
+      "textures": "textures/items/mask/assassin_spiderman_mask"
+    },
+    "assassin_spiderman_suit": {
+      "textures": "textures/items/suits/assassin_spiderman_suit"
+    },
+    "mayday_parker_black_mask": {
+      "textures": "textures/items/mask/mayday_parker_black_mask"
+    },
+    "mayday_parker_black_suit": {
+      "textures": "textures/items/suits/mayday_parker_black_suit"
+    },
+    "mayday_parker_mask": {
+      "textures": "textures/items/mask/mayday_parker_mask"
+    },
+    "mayday_parker_suit": {
+      "textures": "textures/items/suits/mayday_parker_suit"
+    },
+    "spiderman_classic_black_red_spider_mask": {
+      "textures": "textures/items/mask/spiderman_classic_black_red_spider_mask"
+    },
+    "spiderman_classic_black_red_spider_suit": {
+      "textures": "textures/items/suits/spiderman_classic_black_red_spider_suit"
+    },
+    "agent_venom_thunderbolts_mask": {
+      "textures": "textures/items/agent_venom_thunderbolts_mask"
+    },
+    "agent_venom_thunderbolts_suit": {
+      "textures": "textures/items/agent_venom_thunderbolts_suit"
+    },
+    "agent_venom_spiderman2_v2_mask": {
+      "textures": "textures/items/agent_venom_spiderman2_v2_mask"
+    },
+    "agent_venom_spiderman2_v2_suit": {
+      "textures": "textures/items/agent_venom_spiderman2_v2_suit"
+    },
+    "agent_venom_spiderman2_mask": {
+      "textures": "textures/items/agent_venom_spiderman2_mask"
+    },
+    "agent_venom_spiderman2_suit": {
+      "textures": "textures/items/agent_venom_spiderman2_suit"
+    },
+    "agent_anti_venom_mask": {
+      "textures": "textures/items/agent_anti_venom_mask"
+    },
+    "agent_anti_venom_suit": {
+      "textures": "textures/items/agent_anti_venom_suit"
+    },
+    "agent_venom_mask": {
+      "textures": "textures/items/agent_venom_mask"
+    },
+    "agent_venom_suit": {
+      "textures": "textures/items/agent_venom_suit"
+    },
+    "agent_venom_ult": {
+      "textures": "textures/items/agent_venom_ult"
+    },
+    "agent_venom_missiles": {
+      "textures": "textures/items/agent_venom_missiles"
+    },
+    "agent_venom_fusil": {
+      "textures": "textures/items/agent_venom_fusil"
+    },
+    "agent_venom_pistols": {
+      "textures": "textures/items/agent_venom_pistols"
+    },
+    "agent_venom_powers": {
+      "textures": "textures/items/agent_venom_powers"
+    },
+    "venom_rage": {
+      "textures": "textures/items/venom_rage"
+    },
+    "antivenom_tempest": {
+      "textures": "textures/items/antivenom_tempest"
+    },
+    "symbiont_pull": {
+      "textures": "textures/items/symbiont_pull"
+    },
+    "antivenom_bomb": {
+      "textures": "textures/items/antivenom_bomb"
+    },
+    "symbiote_strike": {
+      "textures": "textures/items/symbiote_strike"
+    },
+    "venom_cellular_corrosion": {
+      "textures": "textures/items/venom_cellular_corrosion"
+    },
+    "mysterio_gas": {
+      "textures": "textures/items/mysterio_gas"
+    },
+    "black_cat_claws": {
+      "textures": "textures/items/black_cat_claws"
+    },
+    "black_cat_whip_thef": {
+      "textures": "textures/items/black_cat_whip_thef"
+    },
+    "black_cat_whip_claws": {
+      "textures": "textures/items/black_cat_whip_claws"
+    },
+    "black_cat_swing": {
+      "textures": "textures/items/black_cat_swing"
+    },
+    "mysterio_drones": {
+      "textures": "textures/items/mysterio_drones"
+    },
+    "mysterio_clones": {
+      "textures": "textures/items/mysterio_clones"
+    },
+    "mysterio_invoke": {
+      "textures": "textures/items/mysterio_invoke"
+    },
+    "mysterio_laser": {
+      "textures": "textures/items/mysterio_laser"
+    },
+    "pumpkin_knife_guide_explosive": {
+      "textures": "textures/items/pumpkin_knife_guide_explosive"
+    },
+    "pumpkin_knife_guide": {
+      "textures": "textures/items/pumpkin_knife_guide"
+    },
+    "green_goblin_no_way_home_mask": {
+      "textures": "textures/items/green_goblin_no_way_home_mask"
+    },
+    "green_goblin_no_way_home_suit": {
+      "textures": "textures/items/green_goblin_no_way_home_suit"
+    },
+    "green_goblin_raimi_blades": {
+      "textures": "textures/items/green_goblin_raimi_blades"
+    },
+    "green_goblin_spiderman3_blades": {
+      "textures": "textures/items/green_goblin_spiderman3_blades"
+    },
+    "green_goblin_spiderman3_mask": {
+      "textures": "textures/items/green_goblin_spiderman3_mask"
+    },
+    "green_goblin_spiderman3_suit": {
+      "textures": "textures/items/green_goblin_spiderman3_suit"
+    },
+    "planeador_spiderman3": {
+      "textures": "textures/items/planeador_spiderman3"
+    },
+    "green_goblin_laser": {
+      "textures": "textures/items/green_goblin_laser"
+    },
+    "green_goblin_combat": {
+      "textures": "textures/items/green_goblin_combat"
+    },
+    "web_hook": {
+      "textures": "textures/items/web_shooter/web_hook"
+    },
+    "web_line": {
+      "textures": "textures/items/web_shooter/web_line"
+    },
+    "spiderman_sensor": {
+      "textures": "textures/items/spiderman_sensor"
+    },
+    "spiderman_focus": {
+      "textures": "textures/items/spiderman_focus"
+    },
+    "spiderman_punch": {
+      "textures": "textures/items/spiderman_punch"
+    },
+    "web_shield": {
+      "textures": "textures/items/web_shield"
+    },
+    "spider_web_cartridge": {
+      "textures": "textures/items/spider_web_cartridge"
+    },
+    "scorpion_powers": {
+      "textures": "textures/items/scorpion_powers"
+    },
+    "miles_morales_powers": {
+      "textures": "textures/items/miles_morales_powers"
+    },
+    "black_cat_powers": {
+      "textures": "textures/items/black_cat_powers"
+    },
+    "electro_powers": {
+      "textures": "textures/items/electro_powers"
+    },
+    "sandman_powers": {
+      "textures": "textures/items/sandman_powers"
+    },
+    "green_goblin_powers": {
+      "textures": "textures/items/green_goblin_powers"
+    },
+    "mysterio_powers": {
+      "textures": "textures/items/mysterio_powers"
+    },
+    "venom_fusil": {
+      "textures": "textures/items/venom_fusil"
+    },
+    "venom_axe": {
+      "textures": "textures/items/venom_axe"
+    },
+    "venom_claw": {
+      "textures": "textures/items/venom_claw"
+    },
+    "venom_combat": {
+      "textures": "textures/items/venom_combat"
+    },
+    "venom_eat": {
+      "textures": "textures/items/venom_eat"
+    },
+    "venom_explotion": {
+      "textures": "textures/items/venom_explotion"
+    },
+    "venom_item": {
+      "textures": "textures/items/venom_item"
+    },
+    "venom_knife_whip": {
+      "textures": "textures/items/venom_knife_whip"
+    },
+    "venom_menu": {
+      "textures": "textures/items/venom_menu"
+    },
+    "venom_pistols": {
+      "textures": "textures/items/venom_pistols"
+    },
+    "venom_player_explotion": {
+      "textures": "textures/items/venom_player_explotion"
+    },
+    "venom_rocket": {
+      "textures": "textures/items/venom_rocket"
+    },
+    "venom_shield": {
+      "textures": "textures/items/venom_shield"
+    },
+    "venom_transform": {
+      "textures": "textures/items/venom_transform"
+    },
+    "venom_whip": {
+      "textures": "textures/items/venom_whip"
+    },
+    "venom_wings": {
+      "textures": "textures/items/venom_wings"
+    },
+    "venom_powers": {
+      "textures": "textures/items/venom_powers"
+    },
+    "spiderman_spin_punch": {
+      "textures": "textures/items/spiderman_spin_punch"
+    },
+    "spiderman_menu": {
+      "textures": "textures/items/spiderman_menu"
+    },
+    "spiderman_kick": {
+      "textures": "textures/items/spiderman_kick"
+    },
+    "spiderman_combat": {
+      "textures": "textures/items/spiderman_combat"
+    },
+    "mysterio_far_from_home_helmet": {
+      "textures": "textures/items/mysterio_far_from_home_helmet"
+    },
+    "mysterio_far_from_home_suit": {
+      "textures": "textures/items/mysterio_far_from_home_suit"
+    },
+    "silk_suit": {
+      "textures": "textures/items/suits/silk_suit"
+    },
+    "silk_mask": {
+      "textures": "textures/items/mask/silk_mask"
+    },
+    "spider_ham_hammer": {
+      "textures": "textures/items/spider_ham_hammer"
+    },
+    "spider_ham_skin": {
+      "textures": "textures/items/spider_ham_skin"
+    },
+    "gizmo_portal": {
+      "textures": "textures/items/gizmo_portal"
+    },
+    "gizmo_camera_mode": {
+      "textures": "textures/items/gizmo_camera_mode"
+    },
+    "spiderman_bombastic_bag_man_mask": {
+      "textures": "textures/items/mask/spiderman_bombastic_bag_man_mask"
+    },
+    "spiderman_bombastic_bag_man_suit": {
+      "textures": "textures/items/suits/spiderman_bombastic_bag_man_suit"
+    },
+    "yfn_spiderman_oscorp_mask": {
+      "textures": "textures/items/mask/yfn_spiderman_oscorp_mask"
+    },
+    "yfn_spiderman_oscorp_suit": {
+      "textures": "textures/items/suits/yfn_spiderman_oscorp_suit"
+    },
+    "yfn_spiderman_mask": {
+      "textures": "textures/items/mask/yfn_spiderman_mask"
+    },
+    "yfn_spiderman_suit": {
+      "textures": "textures/items/suits/yfn_spiderman_suit"
+    },
+    "the_amazing_spiderman_casero_mask": {
+      "textures": "textures/items/mask/the_amazing_spiderman_casero_mask"
+    },
+    "the_amazing_spiderman_casero_suit": {
+      "textures": "textures/items/suits/the_amazing_spiderman_casero_suit"
+    },
+    "spiderman_new_blue_mask": {
+      "textures": "textures/items/mask/spiderman_new_blue_mask"
+    },
+    "spiderman_new_blue_suit": {
+      "textures": "textures/items/suits/spiderman_new_blue_suit"
+    },
+    "dr_octopus_take": {
+      "textures": "textures/items/dr_octopus_take"
+    },
+    "viento": {
+      "textures": "textures/items/viento"
+    },
+    "air_compressor": {
+      "textures": "textures/items/air_compressor"
+    },
+    "pumpkin_bomb_raimi": {
+      "textures": "textures/items/pumpkin_bomb_raimi"
+    },
+    "planeador_raimi": {
+      "textures": "textures/items/planeador_raimi"
+    },
+    "dr_octopus_walk": {
+      "textures": "textures/items/dr_octopus_walk"
+    },
+    "web_wings": {
+      "textures": "textures/items/web_wings"
+    },
+    "spiderman_india_mask": {
+      "textures": "textures/items/mask/spiderman_india_mask"
+    },
+    "the_amazing_spiderman_1_mask": {
+      "textures": "textures/items/mask/the_amazing_spiderman_1_mask"
+    },
+    "the_amazing_spiderman_2_mask": {
+      "textures": "textures/items/mask/the_amazing_spiderman_2_mask"
+    },
+    "ultimate_spiderman_mask": {
+      "textures": "textures/items/mask/ultimate_spiderman_mask"
+    },
+    "superior_spiderman_mask": {
+      "textures": "textures/items/mask/superior_spiderman_mask"
+    },
+    "superior_spiderman_mask_1": {
+      "textures": "textures/items/mask/superior_spiderman_mask_1"
+    },
+    "superior_spiderman_mask_2": {
+      "textures": "textures/items/mask/superior_spiderman_mask_2"
+    },
+    "superior_spiderman_mask_3": {
+      "textures": "textures/items/mask/superior_spiderman_mask_3"
+    },
+    "spiderman_unlimited_mask": {
+      "textures": "textures/items/mask/spiderman_unlimited_mask"
+    },
+    "spiderman_wrestler_mask": {
+      "textures": "textures/items/mask/spiderman_wrestler_mask"
+    },
+    "spiderman_web_of_shadows_mask": {
+      "textures": "textures/items/mask/spiderman_web_of_shadows_mask"
+    },
+    "spiderman_velocity_mask": {
+      "textures": "textures/items/mask/spiderman_velocity_mask"
+    },
+    "spiderman_steve_ditko_mask": {
+      "textures": "textures/items/mask/spiderman_steve_ditko_mask"
+    },
+    "spiderman_stealth_mask": {
+      "textures": "textures/items/mask/spiderman_stealth_mask"
+    },
+    "spiderman_secret_wars_civil_war_mask": {
+      "textures": "textures/items/mask/spiderman_secret_wars_civil_war_mask"
+    },
+    "spiderman_ps4_mask": {
+      "textures": "textures/items/mask/spiderman_ps4_mask"
+    },
+    "spiderman_ps5_mask": {
+      "textures": "textures/items/mask/spiderman_ps5_mask"
+    },
+    "spiderman_ps5_mask_1": {
+      "textures": "textures/items/mask/spiderman_ps5_mask_1"
+    },
+    "spiderman_ps5_mask_2": {
+      "textures": "textures/items/mask/spiderman_ps5_mask_2"
+    },
+    "spiderman_ps5_mask_3": {
+      "textures": "textures/items/mask/spiderman_ps5_mask_3"
+    },
+    "spiderman_raimi_mask": {
+      "textures": "textures/items/mask/spiderman_raimi_mask"
+    },
+    "spiderman_noir_into_the_spiderverse_mask": {
+      "textures": "textures/items/mask/spiderman_noir_into_the_spiderverse_mask"
+    },
+    "spiderman_last_stand_mask": {
+      "textures": "textures/items/mask/spiderman_last_stand_mask"
+    },
+    "spiderman_miles_morales_leap_of_faith_mask": {
+      "textures": "textures/items/mask/spiderman_miles_morales_leap_of_faith_mask"
+    },
+    "spiderman_negative_mask": {
+      "textures": "textures/items/mask/spiderman_negative_mask"
+    },
+    "spider_punk_across_the_spider_verse_mask": {
+      "textures": "textures/items/mask/spider_punk_across_the_spider_verse_mask"
+    },
+    "spiderman_far_from_home_mask": {
+      "textures": "textures/items/mask/spiderman_far_from_home_mask"
+    },
+    "spiderman_homecoming_mask": {
+      "textures": "textures/items/mask/spiderman_homecoming_mask"
+    },
+    "spiderman_homemade_mask": {
+      "textures": "textures/items/mask/spiderman_homemade_mask"
+    },
+    "spiderman_no_way_home_mask": {
+      "textures": "textures/items/mask/spiderman_no_way_home_mask"
+    },
+    "spiderman_what_if_mask": {
+      "textures": "textures/items/mask/spiderman_what_if_mask"
+    },
+    "ultimate_spiderman_ucm_mask": {
+      "textures": "textures/items/mask/ultimate_spiderman_ucm_mask"
+    },
+    "spiderman_what_if_animated_mask": {
+      "textures": "textures/items/mask/spiderman_what_if_animated_mask"
+    },
+    "spiderman_cero_mask": {
+      "textures": "textures/items/mask/spiderman_cero_mask"
+    },
+    "spider_punk_mask": {
+      "textures": "textures/items/mask/spider_punk_mask"
+    },
+    "spiderman_67_mask": {
+      "textures": "textures/items/mask/spiderman_67_mask"
+    },
+    "spiderman_90_mask": {
+      "textures": "textures/items/mask/spiderman_90_mask"
+    },
+    "spiderman_2099_across_the_spiderverse_mask": {
+      "textures": "textures/items/mask/spiderman_2099_across_the_spiderverse_mask"
+    },
+    "spiderman_2099_across_the_spiderverse_mask_1": {
+      "textures": "textures/items/mask/spiderman_2099_across_the_spiderverse_mask_1"
+    },
+    "spectacular_spiderman_mask": {
+      "textures": "textures/items/mask/spectacular_spiderman_mask"
+    },
+    "miles_morales_into_the_spiderverse_mask": {
+      "textures": "textures/items/mask/miles_morales_into_the_spiderverse_mask"
+    },
+    "miles_morales_gold_mask": {
+      "textures": "textures/items/mask/miles_morales_gold_mask"
+    },
+    "scarlet_spider_across_the_spiderverse_mask": {
+      "textures": "textures/items/mask/scarlet_spider_across_the_spiderverse_mask"
+    },
+    "miles_morales_wolverine_mask": {
+      "textures": "textures/items/mask/miles_morales_wolverine_mask"
+    },
+    "miles_morales_wolverine_mask_1": {
+      "textures": "textures/items/mask/miles_morales_wolverine_mask_1"
+    },
+    "miles_morales_wolverine_mask_2": {
+      "textures": "textures/items/mask/miles_morales_wolverine_mask_2"
+    },
+    "miles_morales_wolverine_mask_3": {
+      "textures": "textures/items/mask/miles_morales_wolverine_mask_3"
+    },
+    "spirit_spider_mask": {
+      "textures": "textures/items/mask/spirit_spider_mask"
+    },
+    "venom_s3_mask": {
+      "textures": "textures/items/mask/venom_s3_mask"
+    },
+    "ultimate_spiderman_black_mask": {
+      "textures": "textures/items/mask/ultimate_spiderman_black_mask"
+    },
+    "the_amazing_spiderman_black_mask": {
+      "textures": "textures/items/mask/the_amazing_spiderman_black_mask"
+    },
+    "superior_spiderman_black_mask": {
+      "textures": "textures/items/mask/superior_spiderman_black_mask"
+    },
+    "spiderman_raimi_black_mask": {
+      "textures": "textures/items/mask/spiderman_raimi_black_mask"
+    },
+    "spiderman_web_of_shadows_black_mask": {
+      "textures": "textures/items/mask/spiderman_web_of_shadows_black_mask"
+    },
+    "spiderman_antivenom_mask": {
+      "textures": "textures/items/mask/spiderman_antivenom_mask"
+    },
+    "spiderman_classic_black_mask": {
+      "textures": "textures/items/mask/spiderman_classic_black_mask"
+    },
+    "spiderman_ps4_black_mask": {
+      "textures": "textures/items/mask/spiderman_ps4_black_mask"
+    },
+    "spiderman_ps5_symbiote_mask": {
+      "textures": "textures/items/mask/spiderman_ps5_symbiote_mask"
+    },
+    "spiderman_90_black_mask": {
+      "textures": "textures/items/mask/spiderman_90_black_mask"
+    },
+    "spiderman_90_black_mask_1": {
+      "textures": "textures/items/mask/spiderman_90_black_mask_1"
+    },
+    "spectacular_spiderman_black_mask": {
+      "textures": "textures/items/mask/spectacular_spiderman_black_mask"
+    },
+    "spectacular_spiderman_black_mask_2": {
+      "textures": "textures/items/mask/spectacular_spiderman_black_mask_2"
+    },
+    "spectacular_spiderman_black_mask_3": {
+      "textures": "textures/items/mask/spectacular_spiderman_black_mask_3"
+    },
+    "miles_morales_bodega_cat_mask": {
+      "textures": "textures/items/mask/miles_morales_bodega_cat_mask"
+    },
+    "miles_morales_across_the_spiderverse_mask": {
+      "textures": "textures/items/mask/miles_morales_across_the_spiderverse_mask"
+    },
+    "into_the_spiderverse_sb_mask": {
+      "textures": "textures/items/mask/into_the_spiderverse_sb_mask"
+    },
+    "human_spider_mask": {
+      "textures": "textures/items/mask/human_spider_mask"
+    },
+    "ezekiel_sims_mask": {
+      "textures": "textures/items/mask/ezekiel_sims_mask"
+    },
+    "aracnido_jr_mask": {
+      "textures": "textures/items/mask/aracnido_jr_mask"
+    },
+    "anti_ock_mask_3": {
+      "textures": "textures/items/mask/anti_ock_mask_3"
+    },
+    "anti_ock_mask_2": {
+      "textures": "textures/items/mask/anti_ock_mask_2"
+    },
+    "anti_ock_mask_1": {
+      "textures": "textures/items/mask/anti_ock_mask_1"
+    },
+    "anti_ock_mask": {
+      "textures": "textures/items/mask/anti_ock_mask"
+    },
+    "miles_morales_10th_mask": {
+      "textures": "textures/items/mask/miles_morales_10th_mask"
+    },
+    "miles_morales_10th_mask_1": {
+      "textures": "textures/items/mask/miles_morales_10th_mask_1"
+    },
+    "miles_morales_10th_mask_2": {
+      "textures": "textures/items/mask/miles_morales_10th_mask_2"
+    },
+    "miles_morales_10th_mask_3": {
+      "textures": "textures/items/mask/miles_morales_10th_mask_3"
+    },
+    "yfn_spiderman_casero_mask": {
+      "textures": "textures/items/mask/yfn_spiderman_casero_mask"
+    },
+    "spiderman_future_foundation_mask": {
+      "textures": "textures/items/mask/spiderman_future_foundation_mask"
+    },
+    "spiderman_2099_mask": {
+      "textures": "textures/items/mask/spiderman_2099_mask"
+    },
+    "spiderman_2099_mask_1": {
+      "textures": "textures/items/mask/spiderman_2099_mask_1"
+    },
+    "spiderman_2099_mask_2": {
+      "textures": "textures/items/mask/spiderman_2099_mask_2"
+    },
+    "spiderman_2099_mask_3": {
+      "textures": "textures/items/mask/spiderman_2099_mask_3"
+    },
+    "iron_spider_ucm_mask": {
+      "textures": "textures/items/mask/iron_spider_ucm_mask"
+    },
+    "miles_morales_mask": {
+      "textures": "textures/items/mask/miles_morales_mask"
+    },
+    "spiderman_classic_suit": {
+      "textures": "textures/items/suits/spiderman_classic_suit"
+    },
+    "spiderman_classic_mask": {
+      "textures": "textures/items/mask/spiderman_classic_mask"
+    },
+    "spiderman_classic_mask_1": {
+      "textures": "textures/items/mask/spiderman_classic_mask_1"
+    },
+    "spiderman_classic_mask_2": {
+      "textures": "textures/items/mask/spiderman_classic_mask_2"
+    },
+    "spiderman_classic_mask_3": {
+      "textures": "textures/items/mask/spiderman_classic_mask_3"
+    },
+    "scarlet_spider_mask": {
+      "textures": "textures/items/mask/scarlet_spider_mask"
+    },
+    "scarlet_spider_mask_1": {
+      "textures": "textures/items/mask/scarlet_spider_mask_1"
+    },
+    "scarlet_spider_mask_2": {
+      "textures": "textures/items/mask/scarlet_spider_mask_2"
+    },
+    "scarlet_spider_mask_3": {
+      "textures": "textures/items/mask/scarlet_spider_mask_3"
+    },
+    "iron_spider_mask": {
+      "textures": "textures/items/mask/iron_spider_mask"
+    },
+    "iron_spider_mask_1": {
+      "textures": "textures/items/mask/iron_spider_mask_1"
+    },
+    "iron_spider_mask_2": {
+      "textures": "textures/items/mask/iron_spider_mask_2"
+    },
+    "iron_spider_mask_3": {
+      "textures": "textures/items/mask/iron_spider_mask_3"
+    },
+    "ghost_spider_mask": {
+      "textures": "textures/items/mask/ghost_spider_mask"
+    },
+    "iron_arms_menu": {
+      "textures": "textures/items/iron_arms_menu"
+    },
+    "concussive_blast": {
+      "textures": "textures/items/web_shooter/concussive_blast"
+    },
+    "web_grabber": {
+      "textures": "textures/items/web_shooter/web_grabber"
+    },
+    "symbiote_melee": {
+      "textures": "textures/items/symbiote_melee"
+    },
+    "web_whip": {
+      "textures": "textures/items/web_shooter/web_whip"
+    },
+    "web_shot": {
+      "textures": "textures/items/web_shooter/web_shot"
+    },
+    "electric_web": {
+      "textures": "textures/items/web_shooter/electric_web"
+    },
+    "impact_web": {
+      "textures": "textures/items/web_shooter/impact_web"
+    },
+    "spider_drone": {
+      "textures": "textures/items/web_shooter/spider_drone"
+    },
+    "web_shooter_balanceo": {
+      "textures": "textures/items/web_shooter/web_shooter"
+    },
+    "web_shooter": {
+      "textures": "textures/items/web_shooter"
+    },
+    "web_blossom": {
+      "textures": "textures/items/suit_skills/web_blossom"
+    },
+    "spirit_fire": {
+      "textures": "textures/items/suit_skills/spirit_fire"
+    },
+    "rock_out": {
+      "textures": "textures/items/suit_skills/rock_out"
+    },
+    "negative_shockwave": {
+      "textures": "textures/items/suit_skills/negative_shockwave"
+    },
+    "low_gravity": {
+      "textures": "textures/items/suit_skills/low_gravity"
+    },
+    "holo_decoy": {
+      "textures": "textures/items/suit_skills/holo_decoy"
+    },
+    "equaliser": {
+      "textures": "textures/items/suit_skills/equaliser"
+    },
+    "electric_punch": {
+      "textures": "textures/items/suit_skills/electric_punch"
+    },
+    "blitz": {
+      "textures": "textures/items/suit_skills/blitz"
+    },
+    "arms_race": {
+      "textures": "textures/items/suit_skills/arms_race"
+    },
+    "spiderman_chip": {
+      "textures": "textures/items/spiderman_chip"
+    },
+    "multiversal_chip": {
+      "textures": "textures/items/multiversal_chip"
+    },
+    "multiversal_gizmo": {
+      "textures": "textures/items/multiversal_gizmo"
+    },
+    "green_goblin_raimi_mask": {
+      "textures": "textures/items/green_goblin_raimi_mask"
+    },
+    "green_goblin_raimi_suit": {
+      "textures": "textures/items/green_goblin_raimi_suit"
+    },
+    "venom_s3": {
+      "textures": "textures/items/suits/venom_s3"
+    },
+    "spiderman_last_stand_suit": {
+      "textures": "textures/items/suits/spiderman_last_stand_suit"
+    },
+    "superior_spiderman_black_suit": {
+      "textures": "textures/items/suits/superior_spiderman_black_suit"
+    },
+    "spiderman_web_of_shadows_black_suit": {
+      "textures": "textures/items/suits/spiderman_web_of_shadows_black_suit"
+    },
+    "spiderman_web_of_shadows_suit": {
+      "textures": "textures/items/suits/spiderman_web_of_shadows_suit"
+    },
+    "spiderman_what_if_suit": {
+      "textures": "textures/items/suits/spiderman_what_if_suit"
+    },
+    "spiderman_what_if_animated_suit": {
+      "textures": "textures/items/suits/spiderman_what_if_animated_suit"
+    },
+    "spirit_spider_suit": {
+      "textures": "textures/items/suits/spirit_spider_suit"
+    },
+    "yfn_spiderman_casero_suit": {
+      "textures": "textures/items/suits/yfn_spiderman_casero_suit"
+    },
+    "into_the_spiderverse_sb_suit": {
+      "textures": "textures/items/suits/into_the_spiderverse_sb_suit"
+    },
+    "spiderman_miles_morales_leap_of_faith_suit": {
+      "textures": "textures/items/suits/spiderman_miles_morales_leap_of_faith_suit"
+    },
+    "miles_morales_bodega_cat_suit_3": {
+      "textures": "textures/items/suits/miles_morales_bodega_cat_suit_3"
+    },
+    "miles_morales_bodega_cat_suit_2": {
+      "textures": "textures/items/suits/miles_morales_bodega_cat_suit_2"
+    },
+    "miles_morales_bodega_cat_suit_1": {
+      "textures": "textures/items/suits/miles_morales_bodega_cat_suit_1"
+    },
+    "miles_morales_10th_suit_3": {
+      "textures": "textures/items/suits/miles_morales_10th_suit_3"
+    },
+    "miles_morales_10th_suit_2": {
+      "textures": "textures/items/suits/miles_morales_10th_suit_2"
+    },
+    "miles_morales_10th_suit_1": {
+      "textures": "textures/items/suits/miles_morales_10th_suit_1"
+    },
+    "miles_morales_10th_suit": {
+      "textures": "textures/items/suits/miles_morales_10th_suit"
+    },
+    "anti_ock_suit_3": {
+      "textures": "textures/items/suits/anti_ock_suit_3"
+    },
+    "anti_ock_suit_2": {
+      "textures": "textures/items/suits/anti_ock_suit_2"
+    },
+    "anti_ock_suit_1": {
+      "textures": "textures/items/suits/anti_ock_suit_1"
+    },
+    "suits_machine": {
+      "textures": "textures/items/suits_machine"
+    },
+    "symbiote_whip": {
+      "textures": "textures/items/symbiote_whip"
+    },
+    "symbiote_menu": {
+      "textures": "textures/items/symbiote_menu"
+    },
+    "symbiote_blast": {
+      "textures": "textures/items/symbiote_blast"
+    },
+    "rage_mode": {
+      "textures": "textures/items/rage_mode"
+    },
+    "venom_impulse_whip": {
+      "textures": "textures/items/venom_impulse_whip"
+    },
+    "symbiont_whip": {
+      "textures": "textures/items/symbiont_whip"
+    },
+    "spiderman_unlimited_suit": {
+      "textures": "textures/items/suits/spiderman_unlimited_suit"
+    },
+    "spiderman_secret_wars_civil_war_suit": {
+      "textures": "textures/items/suits/spiderman_secret_wars_civil_war_suit"
+    },
+    "spiderman_antivenom_suit": {
+      "textures": "textures/items/suits/spiderman_antivenom_suit"
+    },
+    "spiderman_india_suit": {
+      "textures": "textures/items/suits/spiderman_india_suit"
+    },
+    "spider_punk_across_the_spider_verse_suit": {
+      "textures": "textures/items/suits/spider_punk_across_the_spider_verse_suit"
+    },
+    "spiderman_noir_into_the_spiderverse_suit": {
+      "textures": "textures/items/suits/spiderman_noir_into_the_spiderverse_suit"
+    },
+    "venom_regeneration": {
+      "textures": "textures/items/venom_regeneration"
+    },
+    "robot_dog_pet": {
+      "textures": "textures/items/robot_dog_pet"
+    },
+    "scarlet_spider_across_the_spiderverse_suit": {
+      "textures": "textures/items/suits/scarlet_spider_across_the_spiderverse_suit"
+    },
+    "spiderman_90_black_suit": {
+      "textures": "textures/items/suits/spiderman_90_black_suit"
+    },
+    "spiderman_90_black_suit_1": {
+      "textures": "textures/items/suits/spiderman_90_black_suit_1"
+    },
+    "kraven_axe": {
+      "textures": "textures/items/kraven_axe"
+    },
+    "the_amazing_spiderman_belt_suit": {
+      "textures": "textures/items/suits/the_amazing_spiderman_belt_suit"
+    },
+    "the_amazing_spiderman_black_suit": {
+      "textures": "textures/items/suits/the_amazing_spiderman_black_suit"
+    },
+    "vulture_suit": {
+      "textures": "textures/items/vulture_suit"
+    },
+    "ghost_spider_suit": {
+      "textures": "textures/items/suits/ghost_spider_suit"
+    },
+    "miles_morales_across_the_spiderverse_suit": {
+      "textures": "textures/items/suits/miles_morales_across_the_spiderverse_suit"
+    },
+    "miles_morales_into_the_spiderverse_suit": {
+      "textures": "textures/items/suits/miles_morales_into_the_spiderverse_suit"
+    },
+    "electro_suit": {
+      "textures": "textures/items/electro_suit"
+    },
+    "electro_mask": {
+      "textures": "textures/items/electro_mask"
+    },
+    "mysterio_suit_1": {
+      "textures": "textures/items/mysterio_suit_1"
+    },
+    "mysterio_suit": {
+      "textures": "textures/items/mysterio_suit"
+    },
+    "mysterio_helmet": {
+      "textures": "textures/items/mysterio_helmet"
+    },
+    "spiderman_2099_across_the_spiderverse_suit": {
+      "textures": "textures/items/suits/spiderman_2099_across_the_spiderverse_suit"
+    },
+    "spiderman_2099_across_the_spiderverse_suit_1": {
+      "textures": "textures/items/suits/spiderman_2099_across_the_spiderverse_suit_1"
+    },
+    "miles_morales_wolverine_suit": {
+      "textures": "textures/items/suits/miles_morales_wolverine_suit"
+    },
+    "miles_morales_wolverine_suit_1": {
+      "textures": "textures/items/suits/miles_morales_wolverine_suit_1"
+    },
+    "miles_morales_wolverine_suit_2": {
+      "textures": "textures/items/suits/miles_morales_wolverine_suit_2"
+    },
+    "miles_morales_wolverine_suit_3": {
+      "textures": "textures/items/suits/miles_morales_wolverine_suit_3"
+    },
+    "superior_spiderman_suit": {
+      "textures": "textures/items/suits/superior_spiderman_suit"
+    },
+    "superior_spiderman_suit_1": {
+      "textures": "textures/items/suits/superior_spiderman_suit_1"
+    },
+    "superior_spiderman_suit_2": {
+      "textures": "textures/items/suits/superior_spiderman_suit_2"
+    },
+    "superior_spiderman_suit_3": {
+      "textures": "textures/items/suits/superior_spiderman_suit_3"
+    },
+    "dr_octopus_attack": {
+      "textures": "textures/items/dr_octopus_attack"
+    },
+    "dr_octopus_arms": {
+      "textures": "textures/items/dr_octopus_arms"
+    },
+    "delete_spider_powers": {
+      "textures": "textures/items/delete_spider_powers"
+    },
+    "green_goblin_suit": {
+      "textures": "textures/items/green_goblin_suit"
+    },
+    "hobgoblin_suit": {
+      "textures": "textures/items/hobgoblin_suit"
+    },
+    "egg_hunter": {
+      "textures": "textures/items/egg_hunter"
+    },
+    "stuffed_aracnido_jr": {
+      "textures": "textures/items/stuffed_aracnido_jr"
+    },
+    "tsum_tsum": {
+      "textures": "textures/items/tsum_tsum"
+    },
+    "spider_web_ball": {
+      "textures": "textures/items/spider_web_ball"
+    },
+    "taskmaster_mask": {
+      "textures": "textures/items/taskmaster_mask"
+    },
+    "taskmaster_suit": {
+      "textures": "textures/items/taskmaster_suit"
+    },
+    "spiderman_picture": {
+      "textures": "textures/items/spiderman_picture"
+    },
+    "trace_c": {
+      "textures": "textures/items/trace_c"
+    },
+    "twirl_e": {
+      "textures": "textures/items/twirl_e"
+    },
+    "twist_e": {
+      "textures": "textures/items/twist_e"
+    },
+    "egg_j_jonah_jameson": {
+      "textures": "textures/items/egg_j_jonah_jameson"
+    },
+    "egg_penguin_stacy": {
+      "textures": "textures/items/egg_penguin_stacy"
+    },
+    "egg_robot_dog": {
+      "textures": "textures/items/egg_robot_dog"
+    },
+    "anya_corazon": {
+      "textures": "textures/items/anya_corazon"
+    },
+    "emotes": {
+      "textures": "textures/items/emotes"
+    },
+    "anti_ock_suit": {
+      "textures": "textures/items/suits/anti_ock_suit"
+    },
+    "scarlet_spider_suit_3": {
+      "textures": "textures/items/suits/scarlet_spider_suit_3"
+    },
+    "scarlet_spider_suit_2": {
+      "textures": "textures/items/suits/scarlet_spider_suit_2"
+    },
+    "scarlet_spider_suit_1": {
+      "textures": "textures/items/suits/scarlet_spider_suit_1"
+    },
+    "aracnido_jr_suit": {
+      "textures": "textures/items/suits/aracnido_jr_suit"
+    },
+    "spiderman_classic_suit_3": {
+      "textures": "textures/items/suits/spiderman_classic_suit_3"
+    },
+    "spiderman_classic_suit_2": {
+      "textures": "textures/items/suits/spiderman_classic_suit_2"
+    },
+    "spiderman_classic_suit_1": {
+      "textures": "textures/items/suits/spiderman_classic_suit_1"
+    },
+    "iron_spider_suit_3": {
+      "textures": "textures/items/suits/iron_spider_suit_3"
+    },
+    "iron_spider_suit_2": {
+      "textures": "textures/items/suits/iron_spider_suit_2"
+    },
+    "iron_spider_suit_1": {
+      "textures": "textures/items/suits/iron_spider_suit_1"
+    },
+    "iron_spider_suit": {
+      "textures": "textures/items/suits/iron_spider_suit"
+    },
+    "ezekiel_sims_suit": {
+      "textures": "textures/items/suits/ezekiel_sims_suit"
+    },
+    "spiderman_ps5_symbiote_suit": {
+      "textures": "textures/items/suits/spiderman_ps5_symbiote_suit"
+    },
+    "spiderman_2099_suit_3": {
+      "textures": "textures/items/suits/spiderman_2099_suit_3"
+    },
+    "spiderman_2099_suit_2": {
+      "textures": "textures/items/suits/spiderman_2099_suit_2"
+    },
+    "spiderman_2099_suit_1": {
+      "textures": "textures/items/suits/spiderman_2099_suit_1"
+    },
+    "spiderman_2099_suit": {
+      "textures": "textures/items/suits/spiderman_2099_suit"
+    },
+    "spiderman_cero_suit": {
+      "textures": "textures/items/suits/spiderman_cero_suit"
+    },
+    "spiderman_future_foundation_suit": {
+      "textures": "textures/items/suits/spiderman_future_foundation_suit"
+    },
+    "spiderman_velocity_suit": {
+      "textures": "textures/items/suits/spiderman_velocity_suit"
+    },
+    "spider_punk_suit": {
+      "textures": "textures/items/suits/spider_punk_suit"
+    },
+    "spiderman_ps5_suit_3": {
+      "textures": "textures/items/suits/spiderman_ps5_suit_3"
+    },
+    "spiderman_ps5_suit_2": {
+      "textures": "textures/items/suits/spiderman_ps5_suit_2"
+    },
+    "spiderman_ps5_suit_1": {
+      "textures": "textures/items/suits/spiderman_ps5_suit_1"
+    },
+    "spiderman_ps5_suit": {
+      "textures": "textures/items/suits/spiderman_ps5_suit"
+    },
+    "lizard_invoke": {
+      "textures": "textures/items/lizard_invoke"
+    },
+    "comic2": {
+      "textures": "textures/items/comic2"
+    },
+    "backpack_empty": {
+      "textures": "textures/items/backpack_empty"
+    },
+    "miles_morales": {
+      "textures": "textures/items/miles_morales"
+    },
+    "cat_power": {
+      "textures": "textures/items/cat_power"
+    },
+    "spider_rush": {
+      "textures": "textures/items/spider_rush"
+    },
+    "spider_shock": {
+      "textures": "textures/items/spider_shock"
+    },
+    "egg_lizard": {
+      "textures": "textures/items/egg_lizard"
+    },
+    "capsule": {
+      "textures": "textures/items/capsule"
+    },
+    "miles_morales_bodega_cat_suit": {
+      "textures": "textures/items/suits/miles_morales_bodega_cat_suit"
+    },
+    "ultimate_spiderman_suit": {
+      "textures": "textures/items/suits/ultimate_spiderman_suit"
+    },
+    "symbiont_metorite": {
+      "textures": "textures/items/symbiont_metorite"
+    },
+    "symbiote_meteorite_table": {
+      "textures": "textures/items/symbiote_meteorite_table"
+    },
+    "microscope": {
+      "textures": "textures/items/microscope"
+    },
+    "spider_egg": {
+      "textures": "textures/items/spider_egg"
+    },
+    "genetically_engineered_super_spider": {
+      "textures": "textures/items/genetically_engineered_super_spider"
+    },
+    "spider_powers_42": {
+      "textures": "textures/items/spider_powers_42"
+    },
+    "spider_powers": {
+      "textures": "textures/items/spider_powers"
+    },
+    "web_flow": {
+      "textures": "textures/items/web_flow"
+    },
+    "gr_27_negative": {
+      "textures": "textures/items/gr_27_negative"
+    },
+    "component": {
+      "textures": "textures/items/component"
+    },
+    "multiversal_particles": {
+      "textures": "textures/items/multiversal_particles"
+    },
+    "symbiote_punch": {
+      "textures": "textures/items/symbiote_punch"
+    },
+    "venom_blast_punch": {
+      "textures": "textures/items/venom_blast_punch"
+    },
+    "venom_blast": {
+      "textures": "textures/items/venom_blast"
+    },
+    "mega_venom_blast": {
+      "textures": "textures/items/mega_venom_blast"
+    },
+    "bodega_cat": {
+      "textures": "textures/items/bodega_cat"
+    },
+    "symbiote_capsule": {
+      "textures": "textures/items/symbiote_capsule"
+    },
+    "symbiont": {
+      "textures": "textures/items/symbiote"
+    },
+    "sand_crystal_shard": {
+      "textures": "textures/items/sand_crystal_shard"
+    },
+    "symbiont_scythe": {
+      "textures": "textures/items/symbiote_scythe"
+    },
+    "shocker_invoke": {
+      "textures": "textures/items/shocker_invoke"
+    },
+    "hobgoblin_invoke": {
+      "textures": "textures/items/hobgoblin_invoke"
+    },
+    "green_goblin_invoke": {
+      "textures": "textures/items/green_goblin_invoke"
+    },
+    "taskmaster_invoke": {
+      "textures": "textures/items/taskmaster_invoke"
+    },
+    "challenge_box": {
+      "textures": "textures/items/challenge_box"
+    },
+    "hobgoblin_pumpkin_bomb": {
+      "textures": "textures/items/hobgoblin_pumpkin_bomb"
+    },
+    "sewing_machine": {
+      "textures": "textures/items/sewing_machine"
+    },
+    "taskmaster_sword": {
+      "textures": "textures/items/taskmaster_sword"
+    },
+    "symbiote_claw": {
+      "textures": "textures/items/symbiote_claw"
+    },
+    "spiderman_2099_burger": {
+      "textures": "textures/items/spiderman_2099_burger"
+    },
+    "spiderman_palette": {
+      "textures": "textures/items/spiderman_palette"
+    },
+    "delete_upgrades_token": {
+      "textures": "textures/items/delete_upgrades_token"
+    },
+    "spiderman_homemade_suit": {
+      "textures": "textures/items/suits/spiderman_homemade_suit"
+    },
+    "human_spider_suit": {
+      "textures": "textures/items/suits/human_spider_suit"
+    },
+    "spiderman_negative_suit": {
+      "textures": "textures/items/suits/spiderman_negative_suit"
+    },
+    "spiderman_black_suit_comic": {
+      "textures": "textures/items/suits/spiderman_black_suit_comic"
+    },
+    "ultimate_spiderman_black_suit": {
+      "textures": "textures/items/suits/ultimate_spiderman_black_suit"
+    },
+    "spiderman_classic_black_suit": {
+      "textures": "textures/items/suits/spiderman_classic_black_suit"
+    },
+    "spiderman_no_way_home_suit": {
+      "textures": "textures/items/suits/spiderman_no_way_home_suit"
+    },
+    "spiderman_far_from_home_suit": {
+      "textures": "textures/items/suits/spiderman_far_from_home_suit"
+    },
+    "spiderman_homecoming_suit": {
+      "textures": "textures/items/suits/spiderman_homecoming_suit"
+    },
+    "spiderman_ps4_suit": {
+      "textures": "textures/items/suits/spiderman_ps4_suit"
+    },
+    "spiderman_wrestler_suit": {
+      "textures": "textures/items/suits/spiderman_wrestler_suit"
+    },
+    "web_cartridge": {
+      "textures": "textures/items/web_cartridge"
+    },
+    "nanotechnology_chip": {
+      "textures": "textures/items/nanotechnology_chip"
+    },
+    "web_bomb": {
+      "textures": "textures/items/web_shooter/web_bomb"
+    },
+    "scarlet_spider_suit": {
+      "textures": "textures/items/suits/scarlet_spider_suit"
+    },
+    "spectacular_spiderman_black_suit": {
+      "textures": "textures/items/suits/spectacular_spiderman_black_suit"
+    },
+    "spectacular_spiderman_black_suit_2": {
+      "textures": "textures/items/suits/spectacular_spiderman_black_suit_2"
+    },
+    "spectacular_spiderman_black_suit_3": {
+      "textures": "textures/items/suits/spectacular_spiderman_black_suit_3"
+    },
+    "spectacular_spiderman_suit": {
+      "textures": "textures/items/suits/spectacular_spiderman_suit"
+    },
+    "spiderman_67_suit": {
+      "textures": "textures/items/suits/spiderman_67_suit"
+    },
+    "spiderman_90_suit": {
+      "textures": "textures/items/suits/spiderman_90_suit"
+    },
+    "comic1": {
+      "textures": "textures/items/comic1"
+    },
+    "the_amazing_spiderman_1_suit": {
+      "textures": "textures/items/suits/the_amazing_spiderman_1_suit"
+    },
+    "the_amazing_spiderman_2_suit": {
+      "textures": "textures/items/suits/the_amazing_spiderman_2_suit"
+    },
+    "ultimate_spiderman_ucm_suit": {
+      "textures": "textures/items/suits/ultimate_spiderman_ucm_suit"
+    },
+    "spiderman_steve_ditko_suit": {
+      "textures": "textures/items/suits/spiderman_steve_ditko_suit"
+    },
+    "hobgoblin_mask": {
+      "textures": "textures/items/hobgoblin_mask"
+    },
+    "green_goblin_mask": {
+      "textures": "textures/items/green_goblin_mask"
+    },
+    "planeador": {
+      "textures": "textures/items/planeador"
+    },
+    "egg_taskmaster": {
+      "textures": "textures/items/egg_taskmaster"
+    },
+    "egg_venom": {
+      "textures": "textures/items/egg_venom"
+    },
+    "egg_prowler": {
+      "textures": "textures/items/egg_prowler"
+    },
+    "egg_kingpin": {
+      "textures": "textures/items/egg_kingpin"
+    },
+    "egg_hobgoblin": {
+      "textures": "textures/items/egg_hobgoblin"
+    },
+    "spider_mobile": {
+      "textures": "textures/items/spider_mobile"
+    },
+    "spider_bike": {
+      "textures": "textures/items/spider_bike"
+    },
+    "spider_man_suits_stand": {
+      "textures": "textures/items/spider_man_suits_stand"
+    },
+    "egg_green_goblin": {
+      "textures": "textures/items/egg_green_goblin"
+    },
+    "egg_shocker": {
+      "textures": "textures/items/egg_shocker"
+    },
+    "carnage_capsule": {
+      "textures": "textures/items/carnage_capsule"
+    },
+    "challenge_token": {
+      "textures": "textures/items/challenge_token"
+    },
+    "base_token": {
+      "textures": "textures/items/base_token"
+    },
+    "tokens_crime": {
+      "textures": "textures/items/tokens_crime"
+    },
+    "research_token": {
+      "textures": "textures/items/research_token"
+    },
+    "plans": {
+      "textures": "textures/items/plans"
+    },
+    "laboratory_workbench": {
+      "textures": "textures/items/laboratory_workbench"
+    },
+    "pumpkin_bomb": {
+      "textures": "textures/items/pumpkin_bomb"
+    },
+    "escudo_token": {
+      "textures": "textures/items/mod_token0"
+    },
+    "dano_token": {
+      "textures": "textures/items/mod_token1"
+    },
+    "salud_extra_token": {
+      "textures": "textures/items/mod_token2"
+    },
+    "regeneracion_token": {
+      "textures": "textures/items/mod_token3"
+    },
+    "golpe_eletrico_token": {
+      "textures": "textures/items/mod_token5"
+    },
+    "regeneracion_shock_token": {
+      "textures": "textures/items/mod_token6"
+    },
+    "miles_morales_invisibility_token": {
+      "textures": "textures/items/miles_morales_invisibility_token"
+    },
+    "fire_resistence_stealth_suit_token": {
+      "textures": "textures/items/fire_resistence_stealth_suit_token"
+    },
+    "invisibility_stealth_suit_token": {
+      "textures": "textures/items/invisibility_stealth_suit_token"
+    },
+    "regeneration_stealth_suit_token": {
+      "textures": "textures/items/regeneration_stealth_suit_token"
+    },
+    "spiderman_stealth_suit": {
+      "textures": "textures/items/suits/spiderman_stealth_suit"
+    },
+    "egg_prisoner": {
+      "textures": "textures/items/egg_prisoner"
+    },
+    "black_cat_doll": {
+      "textures": "textures/items/black_cat_doll"
+    },
+    "miles_morales_suit": {
+      "textures": "textures/items/suits/miles_morales_suit"
+    },
+    "miles_morales_gold_suit": {
+      "textures": "textures/items/suits/miles_morales_gold_suit"
+    },
+    "venom": {
+      "textures": "textures/items/venom"
+    },
+    "spider_gwen": {
+      "textures": "textures/items/spider_gwen"
+    },
+    "mobile": {
+      "textures": "textures/items/mobile"
+    },
+    "spiderman_mask": {
+      "textures": "textures/items/spiderman_mask"
+    },
+    "usb": {
+      "textures": "textures/items/usb"
+    },
+    "backpack_token": {
+      "textures": "textures/items/backpack_token"
+    },
+    "peter_backpack": {
+      "textures": "textures/items/peter_backpack"
+    },
+    "stuffed_spiderman_india": {
+      "textures": "textures/items/stuffed_spiderman_india"
+    },
+    "stuffed_miles_morales": {
+      "textures": "textures/items/stuffed_miles_morales"
+    },
+    "stuffed_iron_spider_ucm": {
+      "textures": "textures/items/stuffed_iron_spider_ucm"
+    },
+    "stuffed_spider_punk": {
+      "textures": "textures/items/stuffed_spider_punk"
+    },
+    "stuffed_spiderman_no_way_home": {
+      "textures": "textures/items/stuffed_spiderman_no_way_home"
+    },
+    "stuffed_spiderman_noir": {
+      "textures": "textures/items/stuffed_spiderman_noir"
+    },
+    "stuffed_superior_spiderman": {
+      "textures": "textures/items/stuffed_superior_spiderman"
+    },
+    "stuffed_spiderman_raimi_black_suit": {
+      "textures": "textures/items/stuffed_spiderman_raimi_black_suit"
+    },
+    "stuffed_spiderman_raimi": {
+      "textures": "textures/items/stuffed_spiderman_raimi"
+    },
+    "stuffed_spiderman_ps4": {
+      "textures": "textures/items/stuffed_spiderman_ps4"
+    },
+    "stuffed_spiderman_black_suit": {
+      "textures": "textures/items/stuffed_spiderman_black_suit"
+    },
+    "stuffed_spiderman_2099_across_the_spiderverse": {
+      "textures": "textures/items/stuffed_spiderman_2099_across_the_spiderverse"
+    },
+    "stuffed_spider_gwen": {
+      "textures": "textures/items/stuffed_spider_gwen"
+    },
+    "stuffed_silk": {
+      "textures": "textures/items/stuffed_silk"
+    },
+    "stuffed_scarlet_spider": {
+      "textures": "textures/items/stuffed_scarlet_spider"
+    },
+    "stuffed_peni_parker": {
+      "textures": "textures/items/stuffed_peni_parker"
+    },
+    "stuffed_the_amazing_spiderman_2": {
+      "textures": "textures/items/stuffed_the_amazing_spiderman_2"
+    },
+    "stuffed_the_amazing_spiderman": {
+      "textures": "textures/items/stuffed_the_amazing_spiderman"
+    },
+    "stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith": {
+      "textures": "textures/items/stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith"
+    },
+    "stuffed_spiderman": {
+      "textures": "textures/items/stuffed_spiderman"
+    },
+    "symbiont_axe": {
+      "textures": "textures/items/symbiont_axe"
+    },
+    "spiderman_ps4_black_suit": {
+      "textures": "textures/items/suits/spiderman_ps4_black_suit"
+    },
+    "iron_spider_ucm_suit": {
+      "textures": "textures/items/suits/iron_spider_ucm_suit"
+    },
+    "iron_arms_attack": {
+      "textures": "textures/items/iron_arms_attack"
+    },
+    "iron_arms": {
+      "textures": "textures/items/iron_arms"
+    },
+    "combat_mode": {
+      "textures": "textures/items/combat_mode"
+    },
+    "cell_phone": {
+      "textures": "textures/items/cell_phone"
+    },
+    "spiderman_powers": {
+      "textures": "textures/items/spiderman_powers"
+    },
+    "spiderman_raimi_suit": {
+      "textures": "textures/items/suits/spiderman_raimi_suit"
+    },
+    "spiderman_raimi_black_suit": {
+      "textures": "textures/items/suits/spiderman_raimi_black_suit"
+    },
+    "camera_mode": {
+      "textures": "textures/items/camera_mode"
+    },
+    "qc_menu": {
+      "textures": "textures/items/qc_menu"
+    }
+  }
+}

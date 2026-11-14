@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/stuffed/miles_morales_into_the_spiderverse_suit_leap_of_faith"
+			},
+			"geometry": {
+				"default": "geometry.stuffed_spiderman"
+			},
+			"animations": {
+				"loop": "animation.stuffed_spiderman.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith",
+				"texture_index": 0
+			}
+		}
+	}
+}

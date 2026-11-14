@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.symbiont_pull.idle": {
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.0": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.0833": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.1667": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.25": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.3333": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.4167": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				},
+				"0.5": {
+					"effect": "symbiont_pull",
+					"locator": "symbiont_pull"
+				}
+			}
+		}
+	}
+}

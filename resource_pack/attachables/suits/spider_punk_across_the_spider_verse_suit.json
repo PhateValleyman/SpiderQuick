@@ -1,0 +1,81 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spider_punk_across_the_spider_verse_suit",
+			"materials": {
+				"default": "armor",
+				"armor_skin": "slime",
+				"outline": "outline",
+				"outline_color": "outline"
+			},
+			"textures": {
+				"spider_punk": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit",
+				"spider_punk_1": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_2",
+				"spider_punk_2": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_5",
+				"spider_punk_3": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_6",
+				"spider_punk_4": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_4",
+				"spider_punk_5": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_0",
+				"spider_punk_6": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_1",
+				"spider_punk_7": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit_3",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible",
+				"gray": "textures/suits/spider_punk/gray",
+				"red": "textures/suits/spider_punk/red",
+				"yellow": "textures/suits/spider_punk/yellow",
+				"purple": "textures/suits/spider_punk/purple",
+				"pink": "textures/suits/spider_punk/pink",
+				"outline": "textures/suits/spiderman_outline",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.spider_punk_across_suit",
+				"armor_skin": "geometry.player_ironman",
+				"outline": "geometry.spider_punk_outline",
+				"outline_color": "geometry.spider_punk_outline_color",
+				"web_wings": "geometry.web_wings"
+			},
+			"scripts": {
+                "animate": [
+                    "default_c",
+					"mask_c",
+					"selfie_hand_c"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.spiderman_suit.web_wings": "q.is_gliding && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.spider_punk": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 0 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.1": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 1 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.2": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 2 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.3": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 3 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.4": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 0 && q.is_sneaking" },
+				{ "controller.render.spider_punk.5": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 1 && q.is_sneaking" },
+				{ "controller.render.spider_punk.6": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 2 && q.is_sneaking" },
+				{ "controller.render.spider_punk.7": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 3 && q.is_sneaking" },
+				
+				{ "controller.render.spider_punk.border": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 0 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.border.2": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 2 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.border.3": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 3 && !q.is_sneaking" },
+				{ "controller.render.spider_punk.border.4": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 0 && q.is_sneaking" },
+				{ "controller.render.spider_punk.border.5": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 1 && q.is_sneaking" },
+				{ "controller.render.spider_punk.border.6": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 2 && q.is_sneaking" },
+				{ "controller.render.spider_punk.border.7": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && q.property('arathnido:SuitTexture0') == 3 && q.is_sneaking" },
+				
+				{ "controller.render.armor_skin": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.outline": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+                "mask_c": "controller.animation.suit.mask",
+                "mask.off": "animation.mask.on",
+				"mask.on": "animation.mask.off",
+				"mask.time": "animation.spider_female.mask_time",
+                "default_c": "controller.animation.spiderman_suit.web_default",
+                "web_off": "animation.spiderman.web_shooters.off",
+				"web_on": "animation.spiderman.web_shooters.on",
+				"selfie_hand_c": "controller.animation.spiderman_suit.selfie_hand",
+				"selfie_hand": "animation.spiderman.web_shooters.selfie_hand"
+            }
+		}
+	}
+}

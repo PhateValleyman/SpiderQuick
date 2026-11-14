@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "marveladdons:iron_arms",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "marveladdons:itemGroup.name.spiderman.items"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"iron_arms"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "iron_arms"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": false,
+			"minecraft:wearable": {
+				"protection": 1,
+				"slot": "slot.armor.chest"
+			}
+		}
+	}
+}

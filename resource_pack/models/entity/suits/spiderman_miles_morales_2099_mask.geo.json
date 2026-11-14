@@ -1,0 +1,81 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spiderman_miles_morales_2099_mask",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{
+							"origin": [-4, 24, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.025,
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [8, 8]},
+								"east": {"uv": [0, 8], "uv_size": [8, 8]},
+								"south": {"uv": [24, 8], "uv_size": [8, 8]},
+								"west": {"uv": [16, 8], "uv_size": [8, 8]},
+								"up": {"uv": [8, 0], "uv_size": [8, 8]},
+								"down": {"uv": [16, 8], "uv_size": [8, -8]}
+							}
+						},
+						{
+							"origin": [-4, 24, -4],
+							"size": [8, 8, 8],
+							"inflate": 0.225,
+							"uv": {
+								"north": {"uv": [40, 8], "uv_size": [8, 8]},
+								"east": {"uv": [32, 8], "uv_size": [8, 8]},
+								"south": {"uv": [56, 8], "uv_size": [8, 8]},
+								"west": {"uv": [48, 8], "uv_size": [8, 8]},
+								"up": {"uv": [40, 0], "uv_size": [8, 8]},
+								"down": {"uv": [48, 8], "uv_size": [8, -8]}
+							}
+						}
+					]
+				},
+				{
+					"name": "mask1",
+					"parent": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "capa0",
+					"parent": "mask1",
+					"pivot": [0, 25.4, 0],
+					"cubes": [
+						{"origin": [1.5, 23.9, -4.525], "size": [3, 9, 9], "pivot": [4.5, 32.9, 0], "rotation": [0, 0, -12.5], "uv": [101, 54]},
+						{"origin": [-4, 32.9, -4], "size": [8, 1, 8], "uv": [95, 21]},
+						{"origin": [-4.5, 23.9, -4.525], "size": [3, 9, 9], "pivot": [-4.5, 32.9, 0], "rotation": [0, 0, 12.5], "uv": [101, 33]},
+						{"origin": [-4.5, 23.9, -4.5], "size": [9, 9, 9], "uv": [68, 3]},
+						{"origin": [-3.5, 23.45, -3.525], "size": [7, 1, 8], "uv": [98, 0]}
+					]
+				}
+			]
+		}
+	]
+}

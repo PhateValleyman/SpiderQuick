@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:man_spider",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "man_spider", "off_rightitem", "convert_entity"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "man_spider"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 15,
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

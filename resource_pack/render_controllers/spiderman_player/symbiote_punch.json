@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.symbiote_punch": {
+      "geometry": "Geometry.symbiote_punch",
+      "part_visibility": [
+        { "*": "q.mark_variant == 21" }
+      ],
+      "materials": [ { "*": "Material.guns" } ],
+      "textures": [ "Texture.symbiote_punch" ]
+    }
+  }
+}

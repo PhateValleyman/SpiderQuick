@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.boomerang": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "walk": "q.modified_move_speed > 0.1 && q.is_on_ground && query.property('spidermanaddon:boomerang_state') == 'default'"
+            },
+            {
+              "falling": "!q.is_on_ground && query.property('spidermanaddon:boomerang_state') == 'default'"
+            },
+			"look_at_target"
+          ],
+          "transitions": [
+            {
+              "jump_attack": "query.property('spidermanaddon:boomerang_state') == 'jump_attack'"
+            }
+          ]
+        },
+        "jump_attack": {
+          "animations": [
+            "jump_attack"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:boomerang_state') == 'default'"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.boomerang.shoot": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "shoot": "query.property('spidermanaddon:boomerang_state') == 'shoot' && q.has_target"
+            }
+          ]
+        },
+        "shoot": {
+          "animations": [
+            "shoot"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

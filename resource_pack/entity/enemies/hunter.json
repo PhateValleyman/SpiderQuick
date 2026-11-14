@@ -1,0 +1,77 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:hunter",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"scan": "scan"
+			},
+			"textures": {
+				"girl_hunter": "textures/entity/hunters/girl_hunter",
+				"girl_hunter1": "textures/entity/hunters/girl_hunter1",
+				"male_hunter": "textures/entity/hunters/male_hunter",
+				"male_hunter1": "textures/entity/hunters/male_hunter1",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"girl_hunter": "geometry.girl_hunter",
+				"girl_hunter1": "geometry.girl_hunter1",
+				"male_hunter": "geometry.male_hunter",
+				"male_hunter1": "geometry.male_hunter",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.girl_hunter.idle",
+				"look": "animation.girl_hunter.look",
+				"on_look": "animation.girl_hunter.on_look",
+				"normal": "animation.girl_hunter.normal",
+				"walk": "animation.girl_hunter.walk",
+				"run": "animation.girl_hunter.run",
+				"attack": "animation.girl_hunter.attack",
+				"special_attack": "animation.girl_hunter.special_attack",
+				"falling": "animation.girl_hunter.falling",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"look": "controller.animation.hunter.look"
+				},
+				{
+					"walk": "controller.animation.hunter.walk"
+				},
+				{
+					"attack": "controller.animation.hunter.attack"
+				},
+				{
+					"special_attack": "controller.animation.hunter.special_attack"
+				},
+				{
+					"falling": "controller.animation.hunter.falling"
+				},
+				{
+					"look_at_target": "controller.animation.look_at_target"
+				}
+			],
+			"render_controllers": [
+				"controller.render.girl_hunter",
+				"controller.render.girl_hunter1",
+				"controller.render.male_hunter",
+				"controller.render.male_hunter1",
+				"controller.render.scan"
+			],
+			"spawn_egg": {
+				"texture": "egg_hunter",
+				"texture_index": 0
+			}
+		}
+	}
+}

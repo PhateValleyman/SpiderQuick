@@ -1,0 +1,89 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "marveladdons:venom_axe",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+    },
+    "components": {
+            "minecraft:tags": {
+                "tags": [
+					"venom_axe","custom_attack","venom_knife_attack","venom_knife_sounds","spiderman:off_falling"
+                ]
+            },
+      "minecraft:icon": {
+        "texture": "venom_axe"
+      },
+		  "minecraft:food": {
+			"can_always_eat": true
+		  },
+		  "minecraft:cooldown": {
+			"category": "venom_axe",
+			"duration": 0.5
+		  },
+      			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 1.0
+			},
+      "minecraft:damage": 10,
+      "minecraft:enchantable": {
+        "slot": "none",
+        "value": 0
+      },
+      "minecraft:allow_enchantments": false,
+		"minecraft:tool": {
+		  "type": "pickaxe",
+		  "tier": 4
+		},
+		"minecraft:digger": {
+		  "use_efficiency": true,
+		  "destroy_speeds": [
+			{ "block": "minecraft:stone", "speed": 9.0 },
+			{ "block": "minecraft:cobblestone", "speed": 9.0 },
+			{ "block": "minecraft:deepslate", "speed": 9.0 },
+			{ "block": "minecraft:andesite", "speed": 9.0 },
+			{ "block": "minecraft:diorite", "speed": 9.0 },
+			{ "block": "minecraft:granite", "speed": 9.0 },
+			{ "block": "minecraft:calcite", "speed": 9.0 },
+			{ "block": "minecraft:tuff", "speed": 9.0 },
+			{ "block": "minecraft:dripstone_block", "speed": 9.0 },
+			{ "block": "minecraft:basalt", "speed": 9.0 },
+			{ "block": "minecraft:blackstone", "speed": 9.0 },
+			{ "block": "minecraft:smooth_basalt", "speed": 9.0 },
+			{ "block": "minecraft:end_stone", "speed": 9.0 },
+			{ "block": "minecraft:netherrack", "speed": 9.0 },
+			{ "block": "minecraft:nether_bricks", "speed": 9.0 },
+			{ "block": "minecraft:red_nether_bricks", "speed": 9.0 },
+			{ "block": "minecraft:quartz_block", "speed": 9.0 },
+			{ "block": "minecraft:sandstone", "speed": 9.0 },
+			{ "block": "minecraft:red_sandstone", "speed": 9.0 },
+			{ "block": "minecraft:oak_planks", "speed": 9.0 },
+			{ "block": "minecraft:spruce_planks", "speed": 9.0 },
+			{ "block": "minecraft:birch_planks", "speed": 9.0 },
+			{ "block": "minecraft:jungle_planks", "speed": 9.0 },
+			{ "block": "minecraft:acacia_planks", "speed": 9.0 },
+			{ "block": "minecraft:dark_oak_planks", "speed": 9.0 },
+			{ "block": "minecraft:mangrove_planks", "speed": 9.0 },
+			{ "block": "minecraft:cherry_planks", "speed": 9.0 },
+			{ "block": "minecraft:bamboo_planks", "speed": 9.0 },
+			{ "block": "minecraft:crimson_planks", "speed": 9.0 },
+			{ "block": "minecraft:warped_planks", "speed": 9.0 },
+			{ "block": "minecraft:oak_log", "speed": 9.0 },
+			{ "block": "minecraft:spruce_log", "speed": 9.0 },
+			{ "block": "minecraft:birch_log", "speed": 9.0 },
+			{ "block": "minecraft:jungle_log", "speed": 9.0 },
+			{ "block": "minecraft:acacia_log", "speed": 9.0 },
+			{ "block": "minecraft:dark_oak_log", "speed": 9.0 },
+			{ "block": "minecraft:mangrove_log", "speed": 9.0 },
+			{ "block": "minecraft:cherry_log", "speed": 9.0 },
+			{ "block": "minecraft:bamboo_block", "speed": 9.0 },
+			{ "block": "minecraft:crimson_stem", "speed": 9.0 },
+			{ "block": "minecraft:warped_stem", "speed": 9.0 }
+		  ]
+		}
+    }
+  }
+}

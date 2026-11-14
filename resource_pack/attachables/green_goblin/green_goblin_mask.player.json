@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:green_goblin_mask",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/green_goblin/green_goblin",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.green_goblin_mask",
+				"armor_skin": "geometry.player_ironman"
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

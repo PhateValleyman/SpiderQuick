@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:suits_machine"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "BCB",
+      "BDB",
+      "AAA"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:stone"
+      },
+      "B": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:glowstone"
+      },
+      "D": {
+        "item": "minecraft:armor_stand"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:suits_machine_spawn_egg",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

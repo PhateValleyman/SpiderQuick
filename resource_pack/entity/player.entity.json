@@ -1,0 +1,1355 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "materials": {
+        "default": "entity_alphatest",
+        "convert_entity": "slime",
+        "cape": "entity_alphatest",
+        "animated": "player_animated",
+        "outline": "outline",
+        "entity_emissive": "entity_emissive_alpha",
+        "outline_color": "outline",
+        "ghost_rider_fire": "ghost_rider_fire"
+      },
+      "textures": {
+        "default": "textures/entity/steve",
+        "cape": "textures/entity/cape_invisible",
+        "convert_entity": "textures/entity/invisible",
+        "venom.skin0": "textures/entity/venom/venom",
+        "venom.skin1": "textures/entity/venom/venom_movie",
+        "venom.skin2": "textures/entity/venom/blue_venom",
+        "venom.skin3": "textures/entity/venom/venom_lee_price",
+        "venom.skin4": "textures/entity/venom/ultimate_venom",
+        "venom.skin5": "textures/entity/venom/ultimate_venom_spider",
+        "venom.skin6": "textures/entity/venom/venom_2099",
+        "venom.skin7": "textures/entity/venom/venompool",
+        "venom.skin8": "textures/entity/venom/venom_snow_symbiote",
+        "venom.skin9": "textures/entity/venom/antivenom",
+        "spiderman_classic_suit": "textures/suits/spiderman_classic_suit",
+        "miles_morales_suit": "textures/suits/miles_morales_suit",
+        "miles_morales_gold_suit": "textures/suits/miles_morales_gold_suit",
+        "spiderman_raimi_suit": "textures/suits/spiderman_raimi_suit",
+        "spiderman_raimi_black_suit": "textures/suits/spiderman_raimi_black_suit",
+        "iron_spider_ucm_suit": "textures/suits/iron_spider_ucm_suit",
+        "spiderman_stealth_suit": "textures/suits/spiderman_stealth_suit",
+        "spiderman_ps4_black_suit": "textures/suits/spiderman_ps4_black_suit",
+        "web_shooter_spider_gwen": "textures/entity/spider_gwen",
+        "spiderman_steve_ditko_suit": "textures/suits/spiderman_steve_ditko_suit",
+        "the_amazing_spiderman_1_suit": "textures/suits/the_amazing_spiderman_1_suit",
+        "the_amazing_spiderman_2_suit": "textures/suits/the_amazing_spiderman_2_suit",
+        "ultimate_spiderman_ucm_suit": "textures/suits/ultimate_spiderman_ucm_suit",
+        "scarlet_spider_suit": "textures/suits/scarlet_spider_suit",
+        "spectacular_spiderman_black_suit": "textures/suits/spectacular_spiderman_black_suit",
+        "spectacular_spiderman_black_suit_2": "textures/suits/spectacular_spiderman_black_suit_2",
+        "spectacular_spiderman_black_suit_3": "textures/suits/spectacular_spiderman_black_suit_3",
+        "spectacular_spiderman_suit": "textures/suits/spectacular_spiderman_suit",
+        "spiderman_67_suit": "textures/suits/spiderman_67_suit",
+        "spiderman_90_suit": "textures/suits/spiderman_90_suit",
+        "spiderman_wrestler_suit": "textures/suits/spiderman_wrestler_suit",
+        "spiderman_ps4_suit": "textures/suits/spiderman_ps4_suit",
+        "spiderman_homecoming_suit": "textures/suits/spiderman_homecoming_suit",
+        "ultimate_spiderman_suit": "textures/suits/ultimate_spiderman_suit",
+        "spiderman_far_from_home_suit": "textures/suits/spiderman_far_from_home_suit",
+        "spiderman_no_way_home_suit": "textures/suits/spiderman_no_way_home_suit",
+        "spiderman_classic_black_suit": "textures/suits/spiderman_classic_black_suit",
+        "ultimate_spiderman_black_suit": "textures/suits/ultimate_spiderman_black_suit",
+        "spiderman_black_suit_comic": "textures/suits/spiderman_black_suit_comic",
+        "spiderman_negative_suit": "textures/suits/spiderman_negative_suit",
+        "spiderman_homemade_suit": "textures/suits/spiderman_homemade_suit",
+        "human_spider_suit": "textures/suits/human_spider_suit",
+        "spiderman_90_blue": "textures/suits/spiderman_90_blue",
+        "spiderman_90_red": "textures/suits/spiderman_90_red",
+        "outline": "textures/outline",
+        "spiderman_outline": "textures/suits/outline",
+        "miles_morales_into_the_spiderverse": "textures/entity/miles_morales_into_the_spiderverse",
+        "miles_morales_into_the_spiderverse_training": "textures/entity/miles_morales_into_the_spiderverse_training",
+        "miles_morales_across_the_spiderverse": "textures/entity/miles_morales",
+        "miles_morales_bodega_cat_suit": "textures/suits/miles_morales_bodega_cat_suit",
+        "anya_corazon": "textures/entity/anya_corazon",
+        "spider_radioactive_player": "textures/entity/spider_radioactive",
+        "anti_ock_suit": "textures/suits/anti_ock_suit",
+        "anti_ock_suit_1": "textures/suits/anti_ock_suit_1",
+        "anti_ock_suit_2": "textures/suits/anti_ock_suit_2",
+        "anti_ock_suit_3": "textures/suits/anti_ock_suit_3",
+        "aracnido_jr_suit": "textures/suits/aracnido_jr_suit",
+        "ezekiel_sims_suit": "textures/suits/ezekiel_sims_suit",
+        "iron_spider_suit": "textures/suits/iron_spider_suit",
+        "iron_spider_suit_1": "textures/suits/iron_spider_suit_1",
+        "iron_spider_suit_2": "textures/suits/iron_spider_suit_2",
+        "iron_spider_suit_3": "textures/suits/iron_spider_suit_3",
+        "scarlet_spider_suit_1": "textures/suits/scarlet_spider_suit_1",
+        "scarlet_spider_suit_2": "textures/suits/scarlet_spider_suit_2",
+        "scarlet_spider_suit_3": "textures/suits/scarlet_spider_suit_3",
+        "spider_punk_suit": "textures/suits/spider_punk_suit",
+        "spiderman_2099_suit": "textures/suits/spiderman_2099_suit",
+        "spiderman_2099_suit_1": "textures/suits/spiderman_2099_suit_1",
+        "spiderman_2099_suit_2": "textures/suits/spiderman_2099_suit_2",
+        "spiderman_2099_suit_3": "textures/suits/spiderman_2099_suit_3",
+        "spiderman_cero_suit": "textures/suits/spiderman_cero_suit",
+        "spiderman_classic_suit_1": "textures/suits/spiderman_classic_suit_1",
+        "spiderman_classic_suit_2": "textures/suits/spiderman_classic_suit_2",
+        "spiderman_classic_suit_3": "textures/suits/spiderman_classic_suit_3",
+        "spiderman_future_foundation_suit": "textures/suits/spiderman_future_foundation_suit",
+        "spiderman_ps5_suit": "textures/suits/spiderman_ps5_suit",
+        "spiderman_ps5_suit_1": "textures/suits/spiderman_ps5_suit_1",
+        "spiderman_ps5_suit_2": "textures/suits/spiderman_ps5_suit_2",
+        "spiderman_ps5_suit_3": "textures/suits/spiderman_ps5_suit_3",
+        "spiderman_ps5_symbiote_suit": "textures/suits/spiderman_ps5_symbiote_suit",
+        "spiderman_velocity_suit": "textures/suits/spiderman_velocity_suit",
+        "dr_octopus_arms": "textures/entity/dr_octopus/dr_octopus",
+        "superior_octopus_arms": "textures/entity/dr_octopus/superior_octopus_arms",
+        "spiderman_2099_across_the_spiderverse_suit": "textures/suits/spiderman_2099_across_the_spiderverse_suit",
+        "spiderman_2099_across_the_spiderverse_suit_1": "textures/suits/spiderman_2099_across_the_spiderverse_suit_normal",
+        "superior_spiderman_suit": "textures/suits/superior_spiderman_suit",
+        "superior_spiderman_suit_1": "textures/suits/superior_spiderman_suit_1",
+        "superior_spiderman_suit_2": "textures/suits/superior_spiderman_suit_2",
+        "superior_spiderman_suit_3": "textures/suits/superior_spiderman_suit_3",
+        "miles_morales_wolverine_suit": "textures/suits/miles_morales_wolverine",
+        "miles_morales_wolverine_suit_1": "textures/suits/miles_morales_wolverine_1",
+        "miles_morales_wolverine_suit_2": "textures/suits/miles_morales_wolverine_2",
+        "miles_morales_wolverine_suit_3": "textures/suits/miles_morales_wolverine_3",
+        "miles_morales_into_the_spiderverse_suit": "textures/suits/miles_morales_into_the_spiderverse_suit",
+        "miles_morales_across_the_spiderverse_suit": "textures/suits/miles_morales_across_the_spiderverse_suit",
+        "the_amazing_spiderman_black_suit": "textures/suits/the_amazing_spiderman_black_suit",
+        "the_amazing_spiderman_belt_suit": "textures/suits/the_amazing_spiderman_belt_suit",
+        "ghost_spider_suit": "textures/suits/ghost_spider_suit",
+        "scarlet_spider_across_the_spiderverse_suit": "textures/suits/scarlet_spider_across_the_spiderverse_suit",
+        "spiderman_90_black_suit": "textures/suits/spiderman_90_black_suit",
+        "spiderman_90_black_suit_1": "textures/suits/spiderman_90_black_suit",
+        "spiderman_antivenom_suit": "textures/suits/spiderman_antivenom_suit",
+        "spiderman_secret_wars_civil_war_suit": "textures/suits/spiderman_secret_wars_civil_war_suit",
+        "spiderman_unlimited_suit": "textures/suits/spiderman_unlimited_suit",
+        "yfn_spiderman_casero_suit": "textures/suits/yfn_spiderman_casero_suit",
+        "spiderman_web_of_shadows_suit": "textures/suits/spiderman_web_of_shadows_suit",
+        "spiderman_what_if_animated_suit": "textures/suits/spiderman_what_if_animated_suit",
+        "spiderman_what_if_suit": "textures/suits/spiderman_what_if_suit",
+        "spider_punk_across_the_spider_verse_suit": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit",
+        "silk": "textures/suits/silk",
+        "spiderman_noir_into_the_spiderverse_suit": "textures/suits/spiderman_noir_into_the_spiderverse",
+        "spiderman_india_suit": "textures/suits/spiderman_india",
+        "miles_morales_10th_suit": "textures/suits/miles_morales_10th_suit",
+        "miles_morales_10th_suit_1": "textures/suits/miles_morales_10th_suit_1",
+        "miles_morales_10th_suit_2": "textures/suits/miles_morales_10th_suit_2",
+        "miles_morales_10th_suit_3": "textures/suits/miles_morales_10th_suit_3",
+        "miles_morales_bodega_cat_suit_1": "textures/suits/miles_morales_bodega_cat_suit_1",
+        "miles_morales_bodega_cat_suit_2": "textures/suits/miles_morales_bodega_cat_suit_2",
+        "miles_morales_bodega_cat_suit_3": "textures/suits/miles_morales_bodega_cat_suit_3",
+        "superior_spiderman_black_suit": "textures/suits/superior_spiderman_black_suit",
+        "spiderman_web_of_shadows_black_suit": "textures/suits/spiderman_web_of_shadows_black_suit",
+        "into_the_spiderverse_sb_suit": "textures/suits/into_the_spiderverse_sb_suit",
+        "venom_s3": "textures/entity/venom/venom_s3",
+        "spiderman_last_stand_suit": "textures/suits/spiderman_last_stand",
+        "spiderman_miles_morales_leap_of_faith_suit": "textures/suits/spiderman_miles_morales_leap_of_faith_suit",
+        "taskmaster": "textures/entity/taskmaster",
+        "spirit_spider_suit": "textures/suits/spirit_spider_suit",
+        "spiderman_bombastic_bag_man_suit": "textures/suits/spiderman_bombastic_bag_man_suit",
+        "yfn_spiderman_suit": "textures/suits/yfn_spiderman_suit",
+        "yfn_spiderman_oscorp_suit": "textures/suits/yfn_spiderman_oscorp_suit",
+        "spiderman_new_blue_suit": "textures/suits/spiderman_new_blue_suit",
+        "the_amazing_spiderman_casero_suit": "textures/suits/the_amazing_spiderman_casero_suit",
+        "arachknight_suit": "textures/suits/arachknight_suit",
+        "spider_carnage_suit": "textures/suits/spider_carnage",
+        "zombie_spiderman_suit": "textures/suits/zombie_spiderman_suit",
+        "zombie_spiderman_black_suit": "textures/suits/zombie_spiderman_black_suit",
+        "spiderman_cyborg_suit": "textures/suits/spiderman_cyborg_suit",
+        "punisher_spiderman_suit": "textures/suits/punisher_spiderman_suit",
+        "assassin_spiderman_suit": "textures/suits/assassin_spiderman_suit",
+        "spiderman_classic_black_red_spider_suit": "textures/suits/spiderman_classic_black_red_spider_suit",
+        "mayday_parker_black_suit": "textures/suits/mayday_parker_black_suit",
+        "mayday_parker_suit": "textures/suits/mayday_parker_suit",
+        "spider_ham": "textures/entity/spider_ham",
+        "spirit_spider_fire": "textures/suits/spirit_spider_fire",
+        "spiderman_rivals_suit": "textures/suits/spiderman_rivals_suit",
+        "spiderman_2099_white_suit": "textures/suits/spiderman_2099_white_suit",
+        "spiderman_brand_new_day_suit": "textures/suits/spiderman_brand_new_day_suit",
+        "spider_oni_suit": "textures/suits/spider_oni_suit",
+        "spiderman_black_gold_suit": "textures/suits/spiderman_black_gold_suit",
+        "spiderman_mk1_suit": "textures/suits/spiderman_mk1_suit",
+        "spiderman_mk2_suit": "textures/suits/spiderman_mk2_suit",
+        "spiderman_mk3_suit": "textures/suits/spiderman_mk3_suit",
+        "spiderman_mk4_suit": "textures/suits/spiderman_mk4_suit",
+        "spiderman_miles_morales_2099_suit": "textures/suits/spiderman_miles_morales_2099_suit",
+        "spiderman_miles_morales_purple_reign_suit": "textures/suits/spiderman_miles_morales_purple_reign_suit",
+        "silk_web_suit": "textures/suits/silk_web_suit",
+        "scarlet_spider_2_suit": "textures/suits/scarlet_spider_2_suit",
+        "spiderman_dark_suit": "textures/suits/spiderman_dark_suit",
+        "spiderman_into_the_spiderverse_suit": "textures/suits/spiderman_into_the_spiderverse_suit",
+        "spiderman_miles_morales_2020_suit": "textures/suits/spiderman_miles_morales_2020_suit",
+        "spiderman_miles_morales_2020_v2_suit": "textures/suits/spiderman_miles_morales_2020_v2_suit",
+        "spiderman_miles_morales_2020_v3_suit": "textures/suits/spiderman_miles_morales_2020_v3_suit",
+        "spiderman_miles_morales_2020_v4_suit": "textures/suits/spiderman_miles_morales_2020_v4_suit",
+        "spiderman_blue_suit": "textures/suits/spiderman_blue_suit",
+        "spiderman_antivenom_classic_suit": "textures/suits/spiderman_antivenom_classic_suit",
+        "poison_suit": "textures/suits/spiderman_poison_suit",
+        "spiderman_king_in_black_suit": "textures/suits/spiderman_king_in_black_suit",
+        "spidergwen_symbiont_suit": "textures/suits/spidergwen_symbiont_suit",
+        "ben_really_suit": "textures/suits/ben_really_suit",
+        "electro_suit": "textures/entity/electro/electro_suit",
+        "electro_tas2_suit": "textures/entity/electro/electro_tas2",
+        "electro_no_way_home_suit": "textures/suits/electro_no_way_home_suit",
+        "green_goblin": "textures/entity/green_goblin/green_goblin",
+        "hobgoblin": "textures/entity/green_goblin/hobgoblin",
+        "green_goblin_raimi": "textures/entity/green_goblin/green_goblin_raimi",
+        "green_goblin_no_way_home": "textures/entity/green_goblin/green_goblin_no_way_home",
+        "green_goblin_spiderman3": "textures/entity/green_goblin/green_goblin_spiderman3",
+        "mysterio_suit": "textures/entity/mysterio/mysterio",
+        "mysterio1_suit": "textures/entity/mysterio/mysterio1",
+        "mysterio_far_from_home_suit": "textures/entity/mysterio/mysterio_far_from_home",
+        "agent_venom": "textures/suits/agent_venom",
+        "agent_venom_thunderbolts": "textures/suits/agent_venom_thunderbolts",
+        "agent_antivenom": "textures/suits/agent_anti_venom",
+        "agent_venom_spiderman2": "textures/suits/agent_venom_spiderman2",
+        "agent_venom_spiderman2_v2": "textures/suits/agent_venom_spiderman2_v2",
+        "scorpion_suit": "textures/suits/scorpion_suit",
+        "boomerang_suit": "textures/suits/boomerang_suit",
+        "tarantula_suit": "textures/entity/tarantula/tarantula",
+        "man_spider": "textures/entity/man_spider/man_spider",
+        "shocker_suit": "textures/entity/shocker",
+        "black_cat_suit": "textures/suits/black_cat_suit"
+      },
+      "sound_effects": {
+        "symbiont.human_clap": "symbiont.human_clap"
+      },
+      "particle_effects": {
+        "spirit_spider_suit_fire": "spidermanaddon:spirit_spider_suit_fire",
+        "spirit_spider_suit_fire_effect": "spidermanaddon:spirit_spider_suit_fire_effect",
+        "spirit_fire_particle": "spidermanaddon:spirit_fire_particle",
+        "blitz": "spidermanaddon:blitz",
+        "spider_sense": "spidermanaddon:spider_sense",
+        "red_spider_sense": "spidermanaddon:red_spider_sense",
+        "concussive_blast_particle": "spidermanaddon:concussive_blast_particle",
+        "mysterio_light": "spidermanaddon:mysterio_light1",
+        "miles_morales_venom_smash": "spidermanaddon:miles_morales_venom_smash",
+        "miles_morales_rays": "spidermanaddon:miles_morales_rays",
+        "miles_morales_light": "spidermanaddon:miles_morales_light",
+        "miles_morales_light1": "spidermanaddon:miles_morales_light1",
+        "miles_morales_light2": "spidermanaddon:miles_morales_light2",
+        "blue_miles_morales_light": "spidermanaddonblue_miles_morales_light",
+        "blue_miles_morales_light1": "spidermanaddon:blue_miles_morales_light1",
+        "blue_miles_morales_light2": "spidermanaddon:blue_miles_morales_light2",
+        "miles_morales_punch_particle": "spidermanaddon:miles_morales_punch_particle",
+        "miles_morales_venom_jump": "spidermanaddon:miles_morales_venom_jump",
+        "miles_morales_shield": "spidermanaddon:miles_morales_shield",
+        "miles_morales_shield_explotion": "spidermanaddon:miles_morales_explotion",
+        "miles_morales_venom": "spidermanaddon:miles_morales_venom",
+        "miles_morales_mega_venom_blast": "spidermanaddon:miles_morales_mega_venom_blast"
+      },
+      "geometry": {
+        "default": "geometry.humanoid.custom",
+        "cape": "geometry.cape",
+        "two_hands": "geometry.two_hands",
+        "two_hands_base": "geometry.two_hands_base",
+        "web_shooter": "geometry.new_web_shooter",
+        "poison_suit": "geometry.poison_suit_hands",
+        "spirit_spider_fire": "geometry.spirit_spider_fire",
+        "venom_s3_web_shooter": "geometry.venom_s3_web_shooter",
+        "miles_morales_w_web_shooter": "geometry.miles_morales_w_web_shooter",
+        "web_shooter_outline": "geometry.new_web_shooter_outline",
+        "humanoid_update": "geometry.player_ironman",
+        "web_shooter_90_outline": "geometry.new_web_shooter_90_outline",
+        "spiderman_2099_web_shooter": "geometry.spiderman_2099_web_shooter",
+        "spiderman_unlimited_web_shooter": "geometry.spiderman_unlimited_web_shooter",
+        "taskmaster_hands": "geometry.taskmaster_hands",
+        "spider_ham": "geometry.spider_ham_hands",
+        "zombie_spiderman_suit": "geometry.zombie_spiderman_suit_hands",
+        "spider_carnage_suit": "geometry.spider_carnage_suit_hands",
+        "arachknight_suit": "geometry.arachknight_suit_hands",
+        "green_goblin": "geometry.green_goblin_hands",
+        "green_goblin_raimi": "geometry.green_goblin_raimi_hands",
+        "green_goblin_no_way_home": "geometry.green_goblin_no_way_home_suit_hands",
+        "green_goblin_spiderman3": "geometry.green_goblin_spiderman3_suit_hands",
+        "mysterio_suit": "geometry.mysterio_suit_hands",
+        "mysterio_far_from_home_suit": "geometry.mysterio_far_from_home_suit_hands",
+        "venom_hands": "geometry.venom_hands",
+        "agent_venom": "geometry.agent_venom_suit_hands",
+        "electro_suit": "geometry.electro_suit_hands",
+        "electro_tas2_suit": "geometry.electro_tas2_suit_hands",
+        "electro_no_way_home_suit": "geometry.electro_no_way_home_suit_hands",
+        "scorpion_suit": "geometry.scorpion_suit_hands",
+        "tarantula_suit": "geometry.tarantula_suit_hands",
+        "boomerang_suit": "geometry.boomerang_suit_hands",
+        "man_spider": "geometry.man_spider_hands",
+        "shocker_suit": "geometry.shocker_suit_first",
+        "black_cat_suit": "geometry.black_cat_suit_first"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "variables": {
+          "variable.fp_melee_spear_use_attachable_rotation_z": "public",
+          "variable.tp_melee_spear_use_attachable_rotation_z": "public",
+          "variable.fp_melee_spear_attack_attachable_rotation_z": "public",
+          "variable.tp_melee_spear_attack_attachable_position_z": "public",
+          "variable.attack_time": "public",
+          "variable.item_use_normalized": "public"
+        },
+        "initialize": [
+          "v.is_holding_right = 0.0;",
+          "v.is_blinking = 0.0;",
+          "v.last_blink_time = 0.0;",
+          "v.hand_bob = 0.0;",
+          "v.melee_spear_java_to_bedrock_scale = 40.0;"
+        ],
+        "pre_animation": [
+          "variable.web_swimg =  (q.property('arathnido:animation') == 4 || q.property('arathnido:animation') == 2 || q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 1);",
+          "variable.ironman_sniper = q.equipped_item_any_tag('slot.weapon.mainhand', 'ironman_sniper') && q.is_sneaking;",
+          "variable.the_void_mode = q.equipped_item_any_tag('slot.armor.legs', 'sentry_powers') && q.property('arathnido:ability0') == 1;",
+          "variable.off_skin = variable.the_void_mode || q.equipped_item_any_tag('slot.armor.legs', 'reed_powers');",
+          "variable.full_suit = q.equipped_item_any_tag('slot.armor.feet', 'full_suit');",
+          "variable.off_look_at_target = q.equipped_item_any_tag('slot.armor.legs', 'custom_look') || q.property('arathnido:custom_riding') == 30 || q.equipped_item_any_tag('slot.armor.legs', 'custom_look_at_attack') || ((q.equipped_item_any_tag('slot.armor.feet', 'webweaver_powers') && q.property('arathnido:escalar') == true && !q.is_sneaking && !q.is_on_ground)) || (q.property('arathnido:ability0') == 5 && !q.equipped_item_any_tag('slot.weapon.mainhand', 'captan_america_item') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'atom_eve_shield') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'tech_jacket_shield') && !q.equipped_item_any_tag('slot.weapon.offhand', 'tech_jacket_shield'));",
+          "variable.symbiote_rage_mode = q.property('arathnido:suit_ability3') == 3 && q.equipped_item_any_tag('slot.armor.legs', 'spiderman_symbiote_powers');",
+          "variable.item.off_hand = q.equipped_item_any_tag('slot.weapon.offhand', 'item_off_hand');",
+          "variable.off_spiderman_combat = q.property('arathnido:suit_ability3') == 3 && q.equipped_item_any_tag('slot.armor.legs', 'spiderman_symbiote_powers');",
+          "variable.spiderman_off_falling = q.property('arathnido:animation') == 11 || q.property('arathnido:attacks') == 5 || q.property('arathnido:attacks') == 6;",
+          "variable.itemSpecial = q.equipped_item_any_tag('slot.weapon.offhand', 'captan_america_item') || q.equipped_item_any_tag('slot.weapon.mainhand', 'captan_america_item') || q.equipped_item_any_tag('slot.weapon.maindhand', 'gun');",
+          "variable.escudo_offhand = (q.equipped_item_any_tag('slot.weapon.offhand', 'captan_america_item') || q.equipped_item_any_tag('slot.weapon.offhand', 'soldier_boy_shield')) && q.is_sneaking && q.is_on_ground;",
+          "variable.off_move_hands = q.equipped_item_any_tag('slot.weapon.mainhand', 'off_move_hands') || (q.equipped_item_any_tag('slot.weapon.mainhand', 'off_move_hands_using') && q.is_using_item);",
+          "variable.off_walk_on_fly = (q.equipped_item_any_tag('slot.armor.head', 'off_walk_on_fly') || q.equipped_item_any_tag('slot.armor.feet', 'off_walk_on_fly') || q.equipped_item_any_tag('slot.armor.legs', 'off_walk_on_fly') || q.equipped_item_any_tag('slot.armor.chest', 'off_walk_on_fly') || q.equipped_item_any_tag('slot.weapon.offhand', 'off_walk_on_fly')) && !q.is_on_ground;",
+          "variable.gun_hand = q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || q.equipped_item_any_tag('slot.weapon.mainhand', 'gwenpool_micro_uzi') || q.equipped_item_any_tag('slot.weapon.mainhand', 'gwenpool_rocket_launcher') || q.equipped_item_any_tag('slot.weapon.mainhand', 'deadpool_pistols');",
+          "variable.off_hands = q.equipped_item_any_tag('slot.armor.head', 'off_hands');",
+          "variable.custom_attack = q.equipped_item_any_tag('slot.armor.head', 'special_skin') || q.equipped_item_any_tag('slot.weapon.mainhand', 'custom_attack');",
+          "variable.off_shield = q.equipped_item_any_tag('slot.weapon.mainhand', 'off_shield');",
+          "variable.off_riding = q.property('arathnido:custom_riding') == 0;",
+          "variable.item_using = q.equipped_item_any_tag('slot.weapon.mainhand', 'item_using') || q.equipped_item_any_tag('slot.weapon.mainhand', 'new_gun');",
+          "variable.m32 = q.equipped_item_any_tag('slot.weapon.mainhand', 'm32_render') || q.equipped_item_any_tag('slot.weapon.mainhand', 'bucky_grenade_launcher_render');",
+          "variable.two_hands_suit = variable.is_first_person && (q.equipped_item_any_tag('slot.weapon.mainhand', 'new_gun') || q.equipped_item_any_tag('slot.weapon.mainhand', 'item_hand') || q.get_equipped_item_name(0, 1) == '');",
+          "variable.two_hands = q.equipped_item_any_tag('slot.weapon.mainhand', 'new_gun') || q.equipped_item_any_tag('slot.weapon.mainhand', 'item_hand');",
+          "variable.off_second_hand = !variable.escudo_offhand && !q.equipped_item_any_tag('slot.weapon.mainhand', 'new_gun') && (q.equipped_item_any_tag('slot.weapon.mainhand', 'off_second_hand') || q.get_equipped_item_name(0, 1) == '');",
+          "variable.special_skin = (!q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && !q.equipped_item_any_tag('slot.armor.feet', 'suit') && !q.equipped_item_any_tag('slot.armor.feet', 'special_suit'));",
+          "variable.sneaking_off = (q.equipped_item_any_tag('slot.armor.feet', 'moon_knight_suit') && q.is_sneaking) || (q.equipped_item_any_tag('slot.armor.feet', 'ironman_suit') && (!q.is_on_ground || q.equipped_item_any_tag('slot.weapon.mainhand', 'ironman_shield')));",
+          "variable.custom_move = !q.equipped_item_any_tag('slot.armor.legs', 'custom_move') && !q.equipped_item_any_tag('slot.armor.head', 'special_skin');",
+          "variable.off_walk = q.property('nido:flying') == true || q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') || q.equipped_item_any_tag('slot.armor.legs', 'run_animation') || (q.equipped_item_any_tag('slot.weapon.mainhand', 'winter_soldier_special') && q.property('arathnido:ability0') == 5) || q.property('arathnido:ability0') == 4 || variable.off_walk_on_fly || ((q.equipped_item_any_tag('slot.armor.chest', 'zombie_dr_strange_capa') || q.equipped_item_any_tag('slot.armor.feet', 'fly_system') || q.equipped_item_any_tag('slot.armor.legs', 'fly_system')) && !q.is_on_ground);",
+          "variable.off_sneaking = q.equipped_item_any_tag('slot.armor.legs', 'off_sneaking') || q.equipped_item_any_tag('slot.armor.feet', 'off_sneaking') || q.equipped_item_any_tag('slot.armor.head', 'off_sneaking') || q.equipped_item_any_tag('slot.armor.chest', 'off_sneaking') || q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || (q.equipped_item_any_tag('slot.armor.chest', 'zombie_dr_strange_capa') && !q.is_on_ground) || (q.equipped_item_any_tag('slot.weapon.mainhand', 'mjolnir') && !q.is_on_ground);",
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "v.helmet_layer_visible = !query.has_head_gear;",
+          "v.leg_layer_visible = 1.0;",
+          "v.boot_layer_visible = 1.0;",
+          "v.chest_layer_visible = 1.0;",
+          "v.attack_body_rot_y = Math.sin(360 * Math.sqrt(v.attack_time)) * 10.0;",
+          "v.tcos0 = math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / v.gliding_speed_value * 57.3;",
+          "v.first_person_item_rotation_factor = math.sin((1 - v.attack_time) * 180.0);",
+          "v.hand_bob = query.life_time < 0.01 ? 0.0 : v.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - v.hand_bob) * 0.02;",
+          "v.map_angle = math.clamp(1 - v.player_x_rotation / 45.1, 0.0, 1.0);",
+          "v.item_use_duration = query.main_hand_item_use_duration > 0.0 ? (query.main_hand_item_max_duration - (query.main_hand_item_use_duration - query.frame_alpha + 1.0)) : 0.0;",
+          "v.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;",
+          "v.riding_y_offset = query.is_riding_any_entity_of_type('minecraft:minecart', 'minecraft:boat', 'minecraft:chest_boat', 'minecraft:strider') ? -3.0 : 0.0;",
+          "v.melee_spear_equipped = query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_spear');",
+          "v.tp_melee_spear_base_arm_rotation_x = (query.is_swimming || query.is_gliding) ? (-115.0 - query.target_x_rotation) : (query.is_crawling ? -115.0 : -30.0);",
+          "t.melee_spear_use_finish_raise_tick = v.melee_spear_equipped ? query.kinetic_weapon_delay : 0.0;",
+          "t.melee_spear_use_start_sway_tick = v.melee_spear_equipped ? t.melee_spear_use_finish_raise_tick + query.kinetic_weapon_dismount_duration : 0.0;",
+          "t.melee_spear_use_start_lower_tick = v.melee_spear_equipped ? t.melee_spear_use_finish_raise_tick + query.kinetic_weapon_knockback_duration : 0.0;",
+          "t.melee_spear_use_finish_lower_tick = v.melee_spear_equipped ? t.melee_spear_use_finish_raise_tick + query.kinetic_weapon_damage_duration : 0.0;",
+          "t.melee_spear_use_raise_progress = math.clamp(math.inverse_lerp(0.0, t.melee_spear_use_finish_raise_tick, v.item_use_duration), 0.0, 1.0);",
+          "t.melee_spear_use_raise_progress_start = math.clamp(math.inverse_lerp(0.0, 0.5, t.melee_spear_use_raise_progress), 0.0, 1.0);",
+          "t.melee_spear_use_raise_progress_middle = math.clamp(math.inverse_lerp(0.5, 0.8, t.melee_spear_use_raise_progress), 0.0, 1.0);",
+          "t.melee_spear_use_raise_progress_end = math.clamp(math.inverse_lerp(0.8, 1.0, t.melee_spear_use_raise_progress), 0.0, 1.0);",
+          "t.melee_spear_use_sway_progress = math.clamp(math.inverse_lerp(t.melee_spear_use_start_sway_tick, t.melee_spear_use_start_lower_tick, v.item_use_duration), 0.0, 1.0);",
+          "t.melee_spear_use_lower_progress = math.ease_out_cubic(0.0, 1.0, math.ease_in_out_elastic(0.0, 1.0, math.clamp(math.inverse_lerp(t.melee_spear_use_start_lower_tick, t.melee_spear_use_finish_lower_tick - 5, v.item_use_duration), 0.0, 1.0)));",
+          "t.melee_spear_use_raise_back_progress = math.clamp(math.inverse_lerp(t.melee_spear_use_finish_lower_tick - 5.0, t.melee_spear_use_finish_lower_tick, v.item_use_duration), 0.0, 1.0);",
+          "t.melee_spear_use_sway_intensity = math.ease_out_circ(0.0, 2.0, t.melee_spear_use_sway_progress) + math.ease_in_circ(0.0, -2.0, t.melee_spear_use_raise_back_progress);",
+          "t.melee_spear_use_sway_scale_slow = math.sin(v.item_use_duration * 19.0) * t.melee_spear_use_sway_intensity;",
+          "t.melee_spear_use_sway_scale_fast = math.sin(v.item_use_duration * 30.0) * t.melee_spear_use_sway_intensity;",
+          "v.fp_melee_spear_use_item_position_x = (t.melee_spear_use_raise_progress_start * 0.05 + t.melee_spear_use_raise_progress_end * -0.05 + t.melee_spear_use_sway_scale_slow * 0.005) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_use_item_position_y = (t.melee_spear_use_raise_progress_start * -0.075 + t.melee_spear_use_raise_progress_middle * 0.075 + t.melee_spear_use_sway_scale_fast * 0.01) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_use_item_position_z = (t.melee_spear_use_raise_progress_start * 0.05 + t.melee_spear_use_raise_progress_end * -0.05 + t.melee_spear_use_sway_scale_slow * 0.005) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_use_item_rotation_y = t.melee_spear_use_raise_progress * 20.0 + t.melee_spear_use_lower_progress * 20.0 + t.melee_spear_use_sway_scale_slow * 0.5 + t.melee_spear_use_raise_back_progress * -40.0;",
+          "v.fp_melee_spear_use_item_rotation_z = math.ease_in_out_back(0.0, -60.0, t.melee_spear_use_raise_progress) + t.melee_spear_use_lower_progress * -25.0 + t.melee_spear_use_raise_back_progress * 85.0 + t.melee_spear_use_sway_scale_fast * 0.5;",
+          "v.fp_melee_spear_use_attachable_rotation_z = math.clamp(math.inverse_lerp(0.5, 0.55, t.melee_spear_use_raise_progress), 0.0, 1.0) * -50.0 + t.melee_spear_use_sway_progress * 90.0 + t.melee_spear_use_raise_back_progress * -40.0;",
+          "v.tp_melee_spear_use_arm_rotation_x = t.melee_spear_use_raise_progress_start * -40.0 + t.melee_spear_use_raise_progress_middle * 30.0 + t.melee_spear_use_raise_progress_end * -20.0 + t.melee_spear_use_lower_progress * 20.0 + t.melee_spear_use_raise_back_progress * 10.0;",
+          "v.tp_melee_spear_use_arm_rotation_x = v.tp_melee_spear_use_arm_rotation_x + t.melee_spear_use_sway_scale_slow * 0.6;",
+          "v.tp_melee_spear_use_arm_rotation_y = t.melee_spear_use_sway_scale_fast * 1.0;",
+          "v.tp_melee_spear_use_arm_rotation_z = t.melee_spear_use_sway_scale_slow * 0.5;",
+          "v.tp_melee_spear_use_item_rotation_x = t.melee_spear_use_raise_progress * 60.0 + t.melee_spear_use_raise_back_progress * -60.0;",
+          "v.tp_melee_spear_use_attachable_rotation_z = t.melee_spear_use_raise_progress * 90.0 + t.melee_spear_use_sway_progress * -90.0;",
+          "t.melee_spear_attack_duration_ratio = 1.0 / query.base_swing_duration;",
+          "t.melee_spear_attack_raise_end = 0.05 * t.melee_spear_attack_duration_ratio;",
+          "t.melee_spear_attack_thrust_end = 0.2 * t.melee_spear_attack_duration_ratio;",
+          "t.melee_spear_attack_recover_start = 1.0 - (0.6 * t.melee_spear_attack_duration_ratio);",
+          "t.melee_spear_attack_raise_progress = math.clamp(math.inverse_lerp(0.0, t.melee_spear_attack_raise_end, v.attack_time), 0.0, 1.0);",
+          "t.melee_spear_attack_thrust_progress = math.clamp(math.inverse_lerp(t.melee_spear_attack_raise_end, t.melee_spear_attack_thrust_end, v.attack_time), 0.0, 1.0);",
+          "t.melee_spear_attack_recover_progress = math.clamp(math.inverse_lerp(t.melee_spear_attack_recover_start, 1.0, v.attack_time), 0.0, 1.0);",
+          "t.melee_spear_attack_raise_scale = math.ease_in_out_sine(0.0, 1.0, t.melee_spear_attack_raise_progress);",
+          "t.melee_spear_attack_thrust_scale = math.ease_in_quad(0.0, 1.0, t.melee_spear_attack_thrust_progress);",
+          "t.melee_spear_attack_recover_scale = math.ease_in_out_expo(0.0, 1.0, t.melee_spear_attack_recover_progress);",
+          "v.fp_melee_spear_attack_item_position_x = (t.melee_spear_attack_raise_scale * 0.1 + t.melee_spear_attack_thrust_scale * -0.1) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_attack_item_position_y = (t.melee_spear_attack_raise_scale * -0.075 + t.melee_spear_attack_recover_scale * 0.075) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_attack_item_position_z = (t.melee_spear_attack_raise_scale * 0.65 + t.melee_spear_attack_thrust_scale * -0.65) * v.melee_spear_java_to_bedrock_scale;",
+          "v.fp_melee_spear_attack_item_rotation_y = t.melee_spear_attack_raise_scale * 20.0 + t.melee_spear_attack_recover_scale * -20.0;",
+          "v.fp_melee_spear_attack_item_rotation_z = t.melee_spear_attack_raise_scale * -60.0 + t.melee_spear_attack_recover_scale * 60.0;",
+          "v.fp_melee_spear_attack_attachable_rotation_z = t.melee_spear_attack_raise_scale * 40.0 + t.melee_spear_attack_recover_scale * -40.0;",
+          "v.tp_melee_spear_attack_arm_rotation_x = t.melee_spear_attack_raise_scale * 90.0 + t.melee_spear_attack_thrust_scale * -120.0 + t.melee_spear_attack_recover_scale * 30.0;",
+          "v.tp_melee_spear_attack_item_rotation_x = t.melee_spear_attack_thrust_scale * 60.0 + t.melee_spear_attack_recover_scale * -60.0;",
+          "v.tp_melee_spear_attack_attachable_position_z = (t.melee_spear_attack_thrust_scale * -0.15 + t.melee_spear_attack_recover_scale * 0.15) * v.melee_spear_java_to_bedrock_scale;"
+        ],
+        "animate": [
+          "root",
+          "gun",
+          "player.suit.c",
+          "player.off_second_hand.c",
+          "player.venom.c",
+          "player.spiderman.c",
+          "player.spider_ham.c",
+          "player.dr_octopus.c",
+          "player.green_goblin.c",
+          "player.mysterio.c",
+          "player.symbiont.c",
+          "player.black_cat.c",
+          "player.miles_morales.c",
+          "player.electro.c",
+          "player.scorpion.c",
+          "player.taskmaster.c",
+          "player.man_spider.c",
+          "player.boomerang.c"
+        ],
+        "should_update_effects_offscreen": "1.0"
+      },
+      "animations": {
+        "player.shocker.shoot": "animation.player.shocker.shoot",
+        "player.boomerang.c": "controller.animation.player.boomerang",
+        "player.boomerang.shoot.c": "controller.animation.player.boomerang.shoot",
+        "player.boomerang.shoot": "animation.boomerang.shoot",
+        "player.tarantula.attack.c": "controller.animation.player.tarantula.attack",
+        "player.tarantula.attack": "animation.player.tarantula.attack",
+        "player.man_spider.c": "controller.animation.player.man_spider",
+        "player.man_spider.idle": "animation.player.man_spider.idle",
+        "player.man_spider.jump_attack.c": "controller.animation.player.man_spider.jump_attack",
+        "player.man_spider.jump_attack": "animation.player.man_spider.jump_attack",
+        "player.man_spider.shoot.c": "controller.animation.player.man_spider.shoot",
+        "player.man_spider.shoot": "animation.player.man_spider.shoot",
+        "player.scorpion.c": "controller.animation.player.scorpion",
+        "player.scorpion.skills.c": "controller.animation.player.scorpion.skills",
+        "player.scorpion.tail_attack": "animation.scorpion.tail_attack",
+        "player.scorpion.tail_attack_spin": "animation.scorpion.tail_attack_spin",
+        "player.scorpion.jump_attack": "animation.scorpion.jump_attack",
+        "player.scorpion.hide": "animation.scorpion.hide",
+        "player.taskmaster.c": "controller.animation.player.taskmaster",
+        "player.taskmaster.sword.c": "controller.animation.player.taskmaster.sword",
+        "player.taskmaster_sword.combat.c": "controller.animation.player.taskmaster.sword.combat",
+        "player.taskmaster_sword.attack.1": "animation.player.taskmaster.sword.0",
+        "player.taskmaster_sword.attack.2": "animation.player.taskmaster.sword.1",
+        "player.taskmaster_sword.first": "animation.taskmaster.sword.first",
+        "player.taskmaster_sword.idle": "animation.taskmaster.sword.idle",
+        "player.electro.c": "controller.animation.player.electro",
+        "player.electro.fly.c": "controller.animation.player.electro.fly",
+        "player.electro.laser.c": "controller.animation.player.electro.laser",
+        "player.electro.laser.third": "animation.player.electro.laser.third",
+        "player.electro.blue_laser.third": "animation.player.electro.blue_laser.third",
+        "player.electro.laser.first": "animation.player.electro.laser.first",
+        "player.miles_morales.c": "controller.animation.player.miles_morales",
+        "player.miles_morales.skill.c": "controller.animation.player.miles_morales.skill",
+        "player.miles_morales.invisibility.c": "controller.animation.player.miles_morales.invisibility",
+        "player.miles_morales.invisibility": "animation.player.miles_morales.invisibility",
+        "player.miles_morales.venom_blast_punch": "animation.player.miles_morales.venom_blast_punch",
+        "player.miles_morales.mega_venom_blast": "animation.player.miles_morales.mega_venom_blast",
+        "player.miles_morales.venom_smash": "animation.player.miles_morales.venom_smash",
+        "player.miles_morales.venom_jump": "animation.player.miles_morales.venom_jump",
+        "player.black_cat.c": "controller.animation.player.black_cat",
+        "player.black_cat.skin": "animation.player.black_cat.skin",
+        "player.black_cat.balanceo.jump": "animation.player.black_cat.balanceo.jump",
+        "player.black_cat.move.c": "controller.animation.player.black_cat.move",
+        "player.black_cat.run": "animation.player.black_cat.run",
+        "player.black_cat.powers.c": "controller.animation.player.black_cat.powers",
+        "player.black_cat.climb.c": "controller.animation.player.black_cat.climb",
+        "player.black_cat.falling": "animation.player.black_cat.falling",
+        "player.black_cat.swing.head": "animation.player.black_cat.swing.head",
+        "player.black_cat.whip_thef.c": "controller.animation.player.black_cat.whip_thef",
+        "player.black_cat.whip_thef": "animation.player.black_cat.whip_thef",
+        "player.black_cat.whip_claws.c": "controller.animation.player.black_cat.whip_claws",
+        "player.black_cat.whip_claws.attack.0": "animation.player.black_cat.whip_claws.attack.0",
+        "player.black_cat.whip_claws.attack.1": "animation.player.black_cat.whip_claws.attack.1",
+        "player.black_cat.claws.c": "controller.animation.player.black_cat.claws",
+        "player.black_cat.claws": "animation.player.black_cat.impulse_attack",
+        "player.spirit_spider_head.idle": "animation.player.spirit_spider_head.idle",
+        "player.spirit_spider_head.fire": "animation.player.spirit_spider_head.fire",
+        "player.agent_venom.pistols.c": "controller.animation.player.agent_venom.pistols",
+        "player.agent_venom.pistols.shoot.third": "animation.player.agent_venom_pistols.shoot.third",
+        "player.agent_venom.pistols.shoot.first": "animation.player.agent_venom_pistols.shoot.first",
+        "player.agent_venom.pistols.reload.first": "animation.player.agent_venom_pistols.reload.first",
+        "player.agent_venom.fusil.c": "controller.animation.player.agent_venom.fusil",
+        "player.agent_venom.fusil.shoot.third": "animation.player.agent_venom_fusil.shoot.third",
+        "player.agent_venom.fusil.reload.third": "animation.player.agent_venom_fusil.reload.third",
+        "player.agent_venom.fusil.shoot.first": "animation.player.agent_venom_fusil.shoot.first",
+        "player.agent_venom.fusil.reload.first": "animation.player.agent_venom_fusil.reload.first",
+        "player.agent_venom_fusil.first": "animation.player.agent_venom_fusil.first",
+        "player.symbiont.c": "controller.animation.player.symbiont",
+        "player.venom.first.c": "controller.animation.player.venom.first",
+        "player.agent_venom_fusil.third": "animation.player.agent_venom.pistols.third",
+        "player.agent_venom_pistol.third": "animation.player.agent_venom.fusil.third",
+        "player.venom.use": "animation.player.venom.use",
+        "player.symbiont.combat.c": "controller.animation.player.symbiont.combat",
+        "player.symbiote.combat.1": "animation.player.new_spiderman.symbiote.combat.1",
+        "player.symbiote.combat.2": "animation.player.new_spiderman.symbiote.combat.2",
+        "player.symbiote.combat.3": "animation.player.new_spiderman.symbiote.combat.3",
+        "player.agent_venom.blast.c": "controller.animation.player.agent_venom.blast",
+        "player.agent_venom.blast": "animation.player.agent_venom.blast",
+        "player.symbiont.cellular_corrosion.c": "controller.animation.player.symbiont.cellular_corrosion",
+        "player.symbiont.cellular_corrosion": "animation.player.symbiont.cellular_corrosion",
+        "player.symbiont.symbiont_pull.c": "controller.animation.player.symbiont.symbiont_pull",
+        "player.symbiont.symbiont_pull": "animation.player.new_spiderman.symbiote.symbiont_pull",
+        "player.symbiont.symbiote_strike.c": "controller.animation.player.symbiont.symbiote_strike",
+        "player.symbiont.symbiote_strike": "animation.player.new_spiderman.symbiote.strike",
+        "player.symbiont.antivenom_bomb.c": "controller.animation.player.symbiont.antivenom_bomb",
+        "player.symbiont.antivenom_bomb": "animation.player.new_spiderman.symbiote.antivenom_bomb",
+        "player.symbiont.antivenom_tempest.c": "controller.animation.player.symbiont.antivenom_tempest",
+        "player.symbiont.antivenom_tempest": "animation.player.new_spiderman.symbiote.antivenom_tempest",
+        "player.symbiont.evil_dance.c": "controller.animation.player.symbiont.evil_dance",
+        "player.symbiont.dance.on": "animation.player.symbiont.dance.on",
+        "player.symbiont.dance": "animation.player.symbiont.dance",
+        "player.symbiont.venom_rage.c": "controller.animation.player.symbiont.venom_rage",
+        "player.symbiont.venom_rage": "animation.player.new_spiderman.symbiote.rage",
+        "player.symbiote.rage.idle": "animation.player.new_spiderman.symbiote.rage.idle",
+        "player.symbiote.rage.time": "animation.player.new_spiderman.symbiote.rage.time",
+        "player.mysterio.c": "controller.animation.player.mysterio",
+        "player.mysterio.clones.c": "controller.animation.player.mysterio.clones",
+        "player.mysterio.clones": "animation.player.mysterio.clones",
+        "player.mysterio.laser.c": "controller.animation.player.mysterio.laser",
+        "player.mysterio.laser.third": "animation.player.mysterio.laser.third",
+        "player.mysterio.laser.first": "animation.player.mysterio.laser.first",
+        "player.mysterio.fly.c": "controller.animation.player.mysterio.fly",
+        "player.mysterio.fly": "animation.player.mysterio.fly",
+        "player.mysterio.falling": "animation.player.mysterio.falling",
+        "player.mysterio.fly.end": "animation.player.mysterio.fly.end",
+        "player.green_goblin.c": "controller.animation.player.green_goblin",
+        "player.green_goblin.attack.c": "controller.animation.player.green_goblin.attack",
+        "player.green_goblin.raimi.knife.attack": "animation.green_goblin.raimi.knife.attack",
+        "player.green_goblin.blades.attack.0": "animation.green_goblin.blades.attack.0",
+        "player.green_goblin.blades.attack.1": "animation.green_goblin.blades.attack.1",
+        "player.green_goblin.planeador.c": "controller.animation.player.green_goblin.planeador",
+        "player.green_goblin.planeador": "animation.planeador.idle",
+        "player.green_goblin_spiderman3.planeador": "animation.player.green_goblin.spiderman3",
+        "player.green_goblin.kick.c": "controller.animation.player.green_goblin.kick",
+        "player.green_goblin.kick": "animation.green_goblin.kick",
+        "player.green_goblin.laser.c": "controller.animation.player.green_goblin.laser",
+        "player.green_goblin.laser": "animation.player.green_goblin.laser",
+        "player.green_goblin.laser.first": "animation.player.green_goblin.laser.first",
+        "player.dr_octopus.c": "controller.animation.player.dr_octopus",
+        "player.dr_octopus.move.c": "controller.animation.player.dr_octopus.move",
+        "player.dr_octopus.move.idle": "animation.player.dr_octopus.move.idle",
+        "player.venom.fly.c": "controller.animation.player.venom.fly",
+        "player.venom.fly.end": "animation.player.venom.fly.end",
+        "player.venom.fly": "animation.player.venom.fly",
+        "player.venom.float": "animation.player.venom.float",
+        "player.venom.c": "controller.animation.player.venom",
+        "player.venom.transformation.c": "controller.animation.player.venom.transformation",
+        "player.venom.transformation": "animation.player.venom.transformation",
+        "player.venom.whip.impulse.c": "controller.animation.player.venom.whip.impulse",
+        "player.venom.whip.impulse": "animation.player.venom.whip.impulse",
+        "player.venom.transformation.off": "animation.player.venom.transform.off",
+        "player.venom.idle": "animation.player.venom.idle",
+        "player.symbiote.whip.c": "controller.animation.player.spiderman.symbiote.whip",
+        "player.spiderman.symbiote.whip.attack.1": "animation.player.new_spiderman.symbiote.whip.attack.1",
+        "player.spiderman.symbiote.whip.attack.2": "animation.player.new_spiderman.symbiote.whip.attack.2",
+        "player.venom.knife.c": "controller.animation.player.venom.knife",
+        "player.venom.knife.0": "animation.player.new_spiderman.symbiote.knife.0",
+        "player.venom.knife.1": "animation.player.new_spiderman.symbiote.knife.1",
+        "player.spiderman.mask.c": "controller.animation.player.spiderman.mask",
+        "player.spiderman.mask.off": "animation.player.new_spiderman.mask.off",
+        "player.spiderman.mask.on": "animation.player.new_spiderman.mask.on",
+        "player.spider_woman.suit": "animation.spider_woman.suit",
+        "player.spiderman.unlimited.skills.c": "controller.animation.player.spiderman.unlimited.skills",
+        "player.spiderman.crawl.walk.c": "controller.animation.player.spiderman.crawl.walk",
+        "player.spiderman.crawl": "animation.player.new_spiderman.crawl.down",
+        "player.spiderman.crawl.up": "animation.player.new_spiderman.crawl.up",
+        "player.spiderman.web_shooter.specials.c": "controller.animation.player.web_shooter.specials",
+        "player.web_shooter.concussive_blast": "animation.player.new_spiderman.concussive_blast",
+        "player.web_shooter.impact_web": "animation.player.new_spiderman.impact_web",
+        "player.spiderman.combat.c": "controller.animation.player.spiderman.combat",
+        "player.spiderman.punch.load": "animation.player.new_spiderman.punch.load",
+        "player.spiderman.combat.idle": "animation.player.new_spiderman.combat.idle",
+        "player.spiderman.punch.air": "animation.player.new_spiderman.combat_air.punch.4",
+        "player.spiderman.punch.air.idle": "animation.player.new_spiderman.combat_air.punch.4.pose",
+        "player.spiderman.punch.now": "animation.player.new_spiderman.punch.now",
+        "player.spiderman.combat.punch.1": "animation.player.new_spiderman.combat.punch.1",
+        "player.spiderman.combat.punch.2": "animation.player.new_spiderman.combat.punch.2",
+        "player.spiderman.combat.punch.3": "animation.player.new_spiderman.combat.punch.4",
+        "player.spiderman.combat.punch.4": "animation.player.new_spiderman.combat.punch.4",
+        "player.spiderman.attack.c": "controller.animation.player.spiderman.attack",
+        "player.spiderman.attack.0": "animation.player.new_spiderman.attack.0",
+        "player.spiderman.attack.1": "animation.player.new_spiderman.attack.1",
+        "player.spiderman.balanceo.acrobacias.c": "controller.animation.player.spiderman.balanceo.acrobacias",
+        "player.spiderman.balanceo.acrobacia.3": "animation.player.new_spiderman.balanceo.acrobacia.3",
+        "player.spiderman.balanceo.acrobacia.2": "animation.player.new_spiderman.balanceo.acrobacia.2",
+        "player.spiderman.balanceo.acrobacia.4": "animation.player.new_spiderman.balanceo.acrobacia.4",
+        "player.iron_arms.skill.c": "controller.animation.player.spiderman.iron_arms.skill",
+        "player.iron_arms.spider_shock": "animation.player.iron_arms.spider_shock",
+        "player.iron_arms.spider_rush": "animation.player.iron_arms.spider_rush",
+        "player.iron_arms.c": "controller.animation.player.spiderman.iron_arms",
+        "player.iron_arms.idle": "animation.player.iron_arms.idle",
+        "player.iron_arms.attack": "animation.player.iron_arms.attack",
+        "player.iron_arms.attack.2": "animation.player.iron_arms.attack.2",
+        "player.iron_arms.attack.3": "animation.player.iron_arms.attack.3",
+        "player.iron_arms.attack.4": "animation.player.iron_arms.attack.4",
+        "player.spiderman.elytra.air.c": "controller.animation.player.spiderman.elytra.air",
+        "player.new_spiderman.elytra.aire": "animation.player.new_spiderman.elytra.aire",
+        "player.new_spiderman.elytra.viento": "animation.player.new_spiderman.elytra.viento",
+        "player.spiderman.elytra.c": "controller.animation.player.spiderman.elytra",
+        "player.spiderman.elytra.idle": "animation.player.new_spiderman.elytra.idle",
+        "player.spiderman.elytra.on": "animation.player.new_spiderman.elytra.on",
+        "player.web_shooter.skills.c": "controller.animation.player.web_shooter.skills",
+        "player.spiderman.web_shooter.shield": "animation.player.new_spiderman.web_shooter.shield",
+        "player.web_shooter.shoot.first.c": "controller.animation.player.web_shooter.shoot.first",
+        "player.web_shooter.shoot.c": "controller.animation.player.web_shooter.shoot",
+        "player.web_shooter.shoot.right": "animation.player.web_shooter.shoot.right",
+        "player.web_shooter.shoot.1": "animation.player.web_shooter.shoot.1",
+        "player.web_shooter.shoot.2": "animation.player.web_shooter.shoot.2",
+        "player.spiderman.balanceo.first.c": "controller.animation.player.spiderman.balanceo.first",
+        "player.web_shoot.balanceo.first": "animation.player.web_shoot.balanceo.first",
+        "player.web_shoot.caida_picada.first": "animation.player.web_shoot.caida_picada.first",
+        "player.web_shooter.shoot.right.anim": "animation.player.web_shooter.shoot.right.anim",
+        "player.web_shooter.shoot.left": "animation.player.web_shooter.shoot.left",
+        "player.web_shooter.idle": "animation.player.web_shooter.idle",
+        "player.spiderman.skills.c": "controller.animation.player.spiderman.skills",
+        "player.spiderman.kick": "animation.player.new_spiderman.kick",
+        "player.spiderman.kick.time": "animation.player.new_spiderman.kick.time",
+        "player.spiderman.kick.ground": "animation.player.new_spiderman.kick.ground",
+        "player.spiderman.spin_attack": "animation.player.new_spiderman.spin_attack",
+        "player.spiderman.move.c": "controller.animation.player.spiderman.move",
+        "player.spiderman.run": "animation.player.new_spiderman.run",
+        "player.spiderman.stop_run": "animation.player.new_spiderman.stop_run",
+        "player.spiderman.run.jump": "animation.player.new_spiderman.run.jump",
+        "player.spiderman.symbiote.whip.c": "controller.animation.player.spiderman.symbiote.whip",
+        "player.spiderman.punch.c": "controller.animation.player.spiderman.punch",
+        "player.spiderman.combat.punch.impulse": "animation.player.new_spiderman.combat.punch_up.1",
+        "player.spiderman.combat.punch.up": "animation.player.new_spiderman.combat.punch_up.2",
+        "player.spiderman.focus.0": "animation.player.new_spiderman.focus.0",
+        "player.spiderman.web_blossom": "animation.player.suit_skills.web_blossom",
+        "player.spiderman.balanceo.c": "controller.animation.player.spiderman.balanceo",
+        "player.spiderman.falling.crazy": "animation.player.new_spiderman.falling.crazy",
+        "player.spiderman.aterrizaje_superheroe": "animation.player.new_spiderman.aterrizaje_superheroe",
+        "player.spiderman.swing.surf": "animation.player.new_spiderman.swing.surf",
+        "player.spiderman.swing.surf.falling": "animation.player.new_spiderman.swing.surf.falling",
+        "player.spiderman.balanceo.time": "animation.player.new_spiderman.balanceo.time",
+        "player.spiderman.balanceo.ground": "animation.player.new_spiderman.balanceo.ground",
+        "player.spiderman.balanceo.shoot": "animation.player.new_spiderman.balanceo.shoot",
+        "player.spiderman.balanceo.hook": "animation.player.new_spiderman.balanceo.hook",
+        "player.spiderman.climb.web_shooter": "animation.player.new_spiderman.climb.web_shooter",
+        "player.spiderman.balanceo.hook.impulse": "animation.player.new_spiderman.balanceo.hook.impulse",
+        "player.spiderman.web_shooter.shoot": "animation.player.new_spiderman.web_shooter.shoot",
+        "player.spiderman.hook_attack": "animation.player.new_spiderman.hook_attack",
+        "player.spiderman.whip.attack": "animation.player.new_spiderman.whip.attack",
+        "player.spiderman.whip": "animation.player.new_spiderman.whip",
+        "player.spiderman.balanceo.idle.1": "animation.player.new_spiderman.balanceo.idle.1",
+        "player.spiderman.balanceo.idle.2": "animation.player.new_spiderman.balanceo.idle.2",
+        "player.spiderman.balanceo.idle.3": "animation.player.new_spiderman.balanceo.idle.3",
+        "player.spiderman.balanceo.idle.4": "animation.player.new_spiderman.balanceo.idle.4",
+        "player.spiderman.balanceo.legs": "animation.player.new_spiderman.balanceo.legs",
+        "player.spiderman.balanceo.jump": "animation.player.new_spiderman.balanceo.jump",
+        "player.spiderman.balanceo.end": "animation.player.new_spiderman.balanceo.end",
+        "player.spiderman.balanceo.end.1": "animation.player.new_spiderman.balanceo.end.1",
+        "player.spiderman.balanceo.end.2": "animation.player.new_spiderman.balanceo.end.2",
+        "player.spiderman.balanceo.end.3": "animation.player.new_spiderman.balanceo.end.3",
+        "player.spiderman.balanceo.end.4": "animation.player.new_spiderman.balanceo.end.4",
+        "player.spiderman.balanceo.end.5": "animation.player.new_spiderman.balanceo.end.5",
+        "player.spiderman.web.pose": "animation.player.new_spiderman.web.pose",
+        "player.spiderman.surf": "animation.player.new_spiderman.surf",
+        "player.spiderman.balanceo.impulso": "animation.player.new_spiderman.balanceo.impulso",
+        "player.spiderman.super_slingshot.on": "animation.player.new_spiderman.super_slingshot.on",
+        "player.spiderman.super_slingshot.idle": "animation.player.new_spiderman.super_slingshot.idle",
+        "player.spiderman.super_slingshot.impulse": "animation.player.new_spiderman.super_slingshot.impulse",
+        "player.spiderman.web_shooter.golpe_suelo": "animation.player.new_spiderman.web_shooter.golpe_suelo",
+        "player.spiderman.web_shooter.impact": "animation.player.new_spiderman.web_shooter.impact",
+        "player.spiderman.falling.damage": "animation.player.new_spiderman.falling.damage",
+        "player.spiderman.falling.heat": "animation.player.new_spiderman.falling.heat",
+        "player.spiderman.sneaking.c": "controller.animation.player.spiderman.sneaking",
+        "player.spiderman.sneaking": "animation.player.new_spiderman.sneaking",
+        "player.spiderman.walk_sneaking": "animation.player.new_spiderman.walk_sneaking",
+        "player.spiderman.on_sneaking": "animation.player.new_spiderman.on_sneaking",
+        "player.spiderman.super_jump_sneaking": "animation.player.new_spiderman.super_jump_sneaking",
+        "player.spiderman.super_jump": "animation.player.new_spiderman.super_jump",
+        "player.spiderman.c": "controller.animation.player.spiderman",
+        "player.spiderman.falling": "animation.player.new_spiderman.falling.pose",
+        "player.spiderman.falling.time": "animation.player.new_spiderman.falling.time",
+        "player.spiderman.hook_attack.time": "animation.player.new_spiderman.hook_attack.time",
+        "player.spiderman.idle.c": "controller.animation.player.spiderman.idle",
+        "player.spiderman.idle": "animation.player.new_spiderman.idle",
+        "player.spiderman.powers.c": "controller.animation.player.spiderman.powers",
+        "player.spiderman.climb.run_wall.c": "controller.animation.player.spiderman.climb.run_wall",
+        "player.spiderman.colgado.right.run": "animation.player.new_spiderman.colgado.left.run",
+        "player.spiderman.colgado.left.run": "animation.player.new_spiderman.colgado.right.run",
+        "player.spiderman.colgado.jump.run": "animation.player.new_spiderman.colgado.jump.run",
+        "player.spiderman.escalar.colgado.c": "controller.animation.player.spiderman.escalar.colgado",
+        "player.spiderman.escalar.colgado.right": "animation.player.new_spiderman.colgado.left",
+        "player.spiderman.escalar.colgado.left": "animation.player.new_spiderman.colgado.right",
+        "player.spiderman.escalar.colgado.back": "animation.player.new_spiderman.colgado.back",
+        "player.spiderman.escalar.colgado.jump": "animation.player.new_spiderman.colgado.jump",
+        "player.spiderman.climb.c": "controller.animation.player.spiderman.climb",
+        "player.spiderman.climb.default": "animation.player.new_spiderman.climb.default",
+        "player.spiderman.climb.on": "animation.player.new_spiderman.climb.walk",
+        "player.spiderman.climb.down": "animation.player.new_spiderman.climb.down",
+        "player.spiderman.climb.run": "animation.player.new_spiderman.climb.run",
+        "player.spiderman.climb.run2": "animation.player.new_spiderman.climb.run2",
+        "player.spiderman.climb.run.rot": "animation.player.new_spiderman.climb.run.rot",
+        "player.spider_ham.c": "controller.animation.player.spider_ham",
+        "player.spider_ham.hammer.attack.c": "controller.animation.player.spider_ham.hammer.attack",
+        "player.spider_ham.hammer.attack": "animation.player.spider_ham.hammer.attack",
+        "player.spider_ham.hammer.c": "controller.animation.player.spider_ham.hammer",
+        "player.spider_ham.hammer": "animation.player.spider_ham.hammer.first",
+        "player.spider_ham.skin.c": "controller.animation.player.spider_ham.skin",
+        "player.spider_ham": "animation.spider_ham.idle",
+        "player.off_second_hand.c": "controller.animation.player.off_second_hand",
+        "player.off_second_hand": "animation.player.off_second_hand",
+        "player.suit.c": "controller.animation.player.suit",
+        "player.suit": "animation.humanoid.suit",
+        "player.mask": "animation.humanoid.mask",
+        "root": "controller.animation.player.root",
+        "base_controller": "controller.animation.player.base",
+        "hudplayer": "controller.animation.player.hudplayer",
+        "humanoid_base_pose": "animation.humanoid.base_pose",
+        "look_at_target": "controller.animation.humanoid.look_at_target",
+        "look_at_target_ui": "animation.player.look_at_target.ui",
+        "look_at_target_default": "animation.humanoid.look_at_target.default",
+        "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+        "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+        "look_at_target_inverted": "animation.player.look_at_target.inverted",
+        "cape": "animation.player.cape",
+        "move.arms": "animation.player.move.arms",
+        "move.legs": "animation.player.move.legs",
+        "swimming": "animation.player.swim",
+        "swimming.no_right_arm": "animation.player.swim.no_right_arm",
+        "swimming.legs": "animation.player.swim.legs",
+        "crawling": "animation.player.crawl",
+        "crawling.no_right_arm": "animation.player.crawl.no_right_arm",
+        "crawling.legs": "animation.player.crawl.legs",
+        "riding.root": "animation.player.riding.root",
+        "riding.arms": "animation.player.riding.arms",
+        "riding.legs": "animation.player.riding.legs",
+        "holding": "animation.player.holding",
+        "holding_heavy_core": "animation.player.holding_heavy_core",
+        "brandish_spear": "animation.humanoid.brandish_spear",
+        "holding_spyglass": "animation.humanoid.holding_spyglass",
+        "charging": "animation.humanoid.charging",
+        "attack.positions": "animation.player.attack.positions",
+        "attack.rotations": "animation.player.attack.rotations",
+        "sneaking": "animation.player.sneaking",
+        "bob": "animation.player.bob",
+        "damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+        "bow_and_arrow": "animation.humanoid.bow_and_arrow",
+        "use_item_progress": "animation.humanoid.use_item_progress",
+        "skeleton_attack": "animation.skeleton.attack",
+        "sleeping": "animation.player.sleeping",
+        "first_person_base_pose": "animation.player.first_person.base_pose",
+        "first_person_empty_hand": "animation.player.first_person.empty_hand",
+        "first_person_swap_item": "animation.player.first_person.swap_item",
+        "first_person_shield_block": "animation.player.first_person.shield_block",
+        "first_person_attack_controller": "controller.animation.player.first_person_attack",
+        "first_person_attack_rotation": "animation.player.first_person.attack_rotation",
+        "first_person_vr_attack_rotation": "animation.player.first_person.vr_attack_rotation",
+        "first_person_walk": "animation.player.first_person.walk",
+        "first_person_map_controller": "controller.animation.player.first_person_map",
+        "first_person_map_hold": "animation.player.first_person.map_hold",
+        "first_person_map_hold_attack": "animation.player.first_person.map_hold_attack",
+        "first_person_map_hold_off_hand": "animation.player.first_person.map_hold_off_hand",
+        "first_person_map_hold_main_hand": "animation.player.first_person.map_hold_main_hand",
+        "first_person_crossbow_equipped": "animation.player.first_person.crossbow_equipped",
+        "third_person_crossbow_equipped": "animation.player.crossbow_equipped",
+        "third_person_bow_equipped": "animation.player.bow_equipped",
+        "first_person_melee_spear_use": "animation.player.first_person.melee_spear_use",
+        "first_person_melee_spear_hold": "animation.player.first_person.melee_spear_hold",
+        "first_person_melee_spear_attack": "animation.player.first_person.melee_spear_attack",
+        "first_person_melee_spear_controller": "controller.animation.player.first_person_melee_spear",
+        "third_person_melee_spear_use": "animation.humanoid.melee_spear_use",
+        "third_person_melee_spear_hold": "animation.humanoid.melee_spear_hold",
+        "third_person_melee_spear_attack": "animation.player.melee_spear_attack",
+        "third_person_melee_spear_controller": "controller.animation.player.melee_spear",
+        "crossbow_hold": "animation.player.crossbow_hold",
+        "crossbow_controller": "controller.animation.player.crossbow",
+        "shield_block_main_hand": "animation.player.shield_block_main_hand",
+        "shield_block_off_hand": "animation.player.shield_block_off_hand",
+        "blink": "controller.animation.persona.blink",
+        "tooting_goat_horn": "animation.humanoid.tooting_goat_horn",
+        "holding_brush": "animation.humanoid.holding_brush",
+        "brushing": "animation.humanoid.brushing"
+      },
+      "render_controllers": [
+        {
+          "controller.render.player_base.first_person": "variable.is_first_person"
+        },
+        {
+          "controller.render.player_original.third_person": "!variable.is_first_person"
+        },
+        {
+          "controller.render.player_base.third_person": "!variable.is_first_person"
+        },
+        {
+          "controller.render.player.first_person": "variable.is_first_person && !q.is_spectator && !variable.off_hands && !variable.escudo_offhand"
+        },
+        {
+          "controller.render.player.third_person": "!variable.is_first_person && !variable.map_face_icon && !q.is_spectator && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity') && !variable.off_skin"
+        },
+        {
+          "controller.render.player.map": "variable.map_face_icon"
+        },
+        {
+          "controller.render.player.first_person_spectator": "variable.is_first_person && q.is_spectator"
+        },
+        {
+          "controller.render.player.third_person_spectator": "!variable.is_first_person && !variable.map_face_icon && q.is_spectator"
+        },
+        {
+          "controller.render.guns.first_person": "variable.is_first_person && (variable.two_hands || variable.escudo_offhand) && !variable.off_hands"
+        },
+        "controller.render.guns.base",
+        {
+          "controller.render.venom.skin0.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 0"
+        },
+        {
+          "controller.render.venom.skin1.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 1"
+        },
+        {
+          "controller.render.venom.skin2.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 2"
+        },
+        {
+          "controller.render.venom.skin3.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 3"
+        },
+        {
+          "controller.render.venom.skin4.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 4"
+        },
+        {
+          "controller.render.venom.skin5.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 5"
+        },
+        {
+          "controller.render.venom.skin6.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 6"
+        },
+        {
+          "controller.render.venom.skin7.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 7"
+        },
+        {
+          "controller.render.venom.skin8.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 8"
+        },
+        {
+          "controller.render.venom.skin9.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.property('arathnido:skins') == 9"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit') || q.equipped_item_any_tag('slot.armor.head', 'spider_ham_skin'))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps4_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps4_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 2))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_stealth_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_stealth_suit')"
+        },
+        {
+          "controller.render.web_shooter.iron_spider_ucm_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_ucm_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_raimi_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_raimi_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 10))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_raimi_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_raimi_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_gold_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_gold_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_suit')"
+        },
+        {
+          "controller.render.web_shooter.spider_gwen": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spider_gwen')"
+        },
+        {
+          "controller.render.spirit_spider.fire": "!variable.is_first_person && q.equipped_item_any_tag('slot.armor.head', 'spirit_spider_mask')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_steve_ditko_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_steve_ditko_suit')"
+        },
+        {
+          "controller.render.web_shooter.the_amazing_spiderman_1_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'the_amazing_spiderman_1_suit')"
+        },
+        {
+          "controller.render.web_shooter.the_amazing_spiderman_2_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'the_amazing_spiderman_2_suit')"
+        },
+        {
+          "controller.render.web_shooter.ultimate_spiderman_ucm_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'ultimate_spiderman_ucm_suit')"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_suit')"
+        },
+        {
+          "controller.render.web_shooter.spectacular_spiderman_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spectacular_spiderman_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 4))"
+        },
+        {
+          "controller.render.web_shooter.spectacular_spiderman_black_suit_2": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spectacular_spiderman_black_suit_2') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 5))"
+        },
+        {
+          "controller.render.web_shooter.spectacular_spiderman_black_suit_3": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spectacular_spiderman_black_suit_3') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 6))"
+        },
+        {
+          "controller.render.web_shooter.spectacular_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spectacular_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_67_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_67_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_90_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_90_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_wrestler_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_wrestler_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps4_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps4_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_homecoming_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_homecoming_suit')"
+        },
+        {
+          "controller.render.web_shooter.ultimate_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'ultimate_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_far_from_home_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_far_from_home_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_no_way_home_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_no_way_home_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 9))"
+        },
+        {
+          "controller.render.web_shooter.ultimate_spiderman_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'ultimate_spiderman_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 14))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_black_suit_comic": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_black_suit_comic')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_negative_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_negative_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_homemade_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_homemade_suit')"
+        },
+        {
+          "controller.render.web_shooter.human_spider_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'human_spider_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_into_the_spiderverse": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_into_the_spiderverse')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_across_the_spiderverse": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'web_shooter_miles_morales_default_hand')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_into_the_spiderverse_training": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_into_the_spiderverse_training')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_bodega_cat_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_bodega_cat_suit')"
+        },
+        {
+          "controller.render.web_shooter.anti_ock_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'anti_ock_suit')"
+        },
+        {
+          "controller.render.web_shooter.anti_ock_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'anti_ock_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.anti_ock_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'anti_ock_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.anti_ock_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'anti_ock_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.aracnido_jr_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'aracnido_jr_suit')"
+        },
+        {
+          "controller.render.web_shooter.ezekiel_sims_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'ezekiel_sims_suit')"
+        },
+        {
+          "controller.render.web_shooter.iron_spider_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.iron_spider_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.iron_spider_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.spider_punk_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spider_punk_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_suit')"
+        },
+        {
+          "controller.render.web_shooter.iron_spider_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'iron_spider_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_cero_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_cero_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_future_foundation_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_future_foundation_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps5_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps5_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps5_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps5_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps5_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps5_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps5_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps5_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_ps5_symbiote_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_ps5_symbiote_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 1))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_velocity_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_velocity_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_across_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_across_the_spiderverse_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_across_the_spiderverse_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_across_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.superior_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.superior_spiderman_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.superior_spiderman_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.superior_spiderman_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_wolverine_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_wolverine_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_wolverine_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_wolverine_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_wolverine_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_wolverine_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_wolverine_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_wolverine_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.the_amazing_spiderman_belt_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'the_amazing_spiderman_belt_suit')"
+        },
+        {
+          "controller.render.web_shooter.the_amazing_spiderman_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'the_amazing_spiderman_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 13))"
+        },
+        {
+          "controller.render.web_shooter.ghost_spider_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'ghost_spider_suit') || q.equipped_item_any_tag('slot.armor.head', 'spider_gwen_skin'))"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_into_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_into_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_across_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_across_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_90_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_90_black_suit') || (q.property('arathnido:ability0') == 3 && (q.property('arathnido:texture') == 7 || q.property('arathnido:texture') == 8)))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_90_black_suit_1": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_90_black_suit_1') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 8))"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_across_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_across_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.outline": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'outline_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_90_blue": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_90_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 7))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_90_red": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_90_black_suit_1') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 8))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_secret_wars_civil_war_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_secret_wars_civil_war_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_unlimited_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_unlimited_suit')"
+        },
+        {
+          "controller.render.web_shooter.yfn_spiderman_casero_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'yfn_spiderman_casero_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_web_of_shadows_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_web_of_shadows_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_what_if_animated_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_what_if_animated_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_what_if_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_what_if_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_antivenom_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_antivenom_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 3))"
+        },
+        {
+          "controller.render.web_shooter.spiderman_noir_into_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_noir_into_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.silk": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'silk_suit')"
+        },
+        {
+          "controller.render.web_shooter.spider_punk_across_the_spider_verse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spider_punk_across_the_spider_verse_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_india_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_india_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_leap_of_faith_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_leap_of_faith_suit')"
+        },
+        {
+          "controller.render.web_shooter.venom_s3": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'venom_s3') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 15))"
+        },
+        {
+          "controller.render.web_shooter.into_the_spiderverse_sb_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'into_the_spiderverse_sb_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_web_of_shadows_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'spiderman_web_of_shadows_black_suit')|| (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 11))"
+        },
+        {
+          "controller.render.web_shooter.superior_spiderman_black_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'superior_spiderman_black_suit') || (q.property('arathnido:ability0') == 3 && q.property('arathnido:texture') == 12))"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_bodega_cat_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_bodega_cat_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_bodega_cat_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_bodega_cat_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_bodega_cat_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_bodega_cat_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_10th_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_10th_suit')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_10th_suit_1": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_10th_suit_1')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_10th_suit_2": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_10th_suit_2')"
+        },
+        {
+          "controller.render.web_shooter.miles_morales_10th_suit_3": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'miles_morales_10th_suit_3')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_last_stand_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_last_stand_suit')"
+        },
+        {
+          "controller.render.taskmaster.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'taskmaster_suit')"
+        },
+        {
+          "controller.render.web_shooter.spirit_spider_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spirit_spider_suit')"
+        },
+        {
+          "controller.render.web_shooter.the_amazing_spiderman_casero_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'the_amazing_spiderman_casero_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_new_blue_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_new_blue_suit')"
+        },
+        {
+          "controller.render.web_shooter.yfn_spiderman_oscorp_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'yfn_spiderman_oscorp_suit')"
+        },
+        {
+          "controller.render.web_shooter.yfn_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'yfn_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_bombastic_bag_man_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_bombastic_bag_man_suit')"
+        },
+        {
+          "controller.render.web_shooter.arachknight_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'arachknight_suit')"
+        },
+        {
+          "controller.render.web_shooter.spider_carnage_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spider_carnage_suit')"
+        },
+        {
+          "controller.render.web_shooter.zombie_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_zombie_suit')"
+        },
+        {
+          "controller.render.web_shooter.zombie_spiderman_black_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_zombie_black_suit')"
+        },
+        {
+          "controller.render.web_shooter.mayday_parker_suit": "variable.two_hands_suit && (q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_suit') || (q.equipped_item_any_tag('slot.armor.head', 'mayday_skin') && !q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_black_suit')))"
+        },
+        {
+          "controller.render.web_shooter.mayday_parker_black_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_black_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_classic_black_red_spider_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_black_red_spider_suit')"
+        },
+        {
+          "controller.render.web_shooter.assassin_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'assassin_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.punisher_spiderman_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'punisher_spiderman_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_cyborg_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_cyborg_suit')"
+        },
+        {
+          "controller.render.web_shooter.spider_ham": "variable.two_hands_skin && q.equipped_item_any_tag('slot.armor.head', 'spider_ham_skin')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_rivals_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_rivals_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_2099_white_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_2099_white_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_brand_new_day_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_brand_new_day_suit')"
+        },
+        {
+          "controller.render.web_shooter.spider_oni_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spider_oni_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_black_gold_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_black_gold_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_mk1_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_mk1_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_mk2_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_mk2_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_mk3_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_mk3_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_mk4_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_mk4_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_2099_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_2099_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_purple_reign_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_purple_reign_suit')"
+        },
+        {
+          "controller.render.web_shooter.silk_web_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'silk_web_suit')"
+        },
+        {
+          "controller.render.web_shooter.scarlet_spider_2_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scarlet_spider_2_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_dark_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_dark_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_into_the_spiderverse_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_into_the_spiderverse_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_2020_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_2020_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_2020_v2_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_2020_v2_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_2020_v3_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_2020_v3_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_miles_morales_2020_v4_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_miles_morales_2020_v4_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_blue_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_blue_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_antivenom_classic_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_antivenom_classic_suit')"
+        },
+        {
+          "controller.render.web_shooter.poison_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'poison_suit')"
+        },
+        {
+          "controller.render.web_shooter.spiderman_king_in_black_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spiderman_king_in_black_suit')"
+        },
+        {
+          "controller.render.web_shooter.spidergwen_symbiont_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'spidergwen_symbiont_suit')"
+        },
+        {
+          "controller.render.web_shooter.ben_really_suit": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'ben_really_suit')"
+        },
+        {
+          "controller.render.green_goblin.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_skin')"
+        },
+        {
+          "controller.render.hobgoblin.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'hobgoblin_suit')"
+        },
+        {
+          "controller.render.green_goblin_raimi.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_raimi_suit')"
+        },
+        {
+          "controller.render.green_goblin_spiderman3.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_spiderman3_suit')"
+        },
+        {
+          "controller.render.green_goblin_no_way_home.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'green_goblin_no_way_home_suit')"
+        },
+        {
+          "controller.render.mysterio_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'mysterio_suit')"
+        },
+        {
+          "controller.render.mysterio1_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'mysterio_suit_1')"
+        },
+        {
+          "controller.render.mysterio_far_from_home_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'mysterio_far_from_home_suit')"
+        },
+        {
+          "controller.render.agent_venom.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'agent_venom_suit')"
+        },
+        {
+          "controller.render.agent_antivenom.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'agent_anti_venom_suit')"
+        },
+        {
+          "controller.render.agent_venom_spiderman2.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'agent_venom_spiderman2_suit')"
+        },
+        {
+          "controller.render.agent_venom_spiderman2_v2.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'agent_venom_spiderman2_v2_suit')"
+        },
+        {
+          "controller.render.agent_venom_thunderbolts.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'agent_venom_thunderbolts_suit')"
+        },
+        {
+          "controller.render.electro_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'electro_suit')"
+        },
+        {
+          "controller.render.electro_tas2_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'electro_tas2_suit')"
+        },
+        {
+          "controller.render.electro_no_way_home_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'electro_no_way_home_suit')"
+        },
+        {
+          "controller.render.boomerang_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'boomerang_suit')"
+        },
+        {
+          "controller.render.tarantula_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'tarantula_suit')"
+        },
+        {
+          "controller.render.scorpion_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'scorpion_suit')"
+        },
+        {
+          "controller.render.man_spider.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.head', 'man_spider')"
+        },
+        {
+          "controller.render.shocker_suit.hands": "variable.two_hands_suit && q.equipped_item_any_tag('slot.armor.feet', 'shocker_suit')"
+        },
+        {
+          "controller.render.black_cat_suit.hands": "variable.two_hands_suit && ((!q.equipped_item_any_tag('slot.armor.feet', 'spiderman_classic_suit') && q.equipped_item_any_tag('slot.armor.head', 'black_cat_skin')) || q.equipped_item_any_tag('slot.armor.feet', 'black_cat_suit'))"
+        }
+      ],
+      "enable_attachables": true
+    }
+  }
+}

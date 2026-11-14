@@ -1,0 +1,128 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.lyla.animations" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{ "animation.1" : "q.property('arathnido:animation') == 16" },
+						{ "animation.2" : "q.property('arathnido:animation') == 17" },
+						{ "animation.3" : "q.property('arathnido:animation') == 18" },
+						{ "animation.4" : "q.property('arathnido:animation') == 19" },
+						{ "animation.5" : "q.property('arathnido:animation') == 20" },
+						{ "animation.6" : "q.property('arathnido:animation') == 21" },
+						{ "animation.7" : "q.property('arathnido:animation') == 22" },
+						{ "animation.8" : "q.property('arathnido:animation') == 23" },
+						{ "animation.9" : "q.property('arathnido:animation') == 24" },
+						{ "animation.10" : "q.property('arathnido:animation') == 25" }
+					]
+				}
+			}
+		},
+		"controller.animation.lyla.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default.2" : {
+					"animations" : [ {"lyla.default.2": "v.off_hand" } ],
+					"transitions" : [
+						{
+							"lyla.falling.active" : "v.off_hand && !q.is_on_ground"
+						},
+						{
+							"lyla.gliding" : "q.is_gliding"
+						},
+						{
+							"lyla.selfie" : "v.sefieOn || v.lyla_rabbit_face"
+						},
+						{
+							"default.3" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"default.3" : {
+					"animations" : [ {"lyla.default.3": "v.off_hand" } ],
+					"transitions" : [
+						{
+							"lyla.falling.active" : "v.off_hand && !q.is_on_ground"
+						},
+						{
+							"lyla.gliding" : "q.is_gliding"
+						},
+						{
+							"lyla.selfie" : "v.sefieOn || v.lyla_rabbit_face"
+						},
+						{
+							"default" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"default" : {
+					"animations" : [ {"lyla.default": "v.off_hand" } ],
+					"transitions" : [
+						{
+							"lyla.falling.active" : "v.off_hand && !q.is_on_ground"
+						},
+						{
+							"lyla.gliding" : "q.is_gliding"
+						},
+						{
+							"lyla.selfie" : "v.sefieOn || v.lyla_rabbit_face"
+						},
+						{
+							"default.2" : "q.any_animation_finished"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"lyla.falling.active" : {
+					"animations" : [ "lyla.falling.active" ],
+					"transitions" : [
+						{
+							"default" : "!v.off_hand || q.is_on_ground"
+						},
+						{
+							"lyla.falling" : "q.any_animation_finished"
+						},
+						{
+							"lyla.gliding" : "q.is_gliding"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"lyla.falling" : {
+					"animations" : [ "lyla.falling" ],
+					"transitions" : [
+						{
+							"default" : "!v.off_hand || q.is_on_ground"
+						},
+						{
+							"lyla.gliding" : "q.is_gliding"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"lyla.gliding" : {
+					"animations" : [ "lyla.gliding" ],
+					"transitions" : [
+						{
+							"default" : "!v.off_hand || q.is_on_ground || !q.is_gliding"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"lyla.selfie" : {
+					"animations" : [ "lyla.selfie" ],
+					"transitions" : [
+						{
+							"default" : "!v.off_hand || (!v.sefieOn && !v.lyla_rabbit_face)"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

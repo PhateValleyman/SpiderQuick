@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:green_goblin_raimi_blades",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/green_goblin/green_goblin_no_way_home"
+			},
+			"geometry": {
+				"default": "geometry.green_goblin_no_way_home_blades",
+				"first": "geometry.green_goblin_no_way_home_blades_first"
+			},
+			"render_controllers": [
+				{ "controller.render.item_3d": "!c.is_first_person" },
+				{ "controller.render.item_3d.first": "c.is_first_person" }
+			]
+		}
+	}
+}

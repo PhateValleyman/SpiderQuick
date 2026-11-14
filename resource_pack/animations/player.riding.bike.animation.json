@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.riding.bike": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"rightArm": {
+					"rotation": [-97.5, 0, 0]
+				}
+			}
+		}
+	}
+}

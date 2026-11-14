@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:venom_regeneration",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"skin0": "textures/entity/venom/venom",
+				"skin1": "textures/entity/venom/venom_movie",
+				"skin2": "textures/entity/venom/blue_venom",
+				"skin3": "textures/entity/venom/venom_lee_price",
+				"skin4": "textures/entity/venom/ultimate_venom"
+			},
+			"geometry": {
+				"default": "geometry.venom_hands",
+				"venom_lee_price": "geometry.venom_hands",
+				"venom_movie": "geometry.venom_hands"
+			},
+			"scripts": {
+                "animate": [
+					"venom.impulse_whip.c", "whip.idle.c"
+                ]
+			},
+			"render_controllers": [
+				{"controller.render.venom.skin.0":"(q.property('venom:mode') == true && c.is_first_person) && q.property('arathnido:skins') == 0"},
+				{"controller.render.venom.skin.1":"(q.property('venom:mode') == true && c.is_first_person) && q.property('arathnido:skins') == 1"},
+				{"controller.render.venom.skin.2":"(q.property('venom:mode') == true && c.is_first_person) && q.property('arathnido:skins') == 2"},
+				{"controller.render.venom.skin.3":"(q.property('venom:mode') == true && c.is_first_person) && q.property('arathnido:skins') == 3"},
+				{"controller.render.venom.skin.4":"(q.property('venom:mode') == true && c.is_first_person) && q.property('arathnido:skins') == 4"}
+			],
+			"animations": {
+				"whip.idle.c": "animation.venom.whip.idle",
+				"venom.impulse_whip.c": "controller.animation.venom.impulse_whip",
+				"impulse_whip": "animation.venom.impulse_whip"
+			}
+		}
+	}
+}

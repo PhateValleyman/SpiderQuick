@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:green_goblin_spiderman3_blades",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/green_goblin/green_goblin_spiderman3"
+			},
+			"geometry": {
+				"default": "geometry.green_goblin_spiderman3_blades",
+				"first": "geometry.green_goblin_spiderman3_blades_first"
+			},
+			"render_controllers": [
+				{ "controller.render.item_3d": "!c.is_first_person" },
+				{ "controller.render.item_3d.first": "c.is_first_person" }
+			]
+		}
+	}
+}

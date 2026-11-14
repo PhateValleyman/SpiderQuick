@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.venom_head.skin.0": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin0" ]
+    },
+    "controller.render.venom_head.skin.1": {
+      "geometry": "Geometry.venom_movie_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin1" ]
+    },
+    "controller.render.venom_head.skin.2": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin2" ]
+    },
+    "controller.render.venom_head.skin.3": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin3" ]
+    },
+    "controller.render.venom_head.skin.4": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin4" ]
+    },
+    "controller.render.venom_head.skin.5": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin5" ]
+    },
+    "controller.render.venom_head.skin.6": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin6" ]
+    },
+    "controller.render.venom_head.skin.7": {
+      "geometry": "Geometry.venompool_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin7" ]
+    },
+    "controller.render.venom_head.skin.8": {
+      "geometry": "Geometry.venom_snow_head",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin8" ]
+    },
+    "controller.render.venom_head.skin.9": {
+      "geometry": "Geometry.venom_head",
+      "materials": [ { "*": "Material.antivenom" } ],
+      "textures": [ "Texture.skin9" ]
+    }
+  }
+}

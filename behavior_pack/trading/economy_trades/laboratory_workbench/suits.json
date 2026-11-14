@@ -1,0 +1,895 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 49,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:ultimate_spiderman_ucm_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:3",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_raimi_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:15",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:15",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_bodega_cat_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:9",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_1_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_1_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_belt_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:the_amazing_spiderman_2_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:human_spider_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:wool:3",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_homemade_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 12
+                },
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_wrestler_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:nanotechnology_chip",
+                  "quantity": 52
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_spider_ucm_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:miles_morales_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_gold_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spectacular_spiderman_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_67_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_90_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_homecoming_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_homecoming_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_far_from_home_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_far_from_home_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:nanotechnology_chip",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_no_way_home_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_stealth_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps4_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps4_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:gr_27_negative",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_negative_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:comic1",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_steve_ditko_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:comic2",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:ultimate_spiderman_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps4_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:netherrack",
+                  "quantity": 32
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 45
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:ezekiel_sims_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 64
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_spider_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 32
+                },
+                {
+                  "item": "minecraft:prismarine_crystals",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_velocity_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:15",
+                  "quantity": 16
+                },
+                {
+                  "item": "minecraft:quartz",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_future_foundation_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 32
+                },
+                {
+                  "item": "minecraft:lapis_lazuli",
+                  "quantity": 42
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_cero_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_wrestler_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:axolotl_bucket",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:aracnido_jr_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:diamond",
+                  "quantity": 32
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spider_punk_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 64
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 64
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:anti_ock_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:14",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 36
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 42
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_across_the_spiderverse_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 42
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_across_the_spiderverse_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool:11",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 32
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:scarlet_spider_across_the_spiderverse_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_into_the_spiderverse_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_across_the_spiderverse_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "minecraft:wool",
+                  "quantity": 24
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:ghost_spider_suit"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_into_the_spiderverse"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_into_the_spiderverse_default"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_into_the_spiderverse_training"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_across_the_spiderverse"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spider_gwen"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:multiversal_particles",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:anya_corazon"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

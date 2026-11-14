@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.green_goblin_shock_gloves": {
+      "geometry": "Geometry.shock_gloves",
+      "part_visibility": [
+        { "*": "q.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.shock_gloves" } ],
+      "textures": [ "Texture.shock_gloves" ]
+    }
+  }
+}

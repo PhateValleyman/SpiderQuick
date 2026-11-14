@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_bike",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/motorcycle/spider_bike"
+			},
+			"geometry": {
+				"default": "geometry.motorcycle"
+			},
+			"animations": {
+				"walk": "animation.motorcycle.walk",
+				"aire": "animation.motorcycle.aire",
+				"volante": "animation.motorcycle.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"walk": "controller.animation.spider_mobile.walk"
+				},
+				{
+					"volante": "controller.animation.volante"
+				},
+				{
+					"aire": "controller.animation.motorcycle.aire"
+				}
+			],
+			"render_controllers": [
+				"controller.render.spider_mobile"
+			],
+			"spawn_egg": {
+				"texture": "spider_bike",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,396 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hulk_v2",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "hulk_root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "hulk_leftLeg",
+					"parent": "hulk_root",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{"origin": [-1.5, -1.25, -3.5], "size": [8, 4, 8], "pivot": [2.5, 6, -0.5], "rotation": [-7.5, 0, 0], "uv": [96, 135]},
+						{"origin": [-2, 1.75, -4], "size": [9, 12, 9], "inflate": 0.25, "pivot": [2.5, 6, -0.5], "rotation": [-7.5, 0, -2.5], "uv": [124, 114]}
+					]
+				},
+				{
+					"name": "hulk_ll",
+					"parent": "hulk_leftLeg",
+					"pivot": [1.5, -0.5, 0],
+					"cubes": [
+						{"origin": [-2, -12, -7.75], "size": [9, 4, 12], "uv": [112, 48]},
+						{"origin": [-1.5, -8.5, -3.75], "size": [8, 8, 7], "inflate": 0.15, "pivot": [-3.5, -5.1, -0.5], "rotation": [7.5, 0, 0], "uv": [36, 134]}
+					]
+				},
+				{
+					"name": "leftleg_particle",
+					"parent": "hulk_leftLeg",
+					"pivot": [-1.5, 0, 0],
+					"locators": {
+						"leftleg_particle": [-1.5, 0, 0]
+					}
+				},
+				{
+					"name": "hulk_rightLeg",
+					"parent": "hulk_root",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{"origin": [-6.5, -1.25, -3.5], "size": [8, 4, 8], "pivot": [-2.5, 6, -0.5], "rotation": [-7.5, 0, 0], "uv": [128, 135]},
+						{"origin": [-7, 1.75, -4], "size": [9, 12, 9], "inflate": 0.25, "pivot": [-2.5, 6, -0.5], "rotation": [-7.5, 0, 2.5], "uv": [0, 132]}
+					]
+				},
+				{
+					"name": "hulk_rl",
+					"parent": "hulk_rightLeg",
+					"pivot": [-3.5, -0.5, 0],
+					"cubes": [
+						{"origin": [-7, -12, -7.75], "size": [9, 4, 12], "uv": [0, 116]},
+						{"origin": [-6.5, -8.5, -3.75], "size": [8, 8, 7], "inflate": 0.15, "pivot": [3.5, -5.1, -0.5], "rotation": [7.5, 0, 0], "uv": [66, 134]}
+					]
+				},
+				{
+					"name": "rightleg_particle",
+					"parent": "hulk_rightLeg",
+					"pivot": [1.5, 0, 0],
+					"locators": {
+						"rightleg_particle": [1.5, 0, 0]
+					}
+				},
+				{
+					"name": "waist_hulk",
+					"parent": "hulk_root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "hulk_bodys",
+					"parent": "waist_hulk",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "body1",
+					"parent": "hulk_bodys",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-11, 12, -3], "size": [22, 8, 10], "uv": [0, 32]},
+						{"origin": [-9, 20, -3], "size": [18, 10, 10], "uv": [0, 50]}
+					]
+				},
+				{
+					"name": "body0",
+					"parent": "hulk_bodys",
+					"pivot": [0, 30, 0],
+					"cubes": [
+						{"origin": [-14, 28, -6], "size": [28, 16, 16], "pivot": [0, 30, 0], "rotation": [12.5, 0, 0], "uv": [0, 0]},
+						{"origin": [-14.5, 27.5, -6.5], "size": [29, 17, 17], "pivot": [0, 30, 0], "rotation": [12.5, 0, 0], "uv": [0, 153]},
+						{"origin": [-7, 42.25, -8], "size": [14, 3, 14], "pivot": [0, 45, -2], "rotation": [7.5, 0, 0], "uv": [56, 50]}
+					]
+				},
+				{
+					"name": "hulk_head",
+					"parent": "hulk_bodys",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-5, 24, -8], "size": [10, 10, 10], "uv": [104, 67]},
+						{"origin": [-3, 23, -8], "size": [6, 1, 5], "uv": [66, 32]},
+						{"origin": [-1.5, 26, -8.4], "size": [3, 3, 1], "pivot": [0, 27.5, -8.5], "rotation": [-12.5, 0, 0], "uv": [0, 32]},
+						{"origin": [-5.5, 23.5, -8.5], "size": [11, 11, 11], "uv": [0, 94]},
+						{"origin": [5, 26.75, -4], "size": [1, 3, 2], "uv": [0, 50]},
+						{"origin": [-6, 26.75, -4], "size": [1, 3, 2], "uv": [0, 50]}
+					]
+				},
+				{
+					"name": "eyes",
+					"parent": "hulk_head",
+					"pivot": [0, 27.5, -8]
+				},
+				{
+					"name": "eye0",
+					"parent": "eyes",
+					"pivot": [-2, 27.94319, -7.57324],
+					"cubes": [
+						{"origin": [-2.5, 27.44319, -7.97324], "size": [1, 1, 1], "inflate": 0.1, "uv": [124, 0]},
+						{"origin": [-2.5, 27.44319, -8.19824], "size": [1, 1, 1], "inflate": -0.1, "uv": [124, 4]}
+					]
+				},
+				{
+					"name": "eye1",
+					"parent": "eyes",
+					"pivot": [2, 27.94319, -7.57324],
+					"cubes": [
+						{"origin": [1.5, 27.44319, -7.97324], "size": [1, 1, 1], "inflate": 0.1, "uv": [124, 2]},
+						{"origin": [1.5, 27.44319, -8.19824], "size": [1, 1, 1], "inflate": -0.1, "uv": [124, 6]}
+					]
+				},
+				{
+					"name": "pestanas",
+					"parent": "hulk_head",
+					"pivot": [0, 1, -4]
+				},
+				{
+					"name": "pestana2",
+					"parent": "pestanas",
+					"pivot": [2, 28.75, -7.6]
+				},
+				{
+					"name": "pestana2_0",
+					"parent": "pestana2",
+					"pivot": [2, 28.75, -7.6],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [1, 28.5, -8.4], "size": [3, 1, 2], "inflate": 0.05, "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "pestana1",
+					"parent": "pestanas",
+					"pivot": [-2, 28.75, -7.6]
+				},
+				{
+					"name": "pestana1_0",
+					"parent": "pestana1",
+					"pivot": [-2, 28.75, -7.6],
+					"rotation": [0, 0, 5],
+					"cubes": [
+						{"origin": [-4, 28.5, -8.4], "size": [3, 1, 2], "inflate": 0.05, "uv": [0, 10]}
+					]
+				},
+				{
+					"name": "bocas",
+					"parent": "hulk_head",
+					"pivot": [0, 24.5, -4]
+				},
+				{
+					"name": "boca3",
+					"parent": "bocas",
+					"pivot": [0, 24.5, -8.925],
+					"rotation": [0, 0, -180]
+				},
+				{
+					"name": "boca3_0",
+					"parent": "boca3",
+					"pivot": [0, 24.5, -7.025]
+				},
+				{
+					"name": "b30_1",
+					"parent": "boca3_0",
+					"pivot": [0, 24.8, -6.95],
+					"cubes": [
+						{"origin": [-1.5, 24.3, -7.45], "size": [3, 1, 1], "inflate": -0.275, "uv": [136, 12]}
+					]
+				},
+				{
+					"name": "b30_0",
+					"parent": "boca3_0",
+					"pivot": [0, 24.6, -6.8],
+					"cubes": [
+						{"origin": [-1, 24.1, -7.3], "size": [2, 1, 1], "inflate": -0.175, "uv": [124, 10]}
+					]
+				},
+				{
+					"name": "teeth0",
+					"parent": "boca3_0",
+					"pivot": [0, 24.75, -6.125],
+					"cubes": [
+						{"origin": [-1, 24.25, -6.625], "size": [2, 1, 1], "inflate": -0.375, "uv": [130, 10]}
+					]
+				},
+				{
+					"name": "teeth1",
+					"parent": "boca3_0",
+					"pivot": [0, 24.6, -6.225],
+					"cubes": [
+						{"origin": [-2, 24.1, -6.675], "size": [4, 1, 1], "inflate": -0.375, "uv": [136, 10]}
+					]
+				},
+				{
+					"name": "colmillos",
+					"parent": "boca3_0",
+					"pivot": [-2.1, -1, -3.1]
+				},
+				{
+					"name": "colmillo0",
+					"parent": "colmillos",
+					"pivot": [-0.9, 24.25, -7.1]
+				},
+				{
+					"name": "colmillo1",
+					"parent": "colmillos",
+					"pivot": [0.9, 24.25, -7.1]
+				},
+				{
+					"name": "mandibula0",
+					"parent": "boca3",
+					"pivot": [0, 24.5, -5.5],
+					"cubes": [
+						{"origin": [-2, 24, -7], "size": [4, 1, 3], "uv": [72, 0]}
+					]
+				},
+				{
+					"name": "boca0",
+					"parent": "bocas",
+					"pivot": [0, 25.2, -7.925],
+					"cubes": [
+						{"origin": [-2, 24.5, -8.3], "size": [4, 1, 1], "inflate": -0.25, "uv": [72, 4]}
+					]
+				},
+				{
+					"name": "eyes0",
+					"parent": "hulk_head",
+					"pivot": [0, 28.15, -7.35],
+					"cubes": [
+						{"origin": [1, 26.65, -8.35], "size": [3, 3, 2], "inflate": -0.3, "uv": [90, 0]},
+						{"origin": [-4, 26.65, -8.35], "size": [3, 3, 2], "inflate": -0.3, "uv": [90, 5]}
+					]
+				},
+				{
+					"name": "cejas",
+					"parent": "hulk_head",
+					"pivot": [0, 31.4, -8]
+				},
+				{
+					"name": "ceja0",
+					"parent": "cejas",
+					"pivot": [2.25, 31.25, -7.725],
+					"rotation": [0, 0, -7.5],
+					"cubes": [
+						{"origin": [0.75, 30.75, -8.225], "size": [3, 1, 1], "uv": [54, 32]},
+						{"origin": [2.25, 30.25, -8.2], "size": [2, 1, 1], "uv": [54, 36]}
+					]
+				},
+				{
+					"name": "ceja1",
+					"parent": "cejas",
+					"pivot": [-2.25, 31.25, -7.725],
+					"rotation": [0, 0, 7.5],
+					"cubes": [
+						{"origin": [-3.75, 30.75, -8.225], "size": [3, 1, 1], "uv": [54, 34]},
+						{"origin": [-4.25, 30.25, -8.2], "size": [2, 1, 1], "uv": [54, 38]}
+					]
+				},
+				{
+					"name": "head_particle",
+					"parent": "hulk_head",
+					"pivot": [0, 24, 0],
+					"locators": {
+						"head_particle": {
+							"offset": [0, 27, 0],
+							"rotation": [0, -28, 0]
+						}
+					}
+				},
+				{
+					"name": "hulk_leftArm",
+					"parent": "hulk_bodys",
+					"pivot": [5, 22, 0],
+					"rotation": [12.5, 0, -12.5],
+					"cubes": [
+						{"origin": [4, 13, -6], "size": [12, 12, 12], "uv": [56, 67]},
+						{"origin": [5, 3, -5], "size": [10, 10, 10], "uv": [44, 114]}
+					]
+				},
+				{
+					"name": "hulk_la",
+					"parent": "hulk_leftArm",
+					"pivot": [10, 5, 0],
+					"rotation": [-22.5, 0, 0],
+					"cubes": [
+						{"origin": [4.5, -7, -5.5], "size": [11, 12, 11], "uv": [48, 91]},
+						{"origin": [4, -19, -6], "size": [12, 12, 12], "uv": [0, 70]}
+					]
+				},
+				{
+					"name": "left_shoot_particle",
+					"parent": "hulk_leftArm",
+					"pivot": [6, 15, 0],
+					"locators": {
+						"left_shoot_particle": [6, 15, 0]
+					}
+				},
+				{
+					"name": "left_bullet_particle",
+					"parent": "hulk_leftArm",
+					"pivot": [6, 15, 0],
+					"locators": {
+						"left_bullet_particle": [6, 15, 0]
+					}
+				},
+				{
+					"name": "leftItem",
+					"parent": "hulk_leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "hulk_rightArm",
+					"parent": "hulk_bodys",
+					"pivot": [-5, 22, 0],
+					"rotation": [12.5, 0, 12.5],
+					"cubes": [
+						{"origin": [-16, 13, -6], "size": [12, 12, 12], "uv": [88, 0]},
+						{"origin": [-15, 3, -5], "size": [10, 10, 10], "uv": [84, 114]}
+					]
+				},
+				{
+					"name": "hulk_ra",
+					"parent": "hulk_rightArm",
+					"pivot": [-10, 5, 0],
+					"rotation": [-22.5, 0, 0],
+					"cubes": [
+						{"origin": [-15.5, -7, -5.5], "size": [11, 12, 11], "uv": [92, 91]},
+						{"origin": [-16, -19, -6], "size": [12, 12, 12], "uv": [88, 24]}
+					]
+				},
+				{
+					"name": "right_shoot_particle",
+					"parent": "hulk_rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_shoot_particle": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "right_bullet_particle",
+					"parent": "hulk_rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_bullet_particle": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "right_flashlight",
+					"parent": "hulk_rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_flashlight": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "rightItem",
+					"parent": "hulk_rightArm",
+					"pivot": [-6, 15, 1]
+				},
+				{
+					"name": "body_particle",
+					"parent": "hulk_bodys",
+					"pivot": [0, 24, 0],
+					"locators": {
+						"body_particle": {
+							"offset": [0, 27, 0],
+							"rotation": [0, -28, 0]
+						}
+					}
+				}
+			]
+		}
+	]
+}

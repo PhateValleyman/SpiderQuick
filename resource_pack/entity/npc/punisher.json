@@ -1,0 +1,47 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:punisher",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/punisher/punisher_90s"
+      },
+      "geometry": {
+        "default": "geometry.punisher_90s"
+      },
+      "animations": {
+        "c": "controller.animation.punisher.npc",
+        "idle": "animation.punisher.idle",
+        "look_at_target": "animation.punisher.look_at_target",
+        "walk.c": "controller.animation.punisher.walk",
+        "walk": "animation.punisher.walk",
+        "walk_fusil": "animation.punisher.walk_fusil",
+        "falling": "animation.punisher.falling",
+        "apuntar_pistol.c": "controller.animation.punisher.apuntar_pistol",
+        "apuntar_pistol": "animation.punisher.apuntar_pistol",
+        "sit.c": "controller.animation.punisher.sit",
+        "sit": "animation.punisher.sit"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "c",
+          "idle",
+          "look_at_target"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#428a98",
+        "overlay_color": "#938f90"
+      }
+    }
+  }
+}

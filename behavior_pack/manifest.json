@@ -1,0 +1,64 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "SpiderQuick — balíček chování",
+    "description": "Katalog staveb a funkce Spider-Mana pro Minecraft Bedrock 1.21.80+ (Script API 2.0.0).",
+    "uuid": "6eabd23f-c3f7-4a68-84c7-dddcde0fdda7",
+    "version": [
+      1,
+      0,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "e086d5d5-4f8f-4a0a-915b-5e74d01e1602",
+      "version": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/combined_index.js",
+      "uuid": "ec31d9d1-a189-4064-8f93-6b81883f8cd6",
+      "version": [
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "861c3f98-6b91-4f1b-a4d4-05896709d368",
+      "version": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "2.0.0"
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "PhateValleyman <Jonas.Ned@outlook.com>"
+    ],
+    "url": "https://github.com/PhateValleyman/QuickCraft"
+  }
+}

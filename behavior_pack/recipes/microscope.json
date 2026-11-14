@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:microscope_spawn_egg"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AA ",
+      "CBC",
+      "DDD"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:brewing_stand"
+      },
+      "C": {
+        "item": "minecraft:redstone"
+      },
+      "D": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:microscope_spawn_egg",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

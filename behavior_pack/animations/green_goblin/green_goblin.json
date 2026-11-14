@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.player.green_goblin.laser": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+			    "/event entity @s green_goblin:laser"
+        ]
+      }
+    },
+    "animation.player.green_goblin.laser.sound": {
+      "loop": true,
+      "animation_length": 3.0,
+      "timeline": {
+        "0.0": [
+			    "/playsound ray_laser.loop @a[r=10]"
+        ]
+      }
+    },
+    "animation.player.green_goblin.powers": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s speed infinite 1 true",
+			"/effect @s resistance infinite 2 true",
+			"/effect @s strength infinite 1 true",
+			"/effect @s jump_boost infinite 1 true",
+			"/effect @s haste infinite 1 true",
+			"/effect @s regeneration 5 1 true"
+        ]
+      }
+	}
+  }
+}

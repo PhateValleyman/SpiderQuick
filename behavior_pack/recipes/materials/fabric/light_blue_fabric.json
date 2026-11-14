@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:light_blue_fabric"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:light_blue_wool"
+      }
+    },
+    "result": {
+      "item": "marveladdons:light_blue_fabric",
+        "data": 0,
+      "count": 8
+    }
+  }
+}

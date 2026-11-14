@@ -1,0 +1,45 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "SpiderQuick — balíček prostředků",
+    "description": "České názvy, texty a prostředky SpiderQuick pro Minecraft Bedrock 1.21.80+.",
+    "uuid": "861c3f98-6b91-4f1b-a4d4-05896709d368",
+    "version": [
+      1,
+      0,
+      2
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      80
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "4317d4b8-310d-4f98-83af-3400810c01d3",
+      "version": [
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "6eabd23f-c3f7-4a68-84c7-dddcde0fdda7",
+      "version": [
+        1,
+        0,
+        2
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "PhateValleyman <Jonas.Ned@outlook.com>"
+    ],
+    "url": "https://github.com/PhateValleyman/QuickCraft"
+  }
+}

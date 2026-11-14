@@ -1,0 +1,1741 @@
+﻿gui.spidermanaddon.upgrade_max=最大レベルまで強化
+gui.spidermanaddon.upgrade_max_cost=残りの%1レベルを%2個のコンポーネントで強化します。
+gui.spidermanaddon.not_enough_components_max=このウェブシューターを最大レベルまで強化するには、コンポーネントが%1個必要です。
+gui.spidermanaddon.upgraded_to_max=ウェブシューターを最大レベルまで強化しました。
+item.spidermanaddon:black_cat_skin=ブラックキャットのスキン
+item.spidermanaddon:norm_stone=ノーム・ストーン
+
+ui.spiderman.settings.spider_sense_particles=スパイダーセンスのパーティクル
+ui.spiderman.settings.spider_sense_sound=スパイダーセンスのサウンド
+ui.spiderman.settings.spider_sense_actionbar=スパイダーセンスの警告バー
+
+item.minecraft:leather=レザー
+item.spidermanaddon:spider_gwen_skin=スパイダー・グウェンのスキン
+item.spidermanaddon:mayday_skin=メイデイ・パーカーのスキン
+
+entity.spidermanaddon:hulk_boss.name=ハルク
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=ハルク・スポーン
+
+dialogue.spidermanaddon.hulk_activation=?????:§r ひどい有り様ね。私の邪魔をしないで。さもないと、ピーター・パーカーが誰なのかを忘れるのは、あなたの友達だけでは済まないわ。
+dialogue.spidermanaddon.hulk_defeated=?????:§r よくやったわ。でも次は、そんなに運がいいとは限らない
+
+spidermanaddon:itemGroup.name.shocker=ショッカーの武器庫
+item.spidermanaddon:shocker_mask=ショッカーのマスク
+item.spidermanaddon:shocker_suit=ショッカーのスーツ
+item.spidermanaddon:spider_punk_guitar=スパイダーパンクのギター
+item.spidermanaddon:shocker_gloves=ショッカーのグローブ
+gui.spidermanaddon.symbiont_evil_dance=邪悪なダンス
+tile.spiderman:spider_capsule.name=放射能グモのカプセル
+
+ui.spiderman.settings.button=§8設定
+ui.spiderman.settings.title=§l能力設定
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§b自由な壁走り
+ui.spiderman.settings.water_surf=§9水上サーフィン
+ui.spiderman.settings.save=設定を保存
+ui.spiderman.settings.saved=§a設定を保存しました。
+
+item.spidermanaddon:organic_web_potion=オーガニック・ウェブのポーション
+
+item.minecraft:gunpowder=火薬
+item.minecraft:glass=ガラス
+item.minecraft:slime_ball=スライムボール
+item.minecraft:string=糸
+item.minecraft:ender_pearl=エンダーパール
+
+ui.oscorp_table.title=§2オズコープ技術テーブル
+ui.oscorp_table.body=§7作成するスパイダーマンのヴィランのプロジェクトを選択してください。
+ui.oscorp_table.category_body=§7作成するアイテム、スーツ、または能力を選択してください。
+ui.oscorp_table.category.green_goblin=§aグリーン・ゴブリン
+ui.oscorp_table.category.doctor_octopus=§6ドクター・オクトパス
+ui.oscorp_table.category.boomerang=§9ブーメラン
+ui.oscorp_table.category.electro=§eエレクトロ
+ui.oscorp_table.category.mysterio=§5ミステリオ
+ui.oscorp_table.category.scorpion=§2スコーピオン
+ui.oscorp_table.category.tarantula=§4タランチュラ
+ui.oscorp_table.category.black_cat=§dブラックキャット
+ui.oscorp_table.category.modified_spider=§c改造されたクモ
+ui.oscorp_table.selected=選択したプロジェクト
+ui.oscorp_table.required_materials=必要な素材
+ui.oscorp_table.result=結果
+ui.oscorp_table.craft=作成
+ui.oscorp_table.missing_materials=不足している素材
+ui.oscorp_table.cancel=キャンセル
+ui.oscorp_table.back=戻る
+ui.oscorp_table.crafted=作成完了
+ui.oscorp_table.no_materials=必要な素材がありません
+ui.oscorp_table.invalid_item=アイテムを作成できませんでした
+
+entity.spidermanaddon:oscorp_table.name=オズコープ研究所のテーブル
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=オズコープ研究所のテーブル
+
+item.spidermanaddon:tarantula_attack=飛び蹴り
+item.spidermanaddon:black_cat_mask=ブラックキャットのマスク
+item.spidermanaddon:black_cat_suit=ブラックキャットのスーツ
+
+item.spidermanaddon:boomerang_powers=ブーメランの能力
+item.spidermanaddon:boomerang_skill_explosive=爆発ブーメラン
+item.spidermanaddon:boomerang_skill=ブーメランを投げる
+item.spidermanaddon:boomerang_skill_electric=電撃ブーメラン
+
+item.minecraft:spider_eye=クモの目
+item.minecraft:fermented_spider_eye=発酵したクモの目
+item.minecraft:blaze_powder=ブレイズパウダー
+item.minecraft:ghast_tear=ガストの涙
+item.minecraft:milk_bucket=ミルク入りバケツ
+
+ui.laboratory_workbench.upgrade_levels_body=§f現在のレベル: §e%1§f/§e%2
+§fアップグレード費用: §a経験値レベル %3
+ui.laboratory_workbench.no_levels=§c経験値レベルが %1 必要です。現在は %2 です。
+
+item.spidermanaddon:police_scanner=警察無線スキャナー
+action.interact.police_scanner=スキャナーをオン/オフ
+hud.police_scanner.crime.location=§c犯罪を検知 §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§b距離: §f%1 m
+
+hud.man_spider.web.ready=§2オーガニック・ウェブ §f%1/%2
+hud.man_spider.web.locked=§cウェブ使用不可 §f%1/%2
+hud.man_spider.acid.ready=§a酸攻撃 準備完了
+hud.man_spider.acid.cooldown=§2酸攻撃 §f%1秒
+hud.man_spider.claw.ready=§c跳躍攻撃 準備完了
+hud.man_spider.claw.cooldown=§4跳躍攻撃 §f%1秒
+message.man_spider.mutation.requires_powers=§cスパイダーマンの能力を装備する必要があります。
+message.organic_web.requires_powers=§cスパイダーマンの能力を装備する必要があります。
+
+item.spidermanaddon:man_spider_web_shoot=ウェブ発射 [オーガニック・ウェブ]
+item.spidermanaddon:man_spider_swing=ウェブ・スイング [オーガニック・ウェブ]
+item.spidermanaddon:man_spider_acid=酸を発射
+item.spidermanaddon:man_spider_claw=攻撃
+item.spidermanaddon:spider_mutant=変異血清
+item.spidermanaddon:mutation_antidote=変異解毒剤
+item.spidermanaddon:six_arms=6本の腕
+item.spidermanaddon:man_spider=マン・スパイダー
+
+hud.spiderman.web_swing.ammo=§bウェブ・スイング §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ スイング地点を検知: §f%1ブロック
+hud.spiderman.web_swing.target.none=§c◇ スイング地点なし: §f最大%1ブロック
+hud.spiderman.web_swing.target.no_ammo=§c✖ ウェブ液なし
+hud.spiderman.web_swing.target.active=§a◆ ウェブ接続中
+
+item.spidermanaddon:spiderman_unlimited_sonic=ソニックウェーブ
+item.spidermanaddon:spiderman_unlimited_invisibility=透明化
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=スパイダーマン・アンリミテッド リストモーファー
+menu.pizza.full_shift=§6フルシフト
+dialog.pizza.full_shift_started=§6アジズさん:§r フルシフト開始。注文%1/%2: %3人のお客さんにピザを届けてください。開始時間: %4。
+dialog.pizza.full_shift_return_to_joe=§6注文完了。アジズさんのところへ戻り、注文%1/%2を受け取ってください。
+dialog.pizza.full_shift_return_for_reward=§6最後の注文を完了しました。アジズさんのところへ戻って報酬を受け取ってください。
+dialog.pizza.full_shift_next_order=§6アジズさん:§r 注文%1/%2の準備完了: %3人のお客さんにピザを届けてください。累計時間: %4。
+dialog.pizza.full_shift_spawn_failed=§6アジズさん:§r 次の注文のお客さんを見つけられませんでした。フルシフト失敗です。
+dialog.pizza.full_shift_success=§6アジズさん:§r フルシフト完了！ 注文を%1件こなし、金インゴット%2個、部品%3個、経験値%4を獲得しました。
+
+
+dialog.pizza.night_unavailable=§6アジズさん:§r 夜間は配達シフトを受けられません。昼間に戻ってきてください。
+dialog.pizza.daily_limit=§6アジズさん:§r 今日の配達ミッション%1回はすでに完了しています。明日また来てください。
+
+item.spidermanaddon:pizza_backpack_offhand=ピザ配達バッグ
+
+pack.name=SpiderQuick
+pack.description=スパイダーマン2に着想を得たピザ配達システム。
+
+entity.spidermanaddon:joe_pizza.name=アジズさん
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=アジズさんをスポーン
+entity.spidermanaddon:customer.name=客
+item.spawn_egg.entity.spidermanaddon:customer.name=客をスポーン
+item.spidermanaddon:pizza_backpack=熱々のピザ！
+
+action.interact.pizza_talk=アジズさんと話す
+action.interact.deliver_pizza=ピザを届ける
+
+menu.pizza.title=§6アジズさんのピザ
+menu.pizza.body=配達員として働きますか？ すべての注文を届け、時間切れになる前に戻ってきてください。
+menu.pizza.accept=§aミッションを受ける
+menu.pizza.decline=今はやめておく
+
+dialog.pizza.busy=§6アジズさん:§r すでに別の配達員が働いています。後で戻ってきてください。
+dialog.pizza.spawn_failed=§6アジズさん:§r お客さんの安全な場所を見つけられませんでした。別の場所で試してください。
+dialog.pizza.inventory_full=§6アジズさん:§r バッグを受け取るには、インベントリに少なくとも1つ空きが必要です。
+dialog.pizza.mission_started=§6アジズさん:§r %2以内に注文%1件を届けてください。急いで！
+dialog.pizza.still_working=§6アジズさん:§r あと%1件の注文が残っています。残り時間: %2。
+dialog.pizza.not_your_customer=§6アジズさん:§r その注文は別の配達員のものです。
+dialog.pizza.already_delivered=§eこのお客さんにはすでにピザを届けました。
+dialog.pizza.need_backpack=§c注文を届けるには、ピザ入りバッグを手に持ってください。
+dialog.pizza.order_delivered=§a注文を届けました。お客さん: %1/%2。
+dialog.pizza.return_to_joe=§6すべての注文を届けました。時間切れになる前にアジズさんのところへ戻ってください！
+dialog.pizza.failed_time=§6アジズさん:§r 時間切れです。ミッション失敗。
+dialog.pizza.failed_customer=§6アジズさん:§r お客さんが消えたか死亡しました。ミッション失敗。
+dialog.pizza.success=§6アジズさん:§r よくやりました。注文を%1件届け、金インゴット%2個を受け取りました。
+
+dialog.spider_sense.enemy_detected=§c敵を検知:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Ben Really マスク
+item.spiderverse:ben_really_suit=Ben Really スーツ
+
+item.spidermanaddon:scorpion_attack=毒針攻撃
+item.spidermanaddon:scorpion_spin=回転打撃
+item.spidermanaddon:scorpion_poison=毒を有効化
+item.spidermanaddon:scorpion_powers=スコーピオンの尾
+
+entity.spidermanaddon:electro_boss.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Electroを召喚
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Silkを召喚
+entity.spidermanaddon:punisher_van.name=パニッシャー・バン
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=パニッシャー・バン
+item.marveladdons:venom_transform=ヴェノムに変身
+item.marveladdons:venom_claw=ヴェノム・クロー
+item.marveladdons:venom_combat=戦闘
+item.marveladdons:venom_powers=Venomの能力
+item.marveladdons:venom_shield=シールド
+item.spidermanaddon:agent_venom_ult=エージェント・ヴェノムの能力
+item.spiderverse:spiderman_undies_suit=スパイダーマンの下着
+item.spiderverse:electro_mask=Electro マスク
+item.spidermanaddon:electro_powers=Electroの能力
+item.spidermanaddon:tarantula_suit=Tarantula スーツ
+item.spidermanaddon:tarantula_mask=Tarantula マスク
+item.spidermanaddon:boomerang_suit=Boomerang スーツ
+item.spidermanaddon:boomerang_mask=Boomerang マスク
+item.spidermanaddon:scorpion_suit=Scorpion スーツ
+item.spidermanaddon:green_goblin_combat=戦闘
+item.spidermanaddon:green_goblin_laser=グリーン・ゴブリンのレーザー
+item.spidermanaddon:hobgoblin_pumpkin_bomb=ホブゴブリンの爆弾
+item.spidermanaddon:black_cat_powers=Black Catの能力
+item.spidermanaddon:spiderman_menu=メニュー
+item.marveladdons:venom_wings=ヴェノムの翼
+item.marveladdons:venom_whip=スイング・ウィップ
+
+marveladdons:itemGroup.name.fabric=布ロール
+marveladdons:itemGroup.name.spray=スプレーペイント
+spidermanaddon:itemGroup.name.powers=スパイダーマンの能力
+spidermanaddon:itemGroup.name.web_shooters=ウェブシューター
+spidermanaddon:itemGroup.name.mask=スパイダーマンのマスク
+spidermanaddon:itemGroup.name.suit=スパイダーマンのスーツ
+spidermanaddon:itemGroup.name.mysterio=Mysterioの武器庫
+spidermanaddon:itemGroup.name.green_goblin=グリーン・ゴブリンの武器庫
+spidermanaddon:itemGroup.name.sandman=Sandmanの武器庫
+spidermanaddon:itemGroup.name.electro=Electroの武器庫
+spidermanaddon:itemGroup.name.black_cat=Black Catの武器庫
+spidermanaddon:itemGroup.name.scorpion=Scorpionの武器庫
+spidermanaddon:itemGroup.name.dr_octopus=Dr. Octopusの武器庫
+spidermanaddon:itemGroup.name.tarantula=Tarantulaの武器庫
+spidermanaddon:itemGroup.name.boomerang=Boomerangの武器庫
+
+entity.spidermanaddon:symbiote_nests.name=シンビオートの巣
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=シンビオートの巣
+
+dialog.black_cat.heal.light=§dBlack Cat:§r シンプルだけど…役に立つわ。私が感謝する姿に慣れないでね。
+dialog.black_cat.heal.meal=§dBlack Cat:§r これなら仲間を気遣ったことになるわ。気が利くじゃない、スパイダー。
+dialog.black_cat.heal.golden=§dBlack Cat:§r 私に金のリンゴ？ あら、誰かさんは私の九つの命を手に入れたいみたいね。
+dialog.black_cat.heal.full=§dBlack Cat:§r これで完璧な気分よ。台無しにしないでね？
+dialog.black_cat.heal.bad=§dBlack Cat:§r 腐った食べ物？ 気をつけて、ダーリン。信頼だって毒されるのよ。
+
+dialog.punisher.heal.light=§8Punisher:§r 補給物資を受け取った。進み続けるには十分だ。
+dialog.punisher.heal.meal=§8Punisher:§r いい食事だ。チームを持ちこたえさせる。
+dialog.punisher.heal.golden=§8Punisher:§r 金のリンゴか。役に立つ。無駄にはしなかったな。
+dialog.punisher.heal.full=§8Punisher:§r 完全回復だ。戦闘に戻る。
+dialog.punisher.heal.bad=§8Punisher:§r それは助けじゃない。判断ミスだ。
+
+dialog.punisher.night.1=§8Punisher:§r 夜は犯罪者に味方する…俺たちにもな。
+dialog.punisher.night.2=§8Punisher:§r 奴らが隠れ家から出てくる時間だ。
+dialog.punisher.night.3=§8Punisher:§r 目を離すな。
+
+dialog.punisher.health.1=§8Punisher:§r もっとひどい傷も負ってきた。
+dialog.punisher.health.2=§8Punisher:§r まだ戦える。
+
+item.spiderverse:electro_no_way_home_suit=Electro: Spider-Man No Way Home スーツ
+item.spiderverse:electro_no_way_home_mask=Electro: Spider-Man No Way Home マスク
+item.spiderverse:electro_tas2_suit=Electro: The Amazing Spider-Man 2 スーツ
+item.spiderverse:electro_tas2_mask=Electro: The Amazing Spider-Man 2 マスク
+
+item.spidermanaddon:electro_laser=エレクトロ・レーザー
+item.spidermanaddon:electro_teleport=テレポート
+item.spidermanaddon:electro_ray=電気磁石
+
+gui.uncle_ben_camera.title=§bカメラモード
+gui.uncle_ben_camera.body=カメラのオプションを選択してください。
+gui.uncle_ben_camera.camera=カメラ
+gui.uncle_ben_camera.poses=ポーズ
+gui.uncle_ben_camera.camera.title=カメラ
+gui.uncle_ben_camera.camera.body=カメラモードを選択してください。
+gui.uncle_ben_camera.camera.free=フリーカメラ
+gui.uncle_ben_camera.camera.selfie=セルフィーモード
+gui.uncle_ben_camera.poses.title=ポーズ
+gui.uncle_ben_camera.poses.body=ポーズを選択してください。
+gui.uncle_ben_camera.poses.disable=ポーズを無効化
+gui.uncle_ben_camera.poses.pose=ポーズ
+
+dialog.punisher.interact.low.1=§8Punisher:§r 一緒に戦うことと友達になることを混同するな。
+dialog.punisher.interact.low.2=§8Punisher:§r 油断しても助けには行かない。
+dialog.punisher.interact.low.3=§8Punisher:§r 信頼できると証明しろ。
+dialog.punisher.interact.low.4=§8Punisher:§r 誰彼かまわず信じて倒れたヒーローを、嫌というほど見てきた。
+dialog.punisher.interact.low.5=§8Punisher:§r 口数を減らせ。目を離すな。
+
+dialog.punisher.interact.high.1=§8Punisher:§r 生き残る術を知っていることは証明したな。
+dialog.punisher.interact.high.2=§8Punisher:§r 滅多に言わないが…よくやった。
+dialog.punisher.interact.high.3=§8Punisher:§r 俺の背中を守れ。お前の背中は俺が守る。
+dialog.punisher.interact.high.4=§8Punisher:§r お前なら状況を変えられると思い始めた。
+dialog.punisher.interact.high.5=§8Punisher:§r 俺たちが共に戦う限り、犯罪者どもに休息はない。
+
+dialog.punisher.follow=§8Punisher:§r あまり離れるな。
+dialog.punisher.free=§8Punisher:§r 何か現れたら俺が始末する。
+
+dialog.punisher.recruit.1=§8Punisher:§r そのIDならアベンジャーズの関係者だと証明できる…一緒にやろう。
+dialog.punisher.recruit.2=§8Punisher:§r 誰の命令でも聞くわけじゃない。だが、お前には機会をやる。
+
+dialog.punisher.respect.1=§8Punisher:§r 学んでいるな。
+dialog.punisher.respect.2=§8Punisher:§r よくやった。
+dialog.punisher.respect.3=§8Punisher:§r お前を信頼し始めている。
+dialog.punisher.respect.4=§8Punisher:§r プロの仕事だ。
+
+dialog.punisher.assist.1=§8Punisher:§r いい射撃だ。その調子でいけ。
+dialog.punisher.assist.2=§8Punisher:§r 思っていたより戦えるな。
+dialog.punisher.assist.3=§8Punisher:§r 今日は奴らに教訓を与えた。
+dialog.punisher.assist.4=§8Punisher:§r お前と組むと仕事が楽になる。
+
+dialog.punisher.respect.25=§8Punisher:§r 何をしているかは分かっているようだな。
+dialog.punisher.respect.50=§8Punisher:§r お前を信頼し始めている。
+dialog.punisher.respect.75=§8Punisher:§r 本物の仲間だと証明したな。
+dialog.punisher.respect.100=§8Punisher:§r 背中を任せる相手が必要になったら、お前を選ぶ。
+
+dialog.punisher.idle.1=§8Punisher:§r 警戒を怠るな。
+dialog.punisher.idle.2=§8Punisher:§r 街は眠らない。
+dialog.punisher.idle.3=§8Punisher:§r 犯罪者は必ず戻ってくる。
+dialog.punisher.idle.4=§8Punisher:§r この静かな時間を無駄にするな。
+dialog.punisher.idle.5=§8Punisher:§r 油断するな。
+
+gui.punisher.interact=インタラクト
+gui.punisher.follow=ついて来る
+gui.punisher.stop_follow=追従をやめる
+gui.punisher.title=The Punisher
+gui.punisher.respect=信頼レベル:
+
+dialog.punisher.enemy.1=§8Punisher:§r いたぞ…見失うな。
+dialog.punisher.enemy.2=§8Punisher:§r お客さんだ。
+dialog.punisher.enemy.3=§8Punisher:§r 街を掃除する時間だ。
+
+dialog.punisher.owner_hit.1=§8Punisher:§r 攻撃を制御しろ。味方から攻撃されるためにいるんじゃない。
+dialog.punisher.owner_hit.2=§8Punisher:§r 判断ミスだ。次は敵を狙え。
+dialog.punisher.owner_hit.3=§8Punisher:§r そのミスは信頼を失わせる。規律を守れ。
+
+menu.punisher.body.low_respect=パニッシャーは警戒しながらあなたを見ている。まだ完全には信頼していない。
+menu.punisher.body.high_respect=パニッシャーは自信に満ちた笑みで近づいてくる。あなたと一緒にいることを楽しんでいるようだ。
+
+item.marveladdons:avengers_id_card=アベンジャーズの身分証明書。
+
+dialog.black_cat.enemy.1=§dBlack Cat:§r 近くにお客さんよ。チップをくれるタイプには見えないけど。
+dialog.black_cat.enemy.2=§dBlack Cat:§r 近くで何かが動いてる…ウェブを準備して、スパイダー。
+dialog.black_cat.enemy.3=§dBlack Cat:§r 私たちだけじゃないわ。近くの怪物が夜を台無しにしてる。
+
+dialog.black_cat.owner_hit.1=§dBlack Cat:§r 今のは攻撃？ それとも私の気を引く最悪の方法？
+dialog.black_cat.owner_hit.2=§dBlack Cat:§r 気をつけて、スパイダー。間違った爪は信頼まで壊すのよ。
+dialog.black_cat.owner_hit.3=§dBlack Cat:§r そんな扱いをするなら、また一人で仕事した方がよさそうね。
+
+dialog.black_cat.approach.low.1=§dBlack Cat:§r あら、誰かと思えば。助けに来たの？ それとも格好よく邪魔しに来た？
+dialog.black_cat.approach.low.2=§dBlack Cat:§r はしゃがないで。まだパートナーじゃないわ。でも今のところは隣を歩いてもいい。
+dialog.black_cat.approach.low.3=§dBlack Cat:§r 信頼が欲しいなら勝ち取って。私の九つの命はただじゃないの。
+
+dialog.black_cat.approach.high.1=§dBlack Cat:§r いたのね、スパイダー。今夜は退屈になるかと思ってたわ。
+dialog.black_cat.approach.high.2=§dBlack Cat:§r ちょうどいいところね。私がいるとトラブルはもっと楽しくなるの。
+dialog.black_cat.approach.high.3=§dBlack Cat:§r こうやって現れるの、好きよ。街が少しだけ危険じゃなく見える…ほんの少しね。
+
+dialog.black_cat.play_night.end.1=§dBlack Cat:§r あのスーツ、もうあなたには似合ってなかったと思うわ。
+dialog.black_cat.play_night.end.2=§dBlack Cat:§r おはよう…ずいぶん深く眠ってたわね。
+dialog.black_cat.play_night.end.3=§dBlack Cat:§r 気にしないでね…クローゼットから少し借りたの。
+dialog.black_cat.play_night.end.4=§dBlack Cat:§r そんな顔しないで…その姿、可愛いわよ。
+dialog.black_cat.play_night.end.5=§dBlack Cat:§r これで私たちだけの小さな秘密ができたわね。
+dialog.black_cat.play_night.end.6=§dBlack Cat:§r 今夜は忘れられない夜になったみたいね。
+
+dialog.black_cat.play_night.start.1=§dBlack Cat:§r 今夜は…あなたは私だけのもの。
+dialog.black_cat.play_night.start.2=§dBlack Cat:§r 今夜だけはヴィランのことを忘れましょう。
+dialog.black_cat.play_night.start.3=§dBlack Cat:§r こっちへ来て…特別なものを用意したの。
+dialog.black_cat.play_night.start.4=§dBlack Cat:§r 心配しないで…おとなしくするって約束するわ。
+dialog.black_cat.play_night.start.5=§dBlack Cat:§r これまでいろいろあったし…あなたにはその資格があるわ。
+dialog.black_cat.play_night.start.6=§dBlack Cat:§r そんなに見つめないで…こっちへ来て。
+
+dialog.black_cat.theft.1=§dBlack Cat:§r あら…それ、あなたのだった？
+dialog.black_cat.theft.2=§dBlack Cat:§r 借りておくわ…返すかもしれないけど。
+dialog.black_cat.theft.3=§dBlack Cat:§r 遅すぎるわ、スパイダー。
+dialog.black_cat.theft.4=§dBlack Cat:§r 本当に私が気づかないと思ったの？
+dialog.black_cat.theft.5=§dBlack Cat:§r 捕まえられるなら捕まえてみて！
+dialog.black_cat.theft.6=§dBlack Cat:§r あなたはいつも楽しくしてくれるわね。
+
+dialog.black_cat.play_night.betrayal.1=§dBlack Cat:§r 楽しい夜だったわ、スパイダー…でも楽しさと忠誠を混同しないで。
+dialog.black_cat.play_night.betrayal.2=§dBlack Cat:§r 泥棒を信じるのは危険だって言ったでしょ。思い出をありがとう…それ以外も全部ね。
+dialog.black_cat.play_night.betrayal.3=§dBlack Cat:§r 個人的に受け取らないで、ダーリン。侵入して、盗んで、消える。それが私の本性なの。
+
+menu.black_cat.play_night=楽しい夜！
+dialog.black_cat.play_night.ready=ブラックキャットはあなたと特別な夜を過ごす準備ができているようだ。
+menu.black_cat.play_night=Play Night
+menu.black_cat.aspect.spiderman_suit=Black Cat Spider-Man Suit
+menu.black_cat.aspect=スキン
+menu.black_cat.aspect.title=ブラックキャットのスキン
+menu.black_cat.aspect.body=ブラックキャットが使用するスキンを選択してください。
+menu.black_cat.aspect.default=Black Cat
+menu.black_cat.aspect.symbiont=シンビオート・ブラックキャット
+menu.black_cat.aspect.rivals=Black Cat Marvel Rivals
+menu.black_cat.aspect.locked=%s [ロック中]
+dialog.black_cat.aspect.locked=そのスキンを使うほど、まだあなたを信頼していない。
+dialog.black_cat.aspect.changed=ブラックキャットがスキンを変更した。
+
+dialog.black_cat.assist.1=§dBlack Cat:§r 悪くなかったわ。戦いでは役に立つみたいね。
+dialog.black_cat.assist.2=§dBlack Cat:§r いい一撃ね。もう少しで感心するところだったわ。
+dialog.black_cat.assist.3=§dBlack Cat:§r 私たち、いいチームね…はしゃがないでよ。
+dialog.black_cat.assist.4=§dBlack Cat:§r 認めるわ。今のはエレガントだった。
+
+dialog.black_cat.try_tame=§dBlack Cat:§r 私と組みたいなら、エメラルドを使って。
+menu.black_cat.title=Black Cat
+
+menu.black_cat.respect=信頼度:
+menu.black_cat.interact=インタラクト
+menu.black_cat.follow_me=ついて来る
+menu.black_cat.stop_following=追従をやめる
+
+menu.black_cat.body.low_respect=ブラックキャットは警戒しながらあなたを見ている。まだ完全には信頼していない。
+menu.black_cat.body.high_respect=ブラックキャットは自信に満ちた笑みで近づいてくる。あなたと一緒にいることを楽しんでいるようだ。
+
+dialog.black_cat.low_respect.1=§dBlack Cat:§r 勘違いしないで。まだあなたを信頼してないわ。
+dialog.black_cat.low_respect.2=§dBlack Cat:§r 失敗しても二度は助けないわよ。
+dialog.black_cat.low_respect.3=§dBlack Cat:§r あなたは役に立つ…今のところはね。
+dialog.black_cat.low_respect.4=§dBlack Cat:§r 後悔させる理由を作らないで。
+dialog.black_cat.low_respect.5=§dBlack Cat:§r 長い間一人でやってきたの。台無しにしないで。
+dialog.black_cat.low_respect.6=§dBlack Cat:§r 才能はあるけど、問題も多いわね。
+dialog.black_cat.low_respect.7=§dBlack Cat:§r 油断しないで。私もしないから。
+dialog.black_cat.low_respect.8=§dBlack Cat:§r いつか私の信頼を勝ち取れるかもしれないわね。
+
+dialog.black_cat.high_respect.1=§dBlack Cat:§r あなたと働くの、好きよ。小さなクモちゃん。
+dialog.black_cat.high_respect.2=§dBlack Cat:§r センスはあるわ。私ほどじゃないけど、惜しいわね。
+dialog.black_cat.high_respect.3=§dBlack Cat:§r あなたなら信頼できると思ってたわ。
+dialog.black_cat.high_respect.4=§dBlack Cat:§r 認めるわ。あなたがいるともっと楽しい。
+dialog.black_cat.high_respect.5=§dBlack Cat:§r よくやったわ。もう少しで感心するところだった。
+dialog.black_cat.high_respect.6=§dBlack Cat:§r あなたがいると、退屈じゃなくなるわ。
+dialog.black_cat.high_respect.7=§dBlack Cat:§r はしゃがないで。でも会えて嬉しいわ。
+dialog.black_cat.high_respect.8=§dBlack Cat:§r 私の背中を守って。あなたの背中は私が守るわ。
+
+dialog.black_cat.follow_me=§dBlack Cat:§r いいわ、一緒に行く。でもそんなにゆっくり歩かないで。
+dialog.black_cat.stop_following=§dBlack Cat:§r いいわ、ここにいる。あまり寂しがらないでね。
+dialog.black_cat.not_owner=§dBlack Cat:§r ごめんなさい、ダーリン。私はあなたのために働いてないの。
+
+entity.spidermanaddon:black_cat.name=Black Cat
+action.interact.black_cat=インタラクト
+item.spidermanaddon:black_cat_contract.name=ブラックキャットの契約書
+dialog.black_cat.stolen=§dBlack Cat:§r ダイヤモンドをありがとう。返してほしいなら…捕まえてみて。
+dialog.black_cat.captured=§dBlack Cat:§r いいわ…思っていたより速いことは認める。
+dialog.black_cat.escape=§dBlack Cat:§r 遅すぎるわ、スパイダー。また今度ね。
+dialog.black_cat.need_contract=§dBlack Cat:§r 私がタダで働くと思ってる？ もっといい条件を持ってきて。
+dialog.black_cat.recruited=§dBlack Cat:§r いいわ…一緒に働く。でもルールに従うとは思わないで。
+item.spidermanaddon:uncle_ben_camera=ベンおじさんのカメラ
+
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+action.interact.j_jonah_jameson=話す
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=ジェイムソンが机の向こうから疑わしそうにあなたを見る。
+menu.j_jonah_jameson.interact=インタラクト
+menu.j_jonah_jameson.sell_picture=写真を売る
+menu.j_jonah_jameson.close=閉じる
+
+dialogue.j_jonah_jameson.random.1=スパイダーマンは脅威だ！ マスクをかぶった脅威だ！
+dialogue.j_jonah_jameson.random.2=スパイダーマンの写真が欲しいんだ。言い訳はいらん！
+dialogue.j_jonah_jameson.random.3=あの壁を這う男が現れたら、独占写真を俺の机に置け。
+dialogue.j_jonah_jameson.random.4=街に必要なのは本物のニュースだ。屋根を飛び回るヒーローじゃない。
+dialogue.j_jonah_jameson.random.5=パーカー！ 待て…お前はパーカーじゃないな。まあいい、とにかく急げ。
+
+dialogue.j_jonah_jameson.sell_picture=写真はひどい、アングルも最悪、スパイダーマンは相変わらず脅威に見える…だが使える。インゴット10個を持っていけ。
+dialogue.j_jonah_jameson.no_picture=空気を売りに来たのか？ 本物のスパイダーマンの写真を持って出直せ！
+
+item.minecraft:planks=木材
+item.minecraft:glowstone_dust=グロウストーンダスト
+item.minecraft:redstone=レッドストーン
+item.minecraft:diamond=ダイヤモンド
+item.minecraft:copper_ingot=銅インゴット
+item.minecraft:amethyst_shard=アメジストの欠片
+item.minecraft:quartz=ネザークォーツ
+item.minecraft:netherite_ingot=Netheritaインゴット
+item.minecraft:gold_ingot=金インゴット
+item.minecraft:iron_ingot=鉄インゴット
+item.minecraft:emerald=エメラルド
+item.marveladdons:iron_arms=アイアン・スパイダー・アーム
+
+ui.spiderman_accessories.title=アクセサリー製作
+ui.spiderman_accessories.body=製作するアクセサリーを選択してください。
+ui.spiderman_accessories.selected_accessory=選択したアクセサリー
+ui.spiderman_accessories.crafted=製作しました:
+
+ui.laboratory_workbench.upgrades_menu=スパイダーマンの能力を強化
+ui.laboratory_workbench.upgrades_body=強化する能力を選択してください。
+ui.laboratory_workbench.accessories=アクセサリー製作
+ui.laboratory_workbench.accessories_coming_soon=アクセサリー製作は後日利用可能になります。
+ui.laboratory_workbench.back=戻る
+
+ui.spiderman_suits.next_unlock=次の解除
+
+gui.spidermanaddon.spiderman_level_up=スパイダーマンがレベル%1になりました！
+gui.spidermanaddon.spiderman_max_level=スパイダーマンの最大レベルに到達しました。
+ui.spiderman_suits.title=スーツ研究所
+ui.spiderman_suits.body=製作するスーツを選択してください。
+ui.spiderman_suits.level=スパイダーマンのレベル
+ui.spiderman_suits.locked=ロック中
+ui.spiderman_suits.need_level=必要なスパイダーマンレベル
+ui.spiderman_suits.selected_suit=選択したスーツ
+ui.spiderman_suits.required_level=必要レベル
+ui.spiderman_suits.required_materials=必要素材
+ui.spiderman_suits.result=結果
+ui.spiderman_suits.mask_included=このスーツにはマスクが含まれています。
+ui.spiderman_suits.craft=クラフト
+ui.spiderman_suits.missing_materials=素材不足
+ui.spiderman_suits.cancel=キャンセル
+ui.spiderman_suits.no_materials=素材が足りません。
+ui.spiderman_suits.crafted=製作しました:
+
+ui.laboratory_workbench.suits=スーツ製作
+
+ui.spiderman_suits.title=スーツ研究所
+ui.spiderman_suits.body=製作するスーツを選択してください。
+
+item.marveladdons:blue_spray=§9青のスプレーペイント
+item.marveladdons:brown_spray=§6茶色のスプレーペイント
+item.marveladdons:cyan_spray=§3シアンのスプレーペイント
+item.marveladdons:gray_spray=§8灰色のスプレーペイント
+item.marveladdons:green_spray=§2緑のスプレーペイント
+item.marveladdons:light_blue_spray=§b青 ライトのスプレーペイント
+item.marveladdons:light_gray_spray=§7灰色 ライトのスプレーペイント
+item.marveladdons:lime_spray=§aライムのスプレーペイント
+item.marveladdons:magenta_spray=§dマゼンタのスプレーペイント
+item.marveladdons:orange_spray=§6オレンジのスプレーペイント
+item.marveladdons:pink_spray=§dピンクのスプレーペイント
+item.marveladdons:purple_spray=§5紫のスプレーペイント
+item.marveladdons:red_spray=§c赤のスプレーペイント
+item.marveladdons:white_spray=§f白のスプレーペイント
+item.marveladdons:yellow_spray=§e黄色のスプレーペイント
+item.marveladdons:black_spray=黒のスプレーペイント
+
+item.marveladdons:white_fabric=§f白の布ロール
+item.marveladdons:light_gray_fabric=§7灰色 ライトの布ロール
+item.marveladdons:gray_fabric=§8灰色の布ロール
+item.marveladdons:black_fabric=黒の布ロール
+item.marveladdons:red_fabric=§c赤の布ロール
+item.marveladdons:orange_fabric=§6オレンジの布ロール
+item.marveladdons:yellow_fabric=§e黄色の布ロール
+item.marveladdons:lime_fabric=§aライムの布ロール
+item.marveladdons:green_fabric=§2緑の布ロール
+item.marveladdons:cyan_fabric=§3シアンの布ロール
+item.marveladdons:light_blue_fabric=§b青 ライトの布ロール
+item.marveladdons:blue_fabric=§9青の布ロール
+item.marveladdons:purple_fabric=§5紫の布ロール
+item.marveladdons:magenta_fabric=§dマゼンタの布ロール
+item.marveladdons:pink_fabric=§dピンクの布ロール
+item.marveladdons:brown_fabric=§6茶色の布ロール
+item.marveladdons:glasses=§fマスク用レンズ
+itemGroup.name.spray=§6スプレーペイント
+itemGroup.name.fabric=§b布ロール
+
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Black Catを召喚
+entity.spidermanaddon:punisher.name=Punisher
+item.spawn_egg.entity.spidermanaddon:punisher.name=Punisherを召喚
+entity.spidermanaddon:electro.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro.name=Electroを召喚
+entity.spidermanaddon:mano_ninja.name=ザ・ハンドの忍者
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=ザ・ハンドの忍者を召喚
+entity.spidermanaddon:scorpion.name=Scorpion
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Scorpionを召喚
+entity.spidermanaddon:tarantula.name=Tarantula
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Tarantulaを召喚
+entity.spidermanaddon:symbiotes.name=シンビオート
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=シンビオートを召喚
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Kravenを召喚
+entity.spidermanaddon:mayor_fisk.name=Kingpin
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Kingpinを召喚
+entity.spidermanaddon:boomerang.name=Boomerang
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Boomerangを召喚
+
+item.spidermanaddon:miles_morales_venom_punch=ヴェノム・パンチ
+item.spidermanaddon:miles_morales_sensor=スキャン
+item.spidermanaddon:miles_morales_invisibility=透明化
+item.spidermanaddon:miles_morales_focus=集中
+item.spidermanaddon:miles_morales_venom_punch=ヴェノム・パンチ
+item.spidermanaddon:miles_morales_venom_jump=ヴェノム・ジャンプ
+item.spidermanaddon:miles_morales_venom_smash=ヴェノム・スマッシュ
+item.spidermanaddon:miles_morales_combat=戦闘
+
+message.spiderman_resistance.shield=スパイダー耐性が土壇場であなたを守りました。
+
+ui.laboratory_workbench.title=研究室の作業台
+ui.laboratory_workbench.body=スパイダーマン能力のアップグレードを選択してください。
+
+ui.laboratory_workbench.health=体力: レベル %s/%s
+ui.laboratory_workbench.resistance=耐久力: レベル %s/%s
+ui.laboratory_workbench.focus=集中: レベル %s/%s
+
+ui.laboratory_workbench.health.title=体力を強化
+ui.laboratory_workbench.resistance.title=耐久力を強化
+ui.laboratory_workbench.focus.title=集中を強化
+
+ui.laboratory_workbench.health.body=現在のレベル: %s/%s\nコスト: 部品%s個\n\n体力を強化しますか？
+ui.laboratory_workbench.resistance.body=現在のレベル: %s/%s\nコスト: 部品%s個\n\n耐久力を強化しますか？
+ui.laboratory_workbench.focus.body=現在のレベル: %s/%s\nコスト: 部品%s個\n\n集中を強化しますか？
+
+ui.laboratory_workbench.upgrade=アップグレード
+ui.laboratory_workbench.cancel=キャンセル
+
+ui.laboratory_workbench.no_components=部品が足りません。%s個必要です。
+ui.laboratory_workbench.max_level=このアップグレードはすでに最大レベルです。
+
+ui.laboratory_workbench.health.success=体力をレベル%sに強化しました。
+ui.laboratory_workbench.resistance.success=耐久力をレベル%sに強化しました。
+ui.laboratory_workbench.focus.success=集中をレベル%sに強化しました。
+
+item.spiderverse:spiderman_rivals_mask=Spider-Man: Rivals マスク
+item.spiderverse:spiderman_rivals_suit=Spider-Man: Rivals スーツ
+item.spiderverse:spiderman_2099_white_mask=スパイダーマン2099 ホワイト・マスク
+item.spiderverse:spiderman_2099_white_suit=スパイダーマン2099 ホワイト・スーツ
+item.spiderverse:spiderman_brand_new_day_mask=スパイダーマン：ブランニュー・デイ・マスク
+item.spiderverse:spiderman_brand_new_day_suit=スパイダーマン：ブランニュー・デイ・スーツ
+item.spiderverse:spider_oni_mask=Spider-Oni マスク
+item.spiderverse:spider_oni_suit=Spider-Oni スーツ
+item.spiderverse:spiderman_black_gold_mask=スパイダーマン ブラック＆ゴールド・マスク
+item.spiderverse:spiderman_black_gold_suit=スパイダーマン ブラック＆ゴールド・スーツ
+item.spiderverse:spiderman_mk1_mask=Spider-Man MK I マスク
+item.spiderverse:spiderman_mk1_suit=Spider-Man MK I スーツ
+item.spiderverse:spiderman_mk2_mask=Spider-Man MK II マスク
+item.spiderverse:spiderman_mk2_suit=Spider-Man MK II スーツ
+item.spiderverse:spiderman_mk3_mask=Spider-Man MK III マスク
+item.spiderverse:spiderman_mk3_suit=Spider-Man MK III スーツ
+item.spiderverse:spiderman_mk4_mask=Spider-Man MK IV マスク
+item.spiderverse:spiderman_mk4_suit=Spider-Man MK IV スーツ
+item.spiderverse:spiderman_miles_morales_2099_mask=Spider-Man: Miles Morales 2099 マスク
+item.spiderverse:spiderman_miles_morales_2099_suit=Spider-Man: Miles Morales 2099 スーツ
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Spider-Man: Miles Morales - Purple Reign マスク
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Spider-Man: Miles Morales - Purple Reign スーツ
+item.spiderverse:silk_web_mask=シルク：ウェブ・スーツ・マスク
+item.spiderverse:silk_web_suit=シルク：ウェブ・スーツ
+item.spiderverse:scarlet_spider_2_mask=Scarlet Spider II マスク
+item.spiderverse:scarlet_spider_2_suit=Scarlet Spider II スーツ
+item.spiderverse:spiderman_dark_mask=Spider-Man ダーク マスク
+item.spiderverse:spiderman_dark_suit=Spider-Man ダーク スーツ
+item.spiderverse:spiderman_into_the_spiderverse_mask=Spider-Man: Into the Spider-Verse マスク
+item.spiderverse:spiderman_into_the_spiderverse_suit=Spider-Man: Into the Spider-Verse スーツ
+item.spiderverse:spiderman_miles_morales_2020_mask=Miles Morales 2020 マスク
+item.spiderverse:spiderman_miles_morales_2020_suit=Miles Morales 2020 スーツ
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Miles Morales 2020 マスク
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Miles Morales 2020 スーツ
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Miles Morales 2020 マスク
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Miles Morales 2020 スーツ
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Miles Morales 2020 マスク
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Miles Morales 2020 スーツ
+item.spiderverse:spiderman_blue_mask=Spider-Man 青 マスク
+item.spiderverse:spiderman_blue_suit=Spider-Man 青 スーツ
+item.spiderverse:spiderman_antivenom_classic_mask=スパイダーマン クラシック・アンチヴェノム・マスク
+item.spiderverse:spiderman_antivenom_classic_suit=スパイダーマン クラシック・アンチヴェノム・スーツ
+item.spiderverse:poison_mask=Spider-Man: Poison マスク
+item.spiderverse:poison_suit=Spider-Man: Poison スーツ
+item.spiderverse:spiderman_king_in_black_mask=Spider-Man: King in Black マスク
+item.spiderverse:spiderman_king_in_black_suit=Spider-Man: King in Black スーツ
+item.spiderverse:spidergwen_symbiont_mask=Gwenom マスク
+item.spiderverse:spidergwen_symbiont_suit=Gwenom スーツ
+item.spiderverse:spiderman_zombie_black_mask=シンビオート・ゾンビ・スパイダーマン・マスク
+item.spiderverse:spiderman_zombie_black_suit=シンビオート・ゾンビ・スパイダーマン・スーツ
+item.spiderverse:spiderman_zombie_mask=ゾンビ・スパイダーマン・マスク
+item.spiderverse:spiderman_zombie_suit=ゾンビ・スパイダーマン・スーツ
+item.spiderverse:arachknight_mask=Arachknight マスク
+item.spiderverse:arachknight_suit=Arachknight スーツ
+item.spiderverse:spiderman_cyborg_mask=Spider-Man Cyborg マスク
+item.spiderverse:spiderman_cyborg_suit=Spider-Man Cyborg スーツ
+item.spiderverse:spider_carnage_mask=Spider-Carnage マスク
+item.spiderverse:spider_carnage_suit=Spider-Carnage スーツ
+item.spiderverse:punisher_spiderman_mask=Spider-Punisher マスク
+item.spiderverse:punisher_spiderman_suit=Spider-Punisher スーツ
+item.spiderverse:assassin_spiderman_mask=アサシン・スパイダーマン・マスク
+item.spiderverse:assassin_spiderman_suit=アサシン・スパイダーマン・スーツ
+item.spiderverse:mayday_parker_black_mask=シンビオート・メイデイ・パーカー・マスク
+item.spiderverse:mayday_parker_black_suit=シンビオート・メイデイ・パーカー・スーツ
+item.spiderverse:mayday_parker_mask=Mayday Parker マスク
+item.spiderverse:mayday_parker_suit=Mayday Parker スーツ
+item.spiderverse:spiderman_classic_black_red_spider_mask=シンビオート・スパイダーマン・マスク（レッド・スパイダー）
+item.spiderverse:spiderman_classic_black_red_spider_suit=シンビオート・スパイダーマン・スーツ（レッド・スパイダー）
+item.spidermanaddon:agent_venom_powers=エージェント・ヴェノムの能力
+item.spidermanaddon:agent_venom_fusil=アサルトライフル
+item.spidermanaddon:agent_venom_missiles=ロケットランチャー
+item.spidermanaddon:agent_venom_pistols=ピストル
+item.marveladdons:venom_item=シンビオート
+
+gui.spidermanaddon.black=黒
+gui.spidermanaddon.white=白
+gui.spidermanaddon.dark_blue=濃い青
+gui.spidermanaddon.light_blue=水色
+gui.spidermanaddon.snow=雪
+gui.spidermanaddon.purple=紫
+gui.spidermanaddon.red=赤
+
+gui.spidermanaddon.symbiont_color=シンビオートの色
+gui.spidermanaddon.symbiont_color_body=シンビオートの色を選択してください
+gui.spidermanaddon.symbiont_color_changed=シンビオートの色を変更しました
+gui.spidermanaddon.symbiont_wings=シンビオートの翼
+gui.spidermanaddon.symbiont_wings_body=シンビオートの翼を有効または無効にします
+gui.spidermanaddon.symbiont_wings_enable=翼を有効化
+gui.spidermanaddon.symbiont_wings_disable=翼を無効化
+gui.spidermanaddon.symbiont_wings_enabled=翼を有効化しました
+gui.spidermanaddon.symbiont_wings_disabled=翼を無効化しました
+
+gui.spidermanaddon.agent_venom_suits=エージェント・ヴェノムのスーツ
+gui.spidermanaddon.agent_venom_suits_body=エージェント・ヴェノム専用スーツを選択してください
+gui.spidermanaddon.agent_venom_suit_unlocked=エージェント・ヴェノムのスーツを解除しました
+item.spidermanaddon:agent_venom_thunderbolts_mask=エージェント・ヴェノム：サンダーボルツ・マスク
+item.spidermanaddon:agent_venom_thunderbolts_suit=エージェント・ヴェノム：サンダーボルツ・スーツ
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=エージェント・ヴェノム：ハリー・オズボーン・マスク（スパイダーエンブレム付き）
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=エージェント・ヴェノム：ハリー・オズボーン・スーツ（スパイダーエンブレム付き）
+item.spidermanaddon:agent_venom_spiderman2_mask=エージェント・ヴェノム：ハリー・オズボーン・マスク
+item.spidermanaddon:agent_venom_spiderman2_suit=エージェント・ヴェノム：ハリー・オズボーン・スーツ
+item.spidermanaddon:agent_anti_venom_mask=エージェント・アンチヴェノム・マスク
+item.spidermanaddon:agent_anti_venom_suit=エージェント・アンチヴェノム・スーツ
+item.spidermanaddon:agent_venom_mask=エージェント・ヴェノム・マスク
+item.spidermanaddon:agent_venom_suit=エージェント・ヴェノム・スーツ
+
+gui.spidermanaddon.symbiont_skins=スキン
+gui.spidermanaddon.symbiont_skins_body=ヴェノムのスキンを選択してください
+gui.spidermanaddon.symbiont_skin_need_capsule=このスキンの解除にはシンビオート・カプセルが必要です
+gui.spidermanaddon.symbiont_skin_unlocked=スキンを解除しました
+gui.spidermanaddon.symbiont_skin_changed=スキンを変更しました
+gui.spidermanaddon.symbiont_venom_required=ヴェノムに変身している必要があります
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=エージェント・ヴェノムを有効化しました
+gui.spidermanaddon.symbiont_agent_venom_disabled=エージェント・ヴェノムを無効化しました
+gui.spidermanaddon.symbiont_agent_venom_deactivate=エージェント・ヴェノムを無効化
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=エージェント・ヴェノムを無効化しますか？
+gui.spidermanaddon.symbiont_venom_enabled=ヴェノム変身を有効化しました
+gui.spidermanaddon.symbiont_venom_disabled=ヴェノム変身を無効化しました
+gui.spidermanaddon.symbiont_venom_deactivate=ヴェノム変身を無効化
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=ヴェノム変身を無効化しますか？
+gui.spidermanaddon.symbiont_venom_incompatible=共生と互換性がありません。脚スロットを空にしてください。
+
+item.spidermanaddon:venom_rage=レイジモード
+item.marveladdons:venom_cellular_corrosion=細胞腐食
+item.marveladdons:venom_eat=捕食
+item.marveladdons:venom_axe=シンビオート・アックス
+item.marveladdons:venom_knife_whip=シンビオート・ナイフ
+item.marveladdons:venom_explotion=シンビオート・ブラスト
+
+gui.spidermanaddon.symbiont_deactivate=シンビオートを無効化
+gui.spidermanaddon.symbiont_deactivate_confirm=シンビオート能力を無効にしますか？
+gui.spidermanaddon.symbiont_powers_enabled=シンビオート能力を有効化
+gui.spidermanaddon.symbiont_powers_disabled=シンビオート能力を無効化
+gui.spidermanaddon.confirm=確認
+gui.spidermanaddon.cancel=キャンセル
+gui.spidermanaddon.symbiont_menu_body=ヴェノム・シンビオート・システム
+gui.spidermanaddon.symbiont_progress=進行状況を見る
+gui.spidermanaddon.symbiont_activate=シンビオートを有効化
+gui.spidermanaddon.symbiont_unlock_suit=スーツを解除
+gui.spidermanaddon.symbiont_unlock_suit_body=利用可能なシンビオート・スーツを選択してください
+gui.spidermanaddon.symbiont_level=レベル
+gui.spidermanaddon.symbiont_exp=経験値
+gui.spidermanaddon.symbiont_powers=シンビオート能力を有効化
+gui.spidermanaddon.symbiont_venom=ヴェノムに変身
+gui.spidermanaddon.symbiont_venom_locked=ヴェノムに変身 §cロック中
+gui.spidermanaddon.symbiont_agent_venom=エージェント・ヴェノム
+gui.spidermanaddon.symbiont_agent_venom_locked=エージェント・ヴェノム §cロック中
+gui.spidermanaddon.symbiont_suit_missing=スーツ一式を装備する必要があります
+gui.spidermanaddon.symbiont_suit_unlocked=シンビオート・スーツを解除しました
+gui.spidermanaddon.symbiont_bonded=あなたはヴェノム・シンビオートの宿主になりました
+gui.spidermanaddon.not_symbiont_host=あなたはシンビオートの宿主ではありません
+gui.spidermanaddon.back=戻る
+
+gui.spidermanaddon.symbiont_rank_0=宿主
+gui.spidermanaddon.symbiont_rank_1=結合済み
+gui.spidermanaddon.symbiont_rank_2=怒れる宿主
+gui.spidermanaddon.symbiont_rank_3=リーサル・プロテクター
+gui.spidermanaddon.symbiont_rank_4=完全適応
+gui.spidermanaddon.symbiont_rank_5=エージェント・ヴェノム
+gui.spidermanaddon.symbiont_rank_6=生ける武器庫
+gui.spidermanaddon.symbiont_rank_7=Anti-Venom
+gui.spidermanaddon.symbiont_rank_8=完全結合
+gui.spidermanaddon.symbiont_rank_9=王の翼
+gui.spidermanaddon.symbiont_rank_10=キング・イン・ブラック
+
+item.spidermanaddon:black_cat_whip_thef=フォーチュン・グラップリングフック
+item.spidermanaddon:black_cat_whip_claws=クロー・ウィップ
+item.spidermanaddon:black_cat_swing=スイング・フック
+item.spidermanaddon:black_cat_claws=クロー攻撃
+
+item.spidermanaddon:mysterio_gas=幻覚ガス
+item.spidermanaddon:mysterio_powers=Mysterioの能力
+item.spidermanaddon:mysterio_invoke=デコイを展開
+item.spidermanaddon:mysterio_drones=攻撃ドローン
+item.spidermanaddon:mysterio_laser=ミステリオ・ビーム
+item.spidermanaddon:mysterio_clones=クローンを召喚
+item.spiderverse:mysterio_far_from_home_suit=Mysterio: Far From Home スーツ
+item.spiderverse:mysterio_far_from_home_helmet=ミステリオのヘルメット：ファー・フロム・ホーム
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=グリーン・ゴブリンの追尾爆発ブレード
+item.spidermanaddon:pumpkin_knife_guide=グリーン・ゴブリンの追尾ブレード
+item.spidermanaddon:green_goblin_powers=グリーン・ゴブリンの能力
+item.spidermanaddon:green_goblin_raimi_blades=グリーン・ゴブリンの格納式ブレード
+item.spidermanaddon:green_goblin_spiderman3_blades=グリーン・ゴブリンのブレード
+item.spiderverse:green_goblin_spiderman3_suit=グリーン・ゴブリン - Spider-Man 3 スーツ
+item.spiderverse:green_goblin_spiderman3_mask=グリーン・ゴブリン - Spider-Man 3 マスク
+item.spiderverse:green_goblin_no_way_home_suit=グリーン・ゴブリン - Spider-Man: No Way Home スーツ
+item.spiderverse:green_goblin_no_way_home_mask=グリーン・ゴブリン - Spider-Man: No Way Home マスク
+item.spidermanaddon:planeador_spiderman3_item=グリーン・ゴブリンのグライダー
+entity.spidermanaddon:planeador_spiderman3.name=グリーン・ゴブリンのグライダー
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=グリーン・ゴブリンのグライダー
+
+gui.spidermanaddon.confirm_upgrade=ウェブシューターを強化
+gui.spidermanaddon.upgrade_cost=このウェブシューターの強化には部品が10個必要です
+gui.spidermanaddon.upgrade=アップグレード
+gui.spidermanaddon.max_level=このウェブシューターはすでに最大レベルです
+gui.spidermanaddon.upgraded=ウェブシューターを強化しました
+gui.spidermanaddon.not_enough_components=部品が足りません
+
+gui.spidermanaddon.no_upgrades=強化可能なウェブシューターが必要です。
+gui.spidermanaddon.upgrade_menu=ウェブシューターを強化
+gui.spidermanaddon.select_upgrade=ウェブシューターを選択
+gui.spidermanaddon.confirm_remove=部品を5個回収しますか？
+gui.spidermanaddon.remove=削除
+gui.spidermanaddon.shooter_removed=ウェブシューターを削除しました
+gui.spidermanaddon.cannot_remove_equipped=装備中のウェブシューターは削除できません
+
+gui.spidermanaddon.upgrade_shooter=ウェブシューターを強化
+gui.spidermanaddon.remove_shooter=ウェブシューターを削除
+gui.spidermanaddon.settings=ウェブシューターを設定
+
+gui.spidermanaddon.confirm_unlock=ウェブシューターを解除
+gui.spidermanaddon.unlock_cost=部品が10個必要です
+gui.spidermanaddon.unlock=解除
+gui.spidermanaddon.cancel=キャンセル
+gui.spidermanaddon.not_enough_components=部品が足りません
+gui.spidermanaddon.unlocked=ウェブシューターを解除しました
+
+gui.spidermanaddon.select_unlock=ウェブシューターを選択
+gui.spidermanaddon.unlock_menu=ウェブシューターを解除
+gui.spidermanaddon:web_shot=ウェブシューター
+gui.spidermanaddon.loadout=§cウェブシューター装備
+gui.spidermanaddon.web_shooter_loadout=ウェブシューターを装備
+gui.spidermanaddon.empty=§c空
+gui.spidermanaddon.config=§aウェブシューターを設定しました。
+gui.spidermanaddon.no_info=§c情報が見つかりません。
+
+spidermanaddon.web_line.no_build=§c30ブロック以内に2つ目の端点がありません。
+spidermanaddon.web_line.empty=§c液体が足りません。
+
+item.spidermanaddon:web_shield=ウェブ・シールド
+item.spidermanaddon:web_whip=ウェブ・フック
+item.spidermanaddon:web_line=ウェブ・ライン
+item.spidermanaddon:web_bomb=ウェブ・グレネード
+item.spidermanaddon:spider_drone=Spider-Drone
+item.spidermanaddon:web_hook=ウェブ・フック
+
+item.mzaddon:spider_web_cartridge=ウェブ・カートリッジ
+item.spidermanaddon:spiderman_spin_punch=回転攻撃
+item.spidermanaddon:spiderman_kick=飛び蹴り
+item.spidermanaddon:spiderman_focus=集中
+item.spidermanaddon:spiderman_sensor=スキャン
+item.spidermanaddon:spiderman_punch=パンチ
+item.spidermanaddon:spiderman_combat=戦闘
+
+item.spiderverse:silk_mask=Silk マスク
+item.spiderverse:silk_suit=Silk スーツ
+spidermanaddon.venom_wings=飛行を設定
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Miles Moralesを召喚
+entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Man
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Manを召喚
+entity.spidermanaddon:spider_gwen.name=Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Spider-Gwenを召喚
+entity.spidermanaddon:spider_ham.name=Spider-Ham
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Spider-Hamを召喚
+entity.spidermanaddon:spider_punk.name=Spider-Punk
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Spider-Punkを召喚
+entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099を召喚
+entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way home
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way homeを召喚
+entity.spidermanaddon:spiderman_noir.name=Spider-Noir
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Spider-Noirを召喚
+entity.spidermanaddon:spiderman_raimi.name=Spider-Man (アース-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Spider-Man (アース-96283)を召喚
+entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimitedを召喚
+entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (アース-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (アース-120703)を召喚
+
+item.spidermanaddon:spider_ham_skin=Spider-Ham Skin
+item.spidermanaddon:spider_ham_hammer=スパイダーハムのハンマー
+
+spidermanaddon.gizmo_camera_mode.title=カメラモード
+spidermanaddon:camera.free=フリーカメラ
+spidermanaddon:camera.selfie=セルフィーカメラ
+spidermanaddon:camera.clear=カメラモードを無効化
+spidermanaddon:camera.animations=アニメーション
+spidermanaddon:camera.lyla=Lylaを有効化/無効化
+
+spidermanaddon:camera.lyla.off=無効化
+spidermanaddon:camera.lyla.on=有効化
+
+item.spidermanaddon:multiversal_chip=マルチバース・チップ
+item.spidermanaddon:gizmo_portal=ポータルを作成
+item.spidermanaddon:gizmo_camera_mode=カメラモード
+
+spidermanaddon.gizmo.title=マルチバース装置
+spidermanaddon.portal=ポータルを作成
+spidermanaddon.spiderman=スパイダーマンを仲間にする
+spidermanaddon.villain=ヴィランを召喚
+spidermanaddon.miles_morales=Miles Morales (アース 1610B)
+spidermanaddon.spectacular_spiderman=Spectacular Spider-Man (アース 26496)
+spidermanaddon.spider_punk=Spider-Punk (アース 138B)
+spidermanaddon.spider_gwen=Spider-Gwen (アース 65B)
+spidermanaddon.spider_ham=Spider-Ham (アース 8311B)
+spidermanaddon.spiderman_2099=Spider-Man 2099 (アース 928B)
+spidermanaddon.spiderman_no_way_home=Spider-Man - MCU (アース 199999)
+spidermanaddon.spiderman_noir=Spider-Noir (アース 90214)
+spidermanaddon.spiderman_raimi=Spider-Man (アース 96283)
+spidermanaddon.spiderman_unlimited=Spider-Man Unlimited (アース 751263)
+spidermanaddon.the_amazing_spiderman=The Amazing Spider-Man (アース 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=アメイジング・スパイダーマン ホームメイド・マスク
+item.spiderverse:the_amazing_spiderman_casero_suit=アメイジング・スパイダーマン ホームメイド・スーツ
+item.spiderverse:spiderman_new_blue_mask=Spider-Man: New Blue マスク
+item.spiderverse:spiderman_new_blue_suit=Spider-Man: New Blue スーツ
+item.spiderverse:yfn_spiderman_oscorp_mask=親愛なる隣人スパイダーマン: Oscorp Suit マスク
+item.spiderverse:yfn_spiderman_oscorp_suit=親愛なる隣人スパイダーマン: Oscorp Suit スーツ
+item.spiderverse:yfn_spiderman_mask=親愛なる隣人スパイダーマン マスク
+item.spiderverse:yfn_spiderman_suit=親愛なる隣人スパイダーマン スーツ
+item.spiderverse:spiderman_bombastic_bag_man_mask=スパイダーマン：ボンバスティック・バッグマン・マスク
+item.spiderverse:spiderman_bombastic_bag_man_suit=スパイダーマン：ボンバスティック・バッグマン・スーツ
+
+item.spidermanaddon:web_bomb_item=ウェブ・ボム
+item.spidermanaddon:spider_drone_item=Spider-Drone
+item.spidermanaddon:mobile=携帯電話
+item.spidermanaddon:dr_octopus_take=つかむ
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Spider-Man Noir: Into The Spider-Verse マスク
+item.spiderverse:the_amazing_spiderman_black_mask=The Amazing Spider-Man ブラック・マスク
+item.spidermanaddon:capsule=カプセル
+item.spidermanaddon:dr_octopus_chip=召喚チップ: Doctor Octopus [アース-616]
+item.spidermanaddon:multiversal_gizmo=マルチバース装置
+item.spidermanaddon:web_shooter=ウェブシューター
+item.spidermanaddon:web_shooter_balanceo=ウェブシューター [スイング]
+entity.spidermanaddon:air_compressor.name=エアコンプレッサー
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=エアコンプレッサー
+entity.spidermanaddon:viento.name=風
+item.spawn_egg.entity.spidermanaddon:viento.name=風
+
+spidermanaddon.symbiont_pull_lock=シンビオート・プルで周囲の敵4体をつかみ、押しつぶします。
+spidermanaddon.antivenom_bomb_lock=敵に大ダメージを与えるアンチヴェノム・ボムを投げます。
+spidermanaddon.antivenom_tempest_lock=敵に大ダメージを与えるアンチヴェノム・テンペストを発生させます。
+spidermanaddon.symbiote_whip_lock=シンビオート・ブレードで戦います。
+spidermanaddon.rage_mode_lock=レイジモードを発動し、耐久力と戦闘ダメージを上げ、数秒間無敵になります。
+spidermanaddon.rage_mode_unlock.price=価格: 25 XP
+spidermanaddon.symbiote_powers_lock.price=価格: 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=グリーン・ゴブリンのパンプキン・ボム［ライミ・サーガ］
+item.spidermanaddon:planeador_raimi_item=グリーン・ゴブリンのグライダー［ライミ・サーガ］
+item.spidermanaddon:iron_arms_menu=メニュー
+item.spidermanaddon:dr_octopus_walk=メタルアームで歩く
+item.spidermanaddon:dr_octopus_attack=Attack
+entity.spidermanaddon:suits_machine.name=スーツ製造機
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=スーツ製造機
+entity.spidermanaddon:taskmaster_drone.name=タスクマスターのドローン
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=タスクマスターのドローンを召喚
+item.spidermanaddon:iron_arms_menu=メニュー
+item.spidermanaddon:concussive_blast=ウェブシューター: Concussive Blast
+item.spidermanaddon:web_grabber=ウェブシューター: Web Grabber
+item.spidermanaddon:impact_web=ウェブシューター: Web Impact
+item.spiderverse:superior_spiderman_black_mask=Superior Spider-Man ブラック・マスク
+item.spiderverse:spiderman_raimi_black_mask=Spider-Man Raimi's ブラック・マスク
+item.spiderverse:the_amazing_spiderman_black_suit=The Amazing Spider-Man ブラック・マスク
+item.spiderverse:spiderman_ps5_symbiote_mask=Insomniac's Spider-Man 2: シンビオート・スーツ マスク
+item.spiderverse:spiderman_ps4_black_mask=Insomniac's Spider-Man 2: ブラック・スーツ マスク
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Spider-Man Miles Morales: Across The Spider-Verse マスク
+item.spiderverse:spiderman_classic_black_mask=スパイダーマン クラシック・ブラック・マスク
+item.spiderverse:venom_s3_mask=Venom [Spider-Man 3] マスク
+item.spiderverse:spiderman_antivenom_mask=Spider-Man: Antivenom マスク
+item.spiderverse:spirit_spider_mask=Spirit Spider マスク
+item.spiderverse:spectacular_spiderman_black_mask_3=Spectacular Spider-Man 3.0 ブラック・マスク
+item.spiderverse:spectacular_spiderman_black_mask_2=Spectacular Spider-Man 2.0 ブラック・マスク
+item.spiderverse:spectacular_spiderman_black_mask=Spectacular Spider-Man ブラック・マスク
+item.spiderverse:spectacular_spiderman_mask=Spectacular Spider-Man マスク
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Spider-Man 2099: Across The Spider-Verse マスク
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Spider-Man 2099: Across The Spider-Verse マスク
+item.spiderverse:anti_ock_mask_3=アンチオック・スーツ・マスク
+item.spiderverse:anti_ock_mask_2=アンチオック・スーツ・マスク
+item.spiderverse:anti_ock_mask_1=アンチオック・スーツ・マスク
+item.spiderverse:anti_ock_mask=アンチオック・スーツ・マスク
+item.spiderverse:aracnido_jr_mask=アラクニッドJr. マスク
+item.spiderverse:ezekiel_sims_mask=Ezekiel Sims マスク
+item.spiderverse:human_spider_mask=la ヒューマン・スパイダー マスク
+item.spiderverse:into_the_spiderverse_sb_mask=Into The Spider-Verse SB マスク
+item.spiderverse:miles_morales_10th_mask_3=スパイダーマン：マイルス・モラレス 10周年マスク
+item.spiderverse:miles_morales_10th_mask_2=スパイダーマン：マイルス・モラレス 10周年マスク
+item.spiderverse:miles_morales_10th_mask_1=スパイダーマン：マイルス・モラレス 10周年マスク
+item.spiderverse:miles_morales_10th_mask=スパイダーマン：マイルス・モラレス 10周年マスク
+item.spiderverse:miles_morales_bodega_cat_mask=Spider-Man Miles Morales: ボデガ・キャット マスク
+item.spiderverse:miles_morales_bodega_cat_mask_1=Spider-Man Miles Morales: ボデガ・キャット マスク
+item.spiderverse:miles_morales_bodega_cat_mask_2=Spider-Man Miles Morales: ボデガ・キャット マスク
+item.spiderverse:miles_morales_bodega_cat_mask_3=Spider-Man Miles Morales: ボデガ・キャット マスク
+item.spiderverse:miles_morales_gold_mask=Spider-Man Miles Morales: アップタウン・プライド マスク
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Miles Morales: Into The Spider-Verse マスク
+item.spiderverse:miles_morales_wolverine_mask_3=Miles Morales: Wolverine マスク
+item.spiderverse:miles_morales_wolverine_mask_2=Miles Morales: Wolverine マスク
+item.spiderverse:miles_morales_wolverine_mask_1=Miles Morales: Wolverine マスク
+item.spiderverse:miles_morales_wolverine_mask=Miles Morales: Wolverine マスク
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Scarlet Spider: Across The Spider-Verse マスク
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider マスク
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider マスク
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider マスク
+item.spiderverse:scarlet_spider_mask_2=Scarlet Spider マスク
+item.spiderverse:scarlet_spider_mask_1=Scarlet Spider マスク
+item.spiderverse:scarlet_spider_mask=Scarlet Spider マスク
+item.spiderverse:spiderman_67_mask=Spider-Man: 67° マスク
+item.spiderverse:spiderman_90_black_mask_1=Spider-Man: アニメシリーズ [赤と青の縁取り] ブラック・マスク
+item.spiderverse:spiderman_90_black_mask=Spider-Man: アニメシリーズ ブラック・マスク
+item.spiderverse:spiderman_90_mask=Spider-Man: アニメシリーズ マスク
+item.spiderverse:spiderman_cero_mask=スパイダーマン：ゼロ・マスク
+item.spiderverse:spiderman_future_foundation_mask=Spider-Man: フューチャー・ファウンデーション マスク
+item.spiderverse:spiderman_homecoming_mask=スパイダーマン：スターク・スーツ・マスク
+item.spiderverse:spiderman_homemade_mask=スパイダーマン ホームメイド・マスク
+item.spiderverse:spiderman_india_mask=Spider-Man India: Across The Spider-Verse スーツ
+item.spiderverse:spiderman_far_from_home_mask=スパイダーマン：アップグレード・マスク
+item.spiderverse:spiderman_last_stand_mask=Spider-Man: Last Stand マスク
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Miles Morales: 信頼の跳躍 マスク
+item.spiderverse:spiderman_negative_mask=Spider-Man: Negative マスク
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Spider-Noir: Into The Spider-Verse マスク
+item.spiderverse:spiderman_no_way_home_mask=スパイダーマン：ハイブリッド・マスク
+item.spiderverse:spiderman_ps4_mask=Insomniac's Spider-Man: アドバンスド・マスク
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Spider-Man: アドバンスド・マスク 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Spider-Man: アドバンスド・マスク 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Spider-Man: アドバンスド・マスク 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Spider-Man: アドバンスド・マスク 2.0
+item.spiderverse:spiderman_raimi_mask=Spider-Man Raimi's マスク
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Spider-Man: Secret Wars - Civil War マスク
+item.spiderverse:spiderman_stealth_mask=Spider-Man: Big Time マスク
+item.spiderverse:spiderman_steve_ditko_mask=Spider-Man: Amazing Fantasy #15 マスク
+item.spiderverse:spiderman_unlimited_mask=Spider-Man: Unlimited マスク
+item.spiderverse:spiderman_velocity_mask=スパイダーマン ヴェロシティ・マスク
+item.spiderverse:spiderman_web_of_shadows_black_mask=Spider-Man: Web of Shadows ブラック・マスク
+item.spiderverse:spiderman_web_of_shadows_mask=Spider-Man: Web of Shadows マスク
+item.spiderverse:spiderman_what_if_animated_mask=Spider-Man: What If Ep 5 マスク
+item.spiderverse:spiderman_what_if_mask=Spider-Man: Disney Land マスク
+item.spiderverse:spiderman_wrestler_mask=レスラー・スパイダーマン・マスク
+item.spiderverse:superior_spiderman_mask_3=Superior Spider-Man マスク
+item.spiderverse:superior_spiderman_mask_2=Superior Spider-Man マスク
+item.spiderverse:superior_spiderman_mask_1=Superior Spider-Man マスク
+item.spiderverse:superior_spiderman_mask=Superior Spider-Man マスク
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Spider-Punk: Across The Spider-Verse マスク
+item.spiderverse:the_amazing_spiderman_2_mask=The Amazing Spider-Man 2 マスク
+item.spiderverse:spider_punk_mask=Spider-Punk マスク
+item.spiderverse:the_amazing_spiderman_1_mask=The Amazing Spider-Man マスク
+item.spiderverse:ultimate_spiderman_mask=Ultimate Spider-Man マスク
+item.spiderverse:ultimate_spiderman_ucm_mask=Ultimate Spider-Man [MCU] マスク
+item.spiderverse:ultimate_spiderman_black_mask=Ultimate Spider-Man ブラック・マスク
+item.spiderverse:yfn_spiderman_casero_mask=「親愛なる隣人スパイダーマン」ホームメイド・マスク
+item.spidermanaddon:green_goblin_chip=召喚チップ: グリーン・ゴブリン [アース-616]
+item.spidermanaddon:green_goblin_raimi_chip=召喚チップ: グリーン・ゴブリン [アース-96283]
+item.spidermanaddon:hobgoblin_chip=召喚チップ: Hobgoblin [アース-616]
+item.spidermanaddon:doctor_octopus_chip=召喚チップ: Doctor Octopus [アース-616]
+item.spidermanaddon:lizard_chip=召喚チップ: Lagarto [アース-616]
+item.spidermanaddon:shocker_chip=召喚チップ: Shocker [アース-616]
+
+item.spidermanaddon:iron_arms=アイアン・スパイダー・アーム
+item.spidermanaddon:spiderman_symbiote_powers=シンビオート・スパイダーマンの能力
+item.spidermanaddon:spiderman_powers=スパイダーマンの能力
+item.spidermanaddon:web_wings=ウェブ・ウィング
+item.spiderverse:green_goblin_raimi_suit=グリーン・ゴブリン [Raimi] スーツ
+item.spiderverse:green_goblin_raimi_mask=グリーン・ゴブリン [Raimi] マスク
+
+spidermanaddon.damage_player.text=プレイヤーへの攻撃を有効/無効にします。他の能力にも適用されます。
+spidermanaddon.activar=有効化
+spidermanaddon.web_shooter_config=設定
+spidermanaddon.desactivar=無効化
+spidermanaddon.symbiont_suit.unlock=解除: 5 XP
+spidermanaddon.suit_lock=シンビオート・スーツを解除［レイジモード］
+spidermanaddon.cancel=Cancel
+spidermanaddon.back=戻る
+spidermanaddon.none=なし
+spidermanaddon.venom=Venom
+spidermanaddon.antivenom=Antivenom
+spidermanaddon.carnage=Carnage
+spidermanaddon.ultimate_venom=Ultimate Venom
+spidermanaddon.symbiote_config=設定
+spidermanaddon.damage_player=プレイヤーへのダメージ
+spidermanaddon.symbiote_skin=シンビオートの種類
+spidermanaddon.symbiote_suit=シンビオート・スーツ [レイジモード]
+spidermanaddon.spiderman_powers=スパイダーマンの能力
+spidermanaddon.block_powers=アップグレードはロックされています。
+spidermanaddon.block_powers_text=前提アップグレードを解除すると、このアップグレードを利用できます。
+spidermanaddon.continuar=続ける
+spidermanaddon.unlock_mejora=アップグレードを解除
+spidermanaddon.swing_1_lock=スイング: 急降下中にトリックを行います。トリックを行うとXPを獲得します。
+spidermanaddon.combat_0_lock=戦闘: 近接攻撃のダメージが増加します。
+spidermanaddon.combat_1_lock=戦闘: グラウンドスラムと空中攻撃のダメージが増加します。
+spidermanaddon.combat_2_lock=戦闘: 空中攻撃で周囲の敵を吹き飛ばせます。
+spidermanaddon.health_0_lock=体力: ハートを追加します。
+spidermanaddon.health_1_lock=体力: ハートが2未満になると、10秒間吸収効果を得ます。クールダウンは30秒です。
+spidermanaddon.health_2_lock=体力: ダメージを受けていない間、15秒ごとに再生します。
+spidermanaddon.swing_1.unlock=解除: 10 XP
+spidermanaddon.combat_0.unlock=解除: 10 XP
+spidermanaddon.combat_1.unlock=解除: 15 XP
+spidermanaddon.combat_2.unlock=解除: 20 XP
+spidermanaddon.health_0.unlock=解除: 10 XP
+spidermanaddon.health_1.unlock=解除: 15 XP
+spidermanaddon.health_2.unlock=解除: 20 XP
+
+item.spiderverse:spiderman_classic_mask=Spider-Man: クラシック・マスク
+item.spiderverse:spiderman_classic_mask_1=Spider-Man: クラシック・マスク
+item.spiderverse:spiderman_classic_mask_2=Spider-Man: クラシック・マスク
+item.spiderverse:spiderman_classic_mask_3=Spider-Man: クラシック・マスク
+item.spiderverse:scarlet_spider_mask=la スカーレット・スパイダー マスク
+item.spiderverse:scarlet_spider_mask_1=la スカーレット・スパイダー マスク
+item.spiderverse:scarlet_spider_mask_2=la スカーレット・スパイダー マスク
+item.spiderverse:scarlet_spider_mask_3=la スカーレット・スパイダー マスク
+item.spiderverse:iron_spider_mask=アイアン・スパイダー・マスク（クラシック）
+item.spiderverse:iron_spider_mask_1=アイアン・スパイダー・マスク（クラシック）
+item.spiderverse:iron_spider_mask_2=アイアン・スパイダー・マスク（クラシック）
+item.spiderverse:iron_spider_mask_3=アイアン・スパイダー・マスク（クラシック）
+item.spiderverse:iron_spider_ucm_mask=Iron Spider [MCU] マスク
+item.spiderverse:spiderman_2099_mask_1=Spider-Man 2099 マスク
+item.spiderverse:spiderman_2099_mask_2=Spider-Man 2099 マスク
+item.spiderverse:spiderman_2099_mask_3=Spider-Man 2099 マスク
+item.spiderverse:spiderman_2099_mask=Spider-Man 2099 マスク
+item.spiderverse:miles_morales_mask=Spider-Man Miles Morales マスク
+item.spiderverse:ghost_spider_mask=Ghost Spider マスク
+
+entity.spidermanaddon:taskmaster_sequels.name=タスクマスターの手下
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=タスクマスターの手下を召喚
+spidermanaddon.repetir=チャレンジを再挑戦
+spidermanaddon.taskmaster_challenges.0=チャレンジ 1
+spidermanaddon.taskmaster_challenges.1=チャレンジ 2
+spidermanaddon.taskmaster_challenges.2=チャレンジ 3
+spidermanaddon.taskmaster_challenges.3=チャレンジ 4
+spidermanaddon.taskmaster_challenges.4=チャレンジ 5
+spidermanaddon.taskmaster_challenges.start=開始
+spidermanaddon.taskmaster_challenges.0.text=タスクマスターの手下を5人倒してください。
+spidermanaddon.taskmaster_challenges.1.text=爆弾を解除し、タスクマスターの手下を倒してください。
+spidermanaddon.taskmaster_challenges.2.text=タスクマスターのドローンを破壊しよう。
+spidermanaddon.taskmaster_challenges.3.text=タスクマスターの手下から市民を救ってください。
+spidermanaddon.taskmaster_challenges.4.text=タスクマスターを倒してください。
+
+spidermanaddon.suitsFabricForm=クラフト
+marveladdon:fabricar=クラフト
+spidermanaddon.venom_snow_lock=ヴェノム：スノー・シンビオート §l§6[解除]
+spidermanaddon.venom_snow_lock.price=価格: 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[解除]
+spidermanaddon.venompool_lock.price=価格: 20 XP
+spidermanaddon.venom_2099_lock=Venom 2099 §l§6[解除]
+spidermanaddon.venom_2099_lock.price=価格: 15 XP
+spidermanaddon.ultimate_venom_spider_lock=Ultimate Venom [スパイダーエンブレム付き] §l§6[解除]
+spidermanaddon.ultimate_venom_spider_lock.price=価格: 15 XP
+spidermanaddon.ultimate_venom_lock=Ultimate Venom §l§6[解除]
+spidermanaddon.ultimate_venom_lock.price=価格: 15 XP
+spidermanaddon.venom_lee_price_lock=Venom: Lee Price §l§6[解除]
+spidermanaddon.venom_lee_price_lock.price=価格: 15 XP
+spidermanaddon.blue_venom_lock=Venom: Blue §l§6[解除]
+spidermanaddon.blue_venom_lock.price=価格: 10 XP
+spidermanaddon.venom_movies_lock=Venom: Movies §l§6[解除]
+spidermanaddon.venom_movies_lock.price=価格: 15 XP
+spidermanaddon.venom.unlock=解除
+
+entity.spidermanaddon:green_goblin_raimi.name=グリーン・ゴブリン［ライミ・サーガ］
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=グリーン・ゴブリンを召喚［ライミ・サーガ］
+
+item.spidermanaddon:iron_arms_attack=Iron Arms [攻撃]
+item.spidermanaddon:spider_rush=Spider Rush
+item.spidermanaddon:spider_shock=Spider Shock
+spidermanaddon.iron_arms.title=メタル・スパイダー・アーム
+item.spidermanaddon:symbiote_menu=メニュー
+spidermanaddon.concussive_blast.price=コスト: §l§aXPレベル15
+item.spidermanaddon:rage_mode=レイジモード
+item.spidermanaddon:symbiote_blast=シンビオート・ブラスト
+spidermanaddon.symbiote_blast=シンビオート・ブラスト
+item.spidermanaddon:symbiont_pull=シンビオート・プル
+spidermanaddon.symbiont_pull=シンビオート・プル
+item.spidermanaddon:symbiote_strike=シンビオート・ストライク
+spidermanaddon.symbiote_strike=シンビオート・ストライク
+item.spidermanaddon:antivenom_bomb=アンチヴェノム・ボム
+spidermanaddon.antivenom_bomb=アンチヴェノム・ボム
+item.spidermanaddon:antivenom_tempest=アンチヴェノム・テンペスト
+spidermanaddon.antivenom_tempest=アンチヴェノム・テンペスト
+item.spidermanaddon:symbiote_whip=シンビオート・ブレード
+spidermanaddon.symbiote_whip=シンビオート・ブレード
+
+spidermanaddon.web_grabber.price=コスト: §l§aXPレベル15
+spidermanaddon.web_grabber.price5=コスト: §l§aXPレベル25
+
+spidermanaddon.web_grabber_lv1=Web Grabber - §l§aレベル 0 §6[アップグレード]
+spidermanaddon.web_grabber_lv1_title=Web Grabber - §l§aレベル 1
+spidermanaddon.web_grabber_lv1_text=マガジン容量が2発から3発に増加します。
+
+spidermanaddon.web_grabber_lv2=Web Grabber - §l§aレベル 1 §6[アップグレード]
+spidermanaddon.web_grabber_lv2_title=Web Grabber - §l§aレベル 2
+spidermanaddon.web_grabber_lv2_text=再充填時間が55秒から40秒に短縮されます。
+
+spidermanaddon.web_grabber_lv3=Web Grabber - §l§aレベル 2 §6[アップグレード]
+spidermanaddon.web_grabber_lv3_title=Web Grabber - §l§aレベル 3
+spidermanaddon.web_grabber_lv3_text=捕捉範囲が6ブロックから12ブロックに増加します。
+
+spidermanaddon.web_grabber_lv4=Web Grabber - §l§aレベル 3 §6[アップグレード]
+spidermanaddon.web_grabber_lv4_title=Web Grabber - §l§aレベル 4
+spidermanaddon.web_grabber_lv4_text=マガジン容量が3発から4発に増加します。
+
+spidermanaddon.web_grabber_lv5=Web Grabber - §l§aレベル 4 §6[アップグレード]
+spidermanaddon.web_grabber_lv5_title=Web Grabber - §l§aレベル 5
+spidermanaddon.web_grabber_lv5_text=捕捉できる敵が4体から8体に増加します。
+
+spidermanaddon.web_grabber_full=Web Grabber - §l§aレベル 5
+spidermanaddon.web_grabber_full_text=EWeb Grabber - §l§aレベル 5
+spidermanaddon.web_grabber_unlock=Web Grabber
+spidermanaddon.web_grabber_lock=Web Grabber §l§6[解除]
+
+spidermanaddon.concussive_blast.price=コスト: §l§aXPレベル15
+spidermanaddon.concussive_blast.price5=コスト: §l§aXPレベル25
+
+spidermanaddon.concussive_blast_lv1=Concussive Blast - §l§aレベル 0 §6[アップグレード]
+spidermanaddon.concussive_blast_lv1_title=Concussive Blast - §l§aレベル 1
+spidermanaddon.concussive_blast_lv1_text=マガジン容量が2発から3発に増加します。
+
+spidermanaddon.concussive_blast_lv2=Concussive Blast - §l§aレベル 1 §6[アップグレード]
+spidermanaddon.concussive_blast_lv2_title=Concussive Blast - §l§aレベル 2
+spidermanaddon.concussive_blast_lv2_text=再充填時間が45秒から35秒に短縮されます。
+
+spidermanaddon.concussive_blast_lv3=Concussive Blast - §l§aレベル 2 §6[アップグレード]
+spidermanaddon.concussive_blast_lv3_title=Concussive Blast - §l§aレベル 3
+spidermanaddon.concussive_blast_lv3_text=マガジン容量が3発から4発に増加します。
+
+spidermanaddon.concussive_blast_lv4=Concussive Blast - §l§aレベル 3 §6[アップグレード]
+spidermanaddon.concussive_blast_lv4_title=Concussive Blast - §l§aレベル 4
+spidermanaddon.concussive_blast_lv4_text=再充填時間が35秒から24秒に短縮されます。
+
+spidermanaddon.concussive_blast_lv5=Concussive Blast - §l§aレベル 4 §6[アップグレード]
+spidermanaddon.concussive_blast_lv5_title=Concussive Blast - §l§aレベル 5
+spidermanaddon.concussive_blast_lv5_text=衝撃のノックバックが増加します。
+
+spidermanaddon.concussive_blast_full=Concussive Blast - §l§aレベル 5
+spidermanaddon.concussive_blast_full_text=Concussive Blast - §l§aレベル 5
+spidermanaddon.concussive_blast_unlock=Concussive Blast
+spidermanaddon.concussive_blast_lock=Concussive Blast §l§6[解除]
+
+spidermanaddon.electric_web.price=コスト: §l§aXPレベル15
+spidermanaddon.electric_web.price5=コスト: §l§aXPレベル25
+
+spidermanaddon.electric_web_lv1=Electric Web - §l§aレベル 0 §6[アップグレード]
+spidermanaddon.electric_web_lv1_title=Electric Web - §l§aレベル 1
+spidermanaddon.electric_web_lv1_text=マガジン容量が2発から3発に増加します。
+
+spidermanaddon.electric_web_lv2=Electric Web - §l§aレベル 1 §6[アップグレード]
+spidermanaddon.electric_web_lv2_title=Electric Web - §l§aレベル 2
+spidermanaddon.electric_web_lv2_text=エレクトリック・ウェブの持続時間が5秒から10秒に増加します。
+
+spidermanaddon.electric_web_lv3=Electric Web - §l§aレベル 2 §6[アップグレード]
+spidermanaddon.electric_web_lv3_title=Electric Web - §l§aレベル 3
+spidermanaddon.electric_web_lv3_text=再充填時間が45秒から30秒に短縮されます。
+
+spidermanaddon.electric_web_lv4=Electric Web - §l§aレベル 3 §6[アップグレード]
+spidermanaddon.electric_web_lv4_title=Electric Web - §l§aレベル 4
+spidermanaddon.electric_web_lv4_text=マガジン容量が3発から4発に増加します。
+
+spidermanaddon.electric_web_lv5=Electric Web - §l§aレベル 4 §6[アップグレード]
+spidermanaddon.electric_web_lv5_title=Electric Web - §l§aレベル 5
+spidermanaddon.electric_web_lv5_text=エレクトリック・ウェブのダメージが増加します。
+
+spidermanaddon.electric_web_full=Electric Web - §l§aレベル 5
+spidermanaddon.electric_web_full_text=Electric Web - §l§aレベル 5
+spidermanaddon.electric_web_unlock=Electric Web
+spidermanaddon.electric_web_lock=Electric Web §l§6[解除]
+
+spidermanaddon.web_whip_full=Web Whip
+spidermanaddon.web_whip_full_text=アップグレードは利用できません
+spidermanaddon.web_whip_unlock=Web Whip
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.web_whip_lock=Web Whip §l§6[解除]
+
+spidermanaddon.impact_web_lv1=ウェブシューター - §l§aレベル 0 §6[アップグレード]
+spidermanaddon.impact_web_lv1_title=ウェブシューター - §l§aレベル 1
+spidermanaddon.impact_web_lv1_text=マガジン容量が6発から8発に増加します。
+
+spidermanaddon.impact_web_lv2=ウェブシューター - §l§aレベル 1 §6[アップグレード]
+spidermanaddon.impact_web_lv2_title=ウェブシューター - §l§aレベル 2
+spidermanaddon.impact_web_lv2_text=再充填時間が2秒から1.5秒に短縮されます。
+
+spidermanaddon.impact_web_lv3=ウェブシューター - §l§aレベル 2 §6[アップグレード]
+spidermanaddon.impact_web_lv3_title=ウェブシューター - §l§aレベル 3
+spidermanaddon.impact_web_lv3_text=マガジン容量が8発から10発に増加します。
+
+spidermanaddon.impact_web_lv4=ウェブシューター - §l§aレベル 3 §6[アップグレード]
+spidermanaddon.impact_web_lv4_title=ウェブシューター - §l§aレベル 4
+spidermanaddon.impact_web_lv4_text=再充填時間が1.5秒から1秒に短縮されます。
+
+spidermanaddon.impact_web_lv5=ウェブシューター - §l§aレベル 4 §6[アップグレード]
+spidermanaddon.impact_web_lv5_title=ウェブシューター - §l§aレベル 5
+spidermanaddon.impact_web_lv5_text=敵に命中すると、低確率でウェブ効果を付与します。（効果によりクモの巣ブロックが生成されます。）
+
+spidermanaddon.impact_web_full=ウェブシューター - §l§aレベル 5
+spidermanaddon.web_shooter_full_text=アップグレード上限に達しました。
+spidermanaddon.impact_web.price=コスト: §l§aXPレベル15
+spidermanaddon.impact_web.price5=コスト: §l§aXPレベル25
+
+spidermanaddon.web_shooter_shoot_lv1=ウェブシューター - §l§aレベル 0 §6[アップグレード]
+spidermanaddon.web_shooter_shoot_lv1_title=ウェブシューター - §l§aレベル 1
+spidermanaddon.web_shooter_shoot_lv1_text=マガジン容量が6発から8発に増加します。
+
+spidermanaddon.web_shooter_shoot_lv2=ウェブシューター - §l§aレベル 1 §6[アップグレード]
+spidermanaddon.web_shooter_shoot_lv2_title=ウェブシューター - §l§aレベル 2
+spidermanaddon.web_shooter_shoot_lv2_text=再充填時間が2秒から1.5秒に短縮されます。
+
+spidermanaddon.web_shooter_shoot_lv3=ウェブシューター - §l§aレベル 2 §6[アップグレード]
+spidermanaddon.web_shooter_shoot_lv3_title=ウェブシューター - §l§aレベル 3
+spidermanaddon.web_shooter_shoot_lv3_text=マガジン容量が8発から10発に増加します。
+
+spidermanaddon.web_shooter_shoot_lv4=ウェブシューター - §l§aレベル 3 §6[アップグレード]
+spidermanaddon.web_shooter_shoot_lv4_title=ウェブシューター - §l§aレベル 4
+spidermanaddon.web_shooter_shoot_lv4_text=再充填時間が1.5秒から1秒に短縮されます。
+
+spidermanaddon.web_shooter_shoot_lv5=ウェブシューター - §l§aレベル 4 §6[アップグレード]
+spidermanaddon.web_shooter_shoot_lv5_title=ウェブシューター - §l§aレベル 5
+spidermanaddon.web_shooter_shoot_lv5_text=敵に命中すると、低確率でウェブ効果を付与します。（効果によりクモの巣ブロックが生成されます。）
+
+spidermanaddon.web_shooter_shoot_full=ウェブシューター - §l§aレベル 5
+spidermanaddon.web_shooter_full_text=アップグレード上限に達しました。
+spidermanaddon.web_shooter_shoot.price=コスト: §l§aXPレベル15
+spidermanaddon.web_shooter_shoot.price5=コスト: §l§aXPレベル25
+
+spidermanaddon.impact_web=Impact Web
+spidermanaddon.impact_web_lock=Impact Web §l§6[解除]
+
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.electric_web=Electric Web
+spidermanaddon.concussive_blast=Concussive Blast
+spidermanaddon.web_bomb=Web Bomb
+spidermanaddon.spider_drone=Spider Drone
+spidermanaddon.web_grabber=Web Grabber
+
+item.spidermanaddon:web_blossom=Web blossom
+item.spidermanaddon:holo_decoy=Holo decoy
+item.spidermanaddon:low_gravity=Low gravity
+item.spidermanaddon:arms_race=Arms race
+item.spidermanaddon:blitz=Blitz
+item.spidermanaddon:electric_punch=Electric Punch
+item.spidermanaddon:equaliser=Equaliser
+item.spidermanaddon:negative_shockwave=Negative shockwave
+item.spidermanaddon:rock_out=Rock out
+item.spidermanaddon:spirit_fire=Spirit fire
+
+spidermanaddon.low_gravity_lock_text=空中にいる間、10秒間重力が低下します。
+spidermanaddon.low_gravity_lock=Low gravity §l§6[解除]
+spidermanaddon.web_blossom_text=ジャンプし、視界に入るすべてにウェブを発射します。
+spidermanaddon.holo_decoy_lock_text=複数のホログラムを生成します。
+spidermanaddon.holo_decoy_lock=Holo decoy §l§6[解除]
+spidermanaddon.arms_race_lock_text=電撃を放って敵を気絶させます。
+spidermanaddon.arms_race_lock=Arms race §l§6[解除]
+spidermanaddon.blitz_lock_text=より速く疾走し、リアルタイムの運動量伝達で敵を押し飛ばします。
+spidermanaddon.blitz_lock=Blitz §l§6[解除]
+spidermanaddon.electric_punch_lock_text=拳を一時的に帯電させ、敵を感電させます。
+spidermanaddon.electric_punch_lock=Electric Punch §l§6[解除]
+spidermanaddon.equaliser_text=5秒間、自分を含む全員が一撃で倒れます。
+spidermanaddon.equaliser_lock=Equaliser §l§6[解除]
+spidermanaddon.negative_shockwave_text=ネガティブ・エネルギーの波を放ちます。
+spidermanaddon.negative_shockwave_lock=Negative shockwave §l§6[解除]
+spidermanaddon.rock_out_text=正義の音波で敵を吹き飛ばします。
+spidermanaddon.rock_out_lock=Rock out §l§6[解除]
+spidermanaddon.spirit_fire_text=どこかから…不安定で有害なエーテルエネルギーの波を引き出します…
+spidermanaddon.spirit_fire_lock=Spirit fire §l§6[解除]
+
+spidermanaddon.regresar=戻る
+spidermanaddon.salir=終了
+spidermanaddon.usar=使う
+
+item.spidermanaddon:spectacular_spiderman_chip=Spectacular Spider-Man [アース-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [アース-1610B]
+item.spidermanaddon:spider_gwen_chip=Spider-Gwen [アース-65B]
+item.spidermanaddon:spider_ham_chip=Spider-Ham [アース-8311]
+item.spidermanaddon:spider_punk_chip=Spider-Punk [アース-138B]
+item.spidermanaddon:spiderman_2099_chip=Spider-Man 2099 [アース-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Spider-Man [アース-199999]
+item.spidermanaddon:spiderman_noir_chip=Spider-Man: Noir [アース-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Spider-Man [アース-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Spider-Man: Inlimited [アース-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=The Amazing Spider-Man [アース-120703]
+
+item.spidermanaddon:green_goblin=グリーン・ゴブリン [アース-616]
+item.spidermanaddon:hobgoblin=Hobgoblin [アース-616]
+item.spidermanaddon:shocker=Shocker [アース-616]
+item.spidermanaddon:lizard=リザード［アース-616］
+
+spidermanaddon.multiversal_gizmo=マルチバース装置
+spidermanaddon.accesorios=アクセサリー
+spidermanaddon.suit_skills=スーツ能力
+spidermanaddon.upgrades_laboratoryWorkbench=アップグレード
+spidermanaddon.laboratoryWorkbench=研究室の作業台
+spidermanaddon.web_shooter=ウェブシューター
+spidermanaddon.capsule=カプセル
+spidermanaddon.hobgoblin_pumpkin_bomb=ホブゴブリンのパンプキン・ボム
+spidermanaddon.fabricar=クラフト
+spidermanaddon.suitsFabric_form=クラフト
+spidermanaddon.suits_form=スーツを選択
+spidermanaddon.multiversal_chip=Chip [ヴィラン]
+spidermanaddon.spiderman_chip=Chip [スパイダー・ソサエティ]
+
+item.spidermanaddon:venom=Venom [変身]
+item.spidermanaddon:symbiont_whip=シンビオート・ウィップ
+item.spidermanaddon:venom_regeneration=捕食
+item.spidermanaddon:symbiont_axe=シンビオート・アックス
+item.spidermanaddon:symbiont_claw=シンビオート・クロー
+item.spidermanaddon:venom_punch=戦闘
+item.spidermanaddon:venom_impulse_whip=シンビオート・ウィップ［ブースト］
+item.spidermanaddon:symbiote_capsule=ヴェノム・シンビオート・カプセル
+item.spidermanaddon:capsule=カプセル
+tile.spidermanaddon:knull_block.name=Knullブロック
+tile.spidermanaddon:meteorite_block.name=隕石ブロック
+spidermanaddon.feed=捕食
+spidermanaddon.symbiont_axe=シンビオート・アックス
+spidermanaddon.symbiont_claw=シンビオート・クロー
+spidermanaddon.symbiont_whip=シンビオート・ウィップ
+spidermanaddon.transformation=変身
+spidermanaddon.skins=スキン
+spidermanaddon.on=有効化
+spidermanaddon.off=無効化
+spidermanaddon.camera=ゲームカメラ
+spidermanaddon.third=三人称
+spidermanaddon.first=一人称
+entity.spidermanaddon:symbiont.name=ヴェノム・シンビオート
+item.spawn_egg.entity.spidermanaddon:symbiont.name=ヴェノム・シンビオート
+entity.spidermanaddon:venom_horse.name=ホース・ヴェノム
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=ホース・ヴェノム
+
+item.spidermanaddon:spiderman_2099_burger.name=スパイダーマン2099のバーガー
+item.spiderverse:scarlet_spider_suit=la スカーレット・スパイダー スーツ
+item.spiderverse:spiderman_90_suit=Spider-Man: アニメシリーズ スーツ
+item.spiderverse:spiderman_67_suit=Spider-Man 67° スーツ
+item.spiderverse:spectacular_spiderman_suit=Spectacular Spider-Man スーツ
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man ブラック・スーツ
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man 2.0 ブラック・スーツ
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man 3.0 ブラック・スーツ
+item.spiderverse:spiderman_steve_ditko_suit=Spider-Man: Amazing Fantasy #15 スーツ
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Ultimate Spider-Man ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Spider-Man India ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Miles Morales ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Iron Spider [MCU] ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Spider-Punk ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Spider-Man Hybrid ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Spider-Man Noir ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Superior Spider-Man ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Spider-Man Raimi Black Suit ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Spider-Man Raimi ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Spider-Man PS4 ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Spider-Man Black Suit ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Spider-Man 2099 [Across the Spider-Verse] ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Spider-Gwen ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Scarlet Spider ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=The Amazing Spider-Man 2 ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=The Amazing Spider-Man ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (leap of faith) ぬいぐるみ
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Spider-Mobile
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Spider-Bike
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Black Cat 人形
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=ピーター・パーカーのバックパック
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=スパイダーマンのスーツスタンド
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=研究室の作業台
+entity.spidermanaddon:lizard.name=リザード
+item.spawn_egg.entity.spidermanaddon:lizard.name=Lagartoを召喚
+entity.spidermanaddon:prisoner.name=囚人
+item.spawn_egg.entity.spidermanaddon:prisoner.name=囚人を召喚
+item.spidermanaddon:research_token=研究トークン
+
+item.spidermanaddon:backpack_token=バックパック・トークン
+item.spidermanaddon:web_shooters_plans=ウェブシューター・システム［スイング］
+item.spiderverse:web_shooter_balanceo=ウェブシューター [スイング]
+item.spidermanaddon:usb=USB [データなし]
+
+item.spidermanaddon:base_token=ベース・トークン
+item.spidermanaddon:challenge_token=チャレンジ・トークン
+item.spidermanaddon:tokens_crime=犯罪トークン
+item.spiderverse:web_cartridge=ウェブ・カートリッジ
+item.spidermanaddon:spiderman_palette.name=スパイダーマンのパレット
+
+item.spidermanaddon:miles_morales_invisibility_token=マイルス・モラレスの能力：透明化
+item.spidermanaddon:fire_resistence_stealth_suit_token=スーツ能力：火炎耐性
+item.spidermanaddon:invisibility_stealth_suit_token=スーツ能力：透明化
+item.spidermanaddon:regeneration_stealth_suit_token=スーツ能力：再生
+
+item.spiderverse:spiderman_classic_suit=Spider-Man: クラシック・スーツ
+item.spiderverse:spiderman_raimi_suit=Spider-Man Raimi's スーツ
+item.spiderverse:spiderman_raimi_black_suit=Spider-Man Raimi's ブラック・スーツ
+item.spiderverse:miles_morales_suit=Spider-Man Miles Morales: クラシック・スーツ
+item.spiderverse:miles_morales_gold_suit=スパイダーマン：マイルス・モラレス アップタウン・プライド・スーツ
+item.spiderverse:iron_spider_ucm_suit=Iron Spider [UCM] スーツ
+item.spiderverse:spiderman_stealth_suit=Spider-Man: Big Time スーツ
+item.spiderverse:spiderman_ps4_suit=Insomniac's Spider-Man: アドバンスド・スーツ
+item.spiderverse:spiderman_ps4_black_suit=Insomniac's Spider-Man 2: ブラック・スーツ
+item.spiderverse:ultimate_spiderman_ucm_suit=スパイダーマン：アルティメット・スーツ
+item.spiderverse:the_amazing_spiderman_1_suit=The Amazing Spider-Man スーツ
+item.spiderverse:the_amazing_spiderman_2_suit=The Amazing Spider-Man 2 スーツ
+item.spiderverse:spiderman_steve_ditko_suit=Spider-Man: Amazing Fantasy #15 スーツ
+item.spiderverse:human_spider_suit=la ヒューマン・スパイダー スーツ
+item.spiderverse:spiderman_wrestler_suit=レスラー・スパイダーマン・スーツ
+item.spiderverse:spiderman_homemade_suit=Spider-Man: ホームメイド・スーツ
+item.spiderverse:spiderman_far_from_home_suit=スパイダーマン：アップグレード・スーツ
+item.spiderverse:spiderman_no_way_home_suit=スパイダーマン：ハイブリッド・スーツ
+item.spiderverse:spiderman_negative_suit=スパイダーマン：ネガティブ・スーツ
+item.spiderverse:spiderman_homecoming_suit=スパイダーマン：スターク・スーツ
+item.spidermanaddon:genetically_engineered_super_spider=遺伝子改造スーパー・スパイダー
+item.spidermanaddon:spider_egg=クモを召喚
+item.spidermanaddon:radioactive_spider=Spider-Man Powers
+item.spidermanaddon:pumpkin_bomb=パンプキン・ボム
+item.spiderverse:iron_arms=アイアン・スパイダー・レッグ
+item.spidermanaddon:nanotechnology_chip=ナノテクノロジー・チップ
+item.spiderverse:miles_morales_bodega_cat_suit=Spider-Man Miles Morales: ボデガ・キャット スーツ
+item.spiderverse:ultimate_spiderman_suit=Ultimate Spider-Man スーツ
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man: ブラック・スーツ
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man: ブラック・スーツ 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man: ブラック・スーツ 3.0
+item.spiderverse:spiderman_classic_black_suit=スパイダーマン：クラシック・ブラック・スーツ
+item.spiderverse:spiderman_black_suit_comic=スパイダーマン：シークレット・ウォーズ ブラック・スーツ
+item.spiderverse:ultimate_spiderman_black_suit=Ultimate Spider-Man: ブラック・スーツ
+entity.spidermanaddon:green_goblin.name=グリーン・ゴブリン
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=グリーン・ゴブリンを召喚
+entity.spidermanaddon:shocker.name=Shocker
+item.spawn_egg.entity.spidermanaddon:shocker.name=Shockerを召喚
+entity.spidermanaddon:venom_boss.name=Venom
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Venomを召喚
+entity.spidermanaddon:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Hobgoblinを召喚
+entity.spidermanaddon:taskmaster.name=Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Taskmasterを召喚
+entity.spidermanaddon:dealer.name=密売人
+item.spawn_egg.entity.spidermanaddon:dealer.name=密売人を召喚
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Black Catを召喚
+entity.spidermanaddon:symbiot.name=ヴェノム・シンビオート
+item.spawn_egg.entity.spidermanaddon:symbiot.name=ヴェノム・シンビオート
+entity.spidermanaddon:sewing_machine.name=ミシン
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=ミシン
+entity.spidermanaddon:challenge_box.name=チャレンジボックス
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=チャレンジボックス
+entity.spidermanaddon:microscope.name=顕微鏡
+item.spawn_egg.entity.spidermanaddon:microscope.name=顕微鏡
+entity.spidermanaddon:symbiote_meteorite.name=シンビオート隕石
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=シンビオート隕石を召喚
+entity.spidermanaddon:symbiote_meteorite_table.name=シンビオート隕石
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=シンビオート隕石
+entity.spidermanaddon:symbiont.name=ヴェノム・シンビオート
+item.spawn_egg.entity.spidermanaddon:symbiont.name=ヴェノム・シンビオート
+
+item.spidermanaddon:venom=Venom [変身]
+
+item.spiderverse:spider_gwen=Spider-Gwen [変身]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Into the Spider-Verse [変身]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Into the Spider-Verse - 信頼の跳躍 [変身]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Across the Spider-Verse [変身]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Into the Spider-Verse - トレーニング [変身]
+item.spidermanaddon:comic1=コミック：アメイジング・ファンタジー #15
+item.spiderverse:hobgoblin_skin=Hobgoblin スーツ
+item.spiderverse:green_goblin_skin=グリーン・ゴブリン スーツ
+
+item.spidermanaddon:planeador_item=グリーン・ゴブリンのグライダー
+item.spidermanaddon:spider_mobile_item=Spider-Mobile
+item.spidermanaddon:spider_bike_item=Spider-Bike
+
+item.spidermanaddon:web_shot_empty=ウェブシューター [空]
+item.spidermanaddon:web_shot=ウェブシューター
+item.spidermanaddon:sand_crystal_shard=サンドマンのクリスタル片
+tile.spidermanaddon:sand_crystal.name=サンドマンのクリスタル
+tile.spidermanaddon:sand_crystal_block.name=サンドマンのクリスタルブロック
+tile.spidermanaddon:prisoner_spawn.name=Prisoner Spawn
+
+item.spidermanaddon:combat_mode=戦闘モード
+item.spidermanaddon:delete_upgrades_token=アップグレードを削除
+item.spidermanaddon:escudo_token=シールド [アップグレード]
+item.spidermanaddon:golpe_eletrico_token=電撃 [アップグレード]
+item.spidermanaddon:regeneracion_token=再生 [アップグレード]
+item.spidermanaddon:salud_extra_token=追加体力 [アップグレード]
+item.spidermanaddon:dano_token=追加ダメージ [アップグレード]
+item.spidermanaddon:mega_venom_blast=メガ・ヴェノム・ブラスト
+item.spidermanaddon:venom_blast_punch=ヴェノム・ストライク
+item.spidermanaddon:bodega_cat=ボデガ・キャットのバックパック
+item.spidermanaddon:multiversal_particles=マルチバース粒子
+item.spidermanaddon:component=テクノロジー部品
+item.spidermanaddon:gr_27_negative=ネガティブ GR-27
+item.spidermanaddon:web_flow=ウェブ・フロー
+item.spidermanaddon:spider_powers=スパイダー能力
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=ヴェノム・シンビオート・カプセル
+
+item.spidermanaddon:symbiote_super_punch=スーパー・シンビオート・パンチ
+item.spidermanaddon:symbiote_punch=シンビオート・ストライク
+item.spidermanaddon:symbiont_blast=シンビオート・ブラスト
+item.spidermanaddon:backpack_empty=空のバックパック
+item.spidermanaddon:cat_hability_item=猫の能力
+item.spidermanaddon:comic2=アルティメット・スパイダーマン #1 コミック
+item.spidermanaddon:lizard_invoke=リザード召喚器
+item.spidermanaddon:shocker_invoke=Shocker召喚器
+item.spidermanaddon:green_goblin_invoke=グリーン・ゴブリン召喚器
+item.spidermanaddon:taskmaster_invoke=Taskmaster召喚器
+item.spidermanaddon:hobgoblin_invoke=Hobgoblin召喚器
+
+item.spiderverse:spiderman_classic_suit_damage=Spider-Man: クラシック・スーツ §c[破損]
+item.spiderverse:spiderman_raimi_suit_damage=Spider-Man Raimi's スーツ §c[破損]
+item.spiderverse:miles_morales_suit_damage=Spider-Man Miles Morales: クラシック・スーツ §c[破損]
+item.spiderverse:miles_morales_gold_suit_damage=スパイダーマン：マイルス・モラレス アップタウン・プライド・スーツ §c[破損]
+item.spiderverse:spiderman_stealth_suit_damage=スパイダーマン：ステルス・スーツ §c[破損]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Spider-Man: アドバンスド・スーツ §c[破損]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=スパイダーマン：アルティメット・スーツ §c[破損]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=The Amazing Spider-Man スーツ §c[破損]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=The Amazing Spider-Man 2 スーツ §c[破損]
+item.spiderverse:human_spider_suit_damage=la ヒューマン・スパイダー スーツ §c[破損]
+item.spiderverse:spiderman_wrestler_suit_damage=レスラー・スパイダーマン・スーツ §c[破損]
+item.spiderverse:spiderman_homemade_suit_damage=Spider-Man: ホームメイド・スーツ §c[破損]
+item.spiderverse:spiderman_far_from_home_suit_damage=Spider-Man: アップグレード・スーツ §c[破損]
+item.spiderverse:spiderman_no_way_home_suit_damage=スパイダーマン：ハイブリッド・スーツ §c[破損]
+item.spiderverse:spiderman_homecoming_suit_damage=スパイダーマン：スターク・スーツ §c[破損]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=スパイダーマン：マイルス・モラレス ボデガ・キャット・スーツ §c[破損]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's Spider-Man: アドバンスド・スーツ 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Spider-Man: アドバンスド・スーツ 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Spider-Man: アドバンスド・スーツ 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Spider-Man: アドバンスド・スーツ 2.0
+item.spiderverse:ezekiel_sims_suit=Ezekiel Sims スーツ
+item.spiderverse:iron_spider_suit=アイアン・スパイダー・スーツ（クラシック）
+item.spiderverse:iron_spider_suit_1=アイアン・スパイダー・スーツ（クラシック）
+item.spiderverse:iron_spider_suit_2=アイアン・スパイダー・スーツ（クラシック）
+item.spiderverse:iron_spider_suit_3=アイアン・スパイダー・スーツ（クラシック）
+item.spiderverse:spiderman_velocity_suit=スパイダーマン ヴェロシティ・スーツ
+item.spiderverse:spiderman_future_foundation_suit=スパイダーマン：フューチャー・ファウンデーション・スーツ
+item.spiderverse:spiderman_cero_suit=スパイダーマン：ゼロ・スーツ
+item.spiderverse:aracnido_jr_suit=アラクニッドJr. スーツ
+item.spiderverse:spiderman_classic_suit_1=Spider-Man: クラシック・スーツ
+item.spiderverse:spiderman_classic_suit_2=Spider-Man: クラシック・スーツ
+item.spiderverse:spiderman_classic_suit_3=Spider-Man: クラシック・スーツ
+item.spiderverse:spiderman_2099_suit_1=Spider-Man 2099 スーツ
+item.spiderverse:spiderman_2099_suit_2=Spider-Man 2099 スーツ
+item.spiderverse:spiderman_2099_suit_3=Spider-Man 2099 スーツ
+item.spiderverse:spiderman_2099_suit=Spider-Man 2099 スーツ
+item.spiderverse:spider_punk_suit=Spider-Punk スーツ
+item.spiderverse:spiderman_ps5_symbiote_suit=Insomniac's Spider-Man 2: シンビオート・スーツ
+item.spiderverse:scarlet_spider_suit_1=la スカーレット・スパイダー スーツ
+item.spiderverse:scarlet_spider_suit_2=la スカーレット・スパイダー スーツ
+item.spiderverse:scarlet_spider_suit_3=la スカーレット・スパイダー スーツ
+item.spiderverse:anti_ock_suit=アンチオック・スーツ
+item.spiderverse:taskmaster_suit=Taskmaster スーツ
+item.spiderverse:taskmaster_mask=Taskmaster マスク
+item.spiderverse:anti_ock_suit_damage=アンチオック・スーツ §c[破損]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Spider-Man: アドバンスド・スーツ 2.0 §c[破損]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Spider-Man: アドバンスド・スーツ 2.0 §c[破損]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Spider-Man: アドバンスド・スーツ 2.0 §c[破損]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Spider-Man: アドバンスド・スーツ 2.0 §c[破損]
+item.spiderverse:spiderman_classic_suit_1_damage=Spider-Man: クラシック・スーツ §c[破損]
+item.spiderverse:spiderman_classic_suit_2_damage=Spider-Man: クラシック・スーツ §c[破損]
+item.spiderverse:spiderman_classic_suit_3_damage=Spider-Man: クラシック・スーツ §c[破損]
+item.spiderverse:scarlet_spider_suit_1_damage=la スカーレット・スパイダー スーツ §c[破損]
+item.spiderverse:scarlet_spider_suit_2_damage=la スカーレット・スパイダー スーツ §c[破損]
+item.spiderverse:scarlet_spider_suit_3_damage=la スカーレット・スパイダー スーツ §c[破損]
+item.spiderverse:spiderman_2099_suit_1_damage=Spider-Man 2099 スーツ §c[破損]
+item.spiderverse:spiderman_2099_suit_2_damage=Spider-Man 2099 スーツ §c[破損]
+item.spiderverse:spiderman_2099_suit_3_damage=Spider-Man 2099 スーツ §c[破損]
+item.spiderverse:spiderman_2099_suit_damage=Spider-Man 2099 スーツ §c[破損]
+item.spiderverse:spider_punk_suit_damage=Spider-Punk スーツ §c[破損]
+item.spiderverse:hobgoblin_mask=Hobgoblin マスク
+item.spiderverse:green_goblin_mask=グリーン・ゴブリン マスク
+item.spidermanaddon:spiderman_picture=スパイダーマンの写真
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=アニャ・コラソン
+item.spidermanaddon:spider_bot_fly_controllers=スパイダーボット用飛行コントローラー
+item.spidermanaddon:spider_bots_controllers=スパイダーボット・コントローラー
+item.spidermanaddon:camera_mode_emotes=エモート
+item.spidermanaddon:camera_mode=カメラ位置を変更
+item.spidermanaddon:spider_web_ball=ウェブ・ボール
+tile.spidermanaddon:newspaper0.name=新聞
+tile.spidermanaddon:newspaper1.name=新聞
+tile.spidermanaddon:newspaper.name=新聞
+entity.spidermanaddon:penguin_stacy.name=Penguin Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Penguin Stacyを召喚
+entity.spidermanaddon:robot_dog.name=ハンター・ロボット
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=ハンター・ロボットを召喚
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jamesonを召喚
+entity.spidermanaddon:hunters_drone.name=ハンター・ドローン
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=ハンター・ドローンを召喚
+entity.spidermanaddon:stuffed_aracnido_jr.name=アラクニッドJr. ぬいぐるみ
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=アラクニッドJr. ぬいぐるみ
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=クレイヴンのハンター
+item.spawn_egg.entity.spidermanaddon:hunter.name=クレイヴンのハンターを召喚
+entity.spidermanaddon:hunter_crossbow.name=クロスボウを持つクレイヴンのハンター
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=クロスボウを持つクレイヴンのハンターを召喚
+item.spidermanaddon:delete_spider_powers=能力を削除
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Spider-Man 2099: Across The Spider-Verse スーツ
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Spider-Man 2099: Across The Spider-Verse (ダーク) スーツ
+item.spiderverse:spiderman_90_black_suit=Spider-Man: アニメシリーズ ブラック・スーツ
+item.spiderverse:spiderman_90_black_suit_1=Spider-Man: アニメシリーズ [赤と青の縁取り] ブラック・スーツ
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Scarlet Spider: Across The SpiderVerse スーツ
+item.spiderverse:superior_spiderman_suit=Superior Spider-Man スーツ
+item.spiderverse:superior_spiderman_suit_1=Superior Spider-Man スーツ
+item.spiderverse:superior_spiderman_suit_2=Superior Spider-Man スーツ
+item.spiderverse:superior_spiderman_suit_3=Superior Spider-Man スーツ
+item.spiderverse:miles_morales_wolverine_suit=Miles Morales: Wolverine スーツ
+item.spiderverse:miles_morales_wolverine_suit_1=Miles Morales: Wolverine スーツ
+item.spiderverse:miles_morales_wolverine_suit_2=Miles Morales: Wolverine スーツ
+item.spiderverse:miles_morales_wolverine_suit_3=Miles Morales: Wolverine スーツ
+item.spiderverse:the_amazing_spiderman_belt_suit=The Amazing Spider-Man ベルト付き スーツ
+item.spiderverse:the_amazing_spiderman_black_suit=The Amazing Spider-Man ブラック・スーツ
+item.spiderverse:spider_gwen_classic_suit=Ghost ️Spider スーツ
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Miles Morales: Across The Spider-Verse スーツ
+item.spidermanaddon:dr_octopus_arms=ドクター・オクトパスのアーム
+item.spidermanaddon:electric_web_empty=エレクトリック・ウェブシューター [空]
+item.spidermanaddon:electric_web=エレクトリック・ウェブシューター
+entity.spidermanaddon:dr_octopus.name=Doctor Octopus
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Doctor Octopusを召喚
+item.spiderverse:vulture_suit=ヴァルチャー・スーツ
+item.spiderverse:mysterio_suit_1=Mysterio スーツ
+item.spiderverse:mysterio_suit=Mysterio スーツ
+item.spiderverse:mysterio_helmet=ミステリオのヘルメット
+item.spiderverse:ghost_spider_suit=Ghost Spider スーツ
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Miles Morales: Into the Spider-Verse スーツ
+item.spiderverse:electro_suit=Electro スーツ
+item.spiderverse:electro_helmet=Electro マスク
+item.spidermanaddon:kraven_axe=クレイヴンの斧
+item.spidermanaddon:robot_dog_pet_plans=クレイヴンのロボット犬コントローラー
+item.spidermanaddon:robot_dog_pet=クレイヴンのロボット犬 [ペット]
+item.spidermanaddon:miles_morales_powers=マイルス・モラレスの能力
+item.spidermanaddon:symbiote_powers=シンビオート能力
+item.spiderverse:superior_spiderman_suit_damage=Superior Spider-Man スーツ §c[破損]
+item.spiderverse:superior_spiderman_suit_1_damage=Superior Spider-Man スーツ §c[破損]
+item.spiderverse:superior_spiderman_suit_2_damage=Superior Spider-Man スーツ §c[破損]
+item.spiderverse:superior_spiderman_suit_3_damage=Superior Spider-Man スーツ §c[破損]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales: Wolverine スーツ §c[破損]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales: Wolverine スーツ §c[破損]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales: Wolverine スーツ §c[破損]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales: Wolverine スーツ §c[破損]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=The Amazing Spider-Man ベルト付き スーツ §c[破損]
+
+item.spiderverse:venom_s3=Venom [Spider-Man 3] スーツ
+item.spiderverse:spiderman_last_stand_suit=Spider-Man: Last Stand スーツ
+item.spiderverse:superior_spiderman_black_suit=Superior Spider-Man ブラック・スーツ
+item.spiderverse:spiderman_web_of_shadows_black_suit=スパイダーマン：ウェブ・オブ・シャドウズ ブラック・スーツ
+item.spiderverse:spiderman_web_of_shadows_suit=Spider-Man: Web of Shadows スーツ
+item.spiderverse:spiderman_what_if_suit=Spider-Man: Disney Land スーツ
+item.spiderverse:spiderman_what_if_animated_suit=Spider-Man: What If Ep 5 スーツ
+item.spiderverse:spirit_spider_suit=Spirit Spider スーツ
+item.spiderverse:yfn_spiderman_casero_suit=「親愛なる隣人スパイダーマン」ホームメイド・スーツ
+item.spiderverse:into_the_spiderverse_sb_suit=Into The Spider-Verse SB スーツ
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Miles Morales: 信頼の跳躍 スーツ
+item.spiderverse:miles_morales_bodega_cat_suit_3=Spider-Man Miles Morales: ボデガ・キャット スーツ
+item.spiderverse:miles_morales_bodega_cat_suit_2=Spider-Man Miles Morales: ボデガ・キャット スーツ
+item.spiderverse:miles_morales_bodega_cat_suit_1=Spider-Man Miles Morales: ボデガ・キャット スーツ
+item.spiderverse:miles_morales_10th_suit_3=マイルス・モラレス 10周年スーツ
+item.spiderverse:miles_morales_10th_suit_2=マイルス・モラレス 10周年スーツ
+item.spiderverse:miles_morales_10th_suit_1=マイルス・モラレス 10周年スーツ
+item.spiderverse:miles_morales_10th_suit=マイルス・モラレス 10周年スーツ
+item.spiderverse:anti_ock_suit_1=アンチオック・スーツ
+item.spiderverse:anti_ock_suit_2=アンチオック・スーツ
+item.spiderverse:anti_ock_suit_3=アンチオック・スーツ
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Spider-Punk: Across The Spider-Verse スーツ
+item.spiderverse:spiderman_unlimited_suit=Spider-Man: Unlimited スーツ
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Spider-Noir: Into The Spider-Verse スーツ
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Spider-Man: Secret Wars - Civil War スーツ
+item.spiderverse:spiderman_india_suit=Spider-Man India: Across The Spider-Verse スーツ
+item.spiderverse:spiderman_antivenom_suit=スパイダーマンのアンチヴェノム・スーツ

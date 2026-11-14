@@ -1,0 +1,73 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.spider_mobile.walk": {
+      "loop": true,
+      "animation_length": 1.6,
+      "timeline": {
+        "0.0": [
+          "/playsound vehicles.car @a[r=20] ~ ~ ~ 0.1"
+        ]
+      }
+    },
+    "animation.spider_bike.walk": {
+      "loop": true,
+      "animation_length": 21.25,
+      "timeline": {
+        "0.0": [
+          "/playsound vehicles.bike @a[r=20] ~ ~ ~ 0.1"
+        ]
+      }
+    },
+    "animation.spider_mobile.particle": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/particle minecraft:basic_smoke_particle ^0.5 ^1.2 ^-3.75",
+		  "/particle minecraft:basic_smoke_particle ^-0.5 ^1.2 ^-3.75"
+        ]
+      }
+    },
+    "animation.spider_mobile.walk.particle": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/particle minecraft:basic_smoke_particle ^0.5 ^1.2 ^-6.75",
+		  "/particle minecraft:basic_smoke_particle ^-0.5 ^1.2 ^-6.75"
+        ]
+      }
+    },
+    "animation.bike.particle": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/particle minecraft:basic_smoke_particle ^-0.25 ^0.25 ^-1.2",
+		  "/particle minecraft:basic_smoke_particle ^-0.25 ^0.15 ^-0.9"
+        ]
+      }
+    },
+    "animation.bike.walk.particle": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/particle minecraft:basic_smoke_particle ^-0.25 ^0.25 ^-4.2",
+		  "/particle minecraft:basic_smoke_particle ^-0.25 ^0.15 ^-3.9"
+        ]
+      }
+    },
+
+    "animation.vehicles.motor": {
+      "loop": true,
+      "animation_length": 0.9,
+      "timeline": {
+        "0.0": [
+          "/playsound vehicles.motor @a[r=20] ~ ~1 ~ 0.5"
+        ]
+      }
+    }
+  }
+}

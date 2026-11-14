@@ -1,0 +1,1 @@
+give @s spiderverse:spiderman_classic_black_mask 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}

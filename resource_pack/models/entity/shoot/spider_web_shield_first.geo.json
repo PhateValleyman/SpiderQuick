@@ -1,0 +1,64 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spider_web_shield_first",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "spider_web_shield",
+					"parent": "head",
+					"pivot": [0, 28, -22],
+					"cubes": [
+						{"origin": [-8, 20, -27], "size": [16, 16, 1], "inflate": 4, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "s0",
+					"parent": "spider_web_shield",
+					"pivot": [0, 40, -22],
+					"cubes": [
+						{"origin": [-8, 44, -26], "size": [16, 8, 1], "inflate": 4, "pivot": [0, 41, -22], "rotation": [-45, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "s1",
+					"parent": "spider_web_shield",
+					"pivot": [0, 17, -22],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-8, 21, -27], "size": [16, 8, 1], "inflate": 4, "pivot": [0, 17, -22], "rotation": [-45, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "s2",
+					"parent": "spider_web_shield",
+					"pivot": [12, 28, -22],
+					"rotation": [0, 0, 90],
+					"cubes": [
+						{"origin": [4, 32, -27], "size": [16, 8, 1], "inflate": 4, "pivot": [12, 28, -22], "rotation": [-45, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "s3",
+					"parent": "spider_web_shield",
+					"pivot": [-12, 28, -22],
+					"rotation": [0, 0, -90],
+					"cubes": [
+						{"origin": [-20, 32, -27], "size": [16, 8, 1], "inflate": 4, "pivot": [-12, 28, -22], "rotation": [-45, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.spider_bot.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_bot.walk" : "(q.modified_move_speed > 0.05 && q.is_on_ground) || q.is_wall_climbing"
+						}
+					]
+				},
+				"spider_bot.walk" : {
+					"animations" : [ "spider_bot.walk" ],
+					"transitions" : [
+						{
+							"default" : "(q.modified_move_speed < 0.05 || !q.is_on_ground) && !q.is_wall_climbing"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spider_bot.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_bot.fly" : "q.has_target && q.is_sheared"
+						}
+					]
+				},
+				"spider_bot.fly" : {
+					"animations" : [ "spider_bot.fly" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

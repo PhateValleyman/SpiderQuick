@@ -1,0 +1,147 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.kraven.crossbow" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {"crossbow.off": "q.mark_variant == 1"} ]
+				}
+			}
+		},
+		"controller.animation.kraven.rifle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ {"rifle.off": "q.mark_variant == 2"} ]
+				}
+			}
+		},
+		"controller.animation.kraven.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle", "eyes" ]
+				}
+			}
+		},
+		"controller.animation.kraven.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"kraven.walk" : "q.modified_move_speed > 0.1"
+						}
+					]
+				},
+				"kraven.walk" : {
+					"animations" : [ {"walk": "q.mark_variant == 0" }, {"walk.weapon": "q.mark_variant == 1 || q.mark_variant == 2" } ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kraven.apuntar" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"kraven.apuntar" : "q.has_target"
+						}
+					]
+				},
+				"kraven.apuntar" : {
+					"animations" : [ {"apuntar": "q.mark_variant == 1 || q.mark_variant == 2" } ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kraven.granadas" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"kraven.granadas" : "q.mark_variant == 3"
+						}
+					]
+				},
+				"kraven.granadas" : {
+					"animations" : [ "granadas" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kraven.axe" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "axe.off" ],
+					"transitions" : [
+						{
+							"kraven.axe" : "q.mark_variant == 4"
+						}
+					]
+				},
+				"kraven.axe" : {
+					"animations" : [ "axe_attack" ],
+					"transitions" : [
+						{
+							"shoot_axe" : "q.any_animation_finished"
+						}
+					]
+				},
+				"shoot_axe" : {
+					"animations" : [ "shoot_axe" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kraven.lanza" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+				"animations" : [ "lanza.off" ],
+					"transitions" : [
+						{
+							"kraven.lanza_habilidad" : "q.mark_variant == 5"
+						}
+					]
+				},
+				"kraven.lanza_habilidad" : {
+					"animations" : [ "lanza_habilidad" ],
+					"transitions" : [
+						{
+							"lanzar" : "q.any_animation_finished"
+						}
+					]
+				},
+				"lanzar" : {
+					"animations" : [ "lanzar" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

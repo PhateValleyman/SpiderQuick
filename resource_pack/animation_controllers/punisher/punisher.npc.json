@@ -1,0 +1,109 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.punisher.npc": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "sit.c",
+            "walk.c",
+            "walk.c",
+            "apuntar_pistol.c"
+          ]
+        }
+      }
+    },
+    "controller.animation.punisher.sit": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "sit": "q.is_sitting && !q.is_riding"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "sit": {
+          "animations": [
+            "sit"
+          ],
+          "transitions": [
+            {
+              "default": "!q.is_sitting || q.is_riding"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.punisher.apuntar_pistol": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "apuntar_pistol": "q.has_target"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "apuntar_pistol": {
+          "animations": [
+            "apuntar_pistol"
+          ],
+          "transitions": [
+            {
+              "default": "!q.has_target"
+            }
+          ],
+          "blend_transition": 0.5
+        }
+      }
+    },
+    "controller.animation.punisher.walk": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walk": "query.modified_move_speed > 0.1 && q.is_on_ground"
+            },
+            {
+              "falling": "!q.is_on_ground"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "walk": {
+          "animations": [
+            {
+              "walk": "!q.has_target"
+            },
+            {
+              "walk_fusil": "q.has_target"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed < 0.1 || !q.is_on_ground"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "falling": {
+          "animations": [
+            "falling"
+          ],
+          "transitions": [
+            {
+              "default": "q.is_on_ground"
+            }
+          ],
+          "blend_transition": 0.25
+        }
+      }
+    }
+  }
+}

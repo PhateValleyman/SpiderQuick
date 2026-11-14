@@ -1,0 +1,82 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.electro": {
+			"states": {
+				"default": {
+					"animations": [
+						{ "player.electro.fly.c": "!v.is_first_person" },
+						"player.electro.laser.c",
+						{ "player.electro.clones.c": "!v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.electro.laser": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "laser": "q.equipped_item_any_tag('slot.weapon.mainhand', 'electro_laser') || q.equipped_item_any_tag('slot.weapon.mainhand', 'electro_ray')" }
+					],
+					"blend_transition": 0.5
+				},
+				"laser": {
+					"animations": [
+						{ "player.electro.laser.third": "!q.equipped_item_any_tag('slot.armor.feet', 'electro_tas2_suit') && !v.is_first_person" },
+						{ "player.electro.blue_laser.third": "q.equipped_item_any_tag('slot.armor.feet', 'electro_tas2_suit') && !v.is_first_person" },
+						{ "player.electro.laser.first": "v.is_first_person" }
+					],
+					"transitions": [
+						{ "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'electro_laser') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'electro_ray')" }
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.electro.fly": {
+			"states": {
+				"default": {
+					"animations": [
+						{ "look_at_target": "q.equipped_item_any_tag('slot.armor.legs', 'electro_powers')" }
+					],
+					"transitions": [
+						{
+							"falling": "!q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') && q.equipped_item_any_tag('slot.armor.legs', 'electro_powers') && q.property('nido:flying') == true"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"falling": {
+					"animations": [
+						"player.mysterio.falling", "look_at_target"
+					],
+					"transitions": [
+						{ "default": "q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') || !q.equipped_item_any_tag('slot.armor.legs', 'electro_powers') || q.property('nido:flying') == false" },
+						{ "fly_sprint": "q.is_sprinting" }
+					],
+					"blend_transition": 0.5
+				},
+				"fly_sprint": {
+					"animations": [
+						"player.mysterio.fly"
+					],
+					"transitions": [
+						{ "end": "q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') || !q.equipped_item_any_tag('slot.armor.legs', 'electro_powers') || q.property('nido:flying') != true || !q.is_sprinting" }
+					],
+					"blend_transition": 0.5
+				},
+				"end": {
+					"animations": [
+						"player.mysterio.fly.end"
+					],
+					"transitions": [
+						{
+							"falling": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

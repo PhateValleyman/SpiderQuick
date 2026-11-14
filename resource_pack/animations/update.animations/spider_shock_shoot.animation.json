@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spider_shock_shoot.idle": {
+			"loop": true,
+			"animation_length": 0.2083,
+			"particle_effects": {
+				"0.0": {
+					"effect": "spider_shock",
+					"locator": "spider_shock"
+				}
+			}
+		},
+		"animation.spider_shock_shoot.idle2": {
+			"loop": true,
+			"animation_length": 0.2083,
+			"particle_effects": {
+				"0.0": {
+					"effect": "spider_shock",
+					"locator": "spider_shock2"
+				}
+			}
+		},
+		"animation.spider_shock_shoot.rot": {
+			"loop": true,
+			"bones": {
+				"spider_shock": {
+					"rotation": ["-q.target_x_rotation", "-q.body_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

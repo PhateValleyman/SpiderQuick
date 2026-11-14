@@ -1,0 +1,1 @@
+execute unless entity @s[hasitem={item=marveladdons:venom_powers}] run give @s marveladdons:venom_powers 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}

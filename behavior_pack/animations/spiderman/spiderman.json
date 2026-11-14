@@ -1,0 +1,994 @@
+{
+  "format_version": "1.13.0",
+  "animations": {
+    "animation.player.spiderman.focus": {
+      "loop": false,
+      "animation_length": 1.25,
+      "timeline": {
+        "0.2": [
+		  "/playsound mob.phantom.flap @a ~ ~ ~ 0.6 1.8"
+		],
+        "0.5": [
+		  "/playsound mob.breeze.jump @a[r=10]",
+		  "/particle spidermanaddon:focus_particle ~ ~1.75 ~",
+		  "/playsound spiderman_effects.punch_impact @a[r=15] ~ ~ ~ 0.25 0.75",
+		  "/damage @e[tag=enemy_focus, r=5, c=1] 100"
+		]
+      }
+    },
+    "animation.player.spiderman.focus.detect": {
+      "loop": true,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.1": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=6, tag=!spiderman_focus, type=!item, type=!xp_orb, c=1] run function spiderman/combat/focus",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=6, type=!player, type=!item, type=!xp_orb, c=1] run function spiderman/combat/focus"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.4": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_punch4",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch4, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch4, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.2": [
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch4, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, tag=!spiderman_punch4, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch4",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, type=!player, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch4"
+		],
+        "0.4": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch4, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true"
+		],
+        "0.6": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch4, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true"
+		],
+        "0.7": [
+			"/tag @s remove spiderman_punch4"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.3": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_punch3",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch3, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch3, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.2": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch3, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, tag=!spiderman_punch3, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch3",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, type=!player, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch3"
+		],
+        "0.4": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch3, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true"
+		],
+        "0.6": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch3, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true"
+		],
+        "0.7": [
+			"/tag @s remove spiderman_punch3"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.2": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_punch2",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.2": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, tag=!spiderman_punch2, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch2",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, type=!player, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch2",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.4": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true"
+		],
+        "0.6": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch2, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true"
+		],
+        "0.7": [
+			"/tag @s remove spiderman_punch2"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.1": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_punch1",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 8 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] run tag @s[tag=spiderman_combat_levi] add spiderman_punch_i",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.2": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, tag=!spiderman_punch1, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, type=!player, type=!item, type=!xp_orb, c=1] run function spiderman/combat/punch1",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.45": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 0 0 true",
+			"/tag @s remove spiderman_punch_i",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true"
+		],
+        "0.65": [
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch1, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true"
+		],
+        "0.7": [
+			"/tag @s remove spiderman_punch1"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.now": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_punch_now",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch_now, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch_now, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] slow_falling 1 0 true"
+		],
+        "0.2": [
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~",
+		  "/tag @s remove spiderman_punch_load",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_now, type=!item, type=!xp_orb, r=2.5, c=3] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5, c=3] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, tag=!spiderman_punch_now, type=!item, type=!xp_orb, c=3] run function spiderman/combat/punch_now",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[r=2.5, type=!player, type=!item, type=!xp_orb, c=3] run function spiderman/combat/punch_now"
+		],
+        "0.45": [
+			"/tag @s remove spiderman_frozen",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] levitation 1 8 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] run effect @s[tag=spiderman_combat_levi] slow_falling 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch_now, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 0 0 true"
+		],
+        "0.65": [
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=pvp_player] run effect @e[tag=!spiderman_punch_now, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true",
+			"/execute if entity @s[tag=spiderman_punch_timer] if entity @s[tag=spiderman_combat_levi] if entity @s[tag=!pvp_player] run effect @e[type=!player, type=!item, type=!xp_orb, r=3.5] levitation 1 0 true"
+		],
+        "0.7": [
+			"/tag @s remove spiderman_punch_now",
+			"/event entity @s spiderman:punch.off"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.load": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+			"/tag @s add spiderman_load",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_load, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, family=!furniture, r=2, c=1] run event entity @s spiderman:punch.now"
+		],
+        "0.25": [
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_load, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now"
+		],
+        "0.4": [
+			"/tag @s remove spiderman_load",
+			"/effect @s levitation 0 1 true",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_load, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now"
+		]
+      }
+    },
+    "animation.player.spiderman.punch.timer": {
+      "loop": false,
+      "animation_length": 2.9,
+      "timeline": {
+
+      }
+    },
+    "animation.player.spiderman.punch.load.detect": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_load, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now"
+        ],
+        "0.05": [
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_punch_load, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, family=!furniture, r=2.5, c=1] run event entity @s spiderman:punch.now"
+        ]
+      }
+    },
+    "animation.player.spiderman.super_slingshot.slow": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.05": [
+			"/stopsound @s web_shooter_sounds.balancing_loop",
+			"/playsound web_shooter_sounds.balancing_stop @a[r=18]",
+			"/playsound spiderman_effects.reflexes @a[r=18]"
+		],
+        "0.1": [
+			"/tag @s add super_slingshot_slow"
+		],
+        "0.4": [
+			"/tag @s remove super_slingshot_slow"
+		]
+      }
+    },
+    "animation.player.spiderman.super_slingshot.full": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.05": [
+			"/stopsound @s web_shooter_sounds.balancing_loop",
+			"/playsound web_shooter_sounds.balancing_stop @a[r=18]",
+			"/playsound spiderman_effects.reflexes @a[r=18]"
+		],
+        "0.1": [
+			"/tag @s add super_slingshot_full"
+		],
+        "0.4": [
+			"/tag @s remove super_slingshot_full"
+		]
+      }
+    },
+    "animation.player.spiderman.super_slingshot": {
+      "loop": true,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			
+		]
+      }
+    },
+    "animation.player.spiderman.web_shooter.impact": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.01": [ 
+		  "/playsound spiderman_effects.rock_destroy @a[r=10]",
+		  "/particle hulkaddon:broken ~ ~0.1 ~",
+		  "/particle hulkaddon:rocks_effect ~ ~0.1 ~",
+		  "/event entity @s spiderman:web_whip.off",
+		  "/execute at @s[tag=pvp_player] run damage @e[r=5, tag=!golpe_suelo_player, type=!item, type=!xp_orb] 16",
+		  "/execute at @s[tag=!pvp_player] run damage @e[r=5, type=!player, type=!item, type=!xp_orb] 16",
+		  "/particle minecraft:spiderman_combo ~ ~1 ~", 
+		  "/tag @s remove web_golpe_suelo"
+		 ],
+        "0.5": [ 
+		  "/tag @s remove golpe_suelo_player"
+		 ]
+      }
+    },
+    "animation.player.spiderman.web_shooter.golpe_suelo": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.01": [ 
+		  "/tag @s add golpe_suelo_player",
+		  "/playsound web_shooter_sounds.shoot @s ~ ~ ~ 0.25",
+		  "/event entity @s spiderman:web_shooter.golpe_suelo",
+		  "/particle spidermanaddon:web_shooter.impact ~0.5 ~ ~",
+		  "/particle spidermanaddon:web_shooter.impact ~-0.5 ~ ~"
+		 ],
+        "0.05": [ 
+          "/tag @s add web_golpe_quieto", 
+		  "/effect @s levitation 1 0 true", 
+		  "/effect @s slow_falling 1 0 true"
+		 ],
+        "0.25": [ 
+			"/tag @s remove web_golpe_quieto", 
+		  "/effect @s levitation 0 1 true", 
+		  "/effect @s slow_falling 0 1 true", 
+		  "/tag @s add web_golpe_suelo"
+		 ]
+      }
+    },
+    "animation.player.spiderman.falling.damage": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.1": [ 
+			"/playsound spiderman_effects.rock_destroy @s",
+			"/particle hulkaddon:broken ~ ~0.2 ~",
+			"/particle hulkaddon:rocks_effect ~ ~0.2 ~",
+			"/damage @s 20",
+			"/tag @s add spiderman_damage_falling"
+			
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.acrobacias.2": {
+      "loop": true,
+      "animation_length": 0.8,
+      "timeline": {
+        "0.1": [ 
+			"/xp 25 @s"
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.acrobacias": {
+      "loop": true,
+      "animation_length": 0.8,
+      "timeline": {
+        "0.1": [ 
+			"/xp 10 @s"
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.sounds": {
+      "loop": true,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.1": [ 
+			"/playsound fly_loop @s ~ ~ ~ 0.75"
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.balancing_loop": {
+      "loop": true,
+      "animation_length": 10,
+      "timeline": {
+        "0.1": [ 
+			"/playsound web_shooter_sounds.balancing_loop @s ~ ~ ~ 0.75",
+			"/effect @s[tag=!web_on_ground] slow_falling 2 0 true"
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.web_wing_block": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.05": [ 
+			"/tag @s add web_wing_block"
+		]
+      }
+    },
+    "animation.player.spiderman.balanceo.off_sounds": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.1": [ 
+			"/stopsound @s fly_loop"
+		]
+      }
+    },
+    "animation.player.spiderman.caida_picada.sounds": {
+      "loop": true,
+      "animation_length": 3.0,
+      "timeline": {
+        "0.1": [
+			"/playsound spiderman_effects.falling.idle @s ~ ~ ~ 0.5",
+			"/effect @s slowness 10 1 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.balanceo.end.time": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.25": [
+			"/tag @s add web_wing_block",
+			"/effect @s slow_falling 1 0 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.caida_picada.time": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+			
+        ]
+      }
+	},
+    "animation.player.iron_arms.attack.3": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.0": [
+					"/playsound item.trident.throw @a[r=15] ~ ~ ~"
+        ],
+        "0.1": [
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!iron_arms_attack_3, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 run damage @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] 12",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 run damage @e[tag=!iron_arms_attack_3, type=!item, type=!xp_orb, type=!player, r=5] 12"
+        ],
+        "0.25": [
+					"/tag @s remove iron_arms_attack_3"
+        ]
+      }
+	},
+    "animation.player.iron_arms.attack.4": {
+      "loop": false,
+      "animation_length": 0.83333,
+      "timeline": {
+        "0.0": [
+					"/playsound item.trident.throw @a[r=15] ~ ~ ~"
+        ],
+        "0.1": [
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 run damage @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] 16",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 run damage @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] 16",
+			"/tag @s add iron_arms_impulse"
+        ],
+        "0.3": [
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 run damage @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] 16",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 run damage @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] 16",
+			"/tag @s remove iron_arms_impulse"
+        ],
+        "0.5": [
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 run damage @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] 16",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 run damage @e[tag=!iron_arms_attack_4, type=!item, type=!xp_orb, type=!player, r=5] 16"
+        ],
+        "0.75": [
+					"/tag @s remove iron_arms_attack_4",
+			"/tag @s remove iron_arms_impulse"
+        ]
+      }
+	},
+    "animation.player.iron_arms.attack": {
+      "loop": false,
+      "animation_length": 0.41667,
+      "timeline": {
+        "0.0": [
+			"/playsound item.trident.throw @a[r=15] ~ ~ ~"
+        ],
+        "0.1": [
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!iron_arms_attack, type=!item, type=!xp_orb, type=!player, r=5] run scoreboard players add @s s_focus_score 1",
+			"/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 run damage @e[type=!player, type=!item, type=!xp_orb, type=!player, r=5] 9",
+			"/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 run damage @e[tag=!iron_arms_attack, type=!item, type=!xp_orb, type=!player, r=5] 9"
+        ],
+        "0.25": [
+					"/tag @s remove iron_arms_attack"
+        ]
+      }
+	},
+    "animation.player.iron_spider": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.1": [
+		  "/playsound spiderman_effects.nanotechnology_effect @a[r=15]",
+		  "/event entity @s spiderman:iron_spider.1"
+        ],
+        "0.25": [
+		  "/event entity @s spiderman:iron_spider.2"
+        ],
+        "0.35": [
+		  "/event entity @s spiderman:iron_spider.3"
+        ],
+        "0.45": [
+		  "/event entity @s spiderman:iron_spider.4"
+        ],
+        "0.55": [
+		  "/event entity @s spiderman:iron_spider.5"
+        ],
+        "0.7": [
+		  "/event entity @s spiderman:iron_spider.5"
+        ]
+      }
+    },
+    "animation.player.spiderman.punch.impulse": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.05": [
+		  "/tag @s add spiderman_attack",
+		  "/tag @s add spiderman_punch_i",
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~"
+        ],
+        "0.1": [
+		  "/playsound spiderman_effects.punch @a[r=10]",
+		  "/particle minecraft:cap_boost ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse"
+        ],
+        "0.15": [
+		  "/tag @s remove spiderman_punch_i"
+        ],
+        "0.2": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse"
+        ],
+        "0.3": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse"
+        ],
+        "0.4": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse"
+        ],
+        "0.5": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch_impulse"
+        ],
+        "0.725": [
+		  "/event entity @s guns:shoot.off", "/tag @s remove spiderman_attack"
+        ]
+      }
+    },
+    "animation.player.spiderman.punch": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.05": [
+		  "/tag @s add spiderman_attack",
+		  "/effect @s levitation 1 9 true",
+		  "/playsound spiderman_effects.punch @a[r=15] ~ ~ ~"
+        ],
+        "0.1": [
+		  "/playsound spiderman_effects.punch @a[r=10]",
+		  "/particle minecraft:cap_boost ~ ~ ~",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 if entity @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 if entity @e[type=!player, type=!item, type=!xp_orb, r=2.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^1 as @e[tag=!spiderman_attack, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^1 as @e[type=!player, type=!item, type=!xp_orb, r=2.5] run function spiderman/combat/punch"
+        ],
+        "0.2": [
+		  "/effect @s levitation 0 10 true"
+        ],
+        "0.725": [
+		 "/event entity @s guns:shoot.off", "/tag @s remove spiderman_attack"
+        ]
+      }
+    },
+    "animation.player.spiderman.web_shooter.web_shield.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.05": [
+			"/execute if entity @s[tag=!pvp_player] run summon spidermanaddon:spiderman_attack ~ ~1 ~ ~ ~ spidermanaddon:web_shield",
+			"/execute if entity @s[tag=pvp_player] run summon spidermanaddon:spiderman_attack ~ ~1 ~ ~ ~ spidermanaddon:web_shield.pvp",
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5",
+			"/scoreboard players remove @s web_shield 1",
+			"/particle spidermanaddon:web_explotion ~ ~1.7 ~"
+        ]
+      }
+	},
+    "animation.player.spiderman.web_shooter.web_shield": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.05": [
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5"
+        ]
+      }
+	},
+    "animation.player.spiderman.climb.default": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s slow_falling 5 0 true",
+			"/tag @s add spiderman_climb",
+			"/tag @s add web_wing_block"
+        ]
+      }
+	},
+    "animation.player.spiderman.climb.down": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s slow_falling 5 0 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.climb.on": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s levitation 5 9 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.menu.time": {
+      "loop": false,
+      "animation_length": 1,
+      "timeline": {
+        "0.0": [
+			
+        ]
+      }
+    },
+    "animation.player.spiderman.spin_attack": {
+      "loop": false,
+      "animation_length": 1,
+      "timeline": {
+        "0.05": [
+		  "/tag @s add spiderman_spin"	
+        ],
+        "0.1": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.2": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.35": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.5": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.65": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.8": [
+		  "/playsound spiderman_effects.punch @a[r=15]",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_spin, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_spin, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/spin_attack"
+        ],
+        "0.9": [
+		  "/tag @s remove spiderman_spin",
+		  "/event entity @s guns:shoot.off"
+        ]
+      }
+    },
+    "animation.player.spiderman.kick.ground": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.075": [ 
+		  "/tag @s add spiderman_kick_g"
+		 ],
+        "0.15": [ 
+		  "/playsound spiderman_effects.rock_destroy @a[r=10]",
+		  "/particle hulkaddon:broken ~ ~0.1 ~",
+		  "/tag @s remove spiderman_kick",
+		  "/particle hulkaddon:rocks_effect ~ ~0.1 ~",
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick_g, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick_g, type=!item, type=!xp_orb] run function spiderman/combat/kick_ground",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick_ground"
+		 ],
+        "0.5": [ 
+		  "/tag @s remove spiderman_kick_g",
+		  "/event entity @s guns:shoot.off"
+		 ]
+      }
+    },
+    "animation.player.spiderman.kick": {
+      "loop": false,
+      "animation_length": 0.85,
+      "timeline": {
+        "0.02": [
+			"/tag @s add spiderman_kick",
+			"/playsound spiderman_effects.punch @a[r=15]"
+        ],
+        "0.1": [
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick"
+        ],
+        "0.25": [
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/tag @s remove spiderman_kick_i"
+        ],
+        "0.4": [
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick"
+        ],
+        "0.55": [
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick"
+        ],
+        "0.7": [
+		  "/execute at @s[tag=pvp_player] if entity @e[tag=!spiderman_kick, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+		  "/execute at @s[tag=!pvp_player] if entity @e[type=!player, type=!item, type=!xp_orb, r=3.5] run scoreboard players add @s s_focus_score 1",
+			"/execute if entity @s[tag=pvp_player] as @e[r=3.5, tag=!spiderman_kick, type=!item, type=!xp_orb] run function spiderman/combat/kick",
+			"/execute if entity @s[tag=!pvp_player] as @e[r=3.5, type=!player, type=!item, type=!xp_orb] run function spiderman/combat/kick"
+        ],
+        "0.8": [
+			"/tag @s remove spiderman_kick"
+        ]
+      }
+    },
+    "animation.player.spiderman.kick.time": {
+      "loop": false,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.1": [
+			
+        ]
+      }
+    },
+    "animation.player.spiderman.damage_sensor": {
+      "loop": true,
+      "animation_length": 1,
+      "timeline": {
+        "0.75": [
+			"/event entity @s spiderman:damage_sensor"
+        ]
+      }
+    },
+    "animation.player.spiderman.symbiote.whip.attack.1": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+		  "/effect @s slowness 1 0 true",
+		  "/playsound venom.equip @a[r=10]"
+        ],
+        "0.3": [
+		  "/playsound venom.whip @a[r=10]"
+        ],
+        "0.4": [
+		  "/playsound venom.axe @a[r=10]",
+		  "/playsound venom.axe @a[r=10]",
+		  "/execute positioned ^ ^1 ^3 run damage @e[type=!xp_orb, type=!item, type=!player, r=4] 9",
+		  "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "0.6": [
+		  "/playsound venom.whip @a[r=10]"
+        ]
+      }
+	},
+    "animation.player.spiderman.symbiote.whip.attack.2": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+		  "/effect @s slowness 2 0 true",
+		  "/playsound venom.equip @a[r=10]"
+        ],
+        "0.25": [
+		  "/execute positioned ^ ^1 ^3 run damage @e[type=!xp_orb, type=!item, type=!player,  r=4] 8",
+		  "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "0.85": [
+		  "/playsound venom.whip @a[r=10]",
+		  "/playsound venom.axe @a[r=10]"
+        ],
+        "0.9": [
+		  "/execute positioned ^ ^1 ^2 run damage @e[type=!xp_orb, type=!item, type=!player,  r=2] 11",
+		  "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "1.1": [
+		  "/execute positioned ^ ^1 ^4 run damage @e[type=!xp_orb, type=!item, type=!player,  r=2] 13",
+		  "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "1.2": [
+		  "/playsound venom.equip @a[r=10]"
+        ],
+        "1.35": [
+		  "/effect @s slowness 0 1 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.web_shooter.shoot": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.1": [
+			"/scoreboard players remove @s web_shoot 1",
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5",
+			"/function spiderman/web_shooter_score",
+			"/event entity @s web_shooter:shoot"
+		]
+      }
+    },
+    "animation.player.spiderman.web_shooter.reload": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.5": [
+			"/playsound web_shooter_sounds.empty @a[r=10] ~ ~ ~ 0.5"
+		],
+        "0.85": [
+			"/scoreboard players set @s web_shoot 100",
+			"/function spiderman/web_shooter_score",
+			"/clear @s mzaddon:spider_web_cartridge 0 1"
+		]
+      }
+    },
+    "animation.player.spiderman.time": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.38": [
+
+		]
+      }
+    },
+    "animation.player.spiderman.super_jump": {
+      "loop": false,
+      "animation_length": 1.25,
+      "timeline": {
+        "0.05": [
+			
+        ]
+      }
+	},
+    "animation.player.spiderman.balanceo.impulse_air": {
+      "loop": false,
+      "animation_length": 2.1,
+      "timeline": {
+        "0.05": [
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5"
+        ],
+        "2.0": [
+			"/event entity @s guns:shoot.off"
+        ]
+      }
+	},
+    "animation.player.spiderman.balanceo.impulse": {
+      "loop": false,
+      "animation_length": 1.1,
+      "timeline": {
+        "0.05": [
+			"/playsound web_shooter_sounds.shoot @a[r=10] ~ ~ ~ 0.5",
+			"/tag @s add spider_hook_shoot"
+        ],
+        "1.0": [
+			"/event entity @s guns:shoot.off"
+        ]
+      }
+	},
+    "animation.player.spiderman.powers": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s speed infinite 0 true",
+			"/effect @s strength infinite 0 true",
+			"/effect @s jump_boost infinite 3 true",
+			"/effect @s haste infinite 0 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.run": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s jump_boost infinite 9 true",
+			"/effect @s speed infinite 3 true"
+        ]
+      }
+	},
+    "animation.player.spiderman.escalar_sensor": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute at @s if block ~ ~1.25 ~-0.69 air run tag @s add spider_air_north",
+          "/execute at @s if block ~ ~1.25 ~0.69 air run tag @s add spider_air_south",
+          "/execute at @s if block ~-0.69 ~1.25 ~ air run tag @s add spider_air_west",
+          "/execute at @s if block ~0.69 ~1.25 ~ air run tag @s add spider_air_east",
+		  "/execute at @s if block ~ ~2.25 ~ air run tag @s add d_techo",
+		  "/execute at @s if block ^0.65 ^ ^ air run tag @s add right_wall",
+		  "/execute at @s if block ^-0.65 ^ ^ air run tag @s add left_wall",
+		  
+          "/execute unless block ~ ~1.25 ~-0.69 reeds unless block ~ ~1.25 ~-0.69 rose_bush unless block ~ ~1.25 ~-0.69 short_grass unless block ~ ~1.25 ~-0.69 tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_north] run event entity @s spiderman:escalar",
+          "/execute unless block ~ ~1.25 ~0.69 reeds unless block ~ ~1.25 ~0.69 rose_bush unless block ~ ~1.25 ~0.69 short_grass unless block ~ ~1.25 ~0.69 tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_south] run event entity @s spiderman:escalar",
+          "/execute unless block ~-0.69 ~1.25 ~ reeds unless block ~-0.69 ~1.25 ~ rose_bush unless block ~-0.69 ~1.25 ~ short_grass unless block ~-0.69 ~1.25 ~ tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_west] run event entity @s spiderman:escalar",
+          "/execute unless block ~0.69 ~1.25 ~ reeds unless block ~0.69 ~1.25 ~ rose_bush unless block ~0.69 ~1.25 ~-0.69 short_grass unless block ~0.69 ~1.25 ~ tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_east] run event entity @s spiderman:escalar",
+		  "/execute if entity @s[y=130, r=190] at @s[tag=!d_techo] run event entity @s spiderman:pegado_techo",
+		  "/execute if entity @s[y=130, r=190] at @s[tag=!right_wall] run event entity @s spiderman:right_wall",
+		  "/execute if entity @s[y=130, r=190] at @s[tag=!left_wall] run event entity @s spiderman:left_wall",
+		  
+          "/execute at @s[tag=spider_air_north] run execute at @s[tag=spider_air_south] run execute at @s[tag=spider_air_west] run execute at @s[tag=spider_air_east] run event entity @s spiderman:escalar.off",
+		  "/execute at @s[tag=d_techo] run event entity @s spiderman:pegado_techo_off",
+		  "/execute at @s[tag=right_wall] run event entity @s spiderman:right_wall_off",
+		  "/execute at @s[tag=left_wall] run event entity @s spiderman:left_wall_off",
+          "/tag @s remove spider_air_north",
+          "/tag @s remove spider_air_south",
+          "/tag @s remove spider_air_west",
+          "/tag @s remove spider_air_east",
+          "/tag @s remove correr_air_west",
+		  "/tag @s remove d_techo",
+          "/tag @s remove techo",
+          "/tag @s remove right_wall",
+          "/tag @s remove left_wall"
+        ]
+      }
+    }
+  }
+}

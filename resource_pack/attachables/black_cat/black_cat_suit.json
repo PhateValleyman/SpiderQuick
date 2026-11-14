@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:black_cat_suit",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/suits/black_cat_suit",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.black_cat_suit"
+			},
+			"animations": {
+				"capa_controller": "controller.animation.mysterio.capa",
+				"capa_idle": "animation.player.mysterio.capa.physics",
+				"capa_fly_sprint": "animation.player.mysterio.capa.fly_sprint",
+				"idle": "animation.player.mysterio.capa.idle",
+				"falling": "animation.player.mysterio.capa.falling"
+			},
+			"scripts": {
+				"animate": [
+					"capa_controller",
+					"idle"
+				]
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

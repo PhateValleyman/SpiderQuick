@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.venom_horse.spawn" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"venom.spawn" : "q.property('venom:spawn') == true"
+						}
+					]
+				},
+				"off" : {
+					"on_entry": [
+						"/event entity @s venom:spawn_off"
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('venom:spawn') == false"
+						}
+					]
+				},
+				"venom.spawn" : {
+					"animations" : [ "spawn" ],
+					"transitions" : [
+						{
+							"off" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

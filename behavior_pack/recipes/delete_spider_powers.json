@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "spidermanaddon:delete_spider_powers"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+	  {
+        "item": "minecraft:fermented_spider_eye",
+		"count": 1
+      },
+	  {
+        "item": "minecraft:milk_bucket",
+		"count": 1
+      },
+	  {
+        "item": "minecraft:glass_bottle",
+		"count": 1
+      }
+    ],
+    "result": [
+      { "item": "spidermanaddon:delete_spider_powers", "count": 1, "data": 0 },
+      { "item": "minecraft:bucket", "count": 1, "data": 0 }
+    ]
+  }
+}

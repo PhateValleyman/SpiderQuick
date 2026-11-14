@@ -1,0 +1,107 @@
+{
+	"format_version": "1.10.0",
+	"geometry.telarana_modelo": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 4,
+		"visible_bounds_height": 6,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "root",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "leftArm",
+				"parent": "body",
+				"pivot": [5, 22, 0]
+			},
+			{
+				"name": "la",
+				"parent": "leftArm",
+				"pivot": [6, 18, 0]
+			},
+			{
+				"name": "la_telarana",
+				"parent": "la",
+				"pivot": [6, 12.65, 0.5],
+				"cubes": [
+					{"origin": [5.5, -51, 0], "size": [1, 64, 1], "uv": [0, 0], "inflate": -0.35}
+				]
+			},
+			{
+				"name": "leftItem",
+				"parent": "leftArm",
+				"pivot": [6, 15, 1]
+			},
+			{
+				"name": "rightArm",
+				"parent": "body",
+				"pivot": [-5, 22, 0]
+			},
+			{
+				"name": "ra",
+				"parent": "rightArm",
+				"pivot": [-6, 18, 0]
+			},
+			{
+				"name": "ra_telarana",
+				"parent": "ra",
+				"pivot": [-6, 12.65, 0.5],
+				"cubes": [
+					{"origin": [-6.5, -51, 0], "size": [1, 64, 1], "uv": [4, 0], "inflate": -0.35}
+				]
+			},
+			{
+				"name": "rightSleeve2",
+				"parent": "ra",
+				"pivot": [-7, 18, 0]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-7, 18, 0]
+			},
+			{
+				"name": "leftLeg",
+				"parent": "root",
+				"pivot": [1.9, 12, 0]
+			},
+			{
+				"name": "ll",
+				"parent": "leftLeg",
+				"pivot": [1.9, 6, 0]
+			},
+			{
+				"name": "rightLeg",
+				"parent": "root",
+				"pivot": [-1.9, 12, 0]
+			},
+			{
+				"name": "rl",
+				"parent": "rightLeg",
+				"pivot": [-1.9, 6, 0]
+			}
+		]
+	}
+}

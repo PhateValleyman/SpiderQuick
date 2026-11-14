@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spiderverse_portals.outline": {
+      "geometry": "Geometry.spiderverse_portals_outline",
+      "materials": [ { "*": "Material.outline" } ],
+      "textures": [ "Texture.spiderverse_portals_outline" ]
+    },
+    "controller.render.spiderverse_portals": {
+      "geometry": "Geometry.spiderverse_portals",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.spiderverse_portals" ]
+    },
+    "controller.render.spiderverse_skybox": {
+      "geometry": "Geometry.spiderverse_skybox",
+      "materials": [ { "*": "Material.spiderverse_skybox" } ],
+      "textures": [ "Texture.spiderverse_skybox" ]
+    },
+    "controller.render.spiderverse_portal": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.spiderverse_portal.outline": {
+      "geometry": "Geometry.outline",
+      "materials": [ { "*": "Material.outline" } ],
+      "textures": [ "Texture.outline" ]
+    },
+    "controller.render.spiderman.npc": {
+      "geometry": "Geometry.mask",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.spiderman.npc.outline": {
+      "geometry": "Geometry.mask_outline",
+      "materials": [ { "*": "Material.outline" } ],
+      "textures": [ "Texture.outline" ]
+    },
+    "controller.render.spider_punk.npc.outline.color": {
+      "geometry": "Geometry.mask_outline_color",
+      "materials": [ { "*": "Material.outline_color" } ],
+      "textures": [ "Texture.outline_color" ]
+    }
+  }
+}

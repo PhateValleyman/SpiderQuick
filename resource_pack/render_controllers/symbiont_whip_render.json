@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.symbiont_whip.skin.0": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin0" ]
+    },
+    "controller.render.symbiont_whip.skin.1": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin1" ]
+    },
+    "controller.render.symbiont_whip.skin.2": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin2" ]
+    },
+    "controller.render.symbiont_whip.skin.3": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin3" ]
+    },
+    "controller.render.symbiont_whip.skin.4": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin4" ]
+    },
+    "controller.render.symbiont_whip.skin.5": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin5" ]
+    },
+    "controller.render.symbiont_whip.skin.6": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin6" ]
+    },
+    "controller.render.symbiont_whip.skin.7": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin7" ]
+    },
+    "controller.render.symbiont_whip.skin.8": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin8" ]
+    },
+    "controller.render.symbiont_whip.skin.9": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.skin9" ]
+    },
+    "controller.render.symbiont_whip.skin.red": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.red" ]
+    }
+  }
+}

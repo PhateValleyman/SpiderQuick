@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:spiderman_raimi_chip",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"spiderman_raimi_chip"
+                ]
+            },
+			"minecraft:allow_off_hand": true,
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.tools"
+			},
+			"minecraft:icon": {
+				"texture": "spiderman_chip"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

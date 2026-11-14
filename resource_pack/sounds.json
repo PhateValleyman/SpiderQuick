@@ -1,0 +1,249 @@
+{
+	"entity_sounds": {
+		"entities": {
+		  "spidermanaddon:hulk_boss": {
+			"volume": 1.0,
+			"pitch": [ 1.0, 1.0 ],
+			"events": {
+			  "ambient": "effects.hulk.idle",
+			  "hurt": "random.anvil_land",
+			  "attack": "effects.hulk.punch.vocals",
+			  "death": "effects.hulk.idle",
+			  "step": {
+				"sound": "effects.hulk.foot",
+				"volume": 1.0,
+				"pitch": [ 0.5, 0.75 ]
+			  }
+			}
+		  },
+		  "spidermanaddon:spider_ham": {
+			"volume": 1.0,
+			"pitch": [ 1.0, 1.0 ],
+			"events": {
+               "ambient" : "mob.pig.say",
+               "boost" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.pig.boost",
+                  "volume" : 1.0
+               },
+               "death" : "mob.pig.death",
+               "death.to.zombie" : {
+                  "sound" : "mob.pig.death",
+                  "volume" : 2.0
+               },
+               "eat" : "",
+               "hurt" : "mob.pig.say",
+               "step" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.pig.step",
+                  "volume" : 0.20
+               },
+			  "attack": "spiderman_effects.spider_ham_punch"
+			}
+		  },
+			 "spidermanaddon:venom_horse" : {
+				"events" : {
+				   "add.chest" : {
+					  "pitch" : [ 0.80, 1.20 ],
+					  "sound" : "mob.horse.armor",
+					  "volume" : 1.0
+				   },
+				   "ambient" : "mob.horse.zombie.idle",
+				   "armor" : {
+					  "pitch" : 1.0,
+					  "sound" : "mob.horse.armor",
+					  "volume" : 0.60
+				   },
+				   "breathe" : {
+					  "pitch" : 1.0,
+					  "sound" : "mob.horse.breathe",
+					  "volume" : 0.70
+				   },
+				   "death" : "mob.horse.zombie.death",
+				   "hurt" : "mob.horse.zombie.hit",
+				   "jump" : {
+					  "pitch" : 1.0,
+					  "sound" : "mob.horse.jump",
+					  "volume" : 0.40
+				   },
+				   "land" : {
+					  "pitch" : 1.0,
+					  "sound" : "mob.horse.land",
+					  "volume" : 0.40
+				   },
+				   "saddle" : {
+					  "pitch" : 1.0,
+					  "sound" : "mob.horse.leather",
+					  "volume" : 0.60
+				   }
+				},
+				"pitch" : [ 0.80, 1.20 ],
+				"volume" : 0.80
+			 },
+      "spidermanaddon:dr_octopus": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "attack": "dr_octopus.arms.attack"
+        }
+      },
+      "spidermanaddon:penguin_stacy": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "penguin_stacy.idle",
+          "death": "penguin_stacy.death",
+          "hurt": {
+            "sound": "penguin_stacy.hurt",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:hunters_drone": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "hurt": {
+            "sound": "random.anvil_land",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:robot_dog": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "robot_dog.idle",
+          "death": "robot_dog.death",
+          "step": {
+            "sound": "spider_bot.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "random.anvil_land",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:twirl_e": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "spider_bot.idle",
+          "death": "spider_bot.death",
+          "step": {
+            "sound": "spider_bot.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "random.anvil_land",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:twist_e": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "spider_bot.idle",
+          "death": "spider_bot.death",
+          "step": {
+            "sound": "spider_bot.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "random.anvil_land",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:trace_c": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "spider_bot.idle",
+          "death": "spider_bot.death",
+          "step": {
+            "sound": "spider_bot.walk",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "random.anvil_land",
+            "volume": 1.0,
+            "pitch": 1.55
+          }
+        }
+      },
+      "spidermanaddon:cat_hability": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient.tame": "mob.cat.meow",
+          "ambient": "mob.cat.straymeow",
+          "hurt": {
+            "sound": "mob.cat.hit",
+            "volume": 0.45
+          },
+          "death": {
+            "sound": "mob.cat.hit",
+            "volume": 0.5,
+            "pitch": 0.9
+          },
+          "purr": "mob.cat.purr",
+          "purreow": "mob.cat.purreow",
+          "eat": "mob.cat.eat"
+        }
+      },
+      "spidermanaddon:shocker": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "shocker.idle"
+        }
+      },
+      "spidermanaddon:green_goblin_raimi": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "green_goblin.idle",
+          "hurt": "green_goblin.hit",
+          "death": "green_goblin.hit"
+        }
+      },
+      "spidermanaddon:green_goblin": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "green_goblin.idle",
+          "hurt": "green_goblin.hit",
+          "death": "green_goblin.hit"
+        }
+      },
+      "spidermanaddon:lizard": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "lizard.idle",
+          "hurt": "lizard.hit",
+          "death": "lizard.hit"
+        }
+      },
+      "spidermanaddon:taskmaster": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.0 ],
+        "events": {
+          "ambient": "taskmaster.idle"
+        }
+      }
+		}
+	}
+}

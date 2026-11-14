@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.venom.camera": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^-1 ^2.5 ^-6 rot ~ ~"
+        ]
+      }
+    },
+    "animation.venom.camera.gliding": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^-1 ^2.5 ^-6 rot ~ ~"
+        ]
+      }
+    },
+    "animation.venom.selfie": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^4.5 ^2.5 rot ~ ~180"
+        ]
+      }
+    },
+    "animation.spiderman.selfie": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^1.5 ^1.25 rot ~ ~180"
+        ]
+      }
+    },
+    "animation.spiderman.selfie.pose": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^ ^2.5 rot ~ ~180"
+        ]
+      }
+    },
+    "animation.spiderman.selfie.abajo": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^1.5 ^1.25 rot ~ ~180"
+        ]
+      }
+    },
+    "animation.spiderman.selfie.arriba": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^1.5 ^1.25 rot ~ ~180"
+        ]
+      }
+    },
+    "animation.spiderman.selfie.sneaking": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/camera @s set minecraft:free ease 0.1 linear pos ^ ^1.25 ^1.15 rot ~5 ~180"
+        ]
+      }
+    }
+  }
+}

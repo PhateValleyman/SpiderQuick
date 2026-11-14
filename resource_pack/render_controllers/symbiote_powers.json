@@ -1,0 +1,278 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.symbiotes": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.symbiotes0",
+            "Texture.symbiotes1",
+            "Texture.symbiotes2",
+            "Texture.symbiotes3"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.skins[query.variant]"
+      ]
+    },
+    "controller.render.symbiote_skin.venom": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.default"
+      ]
+    },
+    "controller.render.symbiote_skin.antivenom": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.antivenom"
+      ]
+    },
+    "controller.render.symbiote_powers.venom_s3": {
+      "geometry": "Geometry.venom_s3",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.venom_s3"
+      ]
+    },
+    "controller.render.symbiote_powers.venom_s3.mask": {
+      "geometry": "Geometry.venom_s3_mask",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.venom_s3"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_ps5_symbiote_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps5_symbiote_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_ps4_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_ps4_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_antivenom_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_antivenom_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spectacular_spiderman_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spectacular_spiderman_black_suit_2": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit_2"
+      ]
+    },
+    "controller.render.symbiote_powers.spectacular_spiderman_black_suit_3": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spectacular_spiderman_black_suit_3"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_90_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_90_blue": {
+      "geometry": "Geometry.outline_color",
+      "materials": [
+        {
+          "*": "Material.outline_color"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_blue"
+      ]
+    },
+    "controller.render.symbiote_powers.outline": {
+      "geometry": "Geometry.outline",
+      "materials": [
+        {
+          "*": "Material.outline"
+        }
+      ],
+      "textures": [
+        "Texture.outline"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_90_red": {
+      "geometry": "Geometry.outline_color",
+      "materials": [
+        {
+          "*": "Material.outline_color"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_90_red"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_classic_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_classic_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_raimi_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_raimi_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.spiderman_web_of_shadows_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.spiderman_web_of_shadows_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.superior_spiderman_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.superior_spiderman_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.the_amazing_spiderman_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.the_amazing_spiderman_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.ultimate_spiderman_black_suit": {
+      "geometry": "Geometry.suit",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Texture.ultimate_spiderman_black_suit"
+      ]
+    },
+    "controller.render.symbiote_powers.venom.shoot": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": "q.variant == 0"
+        }
+      ],
+      "textures": [
+        "Texture.venom"
+      ]
+    },
+    "controller.render.symbiote_powers.antivenom.shoot": {
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": "q.variant == 1"
+        }
+      ],
+      "textures": [
+        "Texture.antivenom"
+      ]
+    }
+  }
+}

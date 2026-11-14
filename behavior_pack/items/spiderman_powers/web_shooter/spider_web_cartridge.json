@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "mzaddon:spider_web_cartridge",
+				"category": "equipment",
+				"group": "marveladdons:itemGroup.name.spiderman.items"
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"spider_web_cartridge"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "spider_web_cartridge"
+			},
+			"minecraft:max_stack_size": 16
+		}
+	}
+}

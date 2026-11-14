@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.spirit_spider_head.idle": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"head": {
+					"scale": 0.00001
+				}
+			}
+		},
+		"animation.venom_s3_head.idle": {
+			"loop": true,
+			"animation_length": 0.75,
+			"bones": {
+				"head": {
+					"scale": 0.01
+				}
+			}
+		},
+		"animation.spirit_spider_head.look": {
+			"loop": true,
+			"bones": {
+				"skull": {
+					"rotation": ["query.target_x_rotation - query.is_sneaking * 15.0 - this", "-1 + query.target_y_rotation", 0]
+				}
+			}
+		},
+		"animation.spirit_spider_head.idle": {
+			"loop": true,
+			"bones": {
+				"skull": {
+					"scale": 100000
+				}
+			}
+		},
+		"animation.spirit_spider_head.first": {
+			"loop": true,
+			"bones": {
+				"body_particle": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.player.spirit_spider_head.fire": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"ghost_rider_head_fire": {
+					"rotation": [0, 0, "query.target_y_rotation*0.5"],
+					"scale": {
+						"0.0": [1.25, 1.75, 1.25],
+						"0.5": [1, 1, 1],
+						"1.0": [1.25, 1.75, 1.25]
+					}
+				},
+				"body_particle": {
+					"position": [0, 6, 0]
+				}
+			},
+			"particle_effects": {
+				"0.4167": {
+					"effect": "spirit_fire_particle",
+					"locator": "body_particle"
+				},
+				"0.4583": {
+					"effect": "spirit_spider_suit_fire_effect",
+					"locator": "body_particle"
+				},
+				"0.9167": {
+					"effect": "spirit_fire_particle",
+					"locator": "body_particle"
+				},
+				"0.9583": {
+					"effect": "spirit_spider_suit_fire_effect",
+					"locator": "body_particle"
+				}
+			}
+		}
+	}
+}

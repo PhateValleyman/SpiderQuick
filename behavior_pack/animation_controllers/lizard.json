@@ -1,0 +1,80 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.lizard.ia" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"lizard.ia" : "q.has_target"
+						}
+					]
+				},
+				"lizard.ia" : {
+					"animations" : [ "lizard_IA" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.lizard.jump" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"lizard.jump" : "q.mark_variant == 3"
+						}
+					]
+				},
+				"lizard.jump" : {
+					"on_entry": [
+						"/summon spiderverse:lizard_jump ^ ^ ^-2",
+						"/playsound lizard.jump @a[r=25]"
+					],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.lizard.roar" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"lizard.roar.time" : "q.mark_variant == 1"
+						}
+					]
+				},
+				"lizard.roar.time" : {
+					"animations" : [ "lizard.roar.time" ],
+					"on_entry": [
+						"/playsound lizard.roar @a[r=25]",
+						"/effect @s slowness 4 20 true"
+					],
+					"transitions" : [
+						{
+							"lizard.roar" : "q.all_animations_finished"
+						}
+					]
+				},
+				"lizard.roar" : {
+					"animations" : [ "lizard.roar" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

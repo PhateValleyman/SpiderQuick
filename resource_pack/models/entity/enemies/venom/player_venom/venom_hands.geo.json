@@ -1,0 +1,164 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.venom_hands",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "cape",
+					"parent": "body",
+					"pivot": [0, 24, 3]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightArm_venom_player",
+					"parent": "rightArm_model",
+					"pivot": [-4, 32, -1],
+					"cubes": [
+						{"origin": [-10, 26, -4], "size": [8, 8, 8], "uv": [34, 86]},
+						{"origin": [-9.5, 19, -3.5], "size": [7, 7, 7], "uv": [94, 92]}
+					]
+				},
+				{
+					"name": "ra_venom_player",
+					"parent": "rightArm_venom_player",
+					"pivot": [-6, 19, 0.6],
+					"cubes": [
+						{"origin": [-9.5, 11.5, -3.4], "size": [7, 8, 7], "inflate": -0.25, "uv": [66, 92]}
+					]
+				},
+				{
+					"name": "puno0_venom_player",
+					"parent": "ra_venom_player",
+					"pivot": [-8, 10, -0.4],
+					"cubes": [
+						{"origin": [-9.5, 6, -3.4], "size": [7, 6, 7], "uv": [0, 109]}
+					]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftArm_venom_player",
+					"parent": "second_arm",
+					"pivot": [4, 32, -1],
+					"cubes": [
+						{"origin": [2, 26, -4], "size": [8, 8, 8], "uv": [86, 55]},
+						{"origin": [2.5, 19, -3.5], "size": [7, 7, 7], "uv": [21, 102]}
+					]
+				},
+				{
+					"name": "la_venom_player",
+					"parent": "leftArm_venom_player",
+					"pivot": [6, 19, 0.5],
+					"cubes": [
+						{"origin": [2.5, 11.5, -3.5], "size": [7, 8, 7], "inflate": -0.25, "uv": [0, 94]}
+					]
+				},
+				{
+					"name": "puno1_venom_player",
+					"parent": "la_venom_player",
+					"pivot": [6, 9, 0],
+					"cubes": [
+						{"origin": [2.5, 6, -3.5], "size": [7, 6, 7], "uv": [108, 111]}
+					]
+				},
+				{
+					"name": "jacket",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "leftPants",
+					"parent": "leftLeg",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "rightPants",
+					"parent": "rightLeg",
+					"pivot": [-1.9, 12, 0]
+				}
+			]
+		}
+	]
+}

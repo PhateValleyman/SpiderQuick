@@ -1,0 +1,44 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:strange_portal",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.dr_strange_portals"
+			},
+            "animations": {
+				"idle": "animation.dr_strange_portal.idle",
+				"chispas": "animation.dr_strange_portal.chispas",
+				"light": "animation.dr_strange_portal.light"
+            },
+			  "particle_effects": {
+				 "dr_strange_portal_light": "marveladdons:dr_strange_portal_light",
+				 "dr_strange_portal_chispas": "marveladdons:dr_strange_portal_chispas",
+				 "dr_strange_portal": "marveladdons:dr_strange_portal"
+			  },
+            "scripts": {
+				  "pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				  ],
+                "animate": [
+                    "light",
+					"idle",
+					"chispas"
+                ]
+            },
+			"render_controllers": [
+				"controller.render.default"
+			],
+		  "spawn_egg": {
+				"base_color": "#2a2536",
+				"overlay_color": "#264c61"
+		   }
+		}
+	}
+}

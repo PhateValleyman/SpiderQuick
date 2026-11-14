@@ -1,0 +1,354 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.black_cat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "player.black_cat.powers.c": "!v.is_first_person" },
+						{ "player.black_cat.whip_thef.c": "!v.is_first_person" },
+						{ "player.black_cat.whip_claws.c": "!v.is_first_person" },
+						{ "player.black_cat.claws.c": "!v.is_first_person" },
+						{ "player.black_cat.skin": "q.equipped_item_any_tag('slot.armor.head', 'black_cat_skin') && !v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.black_cat.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"black_cat" : "q.equipped_item_any_tag('slot.armor.legs', 'black_cat_powers') && q.is_alive"
+						}
+					]
+				},
+				"black_cat" : {
+					"animations" : [ 
+						"player.black_cat.climb.c", "player.spiderman.idle.c"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'black_cat_powers') || !q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.black_cat.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "move.legs": "q.is_in_water && !q.is_swimming" }, 
+						{ "move.arms": "q.is_in_water && !q.is_swimming" }
+					],
+					"transitions" : [
+						{
+							"walk" : "q.is_on_ground && q.modified_move_speed > 0.1 && q.is_alive && !q.is_in_water"
+						},
+						{
+							"run" : "q.is_on_ground && q.is_sprinting && q.is_alive && !q.is_in_water && q.property('arathnido:animation') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ 
+						{
+							"move.arms" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') && !variable.off_walk && !variable.off_move_hands"
+						},
+						{
+							"move.legs" : "!variable.off_walk"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_on_ground || q.modified_move_speed < 0.1 || !q.is_alive || q.is_in_water"
+						},
+						{
+							"run" : "q.is_on_ground && q.is_sprinting && q.is_alive"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"run" : {
+					"animations" : [ 
+						"player.black_cat.run"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sprinting || !q.is_on_ground || !q.is_alive || q.is_in_water"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.black_cat.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.black_cat.move.c", { "look_at_target": "q.is_on_ground || q.is_in_water" }, "player.spiderman.sneaking.c"
+					],
+					"transitions" : [
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "black_cat.swing" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_swing') && q.property('arathnido:animation') == 6" },
+						{ "black_cat.falling" : "!q.is_on_ground" }
+					]
+				},
+				"black_cat.swing" : {
+					"animations": [ { "player.spiderman.falling": "!q.is_on_ground" }, "player.spiderman.balanceo.shoot" ],
+					"transitions" : [
+						{ "black_cat.swing.idle" : "q.any_animation_finished" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+					]
+				},
+				"black_cat.swing.idle": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.2",
+						"player.spiderman.balanceo.legs" 
+					],
+					"transitions": [ 
+						{"balanceo.end":"q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ]
+				},
+				"balanceo.ground": {
+					"animations": [ 
+						"player.spiderman.balanceo.ground", 
+						{ "player.spiderman.falling.time": "!q.is_jumping && !q.is_on_ground" },
+						{ "move.legs": "q.is_in_water || q.is_on_ground" }, 
+						{ "move.arms": "q.is_in_water || q.is_on_ground" },
+						{ "player.spiderman.balanceo.legs": "!q.is_on_ground" },
+						{ "look_at_target": "!q.is_on_ground" }
+					],
+					"transitions": [ 
+						{"black_cat.swing.idle":"!q.is_on_ground"},
+						{"default":"q.property('arathnido:animation') == 0 || q.is_sneaking"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.end": {
+                    "animations": [ "player.black_cat.balanceo.jump" ],
+					"transitions": [ 
+                        {"black_cat.falling":"q.all_animations_finished"},
+						{"default":"q.is_on_ground"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "black_cat.swing" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_swing') && q.property('arathnido:animation') == 6" }
+                    ]
+				},
+				"player.spiderman.web.pose": {
+                    "animations": [ "player.black_cat.swing.head" ],
+					"transitions": [
+                        {"balanceo.end":"q.property('arathnido:animation') == 0 || q.is_sneaking"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"black_cat.falling" : {
+					"animations" : [ 
+						"player.black_cat.falling"
+					],
+					"transitions" : [
+						{ "default" : "q.is_on_ground" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "black_cat.swing" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_swing') && q.property('arathnido:animation') == 6" }
+					]
+				},
+				"climb.run_wall" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || !q.is_sprinting || q.property('nido:flying') == true" },
+						{ "climb.run_wall.jump" : "q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" }
+					],
+					"animations" : [ 
+						"player.spiderman.climb.run_wall.c"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.run_wall.jump" : {
+					"transitions" : [
+						{ "default" : "q.is_on_ground || q.all_animations_finished || q.property('nido:flying') == true" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" }
+					],
+					"animations" : [ 
+						"player.spiderman.colgado.jump.run"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.default" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.down" : "!q.is_sneaking" },
+						{ "climb.run" : "q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+					],
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.c"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.run" : {
+					"transitions" : [
+						{ "default" : "q.is_on_ground || q.is_in_water || q.is_gliding || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.down" : "!q.is_sneaking || !q.is_jumping" },
+						{ "falling" : "q.property('arathnido:escalar') == false" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+					],
+					"animations" : [ 
+						"player.spiderman.climb.run2"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.on" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.default" : "q.any_animation_finished && q.is_sneaking" },
+						{ "climb.down" : "!q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+					],
+					"animations" : [ 
+						{ "player.spiderman.climb.default": "q.property('arathnido:escalar') == true"}, { "player.spiderman.climb.on": "q.property('arathnido:escalar') == true"}
+					],
+					"blend_transition": 0.25
+				},
+				"climb.down" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.default" : "q.is_sneaking" },
+						{ "climb.on" : "q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+					],
+					"animations" : [ 
+						{ "player.spiderman.climb.down": "q.property('arathnido:escalar') == true"}, { "player.spiderman.climb.on": "q.property('arathnido:escalar') == true"}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.crawl": {
+                    "animations": [ 
+						"player.spiderman.crawl", "player.spiderman.crawl.walk.c"
+					],
+					"transitions": [ 
+						{"default":"!q.is_riding || q.property('arathnido:ability0') == 0"}
+                    ]
+				},
+				"spiderman.crawl.up": {
+                    "animations": [ 
+						"player.spiderman.crawl.up", "player.spiderman.crawl.walk.c"
+					],
+					"transitions": [ 
+						{"default":"!q.is_riding || q.property('arathnido:ability0') == 0"}
+                    ]
+				}
+			}
+		},
+		"controller.animation.player.black_cat.claws" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "claws" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_claws') && q.property('arathnido:animation') == 4" }
+					]
+				},
+				"claws" : {
+					"animations" : [ "player.black_cat.claws" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_claws') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.black_cat.whip_claws" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{ "attack.0" : "q.property('arathnido:animation') == 5" }
+					]
+				},
+				"attack.0" : {
+					"animations" : [ "attack.0" ],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "attack.1" : "q.property('arathnido:animation') == 5 && q.all_animations_finished" }
+					]
+				},
+				"attack.1" : {
+					"animations" : [ "attack.1" ],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "attack.0" : "q.property('arathnido:animation') == 5 && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.black_cat.whip_claws" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_claws') && q.property('arathnido:animation') == 5" }
+					]
+				},
+				"attack.0" : {
+					"animations" : [ "player.black_cat.whip_claws.attack.0" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_claws') || q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_claws') && q.property('arathnido:animation') == 5 && q.all_animations_finished" }
+					]
+				},
+				"attack.1" : {
+					"animations" : [ "player.black_cat.whip_claws.attack.1" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_claws') || q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_claws') && q.property('arathnido:animation') == 5 && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.black_cat.whip_thef" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "whip_thef" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_thef') && q.property('arathnido:animation') == 7" }
+					]
+				},
+				"whip_thef" : {
+					"animations" : [ "player.black_cat.whip_thef" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'black_cat_whip_thef') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		}
+	}
+}

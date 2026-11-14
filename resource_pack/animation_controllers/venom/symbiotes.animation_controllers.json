@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+	"controller.animation.symbiotes.melee": {
+	  "initial_state": "default",
+	  "states": {
+		"default": {
+		  "transitions": [
+			{
+			  "attack": "variable.attack > 0.0"
+			}
+		  ]
+		},
+		"attack": {
+		  "animations": [
+			"attack"
+		  ],
+		  "transitions": [
+			{
+			  "default": "q.all_animations_finished"
+			}
+		  ]
+		}
+	  }
+	},
+    "controller.animation.symbiotes": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "look_at_target",
+            { "walk": "q.modified_move_speed > 0.02 && q.is_on_ground" },
+            { "falling": "!q.is_on_ground" }
+          ],
+          "transitions": [
+            { "explotion": "q.property('spidermanaddon:symbiote_state') == 'explotion'" },
+			{
+			  "shoot": "query.property('spidermanaddon:symbiote_state') == 'shoot'"
+			},
+			{
+			  "impulse": "q.property('spidermanaddon:symbiote_state') == 'impulse'"
+			},
+			{
+			  "skip": "q.property('spidermanaddon:symbiote_state') == 'skip'"
+			}
+          ]
+        },
+        "impulse": {
+          "animations": ["impulse"],
+          "transitions": [
+            { "default": "q.property('spidermanaddon:symbiote_state') != 'impulse' && q.all_animations_finished" }
+          ]
+        },
+        "explotion": {
+          "animations": ["explotion"],
+          "transitions": [
+            { "default": "q.property('spidermanaddon:symbiote_state') != 'explotion' && q.all_animations_finished" }
+          ]
+        },
+        "shoot": {
+          "animations": ["shoot"],
+          "transitions": [
+            { "default": "q.property('spidermanaddon:symbiote_state') != 'shoot' && q.all_animations_finished" }
+          ]
+        },
+        "skip": {
+          "animations": ["skip"],
+          "transitions": [
+            { "default": "q.property('spidermanaddon:symbiote_state') != 'skip' && q.all_animations_finished" }
+          ]
+        }
+      }
+    }
+  }
+}

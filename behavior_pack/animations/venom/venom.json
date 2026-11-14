@@ -1,0 +1,2716 @@
+{
+  "format_version": "1.13.0",
+  "animations": {
+    "animation.player.blue_venom.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.blue_venom.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed 1 40 true",
+          "/particle spidermanaddon:blue_symbiote_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom_2099.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed 1 40 true",
+          "/particle spidermanaddon:2099_symbiote_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.ultimate_venom.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed 1 40 true",
+          "/particle spidermanaddon:ultimate_symbiote_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.ultimate_venom.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom_2099.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.blue_venom.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom.ambient": {
+      "loop": true,
+      "animation_length": 12,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.ambient @a[r=12] ~ ~0.25 ~ 0.5"
+        ]
+      }
+    },
+    "animation.player.venom_2099.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.antivenom.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed 1 40 true",
+          "/particle spidermanaddon:antivenom_symbiote_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.antivenom.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.antivenom.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, type=!xp_orb, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, type=!xp_orb, r=6] 24",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom_snow.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom_snow.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed 1 40 true",
+          "/particle spidermanaddon:venom_snow_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom_snow.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.ultimate_venom.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom.hability.attack": {
+      "loop": false,
+      "animation_length": 0.88,
+      "timeline": {
+        "0.0": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_hability"
+        ],
+        "0.01": [
+          "/playsound spiderman_effects.venom_bite @a[r=15] ~ ~1 ~"
+        ],
+        "0.15": [
+          "/particle spidermanaddon:symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.33": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_hability, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/particle spidermanaddon:symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "0.75": [
+          "/tag @s remove venom_hability",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom.hability": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s speed infinite 40 true",
+          "/particle spidermanaddon:symbiote_drop ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom.take.smash": {
+      "loop": false,
+      "animation_length": 1,
+      "timeline": {
+        "0.0": [
+          "/tp @e[tag=venom_take, family=!player, r=5] ^-2 ^3 ^1.1"
+        ],
+        "0.08": [
+          "/tp @e[tag=venom_take, family=!player, r=5] ^-2 ^3 ^1.1"
+        ],
+        "0.17": [
+          "/tp @e[tag=venom_take, family=!player, r=5] ^-2 ^ ^1.1"
+        ],
+        "0.25": [
+          "/damage @e[tag=venom_take, family=!player, r=5] 30",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^-0.5 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^-1 ^0.25 ^",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^-1 ^0.25 ^"
+        ]
+      }
+    },
+    "animation.player.venom.take.time": {
+      "loop": false,
+      "animation_length": 15,
+      "timeline": {
+        "0.0": []
+      }
+    },
+    "animation.venom.take.time": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.25": [
+          "/event entity @s venom:take.off",
+          "/tag @s remove venom_take"
+        ],
+        "0.4": [
+          "/tag @s remove p_venom_take"
+        ]
+      }
+    },
+    "animation.venom.take.off": {
+      "loop": true,
+      "animation_length": 1.1,
+      "timeline": {
+        "1.0": [
+          "/execute unless entity @e[tag=venom_take, r=12, c=1] run event entity @s venom:take.off"
+        ]
+      }
+    },
+    "animation.venom.take.ground": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/tp @e[tag=venom_take, r=5] ^-1 ^3 ^2",
+          "/effect @e[tag=venom_take] weakness 3 35",
+          "/effect @e[tag=venom_take] mining_fatigue 3 35"
+        ]
+      }
+    },
+    "animation.venom.take.tp": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/tp @e[tag=venom_take, r=5] ^-1 ^3 ^2",
+          "/effect @s strength 1 5 true",
+          "/effect @e[tag=venom_take] weakness 3 35",
+          "/effect @e[tag=venom_take] mining_fatigue 3 35",
+          "/effect @s weakness 1 35 true"
+        ],
+        "0.15": [
+          "/tp @e[tag=venom_take, r=5] ^-1 ^3 ^2",
+          "/effect @s strength 1 5 true",
+          "/effect @e[tag=venom_take] weakness 3 35",
+          "/effect @e[tag=venom_take] mining_fatigue 3 35"
+        ],
+        "0.2": [
+          "/tp @e[tag=venom_take, r=5] ^-1 ^3 ^2",
+          "/effect @s strength 1 5 true",
+          "/effect @e[tag=venom_take] weakness 3 35",
+          "/effect @e[tag=venom_take] mining_fatigue 3 35"
+        ],
+        "0.225": [
+          "/execute unless entity @e[tag=venom_take, r=12, c=1] run tag @s remove p_venom_take",
+          "/execute unless entity @e[tag=venom_take, r=12, c=1] run event entity @s venom:take.off"
+        ]
+      }
+    },
+    "animation.player.venom.take": {
+      "loop": false,
+      "animation_length": 20.5,
+      "timeline": {
+        "0.0": [
+          "/tag @s add p_venom_take"
+        ],
+        "0.25": [
+          "/tag @e[tag=!p_venom_take, type=!item, type=!xp_orb, r=5, c=1] add venom_take"
+        ],
+        "1.0": [
+          "/execute if entity @e[tag=!venom_take, tag=!p_venom_take, c=1, r=12] run event entity @s venom:take.off",
+          "/execute if entity @e[tag=venom_take, c=1, r=12] run event entity @s venom:take"
+        ],
+        "20.3": [
+          "/tag @e[family=monster, r=12] remove venom_take",
+          "/event entity @s venom:take.off"
+        ]
+      }
+    },
+    "animation.player.venom.take.coldown": {
+      "loop": false,
+      "animation_length": 20,
+      "timeline": {
+        "0.1": [
+          "/title @s actionbar §lNasycení: §6[§a0§6/§a10§6]"
+        ],
+        "2.0": [
+          "/title @s actionbar §lNasycení: §6[§a1§6/§a10§6]"
+        ],
+        "4.0": [
+          "/title @s actionbar §lNasycení: §6[§a2§6/§a10§6]"
+        ],
+        "6.0": [
+          "/title @s actionbar §lNasycení: §6[§a3§6/§a10§6]"
+        ],
+        "8.0": [
+          "/title @s actionbar §lNasycení: §6[§a4§6/§a10§6]"
+        ],
+        "10.0": [
+          "/title @s actionbar §lNasycení: §6[§a5§6/§a10§6]"
+        ],
+        "12.0": [
+          "/title @s actionbar §lNasycení: §6[§a6§6/§a10§6]"
+        ],
+        "14.0": [
+          "/title @s actionbar §lNasycení: §6[§a7§6/§a10§6]"
+        ],
+        "16.0": [
+          "/title @s actionbar §lNasycení: §6[§a8§6/§a10§6]"
+        ],
+        "18.0": [
+          "/title @s actionbar §lNasycení: §6[§a9§6/§a10§6]"
+        ],
+        "19.9": [
+          "/title @s actionbar §lNasycení: §6[§a10§6/§a10§6]"
+        ]
+      }
+    },
+    "animation.player.venom.wings.fly": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.1": [
+          "/playsound mob.enderdragon.flap @a[r=15]"
+        ]
+      }
+    },
+    "animation.player.venom.fly.time": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": []
+      }
+    },
+    "animation.player.symbiont.whip.attack.1": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 0 true",
+          "/playsound venom.equip @a[r=10]"
+        ],
+        "0.3": [
+          "/playsound venom.whip @a[r=10]"
+        ],
+        "0.4": [
+          "/playsound venom.axe @a[r=10]",
+          "/playsound venom.axe @a[r=10]",
+          "/execute positioned ^ ^1 ^3 run damage @e[type=!xp_orb, type=!item, type=!player, r=4] 9",
+          "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "0.6": [
+          "/playsound venom.whip @a[r=10]"
+        ]
+      }
+    },
+    "animation.player.symbiont.whip.attack.2": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 2 0 true",
+          "/playsound venom.equip @a[r=10]"
+        ],
+        "0.25": [
+          "/execute positioned ^ ^1 ^3 run damage @e[type=!xp_orb, type=!item, type=!player, r=4] 8",
+          "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "0.85": [
+          "/playsound venom.whip @a[r=10]",
+          "/playsound venom.axe @a[r=10]"
+        ],
+        "0.9": [
+          "/execute positioned ^ ^1 ^2 run damage @e[type=!xp_orb, type=!item, type=!player, r=2] 11",
+          "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "1.1": [
+          "/execute positioned ^ ^1 ^4 run damage @e[type=!xp_orb, type=!item, type=!player, r=2] 13",
+          "/execute at @e[type=!item, type=!player, r=4] run particle spidermanaddon:venom_particle ~ ~1 ~"
+        ],
+        "1.2": [
+          "/playsound venom.equip @a[r=10]"
+        ],
+        "1.35": [
+          "/effect @s slowness 0 1 true"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.blue": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.blue.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:blue_venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:blue_venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:blue_venom_particle ~ ~3 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.2099": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~2 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.2099.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_2099_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:venom_2099_particle ~ ~2 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:venom_2099_particle ~ ~3 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.snow": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~2 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.snow.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_snow_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:venom_snow_particle ~ ~2 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:venom_snow_particle ~ ~3 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.antivenom": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:antivenom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:antivenom_particle ~ ~1 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:antivenom_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:antivenom_particle ~ ~2 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:antivenom_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.antivenom.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:antivenom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:antivenom_particle ~ ~1 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:antivenom_particle ~ ~2 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:antivenom_particle ~ ~3 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.default.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.ultimate.end": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.roar @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~",
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~",
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~",
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~3 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~3 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.default": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.venom.changes_skin.ultimate": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~ ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.2": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~"
+        ],
+        "0.3": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.4": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/particle spidermanaddon:ultimate_venom_particle ~ ~2.5 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2.5 ~"
+        ]
+      }
+    },
+    "animation.player.venom.shield": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.05": [
+          "/playsound venom.hability @a[r=20]",
+          "/tag @s add venom_shield"
+        ],
+        "0.15": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.5 ~",
+          "/effect @s absorption 10 4 true"
+        ],
+        "0.2": [
+          "/execute at @s[tag=pvp_player] run summon spidermanaddon:venom_empuje ~ ~1.5 ~ ~ ~ spidermanaddon:shield",
+          "/execute at @s[tag=!pvp_player] run summon spidermanaddon:venom_empuje ~ ~1.5 ~ ~ ~ spidermanaddon:shield.pvp"
+        ]
+      }
+    },
+    "animation.player.venom.regeneration.on": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.65": [
+          "/effect @e[tag=venom_eat, c=1, r=4] invisibility 1 0 true"
+        ],
+        "1.7": [
+          "/summon spidermanaddon:venom_regeneration_empuje ^ ^1 ^-1"
+        ],
+        "1.73": [
+          "/damage @e[type=!item, tag=venom_eat, c=1] 30",
+          "/event entity @s venom:regeneration_off"
+        ]
+      }
+    },
+    "animation.player.venom.regeneration.tp": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/tp @e[tag=venom_eat, c=1] ^ ^1 ^0.25"
+        ]
+      }
+    },
+    "animation.player.venom.regeneration": {
+      "loop": false,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.0": [
+          "/tag @e[type=!xp_orb, type=!arrow, type=!item, type=!spidermanaddon:symbiont, type=!minecraft:player, r=8, c=1] add venom_eat",
+          "/playsound venom.regeneration @a[r=15]"
+        ],
+        "0.2": [
+          "/function venom/venom_regeneration"
+        ]
+      }
+    },
+    "animation.player.venom.axe.attack": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.axe @a[r=10]"
+        ],
+        "0.15": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, tag=!venom_attacking, r=3] 20",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!player, r=3] 20"
+        ],
+        "0.3": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!player, r=3] 11"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true",
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.knife.attack": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.axe @a[r=10]"
+        ],
+        "0.15": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, tag=!venom_attacking, r=3] 20",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!player, r=3] 20"
+        ],
+        "0.3": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!player, r=3] 11"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true",
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.whip.attack.1": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.whip @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.125": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 11"
+        ],
+        "0.25": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 11"
+        ],
+        "0.375": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 11"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 11",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 11"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.725": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.whip.attack.2": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.whip @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.125": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 15",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 15"
+        ],
+        "0.25": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 15",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 15"
+        ],
+        "0.375": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 15",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 15"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 15",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 15"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.725": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.whip.attack.3": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.whip @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.125": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 19",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 19"
+        ],
+        "0.25": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 19",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 19"
+        ],
+        "0.375": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 19",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 19"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 19",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 19"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.725": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.whip.attack.4": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.whip @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.125": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 24"
+        ],
+        "0.25": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^5 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 24"
+        ],
+        "0.375": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^8 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 24"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^11 run damage @e[type=!item, type=!xp_orb, type=!player, r=3] 24"
+        ],
+        "0.7": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.725": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.climb.default": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/effect @s slow_falling 5 0 true",
+          "/tag @s add venom_climb"
+        ]
+      }
+    },
+    "animation.player.venom.climb.down": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/effect @s slow_falling 5 0 true"
+        ]
+      }
+    },
+    "animation.player.venom.climb.on": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/effect @s levitation 5 9 true"
+        ]
+      }
+    },
+    "animation.player.venom.climb.impulso": {
+      "loop": true,
+      "animation_length": 1,
+      "timeline": {
+        "0.0": [
+          "/playsound venom.equip @a[r=10]"
+        ],
+        "0.35": [
+          "/playsound venom.whip @a[r=10]"
+        ],
+        "0.45": [
+          "/effect @s levitation 1 40 true"
+        ],
+        "0.95": [
+          "/effect @s levitation 0 41 true"
+        ]
+      }
+    },
+    "animation.player.venom.explotion": {
+      "loop": false,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.05": [
+          "/tag @s add blast_player"
+        ],
+        "0.2": [
+          "/playsound spiderman_effects.symbiote_claw @a[r=12] ~ ~1 ~"
+        ],
+        "0.25": [
+          "/execute at @s[tag=pvp_player] positioned ~ ~1 ~ run damage @e[type=!item, tag=!blast_player, type=!xp_orb, r=6] 20",
+          "/execute at @s[tag=!pvp_player] positioned ~ ~1 ~ run damage @e[type=!item, type=!player, type=!xp_orb, r=6] 20",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/camerashake add @s 0.25 0.25 rotational"
+        ],
+        "0.325": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/camerashake add @s 0.25 0.25 rotational"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] positioned ~ ~1 ~ run damage @e[type=!item, tag=!blast_player, type=!xp_orb, r=6] 30",
+          "/execute at @s[tag=!pvp_player] positioned ~ ~1 ~ run damage @e[type=!item, type=!player, type=!xp_orb, r=6] 30",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/camerashake add @s 0.25 0.25 rotational"
+        ],
+        "0.65": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~"
+        ],
+        "0.8": [
+          "/tag @s remove blast_player",
+          "/event entity @s guns:shoot.off"
+        ]
+      }
+    },
+    "animation.player.venom.impulse_whip": {
+      "loop": false,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+          "/effect @s levitation 1 1 true",
+          "/playsound venom.equip @a[r=20]"
+        ],
+        "0.15": [
+          "/playsound venom.whip @a[r=20]"
+        ],
+        "0.5": [
+          "/tag @s add venom_impulse"
+        ],
+        "0.75": [
+          "/tag @s remove venom_impulse"
+        ],
+        "0.8": [
+          "/tag @s remove venom_impulse"
+        ]
+      }
+    },
+    "animation.player.venom_2099.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.antivenom.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.blue_venom.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom_snow.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.ultimate_venom.special_attack": {
+      "loop": false,
+      "animation_length": 1.75,
+      "timeline": {
+        "0.01": [
+          "/inputpermission set @s lateral_movement disabled",
+          "/tag @s add venom_special_attack"
+        ],
+        "0.1": [
+          "/playsound venom.hability @a[r=20]"
+        ],
+        "0.5": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_special_attack, r=6] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=6] 24",
+          "/playsound spiderman_effects.rock_destroy @a[r=20]",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ],
+        "1.0": [
+          "/playsound venom.hability.end @a[r=20]"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom.smash": {
+      "loop": false,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+          "/playsound spiderman_effects.rock_destroy @a[r=25] ~ ~ ~ 1 1",
+          "/tag @s add venom_smash",
+          "/effect @s slowness 1 3 true"
+        ],
+        "0.15": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "0.3": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24",
+          "/effect @s slowness 1 3 true"
+        ],
+        "0.45": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "0.6": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "0.75": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "0.9": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "1.15": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_smash, r=5] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=5] 24"
+        ],
+        "1.4": [
+          "/tag @s remove venom_special_attack",
+          "/inputpermission set @s lateral_movement enabled"
+        ]
+      }
+    },
+    "animation.player.venom.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.blue_venom.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:blue_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:blue_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.venom_2099.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:2099_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:2099_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.venom_snow.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:snow_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:snow_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.antivenom.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:antivenom_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:antivenom_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:antivenom_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:antivenom_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:antivenom_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:antivenom_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.ultimate_venom.smash.particles": {
+      "loop": false,
+      "animation_length": 1.38,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~0.15.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~-2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~2.25 ~0.15 ~2.25",
+          "/particle spidermanaddon:ultimate_symbiote_splash ~-2.25 ~0.15 ~-2.25"
+        ]
+      }
+    },
+    "animation.player.venom.smash.on": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.05": [
+          "/tag @s add venom_smash_i"
+        ],
+        "0.4": [
+          "/tag @s remove venom_smash_i"
+        ]
+      }
+    },
+    "animation.player.venom.attack.4": {
+      "loop": false,
+      "animation_length": 2,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 2 3 true",
+          "/tag @s add venom_attacking",
+          "/stopsound @s game.player.attack.nodamage",
+          "/playsound spiderman_effects.symbiote_claw @a[r=10]",
+          "/effect @s levitation 1 1 true",
+          "/summon spidermanaddon:venom_empuje ^ ^0.5 ^-2 ~ ~ spidermanaddon:default"
+        ],
+        "0.25": [
+          "/effect @s levitation 0 4 true"
+        ],
+        "0.65": [
+          "/playsound spiderman_effects.rock_destroy @a[r=25] ~ ~ ~ 1 1",
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=4] 24",
+          "/summon spidermanaddon:venom_effect ^ ^1.5 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^ ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^ ^1 ^1"
+        ],
+        "0.7": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^3 run damage @e[type=!item, tag=!venom_attacking, r=4] 24",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^3 run damage @e[type=!item, type=!player, r=4] 24",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^ ^1 ^3"
+        ],
+        "1.0": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=4] 24",
+          "/summon spidermanaddon:venom_effect ^ ^1.5 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ^ ^1 ^3.25",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^ ^1 ^3.5",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^ ^1 ^3.5"
+        ],
+        "1.1": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=3] 24",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=4] 24"
+        ],
+        "1.3": [
+          "/execute positioned ^ ^1 ^1 at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=4] 24",
+          "/execute positioned ^ ^1 ^1 at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=4] 24",
+          "/summon spidermanaddon:venom_effect ^ ^1.5 ^1"
+        ],
+        "1.4": [
+          "/execute positioned ^ ^1 ^3 at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=4] 24",
+          "/execute positioned ^ ^1 ^3 at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=4] 24",
+          "/summon spidermanaddon:venom_effect ^ ^1.5 ^1"
+        ],
+        "1.6": [
+          "/effect @s slowness 0 4 true"
+        ],
+        "1.975": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.attack.1": {
+      "loop": false,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.punch @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.15": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, tag=!venom_attacking, r=3] 9",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!player, r=3] 9"
+        ],
+        "0.6": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.725": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.attack.2": {
+      "loop": false,
+      "animation_length": 0.54167,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.punch @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.1": [
+          "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, tag=!venom_attacking, r=3] 12",
+          "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2.5 run damage @e[type=!item, type=!player, r=3] 12"
+        ],
+        "0.4": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.5": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.attack.3": {
+      "loop": false,
+      "animation_length": 1,
+      "timeline": {
+        "0.0": [
+          "/effect @s slowness 1 1 true",
+          "/tag @s add venom_attacking",
+          "/playsound venom.punch @a[r=10]",
+          "/stopsound @s game.player.attack.nodamage"
+        ],
+        "0.1": [
+          "/execute at @s[tag=pvp_player] run damage @e[type=!item, tag=!venom_attacking, r=7] 16",
+          "/execute at @s[tag=!pvp_player] run damage @e[type=!item, type=!player, r=7] 16",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ^ ^1 ^",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^-2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^2 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ^1 ^1 ^1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ^1 ^1 ^1"
+        ],
+        "0.85": [
+          "/effect @s slowness 0 8 true"
+        ],
+        "0.975": [
+          "/tag @s remove venom_attacking"
+        ]
+      }
+    },
+    "animation.player.venom.attack.time.2": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.01": []
+      }
+    },
+    "animation.player.venom.attack.time.3": {
+      "loop": false,
+      "animation_length": 0.6,
+      "timeline": {
+        "0.01": []
+      }
+    },
+    "animation.player.venom.attack.cooldown": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": []
+      }
+    },
+    "animation.venom.hability.move": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom.walk.sounds": {
+      "loop": true,
+      "animation_length": 0.45,
+      "timeline": {
+        "0.01": [
+          "/playsound venom.foot @a[r=20]",
+          "/playsound venom.foot.0 @a[r=20] ~ ~ ~ 1 0.5"
+        ]
+      }
+    },
+    "animation.player.venom.hability.walk.sounds": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.0": [
+          "/playsound mob.zombie.step @a[r=10]"
+        ]
+      }
+    },
+    "animation.player.venom.super_jump": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/effect @s jump_boost 1 25 true"
+        ]
+      }
+    },
+    "animation.player.venom.super_jump.particles": {
+      "loop": false,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~-0.25 ~0.25 ~-0.5"
+        ],
+        "0.4": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.5 ~-1",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~0.5 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~0.25 ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~-0.25 ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~-0.25 ~0.25 ~-0.5",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~-0.25 ~0.25 ~-0.5"
+        ]
+      }
+    },
+    "animation.player.venom.transform.off": {
+      "loop": false,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~3 ~",
+          "/playsound spiderman_effects.venom_off @a[r=20]"
+        ],
+        "0.1": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~2.75 ~"
+        ],
+        "0.2": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~2.5 ~"
+        ],
+        "0.3": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~2.25 ~"
+        ],
+        "0.4": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~2 ~"
+        ],
+        "0.5": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~1.75 ~"
+        ],
+        "0.7": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~1.5 ~"
+        ],
+        "0.8": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~1.25 ~"
+        ],
+        "0.9": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~1 ~"
+        ],
+        "1.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~0.75 ~"
+        ],
+        "1.1": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~0.5 ~"
+        ],
+        "1.2": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_splash ~ ~0.25 ~"
+        ]
+      }
+    },
+    "animation.player.venom.transform": {
+      "loop": false,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.1 ~",
+          "/playsound spiderman_effects.venom_transform @a[r=20]"
+        ],
+        "0.1": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~0.25 ~"
+        ],
+        "0.2": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~0.5 ~"
+        ],
+        "0.3": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~0.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~0.75 ~"
+        ],
+        "0.4": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~1 ~"
+        ],
+        "0.5": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~1.25 ~"
+        ],
+        "0.6": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~1.5 ~"
+        ],
+        "0.7": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~1.75 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~1.75 ~"
+        ],
+        "0.8": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~2 ~"
+        ],
+        "0.9": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2.25 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~2.25 ~"
+        ],
+        "1.0": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~2.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~2.5 ~"
+        ],
+        "1.1": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~3 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~3 ~"
+        ],
+        "1.25": [
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:venom_2099_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:venom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:venom_snow_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_particle ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=0}] run particle spidermanaddon:symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=1}] run particle spidermanaddon:symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=2}] run particle spidermanaddon:blue_symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=3}] run particle spidermanaddon:symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=4}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=5}] run particle spidermanaddon:ultimate_symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=6}] run particle spidermanaddon:2099_symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=7}] run particle spidermanaddon:symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=8}] run particle spidermanaddon:snow_symbiote_splash ~ ~3.5 ~",
+          "/execute if entity @s[has_property={arathnido:skins=9}] run particle spidermanaddon:antivenom_symbiote_splash ~ ~3.5 ~"
+        ]
+      }
+    },
+    "animation.player.venom.time": {
+      "loop": false,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.38": []
+      }
+    },
+    "animation.player.symbiont.powers": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/effect @s speed infinite 0 true",
+          "/effect @s resistance infinite 1 true",
+          "/effect @s strength infinite 0 true",
+          "/effect @s jump_boost infinite 3 true",
+          "/effect @s haste infinite 0 true"
+        ]
+      }
+    },
+    "animation.player.venom.powers": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+          "/effect @s speed infinite 1 true",
+          "/effect @s resistance infinite 2 true",
+          "/effect @s strength infinite 1 true",
+          "/effect @s jump_boost infinite 4 true",
+          "/effect @s haste infinite 0 true"
+        ]
+      }
+    },
+    "animation.player.venom.damage_sensor": {
+      "loop": true,
+      "animation_length": 1,
+      "timeline": {
+        "0.75": [
+          "/event entity @s venom:damage_sensor"
+        ]
+      }
+    },
+    "animation.player.venom.escalar_sensor": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute at @s if block ~ ~1.25 ~-0.69 air run tag @s add spider_air_north",
+          "/execute at @s if block ~ ~1.25 ~0.69 air run tag @s add spider_air_south",
+          "/execute at @s if block ~-0.69 ~1.25 ~ air run tag @s add spider_air_west",
+          "/execute at @s if block ~0.69 ~1.25 ~ air run tag @s add spider_air_east",
+          "/execute at @s if block ~ ~2.25 ~ air run tag @s add d_techo",
+          "/execute at @s if block ^0.65 ^ ^ air run tag @s add right_wall",
+          "/execute at @s if block ^-0.65 ^ ^ air run tag @s add left_wall",
+          "/execute unless block ~ ~1.25 ~-0.69 reeds unless block ~ ~1.25 ~-0.69 rose_bush unless block ~ ~1.25 ~-0.69 short_grass unless block ~ ~1.25 ~-0.69 tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_north] run event entity @s spiderman:escalar",
+          "/execute unless block ~ ~1.25 ~0.69 reeds unless block ~ ~1.25 ~0.69 rose_bush unless block ~ ~1.25 ~0.69 short_grass unless block ~ ~1.25 ~0.69 tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_south] run event entity @s spiderman:escalar",
+          "/execute unless block ~-0.69 ~1.25 ~ reeds unless block ~-0.69 ~1.25 ~ rose_bush unless block ~-0.69 ~1.25 ~ short_grass unless block ~-0.69 ~1.25 ~ tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_west] run event entity @s spiderman:escalar",
+          "/execute unless block ~0.69 ~1.25 ~ reeds unless block ~0.69 ~1.25 ~ rose_bush unless block ~0.69 ~1.25 ~-0.69 short_grass unless block ~0.69 ~1.25 ~ tall_grass if entity @s[y=130, r=190] at @s[tag=!spider_air_east] run event entity @s spiderman:escalar",
+          "/execute if entity @s[y=130, r=190] at @s[tag=!d_techo] run event entity @s spiderman:pegado_techo",
+          "/execute if entity @s[y=130, r=190] at @s[tag=!right_wall] run event entity @s spiderman:right_wall",
+          "/execute if entity @s[y=130, r=190] at @s[tag=!left_wall] run event entity @s spiderman:left_wall",
+          "/execute at @s[tag=spider_air_north] run execute at @s[tag=spider_air_south] run execute at @s[tag=spider_air_west] run execute at @s[tag=spider_air_east] run event entity @s spiderman:escalar.off",
+          "/execute at @s[tag=d_techo] run event entity @s spiderman:pegado_techo_off",
+          "/execute at @s[tag=right_wall] run event entity @s spiderman:right_wall_off",
+          "/execute at @s[tag=left_wall] run event entity @s spiderman:left_wall_off",
+          "/tag @s remove spider_air_north",
+          "/tag @s remove spider_air_south",
+          "/tag @s remove spider_air_west",
+          "/tag @s remove spider_air_east",
+          "/tag @s remove correr_air_west",
+          "/tag @s remove d_techo",
+          "/tag @s remove techo",
+          "/tag @s remove right_wall",
+          "/tag @s remove left_wall"
+        ]
+      }
+    }
+  }
+}

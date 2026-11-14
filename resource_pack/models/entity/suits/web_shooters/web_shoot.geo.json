@@ -1,0 +1,38 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.web_shoot",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 1,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "web_shoot",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"web_shoot": [0, 0, 0]
+					}
+				},
+				{
+					"name": "web_shoot2",
+					"pivot": [-8, 0, 0],
+					"locators": {
+						"web_shoot2": [-8, 0, 0]
+					}
+				},
+				{
+					"name": "web_shoot3",
+					"pivot": [8, 0, 0],
+					"locators": {
+						"web_shoot3": [8, 0, 0]
+					}
+				}
+			]
+		}
+	]
+}

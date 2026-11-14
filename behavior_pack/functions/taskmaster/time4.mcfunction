@@ -1,0 +1,1 @@
+titleraw @a[r=50] title {"rawtext": [{"text": "Začínáme!"}]}

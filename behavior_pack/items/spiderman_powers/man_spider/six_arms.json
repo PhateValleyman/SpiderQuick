@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:six_arms",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "six_arms", "off_rightitem", "convert_entity"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "six_arms"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 15,
+				"slot": "slot.armor.chest"
+			}
+		}
+	}
+}

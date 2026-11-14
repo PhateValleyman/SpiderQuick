@@ -1,0 +1,211 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spiderverse_portal_outline",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "spiderverse_portals",
+					"pivot": [0, 11, 0]
+				},
+				{
+					"name": "spiderverse_portal",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, 0]
+				},
+				{
+					"name": "porta0",
+					"parent": "spiderverse_portal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-18, 0, -1], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 0, 0], "rotation": [0, 0, 60], "uv": [0, 0]},
+						{"origin": [-6, 0, -1], "size": [12, 2, 2], "inflate": 0.15, "uv": [0, 4]},
+						{"origin": [6, 0, -1], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 0, 0], "rotation": [0, 0, -60], "uv": [0, 8]}
+					]
+				},
+				{
+					"name": "porta1",
+					"parent": "spiderverse_portal",
+					"pivot": [0, 20.775, 0],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-18, 20.775, -1], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 20.775, 0], "rotation": [0, 0, 60], "uv": [0, 12]},
+						{"origin": [-6, 20.775, -1], "size": [12, 2, 2], "inflate": 0.15, "uv": [0, 16]},
+						{"origin": [6, 20.775, -1], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 20.775, 0], "rotation": [0, 0, -60], "uv": [0, 20]}
+					]
+				},
+				{
+					"name": "spiderverse_portal3",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, 4]
+				},
+				{
+					"name": "porta4",
+					"parent": "spiderverse_portal3",
+					"pivot": [0, 0, 4],
+					"cubes": [
+						{"origin": [-18, 0, 3], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 0, 4], "rotation": [0, 0, 60], "uv": [0, 24]},
+						{"origin": [-6, 0, 3], "size": [12, 2, 2], "inflate": 0.15, "uv": [0, 28]},
+						{"origin": [6, 0, 3], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 0, 4], "rotation": [0, 0, -60], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "porta5",
+					"parent": "spiderverse_portal3",
+					"pivot": [0, 20.775, 4],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-18, 20.775, 3], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 20.775, 4], "rotation": [0, 0, 60], "uv": [28, 4]},
+						{"origin": [-6, 20.775, 3], "size": [12, 2, 2], "inflate": 0.15, "uv": [28, 8]},
+						{"origin": [6, 20.775, 3], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 20.775, 4], "rotation": [0, 0, -60], "uv": [28, 12]}
+					]
+				},
+				{
+					"name": "spiderverse_portal4",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, 8]
+				},
+				{
+					"name": "porta6",
+					"parent": "spiderverse_portal4",
+					"pivot": [0, 0, 8],
+					"cubes": [
+						{"origin": [-18, 0, 7], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 0, 8], "rotation": [0, 0, 60], "uv": [28, 16]},
+						{"origin": [-6, 0, 7], "size": [12, 2, 2], "inflate": 0.15, "uv": [28, 20]},
+						{"origin": [6, 0, 7], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 0, 8], "rotation": [0, 0, -60], "uv": [28, 24]}
+					]
+				},
+				{
+					"name": "porta7",
+					"parent": "spiderverse_portal4",
+					"pivot": [0, 20.775, 8],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-18, 20.775, 7], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 20.775, 8], "rotation": [0, 0, 60], "uv": [28, 28]},
+						{"origin": [-6, 20.775, 7], "size": [12, 2, 2], "inflate": 0.15, "uv": [0, 32]},
+						{"origin": [6, 20.775, 7], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 20.775, 8], "rotation": [0, 0, -60], "uv": [28, 32]}
+					]
+				},
+				{
+					"name": "spiderverse_portal5",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, 12]
+				},
+				{
+					"name": "porta8",
+					"parent": "spiderverse_portal5",
+					"pivot": [0, 0, 12],
+					"cubes": [
+						{"origin": [-18, 0, 11], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 0, 12], "rotation": [0, 0, 60], "uv": [28, 16]},
+						{"origin": [-6, 0, 11], "size": [12, 2, 2], "inflate": 0.15, "uv": [28, 20]},
+						{"origin": [6, 0, 11], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 0, 12], "rotation": [0, 0, -60], "uv": [28, 24]}
+					]
+				},
+				{
+					"name": "porta9",
+					"parent": "spiderverse_portal5",
+					"pivot": [0, 20.775, 12],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-18, 20.775, 11], "size": [12, 2, 2], "inflate": 0.125, "pivot": [-6, 20.775, 12], "rotation": [0, 0, 60], "uv": [28, 28]},
+						{"origin": [-6, 20.775, 11], "size": [12, 2, 2], "inflate": 0.15, "uv": [0, 32]},
+						{"origin": [6, 20.775, 11], "size": [12, 2, 2], "inflate": 0.125, "pivot": [6, 20.775, 12], "rotation": [0, 0, -60], "uv": [28, 32]}
+					]
+				},
+				{
+					"name": "spiderverse_portal2",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, -3]
+				},
+				{
+					"name": "porta2",
+					"parent": "spiderverse_portal2",
+					"pivot": [0, 0, -3],
+					"cubes": [
+						{"origin": [-17, 0, -4], "size": [10, 2, 1], "inflate": 0.05, "pivot": [-6, 0, -3], "rotation": [0, 0, 60], "uv": [0, 36]},
+						{"origin": [-5, 0, -4], "size": [10, 2, 1], "inflate": 0.075, "uv": [22, 36]},
+						{"origin": [7, 0, -4], "size": [10, 2, 1], "inflate": 0.05, "pivot": [6, 0, -3], "rotation": [0, 0, -60], "uv": [0, 39]}
+					]
+				},
+				{
+					"name": "porta3",
+					"parent": "spiderverse_portal2",
+					"pivot": [0, 20.775, -3],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-17, 20.775, -4], "size": [10, 2, 1], "inflate": 0.05, "pivot": [-6, 20.775, -3], "rotation": [0, 0, 60], "uv": [22, 39]},
+						{"origin": [-5, 20.775, -4], "size": [10, 2, 1], "inflate": 0.075, "uv": [0, 42]},
+						{"origin": [7, 20.775, -4], "size": [10, 2, 1], "inflate": 0.05, "pivot": [6, 20.775, -3], "rotation": [0, 0, -60], "uv": [22, 42]}
+					]
+				},
+				{
+					"name": "particles",
+					"parent": "spiderverse_portals",
+					"pivot": [0, 11, 0]
+				},
+				{
+					"name": "particle0",
+					"parent": "particles",
+					"pivot": [-6, 11, 3],
+					"cubes": [
+						{"origin": [-6.5, 10.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "particle1",
+					"parent": "particles",
+					"pivot": [2, 18, 3],
+					"cubes": [
+						{"origin": [1.5, 17.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "particle2",
+					"parent": "particles",
+					"pivot": [1, 10, 3],
+					"cubes": [
+						{"origin": [0.5, 9.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "particle3",
+					"parent": "particles",
+					"pivot": [5, 7, 3],
+					"cubes": [
+						{"origin": [4.5, 6.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "particle4",
+					"parent": "particles",
+					"pivot": [-2, 3, 3],
+					"cubes": [
+						{"origin": [-2.5, 2.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "particle5",
+					"parent": "particles",
+					"pivot": [-3, 16, 3],
+					"cubes": [
+						{"origin": [-3.5, 15.5, 0.5], "size": [1, 1, 5], "inflate": -0.1, "uv": [44, 36]}
+					]
+				},
+				{
+					"name": "portal",
+					"pivot": [0, 6, 0],
+					"locators": {
+						"portal": [0, 6, 0]
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:sadie_sink",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "spidermanaddon:sadie_despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "sadie_sink",
+          "cinematic"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:collision_box": {
+        "width": 0.1,
+        "height": 0.1
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 9.0,
+        "time_down_event": {
+          "event": "spidermanaddon:sadie_despawn",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "spidermanaddon:sadie_despawn": {
+        "add": {
+          "component_groups": [
+            "spidermanaddon:sadie_despawn"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.vulture_suit.elytra" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"elytra" : "q.is_gliding"
+						}
+					]
+				},
+				"elytra" : {
+					"animations" : [ "elytra" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_gliding"
+						}
+					]
+				}
+			}
+		}
+	}
+}

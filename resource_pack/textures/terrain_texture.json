@@ -1,0 +1,76 @@
+{
+  "resource_pack_name": "SpiderQuick",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "sand_crystal": {
+      "textures": [
+        "textures/blocks/sand_crystal"
+      ]
+    },
+    "sand_crystal_block": {
+      "textures": [
+        "textures/blocks/sand_crystal_block"
+      ]
+    },
+    "spiderman_spawn": {
+      "textures": [
+        "textures/blocks/spiderman_spawn"
+      ]
+    },
+    "invisible_block": {
+      "textures": [
+        "textures/entity/invisible"
+      ]
+    },
+    "newspaper": {
+      "textures": [
+        "textures/blocks/newspaper"
+      ]
+    },
+    "newspaper0": {
+      "textures": [
+        "textures/blocks/newspaper0"
+      ]
+    },
+    "newspaper1": {
+      "textures": [
+        "textures/blocks/newspaper1"
+      ]
+    },
+    "knull_block": {
+      "textures": [
+        "textures/blocks/knull_block"
+      ]
+    },
+    "meteorite_block": {
+      "textures": [
+        "textures/blocks/meteorite_block"
+      ]
+    },
+    "web_bridge": {
+      "textures": [
+        "textures/blocks/web_bridge"
+      ]
+    },
+    "symbiote_trace": {
+      "textures": [
+        "textures/blocks/symbiote_trace"
+      ]
+    },
+    "symbiote_block": {
+      "textures": [
+        "textures/blocks/symbiote_block"
+      ]
+    },
+    "spider_capsule": {
+      "textures": [
+        "textures/entity/symbiote_capsule/spider_capsule"
+      ]
+    },
+    "qc_menu": {
+      "textures": "textures/items/qc_menu"
+    }
+  }
+}

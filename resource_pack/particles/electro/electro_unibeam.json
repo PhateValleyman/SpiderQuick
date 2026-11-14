@@ -1,0 +1,72 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "spidermanaddon:electro_unibeam",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/particle/dr_strange_repulse"
+			}
+		},
+		"curves": {
+			"minecraft:emitter_local_space": {
+				"type": "linear",
+				"input": 0,
+				"horizontal_range": 0,
+				"nodes": []
+			},
+			"variable.rainbow": {
+				"type": "catmull_rom",
+				"input": "variable.particle_random_2",
+				"horizontal_range": 1,
+				"nodes": [1, 0, 1, 1.18]
+			},
+			"variable.psize": {
+				"type": "catmull_rom",
+				"input": "variable.particle_age",
+				"horizontal_range": "variable.particle_lifetime",
+				"nodes": [0, 0, 1, 0, 0]
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "variable.radius = 2.5;"
+			},
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 110,
+				"max_particles": 150
+			},
+			"minecraft:emitter_lifetime_looping": {
+				"active_time": 2
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": [0, 0, "(math.cos(variable.particle_random_2* 360) * (16 - variable.particle_random_2)) -16"]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 1.5
+			},
+			"minecraft:particle_initial_speed": 0,
+			"minecraft:particle_motion_dynamic": {},
+			"minecraft:particle_appearance_billboard": {
+				"size": [0.5, 0.5],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 64,
+					"flipbook": {
+						"base_UV": [0, 0],
+						"size_UV": [16, 16],
+						"step_UV": [0, 16],
+						"frames_per_second": 15,
+						"max_frame": 4,
+						"loop": true
+					}
+				}
+			}
+		}
+	}
+}

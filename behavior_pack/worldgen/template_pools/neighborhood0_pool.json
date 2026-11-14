@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "spidermanaddon:neighborhood0_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/neighborhood0",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

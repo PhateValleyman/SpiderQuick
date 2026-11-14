@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:capsule"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AA",
+      "BB",
+      "BB"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:copper_ingot"
+      },
+      "B": {
+        "item": "minecraft:glass"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:capsule",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

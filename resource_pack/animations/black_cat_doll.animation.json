@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.black_cat_doll.idle": {
+			"loop": true,
+			"bones": {
+				"cabeza": {
+					"scale": 1.25
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:dr_octopus_walk",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"dr_octopus_walk", "dr_octopus_item"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "dr_octopus_walk"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:allow_off_hand": true
+		}
+	}
+}

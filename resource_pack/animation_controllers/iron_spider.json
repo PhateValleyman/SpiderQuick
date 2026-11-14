@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.iron_spider.mask" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "iron_spider.normal" ],
+					"transitions" : [
+						{
+							"iron_spider.killer_mode" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack')"
+						}
+					]
+				},
+				"iron_spider.killer_mode" : {
+					"animations" : [ "iron_spider.killer_mode" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

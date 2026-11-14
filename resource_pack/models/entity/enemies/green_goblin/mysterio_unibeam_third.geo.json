@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mysterio_unibeam_third",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 17, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 29, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 20, 1]
+				},
+				{
+					"name": "tri2",
+					"parent": "leftItem",
+					"pivot": [6, 11, 1.5],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-2, 4.5, 1.5], "size": [16, 16, 1], "uv": [4, 79]}
+					]
+				},
+				{
+					"name": "left_shoot_particle",
+					"parent": "leftArm",
+					"pivot": [6, 15, 0],
+					"locators": {
+						"left_shoot_particle": [6, 15, 0]
+					}
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 23, 0]
+				},
+				{
+					"name": "tri",
+					"parent": "rightItem",
+					"pivot": [-6, 11, 1.5],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-14, 4.5, 1.5], "size": [16, 16, 1], "uv": [4, 79]}
+					]
+				},
+				{
+					"name": "right_shoot_particle",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_shoot_particle": [-6, 15, 0]
+					}
+				}
+			]
+		}
+	]
+}

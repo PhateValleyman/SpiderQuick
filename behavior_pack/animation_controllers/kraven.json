@@ -1,0 +1,45 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.kraven.granadas" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"kraven.granadas" : "q.has_target"
+						}
+					]
+				},
+				"kraven.granadas" : {
+					"animations" : [ "granadas" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.kraven.ia" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"kraven.ia" : "q.has_target"
+						}
+					]
+				},
+				"kraven.ia" : {
+					"animations" : [ "kraven_IA" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

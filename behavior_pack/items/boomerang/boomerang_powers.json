@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:boomerang_powers",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.boomerang"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "boomerang_powers", "off_rightitem"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "boomerang_powers"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 5,
+				"slot": "slot.armor.legs"
+			}
+		}
+	}
+}

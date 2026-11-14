@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:sadie_sink",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/hulk/sadie_sink"
+      },
+      "geometry": {
+        "default": "geometry.sadie_sink"
+      },
+      "animations": {
+        "on": "animation.sadie_sink.on"
+      },
+		"particle_effects": {
+		 "sadie_sink_power": "spidermanaddon:sadie_sink_power"
+		},
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "on"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#47503c",
+        "overlay_color": "#262626"
+      }
+    }
+  }
+}

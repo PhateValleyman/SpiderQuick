@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:venom.boss",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/venom/venom"
+			},
+			"geometry": {
+				"default": "geometry.venom"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"idle": "animation.venom.idle",
+				"whip.idle": "animation.venom.whip.idle",
+				"look": "animation.venom.look",
+				"walk": "animation.venom.walk",
+				"on": "animation.venom.wings.on",
+				"fly": "animation.venom.wings.fly",
+				"axe.off": "animation.venom.axe_off"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.venom.boss"
+				},
+				{
+					"walk": "controller.animation.venom.boss.walk"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+		  "spawn_egg": {
+			 "base_color": "#202024",
+			 "overlay_color": "#cfd1e5"
+		  }
+		}
+	}
+}

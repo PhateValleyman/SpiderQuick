@@ -1,0 +1,166 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.mysterio_invoke_spawn": {
+			"initial_state": "idle",
+			"states": {
+				"idle": {
+					"transitions": [
+						{
+							"shoot": "query.has_target"
+						}
+					],
+					"blend_transition": 0.15
+				},
+				"shoot": {
+					"animations": [
+						"shoot"
+					],
+					"transitions": [
+						{
+							"idle": "!query.has_target"
+						}
+					],
+					"blend_transition": 0.15
+				}
+			}
+		},
+		"controller.animation.mysterio.capa": {
+			"states": {
+				"default": {
+					"animations": [
+						"capa_idle"
+					],
+					"transitions": [
+						{ "fly_sprint": "(q.property('nido:flying') == true && q.is_sprinting) || q.is_gliding" },
+						{ "swing": "(q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0) || !q.property('arathnido:ability0') == 0" },
+						{ "falling": "q.property('nido:flying') == false && !q.is_on_ground && q.vertical_speed < -1 && q.property('arathnido:escalar') == false && !q.is_gliding" }
+					],
+					"blend_transition": 0.75
+				},
+				"falling": {
+					"animations": [
+						"falling"
+					],
+					"transitions": [
+						{ "swing": "(q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0) || !q.property('arathnido:ability0') == 0 || q.property('arathnido:escalar') == true" },
+						{ "default": "q.property('nido:flying') == true || q.is_on_ground || q.is_gliding" }
+					],
+					"blend_transition": 0.75
+				},
+				"fly_sprint": {
+					"animations": [
+						"capa_fly_sprint"
+					],
+					"transitions": [
+						{ "swing": "(q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0) || !q.property('arathnido:ability0') == 0" },
+						{ "default": "(q.property('nido:flying') != true || !q.is_sprinting) && !q.is_gliding" }
+					],
+					"blend_transition": 0.5
+				},
+				"swing": {
+					"animations": [
+						"capa_fly_sprint"
+					],
+					"transitions": [
+						{ "default": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || q.property('arathnido:animation') == 0) && q.property('arathnido:ability0') == 0" }
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.mysterio": {
+			"states": {
+				"default": {
+					"animations": [
+						{ "player.mysterio.fly.c": "!v.is_first_person" },
+						"player.mysterio.laser.c",
+						{ "player.mysterio.clones.c": "!v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.mysterio.clones": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "clones": "q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_clones') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"clones": {
+					"animations": [
+						"player.mysterio.clones"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && (!q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_clones') || q.property('arathnido:animation') == 0)" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.mysterio.laser": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "laser": "q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_laser') || q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_gas')" }
+					],
+					"blend_transition": 0.5
+				},
+				"laser": {
+					"animations": [
+						{ "player.mysterio.laser.third": "!v.is_first_person" },
+						{ "player.mysterio.laser.first": "v.is_first_person" }
+					],
+					"transitions": [
+						{ "default": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_laser') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'mysterio_gas')" }
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.mysterio.fly": {
+			"states": {
+				"default": {
+					"animations": [
+						{ "look_at_target": "q.equipped_item_any_tag('slot.armor.legs', 'mysterio_powers')" }
+					],
+					"transitions": [
+						{
+							"falling": "!q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') && q.equipped_item_any_tag('slot.armor.legs', 'mysterio_powers') && q.property('nido:flying') == true"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"falling": {
+					"animations": [
+						"player.mysterio.falling", "look_at_target"
+					],
+					"transitions": [
+						{ "default": "q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') || !q.equipped_item_any_tag('slot.armor.legs', 'mysterio_powers') || q.property('nido:flying') == false" },
+						{ "fly_sprint": "q.is_sprinting" }
+					],
+					"blend_transition": 0.5
+				},
+				"fly_sprint": {
+					"animations": [
+						"player.mysterio.fly"
+					],
+					"transitions": [
+						{ "end": "q.equipped_item_any_tag('slot.armor.chest', 'fly:chest') || !q.equipped_item_any_tag('slot.armor.legs', 'mysterio_powers') || q.property('nido:flying') != true || !q.is_sprinting" }
+					],
+					"blend_transition": 0.5
+				},
+				"end": {
+					"animations": [
+						"player.mysterio.fly.end"
+					],
+					"transitions": [
+						{
+							"falling": "q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

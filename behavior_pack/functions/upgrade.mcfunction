@@ -1,0 +1,1 @@
+tellraw @s {"rawtext": [{"selector": "@s"}, {"translate": "spidermanaddon.upgrade"}]}

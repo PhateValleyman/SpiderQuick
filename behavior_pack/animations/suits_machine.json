@@ -1,0 +1,540 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.suits_machine.silk_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s silk_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.the_amazing_spiderman_casero_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s the_amazing_spiderman_casero_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_new_blue_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_new_blue_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.yfn_spiderman_oscorp_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s yfn_spiderman_oscorp_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.yfn_spiderman_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s yfn_spiderman_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_bombastic_bag_man_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_bombastic_bag_man_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_miles_morales_leap_of_faith_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_miles_morales_leap_of_faith_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.into_the_spiderverse_sb_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s into_the_spiderverse_sb_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.venom_spiderman3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s venom_spiderman3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.yfn_spiderman_casero_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s yfn_spiderman_casero_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.ultimate_spiderman_ucm_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s ultimate_spiderman_ucm_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.ultimate_spiderman_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s ultimate_spiderman_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.ultimate_spiderman_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s ultimate_spiderman_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.the_amazing_spiderman_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s the_amazing_spiderman_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.the_amazing_spiderman_belt_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s the_amazing_spiderman_belt_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.the_amazing_spiderman_2_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s the_amazing_spiderman_2_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.superior_spiderman_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s superior_spiderman_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.superior_spiderman_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s superior_spiderman_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.superior_spiderman_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s superior_spiderman_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.superior_spiderman_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s superior_spiderman_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.superior_spiderman_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s superior_spiderman_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spirit_spider_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spirit_spider_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_wrestler_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_wrestler_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_what_if_animated_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_what_if_animated_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_what_if_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_what_if_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_web_of_shadows_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_web_of_shadows_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_web_of_shadows_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_web_of_shadows_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_velocity_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_velocity_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_unlimited_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_unlimited_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_steve_ditko_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_steve_ditko_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_stealth_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_stealth_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_secret_wars_civil_war_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_secret_wars_civil_war_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_raimi_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_raimi_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps5_symbiote_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps5_symbiote_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps4_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps4_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps5_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps5_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps5_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps5_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps5_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps5_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps5_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps5_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_ps4_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_ps4_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_noir_into_the_spiderverse_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_noir_into_the_spiderverse_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_no_way_home_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_no_way_home_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_negative_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_negative_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_last_stand_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_last_stand_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_india_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_india_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_future_foundation_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_future_foundation_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_far_from_home_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_far_from_home_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_homecoming_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_homecoming_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_homemade_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_homemade_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_classic_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_classic_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_cero_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_cero_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_antivenom_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_antivenom_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_across_the_spiderverse_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_across_the_spiderverse_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_across_the_spiderverse_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_across_the_spiderverse_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_2099_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_2099_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_90_black_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_90_black_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_90_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_90_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_90_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_90_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_67_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_67_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spider_punk_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spider_punk_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spectacular_spiderman_black_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spectacular_spiderman_black_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spectacular_spiderman_black_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spectacular_spiderman_black_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spectacular_spiderman_black_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spectacular_spiderman_black_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spectacular_spiderman_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spectacular_spiderman_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.scarlet_spider_across_the_spiderverse_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s scarlet_spider_across_the_spiderverse_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.scarlet_spider_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s scarlet_spider_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.scarlet_spider_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s scarlet_spider_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.scarlet_spider_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s scarlet_spider_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.scarlet_spider_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s scarlet_spider_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_gold_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_gold_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_bodega_cat_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_bodega_cat_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_bodega_cat_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_bodega_cat_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_bodega_cat_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_bodega_cat_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_bodega_cat_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_bodega_cat_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_10th_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_10th_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_10th_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_10th_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_10th_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_10th_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_10th_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_10th_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_across_the_spiderverse_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_across_the_spiderverse_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_into_the_spiderverse_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_into_the_spiderverse_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.iron_spider_ucm_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s iron_spider_ucm_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.ghost_spider_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s ghost_spider_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.ezekiel_sims_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s ezekiel_sims_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.aracnido_jr_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s aracnido_jr_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_classic_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_classic_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_classic_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_classic_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_classic_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_classic_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_classic_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_classic_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_raimi_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_raimi_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.the_amazing_spiderman_1_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s the_amazing_spiderman_1_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.human_spider_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s human_spider_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.spiderman_miles_morales_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s spiderman_miles_morales_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.iron_spider_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s iron_spider_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.iron_spider_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s iron_spider_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.iron_spider_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s iron_spider_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.iron_spider_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s iron_spider_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.anti_ock_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s anti_ock_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.anti_ock_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s anti_ock_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.anti_ock_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s anti_ock_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.anti_ock_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s anti_ock_suit_3", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_wolverine_suit": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_wolverine_suit", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_wolverine_suit_1": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_wolverine_suit_1", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_wolverine_suit_2": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_wolverine_suit_2", "/event entity @s suits:fabricar_off" ] }
+    },
+    "animation.suits_machine.miles_morales_wolverine_suit_3": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": { "1.5": [  "/event entity @s miles_morales_wolverine_suit_3", "/event entity @s suits:fabricar_off" ] }
+    }
+  }
+}

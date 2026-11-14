@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:light_gray_spray"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " A ",
+	  "ABA",
+	  "CCC"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:light_gray_dye"
+      },
+	  "B": {
+		   "item": "minecraft:slime_ball"
+      },
+	  "C": {
+		   "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "marveladdons:light_gray_spray",
+        "data": 0,
+      "count": 3
+    }
+  }
+}

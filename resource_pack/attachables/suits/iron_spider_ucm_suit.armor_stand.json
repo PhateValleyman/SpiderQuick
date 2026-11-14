@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:iron_spider_ucm_suit.armor_stand",
+			"item": {
+				"spiderverse:iron_spider_ucm_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"outline": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/suits/iron_spider_ucm_suit",
+				"outline": "textures/suits/iron_spider_ucm_suit"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_suit_x64",
+				"outline": "geometry.spiderman_mask_x64"
+			},
+			"scripts": {
+                "animate": [
+                    "default_c",
+					"mask_c",
+					"selfie_hand_c",
+					"iron_spider_mask_c",
+					"iron_spider_off"
+                ]
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			],
+            "animations": {
+				"iron_spider_off": "animation.iron_spider.suit.off",
+                "iron_spider_mask_c": "controller.animation.iron_spider.mask",
+				"iron_spider.normal": "animation.iron_spider_ucm_suit.normal",
+                "iron_spider.killer_mode": "animation.iron_spider_ucm_suit.killer",
+				
+                "mask_c": "controller.animation.suit.mask",
+                "mask.off": "animation.mask.on",
+				"mask.on": "animation.mask.off",
+				"mask.time": "animation.spider_female.mask_time",
+				
+                "default_c": "controller.animation.spiderman_suit.web_default",
+                "web_off": "animation.spiderman.web_shooters.off",
+				"web_on": "animation.spiderman.web_shooters.on",
+				"selfie_hand_c": "controller.animation.spiderman_suit.selfie_hand",
+				"selfie_hand": "animation.spiderman.web_shooters.selfie_hand"
+            }
+		}
+	}
+}

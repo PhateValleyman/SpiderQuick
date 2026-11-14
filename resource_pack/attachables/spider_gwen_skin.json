@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:spider_gwen_skin",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/ghost_spider_suit",
+				"web_wings": "textures/web_wings",
+				"head": "textures/suits/spider_gwen"
+			},
+			"geometry": {
+				"default": "geometry.ghost_spider_x64",
+				"web_wings": "geometry.web_wings",
+				"head": "geometry.spider_gwen_head"
+			},
+			"render_controllers": [
+			    { "controller.render.spiderman_suit.web_wings": "q.is_gliding" },
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.feet', 'mayday_parker_black_suit')" },
+				{ "controller.render.mayday_skin.head": "q.property('arathnido:skins') == 0" }
+			],
+			"scripts": {
+                "animate": [
+					{ "mask.off": "q.property('arathnido:skins') == 0" },
+					{ "mask": "q.property('arathnido:skins') == 1" },
+					"idle"
+                ]
+			},
+            "animations": {
+                "mask.off": "animation.spider_woman.mask.off",
+                "mask": "animation.spider_woman.mask",
+				"idle": "animation.spider_woman.idle"
+            }
+		}
+	}
+}

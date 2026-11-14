@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster_sword",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster.png"
+			},
+			"geometry": {
+				"default": "geometry.taskmaster_sword_first",
+				"web_shooter_third": "geometry.taskmaster_sword"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person" }
+			]
+		}
+	}
+}

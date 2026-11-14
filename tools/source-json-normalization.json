@@ -1,0 +1,217 @@
+{
+  "policy": "Kept the last textual occurrence for duplicate object keys; values not otherwise invented or changed.",
+  "files": [
+    {
+      "file": "behavior_pack/alpha/suits_machine/suits_machine.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.venom_spiderman3",
+        ".minecraft:entity.events.venom_spiderman3"
+      ]
+    },
+    {
+      "file": "behavior_pack/animation_controllers/punisher/vehicle.json",
+      "duplicateProperties": [
+        ".animation_controllers.controller.animation.vehicle.damage.states.vehicle.damage"
+      ]
+    },
+    {
+      "file": "behavior_pack/animations/venom/venom.json",
+      "duplicateProperties": [
+        ".animations.animation.player.blue_venom.hability.move",
+        ".animations.animation.player.blue_venom.hability.attack",
+        ".animations.animation.player.blue_venom.hability",
+        ".animations.animation.player.ultimate_venom.hability.move"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/mobs/dr_octopus/dr_octopus_take.json",
+      "duplicateProperties": [
+        ".minecraft:entity.components.minecraft:damage_sensor"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/mobs/scorpion/scorpion.json",
+      "duplicateProperties": [
+        ".minecraft:entity.components.minecraft:experience_reward"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/mobs/taskmaster/taskmaster.json",
+      "duplicateProperties": [
+        ".minecraft:entity.events.minecraft:hability_2_attack"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/mobs/taskmaster/taskmaster_drone.json",
+      "duplicateProperties": [
+        ".minecraft:entity.components.minecraft:despawn"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/antivenom_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/blue_venom_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/carnage_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/ultimate_venom_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/venom_2099_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/venom_bomb_shoot.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/antivenom_bomb/venom_snow_bomb.json",
+      "duplicateProperties": [
+        ".minecraft:entity.component_groups.hit.minecraft:explode.breaks_blocks"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/kraven_axe/kraven_axe_returning.json",
+      "duplicateProperties": [
+        ".minecraft:entity.components.minecraft:spell_effects.add_effects[0].duration",
+        ".minecraft:entity.components.minecraft:spell_effects.add_effects[1].duration"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/proyectiles/kraven_axe/kraven_axe_thrown.json",
+      "duplicateProperties": [
+        ".minecraft:entity.components.minecraft:spell_effects.add_effects[0].duration",
+        ".minecraft:entity.components.minecraft:spell_effects.add_effects[1].duration"
+      ]
+    },
+    {
+      "file": "behavior_pack/entities/spiderverse_portal/spiderverse_portal.json",
+      "duplicateProperties": [
+        ".minecraft:entity.events.spawn:spider_punk",
+        ".minecraft:entity.events.spider_punk"
+      ]
+    },
+    {
+      "file": "behavior_pack/worldgen/structures/mystructure/prision_jigsaw.json",
+      "duplicateProperties": [
+        ".minecraft:jigsaw.start_height"
+      ]
+    },
+    {
+      "file": "resource_pack/animation_controllers/punisher/punisher.npc.json",
+      "duplicateProperties": [
+        ".animation_controllers.controller.animation.punisher.sit"
+      ]
+    },
+    {
+      "file": "resource_pack/animation_controllers/spiderman.animations/symbiont_skills.json",
+      "duplicateProperties": [
+        ".animation_controllers.controller.animation.player.symbiont.symbiote_strike"
+      ]
+    },
+    {
+      "file": "resource_pack/animations/update.animations/spiderverse_animations.json",
+      "duplicateProperties": [
+        ".animations.animation.player.spiderverse.stop_run"
+      ]
+    },
+    {
+      "file": "resource_pack/attachables/venom/venom.json",
+      "duplicateProperties": [
+        ".minecraft:attachable.description.animations.falling"
+      ]
+    },
+    {
+      "file": "resource_pack/entity/enemies/hunters_drone.json",
+      "duplicateProperties": [
+        ".minecraft:client_entity.description.geometry.default"
+      ]
+    },
+    {
+      "file": "resource_pack/entity/npc/punisher.json",
+      "duplicateProperties": [
+        ".minecraft:client_entity.description.animations.walk_fusil"
+      ]
+    },
+    {
+      "file": "resource_pack/entity/player.entity.json",
+      "duplicateProperties": [
+        ".minecraft:client_entity.description.animations.player.venom.first.c",
+        ".minecraft:client_entity.description.animations.player.spiderman.symbiote.whip.attack.1",
+        ".minecraft:client_entity.description.animations.player.spiderman.symbiote.whip.attack.2",
+        ".minecraft:client_entity.description.animations.player.spiderman.combat.punch.1",
+        ".minecraft:client_entity.description.animations.player.spiderman.combat.punch.2",
+        ".minecraft:client_entity.description.animations.player.spiderman.combat.punch.3"
+      ]
+    },
+    {
+      "file": "resource_pack/particles/drone_shoot.json",
+      "duplicateProperties": [
+        ".particle_effect.components.minecraft:particle_appearance_tinting"
+      ]
+    },
+    {
+      "file": "resource_pack/particles/electric_blue/electric_hit.json",
+      "duplicateProperties": [
+        ".particle_effect.components.minecraft:particle_appearance_tinting"
+      ]
+    },
+    {
+      "file": "resource_pack/particles/electric_yellow/electric_hit.json",
+      "duplicateProperties": [
+        ".particle_effect.components.minecraft:particle_appearance_tinting"
+      ]
+    },
+    {
+      "file": "resource_pack/particles/green_goblin/electric_hit.json",
+      "duplicateProperties": [
+        ".particle_effect.components.minecraft:particle_appearance_tinting"
+      ]
+    },
+    {
+      "file": "resource_pack/render_controllers/spiderman_player/web_shooters.json",
+      "duplicateProperties": [
+        ".render_controllers.controller.render.electro_suit.hands"
+      ]
+    },
+    {
+      "file": "resource_pack/render_controllers/symbiote_powers.json",
+      "duplicateProperties": [
+        ".render_controllers.controller.render.symbiote_powers.spectacular_spiderman_black_suit_3"
+      ]
+    },
+    {
+      "file": "resource_pack/render_controllers/x16_suits.json",
+      "duplicateProperties": [
+        ".render_controllers.controller.render.suit.x16.invisibility"
+      ]
+    },
+    {
+      "file": "resource_pack/sounds/sound_definitions.json",
+      "duplicateProperties": [
+        ".fly_loop",
+        ".spider_bot.death"
+      ]
+    }
+  ],
+  "totalDuplicateProperties": 46
+}

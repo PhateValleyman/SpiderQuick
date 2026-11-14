@@ -1,0 +1,62 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:black_cat",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "black_cat": "textures/entity/black_cat/black_cat",
+		"black_cat_rivals": "textures/entity/black_cat/black_cat_rivals",
+		"black_cat_symbiont": "textures/entity/black_cat/black_cat_symbiont",
+		"black_cat_spiderman_suit": "textures/entity/black_cat/black_cat_spiderman_suit"
+      },
+      "geometry": {
+        "black_cat": "geometry.black_cat",
+		"black_cat_rivals": "geometry.black_cat_rivals",
+		"black_cat_symbiont": "geometry.black_cat_symbiont",
+		"black_cat_spiderman_suit": "geometry.black_cat_spiderman_suit"
+      },
+      "animations": {
+        "attack.c": "controller.animation.black_cat.attack",
+        "attack_0": "animation.player.black_cat.attack.0",
+        "attack_1": "animation.player.black_cat.attack.1",
+        "attack_2": "animation.player.black_cat.attack.2",
+        "sit.c": "controller.animation.black_cat.sit",
+        "sit": "animation.black_cat.sit",
+        "smile": "animation.black_cat.smile",
+        "idle.eyes": "animation.black_cat.idle.eyes",
+        "idle": "animation.black_cat.idle",
+        "look_at_target": "animation.black_cat.look_at_target",
+        "c":  "controller.animation.black_cat.npc",
+        "walk": "animation.black_cat.walk",
+        "run": "animation.player.black_cat.run",
+        "falling": "animation.player.black_cat.falling",
+        "wall_run": "animation.player.black_cat.wall_run",
+        "theft_jump": "animation.player.black_cat.balanceo.jump",
+        "theft": "animation.black_cat.theft",
+        "theft_off": "animation.black_cat.theft.off",
+        "whip_thef": "animation.player.black_cat.whip_thef",
+        "impulse": "animation.player.black_cat.impulse_attack",
+        "fun_time": "animation.black_cat.fun_time",
+        "fun_time_end": "animation.black_cat.fun_time.end"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "c", "idle", "smile", "idle.eyes", "attack.c"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.black_cat.npc"
+      ],
+      "spawn_egg": {
+        "base_color": "#111111",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

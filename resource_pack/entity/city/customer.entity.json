@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:customer",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/city/customer0"
+      },
+      "geometry": {
+        "default": "geometry.customer"
+      },
+      "animations": {
+		  "idle": "animation.customer.idle",
+        "state_controller": "controller.animation.customer.state",
+        "default": "animation.customer.loop",
+        "end": "animation.customer.end"
+      },
+      "scripts": {
+        "animate": [
+          "state_controller",
+		  "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.joes_pizza"
+      ],
+      "spawn_egg": {
+        "base_color": "#dfdfdf",
+        "overlay_color": "#d7aeae"
+      }
+    }
+  }
+}

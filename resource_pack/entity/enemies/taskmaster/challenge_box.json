@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:challenge_box",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/blocks/challenge_box",
+				"bomb": "textures/blocks/bomb_timer",
+				"villager": "textures/blocks/save_villager"
+			},
+			"geometry": {
+				"default": "geometry.challenge_box",
+				"bomb": "geometry.bomb_timer",
+				"villager": "geometry.save_villager"
+			},
+			"animations": {
+				"open": "animation.challenge_box.open",
+				"villager": "animation.save_villager.idle"
+			},
+			"animation_controllers": [
+				{
+					"challenge_box": "controller.animation.challenge_box"
+				}
+			],
+			"render_controllers": [
+				"controller.render.challenge_box",
+				"controller.render.challenge_box.bomb",
+				"controller.render.challenge_box.villager"
+			],
+			"spawn_egg": {
+				"texture": "challenge_box",
+				"texture_index": 0
+			}
+		}
+	}
+}

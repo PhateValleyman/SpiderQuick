@@ -1,0 +1,107 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.spiderman_sit",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 65.5,
+				"visible_bounds_offset": [0, 32.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rotation",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "rotation",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "ll",
+					"parent": "leftLeg",
+					"pivot": [1.9, 6, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "rotation",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "rl",
+					"parent": "rightLeg",
+					"pivot": [-1.9, 6, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "rotation",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "la",
+					"parent": "leftArm",
+					"pivot": [6, 18, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "la",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "phone",
+					"parent": "leftArm",
+					"pivot": [6, 11.5, -1],
+					"cubes": [
+						{"origin": [4.5, 11, -3], "size": [3, 1, 5], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "ra",
+					"parent": "rightArm",
+					"pivot": [-6, 18, 0]
+				},
+				{
+					"name": "rightSleeve2",
+					"parent": "ra",
+					"pivot": [-7, 18, 0]
+				},
+				{
+					"name": "telarana0",
+					"parent": "root",
+					"pivot": [0, 18, -5],
+					"cubes": [
+						{"origin": [-0.5, 17, -5.5], "size": [1, 1, 1], "uv": [0, 6]}
+					]
+				}
+			]
+		}
+	]
+}

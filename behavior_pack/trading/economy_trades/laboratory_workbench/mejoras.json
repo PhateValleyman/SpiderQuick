@@ -1,0 +1,103 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 50
+                },
+                {
+                  "item": "minecraft:gold_ingot",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:dano_token"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 50
+                },
+                {
+                  "item": "minecraft:golden_apple",
+                  "quantity": 16
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:regeneracion_token"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 50
+                },
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 32
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:escudo_token"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 50
+                },
+                {
+                  "item": "spidermanaddon:spider_powers_42",
+                  "quantity": 8
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:golpe_eletrico_token"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 50
+                },
+                {
+                  "item": "minecraft:enchanted_golden_apple",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:salud_extra_token"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

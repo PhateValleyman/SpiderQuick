@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+      "identifier": "spidermanaddon:holo_decoy_invoke",
+      "materials": { "default": "slime", "outline": "outline_light" },
+      "textures": { "default": "textures/suits/scarlet_spider_suit", "outline": "textures/suits/scarlet_spider_suit" },
+      "geometry": { "default": "geometry.spiderman_full", "outline": "geometry.spiderman_full_outline" },
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.npc.spiderman.sit.1"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			],
+			"spawn_egg": {
+				"texture": "egg_prisoner",
+				"texture_index": 0
+			}
+		}
+	}
+}

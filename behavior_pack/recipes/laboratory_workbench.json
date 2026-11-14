@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:laboratory_workbench_spawn_egg"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AEA",
+      "DCD",
+      "DBD"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:diamond"
+      },
+      "B": {
+        "item": "minecraft:crafting_table"
+      },
+      "C": {
+        "item": "spidermanaddon:component"
+      },
+      "D": {
+        "item": "minecraft:iron_ingot"
+      },
+      "E": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:laboratory_workbench_spawn_egg",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

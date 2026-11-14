@@ -1,0 +1,84 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mysterio_unibeam_first",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 17, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 29, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 20, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 23, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "tri",
+					"parent": "rightArm_model",
+					"pivot": [-6, 11, 0],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-14, 3, 0], "size": [16, 16, 1], "uv": [4, 79]}
+					]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "tri2",
+					"parent": "second_arm",
+					"pivot": [6, 11, 0],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-2, 3, 0], "size": [16, 16, 1], "uv": [4, 79]}
+					]
+				}
+			]
+		}
+	]
+}

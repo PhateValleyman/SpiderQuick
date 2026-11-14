@@ -1,0 +1,976 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:spiderverse_portal",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "spawn:dr_octopus": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "dr_octopus",
+            "target": "self"
+          }
+        }
+      },
+      "dr_octopus": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:dr_octopus",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:green_goblin": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "green_goblin",
+            "target": "self"
+          }
+        }
+      },
+      "green_goblin": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:green_goblin",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:green_goblin_raimi": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "green_goblin_raimi",
+            "target": "self"
+          }
+        }
+      },
+      "green_goblin_raimi": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:green_goblin_raimi",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:shocker": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "shocker",
+            "target": "self"
+          }
+        }
+      },
+      "shocker": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:shocker",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:hobgoblin": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "hobgoblin",
+            "target": "self"
+          }
+        }
+      },
+      "hobgoblin": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:hobgoblin",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:lizard": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "lizard",
+            "target": "self"
+          }
+        }
+      },
+      "lizard": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:lizard",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:electro": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "electro",
+            "target": "self"
+          }
+        }
+      },
+      "electro": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:electro_boss",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:mayor_fisk": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "mayor_fisk",
+            "target": "self"
+          }
+        }
+      },
+      "mayor_fisk": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:mayor_fisk",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:scorpion": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "scorpion",
+            "target": "self"
+          }
+        }
+      },
+      "scorpion": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:scorpion",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:boomerang": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "boomerang",
+            "target": "self"
+          }
+        }
+      },
+      "boomerang": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:boomerang",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:tarantula": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "tarantula",
+            "target": "self"
+          }
+        }
+      },
+      "tarantula": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:tarantula",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:miles_morales": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "miles_morales",
+            "target": "self"
+          }
+        }
+      },
+      "miles_morales": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:miles_morales",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spectacular_spiderman": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spectacular_spiderman",
+            "target": "self"
+          }
+        }
+      },
+      "spectacular_spiderman": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spectacular_spiderman",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spider_punk": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spider_punk",
+            "target": "self"
+          }
+        }
+      },
+      "spider_punk": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spider_punk",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spider_gwen": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spider_gwen",
+            "target": "self"
+          }
+        }
+      },
+      "spider_gwen": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spider_gwen",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spider_ham": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spider_ham",
+            "target": "self"
+          }
+        }
+      },
+      "spider_ham": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spider_ham",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spiderman_2099": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spiderman_2099",
+            "target": "self"
+          }
+        }
+      },
+      "spiderman_2099": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spiderman_2099",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spiderman_no_way_home": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spiderman_no_way_home",
+            "target": "self"
+          }
+        }
+      },
+      "spiderman_no_way_home": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spiderman_no_way_home",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spiderman_noir": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spiderman_noir",
+            "target": "self"
+          }
+        }
+      },
+      "spiderman_noir": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spiderman_noir",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spiderman_raimi": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spiderman_raimi",
+            "target": "self"
+          }
+        }
+      },
+      "spiderman_raimi": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spiderman_raimi",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:spiderman_unlimited": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "spiderman_unlimited",
+            "target": "self"
+          }
+        }
+      },
+      "spiderman_unlimited": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:spiderman_unlimited",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:the_amazing_spiderman": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "the_amazing_spiderman",
+            "target": "self"
+          }
+        }
+      },
+      "the_amazing_spiderman": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:the_amazing_spiderman",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "spawn:silk": {
+        "minecraft:timer": {
+          "time": 1.75,
+          "looping": true,
+          "time_down_event": {
+            "event": "silk",
+            "target": "self"
+          }
+        }
+      },
+      "silk": {
+        "minecraft:spawn_entity": {
+          "entities": [
+            {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "single_use": true,
+              "spawn_entity": "spidermanaddon:silk",
+              "spawn_event": "minecraft:entity_spawned",
+              "num_to_spawn": 1
+            }
+          ]
+        }
+      },
+      "destroy:time": {
+        "minecraft:timer": {
+          "time": 4.5,
+          "looping": true,
+          "time_down_event": {
+            "event": "minecraft:death",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:death": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/spiderverse_portal/spiderverse_portal.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "spiderverse_portal",
+          "furniture"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {},
+      "minecraft:movement.basic": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:scale": {
+        "value": 1.15
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    },
+    "events": {
+      "spawn:dr_octopus": {
+        "add": {
+          "component_groups": [
+            "spawn:dr_octopus"
+          ]
+        }
+      },
+      "dr_octopus": {
+        "add": {
+          "component_groups": [
+            "dr_octopus",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:green_goblin": {
+        "add": {
+          "component_groups": [
+            "spawn:green_goblin"
+          ]
+        }
+      },
+      "green_goblin": {
+        "add": {
+          "component_groups": [
+            "green_goblin",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:green_goblin_raimi": {
+        "add": {
+          "component_groups": [
+            "spawn:green_goblin_raimi"
+          ]
+        }
+      },
+      "green_goblin_raimi": {
+        "add": {
+          "component_groups": [
+            "green_goblin_raimi",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:shocker": {
+        "add": {
+          "component_groups": [
+            "spawn:shocker"
+          ]
+        }
+      },
+      "shocker": {
+        "add": {
+          "component_groups": [
+            "shocker",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:hobgoblin": {
+        "add": {
+          "component_groups": [
+            "spawn:hobgoblin"
+          ]
+        }
+      },
+      "hobgoblin": {
+        "add": {
+          "component_groups": [
+            "hobgoblin",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:lizard": {
+        "add": {
+          "component_groups": [
+            "spawn:lizard"
+          ]
+        }
+      },
+      "lizard": {
+        "add": {
+          "component_groups": [
+            "lizard",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:electro": {
+        "add": {
+          "component_groups": [
+            "spawn:electro"
+          ]
+        }
+      },
+      "electro": {
+        "add": {
+          "component_groups": [
+            "electro",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:mayor_fisk": {
+        "add": {
+          "component_groups": [
+            "spawn:mayor_fisk"
+          ]
+        }
+      },
+      "mayor_fisk": {
+        "add": {
+          "component_groups": [
+            "mayor_fisk",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:scorpion": {
+        "add": {
+          "component_groups": [
+            "spawn:scorpion"
+          ]
+        }
+      },
+      "scorpion": {
+        "add": {
+          "component_groups": [
+            "scorpion",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:boomerang": {
+        "add": {
+          "component_groups": [
+            "spawn:boomerang"
+          ]
+        }
+      },
+      "boomerang": {
+        "add": {
+          "component_groups": [
+            "boomerang",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:tarantula": {
+        "add": {
+          "component_groups": [
+            "spawn:tarantula"
+          ]
+        }
+      },
+      "tarantula": {
+        "add": {
+          "component_groups": [
+            "tarantula",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:miles_morales": {
+        "add": {
+          "component_groups": [
+            "spawn:miles_morales"
+          ]
+        }
+      },
+      "miles_morales": {
+        "add": {
+          "component_groups": [
+            "miles_morales",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spider_punk": {
+        "add": {
+          "component_groups": [
+            "spawn:spider_punk"
+          ]
+        }
+      },
+      "spider_punk": {
+        "add": {
+          "component_groups": [
+            "spider_punk",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spectacular_spiderman": {
+        "add": {
+          "component_groups": [
+            "spawn:spectacular_spiderman"
+          ]
+        }
+      },
+      "spectacular_spiderman": {
+        "add": {
+          "component_groups": [
+            "spectacular_spiderman",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spider_gwen": {
+        "add": {
+          "component_groups": [
+            "spawn:spider_gwen"
+          ]
+        }
+      },
+      "spider_gwen": {
+        "add": {
+          "component_groups": [
+            "spider_gwen",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spider_ham": {
+        "add": {
+          "component_groups": [
+            "spawn:spider_ham"
+          ]
+        }
+      },
+      "spider_ham": {
+        "add": {
+          "component_groups": [
+            "spider_ham",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spiderman_2099": {
+        "add": {
+          "component_groups": [
+            "spawn:spiderman_2099"
+          ]
+        }
+      },
+      "spiderman_2099": {
+        "add": {
+          "component_groups": [
+            "spiderman_2099",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spiderman_no_way_home": {
+        "add": {
+          "component_groups": [
+            "spawn:spiderman_no_way_home"
+          ]
+        }
+      },
+      "spiderman_no_way_home": {
+        "add": {
+          "component_groups": [
+            "spiderman_no_way_home",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spiderman_noir": {
+        "add": {
+          "component_groups": [
+            "spawn:spiderman_noir"
+          ]
+        }
+      },
+      "spiderman_noir": {
+        "add": {
+          "component_groups": [
+            "spiderman_noir",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spiderman_raimi": {
+        "add": {
+          "component_groups": [
+            "spawn:spiderman_raimi"
+          ]
+        }
+      },
+      "spiderman_raimi": {
+        "add": {
+          "component_groups": [
+            "spiderman_raimi",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:spiderman_unlimited": {
+        "add": {
+          "component_groups": [
+            "spawn:spiderman_unlimited"
+          ]
+        }
+      },
+      "spiderman_unlimited": {
+        "add": {
+          "component_groups": [
+            "spiderman_unlimited",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:the_amazing_spiderman": {
+        "add": {
+          "component_groups": [
+            "spawn:the_amazing_spiderman"
+          ]
+        }
+      },
+      "the_amazing_spiderman": {
+        "add": {
+          "component_groups": [
+            "the_amazing_spiderman",
+            "destroy:time"
+          ]
+        }
+      },
+      "spawn:silk": {
+        "add": {
+          "component_groups": [
+            "spawn:silk"
+          ]
+        }
+      },
+      "silk": {
+        "add": {
+          "component_groups": [
+            "silk",
+            "destroy:time"
+          ]
+        }
+      },
+      "minecraft:death": {
+        "add": {
+          "component_groups": [
+            "minecraft:death"
+          ]
+        }
+      }
+    }
+  }
+}

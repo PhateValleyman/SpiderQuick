@@ -1,0 +1,139 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dr_strange_portal.idle": {
+			"loop": true,
+			"animation_length": 6,
+			"particle_effects": {
+				"0.0": {
+					"effect": "dr_strange_portal",
+					"locator": "root"
+				}
+			}
+		},
+		"animation.dr_strange_portal.chispas": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"portals": {
+					"rotation": {
+						"0.0": [0, 0, -72.5],
+						"1.0": [0, 0, 292.5]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.0417": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.0833": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.125": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.1667": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.2083": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.25": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.2917": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.3333": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.375": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.4167": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.4583": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.5": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.5417": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.5833": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.625": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.6667": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.7083": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.75": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.7917": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.8333": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.875": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.9167": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				},
+				"0.9583": {
+					"effect": "dr_strange_portal_chispas",
+					"locator": "portals"
+				}
+			}
+		},
+		"animation.dr_strange_portal.light": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.375": {
+					"effect": "dr_strange_portal_light",
+					"locator": "root"
+				},
+				"0.4167": {
+					"effect": "dr_strange_portal_light",
+					"locator": "root"
+				}
+			}
+		}
+	}
+}

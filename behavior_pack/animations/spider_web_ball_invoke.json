@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.spider_web_ball": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/summon spidermanaddon:spider_web_ball_invoke ~ ~ ~"
+        ]
+      }
+    },
+    "animation.spider_web_ball.tpa": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/tp @s @e[r=3, family=mob]"
+        ]
+      }
+    }
+  }
+}

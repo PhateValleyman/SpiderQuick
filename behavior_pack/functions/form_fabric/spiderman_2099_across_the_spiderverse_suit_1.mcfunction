@@ -1,0 +1,6 @@
+clear @s spidermanaddon:component 0 8
+clear @s minecraft:blue_wool 0 12
+clear @s minecraft:iron_ingot 0 12
+clear @s minecraft:redstone 0 16
+clear @s spidermanaddon:nanotechnology_chip 0 10
+event entity @e[type=spidermanaddon:suits_machine, c=1] suits:fabricar

@@ -1,0 +1,39 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.j_jonah_jameson.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "query.modified_move_speed > 0.1  && q.is_on_ground"
+						},
+						{
+							"falling" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.punto_viento",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 25,
+				"visible_bounds_height": 24,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0.5, 1]
+				},
+				{
+					"name": "viento2",
+					"parent": "root",
+					"pivot": [0, -18, 1],
+					"cubes": [
+						{"origin": [-6, -18, 0], "size": [12, 2, 1], "inflate": -0.075, "uv": [0, 9]},
+						{"origin": [-12.25, -21.225, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, -17, 0.5], "rotation": [0, 0, 35], "uv": [0, 22]},
+						{"origin": [4.25, -21.225, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, -17, 0.5], "rotation": [0, 0, -35], "uv": [0, 19]}
+					]
+				},
+				{
+					"name": "viento3",
+					"parent": "root",
+					"pivot": [0, 18.775, 1],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-6, 18.775, 0], "size": [12, 2, 1], "inflate": -0.075, "uv": [0, 6]},
+						{"origin": [-12.25, 15.55, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, 19.775, 0.5], "rotation": [0, 0, 35], "uv": [18, 23]},
+						{"origin": [4.25, 15.55, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, 19.775, 0.5], "rotation": [0, 0, -35], "uv": [18, 20]}
+					]
+				},
+				{
+					"name": "viento4",
+					"parent": "root",
+					"pivot": [0, 0.5, 1],
+					"rotation": [0, 0, -90]
+				},
+				{
+					"name": "viento5",
+					"parent": "viento4",
+					"pivot": [0, -18, 1],
+					"cubes": [
+						{"origin": [-6, -18, 0], "size": [12, 2, 1], "inflate": -0.075, "uv": [0, 3]},
+						{"origin": [-12.25, -21.225, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, -17, 0.5], "rotation": [0, 0, 35], "uv": [18, 12]},
+						{"origin": [4.25, -21.225, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, -17, 0.5], "rotation": [0, 0, -35], "uv": [17, 17]}
+					]
+				},
+				{
+					"name": "viento6",
+					"parent": "viento4",
+					"pivot": [0, 18.775, 1],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-6, 18.775, 0], "size": [12, 2, 1], "inflate": -0.075, "uv": [0, 0]},
+						{"origin": [-12.25, 15.55, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, 19.775, 0.5], "rotation": [0, 0, 35], "uv": [0, 15]},
+						{"origin": [4.25, 15.55, 0], "size": [8, 2, 1], "inflate": -0.075, "pivot": [0, 19.775, 0.5], "rotation": [0, 0, -35], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "viento",
+					"pivot": [0, 0.5, 1],
+					"locators": {
+						"viento": [0, -18, 0]
+					}
+				}
+			]
+		}
+	]
+}

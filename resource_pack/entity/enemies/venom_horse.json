@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:venom_horse",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/venom_horse"
+			},
+			"geometry": {
+				"default": "geometry.venom_horse"
+			},
+			  "scripts": {
+				"pre_animation": [
+				  "variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			  },
+			"animations": {
+				"spawn": "animation.venom_horse.spawn",
+				"jump": "animation.venom_horse.jump",
+				"walk": "animation.venom_horse.walk",
+				"run": "animation.venom_horse.run",
+				"idle": "animation.venom_horse.idle",
+				"idle.2": "animation.venom_horse.idle.2",
+				"attack": "animation.venom_horse.attack"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.venom_horse.idle"
+				},
+				{
+					"walk": "controller.animation.venom_horse.walk"
+				},
+				{
+					"spawn": "controller.animation.venom_horse.spawn"
+				},
+				{
+					"jump": "controller.animation.venom_horse.jump"
+				},
+				{
+					"attack": "controller.animation.venom_horse.attack"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+		  "spawn_egg": {
+			 "base_color": "#1d1d1f",
+			 "overlay_color": "#d6d8e8"
+		  }
+		}
+	}
+}

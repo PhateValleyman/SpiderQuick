@@ -1,0 +1,1 @@
+tellraw @p {"rawtext": [{"selector": "@e[r=2,c=1]"}, {"translate": "venom.you_are"}]}

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mystructure:symbionte_nest_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/symbionte_nest",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

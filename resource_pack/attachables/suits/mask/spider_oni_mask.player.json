@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "spiderverse:spider_oni_mask",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/suits/spider_oni_suit",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.spider_oni_mask"
+      },
+      "render_controllers": [
+        {
+          "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')"
+        }
+      ]
+    }
+  }
+}

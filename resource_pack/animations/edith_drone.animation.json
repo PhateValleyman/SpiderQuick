@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.edith_drone.idle": {
+			"loop": true,
+			"animation_length": 6,
+			"bones": {
+				"drone": {
+					"position": {
+						"0.0": [0, 6, 0],
+						"3.0": [0, 0, 0],
+						"6.0": [0, 6, 0]
+					}
+				}
+			}
+		}
+	}
+}

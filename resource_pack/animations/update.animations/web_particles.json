@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.web_particles.idle": {
+			"loop": true,
+			"bones": {
+				"shoot_effect": {
+					"rotation": [0, 0, 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "shoot_effect",
+					"locator": "shoot_effect"
+				}
+			}
+		}
+	}
+}

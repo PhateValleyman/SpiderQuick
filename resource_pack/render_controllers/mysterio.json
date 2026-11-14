@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.mysterio_invoke_spawn": {
+			"geometry": "Array.geometries[query.variant]",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.textures[query.variant]"
+			],
+			"arrays": {
+				"geometries": {
+					"Array.geometries": [
+						"Geometry.mysterio",
+						"Geometry.mysterio1",
+						"Geometry.mysterio_far_from_home"
+					]
+				},
+				"textures": {
+					"Array.textures": [
+						"Texture.mysterio",
+						"Texture.mysterio1",
+						"Texture.mysterio_far_from_home"
+					]
+				}
+			}
+		}
+	}
+}

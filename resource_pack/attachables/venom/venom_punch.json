@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:venom_punch",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"skin0": "textures/entity/venom/venom",
+				"skin1": "textures/entity/venom/venom_movie",
+				"skin2": "textures/entity/venom/blue_venom",
+				"skin3": "textures/entity/venom/venom_lee_price",
+				"skin4": "textures/entity/venom/ultimate_venom",
+				"skin5": "textures/entity/venom/ultimate_venom_spider",
+				"skin6": "textures/entity/venom/venom_2099",
+				"skin7": "textures/entity/venom/venompool",
+				"skin8": "textures/entity/venom/venom_snow_symbiote",
+				"skin9": "textures/entity/venom/antivenom",
+				"red": "textures/3d_items/venom/carnage_blast"
+			},
+			"geometry": {
+				"default": "geometry.venom_hands",
+				"venom_lee_price": "geometry.venom_hands",
+				"venom_movie": "geometry.venom_hands",
+				"venompool": "geometry.venom_hands",
+				"venom_2099": "geometry.venom_hands",
+				"venom_snow": "geometry.venom_hands",
+				"red": "geometry.venom_hands"
+			},
+			"scripts": {
+                "animate": [
+					"venom.impulse_whip.c", "whip.idle.c", "attack.c"
+                ]
+			},
+			"render_controllers": [
+				{"controller.render.venom.skin.0":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 0) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 0)"},
+				{"controller.render.venom.skin.1":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 1)"},
+				{"controller.render.venom.skin.2":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 3) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 2)"},
+				{"controller.render.venom.skin.3":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 3)"},
+				{"controller.render.venom.skin.4":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 4) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 4)"},
+				{"controller.render.venom.skin.5":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 5)"},
+				{"controller.render.venom.skin.6":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 2) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 6)"},
+				{"controller.render.venom.skin.7":"(q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 7)"},
+				{"controller.render.venom.skin.8":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 5) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 8)"},
+				{"controller.render.venom.skin.9":"(!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 1) || (q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('arathnido:skins') == 8)"},
+				{"controller.render.venom.skin.red":"!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.property('nido:item.attachments.1') == 6"}
+			],
+			"animations": {
+				"attack": "animation.player.venom_hands.attack",
+				"attack.c": "controller.animation.player.venom_hands.attack",
+				"whip.idle.c": "animation.venom.whip.idle",
+				"venom.impulse_whip.c": "controller.animation.venom.impulse_whip",
+				"impulse_whip": "animation.venom.impulse_whip"
+			}
+		}
+	}
+}

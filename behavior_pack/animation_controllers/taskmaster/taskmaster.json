@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.taskmaster.combat_mode" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman.combat_mode" : "q.has_target"
+						}
+					]
+				},
+				"spiderman.combat_mode" : {
+					"animations" : [ "combat_mode" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

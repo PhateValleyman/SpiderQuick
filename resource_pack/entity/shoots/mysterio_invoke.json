@@ -1,0 +1,44 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "spidermanaddon:mysterio_invoke_spawn",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "geometry": {
+                "mysterio": "geometry.mysterio",
+				"mysterio1": "geometry.mysterio",
+				"mysterio_far_from_home": "geometry.mysterio_far_from_home"
+            },
+            "textures": {
+                "mysterio": "textures/entity/mysterio/mysterio",
+				"mysterio1": "textures/entity/mysterio/mysterio1",
+				"mysterio_far_from_home": "textures/entity/mysterio/mysterio_far_from_home"
+            },
+			"animations": {
+				"idle": "animation.player.mysterio.capa.idle",
+				"falling": "animation.player.mysterio.falling",
+				"c": "controller.animation.mysterio_invoke_spawn",
+				"shoot": "animation.player.mysterio.laser.third",
+				"look_at_target": "animation.prisoner.look_at_target"
+			},
+            "particle_effects": {
+                "mysterio_unibeam": "spidermanaddon:mysterio_unibeam",
+				"mysterio_light": "spidermanaddon:mysterio_light"
+            },
+            "scripts": {
+                "animate": [
+                    "idle", "loop", "c", "look_at_target", "falling"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#6A3636",
+                "overlay_color": "#A63030"
+            },
+            "render_controllers": [
+                "controller.render.mysterio_invoke_spawn"
+            ]
+        }
+    }
+}

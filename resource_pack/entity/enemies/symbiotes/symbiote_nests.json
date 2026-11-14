@@ -1,0 +1,41 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:symbiote_nests",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/symbiotes/symbiote_nests",
+				"symbiote_nests": "textures/suits/agent_venom_blast"
+			},
+			"geometry": {
+				"default": "geometry.symbiote_nests",
+				"symbiote_nests": "geometry.agent_venom_blast"
+			},
+            "scripts": {
+				  "pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				  ],
+                "animate": [
+					"c", "attack.c", "idle"
+                ]
+            },
+			"animations": {
+				"idle": "animation.agent_venom.blast.idle",
+				"c": "animation.symbiote_nests.idle",
+				"attack.c": "controller.animation.symbiote_nests.attack",
+				"attack": "animation.agent_venom.blast"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.symbiote_nests"
+			],
+			"spawn_egg": {
+				"texture": "symbiote_nests",
+				"texture_index": 0
+			}
+		}
+	}
+}

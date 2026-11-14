@@ -1,0 +1,1 @@
+import './shocker_gloves.js';

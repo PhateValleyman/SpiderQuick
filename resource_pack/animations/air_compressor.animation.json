@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.air_compressor.particles": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": {
+					"effect": "air_compressor",
+					"locator": "particle0"
+				}
+			}
+		},
+		"animation.air_compressor.on": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"air": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 360, 0]
+					}
+				}
+			}
+		}
+	}
+}

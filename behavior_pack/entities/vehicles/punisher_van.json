@@ -1,0 +1,156 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:punisher_van",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+			"animations": {
+				"spider_mobile_c": "controller.animation.spider_mobile.walk",
+				"spider_mobile.walk": "animation.spider_mobile.walk",
+				"vehicles.motor": "animation.vehicles.motor",
+				"bike.motor.particle": "animation.spider_mobile.particle",
+				"bike.walk.particle": "animation.spider_mobile.walk.particle",
+				"bike.particle_c": "controller.animation.bike.particle"
+			},
+			"scripts": {
+				"animate": [
+					"spider_mobile_c",
+					"vehicles.motor",
+					"bike.particle_c"
+				]
+			}
+		},
+		"component_groups": {
+			
+		},
+
+	"components": {
+		"minecraft:type_family": {
+		"family": [ "car", "vehicle" ]
+	},
+	"minecraft:loot": {
+		"table": "loot_tables/entities/punisher_van.json"
+	},
+	"minecraft:breathable": {
+		"totalSupply": 15,
+		"suffocateTime": 0
+	},
+      "minecraft:fire_immune": {
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	"minecraft:healable": {
+		"items": [
+		{
+			"item": "redstone",
+			"heal_amount": 2
+		}
+	]
+},
+	"minecraft:scale": {                   "value":1.0
+	},
+	"minecraft:collision_box": {
+		"width": 1.4,
+		"height": 1.7
+	},
+	"minecraft:health": {
+		"value": {
+			"range_min": 40,
+			"range_max": 40
+		}
+	},
+	"minecraft:movement": {
+		"value": {
+			"range_min": 0.4,
+			"range_max": 0.4
+		}
+	},
+	"minecraft:underwater_movement": {
+		"value": 0.05
+	},
+	"minecraft:navigation.walk": {
+		"can_path_over_water": true,
+		"avoid_water": true,
+		"avoid_damage_blocks": true
+	},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+	"minecraft:movement.basic": {
+	},
+	"minecraft:jump.static": {
+	},
+	"minecraft:nameable": {
+	},
+	"minecraft:rideable": {
+		"seat_count": 5,
+		"passenger_max_width": 1.375,
+		"crouching_skip_interact": true,
+		"interact_text": "Drive",
+		"family_types": [
+			"player"
+		],
+		"seats": [
+		  {
+		  "position": [ 0.65, 1.1, 1.85],
+		  "third_person_camera_radius": 8.0,
+		  "min_rider_count": 0,
+		  "max_rider_count": 5
+		  },
+		  {
+		  "position": [ -0.65, 1.1, 1.85],
+		  "third_person_camera_radius": 8.0,
+		  "min_rider_count": 1,
+		  "max_rider_count": 5
+		  },
+		  {
+		  "position": [ 0.8, 1.1, 0.4],
+		  "third_person_camera_radius": 8.0,
+		  "min_rider_count": 2,
+		  "max_rider_count": 5
+		  },
+		  {
+		  "position": [ 0.8, 1.1, -0.675],
+		  "third_person_camera_radius": 8.0,
+		  "min_rider_count": 3,
+		  "max_rider_count": 5
+		  },
+		  {
+		  "position": [ -0.9, 1.1, -1.0],
+		  "third_person_camera_radius": 8.0,
+		  "min_rider_count": 4,
+		  "max_rider_count": 5
+		  }
+		]
+	},
+	"minecraft:input_ground_controlled": {
+	},
+	"minecraft:behavior.float": {
+		"priority": 0
+	},
+	"minecraft:physics": {
+	},
+	"minecraft:leashable": {
+		"soft_distance": 4.0,
+		"hard_distance": 6.0,
+		"max_distance": 10.0
+	},
+	"minecraft:balloonable": {
+	},
+	"minecraft:pushable": {
+		"is_pushable": true,
+		"is_pushable_by_piston": true
+		}
+	},
+    "events": {
+
+		
+	}
+}
+}

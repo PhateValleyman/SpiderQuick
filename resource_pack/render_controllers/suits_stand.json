@@ -1,0 +1,277 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.suits_stand.spiderman_classic_suit": {
+      "geometry": "Geometry.spiderman_classic_suit",
+      "part_visibility": [
+        { "*": "q.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_classic_suit" ]
+    },
+    "controller.render.suits_stand.miles_morales_suit": {
+      "geometry": "Geometry.miles_morales_suit",
+      "part_visibility": [
+        { "*": "q.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.miles_morales_suit" ]
+    },
+    "controller.render.suits_stand.miles_morales_gold_suit": {
+      "geometry": "Geometry.miles_morales_suit",
+      "part_visibility": [
+        { "*": "q.variant == 3" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.miles_morales_gold_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_raimi_suit": {
+      "geometry": "Geometry.spiderman_raimi_suit",
+      "part_visibility": [
+        { "*": "q.variant == 4" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_raimi_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_raimi_black_suit": {
+      "geometry": "Geometry.spiderman_raimi_suit",
+      "part_visibility": [
+        { "*": "q.variant == 5" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_raimi_black_suit" ]
+    },
+    "controller.render.suits_stand.iron_spider_ucm_suit": {
+      "geometry": "Geometry.iron_spider_ucm_suit",
+      "part_visibility": [
+        { "*": "q.variant == 6" }
+      ],
+      "materials": [ { "*": "Material.iron_spider_ucm_suit" } ],
+      "textures": [ "Texture.iron_spider_ucm_suit" ]
+    },
+    "controller.render.suits_stand.iron_spider_ucm_suit_light": {
+      "geometry": "Geometry.iron_spider_ucm_suit",
+      "part_visibility": [
+        { "*": "q.variant == 6" }
+      ],
+      "materials": [ { "*": "Material.iron_spider_ucm_suit_light" } ],
+      "textures": [ "Texture.iron_spider_ucm_suit_light" ]
+    },
+    "controller.render.suits_stand.spiderman_stealth_suit": {
+      "geometry": "Geometry.spiderman_stealth_suit",
+      "part_visibility": [
+        { "*": "q.variant == 7" }
+      ],
+      "materials": [ { "*": "Material.iron_spider_ucm_suit_light" } ],
+      "textures": [ "Texture.spiderman_stealth_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_ps4_black_suit": {
+      "geometry": "Geometry.spiderman_black_suit",
+      "part_visibility": [
+        { "*": "q.variant == 8" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_ps4_black_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_steve_ditko_suit": {
+      "geometry": "Geometry.spiderman_steve_ditko_suit",
+      "part_visibility": [
+        { "*": "q.variant == 9" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_steve_ditko_suit" ]
+    },
+    "controller.render.suits_stand.the_amazing_spiderman_1_suit": {
+      "geometry": "Geometry.the_amazing_spiderman_1_suit",
+      "part_visibility": [
+        { "*": "q.variant == 10" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.the_amazing_spiderman_1_suit" ]
+    },
+    "controller.render.suits_stand.the_amazing_spiderman_2_suit": {
+      "geometry": "Geometry.the_amazing_spiderman_2_suit",
+      "part_visibility": [
+        { "*": "q.variant == 11" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.the_amazing_spiderman_2_suit" ]
+    },
+    "controller.render.suits_stand.ultimate_spiderman_ucm_suit": {
+      "geometry": "Geometry.ultimate_spiderman_ucm_suit",
+      "part_visibility": [
+        { "*": "q.variant == 12" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.ultimate_spiderman_ucm_suit" ]
+    },
+    "controller.render.suits_stand.scarlet_spider_suit": {
+      "geometry": "Geometry.scarlet_spider_suit",
+      "part_visibility": [
+        { "*": "q.variant == 13" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.scarlet_spider_suit" ]
+    },
+    "controller.render.suits_stand.spectacular_spiderman_black_suit": {
+      "geometry": "Geometry.spectacular_spiderman_suit",
+      "part_visibility": [
+        { "*": "q.variant == 14" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit" ]
+    },
+    "controller.render.suits_stand.spectacular_spiderman_black_suit_2": {
+      "geometry": "Geometry.spectacular_spiderman_suit",
+      "part_visibility": [
+        { "*": "q.variant == 15" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit_2" ]
+    },
+    "controller.render.suits_stand.spectacular_spiderman_black_suit_3": {
+      "geometry": "Geometry.spectacular_spiderman_suit",
+      "part_visibility": [
+        { "*": "q.variant == 16" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spectacular_spiderman_black_suit_3" ]
+    },
+    "controller.render.suits_stand.spectacular_spiderman_suit": {
+      "geometry": "Geometry.spectacular_spiderman_suit",
+      "part_visibility": [
+        { "*": "q.variant == 17" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spectacular_spiderman_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_67_suit": {
+      "geometry": "Geometry.spiderman_67_suit",
+      "part_visibility": [
+        { "*": "q.variant == 18" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_67_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_90_suit": {
+      "geometry": "Geometry.spiderman_90_suit",
+      "part_visibility": [
+        { "*": "q.variant == 19" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_90_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_wrestler_suit": {
+      "geometry": "Geometry.spiderman_wrestler_suit",
+      "part_visibility": [
+        { "*": "q.variant == 20" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_wrestler_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_ps4_suit": {
+      "geometry": "Geometry.spiderman_ps4_suit",
+      "part_visibility": [
+        { "*": "q.variant == 21" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_ps4_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_homecoming_suit": {
+      "geometry": "Geometry.spiderman_homecoming_suit",
+      "part_visibility": [
+        { "*": "q.variant == 22" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_homecoming_suit" ]
+    },
+    "controller.render.suits_stand.ultimate_spiderman_suit": {
+      "geometry": "Geometry.ultimate_spiderman_suit",
+      "part_visibility": [
+        { "*": "q.variant == 23" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.ultimate_spiderman_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_far_from_home_suit": {
+      "geometry": "Geometry.spiderman_far_from_home_suit",
+      "part_visibility": [
+        { "*": "q.variant == 24" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_far_from_home_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_no_way_home_suit": {
+      "geometry": "Geometry.spiderman_no_way_home_suit",
+      "part_visibility": [
+        { "*": "q.variant == 25" }
+      ],
+      "materials": [ { "*": "Material.iron_spider_ucm_suit_light" } ],
+      "textures": [ "Texture.spiderman_no_way_home_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_classic_black_suit": {
+      "geometry": "Geometry.spiderman_black_suit",
+      "part_visibility": [
+        { "*": "q.variant == 26" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_classic_black_suit" ]
+    },
+    "controller.render.suits_stand.ultimate_spiderman_black_suit": {
+      "geometry": "Geometry.ultimate_spiderman_black_suit",
+      "part_visibility": [
+        { "*": "q.variant == 27" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.ultimate_spiderman_black_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_black_suit_comic": {
+      "geometry": "Geometry.spiderman_black_suit",
+      "part_visibility": [
+        { "*": "q.variant == 28" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_black_suit_comic" ]
+    },
+    "controller.render.suits_stand.spiderman_negative_suit": {
+      "geometry": "Geometry.spiderman_ps4_suit",
+      "part_visibility": [
+        { "*": "q.variant == 29" }
+      ],
+      "materials": [ { "*": "Material.iron_spider_ucm_suit_light" } ],
+      "textures": [ "Texture.spiderman_negative_suit" ]
+    },
+    "controller.render.suits_stand.spiderman_homemade_suit": {
+      "geometry": "Geometry.spiderman_homemade_suit",
+      "part_visibility": [
+        { "*": "q.variant == 30" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.spiderman_homemade_suit" ]
+    },
+    "controller.render.suits_stand.human_spider_suit": {
+      "geometry": "Geometry.human_spider_suit",
+      "part_visibility": [
+        { "*": "q.variant == 31" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.human_spider_suit" ]
+    },
+    "controller.render.suits_stand.miles_morales_bodega_cat_suit": {
+      "geometry": "Geometry.miles_morales_bodega_cat_suit",
+      "part_visibility": [
+        { "*": "q.variant == 32" }
+      ],
+      "materials": [ { "*": "Material.suits" } ],
+      "textures": [ "Texture.miles_morales_bodega_cat_suit" ]
+    },
+    "controller.render.suits_stand.outline": {
+      "geometry": "Geometry.outline",
+      "part_visibility": [
+        { "*": "q.is_sheared" }
+      ],
+      "materials": [ { "*": "Material.outline" } ],
+      "textures": [ "Texture.outline" ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:evidence_box",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:evidence_box_delay": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.1,
+          "time_down_event": {
+            "event": "minecraft:evidence_box_despawn"
+          }
+        }
+      },
+      "minecraft:evidence_box_despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/evidence_box/evidence_box.json"
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "test": "has_equipment",
+                "subject": "other",
+                "domain": "hand"
+              },
+              "event": "minecraft:evidence_box"
+            },
+            "spawn_items": {
+              "table": "loot_tables/evidence_box/evidence_box.json"
+            },
+            "interact_text": "action.interact.evidence_box",
+            "use_item": false,
+            "play_sounds": "armor.equip_leather"
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": [
+          "evidence_box"
+        ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {},
+      "minecraft:movement.basic": {},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:scale": {
+        "value": 1.15
+      },
+      "minecraft:physics": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    },
+    "events": {
+      "minecraft:evidence_box": {
+        "add": {
+          "component_groups": [
+            "minecraft:evidence_box_delay"
+          ]
+        }
+      },
+      "minecraft:evidence_box_despawn": {
+        "add": {
+          "component_groups": [
+            "minecraft:evidence_box_despawn"
+          ]
+        }
+      }
+    }
+  }
+}

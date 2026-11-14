@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_web_ball",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/items_3d/spider_web_ball"
+			},
+			"geometry": {
+				"default": "geometry.spider_web_ball"
+			},
+			"animations": {
+				"loop": "animation.spider_web_ball.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "spider_web_ball",
+				"texture_index": 0
+			}
+		}
+	}
+}

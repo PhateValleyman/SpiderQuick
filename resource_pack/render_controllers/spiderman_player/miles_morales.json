@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.miles_morales_into_the_spiderverse": {
+      "geometry": "Geometry.miles_morales_into_the_spiderverse",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.miles_morales_into_the_spiderverse" ]
+    },
+    "controller.render.miles_morales_into_the_spiderverse_default": {
+      "geometry": "Geometry.miles_morales_into_the_spiderverse_default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.miles_morales_into_the_spiderverse" ]
+    },
+    "controller.render.miles_morales_into_the_spiderverse_training": {
+      "geometry": "Geometry.miles_morales_into_the_spiderverse_training",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.miles_morales_into_the_spiderverse_training" ]
+    },
+    "controller.render.miles_morales_across_the_spiderverse": {
+      "geometry": "Geometry.miles_morales_across_the_spiderverse",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.miles_morales_across_the_spiderverse" ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:customer",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+        "spidermanaddon:state": {
+          "type": "enum",
+          "values": [
+            "default",
+            "end"
+          ],
+          "default": "default",
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+		"destroy": {
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		},
+      "spidermanaddon:delivered": {
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 10.25,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "destroy"
+			  }
+		},
+        "minecraft:movement": {
+          "value": 0.0
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "pizza_customer",
+          "npc"
+        ]
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:movement": {
+        "value": 0.0
+      },
+      "minecraft:physics": {},
+      "minecraft:persistent": {},
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "interact_text": "action.interact.deliver_pizza",
+            "swing": false,
+            "on_interact": {
+              "event": "spidermanaddon:script_interact",
+              "target": "self"
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "spidermanaddon:script_interact": {},
+      "spidermanaddon:set_default": {
+        "set_property": {
+          "spidermanaddon:state": "default"
+        },
+        "remove": {
+          "component_groups": [
+            "spidermanaddon:delivered"
+          ]
+        }
+      },
+      "spidermanaddon:set_end": {
+        "set_property": {
+          "spidermanaddon:state": "end"
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:delivered"
+          ]
+        }
+      },
+      "destroy": {
+        "add": {
+          "component_groups": [
+            "destroy"
+          ]
+        }
+      }
+    }
+  }
+}

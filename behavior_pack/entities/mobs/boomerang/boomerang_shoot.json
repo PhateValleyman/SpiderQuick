@@ -1,0 +1,91 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:boomerang_shoot",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "return": {
+        "minecraft:physics": {},
+        "minecraft:collision_box": {
+          "width": 0.35,
+          "height": 0.35
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "boomerang_projectile",
+          "bullet"
+        ]
+      },
+
+      "minecraft:collision_box": {
+        "width": 0.35,
+        "height": 0.35
+      },
+
+      "minecraft:projectile": {
+        "power": 1.15,
+        "gravity": 0.0,
+        "uncertaintyBase": 0.0,
+        "anchor": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "should_bounce": false,
+        "hit_sound": "boomerang.boomerang",
+        "shoot_sound": "boomerang.boomerang",
+
+        "on_hit": {
+          "impact_damage": {
+            "damage": 10,
+            "knockback": true,
+            "destroy_on_hit": false
+          },
+
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "spidermanaddon:return"
+            }
+          }
+        }
+      },
+
+      "minecraft:physics": {},
+
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+
+      "minecraft:timer": {
+        "looping": false,
+        "time": 3.0,
+        "time_down_event": {
+          "event": "spidermanaddon:return"
+        }
+      }
+    },
+
+    "events": {
+      "spidermanaddon:return": {
+        "add": {
+          "component_groups": [
+            "return"
+          ]
+        }
+      }
+    }
+  }
+}

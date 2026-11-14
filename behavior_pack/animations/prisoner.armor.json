@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.prisoner.armor": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+          "/effect @s resistance 3 1 true"
+        ]
+      }
+    }
+  }
+}

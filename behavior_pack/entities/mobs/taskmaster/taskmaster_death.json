@@ -1,0 +1,110 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:taskmaster_death",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+			"destroy": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "plane", "vehicle" ]
+      },
+	  "minecraft:spawn_entity": {"entities": [{"min_wait_time": 3,"max_wait_time": 4,"single_use": true,"spawn_entity": "spidermanaddon:taskmaster_drop","num_to_spawn": 1 }]},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 4.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "destroy"
+			}
+		},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+	  "minecraft:fire_immune": true,
+      "minecraft:loot": {
+        "table": "loot_tables/entities/taskmaster.json"
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:health": {
+        "value": 300,
+        "max": 300
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:movement": {
+        "value": 0.8
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.2
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 1.1,
+          "range_max": 1.6
+        }
+      },
+      "minecraft:behavior.player_ride_tamed": {
+      },
+      "minecraft:input_ground_controlled": {
+      },
+      "minecraft:can_power_jump": {
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:collision_box": {
+        "width": 1.1,
+        "height": 1.1
+      },                           
+      "minecraft:is_tamed": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+		"destroy": {
+			"add": {
+			  "component_groups": [
+				"destroy"
+			  ]
+			}
+		}
+    }
+  }
+}

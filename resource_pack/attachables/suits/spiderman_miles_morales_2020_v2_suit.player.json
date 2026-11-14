@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "spiderverse:spiderman_miles_morales_2020_v2_suit",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/suits/spiderman_miles_morales_2020_v2_suit",
+        "enchanted": "textures/misc/enchanted_item_glint",
+        "web_wings": "textures/web_wings"
+      },
+      "geometry": {
+        "default": "geometry.spiderman_suit_x64",
+        "web_wings": "geometry.web_wings"
+      },
+      "render_controllers": [
+        {
+          "controller.render.spiderman_suit.web_wings": "q.is_gliding && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')"
+        },
+        {
+          "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')"
+        }
+      ]
+    }
+  }
+}

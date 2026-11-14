@@ -1,0 +1,90 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rubik",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1]
+				},
+				{
+					"name": "rubik",
+					"parent": "rightItem",
+					"pivot": [-6, 9, -1]
+				},
+				{
+					"name": "rubik0",
+					"parent": "rubik",
+					"pivot": [-6, 11, -1],
+					"cubes": [
+						{"origin": [-11, 9, -6], "size": [10, 3, 10], "uv": [0, 27]}
+					]
+				},
+				{
+					"name": "rubik1",
+					"parent": "rubik",
+					"pivot": [-6, 14, -1],
+					"cubes": [
+						{"origin": [-11, 12, -6], "size": [10, 3, 10], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "rubik2",
+					"parent": "rubik",
+					"pivot": [-6, 17, -1],
+					"cubes": [
+						{"origin": [-11, 15, -6], "size": [10, 4, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-1.9, 12, 0]
+				}
+			]
+		}
+	]
+}

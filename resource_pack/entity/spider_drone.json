@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:spider_drone_entity",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": { "default": "textures/entity/spider_drone" },
+      "geometry": { "default": "geometry.spider_drone" },
+        "animations": {
+				"loop": "animation.spider_drone.idle"
+        },
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+      "render_controllers": [ "controller.render.skeleton" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_radioactive_spider",
+        "texture_index": 0
+      }
+    }
+  }
+}

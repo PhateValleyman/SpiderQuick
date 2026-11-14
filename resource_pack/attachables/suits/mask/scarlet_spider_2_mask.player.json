@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "spiderverse:scarlet_spider_2_mask",
+      "materials": {
+        "default": "armor",
+        "enchanted": "armor_enchanted"
+      },
+      "textures": {
+        "default": "textures/suits/scarlet_spider_2_suit",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.spiderman_mask_x64"
+      },
+      "render_controllers": [
+        {
+          "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')"
+        }
+      ]
+    }
+  }
+}

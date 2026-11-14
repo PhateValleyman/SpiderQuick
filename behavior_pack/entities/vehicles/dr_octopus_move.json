@@ -1,0 +1,139 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:dr_octopus_move",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+		  "properties":{
+			"dr_octopus:escalar":{ "type": "bool", "default": false, "client_sync": true }
+		  },
+		  "scripts": {
+			"animate": [
+				{ "off_move.c": "!q.has_rider" },
+				"move_mode.c",
+				"escalar.anim",
+				"escalar.c"
+			]
+		  },
+		  "animations": {
+			"escalar.c": "controller.animation.dr_octopus.escalar",
+			"dr_octopus.escalar.arriba": "animation.dr_octopus.escalar.arriba",
+			"dr_octopus.escalar.abajo": "animation.dr_octopus.escalar.abajo",
+			"move_mode.c": "controller.animation.dr_octopus.move_mode",
+			"dr_octopus.move": "animation.dr_octopus.move.walk",
+			"dr_octopus.escalar": "animation.dr_octopus.move.climb",
+			"dr_octopus.off": "animation.dr_octopus.move.off",
+			"off_move.c": "animation.dr_octopus.off_move",
+			"escalar.anim": "animation.dr_octopus.escalar_active"
+		  }
+		},
+		"component_groups": {
+		"spidermanaddon:timeout": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+		}
+		},
+
+	"components": {
+		"minecraft:type_family": {
+		"family": [ "dr_octopus_move" ]
+	},
+      "minecraft:fire_immune": {
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+	"minecraft:scale": {  "value":1.0
+	},
+	"minecraft:collision_box": {
+		"width": 1.8,
+		"height": 3.25
+	},
+	"minecraft:health": {
+		"value": {
+			"range_min": 40,
+			"range_max": 40
+		}
+	},
+	"minecraft:movement": {
+		"value": {
+			"range_min": 0.3,
+			"range_max": 0.3
+		}
+	},
+	"minecraft:underwater_movement": {
+		"value": 0.05
+	},
+	"minecraft:navigation.walk": {
+		"can_path_over_water": true,
+		"avoid_water": true,
+		"avoid_damage_blocks": true
+	},
+	"minecraft:movement.basic": {
+	},
+	"minecraft:jump.static": {
+	},
+	"minecraft:nameable": {
+	},
+	"minecraft:rideable": {
+		"priority": 0,
+		"seat_count": 1,
+		"crouching_skip_interact": true,
+		"interact_text": "Drive",
+		"family_types": [
+			"player"
+		],
+        "seats": [
+          {
+         "position": [ 0, 1.0, 0.0],
+         "min_rider_count": 0,
+         "max_rider_count": 1
+          }
+        ]
+},
+	"minecraft:input_ground_controlled": {
+	},
+      "minecraft:horse.jump_strength": {
+        "value": {
+          "range_min": 0.8,
+          "range_max": 2.5
+        }
+      },
+        "minecraft:can_power_jump": {
+        },
+	"minecraft:behavior.float": {
+		"priority": 0
+	},
+	"minecraft:physics": {
+	},
+	"minecraft:balloonable": {
+	},
+	"minecraft:pushable": {
+		"is_pushable": true,
+		"is_pushable_by_piston": true
+		}
+	},
+    "events": {
+      "spiderman:pegado_paredes": { "set_property":{ "dr_octopus:escalar": true }
+      },
+      "spiderman:pegado_paredes_off": { "set_property":{ "dr_octopus:escalar": false }
+      },
+		"spidermanaddon:timeout": {
+			"add": {
+				"component_groups": [
+					"spidermanaddon:timeout"
+				]
+			}
+		}
+	}
+}
+}

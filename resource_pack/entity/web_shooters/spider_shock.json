@@ -1,0 +1,37 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "spidermanaddon:spider_shock_shoot",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.spider_shock_shoot"
+            },
+            "textures": {
+                "default": "textures/doom_repulse_shoot_2"
+            },
+			"animations": {
+				"move": "animation.spider_shock_shoot.idle",
+				"move.2": "animation.spider_shock_shoot.idle2",
+				"rot": "animation.spider_shock_shoot.rot"
+			},
+            "particle_effects": {
+                "spider_shock": "spidermanaddon:spider_shock"
+            },
+            "scripts": {
+                "animate": [
+                    "move", "move.2", "rot"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#6A3636",
+                "overlay_color": "#A63030"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

@@ -1,0 +1,1740 @@
+gui.spidermanaddon.upgrade_max=Tingkatkan ke Maksimum
+gui.spidermanaddon.upgrade_max_cost=Tingkatkan %1 level tersisa dengan %2 Komponen.
+gui.spidermanaddon.not_enough_components_max=Kamu membutuhkan %1 Komponen untuk meningkatkan Penembak Jaring ini ke level maksimum.
+gui.spidermanaddon.upgraded_to_max=Penembak Jaring ditingkatkan ke level maksimum.
+item.spidermanaddon:black_cat_skin=Tampilan Black Cat
+item.spidermanaddon:norm_stone=Batu Norm
+
+ui.spiderman.settings.spider_sense_particles=Partikel indra laba-laba
+ui.spiderman.settings.spider_sense_sound=Suara indra laba-laba
+ui.spiderman.settings.spider_sense_actionbar=Bilah peringatan indra laba-laba
+
+item.minecraft:leather=Kulit
+item.spidermanaddon:spider_gwen_skin=Skin Spider-Gwen
+item.spidermanaddon:mayday_skin=Skin Mayday Parker
+
+entity.spidermanaddon:hulk_boss.name=Hulk
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=Hulk Munculkan
+
+dialogue.spidermanaddon.hulk_activation=?????:§r Keadaanmu benar-benar berantakan. Jangan menghalangi jalanku. Kalau tidak, bukan hanya teman-temanmu yang akan lupa siapa Peter Parker.
+dialogue.spidermanaddon.hulk_defeated=?????:§r Kerjamu bagus. Lain kali, kamu tidak akan seberuntung ini.
+spidermanaddon:itemGroup.name.shocker=Shocker Arsenal
+item.spidermanaddon:shocker_mask=Topeng Shocker
+item.spidermanaddon:shocker_suit=Kostum Shocker
+item.spidermanaddon:spider_punk_guitar=Spider-Punk Gitar
+item.spidermanaddon:shocker_gloves=Sarung tangan Shocker
+gui.spidermanaddon.symbiont_evil_dance=Tarian jahat
+tile.spiderman:spider_capsule.name=Kapsul laba-laba radioaktif
+
+ui.spiderman.settings.button=§8Pengaturan
+ui.spiderman.settings.title=§lPengaturan kekuatan
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§bLari bebas di dinding
+ui.spiderman.settings.water_surf=§9Selancar air
+ui.spiderman.settings.save=Simpan pengaturan
+ui.spiderman.settings.saved=§aPengaturan berhasil disimpan.
+
+item.spidermanaddon:organic_web_potion=Jaring organik Ramuan
+
+item.minecraft:gunpowder=Bubuk mesiu
+item.minecraft:glass=Kaca
+item.minecraft:slime_ball=Bola lendir
+item.minecraft:string=Benang
+item.minecraft:ender_pearl=Mutiara Ender
+
+ui.oscorp_table.title=§2Meja teknologi Oscorp
+ui.oscorp_table.body=§7Pilih proyek penjahat Spider-Man yang ingin Anda buat.
+ui.oscorp_table.category_body=§7Pilih item, kostum, atau kekuatan yang ingin Anda buat.
+ui.oscorp_table.category.green_goblin=§aGoblin Hijau
+ui.oscorp_table.category.doctor_octopus=§6Doctor Octopus
+ui.oscorp_table.category.boomerang=§9Boomerang
+ui.oscorp_table.category.electro=§eElectro
+ui.oscorp_table.category.mysterio=§5Mysterio
+ui.oscorp_table.category.scorpion=§2Scorpion
+ui.oscorp_table.category.tarantula=§4Tarantula
+ui.oscorp_table.category.black_cat=§dBlack Cat
+ui.oscorp_table.category.modified_spider=§cDimodifikasi Spider
+ui.oscorp_table.selected=Proyek dipilih
+ui.oscorp_table.required_materials=Bahan yang diperlukan
+ui.oscorp_table.result=Hasil
+ui.oscorp_table.craft=Buat
+ui.oscorp_table.missing_materials=Bahan kurang
+ui.oscorp_table.cancel=Batal
+ui.oscorp_table.back=Kembali
+ui.oscorp_table.crafted=Pembuatan selesai
+ui.oscorp_table.no_materials=Anda tidak memiliki bahan yang diperlukan
+ui.oscorp_table.invalid_item=Item tidak dapat dibuat
+
+entity.spidermanaddon:oscorp_table.name=Meja laboratorium Oscorp
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=Meja laboratorium Oscorp
+
+item.spidermanaddon:tarantula_attack=Terbang Tendangan
+item.spidermanaddon:black_cat_mask=Topeng Black Cat
+item.spidermanaddon:black_cat_suit=Kostum Black Cat
+
+item.spidermanaddon:boomerang_powers=Boomerang Kekuatan
+item.spidermanaddon:boomerang_skill_explosive=Peledak Boomerang
+item.spidermanaddon:boomerang_skill=Lempar Boomerang
+item.spidermanaddon:boomerang_skill_electric=Bumerang listrik
+
+item.minecraft:spider_eye=Mata laba-laba
+item.minecraft:fermented_spider_eye=Mata laba-laba fermentasi
+item.minecraft:blaze_powder=Bubuk Blaze
+item.minecraft:ghast_tear=Air mata Ghast
+item.minecraft:milk_bucket=Ember susu
+
+ui.laboratory_workbench.upgrade_levels_body=§fLevel saat ini: §e%1§f/§e%2
+§fTingkatkan Biaya: §a%3 level pengalaman
+ui.laboratory_workbench.no_levels=§cAnda memerlukan %1 level pengalaman. Saat ini Anda memiliki %2.
+
+item.spidermanaddon:police_scanner=Polisi Pemindai
+action.interact.police_scanner=Aktifkan/nonaktifkan pemindai
+hud.police_scanner.crime.location=§cKejahatan terdeteksi §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§bJarak: §f%1 m
+
+hud.man_spider.web.ready=§2Jaring organik §f%1/%2
+hud.man_spider.web.locked=§cJaring Terkunci §f%1/%2
+hud.man_spider.acid.ready=§aAsam Siap
+hud.man_spider.acid.cooldown=§2Asam §f%1s
+hud.man_spider.claw.ready=§cLompatan Serangan Siap
+hud.man_spider.claw.cooldown=§4Lompatan Serangan §f%1s
+message.man_spider.mutation.requires_powers=§cAnda harus memakai kekuatan Spider-Man.
+message.organic_web.requires_powers=§cAnda harus memakai kekuatan Spider-Man.
+
+item.spidermanaddon:man_spider_web_shoot=Tembakkan jaring [Jaring organik]
+item.spidermanaddon:man_spider_swing=Ayunan jaring [Jaring organik]
+item.spidermanaddon:man_spider_acid=Tembak Asam
+item.spidermanaddon:man_spider_claw=Serangan
+item.spidermanaddon:spider_mutant=Serum mutasi
+item.spidermanaddon:mutation_antidote=Mutan Penawar
+item.spidermanaddon:six_arms=Enam Lengan
+item.spidermanaddon:man_spider=Man-Spider
+
+hud.spiderman.web_swing.ammo=§bAyunan jaring §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ Berayun Titik Terdeteksi: §f%1 blok
+hud.spiderman.web_swing.target.none=§c◇ Tidak ada Berayun Titik: §fmaks.. %1 blok
+hud.spiderman.web_swing.target.no_ammo=§c✖ Cairan jaring habis
+hud.spiderman.web_swing.target.active=§a◆ Jaring terhubung
+
+item.spidermanaddon:spiderman_unlimited_sonic=Sonik Gelombang
+item.spidermanaddon:spiderman_unlimited_invisibility=Tembus pandang
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=Spider-Man: Unlimited Pengubah pergelangan
+menu.pizza.full_shift=§6Giliran penuh
+dialog.pizza.full_shift_started=§6Tn. Aziz:§r Giliran penuh dimulai. Pesanan %1/%2: antar pizza kepada %3 pelanggan. Waktu mulai: %4.
+dialog.pizza.full_shift_return_to_joe=§6Pesanan selesai. Kembali kepada Tn. Aziz untuk mengambil pesanan %1/%2.
+dialog.pizza.full_shift_return_for_reward=§6Kamu telah menyelesaikan pesanan terakhir. Kembali kepada Tn. Aziz untuk mengambil hadiahmu.
+dialog.pizza.full_shift_next_order=§6Tn. Aziz:§r Pesanan %1/%2 siap: antar pizza kepada %3 pelanggan. Waktu terakumulasi: %4.
+dialog.pizza.full_shift_spawn_failed=§6Tn. Aziz:§r Aku tidak dapat menemukan pelanggan untuk pesanan berikutnya. Giliran penuh gagal.
+dialog.pizza.full_shift_success=§6Tn. Aziz:§r Giliran penuh selesai! Kamu menyelesaikan %1 pesanan dan menerima %2 batangan emas, %3 komponen, serta %4 poin pengalaman.
+
+
+dialog.pizza.night_unavailable=§6Tn. Aziz:§r Giliran pengantaran tutup pada malam hari. Kembali pada siang hari.
+dialog.pizza.daily_limit=§6Tn. Aziz:§r Kamu sudah menyelesaikan %1 misi pengantaran hari ini. Kembali besok.
+
+item.spidermanaddon:pizza_backpack_offhand=Ransel Pizza Pengantaran
+
+pack.name=SpiderQuick
+pack.description=Sistem pengantaran pizza yang terinspirasi oleh Spider-Man 2.
+
+entity.spidermanaddon:joe_pizza.name=Tn.. Aziz
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=Munculkan Tn.. Aziz
+entity.spidermanaddon:customer.name=Pelanggan
+item.spawn_egg.entity.spidermanaddon:customer.name=Munculkan Pelanggan
+item.spidermanaddon:pizza_backpack=Pizza panas!
+
+action.interact.pizza_talk=Bicara ke Tn.. Aziz
+action.interact.deliver_pizza=Antar Pizza
+
+menu.pizza.title=§6Tn.. Aziz's Pizza
+menu.pizza.body=Apakah Anda ingin bekerja sebagai pengantar? Antar semua pesanan dan kembali sebelum waktu habis.
+menu.pizza.accept=§aTerima misi
+menu.pizza.decline=Jangan sekarang
+
+dialog.pizza.busy=§6Tn. Aziz:§r Seorang pengantar sudah bekerja. Kembali lagi nanti.
+dialog.pizza.spawn_failed=§6Tn. Aziz:§r Aku tidak dapat menemukan lokasi aman untuk para pelanggan. Coba area lain.
+dialog.pizza.inventory_full=§6Tn. Aziz:§r Kamu memerlukan setidaknya satu slot inventaris kosong untuk ransel.
+dialog.pizza.mission_started=§6Tn. Aziz:§r Kamu memiliki waktu %2 untuk mengantar %1 pesanan. Cepat bergerak!
+dialog.pizza.still_working=§6Tn. Aziz:§r Masih ada %1 pesanan yang belum diantar. Sisa waktu: %2.
+dialog.pizza.not_your_customer=§6Tn. Aziz:§r Pesanan itu milik pengantar lain.
+dialog.pizza.already_delivered=§ePelanggan ini sudah menerima pizzanya.
+dialog.pizza.need_backpack=§cKamu harus memegang ransel pizza untuk mengantar pesanan.
+dialog.pizza.order_delivered=§aPesanan terkirim. Pelanggan: %1/%2.
+dialog.pizza.return_to_joe=§6Semua pesanan sudah siap. Kembali kepada Tn. Aziz sebelum waktu habis!
+dialog.pizza.failed_time=§6Tn. Aziz:§r Waktu habis. Misi gagal.
+dialog.pizza.failed_customer=§6Tn. Aziz:§r Seorang pelanggan menghilang atau mati. Misi gagal.
+dialog.pizza.success=§6Tn. Aziz:§r Kerja bagus. Kamu mengantar %1 pesanan dan menerima %2 batangan emas.
+
+dialog.spider_sense.enemy_detected=§cMusuh terdeteksi di:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Topeng Ben Benar-benar
+item.spiderverse:ben_really_suit=Kostum Ben Benar-benar
+
+item.spidermanaddon:scorpion_attack=Sengat Serangan
+item.spidermanaddon:scorpion_spin=Berputar Serangan
+item.spidermanaddon:scorpion_poison=Aktifkan Racun
+item.spidermanaddon:scorpion_powers=Ekor Scorpion
+
+entity.spidermanaddon:electro_boss.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Munculkan Electro
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Munculkan Silk
+entity.spidermanaddon:punisher_van.name=Punisher Van
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=Punisher Van
+item.marveladdons:venom_transform=Berubah menjadi Venom
+item.marveladdons:venom_claw=Venom Cakar
+item.marveladdons:venom_combat=Pertarungan
+item.marveladdons:venom_powers=Venom Kekuatan
+item.marveladdons:venom_shield=Perisai
+item.spidermanaddon:agent_venom_ult=Agen Venom Kemampuan
+item.spiderverse:spiderman_undies_suit=Spider-Man Pakaian dalam
+item.spiderverse:electro_mask=Topeng Electro
+item.spidermanaddon:electro_powers=Electro Kekuatan
+item.spidermanaddon:tarantula_suit=Kostum Tarantula
+item.spidermanaddon:tarantula_mask=Topeng Tarantula
+item.spidermanaddon:boomerang_suit=Kostum Boomerang
+item.spidermanaddon:boomerang_mask=Topeng Boomerang
+item.spidermanaddon:scorpion_suit=Kostum Scorpion
+item.spidermanaddon:green_goblin_combat=Pertarungan
+item.spidermanaddon:green_goblin_laser=Goblin Hijau Laser
+item.spidermanaddon:hobgoblin_pumpkin_bomb=Hobgoblin Bom
+item.spidermanaddon:black_cat_powers=Black Cat Kekuatan
+item.spidermanaddon:spiderman_menu=Menu
+item.marveladdons:venom_wings=Venom Sayap
+item.marveladdons:venom_whip=Berayun Cambuk
+
+marveladdons:itemGroup.name.fabric=Kain Gulungan
+marveladdons:itemGroup.name.spray=Semprotan Cat
+spidermanaddon:itemGroup.name.powers=Spider-Man Kekuatan
+spidermanaddon:itemGroup.name.web_shooters=Penembak jaring
+spidermanaddon:itemGroup.name.mask=Spider-Man Topeng
+spidermanaddon:itemGroup.name.suit=Spider-Man Kostum
+spidermanaddon:itemGroup.name.mysterio=Mysterio Arsenal
+spidermanaddon:itemGroup.name.green_goblin=Goblin Hijau Arsenal
+spidermanaddon:itemGroup.name.sandman=Sandman Arsenal
+spidermanaddon:itemGroup.name.electro=Electro Arsenal
+spidermanaddon:itemGroup.name.black_cat=Black Cat Arsenal
+spidermanaddon:itemGroup.name.scorpion=Scorpion Arsenal
+spidermanaddon:itemGroup.name.dr_octopus=Dr. Octopus Arsenal
+spidermanaddon:itemGroup.name.tarantula=Tarantula Arsenal
+spidermanaddon:itemGroup.name.boomerang=Boomerang Arsenal
+
+entity.spidermanaddon:symbiote_nests.name=Simbiot Sarang
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=Simbiot Sarang
+
+dialog.black_cat.heal.light=§dBlack Cat:§r Sesuatu yang sederhana... tetapi berguna. Jangan terbiasa melihatku berterima kasih.
+dialog.black_cat.heal.meal=§dBlack Cat:§r Nah, begitulah cara merawat seorang sekutu. Perhatian yang bagus, Spider.
+dialog.black_cat.heal.golden=§dBlack Cat:§r Apel emas untukku? Sepertinya seseorang ingin mendapatkan kesembilan nyawaku.
+dialog.black_cat.heal.full=§dBlack Cat:§r Sekarang aku merasa sempurna. Usahakan jangan merusaknya, ya?
+dialog.black_cat.heal.bad=§dBlack Cat:§r Makanan busuk? Hati-hati, sayang. Kepercayaan juga bisa diracuni.
+
+dialog.punisher.heal.light=§8Punisher:§r Persediaan diterima. Cukup untuk terus bergerak.
+dialog.punisher.heal.meal=§8Punisher:§r Makanan bagus. Membuat tim tetap berdiri.
+dialog.punisher.heal.golden=§8Punisher:§r Apel emas. Berguna. Kamu tidak menyia-nyiakannya.
+dialog.punisher.heal.full=§8Punisher:§r Pulih sepenuhnya. Aku kembali bertarung.
+dialog.punisher.heal.bad=§8Punisher:§r Itu bukan bantuan. Itu keputusan buruk.
+
+dialog.punisher.night.1=§8Punisher:§r Malam menguntungkan para penjahat... dan kita juga.
+dialog.punisher.night.2=§8Punisher:§r Saat itulah mereka keluar dari persembunyian.
+dialog.punisher.night.3=§8Punisher:§r Tetap awasi sekelilingmu.
+
+dialog.punisher.health.1=§8Punisher:§r Aku pernah menerima serangan yang lebih buruk.
+dialog.punisher.health.2=§8Punisher:§r Aku masih bisa bertarung.
+
+item.spiderverse:electro_no_way_home_suit=Kostum Electro: Spider-Man Tidak ada Jalan Rumah
+item.spiderverse:electro_no_way_home_mask=Topeng Electro: Spider-Man Tidak ada Jalan Rumah
+item.spiderverse:electro_tas2_suit=Kostum Electro: Amazing Spider-Man 2
+item.spiderverse:electro_tas2_mask=Topeng Electro: Amazing Spider-Man 2
+
+item.spidermanaddon:electro_laser=Electro Laser
+item.spidermanaddon:electro_teleport=Teleportasi
+item.spidermanaddon:electro_ray=Listrik Magnet
+
+gui.uncle_ben_camera.title=§bMode kamera
+gui.uncle_ben_camera.body=Pilih opsi kamera.
+gui.uncle_ben_camera.camera=Kamera
+gui.uncle_ben_camera.poses=Pose
+gui.uncle_ben_camera.camera.title=Kamera
+gui.uncle_ben_camera.camera.body=Pilih sebuah Mode kamera.
+gui.uncle_ben_camera.camera.free=Kamera bebas
+gui.uncle_ben_camera.camera.selfie=Mode swafoto
+gui.uncle_ben_camera.poses.title=Pose
+gui.uncle_ben_camera.poses.body=Pilih sebuah pose.
+gui.uncle_ben_camera.poses.disable=Nonaktifkan pose
+gui.uncle_ben_camera.poses.pose=Pose
+
+dialog.punisher.interact.low.1=§8Punisher:§r Jangan salah mengira kerja sama sebagai persahabatan.
+dialog.punisher.interact.low.2=§8Punisher:§r Jika kamu lengah, aku tidak akan datang menyelamatkanmu.
+dialog.punisher.interact.low.3=§8Punisher:§r Buktikan bahwa aku bisa mempercayaimu.
+dialog.punisher.interact.low.4=§8Punisher:§r Aku sudah melihat terlalu banyak pahlawan gugur karena memercayai orang yang salah.
+dialog.punisher.interact.low.5=§8Punisher:§r Kurangi bicara. Tetap waspada.
+
+dialog.punisher.interact.high.1=§8Punisher:§r Kamu sudah membuktikan bahwa kamu tahu cara bertahan hidup.
+dialog.punisher.interact.high.2=§8Punisher:§r Aku jarang mengatakan ini... kerja bagus.
+dialog.punisher.interact.high.3=§8Punisher:§r Lindungi punggungku, dan aku akan melindungi punggungmu.
+dialog.punisher.interact.high.4=§8Punisher:§r Aku mulai berpikir bahwa kamu benar-benar membuat perbedaan.
+dialog.punisher.interact.high.5=§8Punisher:§r Selama kita bertarung bersama, para penjahat itu tidak akan mendapat waktu istirahat.
+
+dialog.punisher.follow=§8Punisher:§r Jangan pergi terlalu jauh.
+dialog.punisher.free=§8Punisher:§r Jika sesuatu muncul, aku akan menanganinya.
+
+dialog.punisher.recruit.1=§8Punisher:§r Kartu identitas itu membuktikan bahwa kamu bersama Avengers... Aku akan bekerja denganmu.
+dialog.punisher.recruit.2=§8Punisher:§r Aku tidak menerima perintah dari sembarang orang. Tetapi aku akan memberimu kesempatan.
+
+dialog.punisher.respect.1=§8Punisher:§r Kamu sedang belajar.
+dialog.punisher.respect.2=§8Punisher:§r Kerja bagus.
+dialog.punisher.respect.3=§8Punisher:§r Aku mulai mempercayaimu.
+dialog.punisher.respect.4=§8Punisher:§r Itu profesional.
+
+dialog.punisher.assist.1=§8Punisher:§r Tembakan bagus. Teruskan.
+dialog.punisher.assist.2=§8Punisher:§r Kamu bertarung lebih baik daripada yang kuduga.
+dialog.punisher.assist.3=§8Punisher:§r Hari ini kita memberi mereka pelajaran.
+dialog.punisher.assist.4=§8Punisher:§r Bekerja denganmu membuat semuanya lebih mudah.
+
+dialog.punisher.respect.25=§8Punisher:§r Sepertinya kamu tahu apa yang kamu lakukan.
+dialog.punisher.respect.50=§8Punisher:§r Aku mulai mempercayaimu.
+dialog.punisher.respect.75=§8Punisher:§r Kamu telah membuktikan dirimu sebagai sekutu sejati.
+dialog.punisher.respect.100=§8Punisher:§r Jika suatu hari aku membutuhkan seseorang untuk menjaga punggungku, orang itu adalah kamu.
+
+dialog.punisher.idle.1=§8Punisher:§r Tetap waspada.
+dialog.punisher.idle.2=§8Punisher:§r Kota tidak pernah tidur.
+dialog.punisher.idle.3=§8Punisher:§r Para penjahat selalu kembali.
+dialog.punisher.idle.4=§8Punisher:§r Manfaatkan saat tenang ini sebaik-baiknya.
+dialog.punisher.idle.5=§8Punisher:§r Jangan lengah.
+
+gui.punisher.interact=Interaksi
+gui.punisher.follow=Ikuti saya
+gui.punisher.stop_follow=Berhenti mengikuti saya
+gui.punisher.title=Punisher
+gui.punisher.respect=Rasa hormat Level:
+
+dialog.punisher.enemy.1=§8Punisher:§r Itu mereka... jangan kehilangan jejak.
+dialog.punisher.enemy.2=§8Punisher:§r Kita kedatangan tamu.
+dialog.punisher.enemy.3=§8Punisher:§r Saatnya membersihkan jalanan.
+
+dialog.punisher.owner_hit.1=§8Punisher:§r Perhatikan seranganmu. Aku tidak berada di sini untuk terkena serangan kawan.
+dialog.punisher.owner_hit.2=§8Punisher:§r Keputusan buruk. Lain kali, bidik musuh.
+dialog.punisher.owner_hit.3=§8Punisher:§r Kesalahan itu mengurangi kepercayaan. Tetap disiplin.
+
+menu.punisher.body.low_respect=Punisher mengawasimu dengan waspada. Dia masih belum sepenuhnya memercayaimu.
+menu.punisher.body.high_respect=Punisher mendekat dengan senyum percaya diri. Sepertinya dia menikmati kebersamaan denganmu.
+
+item.marveladdons:avengers_id_card=Avengers ID Card.
+
+dialog.black_cat.enemy.1=§dBlack Cat:§r Ada tamu di dekat sini. Dan mereka tidak terlihat seperti tipe yang suka memberi tip.
+dialog.black_cat.enemy.2=§dBlack Cat:§r Aku mendengar sesuatu bergerak di dekat sini... siapkan jaringmu, Spider.
+dialog.black_cat.enemy.3=§dBlack Cat:§r Kita tidak sendirian. Ada monster di dekat sini yang merusak malam ini.
+
+dialog.black_cat.owner_hit.1=§dBlack Cat:§r Itu pukulan, atau cara buruk untuk menarik perhatianku?
+dialog.black_cat.owner_hit.2=§dBlack Cat:§r Hati-hati, Spider. Cakar yang salah juga bisa menghancurkan kepercayaan.
+dialog.black_cat.owner_hit.3=§dBlack Cat:§r Jika kamu akan memperlakukanku seperti itu, mungkin aku sebaiknya kembali bekerja sendirian.
+
+dialog.black_cat.approach.low.1=§dBlack Cat:§r Wah, lihat siapa yang datang. Kamu di sini untuk membantu, atau hanya menghalangi dengan penuh gaya?
+dialog.black_cat.approach.low.2=§dBlack Cat:§r Jangan terlalu senang, kita belum menjadi rekan. Tetapi kamu boleh berjalan di sampingku... untuk sekarang.
+dialog.black_cat.approach.low.3=§dBlack Cat:§r Jika kamu ingin kepercayaan, kamu harus mendapatkannya. Aku tidak membagikan sembilan nyawaku.
+
+dialog.black_cat.approach.high.1=§dBlack Cat:§r Akhirnya kamu datang, Spider. Aku mulai berpikir malam ini akan membosankan.
+dialog.black_cat.approach.high.2=§dBlack Cat:§r Tepat waktu. Masalah biasanya lebih menyenangkan saat aku berada di sekitar.
+dialog.black_cat.approach.high.3=§dBlack Cat:§r Aku suka saat kamu muncul seperti ini. Kota terasa sedikit lebih tidak berbahaya... hampir saja.
+
+dialog.black_cat.play_night.end.1=§dBlack Cat:§r Menurutku kostum itu sudah tidak cocok untukmu.
+dialog.black_cat.play_night.end.2=§dBlack Cat:§r Selamat pagi... kamu tidur sangat lelap.
+dialog.black_cat.play_night.end.3=§dBlack Cat:§r Kuharap kamu tidak keberatan... aku meminjam sesuatu dari lemarimu.
+dialog.black_cat.play_night.end.4=§dBlack Cat:§r Jangan memasang wajah seperti itu... kamu terlihat menggemaskan begini.
+dialog.black_cat.play_night.end.5=§dBlack Cat:§r Sekarang kita memiliki rahasia kecil bersama.
+dialog.black_cat.play_night.end.6=§dBlack Cat:§r Kurasa malam ini tak terlupakan.
+
+dialog.black_cat.play_night.start.1=§dBlack Cat:§r Malam ini... kamu milikku sepenuhnya.
+dialog.black_cat.play_night.start.2=§dBlack Cat:§r Mari lupakan para penjahat untuk satu malam.
+dialog.black_cat.play_night.start.3=§dBlack Cat:§r Kemarilah... aku sudah menyiapkan sesuatu yang istimewa.
+dialog.black_cat.play_night.start.4=§dBlack Cat:§r Jangan khawatir... aku berjanji akan bersikap baik.
+dialog.black_cat.play_night.start.5=§dBlack Cat:§r Setelah semua yang kita lalui... kamu pantas mendapatkannya.
+dialog.black_cat.play_night.start.6=§dBlack Cat:§r Jangan menatap terlalu lama... kemarilah.
+
+dialog.black_cat.theft.1=§dBlack Cat:§r Ups... itu milikmu?
+dialog.black_cat.theft.2=§dBlack Cat:§r Aku akan meminjamnya... mungkin akan kukembalikan.
+dialog.black_cat.theft.3=§dBlack Cat:§r Terlalu lambat, Spider.
+dialog.black_cat.theft.4=§dBlack Cat:§r Kamu benar-benar mengira aku tidak akan menyadarinya?
+dialog.black_cat.theft.5=§dBlack Cat:§r Tangkap aku jika kamu bisa!
+dialog.black_cat.theft.6=§dBlack Cat:§r Kamu selalu membuat ini menyenangkan.
+
+dialog.black_cat.play_night.betrayal.1=§dBlack Cat:§r Malamnya menyenangkan, Spider... tetapi jangan samakan kesenangan dengan kesetiaan.
+dialog.black_cat.play_night.betrayal.2=§dBlack Cat:§r Sudah kubilang, memercayai pencuri itu berbahaya. Terima kasih untuk kenangannya... dan semua yang lain.
+dialog.black_cat.play_night.betrayal.3=§dBlack Cat:§r Jangan dimasukkan ke hati, sayang. Aku hanya mengikuti sifatku: masuk, mencuri, lalu menghilang.
+
+menu.black_cat.play_night=SEBUAH Malam dari Menyenangkan!
+dialog.black_cat.play_night.ready=Black Cat tampaknya siap menghabiskan malam istimewa bersamamu.
+menu.black_cat.play_night=Play Malam
+menu.black_cat.aspect.spiderman_suit=Black Cat Spider-Man Kostum
+menu.black_cat.aspect=Skin
+menu.black_cat.aspect.title=Black Cat Skin
+menu.black_cat.aspect.body=Pilih skin Black Cat akan Gunakan.
+menu.black_cat.aspect.default=Black Cat
+menu.black_cat.aspect.symbiont=Simbiot Black Cat
+menu.black_cat.aspect.rivals=Black Cat Marvel Rivals
+menu.black_cat.aspect.locked=%s [Terkunci]
+dialog.black_cat.aspect.locked=Dia masih belum cukup memercayaimu untuk menggunakan skin itu.
+dialog.black_cat.aspect.changed=Black Cat mengubah skin-nya.
+
+dialog.black_cat.assist.1=§dBlack Cat:§r Tidak buruk. Mungkin kamu memang berguna dalam pertarungan.
+dialog.black_cat.assist.2=§dBlack Cat:§r Pukulan bagus. Kamu hampir membuatku terkesan.
+dialog.black_cat.assist.3=§dBlack Cat:§r Kita tim yang bagus... jangan terlalu senang.
+dialog.black_cat.assist.4=§dBlack Cat:§r Kuakui, itu penuh gaya.
+
+dialog.black_cat.try_tame=§dBlack Cat:§r Jika kamu ingin aku bekerja denganmu, gunakan zamrud.
+menu.black_cat.title=Black Cat
+
+menu.black_cat.respect=Rasa hormat:
+menu.black_cat.interact=Interaksi
+menu.black_cat.follow_me=Ikuti saya
+menu.black_cat.stop_following=Berhenti mengikuti saya
+
+menu.black_cat.body.low_respect=Black Cat mengawasimu dengan waspada. Dia masih belum sepenuhnya memercayaimu.
+menu.black_cat.body.high_respect=Black Cat mendekat dengan senyum percaya diri. Sepertinya dia menikmati kebersamaan denganmu.
+
+dialog.black_cat.low_respect.1=§dBlack Cat:§r Jangan salah paham. Aku masih belum mempercayaimu.
+dialog.black_cat.low_respect.2=§dBlack Cat:§r Jika ini berakhir buruk, aku tidak akan menyelamatkanmu untuk kedua kalinya.
+dialog.black_cat.low_respect.3=§dBlack Cat:§r Kamu berguna... untuk sekarang.
+dialog.black_cat.low_respect.4=§dBlack Cat:§r Jangan memberiku alasan untuk menyesalinya.
+dialog.black_cat.low_respect.5=§dBlack Cat:§r Aku sudah lama bekerja sendirian. Jangan rusak ini.
+dialog.black_cat.low_respect.6=§dBlack Cat:§r Kamu punya bakat, tetapi juga banyak masalah.
+dialog.black_cat.low_respect.7=§dBlack Cat:§r Jangan lengah. Aku tidak akan lengah.
+dialog.black_cat.low_respect.8=§dBlack Cat:§r Mungkin suatu hari kamu bisa mendapatkan kepercayaanku.
+
+dialog.black_cat.high_respect.1=§dBlack Cat:§r Aku suka bekerja denganmu, laba-laba kecil.
+dialog.black_cat.high_respect.2=§dBlack Cat:§r Kamu punya gaya. Tidak sebanyak aku, tetapi hampir.
+dialog.black_cat.high_respect.3=§dBlack Cat:§r Aku tahu aku bisa mempercayaimu.
+dialog.black_cat.high_respect.4=§dBlack Cat:§r Kuakui, bersamamu semuanya lebih menyenangkan.
+dialog.black_cat.high_respect.5=§dBlack Cat:§r Kerja bagus. Kamu hampir membuatku terkesan.
+dialog.black_cat.high_respect.6=§dBlack Cat:§r Saat kamu berada di dekatku, semuanya terasa tidak terlalu membosankan.
+dialog.black_cat.high_respect.7=§dBlack Cat:§r Jangan terlalu senang, tetapi aku senang melihatmu.
+dialog.black_cat.high_respect.8=§dBlack Cat:§r Lindungi punggungku, dan aku akan melindungi punggungmu.
+
+dialog.black_cat.follow_me=§dBlack Cat:§r Baiklah, aku ikut denganmu. Hanya saja jangan berjalan terlalu lambat.
+dialog.black_cat.stop_following=§dBlack Cat:§r Sempurna, aku akan tetap di sekitar sini. Jangan terlalu merindukanku.
+dialog.black_cat.not_owner=§dBlack Cat:§r Maaf, sayang. Aku tidak bekerja untukmu.
+
+entity.spidermanaddon:black_cat.name=Black Cat
+action.interact.black_cat=Interaksi
+item.spidermanaddon:black_cat_contract.name=Black Cat Kontrak
+dialog.black_cat.stolen=§dBlack Cat:§r Terima kasih untuk berliannya. Jika kamu menginginkannya kembali... tangkap aku.
+dialog.black_cat.captured=§dBlack Cat:§r Baiklah... kuakui kamu lebih cepat daripada yang kuduga.
+dialog.black_cat.escape=§dBlack Cat:§r Terlalu lambat, Spider. Sampai lain kali.
+dialog.black_cat.need_contract=§dBlack Cat:§r Kamu pikir aku bekerja gratis? Beri aku tawaran yang lebih baik.
+dialog.black_cat.recruited=§dBlack Cat:§r Baiklah... aku akan bekerja denganmu. Tetapi jangan berharap aku mengikuti aturan.
+item.spidermanaddon:uncle_ben_camera=Paman Ben's Kamera
+
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+action.interact.j_jonah_jameson=Bicara
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=Jameson menatapmu dengan curiga dari balik mejanya.
+menu.j_jonah_jameson.interact=Interaksi
+menu.j_jonah_jameson.sell_picture=Jual Foto
+menu.j_jonah_jameson.close=Tutup
+
+dialogue.j_jonah_jameson.random.1=Spider-Man adalah ancaman! Ancaman bertopeng!
+dialogue.j_jonah_jameson.random.2=Aku ingin foto Spider-Man, bukan alasan.
+dialogue.j_jonah_jameson.random.3=Jika si pemanjat dinding itu muncul, aku ingin berita eksklusifnya di atas mejaku.
+dialogue.j_jonah_jameson.random.4=Kota membutuhkan berita sungguhan, bukan pahlawan yang melompat di atas atap.
+dialogue.j_jonah_jameson.random.5=Parker! Tunggu... kamu bukan Parker. Baiklah, tetap bergerak cepat.
+
+dialogue.j_jonah_jameson.sell_picture=Fotonya buruk, sudutnya mengerikan, dan Spider-Man masih terlihat seperti ancaman... tetapi ini cukup. Ambil 10 batanganmu.
+dialogue.j_jonah_jameson.no_picture=Kamu mencoba menjual udara kepadaku? Kembali saat kamu memiliki foto Spider-Man yang sungguhan!
+
+item.minecraft:planks=Papan kayu
+item.minecraft:glowstone_dust=Debu glowstone
+item.minecraft:redstone=Redstone
+item.minecraft:diamond=Berlian
+item.minecraft:copper_ingot=Batangan tembaga
+item.minecraft:amethyst_shard=Pecahan ametis
+item.minecraft:quartz=Kuarsa Nether
+item.minecraft:netherite_ingot=Netherita Batangan
+item.minecraft:gold_ingot=Batangan emas
+item.minecraft:iron_ingot=Besi Batangan
+item.minecraft:emerald=Zamrud
+item.marveladdons:iron_arms=Besi Spider Lengan
+
+ui.spiderman_accessories.title=Pembuatan aksesori
+ui.spiderman_accessories.body=Pilih sebuah aksesori ke Buat.
+ui.spiderman_accessories.selected_accessory=Aksesori dipilih
+ui.spiderman_accessories.crafted=Anda dibuat
+
+ui.laboratory_workbench.upgrades_menu=Tingkatkan Spider-Man Kemampuan
+ui.laboratory_workbench.upgrades_body=Pilih sebuah kemampuan ke Tingkatkan.
+ui.laboratory_workbench.accessories=Pembuatan aksesori
+ui.laboratory_workbench.accessories_coming_soon=Pembuatan aksesori akan menjadi tersedia nanti.
+ui.laboratory_workbench.back=Kembali
+
+ui.spiderman_suits.next_unlock=Berikutnya Buka
+
+gui.spidermanaddon.spiderman_level_up=Spider-Man mencapai Level %1!
+gui.spidermanaddon.spiderman_max_level=Anda memiliki mencapai Spider-Man's maksimum Level.
+ui.spiderman_suits.title=Laboratorium kostum
+ui.spiderman_suits.body=Pilih sebuah kostum ke Buat.
+ui.spiderman_suits.level=Spider-Man Level
+ui.spiderman_suits.locked=Terkunci
+ui.spiderman_suits.need_level=Diperlukan Spider-Man Level
+ui.spiderman_suits.selected_suit=Kostum dipilih
+ui.spiderman_suits.required_level=Diperlukan Level
+ui.spiderman_suits.required_materials=Bahan yang diperlukan
+ui.spiderman_suits.result=Hasil
+ui.spiderman_suits.mask_included=Kostum ini sudah termasuk topeng.
+ui.spiderman_suits.craft=Buat
+ui.spiderman_suits.missing_materials=Bahan kurang
+ui.spiderman_suits.cancel=Batal
+ui.spiderman_suits.no_materials=Bahan Anda tidak lagi cukup.
+ui.spiderman_suits.crafted=Anda dibuat
+
+ui.laboratory_workbench.suits=Pembuatan kostum
+
+ui.spiderman_suits.title=Laboratorium kostum
+ui.spiderman_suits.body=Pilih sebuah kostum ke Buat.
+
+item.marveladdons:blue_spray=§9biru Semprotan Cat
+item.marveladdons:brown_spray=§6cokelat Semprotan Cat
+item.marveladdons:cyan_spray=§3sian Semprotan Cat
+item.marveladdons:gray_spray=§8abu-abu Semprotan Cat
+item.marveladdons:green_spray=§2hijau Semprotan Cat
+item.marveladdons:light_blue_spray=§bbiru ringan Semprotan Cat
+item.marveladdons:light_gray_spray=§7abu-abu ringan Semprotan Cat
+item.marveladdons:lime_spray=§ahijau limau Semprotan Cat
+item.marveladdons:magenta_spray=§dmagenta Semprotan Cat
+item.marveladdons:orange_spray=§6oranye Semprotan Cat
+item.marveladdons:pink_spray=§dmerah muda Semprotan Cat
+item.marveladdons:purple_spray=§5ungu Semprotan Cat
+item.marveladdons:red_spray=§cmerah Semprotan Cat
+item.marveladdons:white_spray=§fputih Semprotan Cat
+item.marveladdons:yellow_spray=§ekuning Semprotan Cat
+item.marveladdons:black_spray=hitam Semprotan Cat
+
+item.marveladdons:white_fabric=§fputih Kain Gulungan
+item.marveladdons:light_gray_fabric=§7abu-abu ringan Kain Gulungan
+item.marveladdons:gray_fabric=§8abu-abu Kain Gulungan
+item.marveladdons:black_fabric=hitam Kain Gulungan
+item.marveladdons:red_fabric=§cmerah Kain Gulungan
+item.marveladdons:orange_fabric=§6oranye Kain Gulungan
+item.marveladdons:yellow_fabric=§ekuning Kain Gulungan
+item.marveladdons:lime_fabric=§ahijau limau Kain Gulungan
+item.marveladdons:green_fabric=§2hijau Kain Gulungan
+item.marveladdons:cyan_fabric=§3sian Kain Gulungan
+item.marveladdons:light_blue_fabric=§bbiru ringan Kain Gulungan
+item.marveladdons:blue_fabric=§9biru Kain Gulungan
+item.marveladdons:purple_fabric=§5ungu Kain Gulungan
+item.marveladdons:magenta_fabric=§dmagenta Kain Gulungan
+item.marveladdons:pink_fabric=§dmerah muda Kain Gulungan
+item.marveladdons:brown_fabric=§6cokelat Kain Gulungan
+item.marveladdons:glasses=§fTopeng Lensa
+itemGroup.name.spray=§6Semprotan Cat
+itemGroup.name.fabric=§bKain Gulungan
+
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Munculkan Black Cat
+entity.spidermanaddon:punisher.name=Punisher
+item.spawn_egg.entity.spidermanaddon:punisher.name=Munculkan Punisher
+entity.spidermanaddon:electro.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro.name=Munculkan Electro
+entity.spidermanaddon:mano_ninja.name=Tangan Ninja
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=Munculkan Tangan Ninja
+entity.spidermanaddon:scorpion.name=Scorpion
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Munculkan Scorpion
+entity.spidermanaddon:tarantula.name=Tarantula
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Munculkan Tarantula
+entity.spidermanaddon:symbiotes.name=Simbiots
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=Munculkan Simbiots
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Munculkan Kraven
+entity.spidermanaddon:mayor_fisk.name=Kingpin
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Munculkan Kingpin
+entity.spidermanaddon:boomerang.name=Boomerang
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Munculkan Boomerang
+
+item.spidermanaddon:miles_morales_venom_punch=Venom Pukulan
+item.spidermanaddon:miles_morales_sensor=Pemindaian
+item.spidermanaddon:miles_morales_invisibility=Tembus pandang
+item.spidermanaddon:miles_morales_focus=Fokus
+item.spidermanaddon:miles_morales_venom_punch=Venom Pukulan
+item.spidermanaddon:miles_morales_venom_jump=Venom Lompat
+item.spidermanaddon:miles_morales_venom_smash=Venom Hantaman
+item.spidermanaddon:miles_morales_combat=Pertarungan
+
+message.spiderman_resistance.shield=Ketahanan laba-labamu melindungimu pada saat terakhir.
+
+ui.laboratory_workbench.title=Meja kerja laboratorium
+ui.laboratory_workbench.body=Pilih sebuah Tingkatkan untuk Anda Spider-Man kekuatan.
+
+ui.laboratory_workbench.health=Kesehatan: Level %s/%s
+ui.laboratory_workbench.resistance=Ketahanan: Level %s/%s
+ui.laboratory_workbench.focus=Fokus: Level %s/%s
+
+ui.laboratory_workbench.health.title=Tingkatkan kesehatan
+ui.laboratory_workbench.resistance.title=Tingkatkan ketahanan
+ui.laboratory_workbench.focus.title=Tingkatkan fokus
+
+ui.laboratory_workbench.health.body=Level saat ini: %s/%s\nBiaya: %s komponen.\n\nApakah Anda ingin meningkatkan kesehatan?
+ui.laboratory_workbench.resistance.body=Level saat ini: %s/%s\nBiaya: %s komponen.\n\nApakah Anda ingin meningkatkan ketahanan?
+ui.laboratory_workbench.focus.body=Level saat ini: %s/%s\nBiaya: %s komponen.\n\nApakah Anda ingin meningkatkan fokus?
+
+ui.laboratory_workbench.upgrade=Tingkatkan
+ui.laboratory_workbench.cancel=Batal
+
+ui.laboratory_workbench.no_components=Komponen Anda tidak cukup. Anda memerlukan %s komponen.
+ui.laboratory_workbench.max_level=Peningkatan ini sudah mencapai level maksimum.
+
+ui.laboratory_workbench.health.success=Kesehatan ditingkatkan ke Level %s.
+ui.laboratory_workbench.resistance.success=Ketahanan ditingkatkan ke Level %s.
+ui.laboratory_workbench.focus.success=Fokus ditingkatkan ke Level %s.
+
+item.spiderverse:spiderman_rivals_mask=Topeng Spider-Man: Rivals
+item.spiderverse:spiderman_rivals_suit=Kostum Spider-Man: Rivals
+item.spiderverse:spiderman_2099_white_mask=Topeng Spider-Man 2099 Putih
+item.spiderverse:spiderman_2099_white_suit=Kostum Spider-Man 2099 Putih
+item.spiderverse:spiderman_brand_new_day_mask=Topeng Spider-Man: Merek Baru Siang
+item.spiderverse:spiderman_brand_new_day_suit=Kostum Spider-Man: Merek Baru Siang
+item.spiderverse:spider_oni_mask=Topeng Spider-Oni
+item.spiderverse:spider_oni_suit=Kostum Spider-Oni
+item.spiderverse:spiderman_black_gold_mask=Topeng Spider-Man Hitam dan Emas
+item.spiderverse:spiderman_black_gold_suit=Kostum Spider-Man Hitam dan Emas
+item.spiderverse:spiderman_mk1_mask=Topeng Spider-Man MK SAYA
+item.spiderverse:spiderman_mk1_suit=Kostum Spider-Man MK SAYA
+item.spiderverse:spiderman_mk2_mask=Topeng Spider-Man MK II
+item.spiderverse:spiderman_mk2_suit=Kostum Spider-Man MK II
+item.spiderverse:spiderman_mk3_mask=Topeng Spider-Man MK III
+item.spiderverse:spiderman_mk3_suit=Kostum Spider-Man MK III
+item.spiderverse:spiderman_mk4_mask=Topeng Spider-Man MK IV
+item.spiderverse:spiderman_mk4_suit=Kostum Spider-Man MK IV
+item.spiderverse:spiderman_miles_morales_2099_mask=Topeng Spider-Man: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_2099_suit=Kostum Spider-Man: Miles Morales 2099
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Topeng Spider-Man: Miles Morales - Ungu Kekuasaan
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Kostum Spider-Man: Miles Morales - Ungu Kekuasaan
+item.spiderverse:silk_web_mask=Topeng Silk: Jaring Kostum
+item.spiderverse:silk_web_suit=Kostum Silk: Jaring
+item.spiderverse:scarlet_spider_2_mask=Topeng Scarlet Spider II
+item.spiderverse:scarlet_spider_2_suit=Kostum Scarlet Spider II
+item.spiderverse:spiderman_dark_mask=Topeng Spider-Man Gelap
+item.spiderverse:spiderman_dark_suit=Kostum Spider-Man Gelap
+item.spiderverse:spiderman_into_the_spiderverse_mask=Topeng Spider-Man: Into the Spider-Verse
+item.spiderverse:spiderman_into_the_spiderverse_suit=Kostum Spider-Man: Into the Spider-Verse
+item.spiderverse:spiderman_miles_morales_2020_mask=Topeng Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_suit=Kostum Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Topeng Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Kostum Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Topeng Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Kostum Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Topeng Miles Morales 2020
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Kostum Miles Morales 2020
+item.spiderverse:spiderman_blue_mask=Topeng Spider-Man Biru
+item.spiderverse:spiderman_blue_suit=Kostum Spider-Man Biru
+item.spiderverse:spiderman_antivenom_classic_mask=Topeng Spider-Man Klasik Anti-Venom
+item.spiderverse:spiderman_antivenom_classic_suit=Kostum Spider-Man Klasik Anti-Venom
+item.spiderverse:poison_mask=Topeng Spider-Man: Racun
+item.spiderverse:poison_suit=Kostum Spider-Man: Racun
+item.spiderverse:spiderman_king_in_black_mask=Topeng Spider-Man: Raja di Hitam
+item.spiderverse:spiderman_king_in_black_suit=Kostum Spider-Man: Raja di Hitam
+item.spiderverse:spidergwen_symbiont_mask=Topeng Gwenom
+item.spiderverse:spidergwen_symbiont_suit=Kostum Gwenom
+item.spiderverse:spiderman_zombie_black_mask=Topeng Simbiot Zombi Spider-Man
+item.spiderverse:spiderman_zombie_black_suit=Kostum Simbiot Zombi Spider-Man
+item.spiderverse:spiderman_zombie_mask=Topeng Zombi Spider-Man
+item.spiderverse:spiderman_zombie_suit=Kostum Zombi Spider-Man
+item.spiderverse:arachknight_mask=Topeng Arachknight
+item.spiderverse:arachknight_suit=Kostum Arachknight
+item.spiderverse:spiderman_cyborg_mask=Topeng Spider-Man Cyborg
+item.spiderverse:spiderman_cyborg_suit=Kostum Spider-Man Cyborg
+item.spiderverse:spider_carnage_mask=Topeng Spider-Carnage
+item.spiderverse:spider_carnage_suit=Kostum Spider-Carnage
+item.spiderverse:punisher_spiderman_mask=Topeng Spider-Punisher
+item.spiderverse:punisher_spiderman_suit=Kostum Spider-Punisher
+item.spiderverse:assassin_spiderman_mask=Topeng Pembunuh Spider-Man
+item.spiderverse:assassin_spiderman_suit=Kostum Pembunuh Spider-Man
+item.spiderverse:mayday_parker_black_mask=Topeng Simbiot Mayday Parker
+item.spiderverse:mayday_parker_black_suit=Kostum Simbiot Mayday Parker
+item.spiderverse:mayday_parker_mask=Topeng Mayday Parker
+item.spiderverse:mayday_parker_suit=Kostum Mayday Parker
+item.spiderverse:spiderman_classic_black_red_spider_mask=Simbiot Spider-Man Topeng (Merah Spider)
+item.spiderverse:spiderman_classic_black_red_spider_suit=Simbiot Spider-Man Kostum (Merah Spider)
+item.spidermanaddon:agent_venom_powers=Agen Venom Kekuatan
+item.spidermanaddon:agent_venom_fusil=Senapan serbu
+item.spidermanaddon:agent_venom_missiles=Peluncur roket
+item.spidermanaddon:agent_venom_pistols=Pistol
+item.marveladdons:venom_item=Simbiot
+
+gui.spidermanaddon.black=Hitam
+gui.spidermanaddon.white=Putih
+gui.spidermanaddon.dark_blue=Gelap Biru
+gui.spidermanaddon.light_blue=Ringan Biru
+gui.spidermanaddon.snow=Salju
+gui.spidermanaddon.purple=Ungu
+gui.spidermanaddon.red=Merah
+
+gui.spidermanaddon.symbiont_color=Warna simbiot
+gui.spidermanaddon.symbiont_color_body=Pilih Anda Warna simbiot
+gui.spidermanaddon.symbiont_color_changed=Warna simbiot diubah
+gui.spidermanaddon.symbiont_wings=Sayap simbiot
+gui.spidermanaddon.symbiont_wings_body=Aktifkan atau Nonaktifkan Sayap simbiot
+gui.spidermanaddon.symbiont_wings_enable=Aktifkan Sayap
+gui.spidermanaddon.symbiont_wings_disable=Nonaktifkan Sayap
+gui.spidermanaddon.symbiont_wings_enabled=Sayap diaktifkan
+gui.spidermanaddon.symbiont_wings_disabled=Sayap dinonaktifkan
+
+gui.spidermanaddon.agent_venom_suits=Agen Venom Kostum
+gui.spidermanaddon.agent_venom_suits_body=Pilih sebuah eksklusif Agen Venom kostum
+gui.spidermanaddon.agent_venom_suit_unlocked=Agen Venom kostum terbuka
+item.spidermanaddon:agent_venom_thunderbolts_mask=Topeng Agen Venom: Thunderbolts
+item.spidermanaddon:agent_venom_thunderbolts_suit=Kostum Agen Venom: Thunderbolts
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=Agen Venom: Harry Osborn Topeng (Spider Lambang)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=Agen Venom: Harry Osborn Kostum (Spider Lambang)
+item.spidermanaddon:agent_venom_spiderman2_mask=Topeng Agen Venom: Harry Osborn
+item.spidermanaddon:agent_venom_spiderman2_suit=Kostum Agen Venom: Harry Osborn
+item.spidermanaddon:agent_anti_venom_mask=Topeng Agen Anti-Venom
+item.spidermanaddon:agent_anti_venom_suit=Kostum Agen Anti-Venom
+item.spidermanaddon:agent_venom_mask=Topeng Agen Venom
+item.spidermanaddon:agent_venom_suit=Kostum Agen Venom
+
+gui.spidermanaddon.symbiont_skins=Skin
+gui.spidermanaddon.symbiont_skins_body=Pilih sebuah skin untuk Venom
+gui.spidermanaddon.symbiont_skin_need_capsule=Anda memerlukan kapsul simbiot untuk membuka skin ini
+gui.spidermanaddon.symbiont_skin_unlocked=Skin terbuka
+gui.spidermanaddon.symbiont_skin_changed=Skin diubah
+gui.spidermanaddon.symbiont_venom_required=Anda harus berubah menjadi Venom
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=Agen Venom diaktifkan
+gui.spidermanaddon.symbiont_agent_venom_disabled=Agen Venom dinonaktifkan
+gui.spidermanaddon.symbiont_agent_venom_deactivate=Nonaktifkan Agen Venom
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=Yakin ingin menonaktifkan Agent Venom?
+gui.spidermanaddon.symbiont_venom_enabled=Venom transformasi diaktifkan
+gui.spidermanaddon.symbiont_venom_disabled=Venom transformasi dinonaktifkan
+gui.spidermanaddon.symbiont_venom_deactivate=Nonaktifkan Venom transformasi
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=Yakin ingin menonaktifkan transformasi Venom?
+gui.spidermanaddon.symbiont_venom_incompatible=Simbiosis tidak kompatibel: slot kaki harus kosong.
+
+item.spidermanaddon:venom_rage=Amarah Mode
+item.marveladdons:venom_cellular_corrosion=Korosi seluler
+item.marveladdons:venom_eat=Beri makan
+item.marveladdons:venom_axe=Simbiot Kapak
+item.marveladdons:venom_knife_whip=Simbiot Pisau
+item.marveladdons:venom_explotion=Simbiot Ledakan
+
+gui.spidermanaddon.symbiont_deactivate=Nonaktifkan Simbiot
+gui.spidermanaddon.symbiont_deactivate_confirm=Yakin ingin menonaktifkan kekuatan simbiot?
+gui.spidermanaddon.symbiont_powers_enabled=Simbiot kekuatan diaktifkan
+gui.spidermanaddon.symbiont_powers_disabled=Simbiot kekuatan dinonaktifkan
+gui.spidermanaddon.confirm=Konfirmasi
+gui.spidermanaddon.cancel=Batal
+gui.spidermanaddon.symbiont_menu_body=Sistem simbiot Venom
+gui.spidermanaddon.symbiont_progress=Lihat progres
+gui.spidermanaddon.symbiont_activate=Aktifkan simbiot
+gui.spidermanaddon.symbiont_unlock_suit=Buka sebuah Kostum
+gui.spidermanaddon.symbiont_unlock_suit_body=Pilih sebuah tersedia simbiot kostum
+gui.spidermanaddon.symbiont_level=Level
+gui.spidermanaddon.symbiont_exp=Pengalaman
+gui.spidermanaddon.symbiont_powers=Aktifkan kekuatan simbiot
+gui.spidermanaddon.symbiont_venom=Berubah menjadi Venom
+gui.spidermanaddon.symbiont_venom_locked=Berubah menjadi Venom §cTerkunci
+gui.spidermanaddon.symbiont_agent_venom=Agen Venom
+gui.spidermanaddon.symbiont_agent_venom_locked=Agen Venom §cTerkunci
+gui.spidermanaddon.symbiont_suit_missing=Anda harus memakai kostum lengkap
+gui.spidermanaddon.symbiont_suit_unlocked=Simbiot kostum terbuka
+gui.spidermanaddon.symbiont_bonded=Anda sekarang menjadi inang simbiot Venom
+gui.spidermanaddon.not_symbiont_host=Anda bukan inang simbiot
+gui.spidermanaddon.back=Kembali
+
+gui.spidermanaddon.symbiont_rank_0=Inang
+gui.spidermanaddon.symbiont_rank_1=Terikat
+gui.spidermanaddon.symbiont_rank_2=Mengamuk Inang
+gui.spidermanaddon.symbiont_rank_3=Mematikan Pelindung
+gui.spidermanaddon.symbiont_rank_4=Sempurna Adaptasi
+gui.spidermanaddon.symbiont_rank_5=Agen Venom
+gui.spidermanaddon.symbiont_rank_6=Arsenal hidup
+gui.spidermanaddon.symbiont_rank_7=Anti-Venom
+gui.spidermanaddon.symbiont_rank_8=Sempurna Ikatan
+gui.spidermanaddon.symbiont_rank_9=Sayap dari Raja
+gui.spidermanaddon.symbiont_rank_10=Raja di Hitam
+
+item.spidermanaddon:black_cat_whip_thef=Kait pelontar keberuntungan
+item.spidermanaddon:black_cat_whip_claws=Cakar Cambuk
+item.spidermanaddon:black_cat_swing=Berayun Kait
+item.spidermanaddon:black_cat_claws=Cakar Serangan
+
+item.spidermanaddon:mysterio_gas=Illusion Gas
+item.spidermanaddon:mysterio_powers=Mysterio Kekuatan
+item.spidermanaddon:mysterio_invoke=Deploy Umpan
+item.spidermanaddon:mysterio_drones=Serangan Drone
+item.spidermanaddon:mysterio_laser=Mysterio Beam
+item.spidermanaddon:mysterio_clones=Panggil Clones
+item.spiderverse:mysterio_far_from_home_suit=Kostum Mysterio: Jauh Dari Rumah
+item.spiderverse:mysterio_far_from_home_helmet=Mysterio Helm: Jauh Dari Rumah
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=Goblin Hijau Peledak Pelacakan Bilah
+item.spidermanaddon:pumpkin_knife_guide=Goblin Hijau Pelacakan Bilah
+item.spidermanaddon:green_goblin_powers=Goblin Hijau Kekuatan
+item.spidermanaddon:green_goblin_raimi_blades=Goblin Hijau Retractable Bilah
+item.spidermanaddon:green_goblin_spiderman3_blades=Goblin Hijau Bilah
+item.spiderverse:green_goblin_spiderman3_suit=Kostum Goblin Hijau - Spider-Man 3
+item.spiderverse:green_goblin_spiderman3_mask=Topeng Goblin Hijau - Spider-Man 3
+item.spiderverse:green_goblin_no_way_home_suit=Kostum Goblin Hijau - Spider-Man: Tidak ada Jalan Rumah
+item.spiderverse:green_goblin_no_way_home_mask=Topeng Goblin Hijau - Spider-Man: Tidak ada Jalan Rumah
+item.spidermanaddon:planeador_spiderman3_item=Goblin Hijau Glider
+entity.spidermanaddon:planeador_spiderman3.name=Goblin Hijau Glider
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=Goblin Hijau Glider
+
+gui.spidermanaddon.confirm_upgrade=Tingkatkan penembak jaring
+gui.spidermanaddon.upgrade_cost=Anda memerlukan 10 komponen untuk meningkatkan penembak jaring ini
+gui.spidermanaddon.upgrade=Tingkatkan
+gui.spidermanaddon.max_level=Penembak jaring ini sudah mencapai level maksimum
+gui.spidermanaddon.upgraded=Penembak jaring ditingkatkan
+gui.spidermanaddon.not_enough_components=Komponen Anda tidak cukup
+
+gui.spidermanaddon.no_upgrades=Anda memerlukan penembak jaring yang dapat ditingkatkan.
+gui.spidermanaddon.upgrade_menu=Tingkatkan penembak jaring
+gui.spidermanaddon.select_upgrade=Pilih Penembak jaring
+gui.spidermanaddon.confirm_remove=Recover 5 komponen?
+gui.spidermanaddon.remove=Hapus
+gui.spidermanaddon.shooter_removed=Penembak jaring removed
+gui.spidermanaddon.cannot_remove_equipped=Penembak jaring yang dipakai tidak dapat dihapus
+
+gui.spidermanaddon.upgrade_shooter=Tingkatkan penembak jaring
+gui.spidermanaddon.remove_shooter=Hapus penembak jaring
+gui.spidermanaddon.settings=Konfigurasi penembak jaring
+
+gui.spidermanaddon.confirm_unlock=Buka Penembak jaring
+gui.spidermanaddon.unlock_cost=10 komponen adalah diperlukan
+gui.spidermanaddon.unlock=Buka
+gui.spidermanaddon.cancel=Batal
+gui.spidermanaddon.not_enough_components=Tidak cukup komponen
+gui.spidermanaddon.unlocked=Penembak jaring terbuka
+
+gui.spidermanaddon.select_unlock=Pilih Penembak jaring
+gui.spidermanaddon.unlock_menu=Buka penembak jaring
+gui.spidermanaddon:web_shot=Penembak jaring
+gui.spidermanaddon.loadout=§cMuatan penembak jaring
+gui.spidermanaddon.web_shooter_loadout=Load Penembak jaring
+gui.spidermanaddon.empty=§cKosong
+gui.spidermanaddon.config=§aPenembak jaring dikonfigurasi.
+gui.spidermanaddon.no_info=§cTidak ada informasi ditemukan.
+
+spidermanaddon.web_line.no_build=§cTidak ada titik akhir kedua dalam jarak 30 blok.
+spidermanaddon.web_line.empty=§cAnda melakukan tidak memiliki cukup cairan.
+
+item.spidermanaddon:web_shield=Jaring Perisai
+item.spidermanaddon:web_whip=Jaring Kait
+item.spidermanaddon:web_line=Jaring Line
+item.spidermanaddon:web_bomb=Jaring Granat
+item.spidermanaddon:spider_drone=Spider-Drone
+item.spidermanaddon:web_hook=Jaring Kait
+
+item.mzaddon:spider_web_cartridge=Jaring Kartrid
+item.spidermanaddon:spiderman_spin_punch=Spin Serangan
+item.spidermanaddon:spiderman_kick=Terbang Tendangan
+item.spidermanaddon:spiderman_focus=Fokus
+item.spidermanaddon:spiderman_sensor=Pemindaian
+item.spidermanaddon:spiderman_punch=Pukulan
+item.spidermanaddon:spiderman_combat=Pertarungan
+
+item.spiderverse:silk_mask=Topeng Silk
+item.spiderverse:silk_suit=Kostum Silk
+spidermanaddon.venom_wings=Konfigurasi Penerbangan
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Munculkan Miles Morales
+entity.spidermanaddon:spectacular_spiderman.name=Spektakuler Spider-Man
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Munculkan Spektakuler Spider-Man
+entity.spidermanaddon:spider_gwen.name=Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Munculkan Spider-Gwen
+entity.spidermanaddon:spider_ham.name=Spider-Ham
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Munculkan Spider-Ham
+entity.spidermanaddon:spider_punk.name=Spider-Punk
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Munculkan Spider-Punk
+entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Munculkan Spider-Man 2099
+entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: Tidak ada jalan rumah
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Munculkan Spider-Man: Tidak ada jalan rumah
+entity.spidermanaddon:spiderman_noir.name=Spider-Noir
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Munculkan Spider-Noir
+entity.spidermanaddon:spiderman_raimi.name=Spider-Man (Bumi-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Munculkan Spider-Man (Bumi-96283)
+entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Munculkan Spider-Man Unlimited
+entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (Bumi-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Munculkan Spider-Man (Bumi-120703)
+
+item.spidermanaddon:spider_ham_skin=Skin Spider-Ham
+item.spidermanaddon:spider_ham_hammer=Spider-Ham Mallet
+
+spidermanaddon.gizmo_camera_mode.title=Mode kamera
+spidermanaddon:camera.free=Kamera bebas
+spidermanaddon:camera.selfie=Swafoto Kamera
+spidermanaddon:camera.clear=Nonaktifkan Mode kamera
+spidermanaddon:camera.animations=Animasi
+spidermanaddon:camera.lyla=Aktifkan/Nonaktifkan Lyla
+
+spidermanaddon:camera.lyla.off=Nonaktifkan
+spidermanaddon:camera.lyla.on=Aktifkan
+
+item.spidermanaddon:multiversal_chip=Multisemesta Chip
+item.spidermanaddon:gizmo_portal=Buat portal
+item.spidermanaddon:gizmo_camera_mode=Mode kamera
+
+spidermanaddon.gizmo.title=Gizmo multisemesta
+spidermanaddon.portal=Buat portal
+spidermanaddon.spiderman=Rekrut Spider-Man
+spidermanaddon.villain=Panggil penjahat
+spidermanaddon.miles_morales=Miles Morales (Bumi 1610B)
+spidermanaddon.spectacular_spiderman=Spektakuler Spider-Man (Bumi 26496)
+spidermanaddon.spider_punk=Spider-Punk (Bumi 138B)
+spidermanaddon.spider_gwen=Spider-Gwen (Bumi 65B)
+spidermanaddon.spider_ham=Spider-Ham (Bumi 8311B)
+spidermanaddon.spiderman_2099=Spider-Man 2099 (Bumi 928B)
+spidermanaddon.spiderman_no_way_home=Spider-Man - MCU (Bumi 199999)
+spidermanaddon.spiderman_noir=Spider-Noir (Bumi 90214)
+spidermanaddon.spiderman_raimi=Spider-Man (Bumi 96283)
+spidermanaddon.spiderman_unlimited=Spider-Man Unlimited (Bumi 751263)
+spidermanaddon.the_amazing_spiderman=Amazing Spider-Man (Bumi 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=Topeng Amazing Spider-Man Buatan sendiri
+item.spiderverse:the_amazing_spiderman_casero_suit=Kostum Amazing Spider-Man Buatan sendiri
+item.spiderverse:spiderman_new_blue_mask=Topeng Spider-Man: Baru Biru
+item.spiderverse:spiderman_new_blue_suit=Kostum Spider-Man: Baru Biru
+item.spiderverse:yfn_spiderman_oscorp_mask=Topeng Anda Ramah Lingkungan Spider-Man: Oscorp Kostum
+item.spiderverse:yfn_spiderman_oscorp_suit=Kostum Anda Ramah Lingkungan Spider-Man: Oscorp Kostum
+item.spiderverse:yfn_spiderman_mask=Topeng Anda Ramah Lingkungan Spider-Man
+item.spiderverse:yfn_spiderman_suit=Kostum Anda Ramah Lingkungan Spider-Man
+item.spiderverse:spiderman_bombastic_bag_man_mask=Topeng Spider-Man: Bombastic Tas-Man
+item.spiderverse:spiderman_bombastic_bag_man_suit=Kostum Spider-Man: Bombastic Tas-Man
+
+item.spidermanaddon:web_bomb_item=Jaring Bom
+item.spidermanaddon:spider_drone_item=Spider-Drone
+item.spidermanaddon:mobile=Seluler Telepon
+item.spidermanaddon:dr_octopus_take=Raih
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Topeng Spider-Man Noir: Into the Spider-Verse
+item.spiderverse:the_amazing_spiderman_black_mask=Topeng Amazing Spider-Man Hitam
+item.spidermanaddon:capsule=Kapsul
+item.spidermanaddon:dr_octopus_chip=Pemanggilan Chip: Doctor Octopus [Bumi-616]
+item.spidermanaddon:multiversal_gizmo=Gizmo multisemesta
+item.spidermanaddon:web_shooter=Penembak jaring
+item.spidermanaddon:web_shooter_balanceo=Penembak jaring [Berayun]
+entity.spidermanaddon:air_compressor.name=Udara Kompresor
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=Udara Kompresor
+entity.spidermanaddon:viento.name=Angin
+item.spawn_egg.entity.spidermanaddon:viento.name=Angin
+
+spidermanaddon.symbiont_pull_lock=Lakukan tarikan simbiot yang menangkap 4 musuh di dekat dan menghantam mereka.
+spidermanaddon.antivenom_bomb_lock=Lempar bom Anti-Venom yang memberikan kerusakan besar kepada musuh.
+spidermanaddon.antivenom_tempest_lock=Ciptakan badai Anti-Venom yang memberikan kerusakan besar kepada musuh.
+spidermanaddon.symbiote_whip_lock=Bertarung menggunakan bilah simbiot.
+spidermanaddon.rage_mode_lock=Aktifkan Mode Amarah untuk meningkatkan ketahanan dan kerusakan tempur serta memperoleh keabadian selama beberapa detik.
+spidermanaddon.rage_mode_unlock.price=Harga: 25 XP
+spidermanaddon.symbiote_powers_lock.price=Harga: 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=Goblin Hijau Labu Bom [Raimi Saga]
+item.spidermanaddon:planeador_raimi_item=Goblin Hijau Glider [Raimi Saga]
+item.spidermanaddon:iron_arms_menu=Menu
+item.spidermanaddon:dr_octopus_walk=Berjalan dengan Logam Lengan
+item.spidermanaddon:dr_octopus_attack=Serangan
+entity.spidermanaddon:suits_machine.name=Kostum Fabrikator
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=Kostum Fabrikator
+entity.spidermanaddon:taskmaster_drone.name=Taskmaster Drone
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=Munculkan Taskmaster Drone
+item.spidermanaddon:iron_arms_menu=Menu
+item.spidermanaddon:concussive_blast=Penembak jaring: Konkusif Ledakan
+item.spidermanaddon:web_grabber=Penembak jaring: Jaring Penarik
+item.spidermanaddon:impact_web=Penembak jaring: Jaring Dampak
+item.spiderverse:superior_spiderman_black_mask=Topeng Superior Spider-Man Hitam
+item.spiderverse:spiderman_raimi_black_mask=Topeng Spider-Man Raimi's Hitam
+item.spiderverse:the_amazing_spiderman_black_suit=Topeng Amazing Spider-Man Hitam
+item.spiderverse:spiderman_ps5_symbiote_mask=Topeng Insomniac's Spider-Man 2: Simbiot Kostum
+item.spiderverse:spiderman_ps4_black_mask=Topeng Insomniac's Spider-Man 2: Hitam Kostum
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Topeng Spider-Man Miles Morales: Melintasi Spider-Semesta
+item.spiderverse:spiderman_classic_black_mask=Topeng Spider-Man Klasik Hitam
+item.spiderverse:venom_s3_mask=Topeng Venom [Spider-Man 3]
+item.spiderverse:spiderman_antivenom_mask=Topeng Spider-Man: Anti-Venom
+item.spiderverse:spirit_spider_mask=Topeng Roh Spider
+item.spiderverse:spectacular_spiderman_black_mask_3=Topeng Spektakuler Spider-Man 3.0 Hitam
+item.spiderverse:spectacular_spiderman_black_mask_2=Topeng Spektakuler Spider-Man 2.0 Hitam
+item.spiderverse:spectacular_spiderman_black_mask=Topeng Spektakuler Spider-Man Hitam
+item.spiderverse:spectacular_spiderman_mask=Topeng Spektakuler Spider-Man
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Topeng Spider-Man 2099: Melintasi Spider-Semesta
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Topeng Spider-Man 2099: Melintasi Spider-Semesta
+item.spiderverse:anti_ock_mask_3=Topeng Anti-Ock Kostum
+item.spiderverse:anti_ock_mask_2=Topeng Anti-Ock Kostum
+item.spiderverse:anti_ock_mask_1=Topeng Anti-Ock Kostum
+item.spiderverse:anti_ock_mask=Topeng Anti-Ock Kostum
+item.spiderverse:aracnido_jr_mask=Topeng Arachnid Jr.
+item.spiderverse:ezekiel_sims_mask=Topeng Ezekiel Sims
+item.spiderverse:human_spider_mask=Topeng la Manusia Spider
+item.spiderverse:into_the_spiderverse_sb_mask=Topeng Into the Spider-Verse SB
+item.spiderverse:miles_morales_10th_mask_3=Topeng Spider-Man Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_mask_2=Topeng Spider-Man Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_mask_1=Topeng Spider-Man Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_mask=Topeng Spider-Man Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_bodega_cat_mask=Topeng Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_bodega_cat_mask_1=Topeng Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_bodega_cat_mask_2=Topeng Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_bodega_cat_mask_3=Topeng Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_gold_mask=Topeng Spider-Man Miles Morales: Uptown Kebanggaan
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Topeng Miles Morales: Into the Spider-Verse
+item.spiderverse:miles_morales_wolverine_mask_3=Topeng Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask_2=Topeng Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask_1=Topeng Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_mask=Topeng Miles Morales: Wolverine
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Topeng Scarlet Spider: Melintasi Spider-Semesta
+item.spiderverse:scarlet_spider_mask_3=Topeng Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Topeng Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Topeng Scarlet Spider
+item.spiderverse:scarlet_spider_mask_2=Topeng Scarlet Spider
+item.spiderverse:scarlet_spider_mask_1=Topeng Scarlet Spider
+item.spiderverse:scarlet_spider_mask=Topeng Scarlet Spider
+item.spiderverse:spiderman_67_mask=Topeng Spider-Man: 67°
+item.spiderverse:spiderman_90_black_mask_1=Topeng Spider-Man: Serial Animasi [Bingkai merah dan biru] Hitam
+item.spiderverse:spiderman_90_black_mask=Topeng Spider-Man: Serial Animasi Hitam
+item.spiderverse:spiderman_90_mask=Topeng Spider-Man: Serial Animasi
+item.spiderverse:spiderman_cero_mask=Topeng Spider-Man: Zero
+item.spiderverse:spiderman_future_foundation_mask=Topeng Spider-Man: Future Fondasi
+item.spiderverse:spiderman_homecoming_mask=Topeng Spider-Man: Stark Kostum
+item.spiderverse:spiderman_homemade_mask=Topeng Spider-Man Buatan sendiri
+item.spiderverse:spiderman_india_mask=Kostum Spider-Man India: Melintasi Spider-Semesta
+item.spiderverse:spiderman_far_from_home_mask=Topeng Spider-Man: Ditingkatkan
+item.spiderverse:spiderman_last_stand_mask=Topeng Spider-Man: Terakhir Pertahanan terakhir
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Topeng Miles Morales: Lompatan keyakinan
+item.spiderverse:spiderman_negative_mask=Topeng Spider-Man: Negatif
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Topeng Spider-Noir: Into the Spider-Verse
+item.spiderverse:spiderman_no_way_home_mask=Topeng Spider-Man: Hibrida
+item.spiderverse:spiderman_ps4_mask=Topeng Insomniac's Spider-Man: Canggih
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Spider-Man: Canggih Topeng 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Spider-Man: Canggih Topeng 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Spider-Man: Canggih Topeng 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Spider-Man: Canggih Topeng 2.0
+item.spiderverse:spiderman_raimi_mask=Topeng Spider-Man Raimi's
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Topeng Spider-Man: Secret Wars - Civil War
+item.spiderverse:spiderman_stealth_mask=Topeng Spider-Man: Besar Waktu
+item.spiderverse:spiderman_steve_ditko_mask=Topeng Spider-Man: Amazing Fantasi #15
+item.spiderverse:spiderman_unlimited_mask=Topeng Spider-Man: Unlimited
+item.spiderverse:spiderman_velocity_mask=Topeng Spider-Man Kecepatan
+item.spiderverse:spiderman_web_of_shadows_black_mask=Topeng Spider-Man: Jaring dari Bayangan Hitam
+item.spiderverse:spiderman_web_of_shadows_mask=Topeng Spider-Man: Jaring dari Bayangan
+item.spiderverse:spiderman_what_if_animated_mask=Topeng Spider-Man: Apa Jika Ep 5
+item.spiderverse:spiderman_what_if_mask=Topeng Spider-Man: Disney Land
+item.spiderverse:spiderman_wrestler_mask=Topeng Pegulat Spider-Man
+item.spiderverse:superior_spiderman_mask_3=Topeng Superior Spider-Man
+item.spiderverse:superior_spiderman_mask_2=Topeng Superior Spider-Man
+item.spiderverse:superior_spiderman_mask_1=Topeng Superior Spider-Man
+item.spiderverse:superior_spiderman_mask=Topeng Superior Spider-Man
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Topeng Spider-Punk: Melintasi Spider-Semesta
+item.spiderverse:the_amazing_spiderman_2_mask=Topeng Amazing Spider-Man 2
+item.spiderverse:spider_punk_mask=Topeng Spider-Punk
+item.spiderverse:the_amazing_spiderman_1_mask=Topeng Amazing Spider-Man
+item.spiderverse:ultimate_spiderman_mask=Topeng Ultimate Spider-Man
+item.spiderverse:ultimate_spiderman_ucm_mask=Topeng Ultimate Spider-Man [MCU]
+item.spiderverse:ultimate_spiderman_black_mask=Topeng Ultimate Spider-Man Hitam
+item.spiderverse:yfn_spiderman_casero_mask=Topeng Anda Ramah Lingkungan Spider-Man Buatan sendiri
+item.spidermanaddon:green_goblin_chip=Pemanggilan Chip: Goblin Hijau [Bumi-616]
+item.spidermanaddon:green_goblin_raimi_chip=Pemanggilan Chip: Goblin Hijau [Bumi-96283]
+item.spidermanaddon:hobgoblin_chip=Pemanggilan Chip: Hobgoblin [Bumi-616]
+item.spidermanaddon:doctor_octopus_chip=Pemanggilan Chip: Doctor Octopus [Bumi-616]
+item.spidermanaddon:lizard_chip=Pemanggilan Chip: Lagarto [Bumi-616]
+item.spidermanaddon:shocker_chip=Pemanggilan Chip: Shocker [Bumi-616]
+
+item.spidermanaddon:iron_arms=Besi Spider Lengan
+item.spidermanaddon:spiderman_symbiote_powers=Simbiot Spider-Man Kekuatan
+item.spidermanaddon:spiderman_powers=Spider-Man Kekuatan
+item.spidermanaddon:web_wings=Jaring Sayap
+item.spiderverse:green_goblin_raimi_suit=Kostum Goblin Hijau [Raimi]
+item.spiderverse:green_goblin_raimi_mask=Topeng Goblin Hijau [Raimi]
+
+spidermanaddon.damage_player.text=Aktifkan/nonaktifkan serangan terhadap pemain; pengaturan ini juga berlaku untuk kemampuan lain.
+spidermanaddon.activar=Aktifkan
+spidermanaddon.web_shooter_config=Pengaturan
+spidermanaddon.desactivar=Nonaktifkan
+spidermanaddon.symbiont_suit.unlock=Buka: 5 XP
+spidermanaddon.suit_lock=Buka Simbiot Kostum [Amarah Mode]
+spidermanaddon.cancel=Batal
+spidermanaddon.back=Kembali
+spidermanaddon.none=Tidak ada
+spidermanaddon.venom=Venom
+spidermanaddon.antivenom=Anti-Venom
+spidermanaddon.carnage=Carnage
+spidermanaddon.ultimate_venom=Ultimate Venom
+spidermanaddon.symbiote_config=Pengaturan
+spidermanaddon.damage_player=Pemain Kerusakan
+spidermanaddon.symbiote_skin=Simbiot Type
+spidermanaddon.symbiote_suit=Simbiot Kostum [Amarah Mode]
+spidermanaddon.spiderman_powers=Spider-Man Kekuatan
+spidermanaddon.block_powers=Peningkatan terkunci.
+spidermanaddon.block_powers_text=Buka peningkatan prasyarat untuk membuka peningkatan ini.
+spidermanaddon.continuar=Lanjutkan
+spidermanaddon.unlock_mejora=Buka Tingkatkan
+spidermanaddon.swing_1_lock=Berayun: lakukan trik saat menukik. Melakukan trik menghasilkan XP.
+spidermanaddon.combat_0_lock=Pertarungan: meningkatkan kerusakan serangan jarak dekat.
+spidermanaddon.combat_1_lock=Pertarungan: meningkatkan kerusakan bantingan tanah dan serangan udara.
+spidermanaddon.combat_2_lock=Pertarungan: Sebuah udara serangan bisa launch di dekat musuh.
+spidermanaddon.health_0_lock=Kesehatan: Tambahan hati.
+spidermanaddon.health_1_lock=Kesehatan: saat di bawah 2 hati, dapatkan Penyerapan selama 10 detik dengan waktu tunggu 30 detik.
+spidermanaddon.health_2_lock=Kesehatan: pulih setiap 15 detik selama Anda tidak menerima kerusakan.
+spidermanaddon.swing_1.unlock=Buka: 10 XP
+spidermanaddon.combat_0.unlock=Buka: 10 XP
+spidermanaddon.combat_1.unlock=Buka: 15 XP
+spidermanaddon.combat_2.unlock=Buka: 20 XP
+spidermanaddon.health_0.unlock=Buka: 10 XP
+spidermanaddon.health_1.unlock=Buka: 15 XP
+spidermanaddon.health_2.unlock=Buka: 20 XP
+
+item.spiderverse:spiderman_classic_mask=Topeng Spider-Man: Klasik
+item.spiderverse:spiderman_classic_mask_1=Topeng Spider-Man: Klasik
+item.spiderverse:spiderman_classic_mask_2=Topeng Spider-Man: Klasik
+item.spiderverse:spiderman_classic_mask_3=Topeng Spider-Man: Klasik
+item.spiderverse:scarlet_spider_mask=Topeng la Scarlet Spider
+item.spiderverse:scarlet_spider_mask_1=Topeng la Scarlet Spider
+item.spiderverse:scarlet_spider_mask_2=Topeng la Scarlet Spider
+item.spiderverse:scarlet_spider_mask_3=Topeng la Scarlet Spider
+item.spiderverse:iron_spider_mask=Besi Spider Topeng (Klasik)
+item.spiderverse:iron_spider_mask_1=Besi Spider Topeng (Klasik)
+item.spiderverse:iron_spider_mask_2=Besi Spider Topeng (Klasik)
+item.spiderverse:iron_spider_mask_3=Besi Spider Topeng (Klasik)
+item.spiderverse:iron_spider_ucm_mask=Topeng Besi Spider [MCU]
+item.spiderverse:spiderman_2099_mask_1=Topeng Spider-Man 2099
+item.spiderverse:spiderman_2099_mask_2=Topeng Spider-Man 2099
+item.spiderverse:spiderman_2099_mask_3=Topeng Spider-Man 2099
+item.spiderverse:spiderman_2099_mask=Topeng Spider-Man 2099
+item.spiderverse:miles_morales_mask=Topeng Spider-Man Miles Morales
+item.spiderverse:ghost_spider_mask=Topeng Hantu Spider
+
+entity.spidermanaddon:taskmaster_sequels.name=Taskmaster Anak buah
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=Munculkan Taskmaster Anak buah
+spidermanaddon.repetir=Ulangi tantangan
+spidermanaddon.taskmaster_challenges.0=Tantangan 1
+spidermanaddon.taskmaster_challenges.1=Tantangan 2
+spidermanaddon.taskmaster_challenges.2=Tantangan 3
+spidermanaddon.taskmaster_challenges.3=Tantangan 4
+spidermanaddon.taskmaster_challenges.4=Tantangan 5
+spidermanaddon.taskmaster_challenges.start=Mulai
+spidermanaddon.taskmaster_challenges.0.text=Kalahkan 5 Taskmaster anak buah.
+spidermanaddon.taskmaster_challenges.1.text=Jinakkan bom dan Kalahkan Taskmaster's anak buah.
+spidermanaddon.taskmaster_challenges.2.text=Hancurkan Taskmaster's drone.
+spidermanaddon.taskmaster_challenges.3.text=Simpan warga sipil dari Taskmaster's anak buah.
+spidermanaddon.taskmaster_challenges.4.text=Kalahkan Taskmaster.
+
+spidermanaddon.suitsFabricForm=Buat
+marveladdon:fabricar=Buat
+spidermanaddon.venom_snow_lock=Venom: Salju Simbiot §l§6[Buka]
+spidermanaddon.venom_snow_lock.price=Harga: 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[Buka]
+spidermanaddon.venompool_lock.price=Harga: 20 XP
+spidermanaddon.venom_2099_lock=Venom 2099 §l§6[Buka]
+spidermanaddon.venom_2099_lock.price=Harga: 15 XP
+spidermanaddon.ultimate_venom_spider_lock=Ultimate Venom [Dengan Spider Lambang] §l§6[Buka]
+spidermanaddon.ultimate_venom_spider_lock.price=Harga: 15 XP
+spidermanaddon.ultimate_venom_lock=Ultimate Venom §l§6[Buka]
+spidermanaddon.ultimate_venom_lock.price=Harga: 15 XP
+spidermanaddon.venom_lee_price_lock=Venom: Lee Harga §l§6[Buka]
+spidermanaddon.venom_lee_price_lock.price=Harga: 15 XP
+spidermanaddon.blue_venom_lock=Venom: Biru §l§6[Buka]
+spidermanaddon.blue_venom_lock.price=Harga: 10 XP
+spidermanaddon.venom_movies_lock=Venom: Film §l§6[Buka]
+spidermanaddon.venom_movies_lock.price=Harga: 15 XP
+spidermanaddon.venom.unlock=Buka
+
+entity.spidermanaddon:green_goblin_raimi.name=Goblin Hijau [Raimi Saga]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=Munculkan Goblin Hijau [Raimi Saga]
+
+item.spidermanaddon:iron_arms_attack=Besi Lengan [Serangan]
+item.spidermanaddon:spider_rush=Spider Rush
+item.spidermanaddon:spider_shock=Spider Sengatan
+spidermanaddon.iron_arms.title=Logam Spider Lengan
+item.spidermanaddon:symbiote_menu=Menu
+spidermanaddon.concussive_blast.price=Biaya: §l§a15 XP Levels
+item.spidermanaddon:rage_mode=Amarah Mode
+item.spidermanaddon:symbiote_blast=Simbiot Ledakan
+spidermanaddon.symbiote_blast=Simbiot Ledakan
+item.spidermanaddon:symbiont_pull=Simbiot Tarikan
+spidermanaddon.symbiont_pull=Simbiot Tarikan
+item.spidermanaddon:symbiote_strike=Simbiot Serangan
+spidermanaddon.symbiote_strike=Simbiot Serangan
+item.spidermanaddon:antivenom_bomb=Anti-Venom Bom
+spidermanaddon.antivenom_bomb=Anti-Venom Bom
+item.spidermanaddon:antivenom_tempest=Anti-Venom Badai
+spidermanaddon.antivenom_tempest=Anti-Venom Badai
+item.spidermanaddon:symbiote_whip=Simbiot Bilah
+spidermanaddon.symbiote_whip=Simbiot Bilah
+
+spidermanaddon.web_grabber.price=Biaya: §l§a15 XP Levels
+spidermanaddon.web_grabber.price5=Biaya: §l§a25 XP Levels
+
+spidermanaddon.web_grabber_lv1=Jaring Penarik - §l§aLevel 0 §6[Tingkatkan]
+spidermanaddon.web_grabber_lv1_title=Jaring Penarik - §l§aLevel 1
+spidermanaddon.web_grabber_lv1_text=Meningkatkan kapasitas magasin dari 2 menjadi 3 tembakan.
+
+spidermanaddon.web_grabber_lv2=Jaring Penarik - §l§aLevel 1 §6[Tingkatkan]
+spidermanaddon.web_grabber_lv2_title=Jaring Penarik - §l§aLevel 2
+spidermanaddon.web_grabber_lv2_text=Mengurangi waktu tunggu dari 55 detik menjadi 40 detik.
+
+spidermanaddon.web_grabber_lv3=Jaring Penarik - §l§aLevel 2 §6[Tingkatkan]
+spidermanaddon.web_grabber_lv3_title=Jaring Penarik - §l§aLevel 3
+spidermanaddon.web_grabber_lv3_text=Meningkatkan radius tangkapan dari 6 menjadi 12 blok.
+
+spidermanaddon.web_grabber_lv4=Jaring Penarik - §l§aLevel 3 §6[Tingkatkan]
+spidermanaddon.web_grabber_lv4_title=Jaring Penarik - §l§aLevel 4
+spidermanaddon.web_grabber_lv4_text=Meningkatkan kapasitas magasin dari 3 menjadi 4 tembakan.
+
+spidermanaddon.web_grabber_lv5=Jaring Penarik - §l§aLevel 4 §6[Tingkatkan]
+spidermanaddon.web_grabber_lv5_title=Jaring Penarik - §l§aLevel 5
+spidermanaddon.web_grabber_lv5_text=Meningkatkan jumlah musuh yang ditangkap dari 4 menjadi 8.
+
+spidermanaddon.web_grabber_full=Jaring Penarik - §l§aLevel 5
+spidermanaddon.web_grabber_full_text=EWeb Penarik - §l§aLevel 5
+spidermanaddon.web_grabber_unlock=Jaring Penarik
+spidermanaddon.web_grabber_lock=Jaring Penarik §l§6[Buka]
+
+spidermanaddon.concussive_blast.price=Biaya: §l§a15 XP Levels
+spidermanaddon.concussive_blast.price5=Biaya: §l§a25 XP Levels
+
+spidermanaddon.concussive_blast_lv1=Konkusif Ledakan - §l§aLevel 0 §6[Tingkatkan]
+spidermanaddon.concussive_blast_lv1_title=Konkusif Ledakan - §l§aLevel 1
+spidermanaddon.concussive_blast_lv1_text=Meningkatkan kapasitas magasin dari 2 menjadi 3 tembakan.
+
+spidermanaddon.concussive_blast_lv2=Konkusif Ledakan - §l§aLevel 1 §6[Tingkatkan]
+spidermanaddon.concussive_blast_lv2_title=Konkusif Ledakan - §l§aLevel 2
+spidermanaddon.concussive_blast_lv2_text=Mengurangi waktu tunggu dari 45 detik menjadi 35 detik.
+
+spidermanaddon.concussive_blast_lv3=Konkusif Ledakan - §l§aLevel 2 §6[Tingkatkan]
+spidermanaddon.concussive_blast_lv3_title=Konkusif Ledakan - §l§aLevel 3
+spidermanaddon.concussive_blast_lv3_text=Meningkatkan kapasitas magasin dari 3 menjadi 4 tembakan.
+
+spidermanaddon.concussive_blast_lv4=Konkusif Ledakan - §l§aLevel 3 §6[Tingkatkan]
+spidermanaddon.concussive_blast_lv4_title=Konkusif Ledakan - §l§aLevel 4
+spidermanaddon.concussive_blast_lv4_text=Mengurangi waktu tunggu dari 35 detik menjadi 24 detik.
+
+spidermanaddon.concussive_blast_lv5=Konkusif Ledakan - §l§aLevel 4 §6[Tingkatkan]
+spidermanaddon.concussive_blast_lv5_title=Konkusif Ledakan - §l§aLevel 5
+spidermanaddon.concussive_blast_lv5_text=Meningkatkan dorongan saat terkena.
+
+spidermanaddon.concussive_blast_full=Konkusif Ledakan - §l§aLevel 5
+spidermanaddon.concussive_blast_full_text=Konkusif Ledakan - §l§aLevel 5
+spidermanaddon.concussive_blast_unlock=Konkusif Ledakan
+spidermanaddon.concussive_blast_lock=Konkusif Ledakan §l§6[Buka]
+
+spidermanaddon.electric_web.price=Biaya: §l§a15 XP Levels
+spidermanaddon.electric_web.price5=Biaya: §l§a25 XP Levels
+
+spidermanaddon.electric_web_lv1=Listrik Jaring - §l§aLevel 0 §6[Tingkatkan]
+spidermanaddon.electric_web_lv1_title=Listrik Jaring - §l§aLevel 1
+spidermanaddon.electric_web_lv1_text=Meningkatkan kapasitas magasin dari 2 menjadi 3 tembakan.
+
+spidermanaddon.electric_web_lv2=Listrik Jaring - §l§aLevel 1 §6[Tingkatkan]
+spidermanaddon.electric_web_lv2_title=Listrik Jaring - §l§aLevel 2
+spidermanaddon.electric_web_lv2_text=Meningkatkan durasi jaring listrik dari 5 menjadi 10 detik.
+
+spidermanaddon.electric_web_lv3=Listrik Jaring - §l§aLevel 2 §6[Tingkatkan]
+spidermanaddon.electric_web_lv3_title=Listrik Jaring - §l§aLevel 3
+spidermanaddon.electric_web_lv3_text=Mengurangi waktu tunggu dari 45 detik menjadi 30 detik.
+
+spidermanaddon.electric_web_lv4=Listrik Jaring - §l§aLevel 3 §6[Tingkatkan]
+spidermanaddon.electric_web_lv4_title=Listrik Jaring - §l§aLevel 4
+spidermanaddon.electric_web_lv4_text=Meningkatkan kapasitas magasin dari 3 menjadi 4 tembakan.
+
+spidermanaddon.electric_web_lv5=Listrik Jaring - §l§aLevel 4 §6[Tingkatkan]
+spidermanaddon.electric_web_lv5_title=Listrik Jaring - §l§aLevel 5
+spidermanaddon.electric_web_lv5_text=Meningkatkan kerusakan jaring listrik.
+
+spidermanaddon.electric_web_full=Listrik Jaring - §l§aLevel 5
+spidermanaddon.electric_web_full_text=Listrik Jaring - §l§aLevel 5
+spidermanaddon.electric_web_unlock=Listrik Jaring
+spidermanaddon.electric_web_lock=Listrik Jaring §l§6[Buka]
+
+spidermanaddon.web_whip_full=Jaring Cambuk
+spidermanaddon.web_whip_full_text=Peningkatan tidak tersedia
+spidermanaddon.web_whip_unlock=Jaring Cambuk
+spidermanaddon.web_whip=Jaring Cambuk
+spidermanaddon.web_whip_lock=Jaring Cambuk §l§6[Buka]
+
+spidermanaddon.impact_web_lv1=Penembak jaring - §l§aLevel 0 §6[Tingkatkan]
+spidermanaddon.impact_web_lv1_title=Penembak jaring - §l§aLevel 1
+spidermanaddon.impact_web_lv1_text=Meningkatkan kapasitas magasin dari 6 menjadi 8 tembakan.
+
+spidermanaddon.impact_web_lv2=Penembak jaring - §l§aLevel 1 §6[Tingkatkan]
+spidermanaddon.impact_web_lv2_title=Penembak jaring - §l§aLevel 2
+spidermanaddon.impact_web_lv2_text=Mengurangi waktu tunggu dari 2 detik menjadi 1,5 detik.
+
+spidermanaddon.impact_web_lv3=Penembak jaring - §l§aLevel 2 §6[Tingkatkan]
+spidermanaddon.impact_web_lv3_title=Penembak jaring - §l§aLevel 3
+spidermanaddon.impact_web_lv3_text=Meningkatkan kapasitas magasin dari 8 menjadi 10 tembakan.
+
+spidermanaddon.impact_web_lv4=Penembak jaring - §l§aLevel 3 §6[Tingkatkan]
+spidermanaddon.impact_web_lv4_title=Penembak jaring - §l§aLevel 4
+spidermanaddon.impact_web_lv4_text=Mengurangi waktu tunggu dari 1,5 detik menjadi 1 detik.
+
+spidermanaddon.impact_web_lv5=Penembak jaring - §l§aLevel 4 §6[Tingkatkan]
+spidermanaddon.impact_web_lv5_title=Penembak jaring - §l§aLevel 5
+spidermanaddon.impact_web_lv5_text=Saat musuh terkena serangan, ada peluang kecil untuk menerapkan efek Jaring. (Efek ini memunculkan blok jaring.)
+
+spidermanaddon.impact_web_full=Penembak jaring - §l§aLevel 5
+spidermanaddon.web_shooter_full_text=Anda telah mencapai batas peningkatan.
+spidermanaddon.impact_web.price=Biaya: §l§a15 XP Levels
+spidermanaddon.impact_web.price5=Biaya: §l§a25 XP Levels
+
+spidermanaddon.web_shooter_shoot_lv1=Penembak jaring - §l§aLevel 0 §6[Tingkatkan]
+spidermanaddon.web_shooter_shoot_lv1_title=Penembak jaring - §l§aLevel 1
+spidermanaddon.web_shooter_shoot_lv1_text=Meningkatkan kapasitas magasin dari 6 menjadi 8 tembakan.
+
+spidermanaddon.web_shooter_shoot_lv2=Penembak jaring - §l§aLevel 1 §6[Tingkatkan]
+spidermanaddon.web_shooter_shoot_lv2_title=Penembak jaring - §l§aLevel 2
+spidermanaddon.web_shooter_shoot_lv2_text=Mengurangi waktu tunggu dari 2 detik menjadi 1,5 detik.
+
+spidermanaddon.web_shooter_shoot_lv3=Penembak jaring - §l§aLevel 2 §6[Tingkatkan]
+spidermanaddon.web_shooter_shoot_lv3_title=Penembak jaring - §l§aLevel 3
+spidermanaddon.web_shooter_shoot_lv3_text=Meningkatkan kapasitas magasin dari 8 menjadi 10 tembakan.
+
+spidermanaddon.web_shooter_shoot_lv4=Penembak jaring - §l§aLevel 3 §6[Tingkatkan]
+spidermanaddon.web_shooter_shoot_lv4_title=Penembak jaring - §l§aLevel 4
+spidermanaddon.web_shooter_shoot_lv4_text=Mengurangi waktu tunggu dari 1,5 detik menjadi 1 detik.
+
+spidermanaddon.web_shooter_shoot_lv5=Penembak jaring - §l§aLevel 4 §6[Tingkatkan]
+spidermanaddon.web_shooter_shoot_lv5_title=Penembak jaring - §l§aLevel 5
+spidermanaddon.web_shooter_shoot_lv5_text=Saat musuh terkena serangan, ada peluang kecil untuk menerapkan efek Jaring. (Efek ini memunculkan blok jaring.)
+
+spidermanaddon.web_shooter_shoot_full=Penembak jaring - §l§aLevel 5
+spidermanaddon.web_shooter_full_text=Anda telah mencapai batas peningkatan.
+spidermanaddon.web_shooter_shoot.price=Biaya: §l§a15 XP Levels
+spidermanaddon.web_shooter_shoot.price5=Biaya: §l§a25 XP Levels
+
+spidermanaddon.impact_web=Dampak Jaring
+spidermanaddon.impact_web_lock=Dampak Jaring §l§6[Buka]
+
+spidermanaddon.web_whip=Jaring Cambuk
+spidermanaddon.electric_web=Listrik Jaring
+spidermanaddon.concussive_blast=Konkusif Ledakan
+spidermanaddon.web_bomb=Jaring Bom
+spidermanaddon.spider_drone=Spider Drone
+spidermanaddon.web_grabber=Jaring Penarik
+
+item.spidermanaddon:web_blossom=Mekar jaring
+item.spidermanaddon:holo_decoy=Holo umpan
+item.spidermanaddon:low_gravity=Rendah gravitasi
+item.spidermanaddon:arms_race=Lengan perlombaan
+item.spidermanaddon:blitz=Blitz
+item.spidermanaddon:electric_punch=Listrik Pukulan
+item.spidermanaddon:equaliser=Penyeimbang
+item.spidermanaddon:negative_shockwave=Negatif gelombang kejut
+item.spidermanaddon:rock_out=Rock keluar
+item.spidermanaddon:spirit_fire=Roh api
+
+spidermanaddon.low_gravity_lock_text=Mengurangi gravitasi saat berada di udara selama 10 detik.
+spidermanaddon.low_gravity_lock=Rendah gravitasi §l§6[Buka]
+spidermanaddon.web_blossom_text=Lompat dan tembakkan jaring ke semua yang terlihat.
+spidermanaddon.holo_decoy_lock_text=Menciptakan beberapa hologram.
+spidermanaddon.holo_decoy_lock=Holo umpan §l§6[Buka]
+spidermanaddon.arms_race_lock_text=Melepaskan sengatan listrik yang membuat musuh terkena stun.
+spidermanaddon.arms_race_lock=Lengan perlombaan §l§6[Buka]
+spidermanaddon.blitz_lock_text=Berlari lebih cepat dan pindahkan momentum secara langsung untuk mendorong musuh.
+spidermanaddon.blitz_lock=Blitz §l§6[Buka]
+spidermanaddon.electric_punch_lock_text=Mengaliri tinjumu dengan listrik untuk sementara dan menyetrum musuh.
+spidermanaddon.electric_punch_lock=Listrik Pukulan §l§6[Buka]
+spidermanaddon.equaliser_text=Selama 5 detik, semua orang tumbang dalam satu pukulan, termasuk Anda.
+spidermanaddon.equaliser_lock=Penyeimbang §l§6[Buka]
+spidermanaddon.negative_shockwave_text=Lepaskan gelombang energi negatif.
+spidermanaddon.negative_shockwave_lock=Negatif gelombang kejut §l§6[Buka]
+spidermanaddon.rock_out_text=Hantam musuh dengan gelombang suara yang dahsyat.
+spidermanaddon.rock_out_lock=Rock keluar §l§6[Buka]
+spidermanaddon.spirit_fire_text=Salurkan gelombang energi etereal berbahaya yang tidak stabil dari... suatu tempat...
+spidermanaddon.spirit_fire_lock=Roh api §l§6[Buka]
+
+spidermanaddon.regresar=Kembali
+spidermanaddon.salir=Keluar
+spidermanaddon.usar=Gunakan
+
+item.spidermanaddon:spectacular_spiderman_chip=Spektakuler Spider-Man [Bumi-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [Bumi-1610B]
+item.spidermanaddon:spider_gwen_chip=Spider-Gwen [Bumi-65B]
+item.spidermanaddon:spider_ham_chip=Spider-Ham [Bumi-8311]
+item.spidermanaddon:spider_punk_chip=Spider-Punk [Bumi-138B]
+item.spidermanaddon:spiderman_2099_chip=Spider-Man 2099 [Bumi-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Spider-Man [Bumi-199999]
+item.spidermanaddon:spiderman_noir_chip=Spider-Man: Noir [Bumi-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Spider-Man [Bumi-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Spider-Man: Inlimited [Bumi-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=Amazing Spider-Man [Bumi-120703]
+
+item.spidermanaddon:green_goblin=Goblin Hijau [Bumi-616]
+item.spidermanaddon:hobgoblin=Hobgoblin [Bumi-616]
+item.spidermanaddon:shocker=Shocker [Bumi-616]
+item.spidermanaddon:lizard=Kadal [Bumi-616]
+
+spidermanaddon.multiversal_gizmo=Gizmo multisemesta
+spidermanaddon.accesorios=Aksesori
+spidermanaddon.suit_skills=Kostum Skill
+spidermanaddon.upgrades_laboratoryWorkbench=Peningkatan
+spidermanaddon.laboratoryWorkbench=Meja kerja laboratorium
+spidermanaddon.web_shooter=Penembak jaring
+spidermanaddon.capsule=Kapsul
+spidermanaddon.hobgoblin_pumpkin_bomb=Hobgoblin Labu Bom
+spidermanaddon.fabricar=Buat
+spidermanaddon.suitsFabric_form=Buat
+spidermanaddon.suits_form=Pilih Kostum
+spidermanaddon.multiversal_chip=Chip [Penjahat]
+spidermanaddon.spiderman_chip=Chip [Spider Society]
+
+item.spidermanaddon:venom=Venom [Transformasi]
+item.spidermanaddon:symbiont_whip=Simbiot Cambuk
+item.spidermanaddon:venom_regeneration=Beri makan
+item.spidermanaddon:symbiont_axe=Simbiot Kapak
+item.spidermanaddon:symbiont_claw=Simbiot Cakar
+item.spidermanaddon:venom_punch=Pertarungan
+item.spidermanaddon:venom_impulse_whip=Simbiot Cambuk [Boost]
+item.spidermanaddon:symbiote_capsule=Venom Simbiot Kapsul
+item.spidermanaddon:capsule=Kapsul
+tile.spidermanaddon:knull_block.name=Knull Blok
+tile.spidermanaddon:meteorite_block.name=Meteorit Blok
+spidermanaddon.feed=Beri makan
+spidermanaddon.symbiont_axe=Simbiot Kapak
+spidermanaddon.symbiont_claw=Simbiot Cakar
+spidermanaddon.symbiont_whip=Simbiot Cambuk
+spidermanaddon.transformation=Transformasi
+spidermanaddon.skins=Skin
+spidermanaddon.on=Aktifkan
+spidermanaddon.off=Nonaktifkan
+spidermanaddon.camera=Game Kamera
+spidermanaddon.third=Orang ketiga orang
+spidermanaddon.first=Orang pertama orang
+entity.spidermanaddon:symbiont.name=Simbiot Venom
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Simbiot Venom
+entity.spidermanaddon:venom_horse.name=Kuda Venom
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=Kuda Venom
+
+item.spidermanaddon:spiderman_2099_burger.name=Spider-Man 2099 Burger
+item.spiderverse:scarlet_spider_suit=Kostum la Scarlet Spider
+item.spiderverse:spiderman_90_suit=Kostum Spider-Man: Serial Animasi
+item.spiderverse:spiderman_67_suit=Kostum Spider-Man 67°
+item.spiderverse:spectacular_spiderman_suit=Kostum Spektakuler Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit=Kostum Spektakuler Spider-Man Hitam
+item.spiderverse:spectacular_spiderman_black_suit_2=Kostum Spektakuler Spider-Man 2.0 Hitam
+item.spiderverse:spectacular_spiderman_black_suit_3=Kostum Spektakuler Spider-Man 3.0 Hitam
+item.spiderverse:spiderman_steve_ditko_suit=Kostum Spider-Man: Amazing Fantasi #15
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Ultimate Spider-Man Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Spider-Man India Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Miles Morales Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Besi Spider [MCU] Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Spider-Punk Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Spider-Man Hibrida Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Spider-Man Noir Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Superior Spider-Man Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Spider-Man Raimi Hitam Kostum Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Spider-Man Raimi Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Spider-Man PS4 Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Spider-Man Hitam Kostum Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Spider-Man 2099 [Melintasi Spider-Semesta] Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Spider-Gwen Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Scarlet Spider Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=Amazing Spider-Man 2 Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=Amazing Spider-Man Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (Lompatan keyakinan) Boneka mewah
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Spider-Seluler
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Spider-Motor
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Black Cat Doll
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=Ransel Peter Parker's
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=Spider-Man Kostum Pertahanan terakhir
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=Meja kerja laboratorium
+entity.spidermanaddon:lizard.name=Kadal
+item.spawn_egg.entity.spidermanaddon:lizard.name=Munculkan Lagarto
+entity.spidermanaddon:prisoner.name=Tahanan
+item.spawn_egg.entity.spidermanaddon:prisoner.name=Munculkan Tahanan
+item.spidermanaddon:research_token=Research Token
+
+item.spidermanaddon:backpack_token=Ransel Token
+item.spidermanaddon:web_shooters_plans=Penembak jaring Sistem [Berayun]
+item.spiderverse:web_shooter_balanceo=Penembak jaring [Berayun]
+item.spidermanaddon:usb=USB [Tidak ada Data]
+
+item.spidermanaddon:base_token=Base Token
+item.spidermanaddon:challenge_token=Tantangan Token
+item.spidermanaddon:tokens_crime=Kejahatan Token
+item.spiderverse:web_cartridge=Jaring Kartrid
+item.spidermanaddon:spiderman_palette.name=Spider-Man Palette
+
+item.spidermanaddon:miles_morales_invisibility_token=Miles Morales Kemampuan: Tembus pandang
+item.spidermanaddon:fire_resistence_stealth_suit_token=Kostum Kemampuan: Api Ketahanan
+item.spidermanaddon:invisibility_stealth_suit_token=Kostum Kemampuan: Tembus pandang
+item.spidermanaddon:regeneration_stealth_suit_token=Kostum Kemampuan: Regenerasi
+
+item.spiderverse:spiderman_classic_suit=Kostum Spider-Man: Klasik
+item.spiderverse:spiderman_raimi_suit=Kostum Spider-Man Raimi's
+item.spiderverse:spiderman_raimi_black_suit=Kostum Spider-Man Raimi's Hitam
+item.spiderverse:miles_morales_suit=Kostum Spider-Man Miles Morales: Klasik
+item.spiderverse:miles_morales_gold_suit=Kostum Spider-Man Miles Morales: Uptown Kebanggaan
+item.spiderverse:iron_spider_ucm_suit=Kostum Besi Spider [UCM]
+item.spiderverse:spiderman_stealth_suit=Kostum Spider-Man: Besar Waktu
+item.spiderverse:spiderman_ps4_suit=Kostum Insomniac's Spider-Man: Canggih
+item.spiderverse:spiderman_ps4_black_suit=Kostum Insomniac's Spider-Man 2: Hitam
+item.spiderverse:ultimate_spiderman_ucm_suit=Kostum Spider-Man: Ultimate
+item.spiderverse:the_amazing_spiderman_1_suit=Kostum Amazing Spider-Man
+item.spiderverse:the_amazing_spiderman_2_suit=Kostum Amazing Spider-Man 2
+item.spiderverse:spiderman_steve_ditko_suit=Kostum Spider-Man: Amazing Fantasi #15
+item.spiderverse:human_spider_suit=Kostum la Manusia Spider
+item.spiderverse:spiderman_wrestler_suit=Kostum Pegulat Spider-Man
+item.spiderverse:spiderman_homemade_suit=Kostum Spider-Man: Buatan sendiri
+item.spiderverse:spiderman_far_from_home_suit=Kostum Spider-Man: Ditingkatkan
+item.spiderverse:spiderman_no_way_home_suit=Kostum Spider-Man: Hibrida
+item.spiderverse:spiderman_negative_suit=Kostum Spider-Man: Negatif
+item.spiderverse:spiderman_homecoming_suit=Kostum Spider-Man: Stark
+item.spidermanaddon:genetically_engineered_super_spider=Genetically Engineered Super Spider
+item.spidermanaddon:spider_egg=Munculkan Spider
+item.spidermanaddon:radioactive_spider=Spider-Man Kekuatan
+item.spidermanaddon:pumpkin_bomb=Labu Bom
+item.spiderverse:iron_arms=Besi Spider Legs
+item.spidermanaddon:nanotechnology_chip=Nanotechnology Chip
+item.spiderverse:miles_morales_bodega_cat_suit=Kostum Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:ultimate_spiderman_suit=Kostum Ultimate Spider-Man
+item.spiderverse:spectacular_spiderman_black_suit=Kostum Spektakuler Spider-Man: Hitam
+item.spiderverse:spectacular_spiderman_black_suit_2=Spektakuler Spider-Man: Hitam Kostum 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Spektakuler Spider-Man: Hitam Kostum 3.0
+item.spiderverse:spiderman_classic_black_suit=Kostum Spider-Man: Klasik Hitam
+item.spiderverse:spiderman_black_suit_comic=Kostum Spider-Man: Secret Wars Hitam
+item.spiderverse:ultimate_spiderman_black_suit=Kostum Ultimate Spider-Man: Hitam
+entity.spidermanaddon:green_goblin.name=Goblin Hijau
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=Munculkan Goblin Hijau
+entity.spidermanaddon:shocker.name=Shocker
+item.spawn_egg.entity.spidermanaddon:shocker.name=Munculkan Shocker
+entity.spidermanaddon:venom_boss.name=Venom
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Munculkan Venom
+entity.spidermanaddon:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Munculkan Hobgoblin
+entity.spidermanaddon:taskmaster.name=Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Munculkan Taskmaster
+entity.spidermanaddon:dealer.name=Pedagang
+item.spawn_egg.entity.spidermanaddon:dealer.name=Munculkan Pedagang
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Munculkan Black Cat
+entity.spidermanaddon:symbiot.name=Simbiot Venom
+item.spawn_egg.entity.spidermanaddon:symbiot.name=Simbiot Venom
+entity.spidermanaddon:sewing_machine.name=Jahit Mesin
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=Jahit Mesin
+entity.spidermanaddon:challenge_box.name=Tantangan Kotak
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=Tantangan Kotak
+entity.spidermanaddon:microscope.name=Mikroskop
+item.spawn_egg.entity.spidermanaddon:microscope.name=Mikroskop
+entity.spidermanaddon:symbiote_meteorite.name=Simbiot Meteorit
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=Munculkan Simbiot Meteorit
+entity.spidermanaddon:symbiote_meteorite_table.name=Simbiot Meteorit
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=Simbiot Meteorit
+entity.spidermanaddon:symbiont.name=Simbiot Venom
+item.spawn_egg.entity.spidermanaddon:symbiont.name=Simbiot Venom
+
+item.spidermanaddon:venom=Venom [Transformasi]
+
+item.spiderverse:spider_gwen=Spider-Gwen [Transformasi]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Into the Spider-Verse [Transformasi]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Into the Spider-Verse - Lompatan keyakinan [Transformasi]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Melintasi Spider-Semesta [Transformasi]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Into the Spider-Verse - Training [Transformasi]
+item.spidermanaddon:comic1=Komik: Amazing Fantasi #15
+item.spiderverse:hobgoblin_skin=Kostum Hobgoblin
+item.spiderverse:green_goblin_skin=Kostum Goblin Hijau
+
+item.spidermanaddon:planeador_item=Goblin Hijau Glider
+item.spidermanaddon:spider_mobile_item=Spider-Seluler
+item.spidermanaddon:spider_bike_item=Spider-Motor
+
+item.spidermanaddon:web_shot_empty=Penembak jaring [Kosong]
+item.spidermanaddon:web_shot=Penembak jaring
+item.spidermanaddon:sand_crystal_shard=Sandman Kristal Pecahan
+tile.spidermanaddon:sand_crystal.name=Sandman Kristal
+tile.spidermanaddon:sand_crystal_block.name=Sandman Kristal Blok
+tile.spidermanaddon:prisoner_spawn.name=Tahanan Munculkan
+
+item.spidermanaddon:combat_mode=Pertarungan Mode
+item.spidermanaddon:delete_upgrades_token=Hapus Peningkatan
+item.spidermanaddon:escudo_token=Perisai [Tingkatkan]
+item.spidermanaddon:golpe_eletrico_token=Listrik Serangan [Tingkatkan]
+item.spidermanaddon:regeneracion_token=Regenerasi [Tingkatkan]
+item.spidermanaddon:salud_extra_token=Tambahan Kesehatan [Tingkatkan]
+item.spidermanaddon:dano_token=Tambahan Kerusakan [Tingkatkan]
+item.spidermanaddon:mega_venom_blast=Mega Venom Ledakan
+item.spidermanaddon:venom_blast_punch=Venom Serangan
+item.spidermanaddon:bodega_cat=Ransel Bodega Cat
+item.spidermanaddon:multiversal_particles=Multisemesta Partikel
+item.spidermanaddon:component=Teknologi Komponen
+item.spidermanaddon:gr_27_negative=Negatif GR-27
+item.spidermanaddon:web_flow=Jaring Flow
+item.spidermanaddon:spider_powers=Spider Kekuatan
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=Venom Simbiot Kapsul
+
+item.spidermanaddon:symbiote_super_punch=Super Simbiot Pukulan
+item.spidermanaddon:symbiote_punch=Simbiot Serangan
+item.spidermanaddon:symbiont_blast=Simbiot Ledakan
+item.spidermanaddon:backpack_empty=Ransel Kosong
+item.spidermanaddon:cat_hability_item=Cat Kemampuan
+item.spidermanaddon:comic2=Ultimate Spider-Man #1 Komik
+item.spidermanaddon:lizard_invoke=Kadal Pemanggil
+item.spidermanaddon:shocker_invoke=Shocker Pemanggil
+item.spidermanaddon:green_goblin_invoke=Goblin Hijau Pemanggil
+item.spidermanaddon:taskmaster_invoke=Taskmaster Pemanggil
+item.spidermanaddon:hobgoblin_invoke=Hobgoblin Pemanggil
+
+item.spiderverse:spiderman_classic_suit_damage=Spider-Man: Klasik Kostum §c[Rusak]
+item.spiderverse:spiderman_raimi_suit_damage=Spider-Man Raimi's Kostum §c[Rusak]
+item.spiderverse:miles_morales_suit_damage=Spider-Man Miles Morales: Klasik Kostum §c[Rusak]
+item.spiderverse:miles_morales_gold_suit_damage=Spider-Man Miles Morales: Uptown Kebanggaan Kostum §c[Rusak]
+item.spiderverse:spiderman_stealth_suit_damage=Spider-Man: Stealth Kostum §c[Rusak]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Spider-Man: Canggih Kostum §c[Rusak]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=Spider-Man: Ultimate Kostum §c[Rusak]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=Amazing Spider-Man Kostum §c[Rusak]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=Amazing Spider-Man 2 Kostum §c[Rusak]
+item.spiderverse:human_spider_suit_damage=la Manusia Spider Kostum §c[Rusak]
+item.spiderverse:spiderman_wrestler_suit_damage=Pegulat Spider-Man Kostum §c[Rusak]
+item.spiderverse:spiderman_homemade_suit_damage=Spider-Man: Buatan sendiri Kostum §c[Rusak]
+item.spiderverse:spiderman_far_from_home_suit_damage=Spider-Man: Ditingkatkan Kostum §c[Rusak]
+item.spiderverse:spiderman_no_way_home_suit_damage=Spider-Man: Hibrida Kostum §c[Rusak]
+item.spiderverse:spiderman_homecoming_suit_damage=Spider-Man: Stark Kostum §c[Rusak]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=Spider-Man Miles Morales: Bodega Cat Kostum §c[Rusak]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's Spider-Man: Canggih Kostum 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Spider-Man: Canggih Kostum 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Spider-Man: Canggih Kostum 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Spider-Man: Canggih Kostum 2.0
+item.spiderverse:ezekiel_sims_suit=Kostum Ezekiel Sims
+item.spiderverse:iron_spider_suit=Besi Spider Kostum (Klasik)
+item.spiderverse:iron_spider_suit_1=Besi Spider Kostum (Klasik)
+item.spiderverse:iron_spider_suit_2=Besi Spider Kostum (Klasik)
+item.spiderverse:iron_spider_suit_3=Besi Spider Kostum (Klasik)
+item.spiderverse:spiderman_velocity_suit=Kostum Spider-Man Kecepatan
+item.spiderverse:spiderman_future_foundation_suit=Kostum Spider-Man: Future Fondasi
+item.spiderverse:spiderman_cero_suit=Kostum Spider-Man: Zero
+item.spiderverse:aracnido_jr_suit=Kostum Arachnid Jr.
+item.spiderverse:spiderman_classic_suit_1=Kostum Spider-Man: Klasik
+item.spiderverse:spiderman_classic_suit_2=Kostum Spider-Man: Klasik
+item.spiderverse:spiderman_classic_suit_3=Kostum Spider-Man: Klasik
+item.spiderverse:spiderman_2099_suit_1=Kostum Spider-Man 2099
+item.spiderverse:spiderman_2099_suit_2=Kostum Spider-Man 2099
+item.spiderverse:spiderman_2099_suit_3=Kostum Spider-Man 2099
+item.spiderverse:spiderman_2099_suit=Kostum Spider-Man 2099
+item.spiderverse:spider_punk_suit=Kostum Spider-Punk
+item.spiderverse:spiderman_ps5_symbiote_suit=Kostum Insomniac's Spider-Man 2: Simbiot
+item.spiderverse:scarlet_spider_suit_1=Kostum la Scarlet Spider
+item.spiderverse:scarlet_spider_suit_2=Kostum la Scarlet Spider
+item.spiderverse:scarlet_spider_suit_3=Kostum la Scarlet Spider
+item.spiderverse:anti_ock_suit=Kostum Anti-Ock
+item.spiderverse:taskmaster_suit=Kostum Taskmaster
+item.spiderverse:taskmaster_mask=Topeng Taskmaster
+item.spiderverse:anti_ock_suit_damage=Anti-Ock Kostum §c[Rusak]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Spider-Man: Canggih Kostum 2.0 §c[Rusak]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Spider-Man: Canggih Kostum 2.0 §c[Rusak]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Spider-Man: Canggih Kostum 2.0 §c[Rusak]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Spider-Man: Canggih Kostum 2.0 §c[Rusak]
+item.spiderverse:spiderman_classic_suit_1_damage=Spider-Man: Klasik Kostum §c[Rusak]
+item.spiderverse:spiderman_classic_suit_2_damage=Spider-Man: Klasik Kostum §c[Rusak]
+item.spiderverse:spiderman_classic_suit_3_damage=Spider-Man: Klasik Kostum §c[Rusak]
+item.spiderverse:scarlet_spider_suit_1_damage=la Scarlet Spider Kostum §c[Rusak]
+item.spiderverse:scarlet_spider_suit_2_damage=la Scarlet Spider Kostum §c[Rusak]
+item.spiderverse:scarlet_spider_suit_3_damage=la Scarlet Spider Kostum §c[Rusak]
+item.spiderverse:spiderman_2099_suit_1_damage=Spider-Man 2099 Kostum §c[Rusak]
+item.spiderverse:spiderman_2099_suit_2_damage=Spider-Man 2099 Kostum §c[Rusak]
+item.spiderverse:spiderman_2099_suit_3_damage=Spider-Man 2099 Kostum §c[Rusak]
+item.spiderverse:spiderman_2099_suit_damage=Spider-Man 2099 Kostum §c[Rusak]
+item.spiderverse:spider_punk_suit_damage=Spider-Punk Kostum §c[Rusak]
+item.spiderverse:hobgoblin_mask=Topeng Hobgoblin
+item.spiderverse:green_goblin_mask=Topeng Goblin Hijau
+item.spidermanaddon:spiderman_picture=Spider-Man Foto
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=Anya Corazon
+item.spidermanaddon:spider_bot_fly_controllers=Penerbangan Pengendali untuk Spider-Bots
+item.spidermanaddon:spider_bots_controllers=Spider-Bot Pengendali
+item.spidermanaddon:camera_mode_emotes=Emote
+item.spidermanaddon:camera_mode=Change Kamera Posisi
+item.spidermanaddon:spider_web_ball=Jaring Ball
+tile.spidermanaddon:newspaper0.name=Koran
+tile.spidermanaddon:newspaper1.name=Koran
+tile.spidermanaddon:newspaper.name=Koran
+entity.spidermanaddon:penguin_stacy.name=Penguin Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Munculkan Penguin Stacy
+entity.spidermanaddon:robot_dog.name=Pemburu Robot
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=Munculkan Pemburu Robot
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=Munculkan J. Jonah Jameson
+entity.spidermanaddon:hunters_drone.name=Pemburu Drone
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=Munculkan Pemburu Drone
+entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. Boneka mewah
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=Arachnid Jr. Boneka mewah
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=Kraven Pemburu
+item.spawn_egg.entity.spidermanaddon:hunter.name=Munculkan Kraven Pemburu
+entity.spidermanaddon:hunter_crossbow.name=Kraven Pemburu dengan Busur silang
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=Munculkan Kraven Pemburu dengan Busur silang
+item.spidermanaddon:delete_spider_powers=Hapus Kekuatan
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Kostum Spider-Man 2099: Melintasi Spider-Semesta
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Kostum Spider-Man 2099: Melintasi Spider-Semesta (Gelap)
+item.spiderverse:spiderman_90_black_suit=Kostum Spider-Man: Serial Animasi Hitam
+item.spiderverse:spiderman_90_black_suit_1=Kostum Spider-Man: Serial Animasi [Bingkai merah dan biru] Hitam
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Kostum Scarlet Spider: Melintasi SpiderVerse
+item.spiderverse:superior_spiderman_suit=Kostum Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_1=Kostum Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_2=Kostum Superior Spider-Man
+item.spiderverse:superior_spiderman_suit_3=Kostum Superior Spider-Man
+item.spiderverse:miles_morales_wolverine_suit=Kostum Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_1=Kostum Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_2=Kostum Miles Morales: Wolverine
+item.spiderverse:miles_morales_wolverine_suit_3=Kostum Miles Morales: Wolverine
+item.spiderverse:the_amazing_spiderman_belt_suit=Kostum Amazing Spider-Man dengan Sabuk
+item.spiderverse:the_amazing_spiderman_black_suit=Kostum Amazing Spider-Man Hitam
+item.spiderverse:spider_gwen_classic_suit=Kostum Hantu ️Spider
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Kostum Miles Morales: Melintasi Spider-Semesta
+item.spidermanaddon:dr_octopus_arms=Doctor Octopus Lengan
+item.spidermanaddon:electric_web_empty=Listrik Penembak jaring [Kosong]
+item.spidermanaddon:electric_web=Listrik Penembak jaring
+entity.spidermanaddon:dr_octopus.name=Doctor Octopus
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Munculkan Doctor Octopus
+item.spiderverse:vulture_suit=Kostum Vulture
+item.spiderverse:mysterio_suit_1=Kostum Mysterio
+item.spiderverse:mysterio_suit=Kostum Mysterio
+item.spiderverse:mysterio_helmet=Helm Mysterio
+item.spiderverse:ghost_spider_suit=Kostum Hantu Spider
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Kostum Miles Morales: Into the Spider-Verse
+item.spiderverse:electro_suit=Kostum Electro
+item.spiderverse:electro_helmet=Topeng Electro
+item.spidermanaddon:kraven_axe=Kraven Kapak
+item.spidermanaddon:robot_dog_pet_plans=Kraven Robot Anjing Pengendali
+item.spidermanaddon:robot_dog_pet=Kraven Robot Anjing [Peliharaan]
+item.spidermanaddon:miles_morales_powers=Miles Morales Kekuatan
+item.spidermanaddon:symbiote_powers=Simbiot Kekuatan
+item.spiderverse:superior_spiderman_suit_damage=Superior Spider-Man Kostum §c[Rusak]
+item.spiderverse:superior_spiderman_suit_1_damage=Superior Spider-Man Kostum §c[Rusak]
+item.spiderverse:superior_spiderman_suit_2_damage=Superior Spider-Man Kostum §c[Rusak]
+item.spiderverse:superior_spiderman_suit_3_damage=Superior Spider-Man Kostum §c[Rusak]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales: Wolverine Kostum §c[Rusak]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales: Wolverine Kostum §c[Rusak]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales: Wolverine Kostum §c[Rusak]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales: Wolverine Kostum §c[Rusak]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=Amazing Spider-Man dengan Sabuk Kostum §c[Rusak]
+
+item.spiderverse:venom_s3=Kostum Venom [Spider-Man 3]
+item.spiderverse:spiderman_last_stand_suit=Kostum Spider-Man: Terakhir Pertahanan terakhir
+item.spiderverse:superior_spiderman_black_suit=Kostum Superior Spider-Man Hitam
+item.spiderverse:spiderman_web_of_shadows_black_suit=Kostum Spider-Man: Jaring dari Bayangan Hitam
+item.spiderverse:spiderman_web_of_shadows_suit=Kostum Spider-Man: Jaring dari Bayangan
+item.spiderverse:spiderman_what_if_suit=Kostum Spider-Man: Disney Land
+item.spiderverse:spiderman_what_if_animated_suit=Kostum Spider-Man: Apa Jika Ep 5
+item.spiderverse:spirit_spider_suit=Kostum Roh Spider
+item.spiderverse:yfn_spiderman_casero_suit=Kostum Anda Ramah Lingkungan Spider-Man Buatan sendiri
+item.spiderverse:into_the_spiderverse_sb_suit=Kostum Into the Spider-Verse SB
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Kostum Miles Morales: Lompatan keyakinan
+item.spiderverse:miles_morales_bodega_cat_suit_3=Kostum Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_bodega_cat_suit_2=Kostum Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_bodega_cat_suit_1=Kostum Spider-Man Miles Morales: Bodega Cat
+item.spiderverse:miles_morales_10th_suit_3=Kostum Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_suit_2=Kostum Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_suit_1=Kostum Miles Morales: 10th Ulang tahun
+item.spiderverse:miles_morales_10th_suit=Kostum Miles Morales: 10th Ulang tahun
+item.spiderverse:anti_ock_suit_1=Kostum Anti-Ock
+item.spiderverse:anti_ock_suit_2=Kostum Anti-Ock
+item.spiderverse:anti_ock_suit_3=Kostum Anti-Ock
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Kostum Spider-Punk: Melintasi Spider-Semesta
+item.spiderverse:spiderman_unlimited_suit=Kostum Spider-Man: Unlimited
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Kostum Spider-Noir: Into the Spider-Verse
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Kostum Spider-Man: Secret Wars - Civil War
+item.spiderverse:spiderman_india_suit=Kostum Spider-Man India: Melintasi Spider-Semesta
+item.spiderverse:spiderman_antivenom_suit=Kostum Spider-Man Anti-Venom

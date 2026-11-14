@@ -1,0 +1,24 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "spidermanaddon:symbiote_block",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:loot": "loot_tables/blocks/symbiote_block.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 48
+			},
+			"minecraft:light_emission": 0,
+			"minecraft:map_color": "#191919"
+		}
+	}
+}

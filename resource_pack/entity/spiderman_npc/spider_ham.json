@@ -1,0 +1,88 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_ham",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"glitch": "outline_light"
+			},
+			"textures": {
+				"default": "textures/entity/spider_ham",
+				"glitch": "textures/suits/glitch",
+				"multiversal_gizmo": "textures/items_3d/multiversal_gizmo",
+				"sit": "textures/spiderman_sit"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.spider_ham",
+				"glitch": "geometry.spiderman_glitch",
+				"multiversal_gizmo": "geometry.multiversal_gizmo_ham",
+				"sit": "geometry.spiderman_sit"
+			},
+			"animations": {
+				"loop": "animation.spider_ham.idle",
+				"walk": "animation.npc.spiderman.walk",
+				"falling": "animation.player.new_spiderman.falling.pose",
+				"glitch": "animation.npc.spiderman.glitch",
+				"offhand": "animation.multiversal_gizmo.mainhand",
+				"look_at_target": "animation.common.look_at_target",
+				"attack.on": "animation.spider_ham.attack.on",
+				"attack.off": "animation.spider_ham.attack.off",
+				"sit.1": "animation.npc.spiderman.sit.1",
+				"sit.2": "animation.npc.spiderman.sit.2",
+				"sit.3": "animation.npc.spider_ham.sit.3",
+				"sit.4": "animation.npc.spiderman.sit.4",
+				"sit.5": "animation.npc.spiderman.sit.5",
+				"shoot": "animation.npc.spiderman.shoot",
+				"climb": "animation.player.new_spiderman.climb.default",
+				"climb.walk": "animation.player.new_spiderman.climb.walk",
+				"swim": "animation.npc.spiderman.swim"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"walk": "controller.animation.npc.spiderman.walk"
+				},
+				{
+					"falling": "controller.animation.npc.spiderman.falling"
+				},
+				{
+					"glitch": "controller.animation.npc.spiderman.glitch"
+				},
+				{
+					"attack": "controller.animation.npc.spider_ham.attack"
+				},
+				{
+					"sit": "controller.animation.npc.spiderman.sit"
+				},
+				{
+					"shoot": "controller.animation.npc.spiderman.shoot"
+				},
+				{
+					"climb": "controller.animation.npc.spiderman.climb"
+				},
+				{
+					"look_at_target": "controller.animation.npc.spiderman.look_at_target"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.spiderverse.glitch",
+				"controller.render.spiderverse.multiversal_gizmo",
+				"controller.render.spiderverse.sit",
+				"controller.render.spiderman.npc"
+			],
+		  "spawn_egg": {
+			 "base_color": "#d00000",
+			 "overlay_color": "#0032d0"
+		  }
+		}
+	}
+}

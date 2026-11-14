@@ -1,0 +1,245 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:mano_ninja",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {
+		"nido:scan":{ "type": "bool", "default": true, "client_sync": true },
+        "spidermanaddon:ninja_state": {
+          "type": "enum",
+          "values": [
+            "default",
+            "jump",
+			  "jump_attack",
+			  "impulse_attack",
+			  "impulse_attack_end",
+			  "shuriken"
+          ],
+          "default": "default",
+          "client_sync": true
+        }
+      }
+    },
+	"component_groups": {
+		"spidermanaddon:shuriken_ai": {
+		  "minecraft:movement": {
+			"value": 0.0
+		  },
+		  "minecraft:behavior.ranged_attack": {
+			"priority": 0,
+			"burst_shots": 3,
+			"burst_interval": 0.1,
+			"attack_interval_min": 0.0,
+			"attack_interval_max": 0.1,
+			"attack_radius": 16.0
+		  },
+		  "minecraft:shooter": {
+			"def": "spidermanaddon:mano_shuriken"
+		  }
+		},
+	  "spidermanaddon:default_ai": {
+		"minecraft:movement": {
+		  "value": 0.34
+		},
+		"minecraft:behavior.melee_attack": {
+		  "priority": 2,
+		  "speed_multiplier": 1.35,
+		  "track_target": true,
+		  "reach_multiplier": 1.4
+		},
+		"minecraft:behavior.random_stroll": {
+		  "priority": 6,
+		  "speed_multiplier": 0.8
+		}
+	  },
+
+	  "spidermanaddon:skill_ai": {
+		"minecraft:movement": {
+		  "value": 0.0
+		}
+	  }
+	},
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "monster",
+          "mob",
+          "mano_ninja"
+        ]
+      },
+    "minecraft:despawn": {
+      "despawn_from_distance": {}
+     },
+      "minecraft:health": {
+        "value": 70,
+        "max": 70
+      },
+	"minecraft:damage_sensor": {
+	  "triggers": [
+		{
+		  "on_damage": {
+			"filters": {
+			  "test": "has_damage",
+			  "value": "fall"
+			}
+		  },
+		  "deals_damage": false
+		},
+		{
+		  "on_damage": {
+			"filters": {
+			  "all_of": [
+				{
+				  "test": "has_damage",
+				  "value": "projectile"
+				},
+				{
+				  "test": "is_family",
+				  "subject": "other",
+				  "value": "mano_shuriken"
+				}
+			  ]
+			}
+		  },
+		  "deals_damage": false
+		}
+	  ]
+	},
+      "minecraft:movement": {
+        "value": 0.34
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 1.35,
+        "track_target": true,
+        "reach_multiplier": 1.4
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "must_see": true,
+        "reselect_targets": true,
+        "within_radius": 32,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 32
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 10
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(5,12) : 0"
+      }
+    },
+    "events": {
+		"minecraft:entity_spawned": {
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:default_ai"
+			]
+		  },
+		  "set_property": {
+			"spidermanaddon:ninja_state": "default"
+		  }
+		},
+		"spidermanaddon:shuriken_on": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:default_ai",
+			  "spidermanaddon:skill_ai"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:shuriken_ai"
+			]
+		  }
+		},
+
+		"spidermanaddon:shuriken_off": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:shuriken_ai"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:skill_ai"
+			]
+		  }
+		},
+		"spidermanaddon:skill_on": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:default_ai"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:skill_ai"
+			]
+		  }
+		},
+
+      "nido:scan": { "set_property":{ "nido:scan": false }, "queue_command": { "command": [ "tag @s add nido_scan" ] }
+      },
+      "nido:scan.off": { "set_property":{ "nido:scan": true }, "queue_command": { "command": [ "tag @s remove nido_scan" ] }
+      },
+		"spidermanaddon:skill_off": {
+		  "remove": {
+			"component_groups": [
+			  "spidermanaddon:skill_ai"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "spidermanaddon:default_ai"
+			]
+		  },
+		  "set_property": {
+			"spidermanaddon:ninja_state": "default"
+		  }
+		}
+    }
+  }
+}

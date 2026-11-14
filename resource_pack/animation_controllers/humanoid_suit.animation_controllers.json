@@ -1,0 +1,16 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.suit": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [ 
+						{ "player.suit": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity') || q.equipped_item_any_tag('slot.armor.feet', 'suit') || variable.symbiote_rage_mode" },
+						{ "player.mask": "q.equipped_item_any_tag('slot.armor.head', 'mask') || q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') || variable.symbiote_rage_mode" }
+					]
+				}
+			}
+		}
+	}
+}

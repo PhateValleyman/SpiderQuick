@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "mystructure:clarin_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 18472931,
+      "separation": 4,
+      "spacing": 47,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "mystructure:clarin_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

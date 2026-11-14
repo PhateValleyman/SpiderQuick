@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:tarantula",
+      "materials": {
+        "default": "entity_alphatest",
+		"scan": "scan"
+      },
+      "textures": {
+        "default": "textures/entity/tarantula/tarantula",
+				"scan": "textures/entity/prisoner/scan"
+      },
+      "geometry": {
+        "default": "geometry.tarantula",
+				"scan": "geometry.prisoner_scan"
+      },
+      "animations": {
+        "controller": "controller.animation.tarantula",
+        "melee_controller": "controller.animation.tarantula.melee",
+        "idle": "animation.tarantula.idle",
+        "walk": "animation.tarantula.walk",
+        "falling": "animation.tarantula.falling",
+        "attack": "animation.tarantula.attack",
+        "impulse_attack": "animation.tarantula.impulse_attack"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "controller",
+		  "idle",
+          "melee_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.tarantula",
+				"controller.render.scan"
+      ],
+      "spawn_egg": {
+        "base_color": "#06103d",
+        "overlay_color": "#b41212"
+      }
+    }
+  }
+}

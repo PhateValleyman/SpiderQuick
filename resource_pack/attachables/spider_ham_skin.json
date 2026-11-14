@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:spider_ham_skin",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/spider_ham",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.spider_ham",
+				"web_wings": "geometry.web_wings"
+			},
+			"render_controllers": [
+			    { "controller.render.spiderman_suit.web_wings": "q.is_gliding" },
+				"controller.render.default"
+			],
+			"scripts": {
+                "animate": [
+					"on"
+                ]
+			},
+            "animations": {
+				
+                "on": "animation.spider_ham.attack.off"
+            }
+		}
+	}
+}

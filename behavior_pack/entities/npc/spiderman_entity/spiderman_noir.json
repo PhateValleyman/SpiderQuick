@@ -1,0 +1,444 @@
+{
+  "format_version": "1.13.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "spidermanaddon:spiderman_noir",
+        "is_spawnable": true,
+        "is_summonable": true,
+        "is_experimental": false,
+        "properties":{
+		  "sp:glitch":{ "type": "bool", "default": false, "client_sync": true },
+		  "sp:sit":{ "type": "int","range": [0, 4], "default": "0", "client_sync": true }
+        },
+		"animations": {
+			"ia.c": "controller.animation.npc.spiderman.ia",
+			"ia": "animation.npc.spiderman.ia",
+			"effects": "animation.npc.spiderman.effects",
+			"climb.c": "controller.animation.npc.spiderman.climb"
+		},
+		"scripts": {
+			"animate": [
+				"ia.c", "climb.c", "effects"
+			]
+		}
+    },
+
+    "component_groups": {
+	  "spiderman:climb": {
+		  "minecraft:navigation.walk": {
+			"can_path_over_water": true,
+			"avoid_damage_blocks": true
+		  }
+	  },
+	  "spiderman:walk": {
+		  "minecraft:navigation.walk": {
+			"can_path_over_water": true,
+			"avoid_damage_blocks": true
+		  }
+	  },
+	  "spiderman:shooter_mode": {
+		  "minecraft:is_sheared": {
+		  },
+		  "minecraft:shooter": {
+			"def": "spidermanaddon:web_shooter_npc<level1>"
+		  },
+		  "minecraft:behavior.ranged_attack": {
+			"priority": 4,
+			"attack_interval_min": 0.1,
+			"attack_interval_max": 0.25,
+			"charge_charged_trigger": 0.0,
+			"charge_shoot_trigger": 1.0,
+			"attack_radius": 16,
+			"burst_shots": 1,
+			"burst_interval": 0.3
+		  }
+	  },
+	  "spiderman:attack_mode": {
+          "minecraft:attack": {
+            "damage": 8
+          },
+		  "minecraft:behavior.melee_attack": {
+			"priority": 5,
+			"target_dist": 1.2,
+			"track_target": true,
+			"reach_multiplier": 1.0
+		  }
+	  },
+	  "spiderman:glitch.on": {
+		  "minecraft:timer": { "time": 1.0, "looping": true, "time_down_event": { "event": "glitch:off", "target": "self" } }
+	  },
+	  "spiderman:glitch.off": {
+		  "minecraft:timer": { "time": 5.0, "looping": true, "time_down_event": { "event": "glitch:on", "target": "self" } }
+	  },
+      "minecraft:spiderman_noir_wild": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "llama" },
+              "max_dist": 24,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ],
+          "probability_per_strength": 0.14
+        },
+        "minecraft:tameable": {
+          "probability": 1.0,
+          "tame_items": "spidermanaddon:multiversal_gizmo",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "attack_interval": 16,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "monster"}
+                ] 
+              },
+              "max_dist": 24
+            }
+          ],
+          "must_see": true
+        }
+      },
+
+      "minecraft:spiderman_noir_tame": {
+        "minecraft:is_tamed": {
+        },
+		"minecraft:timer": { "time": [25.0, 40.0], "looping": true, "time_down_event": { "event": "sp:sit", "target": "self" } },
+        "minecraft:sittable": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+
+        "minecraft:celebrate_hunt": {
+          "celebration_targets": {
+            "all_of": [
+              {
+                "test": "is_family",
+                "value": "monster"
+              }
+            ]
+          },
+          "broadcast": true,
+          "duration": 10,
+          "celebrate_sound": "celebrate",
+          "sound_interval": {
+            "range_min": 2.0,
+            "range_max": 5.0
+          },
+          "radius": 16
+        },
+        "minecraft:health": {
+          "value": 120,
+          "max": 120
+        },
+        "minecraft:behavior.breed": {
+          "priority": 7
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 28
+          }
+        ],
+        "must_see": true
+      },
+        "minecraft:is_dyeable": {
+          "interact_text": "action.interact.dye"
+        },
+
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+
+    "components": {
+      "minecraft:nameable": {
+      },
+	  "minecraft:underwater_movement": {
+		"value": 0.5
+	  },
+		"minecraft:damage_sensor": {
+          "triggers": {
+		    "cause": "fall",
+			"deals_damage": false
+          }
+        },
+      "minecraft:type_family": {
+        "family": [ "spiderman_noir", "spiderman" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.85,
+        "height": 1.8
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "target_dist": 0.4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 2,
+          "entity_types": {
+            "filters": { 
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "creeper"}
+                ] 
+            }
+          }
+        },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:spiderman_noir_wild",
+			"spiderman:glitch.off",
+			"spiderman:attack_mode"
+          ]
+        }
+      },
+      "spiderman:climb.off": {
+        "remove": { "component_groups": [ "spiderman:climb" ]
+        },
+        "add": { "component_groups": [ "spiderman:walk" ]
+        }
+      },
+      "spiderman:climb.on": {
+        "add": { "component_groups": [ "spiderman:climb" ]
+        },
+        "remove": { "component_groups": [ "spiderman:walk" ]
+        }
+      },
+      "spiderman:shooter_mode": {
+        "add": { "component_groups": [ "spiderman:shooter_mode" ]
+        },
+        "remove": { "component_groups": [ "spiderman:attack_mode" ]
+        }
+      },
+      "spiderman:attack_mode": {
+        "add": { "component_groups": [ "spiderman:attack_mode" ]
+        },
+        "remove": { "component_groups": [ "spiderman:shooter_mode" ]
+        }
+      },
+      "sp:sit": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 20,
+				"set_property":{
+					"sp:sit": 0
+				}
+              },
+              {
+                "weight": 20,
+				"set_property":{
+					"sp:sit": 1
+				}
+              },
+              {
+                "weight": 20,
+				"set_property":{
+					"sp:sit": 2
+				}
+              },
+              {
+                "weight": 20,
+				"set_property":{
+					"sp:sit": 3
+				}
+              },
+              {
+                "weight": 20,
+				"set_property":{
+					"sp:sit": 4
+				}
+              }
+            ]
+          }
+        ]
+      },
+      "glitch:on": {
+        "queue_command": {
+          "command": [
+			  "playsound spiderverse.glitch @a[r=15]",
+			  "effect @s wither 1 6 true"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spiderman:glitch.on"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "spiderman:glitch.off"
+          ]
+        },
+        "set_property":{
+            "sp:glitch": true
+        }
+      },
+      "glitch:off": {
+        "add": {
+          "component_groups": [
+            "spiderman:glitch.off"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "spiderman:glitch.on"
+          ]
+        },
+        "set_property":{
+            "sp:glitch": false
+        }
+      },
+      "minecraft:on_tame": {
+        "set_property":{
+            "sp:glitch": false
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:spiderman_noir_wild",
+			"spiderman:glitch.off",
+			"spiderman:glitch.on"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:spiderman_noir_tame",
+			"spidermanaddon:attack_default",
+			"spidermanaddon:follow_owner"
+          ]
+        }
+      }
+    }
+  }
+}

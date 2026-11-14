@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:man_spider",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/man_spider/man_spider"
+			},
+			"geometry": {
+				"default": "geometry.man_spider"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+                "animate": [
+                    "idle",
+                    "shoot.c",
+					{ "falling": "!q.is_on_ground" },
+					{ "climb.default": "!q.is_on_ground && q.property('arathnido:escalar') == true" },
+					{ "climb.walk": "!q.is_on_ground && q.property('arathnido:escalar') == true && !q.is_sneaking" }
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!c.is_first_person" }
+			],
+            "animations": {
+				"shoot.c": "controller.animation.man_spider.shoot",
+				"shoot": "animation.man_spider.shoot",
+				"idle": "animation.man_spider.idle",
+				"falling": "animation.man_spider.falling",
+				"climb.default": "animation.man_spider.climb.default",
+				"climb.walk": "animation.man_spider.climb.walk"
+            }
+		}
+	}
+}

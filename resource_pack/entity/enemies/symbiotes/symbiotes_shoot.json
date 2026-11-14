@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:symbiotes_shoot",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_guns/shoot.png"
+			},
+			"geometry": {
+				"default": "geometry.bullet_shoot"
+			},
+			"render_controllers": [
+				"controller.render.slime"
+			],
+			"animations": {
+				"move": "animation.bullet.move",
+                "shoot_effect": "animation.symbiotes_shoot.loop"
+			},
+            "particle_effects": {
+                "shoot_effect": "spidermanaddon:symbiotes_shoot",
+				"symbiotes_shoot_particle": "spidermanaddon:symbiotes_shoot_particle"
+            },
+			"scripts": {
+				"animate": [
+                    "shoot_effect", "move"
+				]
+			}
+		}
+	}
+}

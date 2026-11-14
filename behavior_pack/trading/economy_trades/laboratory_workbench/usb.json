@@ -1,0 +1,107 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 2
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:usb"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:usb",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:web_shooters_plans",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:web_shooters_plans",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:usb",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:spider_bots_controllers",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:spider_bots_controllers",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:usb",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:spider_bot_fly_controllers",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:spider_bot_fly_controllers",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:usb",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:robot_dog_pet_plans",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:robot_dog_pet_plans",
+                  "quantity": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

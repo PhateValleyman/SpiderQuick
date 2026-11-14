@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:boomerang",
+      "materials": {
+        "default": "entity_alphatest",
+				"scan": "scan"
+      },
+      "textures": {
+        "default": "textures/entity/boomerang/boomerang",
+				"scan": "textures/entity/prisoner/scan"
+      },
+      "geometry": {
+        "default": "geometry.boomerang",
+				"scan": "geometry.prisoner_scan"
+      },
+      "animations": {
+        "controller": "controller.animation.boomerang",
+        "shoot_controller": "controller.animation.boomerang.shoot",
+
+        "idle": "animation.boomerang.idle",
+		"look_at_target": "animation.mayor_fisk.look_at_target",
+        "walk": "animation.boomerang.walk",
+        "falling": "animation.boomerang.falling",
+        "jump_attack": "animation.boomerang.jump_attack",
+        "shoot": "animation.boomerang.shoot"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "controller","idle",
+          "shoot_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.boomerang",
+		"controller.render.scan"
+      ],
+      "spawn_egg": {
+        "base_color": "#1d2838",
+        "overlay_color": "#b8c0c8"
+      }
+    }
+  }
+}

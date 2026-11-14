@@ -1,0 +1,58 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:taskmaster_drop",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/taskmaster.json"
+      },
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "spidermanaddon:despawn"
+			  }
+		},
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {},
+      "minecraft:fire_immune": {}
+    },
+    "component_groups": {
+    },
+    "events": {
+      "spidermanaddon:vertical": {
+        "add": { "component_groups": [ "spidermanaddon:vertical" ]}
+      },
+      "spidermanaddon:horizontal": {
+        "add": { "component_groups": [ "spidermanaddon:horizontal" ]}
+      },
+      "spidermanaddon:despawn": {
+          "queue_command": {
+            "command": [
+				"scoreboard players add @a[r=64, scores={taskChallenges=4}] taskChallenges 1",
+				"function taskmaster/complete",
+                "kill @s",
+				"particle minecraft:jubilee_particle0 ~ ~1 ~",
+				"particle minecraft:jubilee_particle0_1 ~ ~1 ~",
+				"particle minecraft:jubilee_particle1_1 ~ ~1 ~",
+				"particle minecraft:jubilee_particle0_1 ~ ~1 ~",
+				"particle minecraft:jubilee_particle ~ ~1 ~",
+				"playsound firework.twinkle @a[r=20] ~ ~ ~ 1 1 1",
+				"playsound firework.blast @a[r=20] ~ ~ ~ 1 1 1"
+            ]
+        }
+      }
+    }
+  }
+}

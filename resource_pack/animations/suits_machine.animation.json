@@ -1,0 +1,48 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.suits_machine.on": {
+			"loop": true,
+			"bones": {
+				"door": {
+					"scale": [1, 0, 1]
+				}
+			}
+		},
+		"animation.suits_machine.idle": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"root": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.5": [0, 1, 0],
+						"3.0": [0, 0, 0]
+					},
+					"scale": 0.95
+				}
+			}
+		},
+		"animation.suits_machine.fabricar": {
+			"animation_length": 2,
+			"bones": {
+				"door": {
+					"scale": {
+						"0.0": [1.01, 1.1, 1.01],
+						"1.875": [1.01, 1.1, 1.01],
+						"2.0": [1, 0, 1]
+					}
+				},
+				"end": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.4583": [0, 0, 0],
+						"1.5833": [0, 0, -11],
+						"1.875": [0, 0, -11],
+						"2.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

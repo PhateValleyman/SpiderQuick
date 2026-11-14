@@ -1,0 +1,360 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.dr_octopus.take.1" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.take.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 1" }
+					]
+				},
+				"dr_octopus.take.1" : {
+					"animations" : [ "take.1" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && !q.is_item_name_any('slot.weapon.mainhand', 0, '')) || q.property('arathnido:animation') == 5" }
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.take.2" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.take.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"dr_octopus.take.1" : {
+					"animations" : [ "take.2" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && !q.is_item_name_any('slot.weapon.mainhand', 0, '')) || q.property('arathnido:animation') == 5" }
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.take.3" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.take.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 3" }
+					]
+				},
+				"dr_octopus.take.1" : {
+					"animations" : [ "take.3" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && !q.is_item_name_any('slot.weapon.mainhand', 0, '')) || q.property('arathnido:animation') == 5" }
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.take.4" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.take.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 4" }
+					]
+				},
+				"dr_octopus.take.1" : {
+					"animations" : [ "take.4" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && !q.is_item_name_any('slot.weapon.mainhand', 0, '')) || q.property('arathnido:animation') == 5" }
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.take.end" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.take.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 5" },
+						{ "dr_octopus.take.offhand" : "q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') && q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_take') && q.property('arathnido:animation') == 5" }
+					]
+				},
+				"dr_octopus.take.1" : {
+					"animations" : [ "take.1", "take.2", "take.3", "take.4" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				},
+				"dr_octopus.take.offhand" : {
+					"animations" : [ "take.1", "take.2" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.arms.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "dr_octopus.walk" : "q.modified_move_speed > 0.25 && q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') && q.is_on_ground" },
+						{ "dr_octopus.climb" : "!q.is_on_ground && q.is_sneaking && q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') && q.property('arathnido:escalar') == true" }
+					],
+					"blend_transition": 0.5
+				},
+				"dr_octopus.walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{ "default" : "q.modified_move_speed < 0.25 || !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk')" },
+						{ "dr_octopus.climb.stop" : "!q.is_on_ground && q.is_sneaking && q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') && q.property('arathnido:escalar') == true" }
+					],
+					"blend_transition": 0.5
+				},
+				"dr_octopus.climb.stop" : {
+					"animations" : [ "climb.stop" ],
+					"transitions" : [
+						{ "default" : "q.is_on_ground || !q.is_sneaking || !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') || q.property('arathnido:escalar') == false" },
+						{ "dr_octopus.climb" : "q.is_jumping" }
+					],
+					"blend_transition": 0.5
+				},
+				"dr_octopus.climb" : {
+					"animations" : [ "climb" ],
+					"transitions" : [
+						{ "default" : "q.is_on_ground || !q.is_sneaking || !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') || q.property('arathnido:escalar') == false" },
+						{ "dr_octopus.climb" : "!q.is_jumping" }
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ { "player.dr_octopus.move.c": "!v.is_first_person" } ]
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"dr_octopus.move" : "q.modified_move_speed > 0.25 && q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') && q.is_on_ground"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"dr_octopus.move" : {
+					"animations" : [ "player.dr_octopus.move.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk') || q.modified_move_speed < 0.25 || !q.is_on_ground"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus_arms.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{
+							"on" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_item') || q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_item')"
+						}
+					]
+				},
+				"on" : {
+					"animations" : [ "on" ],
+					"transitions" : [
+						{
+							"dr_octopus_arms.idle" : "q.any_animation_finished"
+						}
+					],
+					"blend_transition": 0.75
+				},
+				"dr_octopus_arms.idle" : {
+					"animations" : [ "idle" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_item') && (!q.is_item_name_any('slot.weapon.mainhand', 0, '') || q.property('arathnido:animation') == 0)) && !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk')"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus_arms.combat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"player.dr_octopus_arms.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.is_using_item && q.is_on_ground && !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk')"
+						},
+						{
+							"player.dr_octopus_arms.attack.aire" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.is_using_item && (!q.is_on_ground || q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk'))"
+						}
+					]
+				},
+				"player.dr_octopus_arms.attack.0" : {
+					"animations" : [ "player.dr_octopus_arms.attack.0"],
+					"transitions" : [
+						{
+							"default.1" : "q.all_animations_finished"
+						}
+					]
+				},
+				"player.dr_octopus_arms.attack.1" : {
+					"animations" : [ "player.dr_octopus_arms.attack.1", { "player.dr_octopus_arms.attack.time": "!q.is_using_item"} ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						},
+						{
+							"player.dr_octopus_arms.attack.2" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.any_animation_finished && q.is_using_item && q.is_on_ground && !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk')"
+						},
+						{
+							"player.dr_octopus_arms.attack.aire" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.any_animation_finished && q.is_using_item && (!q.is_on_ground || q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk'))"
+						}
+					]
+				},
+				"player.dr_octopus_arms.attack.2" : {
+					"animations" : [ "player.dr_octopus_arms.attack.2"],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				},
+				"default.1" : {
+					"transitions" : [
+						{
+							"player.dr_octopus_arms.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.is_using_item && q.is_on_ground && !q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk')"
+						},
+						{
+							"player.dr_octopus_arms.attack.aire" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'dr_octopus_attack') && q.is_using_item && (!q.is_on_ground || q.equipped_item_any_tag('slot.weapon.offhand', 'dr_octopus_walk'))"
+						}
+					]
+				},
+				"player.dr_octopus_arms.attack.aire" : {
+					"animations" : [ "player.dr_octopus_arms.attack.aire"],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus_arms.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"dr_octopus_arms.climb" : "q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') && !variable.is_first_person && q.is_sheared && !q.is_on_ground && !q.is_sneaking && !variable.is_first_person"
+						},
+						{
+							"dr_octopus_arms.climb.stop" : "q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') && !variable.is_first_person && q.is_sheared && !q.is_on_ground && q.is_sneaking && !variable.is_first_person"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"dr_octopus_arms.climb" : {
+					"animations" : [ "player.dr_octopus_arms.climb" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || variable.is_first_person || q.is_on_ground || q.is_sneaking || !q.is_sheared"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"dr_octopus_arms.climb.stop" : {
+					"animations" : [ "player.dr_octopus_arms.climb.stop" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || variable.is_first_person || q.is_on_ground || !q.is_sneaking"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus_arms.jump" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"dr_octopus_arms.jump" : "q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') && q.head_x_rotation(0) < -45 && q.is_sneaking && !variable.is_first_person && q.is_on_ground"
+						},
+						{
+							"dr_octopus_arms.jump.on" : "q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') && !q.is_on_ground && !variable.is_first_person && !q.is_sheared"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"dr_octopus_arms.jump" : {
+					"animations" : [ "player.dr_octopus_arms.jump" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || !q.is_sneaking || variable.is_first_person"
+						},
+						{
+							"dr_octopus_arms.jump.on" : "q.is_jumping"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"dr_octopus_arms.jump.on" : {
+					"animations" : [ "player.dr_octopus_arms.jump.on" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground && q.any_animation_finished || variable.is_first_person || q.is_sheared"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.dr_octopus_arms.run" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"dr_octopus_arms.run" : "q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') && q.is_on_ground && q.is_sprinting && !variable.is_first_person"
+						}
+					],
+          "blend_transition": 0.35
+				},
+				"dr_octopus_arms.run" : {
+					"animations" : [ "player.dr_octopus_arms.run" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || !q.is_sprinting || variable.is_first_person"
+						},
+						{
+							"dr_octopus_arms.jump.on" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.35
+				},
+				"dr_octopus_arms.jump.on" : {
+					"animations" : [ "player.dr_octopus_arms.jump.on" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'dr_octopus_arms') || !q.is_sprinting || variable.is_first_person"
+						},
+						{
+							"dr_octopus_arms.run" : "q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.35
+				}
+			}
+		}
+	}
+}

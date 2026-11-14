@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:agent_venom_suit.armor_stand",
+			"item": {
+				"spidermanaddon:agent_venom_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor",
+				"outline": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/agent_venom",
+				"outline": "textures/suits/agent_venom"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_suit",
+				"outline": "geometry.agent_venom_mask"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			]
+		}
+	}
+}

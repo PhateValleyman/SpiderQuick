@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:venom_2099_bomb_shoot",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/symbiote_abilities/venom_2099_bomb"
+			},
+			"geometry": {
+				"default": "geometry.antivenom_bomb"
+			},
+			"animations": {
+				"loop": "animation.antivenom_bomb.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "antivenom_bomb",
+				"texture_index": 0
+			}
+		}
+	}
+}

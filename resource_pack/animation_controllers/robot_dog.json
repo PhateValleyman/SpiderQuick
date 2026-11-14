@@ -1,0 +1,114 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.robot_dog.sit" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"sit" : "q.is_sitting"
+						}
+					]
+				},
+				"sit" : {
+					"animations" : [ "sit" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_sitting"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.robot_dog.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"robot_dog.walk" : "q.modified_move_speed > 0.1 && q.mark_variant == 0"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"robot_dog.walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || q.mark_variant == 1 || q.mark_variant == 2 || q.mark_variant == 3"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.robot_dog.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack>0 && q.mark_variant == 0"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.robot_dog.sleep" : {
+			"initial_state" : "off",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle" ],
+					"transitions" : [
+						{
+							"sleep" : "!q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"sleep" : {
+					"animations" : [ "sleep" ],
+					"transitions" : [
+						{
+							"default" : "q.is_tamed"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.robot_dog.jump_on" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"jump_on" : "q.mark_variant == 1"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"jump_on" : {
+					"animations" : [ "jump_on" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0 && q.all_animations_finished"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

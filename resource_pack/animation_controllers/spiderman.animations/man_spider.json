@@ -1,0 +1,65 @@
+{
+  "format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.man_spider" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "player.man_spider.idle": "!v.is_first_person && q.equipped_item_any_tag('slot.armor.head', 'man_spider')" },
+						{ "player.man_spider.jump_attack.c": "!v.is_first_person" },
+						{ "player.man_spider.shoot.c": "!v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.man_spider.jump_attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "jump_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_claw') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"jump_attack" : {
+					"animations" : [ "player.man_spider.jump_attack" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_claw') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.man_spider.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_acid') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"shoot" : {
+					"animations" : [ "player.man_spider.shoot" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_acid') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.man_spider.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_acid') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"shoot" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'man_spider_acid') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spiderman_2099.cape": {
+      "geometry": "Geometry.cape",
+      "materials": [ { "*": "Material.cape" } ],
+      "textures": [ "Texture.cape" ]
+    },
+    "controller.render.spiderman_suit.web_wings": {
+      "geometry": "Geometry.web_wings",
+      "materials": [ { "*": "Material.cape" } ],
+      "textures": [ "Texture.web_wings" ]
+    }
+  }
+}

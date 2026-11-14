@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.spirit_spider.fire": {
+      "geometry": "Geometry.spirit_spider_fire",
+      "materials": [
+        {
+          "*": "Material.ghost_rider_fire"
+        }
+      ],
+      "textures": [
+        "Texture.spirit_spider_fire"
+      ],
+		"uv_anim": {
+			"offset": [
+				0.0,
+				"math.mod(math.floor(query.life_time * 16),32) / 32"
+			],
+			"scale": [
+				1.0,
+				"1 / 32"
+			]
+		}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:holo_decoy",
+			  "menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.skull"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"holo_decoy"
+                ]
+            },
+		  "minecraft:stacked_by_data": true,
+		  "minecraft:cooldown": {
+			"category": "holo_decoy",
+			"duration": 90.0
+		  },
+		  "minecraft:food": {
+			"can_always_eat": true
+		  },
+		  "minecraft:allow_off_hand": false,
+		  "minecraft:hand_equipped": true,
+		  "minecraft:use_animation": "bow",
+		  			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 1.0
+			},
+		  "minecraft:max_stack_size": 1,
+		  "minecraft:icon": {
+			"texture": "holo_decoy"
+		  }
+		}
+	}
+}

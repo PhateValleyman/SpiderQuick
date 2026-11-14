@@ -1,0 +1,973 @@
+{
+  "format_version": "1.18.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "spawn_category": "creature",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "properties":{
+		//Generate attack
+        "arathnido:attack":{ "type": "bool", "default": false, "client_sync": true },
+		//Attack animations
+		"arathnido:attacks":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Skins Characters
+		"arathnido:skins":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Agarrar/Lanzar
+        "arathnido:take":{ "type": "bool", "default": false, "client_sync": true },
+		//Detect walls in front - climbing system
+		"arathnido:escalar":{ "type": "bool", "default": false, "client_sync": true },
+		//Detect roof - roof climbing system
+		"arathnido:techo":{ "type": "bool", "default": false, "client_sync": true },
+		//Load animation 1. Hulk super_attack, 2. Shoot, 3. Reload
+		"arathnido:animation":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Custom Riding: 1. Hawkeye - Balanceo, 2. Silver Surfer Table, 3.Motocycle & Spider-Man balanceo 10 - 29
+		"arathnido:custom_riding":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//AbilityPowers
+		"arathnido:ability0":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		"nido:ability1":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		"nido:ability2":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//SuitTexture
+		"arathnido:SuitTexture0":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Mira Telescopica
+		"nido:item.attachments.1":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Mira Laser
+		"nido:item.attachments.2":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Silenciador o Bayoneta
+		"nido:item.attachments.3":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Arma secundaria: M203 o Escopeta
+		"nido:item.attachments.4":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Skin
+		"nido:item.attachments.5":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Blood
+		"nido:blood":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		"nido:flying":{ "type": "bool", "default": false, "client_sync": true },
+		"nido:scan":{ "type": "bool", "default": true, "client_sync": true }
+      },
+      "scripts": {
+        "animate": [
+			//SpiderMan
+			"player.spiderman.c",
+			//Venom
+			"player.venom.c",
+			//DoctorOctopus
+			"player.dr_octopus.c",
+			//GreenGoblin
+			"player.green_goblin.c"
+        ]
+      },
+      "animations": {
+		//DoctorOctopus
+		"player.green_goblin.c": "controller.animation.player.green_goblin",
+		"player.green_goblin.laser.c": "controller.animation.player.green_goblin.laser",
+		"player.green_goblin.laser": "animation.player.green_goblin.laser",
+		"player.green_goblin.laser.sound": "animation.player.green_goblin.laser.sound",
+		//DoctorOctopus
+		"player.dr_octopus.c": "controller.animation.player.dr_octopus",
+		"player.dr_octopus_arms.sounds.c": "controller.animation.player.dr_octopus_arms.sounds",
+		"player.dr_octopus.powers.c": "controller.animation.player.dr_octopus.powers",
+		"player.dr_octopus.powers": "animation.player.dr_octopus_arms.powers",
+		"player.dr_octopus_arms.attack.c": "controller.animation.player.dr_octopus_arms.attack",
+		"player.dr_octopus_arms.attack": "animation.player.dr_octopus_arms.attack",
+		"player.dr_octopus_arms.walk.c": "controller.animation.player.dr_octopus_arms.walk",
+		"player.dr_octopus_arms.walk": "animation.player.dr_octopus_arms.walk",
+		//Venom
+		  "player.venom.attack.sounds.c": "controller.animation.player.venom.attack.sounds",
+		"player.venom.changes_skin.c": "controller.animation.player.venom.changes_skin",
+		"venom.changes_skin.default": "animation.venom.changes_skin.default",
+		"venom.changes_skin.ultimate": "animation.venom.changes_skin.ultimate",
+		"venom.changes_skin.blue": "animation.venom.changes_skin.blue",
+		"venom.changes_skin.2099": "animation.venom.changes_skin.2099",
+		"venom.changes_skin.snow": "animation.venom.changes_skin.snow",
+		"venom.changes_skin.antivenom": "animation.venom.changes_skin.antivenom",
+		"venom.changes_skin.default.end": "animation.venom.changes_skin.default.end",
+		"venom.changes_skin.ultimate.end": "animation.venom.changes_skin.ultimate.end",
+		"venom.changes_skin.blue.end": "animation.venom.changes_skin.blue.end",
+		"venom.changes_skin.2099.end": "animation.venom.changes_skin.2099.end",
+		"venom.changes_skin.snow.end": "animation.venom.changes_skin.snow.end",
+		"venom.changes_skin.antivenom.end": "animation.venom.changes_skin.antivenom.end",
+		"player.venom.shield.c": "controller.animation.player.venom.shield",
+		"player.venom.shield": "animation.player.venom.shield",
+		"player.venom.knife.attack.c": "controller.animation.player.venom.knife.attack",
+		"player.venom.knife.attack": "animation.player.venom.knife.attack",
+		"player.venom.axe.attack.c": "controller.animation.player.venom.axe.attack",
+		"player.venom.axe.attack": "animation.player.venom.axe.attack",
+		"player.venom.whip.attack.c": "controller.animation.player.venom.whip.attack",
+		"player.venom.whip.attack.1": "animation.player.venom.whip.attack.1",
+		"player.venom.whip.attack.2": "animation.player.venom.whip.attack.2",
+		"player.venom.whip.attack.3": "animation.player.venom.whip.attack.3",
+		"player.venom.whip.attack.4": "animation.player.venom.whip.attack.4",
+		"player.venom.climb.c": "controller.animation.player.venom.climb",
+		"player.venom.climb.default": "animation.player.venom.climb.default",
+		"player.venom.climb.on": "animation.player.venom.climb.on",
+		"player.venom.climb.down": "animation.player.venom.climb.down",
+		"player.venom.climb.impulso": "animation.player.venom.climb.impulso",
+		"player.venom.impulse_whip.c": "controller.animation.player.venom.impulse_whip",
+		"player.venom.impulse_whip": "animation.player.venom.impulse_whip",
+		"player.venom.combat.c": "controller.animation.player.venom.combat",
+		"player.venom.attack.time.2": "animation.player.venom.attack.time.2",
+		"player.venom.attack.1": "animation.player.venom.attack.1",
+		"player.venom.attack.2": "animation.player.venom.attack.2",
+		"player.venom.attack.3": "animation.player.venom.attack.3",
+		"player.venom.attack.4": "animation.player.venom.attack.4",
+		
+		  "player.venom.hability": "animation.player.venom.hability",
+		  "player.ultimate_venom.hability": "animation.player.ultimate_venom.hability",
+		  "player.blue_venom.hability": "animation.player.blue_venom.hability",
+		  "player.venom_2099.hability": "animation.player.venom_2099.hability",
+		  "player.venom_snow.hability": "animation.player.venom_snow.hability",
+		  "player.antivenom.hability": "animation.player.antivenom.hability",
+		  "player.venom.hability.move": "animation.player.venom.hability.move",
+		  "player.ultimate_venom.hability.move": "animation.player.ultimate_venom.hability.move",
+		  "player.blue_venom.hability.move": "animation.player.blue_venom.hability.move",
+		  "player.venom_2099.hability.move": "animation.player.venom_2099.hability.move",
+		  "player.venom_snow.hability.move": "animation.player.venom_snow.hability.move",
+		  "player.antivenom.hability.move": "animation.player.antivenom.hability.move",
+		  "player.venom.hability.attack": "animation.player.venom.hability.attack",
+		  "player.blue_venom.hability.attack": "animation.player.blue_venom.hability.attack",
+		  "player.venom_2099.hability.attack": "animation.player.venom_2099.hability.attack",
+		  "player.venom_snow.hability.attack": "animation.player.venom_snow.hability.attack",
+		  "player.ultimate_venom.hability.attack": "animation.player.ultimate_venom.hability.attack",
+		  "player.antivenom.hability.attack": "animation.player.antivenom.hability.attack",
+		
+		"player.venom.special_attack": "animation.player.venom.special_attack",
+		"player.blue_venom.special_attack": "animation.player.blue_venom.special_attack",
+		"player.venom_2099.special_attack": "animation.player.venom_2099.special_attack",
+		"player.ultimate_venom.special_attack": "animation.player.ultimate_venom.special_attack",
+		"player.venom_snow.special_attack": "animation.player.venom_snow.special_attack",
+		"player.antivenom.special_attack": "animation.player.antivenom.special_attack",
+		"player.venom.smash": "animation.player.venom.smash",
+		"player.venom.smash.on": "animation.player.venom.smash.on",
+		"player.venom.smash.particles": "animation.player.venom.smash.particles",
+		"player.blue_venom.smash.particles": "animation.player.blue_venom.smash.particles",
+		"player.venom_2099.smash.particles": "animation.player.venom_2099.smash.particles",
+		"player.venom_snow.smash.particles": "animation.player.venom_snow.smash.particles",
+		"player.antivenom.smash.particles": "animation.player.antivenom.smash.particles",
+		"player.ultimate_venom.smash.particles": "animation.player.ultimate_venom.smash.particles",
+		"player.venom.attack.properties.c": "controller.animation.player.venom.attack.properties",
+		"player.venom.attack.cooldown": "animation.player.venom.attack.cooldown",
+		"player.venom.walk.sounds.c": "controller.animation.player.venom.walk.sounds",
+		"player.venom.walk.sounds": "animation.player.venom.walk.sounds",
+		"player.venom.hability.walk.sounds": "animation.player.venom.hability.walk.sounds",
+		"player.venom.c": "controller.animation.player.venom",
+		"player.venom.transform_item.c": "controller.animation.player.venom.transform_item",
+		"player.venom.escalar.run_lados.c": "controller.animation.player.venom.escalar.run_lados",
+		"player.venom.super_jump.c": "controller.animation.player.venom.super_jump",
+		"player.venom.super_jump": "animation.player.venom.super_jump",
+		"player.venom.super_jump.particles": "animation.player.venom.super_jump.particles",
+		"player.venom.powers.c": "controller.animation.player.venom.powers",
+		"player.venom.transform": "animation.player.venom.transform",
+		"player.venom.transform.off": "animation.player.venom.transform.off",
+		"player.venom.powers": "animation.player.venom.powers",
+		"player.symbiont.powers": "animation.player.symbiont.powers",
+		"player.venom.escalar_sensor": "animation.player.venom.escalar_sensor",
+		"player.venom.time": "animation.player.venom.time",
+		"player.symbiont.rage.c": "controller.animation.player.symbiont.rage",
+		"player.venom.ambient": "animation.player.venom.ambient",
+		"player.venom.damage_sensor": "animation.player.venom.damage_sensor",
+		//SpiderMan
+		//Powers
+		"player.spiderman.balanceo.acrobacias.c": "controller.animation.player.spiderman.balanceo.acrobacias",
+		"player.spiderman.balanceo.acrobacias": "animation.player.spiderman.balanceo.acrobacias",
+		"player.spiderman.balanceo.acrobacias.2": "animation.player.spiderman.balanceo.acrobacias.2",
+		"player.spiderman.balanceo.c": "controller.animation.player.spiderman.balanceo",
+		"player.spiderman.web_shooter.impact": "animation.player.spiderman.web_shooter.impact",
+		"player.spiderman.web_shooter.golpe_suelo": "animation.player.spiderman.web_shooter.golpe_suelo",
+		"player.spiderman.balanceo.end.time": "animation.player.spiderman.balanceo.end.time",
+		"player.spiderman.balanceo.sounds": "animation.player.spiderman.balanceo.sounds",
+		"player.spiderman.balanceo.web_wing_block": "animation.player.spiderman.balanceo.web_wing_block",
+		"player.spiderman.balanceo.off_sounds": "animation.player.spiderman.balanceo.off_sounds",
+		"player.spiderman.balanceo.balancing_loop": "animation.player.spiderman.balanceo.balancing_loop",
+		"player.spiderman.caida_picada.sounds": "animation.player.spiderman.caida_picada.sounds",
+		"player.spiderman.caida_picada.time": "animation.player.spiderman.caida_picada.time",
+		"player.spiderman.falling.damage": "animation.player.spiderman.falling.damage",
+		"player.spiderman.menu.c": "controller.animation.player.spiderman.menu",
+		"player.spiderman.menu.time": "animation.player.spiderman.menu.time",
+		"player.spiderman.skills.c": "controller.animation.player.spiderman.skills",
+		"player.spiderman.kick": "animation.player.spiderman.kick",
+		"player.spiderman.kick.time": "animation.player.spiderman.kick.time",
+		"player.spiderman.kick.ground": "animation.player.spiderman.kick.ground",
+		"player.spiderman.spin_attack": "animation.player.spiderman.spin_attack",
+		"player.spiderman.balanceo.impulse": "animation.player.spiderman.balanceo.impulse",
+		"player.spiderman.super_slingshot.slow": "animation.player.spiderman.super_slingshot.slow",
+		"player.spiderman.super_slingshot.full": "animation.player.spiderman.super_slingshot.full",
+		"player.spiderman.super_slingshot": "animation.player.spiderman.super_slingshot",
+		"player.spiderman.balanceo.impulse_air": "animation.player.spiderman.balanceo.impulse_air",
+		"player.spiderman.escalar.run_lados.c": "controller.animation.player.spiderman.escalar.run_lados",
+		"player.spiderman.enchant.c": "controller.animation.player.spiderman.enchant",
+		"player.spiderman.c": "controller.animation.player.spiderman",
+		"player.spiderman.super_jump.c": "controller.animation.player.spiderman.super_jump",
+		"player.spiderman.super_jump": "animation.player.spiderman.super_jump",
+		"player.spiderman.run": "animation.player.spiderman.run",
+		"player.spiderman.powers.c": "controller.animation.player.spiderman.powers",
+		"player.spiderman.powers": "animation.player.spiderman.powers",
+		"player.agent_venom.powers.c": "controller.animation.player.agent_venom.powers",
+		"player.spiderman.damage_sensor": "animation.player.spiderman.damage_sensor",
+		"player.spiderman.time": "animation.player.spiderman.time",
+		
+		"regeneration.powers":"animation.regeneration.powers"
+      }
+    },
+
+    "component_groups": {
+		//Venom
+		"venom:changes.skins.0": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.0", "target": "self" } }
+		 },
+		"venom:changes.skins.1": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.1", "target": "self" } }
+		 },
+		"venom:changes.skins.2": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.2", "target": "self" } }
+		 },
+		"venom:changes.skins.3": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.3", "target": "self" } }
+		 },
+		"venom:changes.skins.4": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.4", "target": "self" } }
+		 },
+		"venom:changes.skins.5": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.5", "target": "self" } }
+		 },
+		"venom:changes.skins.6": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.6", "target": "self" } }
+		 },
+		"venom:changes.skins.7": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.7", "target": "self" } }
+		 },
+		"venom:changes.skins.8": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.8", "target": "self" } }
+		 },
+		"venom:changes.skins.9": { "minecraft:timer": { "looping": false, "time": 0.7, "time_down_event": { "event": "venom:skins.9", "target": "self" } }
+		 },
+	  //SpiderMan
+    "spiderverse:portal": {"minecraft:timer": { "looping": false, "time": 3.2, "time_down_event": { "event": "spiderverse:portal.off", "target": "self" } }
+     },
+      "mysterio:default": {
+		"minecraft:damage_sensor": {  "triggers": { "cause": "fall", "deals_damage": false } }
+	  },
+      "symbiont:venom_rage": {
+		"minecraft:timer": { "looping": true, "time": 25, "time_down_event": { "event": "symbiont:venom_rage.off" } }, "minecraft:damage_sensor": {  "triggers": { "cause": "all", "deals_damage": false } }
+	  },
+      "spiderman:default": {
+		"minecraft:damage_sensor": {
+          "triggers": {
+		    "cause": "fall",
+			"deals_damage": true
+          }
+        }
+	  },
+      "venom:damage_sensor": {
+		"minecraft:damage_sensor": {
+          "triggers": {
+		    "cause": "fall",
+			"deals_damage": false
+          }
+        }
+	  },
+      "spiderman:web_shield": {
+		"minecraft:damage_sensor": {
+          "triggers": {
+		    "cause": "all",
+			"deals_damage": false,
+            "on_damage": {
+              "event": "spiderman:web_shield.off"
+            }
+          }
+        }
+	  },
+		"spiderman:damage_sensor": {
+		  "minecraft:damage_sensor": {
+			"triggers": [
+			  {
+				"on_damage": {
+				  "filters": {
+					"all_of": [
+					  {
+						"test": "has_damage",
+						"value": "fall"
+					  }
+					]
+				  }
+				},
+				"deals_damage": false
+			  },
+				{
+				  "on_damage": {
+					"filters": {
+					  "all_of": [
+						{ "test": "has_damage", "operator": "!=", "value": "projectile" },
+						{ "test": "has_tag", "operator": "==", "subject": "self", "value": "spiderman_punch_load" },
+						{
+						  "any_of": [
+							{ "test": "has_tag", "operator": "==", "subject": "other", "value": "spiderman_now_punches" },
+							{ "test": "has_tag", "operator": "==", "subject": "other", "value": "spiderman_punches1" },
+							{ "test": "has_tag", "operator": "==", "subject": "other", "value": "spiderman_punches2" },
+							{ "test": "has_tag", "operator": "==", "subject": "other", "value": "spiderman_punches3" },
+							{ "test": "has_tag", "operator": "==", "subject": "other", "value": "spiderman_punches4" }
+						  ]
+						},
+						{ "test": "is_family", "operator": "!=", "subject": "other", "value": "player" },
+						{ "test": "is_family", "operator": "!=", "subject": "other", "value": "boss" }
+					  ]
+					}
+				  },
+				  "deals_damage": false
+				}
+			]
+		  }
+		},
+	  "web_shooter:shoot": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "spidermanaddon:web_shooter_shoot","num_to_spawn": 1 }]}
+      },
+	  "green_goblin:laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "spidermanaddon:green_goblin_laser_shoot","num_to_spawn": 1 }]}
+      },
+    "spiderman:fisicas_on": {
+      "minecraft:physics": {}
+     },		
+       "spiderman:fisicas_off": {
+		 "minecraft:physics":{
+		   "has_collision": false,
+		   "has_gravity": false
+		 }
+     },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "visible": false,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:exhaustion_values": {
+        "heal": 6,
+        "jump": 0.05,
+        "sprint_jump": 0.2,
+        "mine": 0.005,
+        "attack": 0.1,
+        "damage": 0.1,
+        "walk": 0.0,
+        "sprint": 0.1,
+        "swim": 0.01
+      },
+      "minecraft:player.saturation": {
+        "value": 5,
+        "max": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 20
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+        "push_towards_closest_space": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": {
+          "filters": {
+            "all_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "self",
+                "value": "bad_omen"
+              },
+              {
+                "test": "is_in_village",
+                "subject": "self",
+                "value": true
+              }
+            ]
+          },
+          "event": "minecraft:trigger_raid"
+        }
+      }
+    },
+
+    "events": {
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+	"default_animation":{
+        "add": {
+          "component_groups": [
+            "minecraft:default_animation"
+          ]
+        }
+	},
+	  //SpiderMan
+      "spiderman:iron_spider.off": { "set_property":{ "arathnido:SuitTexture0": 0 }
+      },
+      "spiderman:iron_spider.1": { "set_property":{ "arathnido:SuitTexture0": 1 }
+      },
+      "spiderman:iron_spider.2": { "set_property":{ "arathnido:SuitTexture0": 2 }
+      },
+      "spiderman:iron_spider.3": { "set_property":{ "arathnido:SuitTexture0": 3 }
+      },
+      "spiderman:iron_spider.4": { "set_property":{ "arathnido:SuitTexture0": 4 }
+      },
+      "spiderman:iron_spider.5": { "set_property":{ "arathnido:SuitTexture0": 5 }
+      },
+      "web_shooter:shoot": {
+        "add": { "component_groups": [ "web_shooter:shoot" ] }
+      },
+      "spiderman:fisicas_on": {
+        "add": { "component_groups": [ "spiderman:fisicas_on" ] },
+		"remove": { "component_groups": [ "spiderman:fisicas_off" ] }
+      },
+      "spiderman:fisicas_off": {
+        "remove": { "component_groups": [ "spiderman:fisicas_on" ] },
+		"add": { "component_groups": [ "spiderman:fisicas_off" ] }
+      },
+      "miles_morales:invisibility": { "set_property":{ "nido:ability1": 5 }
+      },
+      "spiderman:web_wing.air": { "set_property":{ "nido:ability1": 4 }
+      },
+      "spiderman:web_wing.impulse": { "set_property":{ "nido:ability1": 3 }
+      },
+      "spiderman:right_wall.animation": { "set_property":{ "nido:ability1": 1 }
+      },
+      "spiderman:left_wall.animation": { "set_property":{ "nido:ability1": 2 }
+      },
+      "spiderman:back_wall.animation": { "set_property":{ "nido:ability1": 6 }
+      },
+      "spiderman:wall.animation.off": { "set_property":{ "nido:ability1": 0 }
+      },
+      "df:escalar": { "set_property":{ "arathnido:escalar": true }
+      },
+      "spiderman:escalar.off": { "set_property":{ "arathnido:escalar": false }
+      },
+      "spiderman:escalar": { "set_property":{ "arathnido:escalar": true }
+      },
+      "df:escalar.off": { "set_property":{ "arathnido:escalar": false }
+      },
+      "venom:damage_sensor": {
+        "add": { "component_groups": [ "venom:damage_sensor" ] },
+		"remove": { "component_groups": [ "spiderman:default" ] }
+      },
+      "spiderman:damage_sensor": {
+        "add": { "component_groups": [ "spiderman:damage_sensor" ] },
+		"remove": { "component_groups": [ "spiderman:default", "symbiont:venom_rage" ] }
+      },
+      "spiderman:default": {
+        "remove": { "component_groups": [ "symbiont:venom_rage", "spiderman:damage_sensor" ] },
+		"add": { "component_groups": [ "spiderman:default" ] }
+      },
+      "mysterio:default": {
+        "remove": { "component_groups": [ "spiderman:default" ] },
+		"add": { "component_groups": [ "mysterio:default" ] }
+      },
+      "spiderman:punch.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "spiderman:punch.load": { "set_property":{ "arathnido:animation": 1 }
+      },
+      "spiderman:punch.now": { "set_property":{ "arathnido:animation": 2 }
+      },
+      "spiderman:punch.1": { "set_property":{ "arathnido:animation": 3 }
+      },
+      "spiderman:punch.2": { "set_property":{ "arathnido:animation": 17 }
+      },
+      "spiderman:punch.3": { "set_property":{ "arathnido:animation": 18 }
+      },
+      "spiderman:punch.4": { "set_property":{ "arathnido:animation": 19 }
+      },
+      "spiderman:punch.impulse": { "set_property":{ "arathnido:animation": 4 }
+      },
+      "spiderman:punch.up": { "set_property":{ "arathnido:animation": 5 }
+      },
+      "spiderman:kick": { "set_property":{ "arathnido:animation": 6 }
+      },
+      "spiderman:spin_punch": { "set_property":{ "arathnido:animation": 7 }
+      },
+      "spiderman:balanceo.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "spiderman:balanceo": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 25,
+                "set_property":{
+                    "arathnido:animation": 1
+                }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                    "arathnido:animation": 2
+                }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                  "arathnido:animation": 3
+              }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                  "arathnido:animation": 4
+              }
+              }
+            ]
+          }
+        ]
+      },
+      "spiderman:balanceo.impulse": { "set_property":{ "arathnido:animation": 5 }
+      },
+      "spiderman:super_slingshot": { "set_property":{ "arathnido:animation": 6 }
+      },
+      "spiderman:web_attack": { "set_property":{ "arathnido:animation": 7 }
+      },
+      "spiderman:focus": { "set_property":{ "arathnido:animation": 8 }
+      },
+      "spiderman:web_blossom": { "set_property":{ "arathnido:animation": 9 }
+      },
+      "spiderman:hook": { "set_property":{ "arathnido:animation": 9 }
+      },
+      "spiderman:whip": { "set_property":{ "arathnido:animation": 11 }
+      },
+      "spiderman:whip.attack": { "set_property":{ "arathnido:animation": 12 }
+      },
+      "spiderman:balanceo.surf": { "set_property":{ "arathnido:animation": 10 }
+      },
+      "spiderman:run_wall.impulse": { "set_property":{ "arathnido:animation": 13 }
+      },
+      "spiderman:run_wall.impulse.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "symbiont:attack.1": { "set_property":{ "arathnido:animation": 13 }
+      },
+      "symbiont:attack.2": { "set_property":{ "arathnido:animation": 14 }
+      },
+      "symbiont:attack.3": { "set_property":{ "arathnido:animation": 15 }
+      },
+      "spiderman:punch_air": { "set_property":{ "arathnido:animation": 16 }
+      },
+      "miles_morales:mega_venom_blast": { "set_property":{ "arathnido:animation": 10 }
+      },
+      "miles_morales:venom_blast_punch": { "set_property":{ "arathnido:animation": 17 }
+      },
+      "miles_morales:venom_smash": { "set_property":{ "arathnido:animation": 18 }
+      },
+      "miles_morales:venom_jump": { "set_property":{ "arathnido:animation": 19 }
+      },
+      "iron_arms:attack.0": { "set_property":{ "arathnido:animation": 20 }
+      },
+      "iron_arms:attack.1": { "set_property":{ "arathnido:animation": 21 }
+      },
+      "iron_arms:attack.2": { "set_property":{ "arathnido:animation": 22 }
+      },
+      "iron_arms:attack.air": { "set_property":{ "arathnido:animation": 23 }
+      },
+      "iron_arms:attack.spider_rush": { "set_property":{ "arathnido:animation": 24 }
+      },
+      "iron_arms:attack.spider_shock": { "set_property":{ "arathnido:animation": 25 }
+      },
+      "iron_arms:attack.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "spiderman_unlimited:invisibility": { "set_property":{ "arathnido:animation": 26 }
+      },
+      "symbiont:evil_dance": { "set_property":{ "arathnido:animation": 26 }
+      },
+      "spiderman_unlimited:invisibility.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "spiderman:crawl.up": { "set_property":{ "arathnido:custom_riding": 30, "arathnido:ability0": 7 }
+      },
+      "spiderman:crawl.walk": { "set_property":{ "arathnido:custom_riding": 30, "arathnido:ability0": 6 }
+      },
+      "spiderman:crawl": { "set_property":{ "arathnido:custom_riding": 30, "arathnido:ability0": 5 }
+      },
+      "spiderman:crawl.off": { "set_property":{ "arathnido:custom_riding": 0, "arathnido:ability0": 5 }
+      },
+      "spiderman:surfing": { "set_property":{ "arathnido:ability0": 4 }
+      },
+      "spiderman:on_head": { "set_property":{ "arathnido:ability0": 3 }
+      },
+      "spiderman:salto_fe": { "set_property":{ "arathnido:ability0": 2 }
+      },
+      "spiderman:caida_picada": { "set_property":{ "arathnido:ability0": 1 }
+      },
+      "spiderman:caida_picada.off": { "set_property":{ "arathnido:ability0": 0 }
+      },
+      "spiderman:web_shield": { "set_property":{ "arathnido:animation": 2 }, "add": { "component_groups": [ "spiderman:web_shield" ] }, "remove": { "component_groups": [ "spiderman:default" ] }
+      },
+      "spiderman:web_shield.off": { "set_property":{ "arathnido:animation": 0 }, "add": { "component_groups": [ "spiderman:default" ] }, "remove": { "component_groups": [ "spiderman:web_shield" ] }
+      },
+	  //GreenGoblin
+      "green_goblin:laser": { "add": { "component_groups": [ "green_goblin:laser" ] }
+      },
+      "spidermanaddon:planeador_spiderman3_on": { "set_property":{ "arathnido:custom_riding": 21 }
+      },
+      "spidermanaddon:planeador_on": { "set_property":{ "arathnido:custom_riding": 20 }
+      },
+      "spiderman:custom_riding_off": { "set_property":{ "arathnido:custom_riding": 0 }
+      },
+      "spider_punk:variants": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 25,
+                "set_property":{
+                    "arathnido:SuitTexture0": 0
+                }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                    "arathnido:SuitTexture0": 1
+                }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                  "arathnido:SuitTexture0": 2
+              }
+              },
+              {
+                "weight": 25,
+                "set_property":{
+                  "arathnido:SuitTexture0": 3
+              }
+              }
+            ]
+          }
+        ]
+      },
+      "spider_punk:off": { "set_property":{ "arathnido:SuitTexture0": 0 }
+      },
+      "spiderwoman:mask.off": { "set_property":{ "arathnido:skins": 0 }
+      },
+      "spiderwoman:mask.on": { "set_property":{ "arathnido:skins": 1 }
+      },
+	  //Venom
+      "venom:changes.skins.0": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.0" ] }
+      },
+      "venom:changes.skins.1": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.1" ] }
+      },
+      "venom:changes.skins.2": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.2" ] }
+      },
+      "venom:changes.skins.3": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.3" ] }
+      },
+      "venom:changes.skins.4": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.4" ] }
+      },
+      "venom:changes.skins.5": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.5" ] }
+      },
+      "venom:changes.skins.6": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.6" ] }
+      },
+      "venom:changes.skins.7": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.7" ] }
+      },
+      "venom:changes.skins.8": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.8" ] }
+      },
+      "venom:changes.skins.9": { "set_property":{ "nido:ability1": 1 }, "add": { "component_groups": [ "venom:changes.skins.9" ] }
+      },
+
+      "venom:skins.0": { "set_property":{ "arathnido:skins": 0, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.0" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 0" ] }
+      },
+      "venom:skins.1": { "set_property":{ "arathnido:skins": 1, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.1" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 1" ] }
+      },
+      "venom:skins.2": { "set_property":{ "arathnido:skins": 2, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.2" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 2" ] }
+      },
+      "venom:skins.3": { "set_property":{ "arathnido:skins": 3, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.3" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 3" ] }
+      },
+      "venom:skins.4": { "set_property":{ "arathnido:skins": 4, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.4" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 4" ] }
+      },
+      "venom:skins.5": { "set_property":{ "arathnido:skins": 5, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.5" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 5" ] }
+      },
+      "venom:skins.6": { "set_property":{ "arathnido:skins": 6, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.6" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 6" ] }
+      },
+      "venom:skins.7": { "set_property":{ "arathnido:skins": 7, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.7" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 7" ] }
+      },
+      "venom:skins.8": { "set_property":{ "arathnido:skins": 8, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.8" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 8" ] }
+      },
+      "venom:skins.9": { "set_property":{ "arathnido:skins": 9, "nido:ability1": 0 }, "remove": { "component_groups": [ "venom:changes.skins.9" ] }, "queue_command": { "command": [ "scoreboard players set @s venom_skin 9" ] }
+      },
+	  
+      "venom:skins.default.0": { "set_property":{ "arathnido:skins": 0 }
+      },
+      "venom:skins.default.1": { "set_property":{ "arathnido:skins": 1 }
+      },
+      "venom:skins.default.2": { "set_property":{ "arathnido:skins": 2 }
+      },
+      "venom:skins.default.3": { "set_property":{ "arathnido:skins": 3 }
+      },
+      "venom:skins.default.4": { "set_property":{ "arathnido:skins": 4 }
+      },
+      "venom:skins.default.5": { "set_property":{ "arathnido:skins": 5 }
+      },
+      "venom:skins.default.6": { "set_property":{ "arathnido:skins": 6 }
+      },
+      "venom:skins.default.7": { "set_property":{ "arathnido:skins": 7 }
+      },
+      "venom:skins.default.8": { "set_property":{ "arathnido:skins": 8 }
+      },
+      "venom:skins.default.9": { "set_property":{ "arathnido:skins": 9 }
+      },
+
+      "venom:vibrant": { "set_property":{ "nido:ability1": 2 }
+      },
+      "venom:vibrant.off": { "set_property":{ "nido:ability1": 0 }
+      },
+
+      "venom:symbiont.black": { "set_property":{ "nido:item.attachments.1": 0 }
+      },
+      "venom:symbiont.white": { "set_property":{ "nido:item.attachments.1": 1 }
+      },
+      "venom:symbiont.dark_blue": { "set_property":{ "nido:item.attachments.1": 2 }
+      },
+      "venom:symbiont.light_blue": { "set_property":{ "nido:item.attachments.1": 3 }
+      },
+      "venom:symbiont.purple": { "set_property":{ "nido:item.attachments.1": 4 }
+      },
+      "venom:symbiont.snow": { "set_property":{ "nido:item.attachments.1": 5 }
+      },
+      "venom:symbiont.red": { "set_property":{ "nido:item.attachments.1": 6 }
+      },
+
+      "venom:attack.off": { "set_property":{ "arathnido:attack": false }
+      },
+      "venom:attack": { "set_property":{ "arathnido:attack": true }
+      },
+      "venom:attacks.0": { "set_property":{ "arathnido:attacks": 0 }
+      },
+      "venom:attacks.1": { "set_property":{ "arathnido:attacks": 1 }
+      },
+      "venom:attacks.2": { "set_property":{ "arathnido:attacks": 2 }
+      },
+      "venom:attacks.3": { "set_property":{ "arathnido:attacks": 3 }
+      },
+      "venom:attacks.4": { "set_property":{ "arathnido:attacks": 4 }
+      },
+      "venom:attacks.5": { "set_property":{ "arathnido:attacks": 5 }
+      },
+      "venom:attacks.6": { "set_property":{ "arathnido:attacks": 6 }
+      },
+      "venom:attacks.7": { "set_property":{ "arathnido:attacks": 7 }
+      },
+      "venom:attacks.8": { "set_property":{ "arathnido:attacks": 8 }
+      },
+      "venom:attacks.9": { "set_property":{ "arathnido:attacks": 9 }
+      },
+      "venom:attacks.10": { "set_property":{ "arathnido:attacks": 10 }
+      },
+      "venom:attacks.11": { "set_property":{ "arathnido:attacks": 11 }
+      },
+      "venom:attacks.12": { "set_property":{ "arathnido:attacks": 12 }
+      },
+      "venom:swing": { "set_property":{ "arathnido:animation": 2 }
+      },
+      "venom:whip_impulse": { "set_property":{ "arathnido:animation": 1 }
+      },
+      "venom:swing.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "venom:take": { "set_property":{ "arathnido:take": true }
+      },
+      "venom:take.off": { "set_property":{ "arathnido:take": false }
+      },
+      "symbiont:strike": { "set_property":{ "arathnido:animation": 4 }
+      },
+      "symbiont:pull": { "set_property":{ "arathnido:animation": 5 }
+      },
+      "symbiont:blast": { "set_property":{ "arathnido:animation": 1 }
+      },
+      "symbiont:cellular_corrosion": { "set_property":{ "arathnido:animation": 3 }
+      },
+      "symbiont:antivenom_bomb": { "set_property":{ "arathnido:animation": 6 }
+      },
+      "symbiont:antivenom_tempest": { "set_property":{ "arathnido:animation": 7 }
+      },
+      "symbiont:venom_rage.anim": { "set_property":{ "arathnido:animation": 8 }
+      },
+      "symbiont:venom_rage": { "add": { "component_groups": [ "symbiont:venom_rage" ] }, "remove": { "component_groups": [ "spiderman:default", "spiderman:damage_sensor" ] }, 
+		"queue_command": { "command": [ "scoreboard players set @s venom_rage 1" ] }
+      },
+      "symbiont:venom_rage.off": {
+        "add": { "component_groups": [ "spiderman:damage_sensor" ] },
+		"remove": { "component_groups": [ "spiderman:default", "symbiont:venom_rage" ] }, 
+		"queue_command": { "command": [ "scoreboard players set @s venom_rage 0" ] }
+      },
+	  //Scorpion
+      "scorpion:tail_attack": { "set_property":{ "arathnido:animation": 1 }
+      },
+      "scorpion:spin": { "set_property":{ "arathnido:animation": 2 }
+      },
+      "scorpion:off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "scorpion:jump_attack": { "set_property":{ "nido:ability1": 1 }
+      },
+      "scorpion:hide": { "set_property":{ "nido:ability1": 2 }
+      },
+      "scorpion:ability.off": { "set_property":{ "nido:ability1": 0 }
+      },
+	  //BlackCat
+      "black_cat:whip_thef": { "set_property":{ "arathnido:animation": 7 }
+      },
+      "black_cat:balanceo": { "set_property":{ "arathnido:animation": 6 }
+      },
+      "black_cat:claws_attack": { "set_property":{ "arathnido:animation": 4 }
+      },
+      "black_cat:whip_claws": { "set_property":{ "arathnido:animation": 5 }
+      },
+      "black_cat:off": { "set_property":{ "arathnido:animation": 0 }
+      },
+	  //GUNS3
+      "guns:reload": { "set_property":{ "arathnido:animation": 3 }
+      },
+      "guns:reload.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "guns:shoot": { "set_property":{ "arathnido:animation": 2 }
+      },
+      "guns:shoot.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "nido:flying": { "set_property":{ "nido:flying": true }
+      },
+      "nido:flying.off": { "set_property":{ "nido:flying": false }
+      },
+      "spiderverse:portal": { "add": { "component_groups": [ "spiderverse:portal" ] }, "set_property":{ "arathnido:custom_riding": 30 }
+      },
+      "spiderverse:portal.off": { "set_property":{ "arathnido:custom_riding": 0 }, "remove": { "component_groups": [ "spiderverse:portal" ] },
+		"queue_command": {
+			"command": [
+					"camera @s fade time 0 0.5 0.5 color 255 255 255",
+					"tag @s remove player_tp_portal"
+			]
+		}
+      },
+      "nido:scan": { "set_property":{ "nido:scan": false }, "queue_command": { "command": [ "tag @s add nido_scan" ] }
+      },
+      "nido:scan.off": { "set_property":{ "nido:scan": true }, "queue_command": { "command": [ "tag @s remove nido_scan" ] }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:agent_venom_pistols",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/agent_venom"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_pistols_first",
+				"web_shooter_third": "geometry.agent_venom_pistols"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person" }
+			],
+			"scripts": {
+                "animate": [
+					{ "shoot": "q.property('arathnido:animation') == 2" },
+				  "idle.c"
+                ]
+			},
+            "animations": {
+				"idle.c": "animation.agent_venom.idle",
+				"shoot": "animation.agent_venom.shoot"
+            }
+		}
+	}
+}

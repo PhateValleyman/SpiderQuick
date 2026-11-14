@@ -1,0 +1,348 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.npc.spiderman.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle", "cape.idle" ]
+				}
+			}
+		},
+		"controller.animation.npc.spider_ham.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "attack.off" ],
+					"transitions" : [
+						{
+							"punch.1" : "variable.attack>0"
+						}
+					]
+				},
+				"punch.1" : {
+					"animations" : [ "attack.on" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.mask" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "mask.on" ],
+					"transitions" : [
+						{
+							"spiderman.mask" : "q.property('sp:mask') == false"
+						}
+					]
+				},
+				"spiderman.mask" : {
+					"animations" : [ "mask.off" ],
+					"transitions" : [
+						{
+							"default" : "q.property('sp:mask') == true"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman.climb" : "q.is_wall_climbing"
+						}
+					]
+				},
+				"spiderman.climb" : {
+					"animations" : [ "climb", "climb.walk" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_wall_climbing"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shoot" : "q.is_sheared && q.has_target"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"shoot" : {
+					"animations" : [ 
+						"shoot"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sheared || !q.has_target"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.look_at_target" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"look_at_target" : "!q.is_sitting"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"look_at_target" : {
+					"animations" : [ 
+						"look_at_target"
+					],
+					"transitions" : [
+						{
+							"default" : "q.is_sitting"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.sit" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "sit.1" : "q.property('sp:sit') == 0 && q.is_sitting" },
+						{ "sit.2" : "q.property('sp:sit') == 1 && q.is_sitting" },
+						{ "sit.3" : "q.property('sp:sit') == 2 && q.is_sitting" },
+						{ "sit.4" : "q.property('sp:sit') == 3 && q.is_sitting" },
+						{ "sit.5" : "q.property('sp:sit') == 4 && q.is_sitting" }
+					],
+          "blend_transition": 0.25
+				},
+				"sit.1" : {
+					"animations" : [ "sit.1" ],
+					"transitions" : [ 
+						{ "default" : "!q.is_sitting" },
+						{ "sit.2" : "q.property('sp:sit') == 1" },
+						{ "sit.3" : "q.property('sp:sit') == 2" },
+						{ "sit.4" : "q.property('sp:sit') == 3" },
+						{ "sit.5" : "q.property('sp:sit') == 4" }
+					],
+          "blend_transition": 0.25
+				},
+				"sit.2" : {
+					"animations" : [ "sit.2" ],
+					"transitions" : [ 
+						{ "default" : "!q.is_sitting" },
+						{ "sit.1" : "q.property('sp:sit') == 0" },
+						{ "sit.3" : "q.property('sp:sit') == 2" },
+						{ "sit.4" : "q.property('sp:sit') == 3" },
+						{ "sit.5" : "q.property('sp:sit') == 4" }
+					],
+          "blend_transition": 0.25
+				},
+				"sit.3" : {
+					"animations" : [ "sit.3" ],
+					"transitions" : [ 
+						{ "default" : "!q.is_sitting" },
+						{ "sit.2" : "q.property('sp:sit') == 1" },
+						{ "sit.1" : "q.property('sp:sit') == 0" },
+						{ "sit.4" : "q.property('sp:sit') == 3" },
+						{ "sit.5" : "q.property('sp:sit') == 4" }
+					],
+          "blend_transition": 0.25
+				},
+				"sit.4" : {
+					"animations" : [ "sit.4" ],
+					"transitions" : [ 
+						{ "default" : "!q.is_sitting" },
+						{ "sit.2" : "q.property('sp:sit') == 1" },
+						{ "sit.3" : "q.property('sp:sit') == 2" },
+						{ "sit.1" : "q.property('sp:sit') == 0" },
+						{ "sit.5" : "q.property('sp:sit') == 4" }
+					],
+          "blend_transition": 0.25
+				},
+				"sit.5" : {
+					"animations" : [ "sit.5" ],
+					"transitions" : [ 
+						{ "default" : "!q.is_sitting" },
+						{ "sit.2" : "q.property('sp:sit') == 1" },
+						{ "sit.3" : "q.property('sp:sit') == 2" },
+						{ "sit.4" : "q.property('sp:sit') == 3" },
+						{ "sit.1" : "q.property('sp:sit') == 0" }
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"punch.1" : "variable.attack>0"
+						}
+					]
+				},
+				"punch.1" : {
+					"animations" : [ "punch.1" ],
+					"transitions" : [
+						{
+							"default.2" : "q.all_animations_finished"
+						}
+					]
+				},
+				"default.2" : {
+					"transitions" : [
+						{
+							"punch.2" : "variable.attack>0"
+						}
+					]
+				},
+				"punch.2" : {
+					"animations" : [ "punch.2" ],
+					"transitions" : [
+						{
+							"default.3" : "q.all_animations_finished"
+						}
+					]
+				},
+				"default.3" : {
+					"transitions" : [
+						{
+							"punch.3" : "variable.attack>0"
+						}
+					]
+				},
+				"punch.3" : {
+					"animations" : [ "punch.3" ],
+					"transitions" : [
+						{
+							"default.4" : "q.all_animations_finished"
+						}
+					]
+				},
+				"default.4" : {
+					"transitions" : [
+						{
+							"punch.4" : "variable.attack>0"
+						}
+					]
+				},
+				"punch.4" : {
+					"animations" : [ "punch.4" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.glitch" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"offhand"
+					],
+					"transitions" : [
+						{
+							"glitch" : "q.property('sp:glitch') == true"
+						}
+					]
+				},
+				"glitch" : {
+					"animations" : [ 
+						"glitch"
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('sp:glitch') == false"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground"
+						},
+						{
+							"swim" : "q.is_in_water"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"falling" : {
+					"animations" : [ 
+						{ "falling": "!q.is_wall_climbing" }
+					],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						},
+						{
+							"swim" : "q.is_in_water"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"swim" : {
+					"animations" : [ 
+						"swim"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_in_water"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.npc.spiderman.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "q.is_on_ground && q.modified_move_speed > 0.1 && !q.is_sitting"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ 
+						"walk"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_on_ground || q.modified_move_speed < 0.1 || q.is_sitting"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.evidence_box.idle": {
+			"loop": true,
+			"animation_length": 0.5,
+			"particle_effects": {
+				"0.0417": {
+					"effect": "light"
+				},
+				"0.1667": {
+					"effect": "light"
+				},
+				"0.2917": {
+					"effect": "light"
+				},
+				"0.4167": {
+					"effect": "light"
+				}
+			}
+		}
+	}
+}

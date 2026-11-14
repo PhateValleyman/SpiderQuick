@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hunters_drone": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "green_goblin_idle": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:blue_flame_particle ^-0.5 ^0.725 ^-0.525",
+			"/particle minecraft:blue_flame_particle ^0.5 ^0.725 ^-0.525",
+			"/particle minecraft:basic_smoke_particle ^0.5 ^0.725 ^-0.525",
+			"/particle minecraft:basic_smoke_particle ^-0.5 ^0.725 ^-0.525"
+          ]
+        },
+        "green_goblin_idle": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:blue_flame_particle ^-0.5 ^0.725 ^-0.525",
+			"/particle minecraft:blue_flame_particle ^0.5 ^0.725 ^-0.525",
+			"/particle minecraft:basic_smoke_particle ^0.5 ^0.725 ^-0.525",
+			"/particle minecraft:basic_smoke_particle ^-0.5 ^0.725 ^-0.525"
+          ]
+        }
+      }
+    }
+  }
+}

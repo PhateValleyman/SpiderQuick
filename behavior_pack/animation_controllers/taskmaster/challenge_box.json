@@ -1,0 +1,97 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.taskmaster.sword" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : {
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"default" : {
+					"on_entry": [
+						"/scoreboard objectives add taskChallenges dummy",
+						"/scoreboard players add @s taskChallenges 0"
+					],
+					"transitions" : [
+						{
+							"taskmaster.sword" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'taskmaster_sword')"
+						}
+					]
+				},
+				"taskmaster.sword" : {
+					"on_entry": [
+						"/enchant @s fire_aspect 2"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'taskmaster_sword')"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.challenge_box" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "challenge.one" : "q.variant == 1" },
+						{ "challenge.two" : "q.variant == 2" },
+						{ "challenge.three" : "q.variant == 3" },
+						{ "challenge.four" : "q.variant == 4" },
+						{ "challenge.five" : "q.variant == 5" }
+					]
+				},
+				"challenge.one" : {
+					"animations" : [ "challenge.1" ],
+					"on_entry" : [ "/effect @a[r=25] blindness 5 0 true", "/effect @a[r=25] slowness 4 3 true", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:horizontal" ],
+					"transitions" : [ { "challenge.one.timer" : "q.any_animation_finished || q.is_sheared" }
+					]
+				},
+				"challenge.one.timer" : {
+					"animations" : [ "challenge.1.timer" ]
+				},
+				"challenge.two" : {
+					"animations" : [ "challenge.2" ],
+					"on_entry" : [ "/effect @a[r=25] blindness 5 0 true", "/effect @a[r=25] slowness 4 3 true", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:horizontal" ],
+					"transitions" : [ { "challenge.two.timer" : "q.any_animation_finished || q.is_sheared" }
+					]
+				},
+				"challenge.two.timer" : {
+					"animations" : [ "challenge.2.timer" ]
+				},
+				"challenge.three" : {
+					"animations" : [ "challenge.3" ],
+					"on_entry" : [ "/effect @a[r=25] blindness 5 0 true", "/effect @a[r=25] slowness 4 3 true", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:horizontal" ],
+					"transitions" : [ { "challenge.three.timer" : "q.any_animation_finished || q.is_sheared" }
+					]
+				},
+				"challenge.three.timer" : {
+					"animations" : [ "challenge.3.detect" ]
+				},
+				"challenge.four" : {
+					"animations" : [ "challenge.4" ],
+					"on_entry" : [ "/effect @a[r=25] blindness 5 0 true", "/effect @a[r=25] slowness 4 3 true", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:horizontal" ],
+					"transitions" : [ { "challenge.four.timer" : "q.any_animation_finished || q.is_sheared" }
+					]
+				},
+				"challenge.four.timer" : {
+					"animations" : [ "challenge.4.timer" ]
+				},
+				"challenge.five" : {
+					"animations" : [ "challenge.5" ],
+					"on_entry" : [ "/effect @a[r=25] blindness 5 0 true", "/effect @a[r=25] slowness 4 3 true", "/summon spiderverse:impulso_efecto ~ ~1 ~ ~ ~ spiderverse:horizontal" ],
+					"transitions" : [ { "challenge.five.timer" : "q.any_animation_finished || q.is_sheared" }
+					]
+				},
+				"challenge.five.timer" : {
+					"animations" : [ "challenge.5.timer" ]
+				}
+			}
+		}
+	}
+}

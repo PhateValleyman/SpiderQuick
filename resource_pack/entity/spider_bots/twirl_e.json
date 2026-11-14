@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:twirl_e",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/trace_c/twirl_e"
+			},
+			"geometry": {
+				"default": "geometry.trace_e"
+			},
+			"animations": {
+				"default": "animation.trace_e.default",
+				"walk": "animation.trace_e.walk",
+				"climb": "animation.trace_e.climb",
+				"sit": "animation.trace_e.sit",
+				"happy": "animation.trace_e.happy",
+				"shot": "animation.trace_e.shot",
+				"off": "animation.trace_e.off",
+				"mode_off": "animation.trace_e.mode_off",
+				"fly": "animation.trace_e.fly",
+				"fly_idle": "animation.trace_e.fly_idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.trace_e.default"
+				},
+				{
+					"sit": "controller.animation.trace_e.sit"
+				},
+				{
+					"climb": "controller.animation.trace_e.climb"
+				},
+				{
+					"shot": "controller.animation.trace_e.shot"
+				},
+				{
+					"off": "controller.animation.trace_e.off"
+				},
+				{
+					"fly": "controller.animation.trace_e.fly"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "twirl_e",
+				"texture_index": 0
+			}
+		}
+	}
+}

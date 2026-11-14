@@ -1,0 +1,72 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bike.player.animation" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"bike.idle" : "q.has_rider"
+						}
+					]
+				},
+				"bike.idle" : {
+					"on_entry": [
+						"/event entity @p[c=1, r=3] spiderman:bike"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.has_rider"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.bike.particle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "bike.motor.particle" ],
+					"transitions" : [
+						{
+							"bike.particle" : "q.modified_move_speed > 0.25"
+						}
+					]
+				},
+				"bike.particle" : {
+					"animations" : [ "bike.walk.particle" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.25"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spider_mobile.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/stopsound @a[r=20] vehicles.car",
+						"/stopsound @a[r=20] vehicles.bike"
+					],
+					"transitions" : [
+						{
+							"spider_mobile.walk" : "q.modified_move_speed > 0.25 && q.has_rider"
+						}
+					]
+				},
+				"spider_mobile.walk" : {
+					"animations" : [ "spider_mobile.walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.25 || !q.has_rider"
+						}
+					]
+				}
+			}
+		}
+	}
+}

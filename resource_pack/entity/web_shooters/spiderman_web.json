@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spiderman_web",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/web_invoke"
+			},
+			"geometry": {
+				"default": "geometry.web_invoke"
+			},
+			"animations": {
+				"move": "animation.bullet.move"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			}
+		}
+	}
+}

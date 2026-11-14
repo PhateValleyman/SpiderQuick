@@ -1,0 +1,100 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.green_goblin_hands",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rotation",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "rotation",
+					"pivot": [1.9, 12, 0]
+				},
+				{
+					"name": "ll",
+					"parent": "leftLeg",
+					"pivot": [1.9, 6, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "rotation",
+					"pivot": [-1.9, 12, 0]
+				},
+				{
+					"name": "rl",
+					"parent": "rightLeg",
+					"pivot": [-1.9, 6, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "rotation",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [-8, 18, -2], "size": [4, 6, 4], "inflate": 0.175, "uv": [40, 16]},
+						{"origin": [-8, 18, -2], "size": [4, 6, 4], "inflate": 0.4, "uv": [48, 32]},
+						{"origin": [-8, 12, -2], "size": [4, 6, 4], "inflate": 0.15, "uv": [0, 32]},
+						{"origin": [-8, 12, -2], "size": [4, 6, 4], "inflate": 0.5, "uv": [0, 86]},
+						{"origin": [-8, 12, -2], "size": [4, 6, 4], "inflate": 0.4, "uv": [16, 85]}
+					]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0],
+					"cubes": [
+						{"origin": [4, 12, -2], "size": [4, 6, 4], "inflate": 0.5, "uv": [0, 96]},
+						{"origin": [4, 18, -2], "size": [4, 6, 4], "inflate": 0.4, "uv": [32, 32]},
+						{"origin": [4, 18, -2], "size": [4, 6, 4], "inflate": 0.175, "uv": [32, 48]},
+						{"origin": [4, 12, -2], "size": [4, 6, 4], "inflate": 0.15, "uv": [0, 42]},
+						{"origin": [4, 12, -2], "size": [4, 6, 4], "inflate": 0.4, "uv": [16, 95]}
+					]
+				}
+			]
+		}
+	]
+}

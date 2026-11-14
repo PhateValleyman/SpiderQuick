@@ -1,0 +1,9 @@
+clear @s marveladdons:venom_combat
+clear @s marveladdons:venom_knife_whip
+clear @s marveladdons:venom_explotion
+clear @s marveladdons:venom_whip
+clear @s marveladdons:venom_eat
+clear @s marveladdons:venom_shield
+clear @s marveladdons:venom_claw
+clear @s marveladdons:venom_axe
+clear @s marveladdons:venom_cellular_corrosion

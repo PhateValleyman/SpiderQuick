@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:penguin_stacy",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/penguin_stacy"
+      },
+      "geometry": {
+        "default": "geometry.penguin_stacy"
+      },
+      "animations": {
+        "setup": "animation.penguin_stacy.idle",
+        "walk": "animation.penguin_stacy.walk",
+		"falling": "animation.penguin_stacy.falling",
+		"swim": "animation.penguin_stacy.swim",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.penguin_stacy.sit"
+      },
+      "animation_controllers": [
+		{ "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+        { "falling": "controller.animation.penguin_stacy.falling" },
+        { "swim": "controller.animation.penguin_stacy.swim" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": {
+        "texture": "egg_penguin_stacy",
+        "texture_index": 0
+      }
+    }
+  }
+}

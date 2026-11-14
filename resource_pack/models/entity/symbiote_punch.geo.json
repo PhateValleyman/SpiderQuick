@@ -1,0 +1,123 @@
+{
+	"format_version": "1.10.0",
+	"geometry.symbiote_punch": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "rotation",
+				"parent": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "leftLeg",
+				"parent": "rotation",
+				"pivot": [1.9, 12, 0]
+			},
+			{
+				"name": "ll",
+				"parent": "leftLeg",
+				"pivot": [1.9, 6, 0]
+			},
+			{
+				"name": "rightLeg",
+				"parent": "rotation",
+				"pivot": [-1.9, 12, 0]
+			},
+			{
+				"name": "rl",
+				"parent": "rightLeg",
+				"pivot": [-1.9, 6, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "rotation",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "leftArm",
+				"parent": "body",
+				"pivot": [5, 22, 0]
+			},
+			{
+				"name": "la",
+				"parent": "leftArm",
+				"pivot": [6, 18, 0]
+			},
+			{
+				"name": "leftItem",
+				"parent": "la",
+				"pivot": [6, 15, 1]
+			},
+			{
+				"name": "rightArm",
+				"parent": "body",
+				"pivot": [-5, 22, 0]
+			},
+			{
+				"name": "ra",
+				"parent": "rightArm",
+				"pivot": [-6, 18, 0]
+			},
+			{
+				"name": "rightItem",
+				"parent": "ra",
+				"pivot": [-7, 18, 0]
+			},
+			{
+				"name": "punch",
+				"parent": "ra",
+				"pivot": [-6, 12, 0],
+				"cubes": [
+					{"origin": [-8, 5, -2], "size": [4, 8, 4], "uv": [0, 29]}
+				]
+			},
+			{
+				"name": "punch2",
+				"parent": "punch",
+				"pivot": [-6, 5, 0],
+				"cubes": [
+					{"origin": [-8.5, -3, -2.5], "size": [5, 8, 5], "uv": [24, 16]}
+				]
+			},
+			{
+				"name": "punch3",
+				"parent": "punch2",
+				"pivot": [-6, -2, 0],
+				"cubes": [
+					{"origin": [-9, -9, -3], "size": [6, 7, 6], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "punch4",
+				"parent": "punch3",
+				"pivot": [-6, -9, 0],
+				"cubes": [
+					{"origin": [-10, -17, -4], "size": [8, 8, 8], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

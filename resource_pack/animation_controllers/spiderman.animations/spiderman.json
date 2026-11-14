@@ -1,0 +1,1752 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.spiderman" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "player.spiderman.powers.c": "!v.is_first_person" },
+						{ "player.spiderman.punch.c": "!v.is_first_person" },
+						{ "player.spiderman.symbiote.whip.c": "!v.is_first_person" },
+						{ "player.spiderman.skills.c": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.c": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.first.c": "v.is_first_person" },
+						{ "player.web_shooter.skills.c": "!v.is_first_person" },
+						{ "player.web_shooter.idle": "variable.is_first_person && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter')" },
+						{ "player.web_shooter.idle": "variable.is_first_person && q.equipped_item_any_tag('slot.weapon.mainhand', 'shocker_gloves')" },
+						{ "player.spiderman.elytra.c": "!v.is_first_person" },
+						{ "player.iron_arms.c": "!v.is_first_person" },
+						{ "player.iron_arms.skill.c": "!v.is_first_person" },
+						{ "player.iron_arms.idle": "!v.is_first_person && q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_item')" },
+						{ "player.spiderman.balanceo.c": "!v.is_first_person" },
+						{ "player.spiderman.attack.c": "!v.is_first_person" },
+						{ "player.spiderman.combat.c": "!v.is_first_person" },
+						{ "player.spiderman.web_shooter.specials.c": "!v.is_first_person" },
+						"player.spiderman.unlimited.skills.c",
+						"player.spiderman.mask.c",
+						{"player.spider_woman.suit": "(q.equipped_item_any_tag('slot.armor.head', 'spider_woman') || q.equipped_item_any_tag('slot.armor.feet', 'spider_woman')) && !v.is_first_person" },
+						{"player.spiderman.balanceo.first.c": "v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.mask" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot" : "q.equipped_item_any_tag('slot.armor.head', 'spiderman_mask')" }
+					]
+				},
+				"shoot" : {
+					"animations" : [ 
+						"player.spiderman.mask.on"
+					],
+					"transitions" : [
+						{ "balanceo" : "!q.equipped_item_any_tag('slot.armor.head', 'spiderman_mask')" }
+					],
+					"blend_transition": 0.5
+				},
+				"balanceo" : {
+					"animations" : [ 
+						"player.spiderman.mask.off"
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || !variable.web_swimg" }
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.player.spiderman.balanceo.first" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg" },
+						{ "caida_picada.on" : "q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.property('arathnido:ability0') == 1" }
+					]
+				},
+				"shoot" : {
+					"animations" : [ 
+						"player.web_shooter.shoot.1"
+					],
+					"transitions" : [
+						{ "balanceo" : "q.all_animations_finished" }
+					],
+					"blend_transition": 0.5
+				},
+				"balanceo" : {
+					"animations" : [ 
+						"player.web_shoot.balanceo.first"
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') || !variable.web_swimg" }
+					],
+					"blend_transition": 0.5
+				},
+				"caida_picada.on" : {
+					"transitions" : [
+						{ "caida_picada" : "(1.0)" }
+					],
+					"blend_transition": 0.5
+				},
+				"caida_picada" : {
+					"animations" : [ 
+						"player.web_shoot.caida_picada.first"
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') || q.property('arathnido:ability0') == 0" },
+						{ "shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.unlimited.skills" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "invisibility" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_unlimited_invisibility') && q.property('arathnido:animation') == 26" },
+						{ "shocker" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'shocker_gloves') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"invisibility" : {
+					"animations" : [ 
+						"player.miles_morales.invisibility"
+					],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				},
+				"shocker" : {
+					"animations" : [ 
+						"player.shocker.shoot"
+					],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.web_shooter.specials" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "concussive_blast" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'concussive_blast') && q.property('arathnido:animation') == 2" },
+						{ "impact_web" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'impact_web') && q.property('arathnido:animation') == 2" },
+						{ "electric_web" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'electric_web') && q.property('arathnido:animation') == 2" },
+						{ "web_line" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_line') && q.is_using_item" },
+						{ "web_grabber" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_grabber') && q.property('arathnido:animation') == 2" },
+						{ "spider_drone" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_drone') && q.property('arathnido:animation') == 2" },
+						{ "web_bomb" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_bomb') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				},
+				"spider_drone" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_drone') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_bomb" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_bomb') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"concussive_blast" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.concussive_blast": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'concussive_blast') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_grabber" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_grabber') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"impact_web" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'impact_web') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"electric_web" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'electric_web') || q.property('arathnido:animation') == 0 || q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_line" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" },
+						{ "player.web_shooter.impact_web": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_line') || (q.all_animations_finished && !q.is_using_item))" }
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.spiderman.combat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "punch.load" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.is_alive && q.property('arathnido:animation') == 1" },
+						{ "punch.now" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.is_alive && q.property('arathnido:animation') == 2" },
+						{ "punch.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.is_alive && q.property('arathnido:animation') == 3" },
+						{ "punch.air" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') && q.is_alive && q.property('arathnido:animation') == 16" }
+					]
+				},
+				"punch.air" : {
+					"animations" : [ 
+						"player.spiderman.punch.air", "player.spiderman.punch.air.idle"
+					],
+					"transitions" : [
+						{ "punch.1" : "q.property('arathnido:animation') == 3" },
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') || q.property('arathnido:animation') == 0" }
+					]
+				},
+				"punch.load" : {
+					"animations" : [ 
+						"player.spiderman.punch.load"
+					],
+					"transitions" : [
+						{ "punch.now" : "q.property('arathnido:animation') == 2" },
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat') || q.property('arathnido:animation') == 0" }
+					]
+				},
+				"punch.now" : {
+					"animations" : [ 
+						"player.spiderman.punch.now"
+					],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')) && q.any_animation_finished" },
+						{ "punch.1" : "q.property('arathnido:animation') == 3" },
+						{ "punch.air" : "q.property('arathnido:animation') == 16" }
+					]
+				},
+				"punch.1" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.3"
+					],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')) && q.any_animation_finished" },
+						{ "punch.2" : "q.property('arathnido:animation') == 17" },
+						{ "punch.air" : "q.property('arathnido:animation') == 16" }
+					]
+				},
+				"punch.2" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.2"
+					],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')) && q.any_animation_finished" },
+						{ "punch.3" : "q.property('arathnido:animation') == 18" },
+						{ "punch.air" : "q.property('arathnido:animation') == 16" }
+					]
+				},
+				"punch.3" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.1"
+					],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')) && q.any_animation_finished" },
+						{ "punch.4" : "q.property('arathnido:animation') == 19" },
+						{ "punch.air" : "q.property('arathnido:animation') == 16" }
+					]
+				},
+				"punch.4" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.4"
+					],
+					"transitions" : [
+						{ "default" : "(q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_combat')) && q.any_animation_finished" },
+						{ "punch.1" : "q.property('arathnido:animation') == 3" },
+						{ "punch.air" : "q.property('arathnido:animation') == 16" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman.attack.0" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack') && variable.attack_time > 0.1"
+						}
+					]
+				},
+				"spiderman.attack.0" : {
+					"animations" : [ "player.spiderman.attack.0" ],
+					"transitions" : [
+						{
+							"default.2" : "q.any_animation_finished"
+						}
+					]
+				},
+				"default.2" : {
+					"transitions" : [
+						{
+							"spiderman.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack') && variable.attack_time > 0.1"
+						}
+					]
+				},
+				"spiderman.attack.1" : {
+					"animations" : [ "player.spiderman.attack.1"],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.balanceo": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [ 
+						{"default.balanceo":"!q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') && !q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') && q.is_alive && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" }
+                    ]
+				},
+				"default.balanceo": {
+					"animations": [ { "player.spiderman.balanceo.time":"!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" } ],
+					"transitions": [ 
+						{"default":"(q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') || q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.is_alive || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')) && q.all_animations_finished" },
+						{"impulse":"q.property('arathnido:animation') == 5" },
+						{"shoot":"variable.web_swimg" }
+                    ]
+				},
+				"shoot": {
+                    "animations": [ { "player.spiderman.falling": "!q.is_on_ground" }, "player.spiderman.balanceo.shoot" ],
+					"transitions": [ 
+                        {"balanceo.anim":"q.any_animation_finished && !q.is_on_ground"},
+						{"impulse":"q.property('arathnido:animation') == 5" },
+						{"balanceo.ground":"q.any_animation_finished && q.is_on_ground"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.anim": {
+					"animations": [ { "player.spiderman.falling": "!q.is_on_ground" } ],
+					"transitions": [ 
+						{ "balanceo.1": "variable.web_swimg" }, 
+						{"impulse":"q.property('arathnido:animation') == 5" },
+						{"balanceo.end":"q.property('arathnido:animation') == 0" }
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.1": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.1",
+						"player.spiderman.balanceo.legs" 
+					],
+					"transitions": [ 
+						{"balanceo.end":"q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"}
+                    ]
+				},
+				"balanceo.ground": {
+					"animations": [ "player.spiderman.balanceo.ground", { "player.spiderman.falling.time": "!q.is_jumping && !q.is_on_ground" } ],
+					"transitions": [ 
+						{"balanceo.anim":"!q.is_jumping && !q.is_on_ground && q.all_animations_finished"},
+						{"default":"q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') || q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.is_alive || q.is_gliding || q.property('arathnido:animation') == 0"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.end": {
+                    "animations": [ "player.spiderman.falling.crazy" ],
+					"transitions": [ 
+						{"default":"q.equipped_item_any_tag('slot.armor.legs', 'agent_venom_powers') || q.equipped_item_any_tag('slot.armor.legs', 'spiderman_powers') || !q.is_alive || q.is_on_ground || q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking)"},
+						{"player.spiderman.falling.damage":"q.is_on_ground"},
+						{"shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" }
+                    ]
+				},
+				"player.spiderman.falling.damage": {
+                    "animations": [ "player.spiderman.falling.damage" ],
+					"transitions": [ 
+						{"default":"q.any_animation_finished || q.modified_move_speed > 0.5 || !q.is_on_ground"}
+                    ]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.elytra" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "idle" : "(q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') || q.equipped_item_any_tag('slot.armor.head', 'spiderman_skin')) && q.is_gliding" }
+					]
+				},
+				"idle" : {
+					"animations" : [ "player.spiderman.elytra.idle", "player.spiderman.elytra.on", "player.spiderman.elytra.air.c" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') && !q.equipped_item_any_tag('slot.armor.head', 'spiderman_skin')) || !q.is_gliding" }
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.elytra.air" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "aire" : "q.property('nido:ability1') == 3" },
+						{ "viento" : "q.property('nido:ability1') == 4" }
+					],
+					"blend_transition": 0.1
+				},
+				"aire" : {
+					"animations" : [ "player.new_spiderman.elytra.aire" ],
+					"transitions" : [
+						{ "default" : "q.property('nido:ability1') == 0 && q.all_animations_finished" },
+						{ "viento" : "q.property('nido:ability1') == 4" }
+					],
+					"blend_transition": 0.1
+				},
+				"viento" : {
+					"animations" : [ "player.new_spiderman.elytra.viento" ],
+					"transitions" : [
+						{ "default" : "q.property('nido:ability1') == 0" },
+						{ "aire" : "q.property('nido:ability1') == 3" }
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.web_shooter.skills" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "web_shield" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shield') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_shield" : {
+					"animations" : [ "player.spiderman.web_shooter.shield" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.web_shooter.shoot.first" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot.right" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') && q.property('arathnido:animation') == 2" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				},
+				"special_shoot" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.1": "v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') || q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2 && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"shoot.right" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.1": "v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') || q.any_animation_finished) && q.property('arathnido:animation') == 0" },
+						{ "shoot.left" : "q.property('arathnido:animation') == 2 && q.all_animations_finished" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				},
+				"shoot.left" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.2": "v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') || q.any_animation_finished) && q.property('arathnido:animation') == 0" },
+						{ "shoot.right" : "q.property('arathnido:animation') == 2 && q.all_animations_finished" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.web_shooter.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "shoot.right" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') && q.property('arathnido:animation') == 2" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2" }
+					],
+					"blend_transition": 0.1
+				},
+				"special_shoot" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') || q.property('arathnido:animation') == 0) && q.all_animations_finished" },
+						{ "special_shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_special_anim') && q.property('arathnido:animation') == 2 && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"shoot.right" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.right": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.right.anim": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') || q.any_animation_finished) && q.property('arathnido:animation') == 0" },
+						{ "shoot.left" : "q.property('arathnido:animation') == 2 && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"shoot.left" : {
+					"animations" : [ 
+						{ "player.web_shooter.shoot.left": "!v.is_first_person" },
+						{ "player.web_shooter.shoot.left.anim": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_shoot_anim') || q.any_animation_finished) && q.property('arathnido:animation') == 0" },
+						{ "shoot.right" : "q.property('arathnido:animation') == 2 && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.spiderman.skills" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "kick" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_kick') && q.property('arathnido:animation') == 6" },
+						{ "spin_punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_spin_punch') && q.property('arathnido:animation') == 7" }
+					],
+					"blend_transition": 0.1
+				},
+				"kick" : {
+					"animations" : [ "player.spiderman.kick", "player.spiderman.kick.time" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && q.property('arathnido:animation') == 0" },
+						{ "kick.ground" : "q.any_animation_finished && q.is_on_ground" }
+					],
+					"blend_transition": 0.1
+				},
+				"kick.ground" : {
+					"animations" : [ "player.spiderman.kick.ground" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					]
+				},
+				"spin_punch" : {
+					"animations" : [ "player.spiderman.spin_attack" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished && q.property('arathnido:animation') == 0" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.symbiote.whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"attack.1" : {
+					"animations" : [ "player.spiderman.symbiote.whip.attack.1" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:animation') == 0" },
+						{ "attack.2" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"attack.2" : {
+					"animations" : [ "player.spiderman.symbiote.whip.attack.2" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:animation') == 0" },
+						{ "attack.1" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.property('arathnido:animation') == 2" }
+					]
+				}
+			}
+		},
+		"controller.animation.spiderman.symbiote.whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack.1" : "q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"attack.1" : {
+					"animations" : [ "attack.1" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:animation') == 0" },
+						{ "attack.2" : "q.any_animation_finished && q.property('arathnido:animation') == 2" }
+					]
+				},
+				"attack.2" : {
+					"animations" : [ "attack.2" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:animation') == 0" },
+						{ "attack.1" : "q.any_animation_finished && q.property('arathnido:animation') == 2" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.punch" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "punch.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch') && q.is_alive && q.property('arathnido:animation') == 4" },
+						{ "punch.up" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch') && q.is_alive && q.property('arathnido:animation') == 5" },
+						{ "focus" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') && q.is_alive && q.property('arathnido:animation') == 8" },
+						{ "player.spiderman.web_blossom" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') && q.is_alive && q.property('arathnido:animation') == 9" }
+					]
+				},
+				"player.spiderman.web_blossom" : {
+					"animations" : [ 
+						"player.spiderman.web_blossom"
+					],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && q.property('arathnido:animation') == 0" }
+					]
+				},
+				"focus" : {
+					"animations" : [ 
+						"player.spiderman.focus.0"
+					],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && q.property('arathnido:animation') == 0" }
+					]
+				},
+				"punch.up" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.up"
+					],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && q.property('arathnido:animation') == 0" },
+						{ "focus" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') && q.is_alive && q.property('arathnido:animation') == 8" }
+					]
+				},
+				"punch.impulse" : {
+					"animations" : [ 
+						"player.spiderman.combat.punch.impulse"
+					],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished && q.property('arathnido:animation') == 0" },
+						{ "focus" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') && q.is_alive && q.property('arathnido:animation') == 8" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.sneaking" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman.sneaking" : "q.is_sneaking && q.is_on_ground && q.property('arathnido:animation') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.sneaking" : {
+					"animations" : [ 
+						{ "player.spiderman.sneaking": "!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_punch')" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !q.is_on_ground || !q.property('arathnido:animation') == 0"
+						},
+						{
+							"spiderman.walk_sneaking" : "q.modified_move_speed > 0.05"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.on_sneaking" : {
+					"animations" : [ 
+						"player.spiderman.on_sneaking"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !q.is_on_ground || !q.property('arathnido:animation') == 0"
+						},
+						{
+							"spiderman.walk_sneaking" : "q.modified_move_speed > 0.05"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.walk_sneaking" : {
+					"animations" : [ 
+						"player.spiderman.walk_sneaking"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !q.is_on_ground || q.modified_move_speed < 0.05 || !q.property('arathnido:animation') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman" : "q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') && q.is_alive"
+						}
+					]
+				},
+				"spiderman" : {
+					"animations" : [ 
+						"player.spiderman.climb.c", "player.spiderman.idle.c"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'spidermanaddon:spiderverse_conect') || !q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.move" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "move.legs": "q.is_in_water && !q.is_swimming" }, 
+						{ "move.arms": "q.is_in_water && !q.is_swimming" }
+					],
+					"transitions" : [
+						{
+							"walk" : "q.is_on_ground && q.modified_move_speed > 0.1 && q.is_alive && !q.is_in_water"
+						},
+						{
+							"run" : "q.is_on_ground && q.is_sprinting && q.is_alive && !q.is_in_water && q.property('arathnido:animation') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ 
+						{
+							"move.arms" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') && !variable.off_walk && !variable.off_move_hands"
+						},
+						{
+							"move.legs" : "!variable.off_walk"
+						}
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_on_ground || q.modified_move_speed < 0.1 || !q.is_alive || q.is_in_water"
+						},
+						{
+							"run" : "q.is_on_ground && q.is_sprinting && q.is_alive"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"run" : {
+					"animations" : [ 
+						{ "player.spiderman.run": "q.property('arathnido:animation') == 0 || (!q.property('arathnido:animation') == 0 && (q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter') || q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item')))" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_on_ground || !q.is_alive || q.is_in_water"
+						},
+						{
+							"stop_run" : "!q.is_sprinting"
+						}
+					]
+				},
+				"stop_run" : {
+					"animations" : [ 
+						"player.spiderman.stop_run", "player.spiderman.falling.time"
+					],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished || (q.modified_move_speed > 0.9 && q.any_animation_finished)"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman" : "!q.is_sprinting && q.is_on_ground && q.modified_move_speed < 0.9 && q.is_alive"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman" : {
+					"animations" : [ 
+						"player.spiderman.idle"
+					],
+					"transitions" : [
+						{
+							"default" : "q.is_sprinting || !q.is_on_ground || q.modified_move_speed > 0.9 || !q.is_alive"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.balanceo.acrobacias" : {
+			"initial_state" : "on",
+			"states" : {
+				"default" : { 
+					"animations": [ "player.spiderman.falling.heat" ],
+					"transitions" : [
+						{ "ball" : "q.is_sneaking && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "spin" : "q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "special" : "q.is_jumping && q.is_sneaking && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" }
+					],
+					"blend_transition": 0.15
+				},
+				"ball" : { 
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacia.3"
+					],
+					"transitions" : [ { "default" : "!q.is_sneaking || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "special" : "q.is_jumping && q.is_sneaking" } ],
+					"blend_transition": 0.15
+				},
+				"spin" : {
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacia.4"
+					],
+					"transitions" : [ { "default" : "!q.is_jumping || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "special" : "q.is_jumping && q.is_sneaking" } ],
+					"blend_transition": 0.15
+				},
+				"special" : {
+					"animations": [ 
+						"player.spiderman.balanceo.acrobacia.2"
+					],
+					"transitions" : [ { "default" : "!q.is_jumping || !q.is_sneaking || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" } ],
+					"blend_transition": 0.15
+				}
+			}
+		},
+		"controller.animation.player.spiderman.escalar.colgado" : {
+			"initial_state" : "colgado",
+			"states" : {
+				"colgado" : {
+					"animations" : [ 
+						"player.spiderman.climb.default"
+					],
+					"transitions" : [
+						{
+							"spiderman.right" : "q.property('nido:ability1') == 1"
+						},
+						{
+							"spiderman.left" : "q.property('nido:ability1') == 2"
+						},
+						{
+							"spiderman.back" : "q.property('nido:ability1') == 6"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.right" : {
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.right"
+					],
+					"transitions" : [
+						{
+							"colgado" : "q.property('nido:ability1') == 2 || q.property('nido:ability1') == 0"
+						},
+						{
+							"spiderman.back" : "q.property('nido:ability1') == 6"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.left" : {
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.left"
+					],
+					"transitions" : [
+						{
+							"colgado" : "q.property('nido:ability1') == 1 || q.property('nido:ability1') == 0"
+						},
+						{
+							"spiderman.back" : "q.property('nido:ability1') == 6"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.back" : {
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.back"
+					],
+					"transitions" : [
+						{
+							"colgado" : "q.property('nido:ability1') == 1 || q.property('nido:ability1') == 0 || q.property('nido:ability1') == 2"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.climb.run_wall" : {
+			"initial_state" : "colgado",
+			"states" : {
+				"colgado" : {
+					"transitions" : [
+						{
+							"spiderman.right" : "q.property('nido:ability1') == 1"
+						},
+						{
+							"spiderman.left" : "q.property('nido:ability1') == 2"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.right" : {
+					"animations" : [ 
+						"player.spiderman.colgado.right.run"
+					],
+					"transitions" : [
+						{
+							"colgado" : "q.property('nido:ability1') == 2 || q.property('nido:ability1') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"spiderman.left" : {
+					"animations" : [ 
+						"player.spiderman.colgado.left.run"
+					],
+					"transitions" : [
+						{
+							"colgado" : "q.property('nido:ability1') == 1 || q.property('nido:ability1') == 0"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.player.spiderman.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "falling":"!q.is_on_ground && !q.is_in_water && !q.is_riding && q.property('nido:flying') == false"},
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "spiderman.super_jump_sneaking" : "!q.equipped_item_any_tag('slot.weapon.offhand', 'uncle_ben_camera') && q.head_x_rotation(0) < -15 && q.is_sneaking && q.is_on_ground" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_shooter.super_slingshot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 6" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "falling.heat":"q.property('arathnido:ability0') == 1 && !q.is_on_ground && !q.is_in_water"},
+						{ "player.spiderman.run.jump.on":"q.property('arathnido:ability0') == 2 && !q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" },
+						//CombatMode
+						{"player.spiderman.combat_mode":"q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack')"}
+					],
+					"animations" : [ 
+						"player.spiderman.move.c", { "look_at_target": "q.is_on_ground || q.is_in_water" }, "player.spiderman.sneaking.c"
+					],
+					"blend_transition": 0.25
+				},
+				"player.spiderman.combat_mode": {
+					"animations": [ { "player.spiderman.move.c": "q.property('arathnido:animation') == 0"}, { "look_at_target": "q.property('nido:flying') == true || (q.property('arathnido:animation') == 0 && (q.is_on_ground || q.is_in_water))" }, { "player.spiderman.falling": "q.property('nido:flying') == false && !q.is_on_ground && q.property('arathnido:animation') == 0 && !q.is_in_water && !q.is_gliding && !q.is_riding && ((!q.equipped_item_any_tag('slot.armor.chest', 'off_walk_on_fly')) || (q.equipped_item_any_tag('slot.armor.chest', 'off_walk_on_fly') && (!q.is_sneaking && q.property('nido:flying') == false)))" } ],
+					"transitions": [ 
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"default":"!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_attack')"},
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+                    ]
+				},
+				"spiderman.super_jump_sneaking" : {
+					"animations" : [  "player.spiderman.super_jump_sneaking" ],
+					"transitions" : [
+						{ "default" : "!q.is_sneaking"}, 
+						{ "spiderman.super_jump" : "q.is_jumping" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_shooter.super_slingshot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 6" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" },
+						{ "falling.heat":"q.property('arathnido:ability0') == 1 && !q.is_on_ground"},
+						{ "player.spiderman.run.jump.on":"q.property('arathnido:ability0') == 2 && !q.is_on_ground"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"}
+					]
+				},
+				"spiderman.super_jump" : {
+					"animations" : [  "player.spiderman.super_jump" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished || q.is_on_ground || q.property('nido:flying') == true" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_shooter.super_slingshot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 6" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" },
+						{ "falling.heat":"q.property('arathnido:ability0') == 1 && !q.is_on_ground"},
+						{ "player.spiderman.run.jump.on":"q.property('arathnido:ability0') == 2 && !q.is_on_ground"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"}
+					]
+				},
+				"falling" : {
+					"transitions" : [
+						{ "default":"q.is_on_ground || q.is_in_water || q.is_riding || q.property('nido:flying') == true"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_shooter.super_slingshot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 6" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" },
+						{ "falling.heat":"q.property('arathnido:ability0') == 1"},
+						{ "player.spiderman.run.jump.on":"q.property('arathnido:ability0') == 2"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+					],
+					"animations" : [ 
+						{ "player.spiderman.falling": "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman:off_falling') || (q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman:off_falling') && q.property('arathnido:animation') == 0)) && !q.is_in_water && !q.is_gliding && !q.is_riding && ((!q.equipped_item_any_tag('slot.armor.chest', 'off_walk_on_fly')) || (q.equipped_item_any_tag('slot.armor.chest', 'off_walk_on_fly') && (!q.is_sneaking && q.property('nido:flying') == false)))" }
+					],
+					"blend_transition": 0.25
+				},
+				"climb.run_wall" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || !q.is_sprinting || q.property('nido:flying') == true" },
+						{ "climb.run_wall.jump" : "q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						"player.spiderman.climb.run_wall.c"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.run_wall.impulse" : {
+					"transitions" : [
+						{ "climb.run" : "q.all_animations_finished" }
+					],
+					"animations" : [ 
+						"player.spiderman.climb.web_shooter"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.run_wall.jump" : {
+					"transitions" : [
+						{ "default" : "q.is_on_ground || q.all_animations_finished || q.property('nido:flying') == true" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						"player.spiderman.colgado.jump.run"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.default" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.down" : "!q.is_sneaking" },
+						{ "climb.run" : "q.is_jumping && (q.property('nido:ability1') == 0 || q.property('nido:ability1') == 1 || q.property('nido:ability1') == 2)" },
+						{ "climb.back_wall.jump" : "q.is_jumping && q.property('nido:ability1') == 6" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.c"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.back_wall.jump" : { "transitions" : [ { "climb.back_wall" : "(1.0)" } ]
+				},
+				"climb.back_wall" : {
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					],
+					"animations" : [ 
+						"player.spiderman.escalar.colgado.jump"
+					],
+					"blend_transition": 0.1
+				},
+				"climb.run" : {
+					"transitions" : [
+						{ "default" : "q.is_on_ground || q.is_in_water || q.is_gliding || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.down" : "!q.is_sneaking || !q.is_jumping" },
+						{ "falling" : "q.property('arathnido:escalar') == false" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						//WebShooter
+						{ "climb.run_wall.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 13" },
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						"player.spiderman.climb.run2"
+					],
+					"blend_transition": 0.25
+				},
+				"climb.on" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.default" : "q.any_animation_finished && q.is_sneaking" },
+						{ "climb.down" : "!q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						{ "player.spiderman.climb.default": "q.property('arathnido:escalar') == true"}, { "player.spiderman.climb.on": "q.property('arathnido:escalar') == true"}
+					],
+					"blend_transition": 0.25
+				},
+				"climb.down" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_gliding || q.is_on_ground || q.property('nido:flying') == true || q.is_in_water || variable.web_swimg || q.property('nido:flying') == true" },
+						{ "climb.default" : "q.is_sneaking" },
+						{ "climb.on" : "q.is_jumping" },
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						//WebShooter
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.impulse" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 5" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" },
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+					],
+					"animations" : [ 
+						{ "player.spiderman.climb.down": "q.property('arathnido:escalar') == true"}, { "player.spiderman.climb.on": "q.property('arathnido:escalar') == true"}
+					],
+					"blend_transition": 0.25
+				},
+				//WebShooter
+				"web_whip.attack" : {
+					"animations" : [ 
+						"player.spiderman.whip.attack"
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_whip" : {
+					"animations" : [ 
+						"player.spiderman.whip"
+					],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					],
+					"blend_transition": 0.1
+				},
+				"web_shooter.shoot": {
+                    "animations": [ { "player.spiderman.falling": "!q.is_on_ground" }, "player.spiderman.balanceo.shoot" ],
+					"transitions": [ 
+                        {"balanceo.anim":"q.any_animation_finished && !q.is_on_ground"},
+						{"web_shooter.impulse":"q.property('arathnido:animation') == 5" },
+						{"balanceo.ground":"q.any_animation_finished && q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"},
+						{ "web_whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 11" },
+						{ "web_whip.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_whip') && q.property('arathnido:animation') == 12" }
+                    ],
+					"blend_transition": 0.25
+				},
+				"web_shooter.surf": {
+					"animations": [ "player.spiderman.swing.surf" ],
+					"transitions": [ 
+						{"balanceo.end":"q.property('arathnido:animation') == 0" },
+						{"web_shooter.surf.falling":"!q.is_on_ground && !q.is_in_water" }
+                    ],
+					"blend_transition": 0.25
+				},
+				"web_shooter.surf.falling": {
+					"animations": [ "player.spiderman.swing.surf.falling" ],
+					"transitions": [ 
+						{"balanceo.end":"q.property('arathnido:animation') == 0" },
+						{"web_shooter.surf":"q.is_on_ground || q.is_in_water" }
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.anim": {
+					"animations": [ { "player.spiderman.falling": "!q.is_on_ground" } ],
+					"transitions": [ 
+						{ "balanceo.1": "q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.property('arathnido:animation') == 2" }, 
+						{"web_shooter.impulse":"q.property('arathnido:animation') == 5" },
+						{ "balanceo.3": "q.property('arathnido:animation') == 3" },
+						{ "balanceo.4": "q.property('arathnido:animation') == 4" },
+						{"balanceo.end":"q.property('arathnido:animation') == 0" }
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.1": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.1",
+						"player.spiderman.balanceo.legs" 
+					],
+					"transitions": [ 
+                        {"balanceo.jump.1":"q.is_jumping && q.property('arathnido:animation') == 1"},
+						{"balanceo.jump.2":"q.is_jumping && q.property('arathnido:animation') == 2"},
+						{"balanceo.jump.3":"q.is_jumping && q.property('arathnido:animation') == 3"},
+						{"balanceo.jump.4":"q.is_jumping && q.property('arathnido:animation') == 4"},
+						{"balanceo.end":"!q.is_jumping && q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ]
+				},
+				"balanceo.2": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.2",
+						"player.spiderman.balanceo.legs" 
+					],
+					"transitions": [ 
+                        {"balanceo.jump.1":"q.is_jumping && q.property('arathnido:animation') == 1"},
+						{"balanceo.jump.2":"q.is_jumping && q.property('arathnido:animation') == 2"},
+						{"balanceo.jump.3":"q.is_jumping && q.property('arathnido:animation') == 3"},
+						{"balanceo.jump.4":"q.is_jumping && q.property('arathnido:animation') == 4"},
+						{"balanceo.end":"!q.is_jumping && q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ]
+				},
+				"balanceo.3": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.3"
+					],
+					"transitions": [ 
+                        {"balanceo.jump.1":"q.is_jumping && q.property('arathnido:animation') == 1"},
+						{"balanceo.jump.2":"q.is_jumping && q.property('arathnido:animation') == 2"},
+						{"balanceo.jump.3":"q.is_jumping && q.property('arathnido:animation') == 3"},
+						{"balanceo.jump.4":"q.is_jumping && q.property('arathnido:animation') == 4"},
+						{"balanceo.end":"!q.is_jumping && q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ]
+				},
+				"balanceo.4": {
+                    "animations": [ 
+						"player.spiderman.balanceo.idle.4"
+					],
+					"transitions": [ 
+                        {"balanceo.jump.1":"q.is_jumping && q.property('arathnido:animation') == 1"},
+						{"balanceo.jump.2":"q.is_jumping && q.property('arathnido:animation') == 2"},
+						{"balanceo.jump.3":"q.is_jumping && q.property('arathnido:animation') == 3"},
+						{"balanceo.jump.4":"q.is_jumping && q.property('arathnido:animation') == 4"},
+						{"balanceo.end":"!q.is_jumping && q.property('arathnido:animation') == 0"},
+						{"balanceo.ground":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ]
+				},
+				"player.spiderman.web.pose": {
+                    "animations": [ "player.spiderman.web.pose" ],
+					"transitions": [
+                        {"balanceo.jump.1":"q.is_jumping && q.property('arathnido:animation') == 1"},
+						{"balanceo.jump.2":"q.is_jumping && q.property('arathnido:animation') == 2"},
+						{"balanceo.jump.3":"q.is_jumping && q.property('arathnido:animation') == 3"},
+						{"balanceo.jump.4":"q.is_jumping && q.property('arathnido:animation') == 4"},
+						{"balanceo.end":"!q.is_on_ground && !q.is_jumping && q.property('arathnido:animation') == 0 && q.property('arathnido:ability0') == 0"},
+						{"aterrizaje_superheroe":"q.is_on_ground && !q.is_jumping && q.property('arathnido:animation') == 0"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.ground": {
+					"animations": [ 
+						"player.spiderman.balanceo.ground", 
+						{ "player.spiderman.falling.time": "!q.is_jumping && !q.is_on_ground" },
+						{ "move.legs": "q.is_in_water || q.is_on_ground" }, 
+						{ "move.arms": "q.is_in_water || q.is_on_ground" },
+						{ "player.spiderman.balanceo.legs": "!q.is_on_ground" },
+						{ "look_at_target": "!q.is_on_ground" }
+					],
+					"transitions": [ 
+						{"balanceo.anim":"!q.is_jumping && !q.is_on_ground && q.all_animations_finished"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{"default":"q.is_gliding || q.property('arathnido:animation') == 0"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.end": {
+                    "animations": [ "player.spiderman.balanceo.end", "player.spiderman.balanceo.time" ],
+					"transitions": [ 
+                        {"aterrizaje_superheroe":"q.is_on_ground"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+                        {"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{"default":"q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking)"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"aterrizaje_superheroe": {
+                    "animations": [ "player.spiderman.aterrizaje_superheroe" ],
+					"transitions": [ 
+                        {"default":"q.is_gliding || q.all_animations_finished || !q.is_on_ground || q.modified_move_speed > 0.8 || q.is_sneaking || q.is_sprinting"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"balanceo.jump.1": {
+                    "animations": [ "player.spiderman.balanceo.jump", "player.spiderman.falling.time" ],
+					"transitions": [ 
+                        {"aterrizaje_superheroe":"q.is_on_ground"},
+                        {"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{"web_shooter.impulse.2":"q.property('arathnido:animation') == 5 && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{"default":"q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0 && q.any_animation_finished)"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"balanceo.jump.2": {
+                    "animations": [ "player.spiderman.balanceo.end.1", "player.spiderman.falling.time" ],
+					"transitions": [ 
+                        {"aterrizaje_superheroe":"q.is_on_ground"},
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+                        {"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{"web_shooter.impulse.2":"q.property('arathnido:animation') == 5 && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{"default":"q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0 && q.any_animation_finished)"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"balanceo.jump.3": {
+                    "animations": [ "player.spiderman.balanceo.end.2", "player.spiderman.falling.time" ],
+					"transitions": [ 
+                        {"aterrizaje_superheroe":"q.is_on_ground"},
+                        {"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{"web_shooter.impulse.2":"q.property('arathnido:animation') == 5 && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{"default":"q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0 && q.any_animation_finished)"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"balanceo.jump.4": {
+                    "animations": [ "player.spiderman.balanceo.end.3", "player.spiderman.falling.time" ],
+					"transitions": [ 
+                        {"aterrizaje_superheroe":"q.is_on_ground"},
+                        {"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{"web_shooter.impulse.2":"q.property('arathnido:animation') == 5 && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{"default":"q.is_gliding || q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && !q.property('arathnido:animation') == 0 && q.any_animation_finished)"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg && q.any_animation_finished" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"web_shooter.impulse": {
+                    "animations": [ "player.spiderman.balanceo.impulso" ],
+					"transitions": [ 
+						{"default":"(q.is_gliding || q.property('arathnido:ability0') == 0) && q.all_animations_finished"},
+						{"climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water && q.all_animations_finished" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{"aterrizaje_superheroe":"q.is_on_ground"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"again_impulse":"q.property('arathnido:animation') == 5 && q.all_animations_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ],
+          "blend_transition": 0.25
+				},
+				"again_impulse": {
+                    "animations": [ "player.spiderman.balanceo.impulso" ],
+					"transitions": [ 
+						{"default":"(q.is_gliding || q.property('arathnido:ability0') == 0) && q.all_animations_finished"},
+						{"climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water && q.all_animations_finished" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{"aterrizaje_superheroe":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "web_shooter.impulse":"q.property('arathnido:animation') == 5 && q.all_animations_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ],
+          "blend_transition": 0.25
+				},
+				"web_shooter.impulse.2": {
+                    "animations": [ "player.spiderman.balanceo.impulso" ],
+					"transitions": [ 
+						{"default":"q.property('arathnido:ability0') == 0 && q.all_animations_finished && q.property('arathnido:animation') == 0"},
+						{"climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water && q.all_animations_finished" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{"aterrizaje_superheroe":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ],
+          "blend_transition": 0.25
+				},
+				"again_impulse.2": {
+                    "animations": [ "player.spiderman.balanceo.impulso" ],
+					"transitions": [ 
+						{"default":"q.property('arathnido:ability0') == 0 && q.all_animations_finished && q.property('arathnido:animation') == 0"},
+						{"climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water && q.all_animations_finished" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{"falling.heat":"q.property('arathnido:ability0') == 1 && q.all_animations_finished"},
+						{"aterrizaje_superheroe":"q.is_on_ground"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ],
+          "blend_transition": 0.25
+				},
+				"falling.heat": {
+                    "animations": [ "player.spiderman.balanceo.acrobacias.c" ],
+					"transitions": [ 
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+                        {"aterrizaje_superheroe":"q.is_on_ground && ((!q.is_sneaking && !q.is_jumping) || !q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo'))"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{"player.spiderman.falling.damage":"q.is_on_ground && (q.is_sneaking || q.is_jumping) && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')"},
+						{"web_shooter.impulse.2":"q.property('arathnido:animation') == 5 && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo')" },
+						{"default":"q.is_in_water || (q.property('arathnido:escalar') == true && q.is_sneaking) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.any_animation_finished) || q.is_gliding"},
+						{"web_shooter.shoot":"!q.is_jumping && q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && variable.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"player.spiderman.falling.damage": {
+                    "animations": [ "player.spiderman.falling.damage" ],
+					"transitions": [ 
+						{"default":"q.any_animation_finished"}
+                    ]
+				},
+				"web_shooter.web_attack": {
+                    "animations": [ "player.spiderman.web_shooter.golpe_suelo" ],
+					"transitions": [ 
+						{ "default" : "q.is_gliding" },
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{"default":"q.is_in_water"},
+						{"web_shooter.impact":"q.is_on_ground"}
+                    ]
+				},
+				"web_shooter.impact": {
+                    "animations": [ "player.spiderman.web_shooter.impact" ],
+					"transitions": [ 
+						{"default":"q.all_animations_finished"}
+                    ]
+				},
+				"web_shooter.hook": {
+                    "animations": [ "player.spiderman.balanceo.hook" ],
+					"transitions": [ 
+						{"aterrizaje_superheroe.hook":"q.property('arathnido:animation') == 0 && q.is_on_ground"},
+						{"default":"q.property('arathnido:animation') == 0 && !q.is_on_ground && q.all_animations_finished && !q.is_sneaking"},
+						{ "balanceo.1": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 1" }, 
+						{ "balanceo.2": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 2" }, 
+						{ "balanceo.3": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 3" }, 
+						{ "balanceo.4": "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 4" },
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" }
+                    ]
+				},
+				"aterrizaje_superheroe.hook": {
+                    "animations": [ "player.spiderman.aterrizaje_superheroe" ],
+					"transitions": [ 
+                        {"default":"q.is_gliding || q.all_animations_finished"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"hook.jump":"q.is_sneaking"}
+                    ]
+				},
+				"hook.jump": {
+                    "animations": [ "player.spiderman.balanceo.hook.impulse" ],
+					"transitions": [ 
+						{"default":"q.all_animations_finished"}
+                    ],
+					"blend_transition": 0.25
+				},
+				"web_shooter.super_slingshot": {
+                    "animations": [ "player.spiderman.super_slingshot.on" ],
+					"transitions": [ 
+						{"web_shooter.super_slingshot.idle":"q.all_animations_finished"},
+						{"web_shooter.super_slingshot.impulse":"q.property('arathnido:animation') == 0"}
+                    ]
+				},
+				"web_shooter.super_slingshot.idle": {
+                    "animations": [ "player.spiderman.super_slingshot.idle" ],
+					"transitions": [ 
+						{"web_shooter.super_slingshot.impulse":"q.property('arathnido:animation') == 0"}
+                    ]
+				},
+				"web_shooter.super_slingshot.impulse": {
+                    "animations": [ "player.spiderman.super_slingshot.impulse" ],
+					"transitions": [ 
+						{"falling.heat":"q.all_animations_finished"}
+                    ]
+				},
+				"player.spiderman.surf.on": {
+					"transitions": [ 
+						{"player.spiderman.surf":"(1.0)"}
+                    ],
+          "blend_transition": 0.5
+				},
+				"player.spiderman.surf": {
+                    "animations": [ "player.spiderman.surf" ],
+					"transitions": [ 
+						{"default":"q.property('arathnido:ability0') == 0"},
+						{ "climb.run_wall" : "q.is_sprinting && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && q.property('nido:flying') == false && !q.is_in_water" },
+						{ "player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ],
+          "blend_transition": 0.25
+				},
+				"player.spiderman.run.jump.on": {
+					"transitions": [ 
+						{"player.spiderman.run.jump":"(1.0)"}
+                    ]
+				},
+				"player.spiderman.run.jump": {
+                    "animations": [ "player.spiderman.run.jump" ],
+					"transitions": [ 
+						{"default":"(q.is_sneaking && q.property('arathnido:escalar') == true) || q.property('arathnido:ability0') == 0"},
+						{"aterrizaje_superheroe":"q.is_on_ground"},
+						{ "web_shooter.shoot" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && v.web_swimg" },
+						{ "web_shooter.surf" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 10" },
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"},
+						{"player.spiderman.surf.on":"q.property('arathnido:ability0') == 4"},
+						{"falling.heat":"q.all_animations_finished"},
+						{ "spiderman.crawl" : "q.is_riding && q.property('arathnido:ability0') == 5" },
+						{ "spiderman.crawl.up" : "q.is_riding && q.property('arathnido:ability0') == 7" },
+						{ "web_shooter.hook" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_hook') && q.property('arathnido:animation') == 9" },
+						{ "web_shooter.web_attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'web_shooter_balanceo') && q.property('arathnido:animation') == 7" }
+                    ]
+				},
+				"spiderman.crawl": {
+                    "animations": [ 
+						"player.spiderman.crawl", "player.spiderman.crawl.walk.c"
+					],
+					"transitions": [ 
+						{"default":"!q.is_riding || q.property('arathnido:ability0') == 0"}
+                    ]
+				},
+				"spiderman.crawl.up": {
+                    "animations": [ 
+						"player.spiderman.crawl.up", "player.spiderman.crawl.walk.c"
+					],
+					"transitions": [ 
+						{"default":"!q.is_riding || q.property('arathnido:ability0') == 0"},
+						{"player.spiderman.web.pose":"q.property('arathnido:ability0') == 3 && !q.is_on_ground"}
+                    ]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.crawl.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "anim" : "q.property('arathnido:ability0') == 6" }
+					],
+					"blend_transition": 0.25
+				},
+				"anim" : {
+					"animations" : [ "player.spiderman.climb.on" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:ability0') == 5 || q.property('arathnido:ability0') == 7" }
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.super_slingshot_effect" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{ "anim" : "q.property('arathnido:animation') == 6" }
+					]
+				},
+				"anim" : {
+					"animations" : [ "super_slingshot_effect" ],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:animation') == 0" }
+					]
+				}
+			}
+		},
+		"controller.animation.rubik" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "anim" : "q.is_sneaking && q.is_jumping && !q.is_on_ground && q.property('arathnido:ability0') == 1" }
+					]
+				},
+				"anim" : {
+					"animations" : [ "rubik.anim" ],
+					"transitions" : [
+						{ "default" : "!q.is_sneaking || !q.is_jumping || q.is_on_ground || q.property('arathnido:ability0') == 0" }
+					],
+					"blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

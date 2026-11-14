@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.symbiotes1": {
+      "arrays": {
+        "textures": {
+          "Array.variant": [
+            "Texture.variant_0",
+            "Texture.variant_1",
+            "Texture.variant_2",
+            "Texture.variant_3"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.variant[query.variant]"
+      ]
+    }
+  }
+}

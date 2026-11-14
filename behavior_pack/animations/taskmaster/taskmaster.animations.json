@@ -1,0 +1,100 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.taskmaster.sword": {
+      "loop": false,
+      "animation_length": 1.6,
+      "timeline": {
+        "0.15": [
+          "/summon spiderverse:super_rush ^ ^ ^-2 spiderverse:taskmaster",
+		  "/event entity @s spiderman:taskmaster_sword_attack"
+        ],
+        "0.325": [
+		  "/event entity @s spiderman:taskmaster_sword_off",
+          "/particle spidermanaddon:taskmaster_sword ^-1 ^ ^2",
+		  "/particle spidermanaddon:taskmaster_sword ^-0.5 ^ ^2",
+		  "/particle spidermanaddon:taskmaster_sword ^ ^ ^2",
+		  "/particle spidermanaddon:taskmaster_sword ^0.5 ^ ^2",
+		  "/particle spidermanaddon:taskmaster_sword ^1 ^ ^2",
+		  "/playsound spiderman_effects.kick_blast @s ~ ~ ~ 1 1 1"
+        ],
+        "1.5": [
+          "/event entity @s spiderman:taskmaster_sword_off"
+        ]
+      }
+    },
+    "animation.taskmaster.effects": {
+      "loop": true,
+      "animation_length": 2.5,
+      "timeline": {
+        "0.0": [
+          "/effect @s resistance 10 1 true",
+		  "/effect @s levitation 0 25 true"
+        ]
+      }
+    },
+    "animation.destroy_proyectil": {
+      "loop": true,
+      "animation_length": 0.001,
+      "timeline": {
+        "0.0": [
+          "/execute at @e[type=arrow, r=8] run event entity @e[type=spidermanaddon:taskmaster, c=1, r=2] minecraft:destroy_proyectil",
+		  "/execute at @e[type=spiderverse:web_invoke, r=8] run event entity @e[type=spidermanaddon:taskmaster, c=1, r=2] minecraft:destroy_proyectil"
+        ]
+      }
+    },
+    "animation.taskmaster.combat_mode": {
+      "loop": true,
+      "animation_length": 5.0,
+      "timeline": {
+        "0.0": [
+          "/event entity @s minecraft:sword_mode"
+        ],
+        "2.0": [
+          "/event entity @s minecraft:hability_active",
+		  "fill ~-1 ~-1 ~-1 ~2 ~2 ~2 air replace web"
+        ],
+        "4.9": [
+          "/event entity @s minecraft:sword_mode"
+        ]
+      }
+    },
+    "animation.taskmaster.hability_2": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute at @p[r=3] run event entity @e[type=spidermanaddon:taskmaster, c=1, r=2] minecraft:hability_2_attack"
+        ]
+      }
+    },
+    "animation.taskmaster.hability_3": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/execute at @e[r=3, c=1, type=!spidermanaddon:taskmaster] run event entity @e[type=spidermanaddon:taskmaster, c=1, r=2] minecraft:hability_3_attack",
+		  "/effect @e[r=2, c=1, type=!spidermanaddon:taskmaster] levitation 1 12 true"
+        ]
+      }
+    },
+    "animation.taskmaster.hability_5": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.0": [
+          "/particle minecraft:taskmaster_smoke ~ ~ ~"
+        ]
+      }
+    },
+    "animation.taskmaster.hability_3_1": {
+      "loop": true,
+      "animation_length": 0.01,
+      "timeline": {
+        "0.0": [
+		  "/tp @s @p"
+        ]
+      }
+    }
+  }
+}

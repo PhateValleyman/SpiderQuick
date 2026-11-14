@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:taskmaster_shoot",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster_shoot"
+			},
+			"geometry": {
+				"default": "geometry.taskmaster_shoot"
+			},
+			"animations": {
+				"loop": "animation.taskmaster_shoot.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "taskmaster_shoot",
+				"texture_index": 0
+			}
+		}
+	}
+}

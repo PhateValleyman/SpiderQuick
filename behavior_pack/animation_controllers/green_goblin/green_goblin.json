@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.green_goblin.planeador" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/event entity @s dr_octopus:move.off"
+					],
+					"transitions" : [
+						{
+							"planeador" : "q.property('arathnido:custom_riding') == 20 && q.is_riding"
+						}
+					]
+				},
+				"planeador" : {
+					"transitions" : [
+						{
+							"default" : "!q.is_riding"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.green_goblin.combat_mode" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/event entity @s green_goblin:off_habilities"
+					],
+					"transitions" : [
+						{
+							"green_goblin.combat_mode" : "q.has_target"
+						}
+					]
+				},
+				"green_goblin.combat_mode" : {
+					"animations" : [ "combat_mode" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

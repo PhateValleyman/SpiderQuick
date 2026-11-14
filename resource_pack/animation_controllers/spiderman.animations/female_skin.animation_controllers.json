@@ -1,0 +1,21 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.new_female_skin.idle":{
+			"states":{
+				"default":{
+					"transitions": [
+					{
+						"mask":"query.equipped_item_any_tag('slot.armor.head', 'new_female_skin')"}
+						]
+						},
+						"mask":{"animations":["new_female_skin.idle"],
+						"transitions":[
+						{
+							"default":"!query.equipped_item_any_tag('slot.armor.head', 'new_female_skin')"}
+							]
+						}
+					}
+				}
+			}
+		}

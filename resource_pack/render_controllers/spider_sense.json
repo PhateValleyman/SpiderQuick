@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spider_sense": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.spider_sense" } ],
+      "textures": [ "Texture.spider_sense" ]
+    }
+  }
+}

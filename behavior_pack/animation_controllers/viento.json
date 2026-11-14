@@ -1,0 +1,117 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.spiderman.elytra.destroy_glass" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"aire" : "(q.property('arathnido:animation') == 12 || q.property('arathnido:animation') == 15) && q.is_gliding"
+						}
+					]
+				},
+				"aire" : {
+					"animations" : [ "player.spiderman.elytra.destroy_glass.time", "player.spiderman.elytra.destroy_glass" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.aire" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"aire" : "q.property('arathnido:animation') == 15 && q.is_gliding"
+						}
+					]
+				},
+				"aire" : {
+					"animations" : [ "player.spiderman.aire" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.is_gliding"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spiderman.viento" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman" : "q.property('arathnido:animation') == 12 && q.is_gliding"
+						}
+					]
+				},
+				"spiderman" : {
+					"animations" : [ "player.spiderman.viento" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.is_gliding"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spiderman.viento" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/event entity @a[r=15] spiderman:elytra_viento" ],
+					"transitions" : [
+						{
+							"spiderman.combat" : "(1.0)"
+						}
+					]
+				},
+				"spiderman.combat" : {
+					"on_entry" : [ "/event entity @a[r=15] spiderman:elytra_viento" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.air_compressor" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/execute positioned ~ ~2 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~7 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~13 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~19 ~ run event entity @a[r=4] spiderman:air_compressor"
+					],
+					"transitions" : [
+						{
+							"spiderman.combat" : "(1.0)"
+						}
+					]
+				},
+				"spiderman.combat" : {
+					"on_entry" : [ 
+						"/execute positioned ~ ~2 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~7 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~13 ~ run event entity @a[r=4] spiderman:air_compressor",
+						"/execute positioned ~ ~19 ~ run event entity @a[r=4] spiderman:air_compressor"
+					],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

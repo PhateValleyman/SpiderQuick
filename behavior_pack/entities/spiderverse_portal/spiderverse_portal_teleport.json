@@ -1,0 +1,85 @@
+{
+    "format_version": "1.21.80",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "spidermanaddon:spiderverse_portal_teleport",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "properties": {
+                "spidermanaddon:y_rot": {
+                    "client_sync": true,
+                    "default": 0,
+                    "type": "int",
+                    "range": [-180, 180]
+                }
+            }
+        },
+        "component_groups": {
+            "minecraft:death": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": true
+                }
+            }
+        },
+        "components": {
+            "minecraft:loot": {
+                "table": "loot_tables/spiderverse_portal/spiderverse_portal.json"
+            },
+		  "minecraft:knockback_resistance": {
+			"value": 1
+		  },
+            "minecraft:body_rotation_blocked": {},
+            "minecraft:timer": {
+                "looping": true,
+                "randomInterval": false,
+                "time": 120.0,
+                "time_down_event": {
+                    "event": "minecraft:death"
+                }
+            },
+            "minecraft:type_family": {
+                "family": ["spiderverse_portal", "furniture"]
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:navigation.walk": {},
+            "minecraft:movement.basic": {},
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": "no"
+                }
+            },
+            "minecraft:movement": {
+                "value": 0,
+                "max": 0
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:scale": {
+                "value": 1.15
+            },
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.5
+            },
+            "minecraft:tick_world": {
+                "never_despawn": true,
+                "radius": 2
+            }
+        },
+
+        "events": {
+            "minecraft:death": {
+                "add": {
+                    "component_groups": ["minecraft:death"]
+                }
+            }
+        }
+    }
+}

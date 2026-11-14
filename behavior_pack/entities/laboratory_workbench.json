@@ -1,0 +1,122 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:laboratory_workbench",
+      "is_spawnable": true,
+
+      "is_summonable": true,
+
+      "is_experimental": false
+    },
+    "component_groups": {
+		"marveladdons:death": {
+				"minecraft:spawn_entity": {
+					"entities": {
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"single_use": true,
+						"num_to_spawn": 1,
+						"spawn_item": "spidermanaddon:laboratory_workbench_spawn_egg"
+					}
+				},
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		}
+	},
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/laboratory_workbench.json"
+      },
+      "minecraft:type_family": {
+        "family": [ "laboratory_workbench", "furniture" ]
+      },
+	  "minecraft:damage_sensor": {
+		"triggers": {
+		  "cause": "all",
+		  "deals_damage": false
+		}
+	  },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+		"minecraft:interact": {
+		  "interactions": [
+			{
+			  "on_interact": {
+				"filters": {
+				  "all_of": [
+					{
+					  "test": "is_sneaking",
+					  "subject": "other",
+					  "value": true
+					}
+				  ]
+				},
+				"event": "marveladdons:death"
+			  },
+			  "interact_text": "action.interact.armadura",
+			  "use_item": false,
+			  "play_sounds": "armor.equip_leather"
+			},
+			{
+			  "on_interact": {
+				"filters": {
+				  "all_of": [
+					{
+					  "test": "has_equipment",
+					  "subject": "other",
+					  "domain": "hand"
+					}
+				  ]
+				},
+				"event": "marveladdons:interact"
+			  },
+			  "interact_text": "action.interact.armadura",
+			  "use_item": false,
+			  "play_sounds": "armor.equip_leather"
+			}
+		  ]
+		},
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:physics": {
+      },
+	"minecraft:pushable": {
+		"is_pushable": false,
+		"is_pushable_by_piston": false
+	},
+	"minecraft:fire_immune": {},
+      "minecraft:collision_box": {
+        "width": 1.5,
+        "height": 3
+      }
+    },
+        
+	"events": {
+	  "marveladdons:death": {
+		"add": {
+		  "component_groups": [
+			"marveladdons:death"
+		  ]
+		}
+	  }
+	}
+  }
+}

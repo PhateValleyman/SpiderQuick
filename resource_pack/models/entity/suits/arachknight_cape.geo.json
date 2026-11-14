@@ -1,0 +1,157 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.arachknight_cape",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "capa",
+					"parent": "body",
+					"pivot": [0, 24.3, 2.4],
+					"cubes": [
+						{"origin": [-6, 22.2, 1.3], "size": [12, 2, 1], "inflate": 0.05, "uv": [0, 125]},
+						{"origin": [2, 23.2, -1.8], "size": [3, 1, 3], "inflate": 0.05, "uv": [0, 116]},
+						{"origin": [-5, 23.2, -1.8], "size": [3, 1, 3], "inflate": 0.05, "uv": [12, 116]}
+					]
+				},
+				{
+					"name": "capa2",
+					"parent": "capa",
+					"pivot": [0, 22.15, 2.35],
+					"cubes": [
+						{"origin": [-6, 16.15, 1.35], "size": [12, 6, 1], "uv": [0, 109]}
+					]
+				},
+				{
+					"name": "capa2_0",
+					"parent": "capa2",
+					"pivot": [0, 22.15, 2.35]
+				},
+				{
+					"name": "capa2_1",
+					"parent": "capa2_0",
+					"pivot": [-6, 19.15, 1.85],
+					"cubes": [
+						{"origin": [-18, 16.15, 1.35], "size": [12, 6, 1], "uv": [7, 81]}
+					]
+				},
+				{
+					"name": "capa2_2",
+					"parent": "capa2_0",
+					"pivot": [6, 19.15, 1.85],
+					"cubes": [
+						{"origin": [6, 16.15, 1.35], "size": [12, 6, 1], "uv": [7, 88]}
+					]
+				},
+				{
+					"name": "capa3",
+					"parent": "capa2",
+					"pivot": [0, 16.15, 2.35],
+					"cubes": [
+						{"origin": [-6, 10.15, 1.35], "size": [12, 6, 1], "uv": [0, 102]}
+					]
+				},
+				{
+					"name": "capa4",
+					"parent": "capa3",
+					"pivot": [0, 10.15, 2.35],
+					"cubes": [
+						{"origin": [-6, 4.15, 1.35], "size": [12, 6, 1], "uv": [26, 102]}
+					]
+				},
+				{
+					"name": "capa5",
+					"parent": "capa4",
+					"pivot": [0, 4.15, 2.35],
+					"cubes": [
+						{"origin": [-6, 0.15, 1.35], "size": [12, 4, 1], "uv": [0, 120]}
+					]
+				},
+				{
+					"name": "capa2_9",
+					"parent": "capa5",
+					"pivot": [0, 6.15, 2.35]
+				},
+				{
+					"name": "capa2_10",
+					"parent": "capa2_9",
+					"pivot": [-6, 3.15, 1.85],
+					"cubes": [
+						{"origin": [-18, 0.15, 1.35], "size": [12, 4, 1], "uv": [83, 71]}
+					]
+				},
+				{
+					"name": "capa2_11",
+					"parent": "capa2_9",
+					"pivot": [6, 3.15, 1.85],
+					"cubes": [
+						{"origin": [6, 0.15, 1.35], "size": [12, 4, 1], "uv": [83, 76]}
+					]
+				},
+				{
+					"name": "capa2_6",
+					"parent": "capa4",
+					"pivot": [0, 10.15, 2.35]
+				},
+				{
+					"name": "capa2_7",
+					"parent": "capa2_6",
+					"pivot": [-6, 7.15, 1.85],
+					"cubes": [
+						{"origin": [-18, 4.15, 1.35], "size": [12, 6, 1], "uv": [59, 81]}
+					]
+				},
+				{
+					"name": "capa2_8",
+					"parent": "capa2_6",
+					"pivot": [6, 7.15, 1.85],
+					"cubes": [
+						{"origin": [6, 4.15, 1.35], "size": [12, 6, 1], "uv": [59, 88]}
+					]
+				},
+				{
+					"name": "capa2_3",
+					"parent": "capa3",
+					"pivot": [0, 16.15, 2.35]
+				},
+				{
+					"name": "capa2_4",
+					"parent": "capa2_3",
+					"pivot": [-6, 13.15, 1.85],
+					"cubes": [
+						{"origin": [-18, 10.15, 1.35], "size": [12, 6, 1], "uv": [33, 81]}
+					]
+				},
+				{
+					"name": "capa2_5",
+					"parent": "capa2_3",
+					"pivot": [6, 13.15, 1.85],
+					"cubes": [
+						{"origin": [6, 10.15, 1.35], "size": [12, 6, 1], "uv": [33, 88]}
+					]
+				}
+			]
+		}
+	]
+}

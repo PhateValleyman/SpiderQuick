@@ -1,0 +1,851 @@
+{
+  "effects.hulk_super_attack": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_super_attack"
+    ]
+  },
+  "effects.hulk_clap": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_clap"
+    ]
+  },
+  "effects.hulk.foot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/foothulk0",
+      "sounds/effects/foothulk1",
+      "sounds/effects/foothulk2"
+    ]
+  },
+  "effects.hulk_roar": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_roar"
+    ]
+  },
+  "effects.hulk_rock_destroy": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_rock_destroy"
+    ]
+  },
+  "effects.hulk_jump": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_jump"
+    ]
+  },
+  "effects.hulk.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_idle0",
+      "sounds/effects/hulk_idle1",
+      "sounds/effects/hulk_idle2",
+      "sounds/effects/hulk_idle3",
+      "sounds/effects/hulk_idle4"
+    ]
+  },
+  "effects.hulk.punch": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/hulk_punch/punch_0",
+      "sounds/hulk_punch/punch_1",
+      "sounds/hulk_punch/punch_2",
+      "sounds/hulk_punch/punch_3",
+      "sounds/hulk_punch/punch_4",
+      "sounds/hulk_punch/punch_5",
+      "sounds/hulk_punch/punch_6",
+      "sounds/hulk_punch/punch_7",
+      "sounds/hulk_punch/punch_8",
+      "sounds/hulk_punch/punch_9",
+      "sounds/hulk_punch/punch_10",
+      "sounds/hulk_punch/punch_11",
+      "sounds/hulk_punch/punch_12"
+    ]
+  },
+  "effects.hulk.punch.vocals": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/effects/hulk_punch0",
+      "sounds/effects/hulk_punch1",
+      "sounds/effects/hulk_punch2",
+      "sounds/effects/hulk_punch3"
+    ]
+  },
+  "symbiont.human_clap": {
+    "category": "Music",
+    "sounds": [
+      "sounds/venom/human_clap"
+    ]
+  },
+  "symbiont.evil_dance": {
+    "category": "Music",
+    "sounds": [
+      "sounds/venom/evil_dance"
+    ]
+  },
+  "effect.police_scan": {
+    "category": "Music",
+    "sounds": [
+      "sounds/police_scan/scan0",
+      "sounds/police_scan/scan1",
+      "sounds/police_scan/scan2"
+    ]
+  },
+  "electro.theme": {
+    "category": "Music",
+    "sounds": [
+      "sounds/electro/electro_theme"
+    ]
+  },
+  "man_spider.bone_break": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/man_spider/bone_break"
+    ]
+  },
+  "man_spider.roar": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/man_spider/roar"
+    ]
+  },
+  "man_spider.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/man_spider/idle0",
+      "sounds/man_spider/idle1",
+      "sounds/man_spider/idle2"
+    ]
+  },
+  "spiderman_effects.cash_register": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/cash_register"
+    ]
+  },
+  "spiderman_effects.fail": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/fail"
+    ]
+  },
+  "spiderman_effects.pizza_theme": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/pizza_theme"
+    ]
+  },
+  "scorpion.poison": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/scorpion/poison"
+    ]
+  },
+  "black_cat.laugh": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/black_cat/laugh"
+    ]
+  },
+  "black_cat.shh": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/black_cat/shh"
+    ]
+  },
+  "black_cat.yes": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/black_cat/yes0",
+      "sounds/black_cat/yes1",
+      "sounds/black_cat/yes2"
+    ]
+  },
+  "black_cat.seducer": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/black_cat/seducer"
+    ]
+  },
+  "boomerang.propulsor_on": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/boomerang/propulsor_on"
+    ]
+  },
+  "boomerang.propulsor_loop": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/boomerang/propulsor_loop"
+    ]
+  },
+  "boomerang.boomerang": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/boomerang/boomerang"
+    ]
+  },
+  "spiderman_effects.misil_shoot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/misil_shoot"
+    ]
+  },
+  "fly_loop": {
+    "category": "Music",
+    "sounds": [
+      "sounds/elytra/elytra_loop"
+    ]
+  },
+  "mysterio.bomb.explode": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mysterio/mysterio_repulse_explode",
+      "sounds/mysterio/mysterio_repulse_explode1"
+    ]
+  },
+  "mysterio.bomb.loop": {
+    "category": "music",
+    "sounds": [
+      "sounds/mysterio/mysterio_bomb.loop"
+    ]
+  },
+  "mysterio.bomb.start": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mysterio/mysterio_bomb.start"
+    ]
+  },
+  "mysterio.repulse": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/mysterio/mysterio_repulse0",
+      "sounds/mysterio/mysterio_repulse1",
+      "sounds/mysterio/mysterio_repulse2"
+    ]
+  },
+  "green_goblin.bomb_timer": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/green_goblin/bomb_timer"
+    ]
+  },
+  "ray_laser.loop": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/green_goblin/ray_laser_loop"
+    ]
+  },
+  "ray_laser.on": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/green_goblin/ray_laser_on"
+    ]
+  },
+  "spiderman_effects.heal": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/heal"
+    ]
+  },
+  "spiderman_effects.focus": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/focus"
+    ]
+  },
+  "spiderman_effects.spider_scan": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/spider_scan"
+    ]
+  },
+  "spiderman_effects.punch_impact": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/punch_impact/punch0",
+      "sounds/spiderman_effects/punch_impact/punch1",
+      "sounds/spiderman_effects/punch_impact/punch2",
+      "sounds/spiderman_effects/punch_impact/punch3",
+      "sounds/spiderman_effects/punch_impact/punch4",
+      "sounds/spiderman_effects/punch_impact/punch5"
+    ]
+  },
+  "spiderman_effects.spider_ham_punch": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/spider_ham_punch"
+    ]
+  },
+  "spiderverse_portal.extended": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderverse_portal/extended"
+    ]
+  },
+  "spiderverse_portal.short": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderverse_portal/short"
+    ]
+  },
+  "spiderman_effects.nanotechnology_effect": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/nanotechnology_effect"
+    ]
+  },
+  "spiderman_effects.rock_out": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/rock_out0",
+      "sounds/spiderman_effects/rock_out1"
+    ]
+  },
+  "spiderman_effects.negative_shockwave": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/negative_shockwave"
+    ]
+  },
+  "spiderverse.glitch": {
+    "category": "Music",
+    "sounds": [
+      "sounds/glitch/glitch0",
+      "sounds/glitch/glitch1",
+      "sounds/glitch/glitch2"
+    ]
+  },
+  "suits_machine.1": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/suits_machine/suits_machine.1"
+    ]
+  },
+  "suits_machine.2": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/suits_machine/suits_machine.2"
+    ]
+  },
+  "venom.roar": {
+    "category": "Music",
+    "sounds": [
+      "sounds/venom/venom_roar0",
+      "sounds/venom/venom_roar1",
+      "sounds/venom/venom_roar2",
+      "sounds/venom/venom_roar3"
+    ]
+  },
+  "venom.ambient": {
+    "category": "Music",
+    "sounds": [
+      "sounds/venom/venom_ambient"
+    ]
+  },
+  "venom.punch": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/venom_foot0",
+      "sounds/venom/punch"
+    ]
+  },
+  "venom.foot.0": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/venom_foot0"
+    ]
+  },
+  "venom.equip": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/venom_equip"
+    ]
+  },
+  "venom.whip": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/venom_whip0",
+      "sounds/venom/venom_whip1"
+    ]
+  },
+  "venom.axe": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/venom_axe0",
+      "sounds/venom/venom_axe1",
+      "sounds/venom/venom_axe2"
+    ]
+  },
+  "spiderman_effects.reflexes": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/reflexes/reflexes.0",
+      "sounds/spiderman_effects/reflexes/reflexes.1"
+    ]
+  },
+  "spiderman_effects.impulse.impulse.0": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/impulse/impulse.0"
+    ]
+  },
+  "spiderman_effects.falling.idle": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/falling/falling_idle"
+    ]
+  },
+  "spiderman_effects.falling.on": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/falling/fall_on"
+    ]
+  },
+  "spiderman_effects.wind": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/wind"
+    ]
+  },
+  "venom.foot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/venom/foot0",
+      "sounds/venom/foot1",
+      "sounds/venom/foot2"
+    ]
+  },
+  "venom.regeneration": {
+    "category": "Music",
+    "sounds": [
+      "sounds/spiderman_effects/venom.regeneration"
+    ]
+  },
+  "venom.hability.end": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/venom.hability.end"
+    ]
+  },
+  "venom.hability": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/venom.hability"
+    ]
+  },
+  "venom.super_jump": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/venom.super_jump"
+    ]
+  },
+  "spiderman_effects.venom_bite": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/venom_bite"
+    ]
+  },
+  "dr_octopus.campo_fuerza": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/dr_octopus/dr_octopus_campo_fuerza"
+    ]
+  },
+  "dr_octopus.arms.attack": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/dr_octopus/dr_octopus_arms_attack"
+    ]
+  },
+  "dr_octopus.arms.jump": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/dr_octopus/dr_octopus_arms_jump"
+    ]
+  },
+  "dr_octopus.arms.on": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/dr_octopus/dr_octopus_arms_on"
+    ]
+  },
+  "dr_octopus.walk": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/dr_octopus/dr_octopus_arms_walk0",
+      "sounds/dr_octopus/dr_octopus_arms_walk1"
+    ]
+  },
+  "penguin_stacy.hurt": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/penguin_stacy/hurt1",
+      "sounds/penguin_stacy/hurt2",
+      "sounds/penguin_stacy/hurt3",
+      "sounds/penguin_stacy/hurt4"
+    ]
+  },
+  "penguin_stacy.death": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/penguin_stacy/death1",
+      "sounds/penguin_stacy/death2"
+    ]
+  },
+  "penguin_stacy.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/penguin_stacy/idle1",
+      "sounds/penguin_stacy/idle2",
+      "sounds/penguin_stacy/idle3",
+      "sounds/penguin_stacy/idle4"
+    ]
+  },
+  "robot_dog.death": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/robot_dog/death"
+    ]
+  },
+  "robot_dog.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/robot_dog/say1",
+      "sounds/robot_dog/say2",
+      "sounds/robot_dog/say3",
+      "sounds/robot_dog/say4"
+    ]
+  },
+  "spiderman_effects.hunters_attack": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/hunters_attack"
+    ]
+  },
+  "radioactive_spider_theme": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/radioactive_spider_theme"
+    ]
+  },
+  "spider_bite": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/spider_bite"
+    ]
+  },
+  "spider_bot.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spider_bot/spider_bot_idle1",
+      "sounds/spider_bot/spider_bot_idle2",
+      "sounds/spider_bot/spider_bot_idle3",
+      "sounds/spider_bot/spider_bot_idle4"
+    ]
+  },
+  "spider_bot.walk": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spider_bot/spider_bot_walk0",
+      "sounds/spider_bot/spider_bot_walk1",
+      "sounds/spider_bot/spider_bot_walk2"
+    ]
+  },
+  "spider_bot.death": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spider_bot/spider_bot_death"
+    ]
+  },
+  "spiderman_effects.trace_c_shoot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/trace_c_shoot"
+    ]
+  },
+  "spiderman_effects.green_goblin_loop": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/green_goblin_loop"
+    ]
+  },
+  "spiderman_effects.spider_shock": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/spider_shock"
+    ]
+  },
+  "spiderman_effects.spider_ruch": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/spider_ruch"
+    ]
+  },
+  "lizard.roar": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/lizard/lizard_roar"
+    ]
+  },
+  "lizard.hit": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/lizard/lizard_hit0",
+      "sounds/lizard/lizard_hit1"
+    ]
+  },
+  "lizard.jump": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/lizard/lizard_jump"
+    ]
+  },
+  "lizard.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/lizard/lizard_idle0",
+      "sounds/lizard/lizard_idle1"
+    ]
+  },
+  "green_goblin.laser": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/taskmaster/green_goblin_laser"
+    ]
+  },
+  "taskmaster.hability": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/taskmaster/taskmaster_hability"
+    ]
+  },
+  "spiderman_effects.symbiote_claw": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/symbiote_claw"
+    ]
+  },
+  "taskmaster.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/taskmaster/taskmaster_idle0",
+      "sounds/taskmaster/taskmaster_idle1",
+      "sounds/taskmaster/taskmaster_idle2",
+      "sounds/taskmaster/taskmaster_idle3"
+    ]
+  },
+  "shocker.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/shocker/shocker_idle0",
+      "sounds/shocker/shocker_idle1",
+      "sounds/shocker/shocker_idle2",
+      "sounds/shocker/shocker_idle3"
+    ]
+  },
+  "green_goblin.hit": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/green_goblin/green_goblin_hit0",
+      "sounds/green_goblin/green_goblin_hit1",
+      "sounds/green_goblin/green_goblin_hit2"
+    ]
+  },
+  "green_goblin.idle": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/green_goblin/green_goblin_idle0",
+      "sounds/green_goblin/green_goblin_idle1",
+      "sounds/green_goblin/green_goblin_idle2",
+      "sounds/green_goblin/green_goblin_idle3",
+      "sounds/green_goblin/green_goblin_idle4",
+      "sounds/green_goblin/green_goblin_idle5"
+    ]
+  },
+  "spiderman_effects.kick_blast": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/kick_blast"
+    ]
+  },
+  "spiderman_effects.venom_blast_punch": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/venom_blast_punch"
+    ]
+  },
+  "spiderman_effects.introdution": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/introdution"
+    ]
+  },
+  "spiderman_effects.venom_off": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/venom_off"
+    ]
+  },
+  "spiderman_effects.venom_transform": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/venom_transform"
+    ]
+  },
+  "vehicles.bike": {
+    "category": "music",
+    "sounds": [
+      "sounds/vehicles/bike"
+    ]
+  },
+  "vehicles.car": {
+    "category": "music",
+    "sounds": [
+      "sounds/vehicles/car"
+    ]
+  },
+  "vehicles.motor": {
+    "category": "music",
+    "sounds": [
+      "sounds/vehicles/motor"
+    ]
+  },
+  "spiderman_effects.shocker_shot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/shocker_shot"
+    ]
+  },
+  "spiderman_effects.shocker_shot_ultra": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/shocker_shot_ultra"
+    ]
+  },
+  "spiderman_effects.pop": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/pop"
+    ]
+  },
+  "spiderman_effects.spider_sense": {
+    "category": "music",
+    "sounds": [
+      "sounds/spiderman_effects/spider_sense"
+    ]
+  },
+  "spiderman_effects.electric_impact": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/electric_impact"
+    ]
+  },
+  "spiderman_effects.electric_web_shooter": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/electric_web_shooter"
+    ]
+  },
+  "spiderman_effects.pistol_reload": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/spiderman_effects/pistol_reload",
+        "volume": 0.5
+      }
+    ]
+  },
+  "spiderman_effects.fusil_reload": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/spiderman_effects/fusil_reload",
+        "volume": 0.5
+      }
+    ]
+  },
+  "spiderman_effects.pistol_shoot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/spiderman_effects/pistol_shoot",
+        "volume": 0.35
+      }
+    ]
+  },
+  "spiderman_effects.fusil_shoot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/spiderman_effects/fusil_shoot",
+        "volume": 0.35
+      }
+    ]
+  },
+  "spiderman_effects.punch": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/punch_0",
+      "sounds/spiderman_effects/punch_1",
+      "sounds/spiderman_effects/punch_2",
+      "sounds/spiderman_effects/punch_3",
+      "sounds/spiderman_effects/punch_4",
+      "sounds/spiderman_effects/punch_5",
+      "sounds/spiderman_effects/punch_6",
+      "sounds/spiderman_effects/punch_7",
+      "sounds/spiderman_effects/punch_8",
+      "sounds/spiderman_effects/punch_9",
+      "sounds/spiderman_effects/punch_10",
+      "sounds/spiderman_effects/punch_11",
+      "sounds/spiderman_effects/punch_12"
+    ]
+  },
+  "spiderman_effects.rock_destroy": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/spiderman_effects/rock_destroy"
+    ]
+  },
+  "web_shooter_sounds.empty": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/web_shooter_sounds/empty0",
+      "sounds/web_shooter_sounds/empty1",
+      "sounds/web_shooter_sounds/empty2"
+    ]
+  },
+  "web_shooter_sounds.web_shot_67": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/web_shooter_sounds/web_shot_67"
+    ]
+  },
+  "web_shooter_sounds.shoot": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/web_shooter_sounds/shoot0",
+      "sounds/web_shooter_sounds/shoot1",
+      "sounds/web_shooter_sounds/shoot2",
+      "sounds/web_shooter_sounds/shoot3"
+    ]
+  },
+  "web_shooter_sounds.balancing_loop": {
+    "category": "Music",
+    "sounds": [
+      "sounds/web_shooter_sounds/balancing_loop0",
+      "sounds/web_shooter_sounds/balancing_loop1"
+    ]
+  },
+  "web_shooter_sounds.balancing_stop": {
+    "category": "neutral",
+    "sounds": [
+      "sounds/web_shooter_sounds/balancing_stop0",
+      "sounds/web_shooter_sounds/balancing_stop1",
+      "sounds/web_shooter_sounds/balancing_stop2"
+    ]
+  }
+}

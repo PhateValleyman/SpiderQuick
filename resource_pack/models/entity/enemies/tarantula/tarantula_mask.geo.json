@@ -1,0 +1,56 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.tarantula_mask",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4.5, 23.5, -4.5], "size": [9, 9, 9], "uv": [0, 0]},
+						{"origin": [-1, 26.5, 3], "size": [2, 2, 2], "uv": [71, 0]}
+					]
+				},
+				{
+					"name": "if0",
+					"parent": "head",
+					"pivot": [0.6, 27, 5.1],
+					"cubes": [
+						{"origin": [0.1, 21, 4.1], "size": [1, 6, 1], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "if1",
+					"parent": "head",
+					"pivot": [-0.6, 27, 5.1],
+					"cubes": [
+						{"origin": [-1.1, 19, 4.1], "size": [1, 8, 1], "uv": [108, 0]}
+					]
+				}
+			]
+		}
+	]
+}

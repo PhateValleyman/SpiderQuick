@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "animations": {
+    "animation.regeneration.powers": {
+      "loop": false,
+      "animation_length": 1.1,
+      "timeline": {
+        "0.0": [
+			"/effect @s instant_health 1 25"
+        ]
+      }
+    }
+  }
+}

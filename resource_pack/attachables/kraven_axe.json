@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:kraven_axe",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/items_3d/kraven_axe"
+			},
+			"geometry": {
+				"default": "geometry.kraven_axe"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"first_person_main_hand": "animation.kraven_axe.first"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';"
+				],
+				"animate": [
+					{
+						"first_person_main_hand": "(v.main_hand && c.is_first_person)"
+					}
+				]
+			}
+		}
+	}
+}

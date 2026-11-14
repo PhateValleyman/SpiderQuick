@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:mano_shuriken",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/mano_ninja/mano_shuriken"
+			},
+			"geometry": {
+				"default": "geometry.mano_shuriken"
+			},
+			"animations": {
+				"loop": "animation.mano_shuriken.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "mano_shuriken",
+				"texture_index": 0
+			}
+		}
+	}
+}

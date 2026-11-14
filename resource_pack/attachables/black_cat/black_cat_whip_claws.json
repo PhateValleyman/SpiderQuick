@@ -1,0 +1,43 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:black_cat_whip_claws",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_items/black_cat_claws",
+				"black_cat_whip_claws": "textures/3d_items/black_cat_whip_claws"
+			},
+			"geometry": {
+				"default": "geometry.black_cat_claws",
+				"web_shooter_third": "geometry.black_cat_claws_third",
+				"black_cat_whip_claws_first": "geometry.black_cat_whip_claws_first",
+				"black_cat_whip_claws_third": "geometry.black_cat_whip_claws_third"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person" },
+				{ "controller.render.web_shooter.third": "!q.equipped_item_any_tag('slot.armor.head', 'black_cat_skin') && !c.is_first_person" },
+				{ "controller.render.black_cat.whip_claws.first": "c.is_first_person" },
+				{ "controller.render.black_cat.whip_claws.third": "!c.is_first_person" }
+			],
+			"animations": {
+				"attack.0": "animation.black_cat.whip_claws.attack.0",
+				"attack.1": "animation.black_cat.whip_claws.attack.1",
+				"off": "animation.black_cat.whip_claws.off",
+				"c": "controller.animation.black_cat.whip_claws"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';"
+				],
+				"animate": [
+					{
+						"c": "(v.main_hand)"
+					}
+				]
+			}
+		}
+	}
+}

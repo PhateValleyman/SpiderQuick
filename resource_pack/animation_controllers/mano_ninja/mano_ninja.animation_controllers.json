@@ -1,0 +1,121 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mano_ninja": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "idle",
+            {
+              "walk": "q.modified_move_speed > 0.1 && q.is_on_ground && query.property('spidermanaddon:ninja_state') == 'default'"
+            }
+          ],
+          "transitions": [
+            {
+              "jump": "query.property('spidermanaddon:ninja_state') == 'jump'"
+            },
+            {
+              "jump_attack": "query.property('spidermanaddon:ninja_state') == 'jump_attack'"
+            },
+            {
+              "impulse_attack": "query.property('spidermanaddon:ninja_state') == 'impulse_attack'"
+            },
+            {
+              "impulse_attack_end": "query.property('spidermanaddon:ninja_state') == 'impulse_attack_end'"
+            },
+			{
+			  "shuriken": "query.property('spidermanaddon:ninja_state') == 'shuriken'"
+			}
+          ]
+        },
+		"shuriken": {
+		  "animations": [
+			"shuriken"
+		  ],
+		  "transitions": [
+			{
+			  "default": "q.all_animations_finished"
+			}
+		  ]
+		},
+        "jump": {
+          "animations": ["jump"],
+          "transitions": [
+            {
+              "jump_attack": "query.property('spidermanaddon:ninja_state') == 'jump_attack'"
+            },
+            {
+              "default": "query.property('spidermanaddon:ninja_state') == 'default'"
+            }
+          ]
+        },
+
+        "jump_attack": {
+          "animations": ["jump_attack"],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        },
+
+        "impulse_attack": {
+          "animations": ["impulse_attack"],
+          "transitions": [
+            {
+              "impulse_attack_end": "query.property('spidermanaddon:ninja_state') == 'impulse_attack_end'"
+            },
+            {
+              "default": "query.property('spidermanaddon:ninja_state') == 'default'"
+            }
+          ]
+        },
+
+        "impulse_attack_end": {
+          "animations": ["impulse_attack_end"],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    },
+
+    "controller.animation.mano_ninja.melee": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack_0": "variable.attack > 0.0 && query.property('spidermanaddon:ninja_state') == 'default'"
+            }
+          ]
+        },
+
+        "attack_0": {
+          "animations": [
+            "attack_0"
+          ],
+          "transitions": [
+			{
+			  "attack_1": "q.all_animations_finished && variable.attack > 0.0"
+			}
+          ]
+        },
+
+        "attack_1": {
+          "animations": [
+            "attack_1"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

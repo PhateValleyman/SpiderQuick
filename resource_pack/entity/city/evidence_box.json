@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:evidence_box",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_items/evidence_box"
+			},
+			"geometry": {
+				"default": "geometry.evidence_box"
+			},
+			"animations": {
+				"loop": "animation.evidence_box.idle"
+			},
+            "particle_effects": {
+				"light": "spidermanaddon:mysterio_light"
+            },
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "evidence_box",
+				"texture_index": 0
+			}
+		}
+	}
+}

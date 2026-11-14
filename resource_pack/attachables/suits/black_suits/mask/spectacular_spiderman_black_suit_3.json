@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spectacular_spiderman_black_mask_3",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime",
+				"outline": "outline"
+			},
+			"textures": {
+				"default": "textures/suits/spectacular_spiderman_black_suit_3",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible",
+				"outline": "textures/suits/spiderman_outline",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_mask_x64",
+				"armor_skin": "geometry.player_ironman",
+				"outline": "geometry.spiderman_mask_x64_outline"
+			},
+
+			"render_controllers": [
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.outline": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

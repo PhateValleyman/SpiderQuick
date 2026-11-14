@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:web_shot",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.web_shooters"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"web_shooter", "web_shooter_shoot", "special_item", "item_using","item_hand","web_shooter_shoot_anim"
+                ]
+            },
+		  "minecraft:cooldown": {
+			"category": "web_shot",
+			"duration": 0.15
+		  },
+		  "minecraft:food": {
+			"can_always_eat": true
+		  },
+		  "minecraft:allow_off_hand": false,
+		  "minecraft:hand_equipped": true,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 1.0
+			},
+		  "minecraft:max_stack_size": 1,
+		  "minecraft:icon": {
+			"texture": "web_shot"
+		  }
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.punto_viento.idle": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"3.0": [0, 0, -360]
+					}
+				},
+				"viento": {
+					"scale": 0.1
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "viento",
+					"locator": "viento"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:web_blossom",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/no"
+			},
+			"geometry": {
+				"default": "geometry.no"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

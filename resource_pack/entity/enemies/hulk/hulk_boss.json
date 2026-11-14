@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:hulk_boss",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "textures": {
+        "default": "textures/entity/hulk/hulk_brand_new_day"
+      },
+      "geometry": {
+        "default": "geometry.hulk_v2"
+      },
+      "animations": {
+        "controller": "controller.animation.spidermanaddon.hulk_boss",
+        "transform": "animation.hulk_v2.transform",
+        "look_at_target": "animation.hulk_v2.look_at_target",
+        "idle": "animation.hulk_v2.idle",
+        "walk.c": "controller.animation.hulk_boss.walk",
+        "walk": "animation.hulk_v2.walk",
+        "ground": "animation.hulk_v2.ground",
+        "run.c": "controller.animation.hulk_boss.run",
+        "run": "animation.hulk_v2.run",
+        "death": "animation.hulk_v2.death",
+        "defecto": "animation.hulk_v2.default",
+        "active": "animation.hulk_v2.active",
+        "attack.c": "controller.animation.hulk_boss.attack",
+        "attack_0": "animation.hulk_v2.attack.0",
+        "attack_1": "animation.hulk_v2.attack.1",
+        "attack_2": "animation.hulk_v2.attack.2",
+        "clap.on": "animation.hulk_v2.clap.on",
+        "clap": "animation.hulk_v2.clap",
+        "super_attack": "animation.hulk_v2.super_attack",
+        "attack.falling": "animation.hulk_v2.attack.falling",
+        "attack.falling.end": "animation.hulk_v2.attack.falling.end"
+      },
+		"particle_effects": {
+		 "sadie_sink_power": "spidermanaddon:sadie_sink_power"
+		},
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "controller", "transform", "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#5d7145",
+        "overlay_color": "#534a41"
+      }
+    }
+  }
+}

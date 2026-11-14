@@ -1,0 +1,77 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:criminal_gang",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/criminal_gang/niko",
+				"prisoner0": "textures/entity/criminal_gang/roman",
+				"prisoner1": "textures/entity/criminal_gang/brucie",
+				"prisoner2": "textures/entity/criminal_gang/patrick",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"default": "geometry.criminal_gang",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"prisoner.eyes": "animation.prisoner.eyes",
+				"prisoner.idle": "animation.prisoner.idle",
+				"prisoner.idle.melee": "animation.prisoner.idle_melee",
+				"prisoner.idle.pistol": "animation.prisoner.idle_pistol",
+				"prisoner.idle.weapon": "animation.prisoner.idle_weapon",
+				"apuntar_pistol": "animation.prisoner.apuntar_pistol",
+				"apuntar_fusil": "animation.prisoner.apuntar",
+				"walk": "animation.prisoner.walk",
+				"walk.weapon": "animation.prisoner.walk_fusil",
+				"punch": "animation.prisoner.punch",
+				"punch_melee": "animation.prisoner.punch_melee",
+				"armor": "animation.prisoner.armor_off",
+				"look_at_target": "animation.prisoner.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"idle": "controller.animation.prisoner.idle"
+				},
+				{
+					"eyes": "controller.animation.prisoner.eyes"
+				},
+				{
+					"apuntar_pistol": "controller.animation.prisoner.apuntar_pistol"
+				},
+				{
+					"apuntar_fusil": "controller.animation.prisoner.apuntar_fusil"
+				},
+				{
+					"walk": "controller.animation.prisoner.walk"
+				},
+				{
+					"attack": "controller.animation.prisoner.attack"
+				},
+				{
+					"armor": "controller.animation.prisoner.armor"
+				},
+				{
+					"look_at_target": "controller.animation.look_at_target"
+				}
+			],
+			"render_controllers": [
+				"controller.render.prisoner",
+				"controller.render.scan"
+			],
+			  "spawn_egg": {
+				"base_color": "#233058",
+				"overlay_color": "#292e31"
+			  }
+		}
+	}
+}

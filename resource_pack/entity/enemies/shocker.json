@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:shocker",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"scan": "scan"
+			},
+			"textures": {
+				"default": "textures/entity/shocker",
+				"scan": "textures/entity/prisoner/scan"
+			},
+			"geometry": {
+				"default": "geometry.shocker",
+				"scan": "geometry.prisoner_scan"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.shocker.idle",
+				"apuntar": "animation.shocker.apuntar",
+				"walk": "animation.shocker.walk",
+				"shoot": "animation.shocker.shot",
+				"shoot2": "animation.shocker.shot2"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"apuntar": "controller.animation.shocker.apuntar"
+				},
+				{
+					"walk": "controller.animation.shocker.walk"
+				},
+				{
+					"shoot": "controller.animation.shocker.shoot"
+				},
+				{
+					"shoot2": "controller.animation.shocker.shoot2"
+				}
+			],
+			"render_controllers": [
+				"controller.render.shocker",
+				"controller.render.scan"
+			],
+			"spawn_egg": {
+				"texture": "egg_shocker",
+				"texture_index": 0
+			}
+		}
+	}
+}

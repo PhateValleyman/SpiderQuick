@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:mano_ninja",
+      "materials": {
+        "default": "entity_alphatest",
+				"scan": "scan"
+      },
+      "textures": {
+        "default": "textures/entity/mano_ninja/mano_ninja",
+				"scan": "textures/entity/prisoner/scan"
+      },
+      "geometry": {
+        "default": "geometry.mano_ninja",
+				"scan": "geometry.prisoner_scan"
+      },
+      "animations": {
+        "controller": "controller.animation.mano_ninja",
+        "melee_controller": "controller.animation.mano_ninja.melee",
+
+        "shuriken": "animation.mano_ninja.shuriken",
+        "idle": "animation.mano_ninja.idle",
+        "look_at_target": "animation.mayor_fisk.look_at_target",
+        "walk": "animation.mano_ninja.walk",
+        "attack_0": "animation.mano_ninja.attack.0",
+        "attack_1": "animation.mano_ninja.attack.1",
+        "jump": "animation.mano_ninja.jump",
+        "jump_attack": "animation.mano_ninja.jump.attack",
+        "impulse_attack": "animation.mano_ninja.impulse_attack",
+        "impulse_attack_end": "animation.mano_ninja.impulse_attack.end"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ],
+        "animate": [
+          "controller",
+          "melee_controller"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default",
+				"controller.render.scan"
+      ],
+      "spawn_egg": {
+        "base_color": "#7d1010",
+        "overlay_color": "#1a0505"
+      }
+    }
+  }
+}

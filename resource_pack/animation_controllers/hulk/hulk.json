@@ -1,0 +1,294 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.spidermanaddon.hulk_boss": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "defecto"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "active": "q.property('spidermanaddon:hulk_state') == 'active'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            },
+            {
+              "falling": "q.property('spidermanaddon:hulk_state') == 'falling'"
+            },
+            {
+              "falling_end": "q.property('spidermanaddon:hulk_state') == 'falling_end'"
+            },
+            {
+              "clap_on": "q.property('spidermanaddon:hulk_state') == 'clap_on'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "super_attack": "q.property('spidermanaddon:hulk_state') == 'super_attack'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "active": {
+          "animations": [
+            "active"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            },
+            {
+              "clap_on": "q.property('spidermanaddon:hulk_state') == 'clap_on'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "super_attack": "q.property('spidermanaddon:hulk_state') == 'super_attack'"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "combat": {
+          "animations": [
+            "attack.c",
+            "walk.c",
+            "run.c",
+            "look_at_target"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "falling": "q.property('spidermanaddon:hulk_state') == 'falling'"
+            },
+            {
+              "clap_on": "q.property('spidermanaddon:hulk_state') == 'clap_on'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "super_attack": "q.property('spidermanaddon:hulk_state') == 'super_attack'"
+            }
+          ],
+          "blend_transition": 0.25
+        },
+        "death": {
+          "animations": [
+            "death"
+          ],
+          "blend_transition": 0.15
+        },
+        "falling": {
+          "animations": [
+            "attack.falling"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "falling_end": "q.property('spidermanaddon:hulk_state') == 'falling_end'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            },
+            {
+              "clap_on": "q.property('spidermanaddon:hulk_state') == 'clap_on'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "super_attack": "q.property('spidermanaddon:hulk_state') == 'super_attack'"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "falling_end": {
+          "animations": [
+            "attack.falling.end"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            },
+            {
+              "clap_on": "q.property('spidermanaddon:hulk_state') == 'clap_on'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "super_attack": "q.property('spidermanaddon:hulk_state') == 'super_attack'"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "clap_on": {
+          "animations": [
+            "clap.on"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "clap": "q.property('spidermanaddon:hulk_state') == 'clap'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "clap": {
+          "animations": [
+            "clap"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            }
+          ],
+          "blend_transition": 0.08
+        },
+        "super_attack": {
+          "animations": [
+            "super_attack"
+          ],
+          "transitions": [
+            {
+              "death": "q.property('spidermanaddon:hulk_state') == 'death'"
+            },
+            {
+              "combat": "q.property('spidermanaddon:hulk_state') == 'combat'"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    },
+	"controller.animation.hulk_boss.run" : {
+		"initial_state" : "default",
+		"states" : {
+			"default" : {
+				"transitions" : [
+					{
+						"run" : "query.has_target && q.is_on_ground"
+					}
+				],
+          "blend_transition": 0.25
+			},
+			"run" : {
+				"animations" : [ "run" ],
+				"transitions" : [
+					{
+						"default" : "!query.has_target || !q.is_on_ground"
+					}
+				],
+          "blend_transition": 0.25
+			}
+		}
+	},
+	"controller.animation.hulk_boss.walk" : {
+		"initial_state" : "default",
+		"states" : {
+			"default" : {
+				"transitions" : [
+					{
+						"walk" : "query.modified_move_speed > 0.1"
+					},
+					{
+						"ground" : "!q.is_on_ground"
+					}
+				],
+          "blend_transition": 0.25
+			},
+			"walk" : {
+				"animations" : [ "walk" ],
+				"transitions" : [
+					{
+						"default" : "query.modified_move_speed < 0.1"
+					},
+					{
+						"ground" : "!q.is_on_ground"
+					}
+				],
+          "blend_transition": 0.25
+			},
+			"ground" : {
+				"animations" : [ "ground" ],
+				"transitions" : [
+					{
+						"default" : "q.is_on_ground"
+					}
+				],
+          "blend_transition": 0.25
+			}
+		}
+	},
+    "controller.animation.hulk_boss.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack_0": "variable.attack > 0.0"
+            }
+          ]
+        },
+
+        "attack_0": {
+          "animations": [
+            "attack_0"
+          ],
+          "transitions": [
+			{
+			  "attack_1": "q.all_animations_finished && variable.attack > 0.0"
+			}
+          ]
+        },
+        "attack_1": {
+          "animations": [
+            "attack_1"
+          ],
+          "transitions": [
+			{
+			  "attack_2": "q.all_animations_finished && variable.attack > 0.0"
+			}
+          ]
+        },
+
+        "attack_2": {
+          "animations": [
+            "attack_2"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

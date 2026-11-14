@@ -1,0 +1,35 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "marveladdons:venom_wings",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/venom/venom"
+			},
+			"geometry": {
+				"default": "geometry.venom_wings"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers')" }
+			],
+			"scripts": {
+                "animate": [
+					"idle.c", "wings.c", "wings.fly", { "symb.off": "q.property('nido:flying') == false" }
+                ]
+			},
+            "animations": {
+				"idle.c": "animation.venom.idle",
+				"wings.c": "controller.animation.venom.wings",
+                "wings.fly": "animation.venom.wings.fly",
+				"wings.off": "animation.venom.wings.off",
+				"wings.active": "animation.venom.wings.active",
+                "wings.on": "animation.venom.wings.on",
+				"wings.apagar": "animation.venom.wings.apagar",
+				"symb.off": "animation.venom.wing.symb.off"
+            }
+		}
+	}
+}

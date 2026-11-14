@@ -1,0 +1,37 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "spidermanaddon:blue_electro_unibeam_shoot",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "geometry": {
+                "default": "geometry.bullet_shoot"
+            },
+            "textures": {
+                "default": "textures/entity/mysterio/mysterio"
+            },
+			"animations": {
+				"rot": "animation.mysterio.unibeam.rot",
+				"loop": "animation.mysterio_unibeam_shoot.idle"
+			},
+            "particle_effects": {
+                "mysterio_unibeam": "spidermanaddon:blue_electro_unibeam",
+				"mysterio_light": "spidermanaddon:blue_miles_morales_light"
+            },
+            "scripts": {
+                "animate": [
+                    "rot", "loop"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#6A3636",
+                "overlay_color": "#A63030"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

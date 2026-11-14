@@ -1,0 +1,184 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:spider_drone_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+			"animations": {
+				"spider_drone": "controller.animation.spider_drone"
+			},
+			"scripts": {
+				"animate": [
+					"spider_drone"
+				]
+			}
+    },
+		"component_groups": {
+			"in_destroy": {
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "time_down_event": {
+				"event": "minecraft:destroy"
+			}
+		},
+	   "minecraft:area_attack" : {
+          "damage_range": 3.5,
+          "damage_per_tick": 16.0,
+			"entity_filter": {
+				"test": "is_family", "subject": "other", "operator": "!=", "value": "player"
+			},
+          "cause": "contact"
+        }
+			},
+			"destroy": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+    "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 50.0,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "minecraft:in_destroy"
+				}
+			},
+      "minecraft:collision_box": {
+        "width": 0.75,
+        "height": 1
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:movement.basic": {
+        
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/spider_drone.json"
+      },
+      "minecraft:shooter": {
+        "def": "spidermanaddon:spider_drone_shoot"
+      },
+      "minecraft:type_family": {
+        "family": [ "spider_drone", "player" ]
+      },
+      "minecraft:scale": {
+        "value": 0.5
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 0,
+		"burst_shots": 1,
+		"burst_interval": 0.25,
+        "attack_interval_min": 0.25,
+        "attack_interval_max": 0.5,
+        "attack_radius": 16.0
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 28
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+		"events": {
+      "minecraft:in_destroy": {
+        "randomize": [
+          {
+            "weight": 100,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "in_destroy"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:destroy": {
+        "randomize": [
+          {
+            "weight": 100,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "destroy"
+              ]
+            },
+			"queue_command": {
+				"command": [
+						"particle spidermanaddon:white_electric_hit ~ ~ ~",
+						"particle spidermanaddon:electric_hit2 ~ ~ ~",
+						"particle spidermanaddon:electric_hit3 ~ ~ ~",
+						"particle spidermanaddon:electric_hit ~ ~ ~",
+						"playsound spiderman_effects.electric_impact @a[r=20]"
+				]
+			}
+          }
+        ]
+      }
+	}
+  }
+}

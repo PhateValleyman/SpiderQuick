@@ -1,0 +1,124 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.vehicle.smoke" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"smoke" : "q.has_rider && q.property('mzaddon:fuel') == true"
+						}
+					]
+				},
+				"smoke" : {
+					"animations" : [ "smoke", {"lights": "q.property('vehicle:dark') == true"} ],
+					"transitions" : [
+						{
+							"default" : "!q.has_rider || q.property('mzaddon:fuel') == false"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.vehicle.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "falling.end" ],
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground"
+						}
+					],"blend_transition":0.15
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.vehicle.destroy.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground && q.property('mzaddon:anim_falling') == true"
+						}
+					],"blend_transition":0.5
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground || q.property('mzaddon:anim_falling') == false"
+						}
+					],"blend_transition":0.5
+				}
+			}
+		},
+		"controller.animation.vehicle.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "q.modified_move_speed > 0.25"
+						}
+					],"blend_transition":0.25
+				},
+				"walk" : {
+					"animations" : [ "walk", "acelerar" ],
+					"transitions" : [
+						{
+							"frenar" : "q.property('vehicle:freno') == true || q.modified_move_speed < 0.25"
+						}
+					]
+				},
+				"frenar" : {
+					"animations" : [ "frenar" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.vehicle.car_body" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"car_body" : "q.modified_move_speed > 0.1"
+						}
+					],"blend_transition":0.25
+				},
+				"car_body" : {
+					"animations" : [ "car_body" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.vehicle.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						"idle", "lights"
+					]
+				}
+			}
+		}
+	}
+}

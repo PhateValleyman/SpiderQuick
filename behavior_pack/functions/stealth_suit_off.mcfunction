@@ -1,0 +1,3 @@
+clear @s spidermanaddon:fire_resistence_stealth_suit_token
+clear @s spidermanaddon:invisibility_stealth_suit_token
+clear @s spidermanaddon:regeneration_stealth_suit_token

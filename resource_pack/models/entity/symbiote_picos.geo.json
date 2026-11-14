@@ -1,0 +1,1585 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.symbiote_picos",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 18,
+				"visible_bounds_height": 17,
+				"visible_bounds_offset": [0, 4.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "h_0",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "h_venom_tentacles2",
+					"parent": "h_0",
+					"pivot": [0, 24, 0],
+					"rotation": [0, -45, 0]
+				},
+				{
+					"name": "h_venom_tentacle4",
+					"parent": "h_venom_tentacles2",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [70, 36]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_29",
+					"parent": "h_venom_tentacle4",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [0, 127]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_30",
+					"parent": "h_venom_tentacle0_29",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 44]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_31",
+					"parent": "h_venom_tentacle4",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [70, 25]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_32",
+					"parent": "h_venom_tentacle0_31",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [100, 106]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_33",
+					"parent": "h_venom_tentacle0_32",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [106, 86]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_34",
+					"parent": "h_venom_tentacle0_33",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [106, 126]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_35",
+					"parent": "h_venom_tentacle0_34",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 38]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle5",
+					"parent": "h_venom_tentacles2",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [70, 14]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_36",
+					"parent": "h_venom_tentacle5",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [126, 97]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_37",
+					"parent": "h_venom_tentacle0_36",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 32]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_38",
+					"parent": "h_venom_tentacle5",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [70, 3]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_39",
+					"parent": "h_venom_tentacle0_38",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [104, 96]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_40",
+					"parent": "h_venom_tentacle0_39",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [88, 104]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_41",
+					"parent": "h_venom_tentacle0_40",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [96, 125]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_42",
+					"parent": "h_venom_tentacle0_41",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 26]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle6",
+					"parent": "h_venom_tentacles2",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [42, 69]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_43",
+					"parent": "h_venom_tentacle6",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [86, 124]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_44",
+					"parent": "h_venom_tentacle0_43",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 19]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_45",
+					"parent": "h_venom_tentacle6",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [14, 69]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_46",
+					"parent": "h_venom_tentacle0_45",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [76, 102]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_47",
+					"parent": "h_venom_tentacle0_46",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [36, 101]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_48",
+					"parent": "h_venom_tentacle0_47",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [76, 123]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_49",
+					"parent": "h_venom_tentacle0_48",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 13]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle7",
+					"parent": "h_venom_tentacles2",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [56, 66]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_50",
+					"parent": "h_venom_tentacle7",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [122, 107]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_51",
+					"parent": "h_venom_tentacle0_50",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 7]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_52",
+					"parent": "h_venom_tentacle7",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [28, 66]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_53",
+					"parent": "h_venom_tentacle0_52",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [12, 101]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_54",
+					"parent": "h_venom_tentacle0_53",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [64, 100]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_55",
+					"parent": "h_venom_tentacle0_54",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [66, 121]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_56",
+					"parent": "h_venom_tentacle0_55",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 1]}
+					]
+				},
+				{
+					"name": "h_venom_tentacles",
+					"parent": "h_0",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "h_venom_tentacle1",
+					"parent": "h_venom_tentacles",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [56, 77]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_6",
+					"parent": "h_venom_tentacle1",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [128, 61]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_7",
+					"parent": "h_venom_tentacle0_6",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [66, 138]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_8",
+					"parent": "h_venom_tentacle1",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [28, 77]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_11",
+					"parent": "h_venom_tentacle0_8",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [108, 30]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_12",
+					"parent": "h_venom_tentacle0_11",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [24, 108]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_13",
+					"parent": "h_venom_tentacle0_12",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [128, 52]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_14",
+					"parent": "h_venom_tentacle0_13",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [138, 61]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle2",
+					"parent": "h_venom_tentacles",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 77]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_15",
+					"parent": "h_venom_tentacle2",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [52, 128]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_16",
+					"parent": "h_venom_tentacle0_15",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [138, 50]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_17",
+					"parent": "h_venom_tentacle2",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [70, 69]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_18",
+					"parent": "h_venom_tentacle0_17",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [108, 20]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_19",
+					"parent": "h_venom_tentacle0_18",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [108, 10]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_20",
+					"parent": "h_venom_tentacle0_19",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [116, 127]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_21",
+					"parent": "h_venom_tentacle0_20",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [137, 112]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0",
+					"parent": "h_venom_tentacles",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [42, 80]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_9",
+					"parent": "h_venom_tentacle0",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [128, 79]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_10",
+					"parent": "h_venom_tentacle0_9",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [138, 79]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_1",
+					"parent": "h_venom_tentacle0",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [14, 80]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_2",
+					"parent": "h_venom_tentacle0_1",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [48, 108]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_3",
+					"parent": "h_venom_tentacle0_2",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [108, 40]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_4",
+					"parent": "h_venom_tentacle0_3",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [128, 70]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_5",
+					"parent": "h_venom_tentacle0_4",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [138, 70]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle3",
+					"parent": "h_venom_tentacles",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [70, 58]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_22",
+					"parent": "h_venom_tentacle3",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [42, 127]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_23",
+					"parent": "h_venom_tentacle0_22",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [59, 137]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_24",
+					"parent": "h_venom_tentacle3",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [70, 47]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_25",
+					"parent": "h_venom_tentacle0_24",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [108, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_26",
+					"parent": "h_venom_tentacle0_25",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [0, 108]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_27",
+					"parent": "h_venom_tentacle0_26",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [20, 127]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_28",
+					"parent": "h_venom_tentacle0_27",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [47, 137]}
+					]
+				},
+				{
+					"name": "h_1",
+					"parent": "body",
+					"pivot": [0, 22, 0],
+					"rotation": [92.5, 0, 0]
+				},
+				{
+					"name": "h_venom_tentacles3",
+					"parent": "h_1",
+					"pivot": [0, 24, 0],
+					"rotation": [0, -45, 0]
+				},
+				{
+					"name": "h_venom_tentacle8",
+					"parent": "h_venom_tentacles3",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 66]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_57",
+					"parent": "h_venom_tentacle8",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [120, 118]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_58",
+					"parent": "h_venom_tentacle0_57",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [136, 135]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_59",
+					"parent": "h_venom_tentacle8",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [42, 58]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_60",
+					"parent": "h_venom_tentacle0_59",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [52, 98]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_61",
+					"parent": "h_venom_tentacle0_60",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [24, 98]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_62",
+					"parent": "h_venom_tentacle0_61",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [120, 42]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_63",
+					"parent": "h_venom_tentacle0_62",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [121, 136]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle9",
+					"parent": "h_venom_tentacles3",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [14, 58]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_64",
+					"parent": "h_venom_tentacle9",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [120, 32]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_65",
+					"parent": "h_venom_tentacle0_64",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [109, 136]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_66",
+					"parent": "h_venom_tentacle9",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [56, 55]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_67",
+					"parent": "h_venom_tentacle0_66",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [0, 98]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_68",
+					"parent": "h_venom_tentacle0_67",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [96, 74]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_69",
+					"parent": "h_venom_tentacle0_68",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [32, 120]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_70",
+					"parent": "h_venom_tentacle0_69",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [136, 95]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle10",
+					"parent": "h_venom_tentacles3",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [56, 44]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_71",
+					"parent": "h_venom_tentacle10",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [120, 22]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_72",
+					"parent": "h_venom_tentacle0_71",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [40, 136]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_73",
+					"parent": "h_venom_tentacle10",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [56, 33]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_74",
+					"parent": "h_venom_tentacle0_73",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [96, 63]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_75",
+					"parent": "h_venom_tentacle0_74",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [96, 52]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_76",
+					"parent": "h_venom_tentacle0_75",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [120, 12]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_77",
+					"parent": "h_venom_tentacle0_76",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [20, 136]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle11",
+					"parent": "h_venom_tentacles3",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [56, 22]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_78",
+					"parent": "h_venom_tentacle11",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [10, 120]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_79",
+					"parent": "h_venom_tentacle0_78",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [0, 136]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_80",
+					"parent": "h_venom_tentacle11",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [56, 11]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_81",
+					"parent": "h_venom_tentacle0_80",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [96, 42]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_82",
+					"parent": "h_venom_tentacle0_81",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [96, 32]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_83",
+					"parent": "h_venom_tentacle0_82",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [120, 2]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_84",
+					"parent": "h_venom_tentacle0_83",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [102, 135]}
+					]
+				},
+				{
+					"name": "h_venom_tentacles4",
+					"parent": "h_1",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "h_venom_tentacle12",
+					"parent": "h_venom_tentacles4",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_85",
+					"parent": "h_venom_tentacle12",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [56, 119]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_86",
+					"parent": "h_venom_tentacle0_85",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [135, 89]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_87",
+					"parent": "h_venom_tentacle12",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [28, 55]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_88",
+					"parent": "h_venom_tentacle0_87",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [96, 22]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_89",
+					"parent": "h_venom_tentacle0_88",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [96, 12]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_90",
+					"parent": "h_venom_tentacle0_89",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [118, 88]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_91",
+					"parent": "h_venom_tentacle0_90",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [33, 135]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle13",
+					"parent": "h_venom_tentacles4",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 55]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_92",
+					"parent": "h_venom_tentacle13",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [118, 78]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_93",
+					"parent": "h_venom_tentacle0_92",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [13, 135]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_94",
+					"parent": "h_venom_tentacle13",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [42, 47]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_95",
+					"parent": "h_venom_tentacle0_94",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [96, 2]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_96",
+					"parent": "h_venom_tentacle0_95",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [92, 94]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_97",
+					"parent": "h_venom_tentacle0_96",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [118, 69]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_98",
+					"parent": "h_venom_tentacle0_97",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [129, 134]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle14",
+					"parent": "h_venom_tentacles4",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [14, 47]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_99",
+					"parent": "h_venom_tentacle14",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [118, 60]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_100",
+					"parent": "h_venom_tentacle0_99",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [95, 134]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_101",
+					"parent": "h_venom_tentacle14",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [28, 44]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_102",
+					"parent": "h_venom_tentacle0_101",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [94, 84]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_103",
+					"parent": "h_venom_tentacle0_102",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [80, 92]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_104",
+					"parent": "h_venom_tentacle0_103",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [118, 51]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_105",
+					"parent": "h_venom_tentacle0_104",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [133, 128]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle15",
+					"parent": "h_venom_tentacles4",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 44]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_106",
+					"parent": "h_venom_tentacle15",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [46, 118]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_107",
+					"parent": "h_venom_tentacle0_106",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [133, 122]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_108",
+					"parent": "h_venom_tentacle15",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [42, 36]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_109",
+					"parent": "h_venom_tentacle0_108",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [40, 91]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_110",
+					"parent": "h_venom_tentacle0_109",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [12, 91]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_111",
+					"parent": "h_venom_tentacle0_110",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [22, 118]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_112",
+					"parent": "h_venom_tentacle0_111",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [88, 133]}
+					]
+				},
+				{
+					"name": "h_2",
+					"parent": "body",
+					"pivot": [0, 22, 0],
+					"rotation": [0, -90, 90]
+				},
+				{
+					"name": "h_venom_tentacles5",
+					"parent": "h_2",
+					"pivot": [0, 24, 0],
+					"rotation": [0, -45, 0]
+				},
+				{
+					"name": "h_venom_tentacle16",
+					"parent": "h_venom_tentacles5",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [42, 25]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_113",
+					"parent": "h_venom_tentacle16",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [0, 118]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_114",
+					"parent": "h_venom_tentacle0_113",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [76, 133]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_115",
+					"parent": "h_venom_tentacle16",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [42, 14]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_116",
+					"parent": "h_venom_tentacle0_115",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [68, 90]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_117",
+					"parent": "h_venom_tentacle0_116",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [56, 88]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_118",
+					"parent": "h_venom_tentacle0_117",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [110, 117]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_119",
+					"parent": "h_venom_tentacle0_118",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [132, 106]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle17",
+					"parent": "h_venom_tentacles5",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [42, 3]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_120",
+					"parent": "h_venom_tentacle17",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [100, 116]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_121",
+					"parent": "h_venom_tentacle0_120",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [69, 132]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_122",
+					"parent": "h_venom_tentacle17",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [14, 36]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_123",
+					"parent": "h_venom_tentacle0_122",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [28, 88]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_124",
+					"parent": "h_venom_tentacle0_123",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [0, 88]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_125",
+					"parent": "h_venom_tentacle0_124",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [116, 98]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_126",
+					"parent": "h_venom_tentacle0_125",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 116]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle18",
+					"parent": "h_venom_tentacles5",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [28, 33]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_127",
+					"parent": "h_venom_tentacle18",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [90, 115]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_128",
+					"parent": "h_venom_tentacle0_127",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [62, 130]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_129",
+					"parent": "h_venom_tentacle18",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [0, 33]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_130",
+					"parent": "h_venom_tentacle0_129",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [84, 72]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_131",
+					"parent": "h_venom_tentacle0_130",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [84, 61]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_132",
+					"parent": "h_venom_tentacle0_131",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [80, 114]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_133",
+					"parent": "h_venom_tentacle0_132",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 41]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle19",
+					"parent": "h_venom_tentacles5",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [28, 22]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_134",
+					"parent": "h_venom_tentacle19",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [112, 108]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_135",
+					"parent": "h_venom_tentacle0_134",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 31]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_136",
+					"parent": "h_venom_tentacle19",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [28, 11]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_137",
+					"parent": "h_venom_tentacle0_136",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [84, 50]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_138",
+					"parent": "h_venom_tentacle0_137",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [84, 40]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_139",
+					"parent": "h_venom_tentacle0_138",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [70, 112]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_140",
+					"parent": "h_venom_tentacle0_139",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 21]}
+					]
+				},
+				{
+					"name": "h_venom_tentacles6",
+					"parent": "h_2",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "h_venom_tentacle20",
+					"parent": "h_venom_tentacles6",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [28, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_141",
+					"parent": "h_venom_tentacle20",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [36, 111]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_142",
+					"parent": "h_venom_tentacle0_141",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 11]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_143",
+					"parent": "h_venom_tentacle20",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [14, 25]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_144",
+					"parent": "h_venom_tentacle0_143",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [84, 30]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_145",
+					"parent": "h_venom_tentacle0_144",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [84, 20]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_146",
+					"parent": "h_venom_tentacle0_145",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [12, 111]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_147",
+					"parent": "h_venom_tentacle0_146",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [130, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle21",
+					"parent": "h_venom_tentacles6",
+					"pivot": [0, 21, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_148",
+					"parent": "h_venom_tentacle21",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [60, 110]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_149",
+					"parent": "h_venom_tentacle0_148",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [30, 129]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_150",
+					"parent": "h_venom_tentacle21",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [14, 14]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_151",
+					"parent": "h_venom_tentacle0_150",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [84, 10]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_152",
+					"parent": "h_venom_tentacle0_151",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [84, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_153",
+					"parent": "h_venom_tentacle0_152",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [108, 77]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_154",
+					"parent": "h_venom_tentacle0_153",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [10, 129]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle22",
+					"parent": "h_venom_tentacles6",
+					"pivot": [0, 21, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [14, 3]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_155",
+					"parent": "h_venom_tentacle22",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [108, 68]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_156",
+					"parent": "h_venom_tentacle0_155",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [128, 88]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle23",
+					"parent": "h_venom_tentacles6",
+					"pivot": [0, 21, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 0], "size": [3, 3, 8], "uv": [0, 11]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_162",
+					"parent": "h_venom_tentacle23",
+					"pivot": [0, 20, 7.5],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 7.25], "size": [1, 1, 8], "uv": [108, 59]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_163",
+					"parent": "h_venom_tentacle0_162",
+					"pivot": [0, 20, 15.25],
+					"cubes": [
+						{"origin": [-0.5, 19.5, 15.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [126, 127]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_164",
+					"parent": "h_venom_tentacle23",
+					"pivot": [0, 21, 8],
+					"cubes": [
+						{"origin": [-1.5, 19.5, 7.75], "size": [3, 3, 8], "inflate": -0.25, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_165",
+					"parent": "h_venom_tentacle0_164",
+					"pivot": [0, 21, 15.5],
+					"cubes": [
+						{"origin": [-1, 20, 15.25], "size": [2, 2, 8], "uv": [82, 82]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_166",
+					"parent": "h_venom_tentacle0_165",
+					"pivot": [0, 21, 23.25],
+					"cubes": [
+						{"origin": [-1, 20, 22.75], "size": [2, 2, 8], "inflate": -0.25, "uv": [70, 80]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_167",
+					"parent": "h_venom_tentacle0_166",
+					"pivot": [0, 21, 30.5],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 30.25], "size": [1, 1, 8], "uv": [108, 50]}
+					]
+				},
+				{
+					"name": "h_venom_tentacle0_168",
+					"parent": "h_venom_tentacle0_167",
+					"pivot": [0, 21, 38.25],
+					"cubes": [
+						{"origin": [-0.5, 20.5, 38.1], "size": [1, 1, 5], "inflate": -0.15, "uv": [42, 120]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,10 @@
+import './mayor_fisk.js';
+import './mano_ninja.js';
+import './scorpion.js';
+import './boomerang.js';
+import './boomerang_shoot.js';
+import './tarantula.js';
+import './symbiotes.js';
+import './electro_boss_phase.js';
+import './hulk_boss.js';
+import './norm_stone_laser.js';

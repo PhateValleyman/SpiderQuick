@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:agent_anti_venom_mask",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/agent_anti_venom"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_mask"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

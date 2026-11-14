@@ -1,0 +1,1 @@
+replaceitem entity @s slot.weapon.mainhand 1 spidermanaddon:iron_arms_attack 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"keep_on_death":{}}

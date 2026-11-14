@@ -1,0 +1,81 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.spider_punk": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk" ]
+    },
+    "controller.render.spider_punk.1": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_1" ]
+    },
+    "controller.render.spider_punk.2": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_2" ]
+    },
+    "controller.render.spider_punk.3": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_3" ]
+    },
+    "controller.render.spider_punk.4": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_4" ]
+    },
+    "controller.render.spider_punk.5": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_5" ]
+    },
+    "controller.render.spider_punk.6": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_6" ]
+    },
+    "controller.render.spider_punk.7": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.spider_punk_7" ]
+    },
+	
+    "controller.render.spider_punk.border": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.yellow" ]
+    },
+    "controller.render.spider_punk.border.2": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.pink" ]
+    },
+    "controller.render.spider_punk.border.3": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.gray" ]
+    },
+    "controller.render.spider_punk.border.4": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.red" ]
+    },
+    "controller.render.spider_punk.border.5": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.gray" ]
+    },
+    "controller.render.spider_punk.border.6": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.old" ]
+    },
+    "controller.render.spider_punk.border.7": {
+      "geometry": "Geometry.outline_color",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.outline_color" } ],
+      "textures": [ "Texture.purple" ]
+    }
+  }
+}

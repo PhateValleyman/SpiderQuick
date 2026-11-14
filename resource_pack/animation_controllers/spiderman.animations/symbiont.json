@@ -1,0 +1,48 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.symbiote_nests.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "off" ],
+					"transitions" : [
+						{
+							"attack" : "variable.attack > 0.1"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.symbiont" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "query.modified_move_speed > 0.1"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		}
+	}
+}

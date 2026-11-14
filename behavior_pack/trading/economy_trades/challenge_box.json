@@ -1,0 +1,88 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:green_goblin_invoke",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:taskmaster_invoke",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:shocker_invoke",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:hobgoblin_invoke",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:lizard_invoke",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

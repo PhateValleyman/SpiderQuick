@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spiderman_ps5_mask_1",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime",
+				"cape": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/spiderman_ps5_suit_1",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_mask_x64",
+				"armor_skin": "geometry.player_ironman"
+			},
+			"scripts": {
+                "animate": [
+                    "default_c",
+					"mask_c",
+					"selfie_hand_c",
+					"ground.c",
+					"cape.idle"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			],
+            "animations": {
+				"ground.c": "controller.animation.thor_cape.cape",
+                "ground": "animation.thor_cape.ground",
+                "cape.idle": "animation.thor_cape.cape",
+                "elytra": "animation.thor_cape.elytra",
+                "mask_c": "controller.animation.suit.mask",
+                "mask.off": "animation.mask.on",
+				"mask.on": "animation.mask.off",
+				"mask.time": "animation.spider_female.mask_time",
+				
+                "default_c": "controller.animation.spiderman_suit.web_default",
+                "web_off": "animation.spiderman.web_shooters.off",
+				"web_on": "animation.spiderman.web_shooters.on",
+				"selfie_hand_c": "controller.animation.spiderman_suit.selfie_hand",
+				"selfie_hand": "animation.spiderman.web_shooters.selfie_hand"
+            }
+		}
+	}
+}

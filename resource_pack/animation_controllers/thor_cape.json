@@ -1,0 +1,39 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.thor_cape.cape" : {
+			"initial_state" : "default",
+			"states" : {
+				"off" : {
+					"transitions" : [
+						{
+							"on" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 1.0
+				},
+				"on" : {
+					"animations" : [ "ground" ],
+					"transitions" : [
+						{
+							"off" : "q.is_on_ground && q.any_animation_finished"
+						},
+						{
+							"elytra" : "q.is_gliding && q.any_animation_finished"
+						}
+					],
+          "blend_transition": 5.0
+				},
+				"elytra" : {
+					"animations" : [ "elytra" ],
+					"transitions" : [
+						{
+							"off" : "!q.is_gliding || q.is_on_ground"
+						}
+					],
+          "blend_transition": 5.0
+				}
+			}
+		}
+	}
+}

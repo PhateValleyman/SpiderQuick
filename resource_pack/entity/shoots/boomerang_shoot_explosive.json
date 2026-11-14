@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:boomerang_skill_explosive_shoot",
+
+      "materials": {
+        "default": "entity_alphatest"
+      },
+
+      "textures": {
+        "default": "textures/entity/boomerang/boomerang"
+      },
+
+      "geometry": {
+        "default": "geometry.boomerang_shoot"
+      },
+
+      "animations": {
+        "loop": "animation.boomerang_shoot.loop"
+      },
+
+      "scripts": {
+        "animate": [
+          "loop"
+        ]
+      },
+
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

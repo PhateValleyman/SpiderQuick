@@ -1,0 +1,71 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:scan_icon",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts": {
+		  "animate": [
+			{ "scan_icon.enemy": "q.variant == 1" },
+			{ "scan_icon.pasive": "q.variant == 0" }
+		  ]
+	  },
+      "animations": {
+		"scan_icon.enemy": "animation.scan_icon.enemy",
+		"scan_icon.pasive": "animation.scan_icon.pasive"
+	  }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "scan_icon", "furniture" ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {},
+      "minecraft:fire_immune": {}
+    },
+    "component_groups": {
+      "scan_icon:pasive": {
+      "minecraft:variant": {
+        "value": 0
+      },
+		"minecraft:timer": { "looping": true, "time": 5, "randomInterval": false, "time_down_event": { "event": "spidermanaddon:despawn" }}
+      },
+      "scan_icon:enemy": {
+      "minecraft:variant": {
+        "value": 1
+      },
+		"minecraft:timer": { "looping": true, "time": 5, "randomInterval": false, "time_down_event": { "event": "spidermanaddon:despawn" }}
+      },
+      "scan_icon:player": {
+      "minecraft:variant": {
+        "value": 2
+      },
+		"minecraft:timer": { "looping": true, "time": 5, "randomInterval": false, "time_down_event": { "event": "spidermanaddon:despawn" }}
+      },
+      "spidermanaddon:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "scan_icon:pasive": {
+        "add": { "component_groups": [ "scan_icon:pasive" ]}
+      },
+      "scan_icon:enemy": {
+        "add": { "component_groups": [ "scan_icon:enemy" ]}
+      },
+      "scan_icon:player": {
+        "add": { "component_groups": [ "scan_icon:player" ]}
+      },
+      "spidermanaddon:despawn": {
+        "add": { "component_groups": [ "spidermanaddon:despawn" ]}
+      }
+    }
+  }
+}

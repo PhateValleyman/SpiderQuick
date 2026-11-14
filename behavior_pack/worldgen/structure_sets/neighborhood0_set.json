@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "spidermanaddon:neighborhood0_set"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 61943728,
+      "separation": 4,
+      "spacing": 42,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "spidermanaddon:neighborhood0_jigsaw",
+        "weight": 1
+      }
+    ]
+  }
+}

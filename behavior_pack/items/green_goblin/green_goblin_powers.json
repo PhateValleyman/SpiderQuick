@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:green_goblin_powers",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.green_goblin"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "green_goblin_powers", "off_rightitem"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "green_goblin_powers"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 5,
+				"slot": "slot.armor.legs"
+			}
+		}
+	}
+}

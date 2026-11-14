@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.electro_boss": {
+      "arrays": {
+        "textures": {
+          "Array.electro_boss_textures": [
+            "Texture.default",
+            "Texture.final_phase"
+          ]
+        },
+        "geometries": {
+          "Array.electro_boss_geometries": [
+            "Geometry.default",
+            "Geometry.final_phase"
+          ]
+        }
+      },
+      "geometry": "Array.electro_boss_geometries[math.clamp(query.property('spidermanaddon:electro_phase'), 0, 1)]",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+	  "part_visibility": [
+		{ "*": "q.is_alive" }
+	  ],
+      "textures": [
+        "Array.electro_boss_textures[math.clamp(query.property('spidermanaddon:electro_phase'), 0, 1)]"
+      ]
+    }
+  }
+}

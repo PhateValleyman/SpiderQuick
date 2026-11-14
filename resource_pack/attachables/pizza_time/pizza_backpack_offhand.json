@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:pizza_backpack_offhand",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/3d_items/pizza_backpack"
+			},
+			"geometry": {
+				"default": "geometry.pizza_backpack_first",
+				"web_shooter_third": "geometry.pizza_backpack_third"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person" }
+			],
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+                "animate": [
+					{ "first": "c.is_first_person" },
+					{ "third": "v.off_hand" }
+                ]
+			},
+            "animations": {
+				"third": "animation.pizza_backpack.third",
+				"first": "animation.pizza_backpack.first"
+            }
+		}
+	}
+}

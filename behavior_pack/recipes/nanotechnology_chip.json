@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "ironmanaddon:nanotechnology_chip"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "CCC",
+      "BAB",
+      "CCC"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:redstone_block"
+      },
+      "C": {
+        "item": "minecraft:gold_nugget"
+      }
+    },
+    "result": {
+      "item": "spidermanaddon:nanotechnology_chip",
+        "data": 0,
+      "count": 6
+    }
+  }
+}

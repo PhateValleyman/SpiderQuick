@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:web_shooter",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_items/web_shooter_default"
+			},
+			"geometry": {
+				"default": "geometry.web_shooter_default",
+				"web_shooter_third": "geometry.web_shooter_default_third"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit')" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person && !q.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

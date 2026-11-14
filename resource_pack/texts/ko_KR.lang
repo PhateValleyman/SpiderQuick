@@ -1,0 +1,1741 @@
+﻿gui.spidermanaddon.upgrade_max=최대 레벨까지 업그레이드
+gui.spidermanaddon.upgrade_max_cost=남은 %1레벨을 부품 %2개로 업그레이드합니다.
+gui.spidermanaddon.not_enough_components_max=이 웹 슈터를 최대 레벨까지 업그레이드하려면 부품 %1개가 필요합니다.
+gui.spidermanaddon.upgraded_to_max=웹 슈터를 최대 레벨까지 업그레이드했습니다.
+item.spidermanaddon:black_cat_skin=블랙 캣 스킨
+item.spidermanaddon:norm_stone=놈 스톤
+
+ui.spiderman.settings.spider_sense_particles=스파이더 센스 파티클
+ui.spiderman.settings.spider_sense_sound=스파이더 센스 소리
+ui.spiderman.settings.spider_sense_actionbar=스파이더 센스 경고 바
+
+item.minecraft:leather=가죽
+item.spidermanaddon:spider_gwen_skin=스파이더-그웬 스킨
+item.spidermanaddon:mayday_skin=메이데이 파커 스킨
+
+entity.spidermanaddon:hulk_boss.name=헐크
+item.spawn_egg.entity.spidermanaddon:hulk_boss.name=헐크 스폰
+
+dialogue.spidermanaddon.hulk_activation=?????:§r 완전히 엉망이군. 내 앞을 가로막지 마. 그러지 않으면 네 친구들만 피터 파커가 누구인지 잊게 되는 것으로 끝나지 않을 거야.
+dialogue.spidermanaddon.hulk_defeated=?????:§r 잘했어. 다음번에는 그렇게 운이 좋지 않을 거야
+
+spidermanaddon:itemGroup.name.shocker=쇼커 무기고
+item.spidermanaddon:shocker_mask=쇼커 마스크
+item.spidermanaddon:shocker_suit=쇼커 슈트
+item.spidermanaddon:spider_punk_guitar=스파이더펑크 기타
+item.spidermanaddon:shocker_gloves=쇼커 장갑
+gui.spidermanaddon.symbiont_evil_dance=사악한 춤
+tile.spiderman:spider_capsule.name=방사능 거미 캡슐
+
+ui.spiderman.settings.button=§8설정
+ui.spiderman.settings.title=§l능력 설정
+ui.spiderman.settings.pvp=§cPVP
+ui.spiderman.settings.free_wall_run=§b자유 벽 달리기
+ui.spiderman.settings.water_surf=§9수상 서핑
+ui.spiderman.settings.save=설정 저장
+ui.spiderman.settings.saved=§a설정이 저장되었습니다.
+
+item.spidermanaddon:organic_web_potion=유기 거미줄 물약
+
+item.minecraft:gunpowder=화약
+item.minecraft:glass=유리
+item.minecraft:slime_ball=슬라임볼
+item.minecraft:string=실
+item.minecraft:ender_pearl=엔더 진주
+
+ui.oscorp_table.title=§2오스코프 기술 작업대
+ui.oscorp_table.body=§7제작할 스파이더맨 빌런 프로젝트를 선택하세요.
+ui.oscorp_table.category_body=§7제작할 아이템, 슈트 또는 능력을 선택하세요.
+ui.oscorp_table.category.green_goblin=§a그린 고블린
+ui.oscorp_table.category.doctor_octopus=§6닥터 옥토퍼스
+ui.oscorp_table.category.boomerang=§9부메랑
+ui.oscorp_table.category.electro=§e일렉트로
+ui.oscorp_table.category.mysterio=§5미스테리오
+ui.oscorp_table.category.scorpion=§2스콜피온
+ui.oscorp_table.category.tarantula=§4타란툴라
+ui.oscorp_table.category.black_cat=§d블랙 캣
+ui.oscorp_table.category.modified_spider=§c개조된 거미
+ui.oscorp_table.selected=선택한 프로젝트
+ui.oscorp_table.required_materials=필요한 재료
+ui.oscorp_table.result=결과
+ui.oscorp_table.craft=제작
+ui.oscorp_table.missing_materials=부족한 재료
+ui.oscorp_table.cancel=취소
+ui.oscorp_table.back=뒤로
+ui.oscorp_table.crafted=제작 완료
+ui.oscorp_table.no_materials=필요한 재료가 없습니다
+ui.oscorp_table.invalid_item=아이템을 만들 수 없습니다
+
+entity.spidermanaddon:oscorp_table.name=오스코프 실험실 테이블
+item.spawn_egg.entity.spidermanaddon:oscorp_table.name=오스코프 실험실 테이블
+
+item.spidermanaddon:tarantula_attack=날아차기
+item.spidermanaddon:black_cat_mask=블랙 캣 마스크
+item.spidermanaddon:black_cat_suit=블랙 캣 슈트
+
+item.spidermanaddon:boomerang_powers=부메랑 능력
+item.spidermanaddon:boomerang_skill_explosive=폭발성 부메랑
+item.spidermanaddon:boomerang_skill=부메랑 던지기
+item.spidermanaddon:boomerang_skill_electric=전기 부메랑
+
+item.minecraft:spider_eye=거미 눈
+item.minecraft:fermented_spider_eye=발효된 거미 눈
+item.minecraft:blaze_powder=블레이즈 가루
+item.minecraft:ghast_tear=가스트의 눈물
+item.minecraft:milk_bucket=우유 양동이
+
+ui.laboratory_workbench.upgrade_levels_body=§f현재 레벨: §e%1§f/§e%2
+§f업그레이드 비용: §a경험치 레벨 %3
+ui.laboratory_workbench.no_levels=§c경험치 레벨이 %1 필요합니다. 현재 %2 레벨입니다.
+
+item.spidermanaddon:police_scanner=경찰 스캐너
+action.interact.police_scanner=스캐너 켜기/끄기
+hud.police_scanner.crime.location=§c범죄 감지 §fX:%1 Y:%2 Z:%3
+hud.police_scanner.crime.distance=§b거리: §f%1 m
+
+hud.man_spider.web.ready=§2유기 거미줄 §f%1/%2
+hud.man_spider.web.locked=§c거미줄 잠김 §f%1/%2
+hud.man_spider.acid.ready=§a산성액 준비 완료
+hud.man_spider.acid.cooldown=§2산성액 §f%1초
+hud.man_spider.claw.ready=§c도약 공격 준비 완료
+hud.man_spider.claw.cooldown=§4도약 공격 §f%1초
+message.man_spider.mutation.requires_powers=§c스파이더맨 능력을 장착해야 합니다.
+message.organic_web.requires_powers=§c스파이더맨 능력을 장착해야 합니다.
+
+item.spidermanaddon:man_spider_web_shoot=거미줄 발사 [유기 거미줄]
+item.spidermanaddon:man_spider_swing=거미줄 스윙 [유기 거미줄]
+item.spidermanaddon:man_spider_acid=산성액 발사
+item.spidermanaddon:man_spider_claw=공격
+item.spidermanaddon:spider_mutant=돌연변이 혈청
+item.spidermanaddon:mutation_antidote=돌연변이 해독제
+item.spidermanaddon:six_arms=여섯 개의 팔
+item.spidermanaddon:man_spider=맨스파이더
+
+hud.spiderman.web_swing.ammo=§b거미줄 스윙 §f%1%
+hud.spiderman.web_swing.target.ready=§a◆ 스윙 지점 감지: §f%1블록
+hud.spiderman.web_swing.target.none=§c◇ 스윙 지점 없음: §f최대 %1블록
+hud.spiderman.web_swing.target.no_ammo=§c✖ 거미줄 용액 없음
+hud.spiderman.web_swing.target.active=§a◆ 거미줄 연결됨
+
+item.spidermanaddon:spiderman_unlimited_sonic=음파
+item.spidermanaddon:spiderman_unlimited_invisibility=투명화
+item.spidermanaddon:spiderman_unlimited_wrist_morpher=스파이더맨: 언리미티드 손목 변신기
+menu.pizza.full_shift=§6전체 근무
+dialog.pizza.full_shift_started=§6아지즈 씨:§r 전체 근무를 시작합니다. 주문 %1/%2: 고객 %3명에게 피자를 배달하세요. 시작 시간: %4.
+dialog.pizza.full_shift_return_to_joe=§6주문을 완료했습니다. 아지즈 씨에게 돌아가 주문 %1/%2을 받으세요.
+dialog.pizza.full_shift_return_for_reward=§6마지막 주문을 완료했습니다. 아지즈 씨에게 돌아가 보상을 받으세요.
+dialog.pizza.full_shift_next_order=§6아지즈 씨:§r 주문 %1/%2 준비 완료: 고객 %3명에게 피자를 배달하세요. 누적 시간: %4.
+dialog.pizza.full_shift_spawn_failed=§6아지즈 씨:§r 다음 주문을 받을 고객을 찾지 못했습니다. 전체 근무에 실패했습니다.
+dialog.pizza.full_shift_success=§6아지즈 씨:§r 전체 근무 완료! 주문 %1건을 완료하고 금괴 %2개, 부품 %3개, 경험치 %4를 받았습니다.
+
+
+dialog.pizza.night_unavailable=§6아지즈 씨:§r 배달 근무는 밤에는 운영하지 않습니다. 낮에 다시 오세요.
+dialog.pizza.daily_limit=§6아지즈 씨:§r 오늘의 배달 임무 %1회를 이미 완료했습니다. 내일 다시 오세요.
+
+item.spidermanaddon:pizza_backpack_offhand=피자 배달 가방
+
+pack.name=SpiderQuick
+pack.description=스파이더맨 2에서 영감을 받은 피자 배달 시스템입니다.
+
+entity.spidermanaddon:joe_pizza.name=아지즈 씨
+item.spawn_egg.entity.spidermanaddon:joe_pizza.name=아지즈 씨 소환
+entity.spidermanaddon:customer.name=고객
+item.spawn_egg.entity.spidermanaddon:customer.name=고객 소환
+item.spidermanaddon:pizza_backpack=따끈한 피자!
+
+action.interact.pizza_talk=아지즈 씨와 대화하기
+action.interact.deliver_pizza=피자 배달하기
+
+menu.pizza.title=§6아지즈 씨의 피자
+menu.pizza.body=배달원으로 일하시겠습니까? 모든 주문을 배달하고 시간이 끝나기 전에 돌아오세요.
+menu.pizza.accept=§a임무 수락
+menu.pizza.decline=지금은 안 함
+
+dialog.pizza.busy=§6아지즈 씨:§r 이미 다른 배달원이 일하고 있습니다. 나중에 다시 오세요.
+dialog.pizza.spawn_failed=§6아지즈 씨:§r 고객을 위한 안전한 장소를 찾지 못했습니다. 다른 지역에서 시도하세요.
+dialog.pizza.inventory_full=§6아지즈 씨:§r 가방을 받으려면 인벤토리에 빈칸이 하나 이상 필요합니다.
+dialog.pizza.mission_started=§6아지즈 씨:§r %2 안에 주문 %1건을 배달해야 합니다. 서두르세요!
+dialog.pizza.still_working=§6아지즈 씨:§r 아직 주문 %1건이 남았습니다. 남은 시간: %2.
+dialog.pizza.not_your_customer=§6아지즈 씨:§r 그 주문은 다른 배달원의 것입니다.
+dialog.pizza.already_delivered=§e이 고객은 이미 피자를 받았습니다.
+dialog.pizza.need_backpack=§c주문을 배달하려면 피자가 든 가방을 들고 있어야 합니다.
+dialog.pizza.order_delivered=§a주문 배달 완료. 고객: %1/%2.
+dialog.pizza.return_to_joe=§6모든 주문 배달이 끝났습니다. 시간이 끝나기 전에 아지즈 씨에게 돌아가세요!
+dialog.pizza.failed_time=§6아지즈 씨:§r 시간이 끝났습니다. 임무에 실패했습니다.
+dialog.pizza.failed_customer=§6아지즈 씨:§r 고객이 사라졌거나 사망했습니다. 임무에 실패했습니다.
+dialog.pizza.success=§6아지즈 씨:§r 잘했습니다. 주문 %1건을 배달하고 금괴 %2개를 받았습니다.
+
+dialog.spider_sense.enemy_detected=§c적 감지 위치:§r X: %1, Y: %2, Z: %3.
+
+item.spiderverse:ben_really_mask=Ben Really 마스크
+item.spiderverse:ben_really_suit=Ben Really 슈트
+
+item.spidermanaddon:scorpion_attack=독침 공격
+item.spidermanaddon:scorpion_spin=회전 타격
+item.spidermanaddon:scorpion_poison=독 활성화
+item.spidermanaddon:scorpion_powers=스콜피온 꼬리
+
+entity.spidermanaddon:electro_boss.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro_boss.name=Electro 소환
+entity.spidermanaddon:silk.name=Silk
+item.spawn_egg.entity.spidermanaddon:silk.name=Silk 소환
+entity.spidermanaddon:punisher_van.name=퍼니셔 밴
+item.spawn_egg.entity.spidermanaddon:punisher_van.name=퍼니셔 밴
+item.marveladdons:venom_transform=베놈으로 변신
+item.marveladdons:venom_claw=베놈 클로
+item.marveladdons:venom_combat=전투
+item.marveladdons:venom_powers=Venom 능력
+item.marveladdons:venom_shield=방패
+item.spidermanaddon:agent_venom_ult=에이전트 베놈 능력
+item.spiderverse:spiderman_undies_suit=스파이더맨 속옷
+item.spiderverse:electro_mask=Electro 마스크
+item.spidermanaddon:electro_powers=Electro 능력
+item.spidermanaddon:tarantula_suit=Tarantula 슈트
+item.spidermanaddon:tarantula_mask=Tarantula 마스크
+item.spidermanaddon:boomerang_suit=Boomerang 슈트
+item.spidermanaddon:boomerang_mask=Boomerang 마스크
+item.spidermanaddon:scorpion_suit=Scorpion 슈트
+item.spidermanaddon:green_goblin_combat=전투
+item.spidermanaddon:green_goblin_laser=그린 고블린 레이저
+item.spidermanaddon:hobgoblin_pumpkin_bomb=홉고블린 폭탄
+item.spidermanaddon:black_cat_powers=Black Cat 능력
+item.spidermanaddon:spiderman_menu=메뉴
+item.marveladdons:venom_wings=베놈 날개
+item.marveladdons:venom_whip=스윙 채찍
+
+marveladdons:itemGroup.name.fabric=천 롤
+marveladdons:itemGroup.name.spray=스프레이 페인트
+spidermanaddon:itemGroup.name.powers=스파이더맨 능력
+spidermanaddon:itemGroup.name.web_shooters=웹 슈터
+spidermanaddon:itemGroup.name.mask=스파이더맨 마스크
+spidermanaddon:itemGroup.name.suit=스파이더맨 슈트
+spidermanaddon:itemGroup.name.mysterio=Mysterio 무기고
+spidermanaddon:itemGroup.name.green_goblin=그린 고블린 무기고
+spidermanaddon:itemGroup.name.sandman=Sandman 무기고
+spidermanaddon:itemGroup.name.electro=Electro 무기고
+spidermanaddon:itemGroup.name.black_cat=Black Cat 무기고
+spidermanaddon:itemGroup.name.scorpion=Scorpion 무기고
+spidermanaddon:itemGroup.name.dr_octopus=Dr. Octopus 무기고
+spidermanaddon:itemGroup.name.tarantula=Tarantula 무기고
+spidermanaddon:itemGroup.name.boomerang=Boomerang 무기고
+
+entity.spidermanaddon:symbiote_nests.name=심비오트 둥지
+item.spawn_egg.entity.spidermanaddon:symbiote_nests.name=심비오트 둥지
+
+dialog.black_cat.heal.light=§dBlack Cat:§r 간단하지만... 쓸모 있네. 내가 고마워하는 모습에 익숙해지진 마.
+dialog.black_cat.heal.meal=§dBlack Cat:§r 이 정도는 해야 동료를 챙긴다고 하지. 세심하네, 스파이더.
+dialog.black_cat.heal.golden=§dBlack Cat:§r 나한테 황금 사과를? 누군가 내 아홉 목숨을 전부 얻고 싶은가 봐.
+dialog.black_cat.heal.full=§dBlack Cat:§r 이제야 완벽한 기분이야. 망치지 않도록 해, 알겠지?
+dialog.black_cat.heal.bad=§dBlack Cat:§r 썩은 음식이라고? 조심해, 자기야. 신뢰도 독에 물들 수 있어.
+
+dialog.punisher.heal.light=§8Punisher:§r 보급품 확인. 계속 전진하기엔 충분하다.
+dialog.punisher.heal.meal=§8Punisher:§r 좋은 식량이다. 팀을 버티게 해 주지.
+dialog.punisher.heal.golden=§8Punisher:§r 황금 사과. 유용하군. 헛되이 쓰진 않았어.
+dialog.punisher.heal.full=§8Punisher:§r 완전히 회복했다. 전투로 복귀한다.
+dialog.punisher.heal.bad=§8Punisher:§r 그건 도움이 아니다. 잘못된 판단이지.
+
+dialog.punisher.night.1=§8Punisher:§r 밤은 범죄자들에게 유리하지... 우리에게도 마찬가지다.
+dialog.punisher.night.2=§8Punisher:§r 놈들이 은신처에서 기어 나오는 시간이니까.
+dialog.punisher.night.3=§8Punisher:§r 눈을 크게 떠라.
+
+dialog.punisher.health.1=§8Punisher:§r 이보다 심한 상처도 버텼다.
+dialog.punisher.health.2=§8Punisher:§r 아직 싸울 수 있다.
+
+item.spiderverse:electro_no_way_home_suit=Electro: Spider-Man No Way Home 슈트
+item.spiderverse:electro_no_way_home_mask=Electro: Spider-Man No Way Home 마스크
+item.spiderverse:electro_tas2_suit=Electro: The Amazing Spider-Man 2 슈트
+item.spiderverse:electro_tas2_mask=Electro: The Amazing Spider-Man 2 마스크
+
+item.spidermanaddon:electro_laser=일렉트로 레이저
+item.spidermanaddon:electro_teleport=순간이동
+item.spidermanaddon:electro_ray=전기 자석
+
+gui.uncle_ben_camera.title=§b카메라 모드
+gui.uncle_ben_camera.body=카메라 옵션을 선택하세요.
+gui.uncle_ben_camera.camera=카메라
+gui.uncle_ben_camera.poses=포즈
+gui.uncle_ben_camera.camera.title=카메라
+gui.uncle_ben_camera.camera.body=카메라 모드를 선택하세요.
+gui.uncle_ben_camera.camera.free=자유 카메라
+gui.uncle_ben_camera.camera.selfie=셀카 모드
+gui.uncle_ben_camera.poses.title=포즈
+gui.uncle_ben_camera.poses.body=포즈를 선택하세요.
+gui.uncle_ben_camera.poses.disable=포즈 비활성화
+gui.uncle_ben_camera.poses.pose=포즈
+
+dialog.punisher.interact.low.1=§8Punisher:§r 함께 일하는 걸 친구가 된 거라고 착각하지 마라.
+dialog.punisher.interact.low.2=§8Punisher:§r 방심하면 구하러 가지 않을 거다.
+dialog.punisher.interact.low.3=§8Punisher:§r 널 믿을 수 있다는 걸 증명해라.
+dialog.punisher.interact.low.4=§8Punisher:§r 아무나 믿었다가 쓰러진 영웅을 너무 많이 봤다.
+dialog.punisher.interact.low.5=§8Punisher:§r 말은 줄이고 눈을 크게 떠라.
+
+dialog.punisher.interact.high.1=§8Punisher:§r 살아남는 법은 안다는 걸 증명했군.
+dialog.punisher.interact.high.2=§8Punisher:§r 이런 말은 잘 안 하지만... 잘했다.
+dialog.punisher.interact.high.3=§8Punisher:§r 내 등을 지켜라. 나도 네 등을 지키겠다.
+dialog.punisher.interact.high.4=§8Punisher:§r 네가 변화를 만들어 내는 것 같군.
+dialog.punisher.interact.high.5=§8Punisher:§r 우리가 함께 싸우는 한 놈들은 쉴 틈이 없을 거다.
+
+dialog.punisher.follow=§8Punisher:§r 너무 멀리 가지 마라.
+dialog.punisher.free=§8Punisher:§r 뭔가 나타나면 내가 처리한다.
+
+dialog.punisher.recruit.1=§8Punisher:§r 그 신분증이면 어벤져스 소속이라는 증거가 되겠군... 함께 일하지.
+dialog.punisher.recruit.2=§8Punisher:§r 아무 명령이나 따르진 않는다. 하지만 기회는 주지.
+
+dialog.punisher.respect.1=§8Punisher:§r 배우고 있군.
+dialog.punisher.respect.2=§8Punisher:§r 잘했다.
+dialog.punisher.respect.3=§8Punisher:§r 널 믿기 시작했다.
+dialog.punisher.respect.4=§8Punisher:§r 프로답군.
+
+dialog.punisher.assist.1=§8Punisher:§r 좋은 사격이다. 계속 그렇게 해.
+dialog.punisher.assist.2=§8Punisher:§r 생각보다 잘 싸우는군.
+dialog.punisher.assist.3=§8Punisher:§r 오늘 놈들에게 교훈을 줬다.
+dialog.punisher.assist.4=§8Punisher:§r 너와 함께하니 일이 수월하군.
+
+dialog.punisher.respect.25=§8Punisher:§r 뭘 해야 하는지는 아는 것 같군.
+dialog.punisher.respect.50=§8Punisher:§r 널 믿기 시작했다.
+dialog.punisher.respect.75=§8Punisher:§r 진정한 동료라는 걸 증명했다.
+dialog.punisher.respect.100=§8Punisher:§r 언젠가 내 등을 맡길 사람이 필요하다면, 그건 너다.
+
+dialog.punisher.idle.1=§8Punisher:§r 경계를 늦추지 마라.
+dialog.punisher.idle.2=§8Punisher:§r 도시는 잠들지 않는다.
+dialog.punisher.idle.3=§8Punisher:§r 범죄자들은 언제나 돌아온다.
+dialog.punisher.idle.4=§8Punisher:§r 이 잠깐의 평온을 활용해라.
+dialog.punisher.idle.5=§8Punisher:§r 방심하지 마라.
+
+gui.punisher.interact=상호작용
+gui.punisher.follow=나를 따라오기
+gui.punisher.stop_follow=따라오기 중지
+gui.punisher.title=The Punisher
+gui.punisher.respect=존중 레벨:
+
+dialog.punisher.enemy.1=§8Punisher:§r 저기 있다... 시야에서 놓치지 마라.
+dialog.punisher.enemy.2=§8Punisher:§r 손님이 왔군.
+dialog.punisher.enemy.3=§8Punisher:§r 거리를 청소할 시간이다.
+
+dialog.punisher.owner_hit.1=§8Punisher:§r 공격을 조절해라. 아군 공격을 맞으러 온 게 아니다.
+dialog.punisher.owner_hit.2=§8Punisher:§r 잘못된 판단이다. 다음엔 적을 노려라.
+dialog.punisher.owner_hit.3=§8Punisher:§r 그런 실수는 신뢰를 깎아먹는다. 규율을 지켜라.
+
+menu.punisher.body.low_respect=퍼니셔가 경계하며 당신을 바라봅니다. 아직 완전히 신뢰하지 않습니다.
+menu.punisher.body.high_respect=퍼니셔가 자신감 있는 미소를 지으며 다가옵니다. 당신과 함께 있는 것을 즐기는 듯합니다.
+
+item.marveladdons:avengers_id_card=어벤져스 신분증.
+
+dialog.black_cat.enemy.1=§dBlack Cat:§r 근처에 손님이 왔네. 팁을 줄 만한 부류는 아닌 것 같아.
+dialog.black_cat.enemy.2=§dBlack Cat:§r 근처에서 뭔가 움직이는 소리가 나... 거미줄 준비해, 스파이더.
+dialog.black_cat.enemy.3=§dBlack Cat:§r 우리만 있는 게 아니야. 근처의 괴물이 밤을 망치고 있어.
+
+dialog.black_cat.owner_hit.1=§dBlack Cat:§r 방금 건 공격이야, 아니면 내 관심을 끄는 형편없는 방법이야?
+dialog.black_cat.owner_hit.2=§dBlack Cat:§r 조심해, 스파이더. 잘못 휘두른 발톱은 신뢰도 깨뜨릴 수 있어.
+dialog.black_cat.owner_hit.3=§dBlack Cat:§r 날 그렇게 대할 거라면 다시 혼자 일하는 게 낫겠어.
+
+dialog.black_cat.approach.low.1=§dBlack Cat:§r 어머, 누가 왔나 봐. 도우러 왔어, 아니면 멋지게 방해하러 왔어?
+dialog.black_cat.approach.low.2=§dBlack Cat:§r 들뜨지 마, 아직 우린 파트너가 아니야. 그래도 지금은 내 옆에서 걸어도 돼.
+dialog.black_cat.approach.low.3=§dBlack Cat:§r 신뢰를 원한다면 직접 얻어야 해. 내 아홉 목숨은 공짜로 주지 않거든.
+
+dialog.black_cat.approach.high.1=§dBlack Cat:§r 거기 있었네, 스파이더. 오늘 밤이 지루해질 줄 알았어.
+dialog.black_cat.approach.high.2=§dBlack Cat:§r 딱 맞춰 왔네. 내가 곁에 있으면 문제도 보통 더 재미있어지지.
+dialog.black_cat.approach.high.3=§dBlack Cat:§r 이렇게 나타나는 거 마음에 들어. 도시가 조금은 덜 위험해 보이거든... 거의.
+
+dialog.black_cat.play_night.end.1=§dBlack Cat:§r 그 슈트는 이제 너한테 안 어울렸던 것 같아.
+dialog.black_cat.play_night.end.2=§dBlack Cat:§r 좋은 아침... 꽤 깊이 잤네.
+dialog.black_cat.play_night.end.3=§dBlack Cat:§r 신경 쓰지 않았으면 좋겠네... 네 옷장에서 하나 빌렸어.
+dialog.black_cat.play_night.end.4=§dBlack Cat:§r 그런 표정 짓지 마... 지금 꽤 귀여워 보여.
+dialog.black_cat.play_night.end.5=§dBlack Cat:§r 이제 우리 둘만의 작은 비밀이 생겼네.
+dialog.black_cat.play_night.end.6=§dBlack Cat:§r 오늘 밤은 잊을 수 없겠네.
+
+dialog.black_cat.play_night.start.1=§dBlack Cat:§r 오늘 밤은... 넌 내 거야.
+dialog.black_cat.play_night.start.2=§dBlack Cat:§r 오늘 밤만큼은 빌런들을 잊자.
+dialog.black_cat.play_night.start.3=§dBlack Cat:§r 이리 와... 특별한 걸 준비했어.
+dialog.black_cat.play_night.start.4=§dBlack Cat:§r 걱정 마... 얌전히 있을게.
+dialog.black_cat.play_night.start.5=§dBlack Cat:§r 우리가 겪은 모든 일을 생각하면... 넌 그럴 자격이 있어.
+dialog.black_cat.play_night.start.6=§dBlack Cat:§r 그렇게 빤히 보지 말고... 이리 와.
+
+dialog.black_cat.theft.1=§dBlack Cat:§r 이런... 그거 네 거였어?
+dialog.black_cat.theft.2=§dBlack Cat:§r 잠깐 빌릴게... 어쩌면 돌려줄지도 몰라.
+dialog.black_cat.theft.3=§dBlack Cat:§r 너무 느려, 스파이더.
+dialog.black_cat.theft.4=§dBlack Cat:§r 내가 눈치 못 챌 거라고 정말 생각했어?
+dialog.black_cat.theft.5=§dBlack Cat:§r 잡을 수 있으면 잡아 봐!
+dialog.black_cat.theft.6=§dBlack Cat:§r 넌 언제나 이걸 재미있게 만들어.
+
+dialog.black_cat.play_night.betrayal.1=§dBlack Cat:§r 재미있는 밤이었어, 스파이더... 하지만 재미와 충성을 착각하진 마.
+dialog.black_cat.play_night.betrayal.2=§dBlack Cat:§r 도둑을 믿는 건 위험하다고 했잖아. 추억은 고마워... 그리고 나머지도.
+dialog.black_cat.play_night.betrayal.3=§dBlack Cat:§r 개인적으로 받아들이지 마, 자기야. 난 그저 본능을 따랐을 뿐이야. 들어가고, 훔치고, 사라지는 것.
+
+menu.black_cat.play_night=즐거운 밤!
+dialog.black_cat.play_night.ready=블랙 캣이 당신과 특별한 밤을 보낼 준비가 된 것 같습니다.
+menu.black_cat.play_night=Play Night
+menu.black_cat.aspect.spiderman_suit=Black Cat Spider-Man Suit
+menu.black_cat.aspect=스킨
+menu.black_cat.aspect.title=블랙 캣 스킨
+menu.black_cat.aspect.body=블랙 캣이 사용할 스킨을 선택하세요.
+menu.black_cat.aspect.default=Black Cat
+menu.black_cat.aspect.symbiont=심비오트 블랙 캣
+menu.black_cat.aspect.rivals=Black Cat Marvel Rivals
+menu.black_cat.aspect.locked=%s [잠김]
+dialog.black_cat.aspect.locked=아직 그 스킨을 사용할 만큼 당신을 신뢰하지 않습니다.
+dialog.black_cat.aspect.changed=블랙 캣이 스킨을 변경했습니다.
+
+dialog.black_cat.assist.1=§dBlack Cat:§r 나쁘지 않았어. 싸움에서는 쓸모가 있나 보네.
+dialog.black_cat.assist.2=§dBlack Cat:§r 좋은 타격이야. 거의 감탄할 뻔했어.
+dialog.black_cat.assist.3=§dBlack Cat:§r 우리 꽤 좋은 팀이네... 너무 들뜨진 마.
+dialog.black_cat.assist.4=§dBlack Cat:§r 인정할게, 방금 건 우아했어.
+
+dialog.black_cat.try_tame=§dBlack Cat:§r 나와 함께 일하고 싶다면 에메랄드를 사용해.
+menu.black_cat.title=Black Cat
+
+menu.black_cat.respect=존중도:
+menu.black_cat.interact=상호작용
+menu.black_cat.follow_me=나를 따라오기
+menu.black_cat.stop_following=따라오기 중지
+
+menu.black_cat.body.low_respect=블랙 캣이 경계하며 당신을 바라봅니다. 아직 완전히 신뢰하지 않습니다.
+menu.black_cat.body.high_respect=블랙 캣이 자신감 있는 미소를 지으며 다가옵니다. 당신과 함께 있는 것을 즐기는 듯합니다.
+
+dialog.black_cat.low_respect.1=§dBlack Cat:§r 착각하지 마. 아직 널 믿는 건 아니야.
+dialog.black_cat.low_respect.2=§dBlack Cat:§r 일이 잘못돼도 두 번 구해 주진 않을 거야.
+dialog.black_cat.low_respect.3=§dBlack Cat:§r 넌 쓸모 있어... 지금은.
+dialog.black_cat.low_respect.4=§dBlack Cat:§r 후회할 이유를 만들지 마.
+dialog.black_cat.low_respect.5=§dBlack Cat:§r 난 오랫동안 혼자 일했어. 망치지 마.
+dialog.black_cat.low_respect.6=§dBlack Cat:§r 재능은 있지만 문제도 많네.
+dialog.black_cat.low_respect.7=§dBlack Cat:§r 방심하지 마. 나도 그러지 않을 테니까.
+dialog.black_cat.low_respect.8=§dBlack Cat:§r 언젠가는 내 신뢰를 얻을 수도 있겠지.
+
+dialog.black_cat.high_respect.1=§dBlack Cat:§r 너와 일하는 거 마음에 들어, 꼬마 거미.
+dialog.black_cat.high_respect.2=§dBlack Cat:§r 스타일은 있네. 나만큼은 아니지만 거의 비슷해.
+dialog.black_cat.high_respect.3=§dBlack Cat:§r 널 믿을 수 있을 줄 알았어.
+dialog.black_cat.high_respect.4=§dBlack Cat:§r 인정할게. 네가 있으면 더 재미있어.
+dialog.black_cat.high_respect.5=§dBlack Cat:§r 잘했어. 거의 감탄할 뻔했네.
+dialog.black_cat.high_respect.6=§dBlack Cat:§r 네가 곁에 있으니 덜 지루하네.
+dialog.black_cat.high_respect.7=§dBlack Cat:§r 들뜨진 마. 그래도 보니 반갑네.
+dialog.black_cat.high_respect.8=§dBlack Cat:§r 내 등을 지켜 줘. 나도 네 등을 지킬게.
+
+dialog.black_cat.follow_me=§dBlack Cat:§r 좋아, 같이 갈게. 하지만 그렇게 느리게 걷진 마.
+dialog.black_cat.stop_following=§dBlack Cat:§r 좋아, 난 여기 있을게. 너무 그리워하진 마.
+dialog.black_cat.not_owner=§dBlack Cat:§r 미안해, 자기야. 난 널 위해 일하지 않아.
+
+entity.spidermanaddon:black_cat.name=Black Cat
+action.interact.black_cat=상호작용
+item.spidermanaddon:black_cat_contract.name=블랙 캣 계약서
+dialog.black_cat.stolen=§dBlack Cat:§r 다이아몬드는 고마워. 돌려받고 싶다면... 날 잡아 봐.
+dialog.black_cat.captured=§dBlack Cat:§r 좋아... 생각보다 빠르다는 건 인정할게.
+dialog.black_cat.escape=§dBlack Cat:§r 너무 느려, 스파이더. 다음에 봐.
+dialog.black_cat.need_contract=§dBlack Cat:§r 내가 공짜로 일할 것 같아? 더 나은 제안을 가져와.
+dialog.black_cat.recruited=§dBlack Cat:§r 좋아... 함께 일할게. 하지만 내가 규칙을 따를 거라고 기대하진 마.
+item.spidermanaddon:uncle_ben_camera=벤 삼촌의 카메라
+
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+action.interact.j_jonah_jameson=대화
+
+menu.j_jonah_jameson.title=J. Jonah Jameson
+menu.j_jonah_jameson.body=제임슨이 책상 너머로 당신을 의심스럽게 바라본다.
+menu.j_jonah_jameson.interact=상호작용
+menu.j_jonah_jameson.sell_picture=사진 판매
+menu.j_jonah_jameson.close=닫기
+
+dialogue.j_jonah_jameson.random.1=스파이더맨은 위협이다! 가면을 쓴 위협이라고!
+dialogue.j_jonah_jameson.random.2=스파이더맨 사진을 원한다. 변명 말고!
+dialogue.j_jonah_jameson.random.3=그 벽 타는 녀석이 나타나면 독점 기사를 내 책상 위에 올려 놔.
+dialogue.j_jonah_jameson.random.4=도시에는 진짜 뉴스가 필요하다. 지붕 위를 뛰어다니는 영웅 말고.
+dialogue.j_jonah_jameson.random.5=파커! 잠깐... 넌 파커가 아니군. 어쨌든 빨리 움직여.
+
+dialogue.j_jonah_jameson.sell_picture=사진은 형편없고 각도도 최악이며 스파이더맨은 여전히 위협적으로 보인다... 그래도 쓸 만하군. 주괴 10개를 가져가.
+dialogue.j_jonah_jameson.no_picture=공기를 팔러 온 건가? 진짜 스파이더맨 사진을 가져오면 다시 와!
+
+item.minecraft:planks=나무 판자
+item.minecraft:glowstone_dust=발광석 가루
+item.minecraft:redstone=레드스톤
+item.minecraft:diamond=다이아몬드
+item.minecraft:copper_ingot=구리 주괴
+item.minecraft:amethyst_shard=자수정 조각
+item.minecraft:quartz=네더 석영
+item.minecraft:netherite_ingot=Netherita 주괴
+item.minecraft:gold_ingot=금 주괴
+item.minecraft:iron_ingot=철 주괴
+item.minecraft:emerald=에메랄드
+item.marveladdons:iron_arms=아이언 스파이더 암
+
+ui.spiderman_accessories.title=액세서리 제작
+ui.spiderman_accessories.body=제작할 액세서리를 선택하세요.
+ui.spiderman_accessories.selected_accessory=선택한 액세서리
+ui.spiderman_accessories.crafted=제작 완료:
+
+ui.laboratory_workbench.upgrades_menu=스파이더맨 능력 강화
+ui.laboratory_workbench.upgrades_body=강화할 능력을 선택하세요.
+ui.laboratory_workbench.accessories=액세서리 제작
+ui.laboratory_workbench.accessories_coming_soon=액세서리 제작은 추후 이용할 수 있습니다.
+ui.laboratory_workbench.back=뒤로
+
+ui.spiderman_suits.next_unlock=다음 잠금 해제
+
+gui.spidermanaddon.spiderman_level_up=스파이더맨이 레벨 %1에 도달했습니다!
+gui.spidermanaddon.spiderman_max_level=스파이더맨 최대 레벨에 도달했습니다.
+ui.spiderman_suits.title=슈트 연구실
+ui.spiderman_suits.body=제작할 슈트를 선택하세요.
+ui.spiderman_suits.level=스파이더맨 레벨
+ui.spiderman_suits.locked=잠김
+ui.spiderman_suits.need_level=필요한 스파이더맨 레벨
+ui.spiderman_suits.selected_suit=선택한 슈트
+ui.spiderman_suits.required_level=필요 레벨
+ui.spiderman_suits.required_materials=필요 재료
+ui.spiderman_suits.result=결과
+ui.spiderman_suits.mask_included=이 슈트에는 마스크가 포함되어 있습니다.
+ui.spiderman_suits.craft=제작
+ui.spiderman_suits.missing_materials=재료 부족
+ui.spiderman_suits.cancel=취소
+ui.spiderman_suits.no_materials=재료가 부족합니다.
+ui.spiderman_suits.crafted=제작 완료:
+
+ui.laboratory_workbench.suits=슈트 제작
+
+ui.spiderman_suits.title=슈트 연구실
+ui.spiderman_suits.body=제작할 슈트를 선택하세요.
+
+item.marveladdons:blue_spray=§9파란색 스프레이 페인트
+item.marveladdons:brown_spray=§6갈색 스프레이 페인트
+item.marveladdons:cyan_spray=§3청록색 스프레이 페인트
+item.marveladdons:gray_spray=§8회색 스프레이 페인트
+item.marveladdons:green_spray=§2초록색 스프레이 페인트
+item.marveladdons:light_blue_spray=§b파란색 밝은 스프레이 페인트
+item.marveladdons:light_gray_spray=§7회색 밝은 스프레이 페인트
+item.marveladdons:lime_spray=§a라임색 스프레이 페인트
+item.marveladdons:magenta_spray=§d자홍색 스프레이 페인트
+item.marveladdons:orange_spray=§6주황색 스프레이 페인트
+item.marveladdons:pink_spray=§d분홍색 스프레이 페인트
+item.marveladdons:purple_spray=§5보라색 스프레이 페인트
+item.marveladdons:red_spray=§c빨간색 스프레이 페인트
+item.marveladdons:white_spray=§f흰색 스프레이 페인트
+item.marveladdons:yellow_spray=§e노란색 스프레이 페인트
+item.marveladdons:black_spray=검은색 스프레이 페인트
+
+item.marveladdons:white_fabric=§f흰색 천 롤
+item.marveladdons:light_gray_fabric=§7회색 밝은 천 롤
+item.marveladdons:gray_fabric=§8회색 천 롤
+item.marveladdons:black_fabric=검은색 천 롤
+item.marveladdons:red_fabric=§c빨간색 천 롤
+item.marveladdons:orange_fabric=§6주황색 천 롤
+item.marveladdons:yellow_fabric=§e노란색 천 롤
+item.marveladdons:lime_fabric=§a라임색 천 롤
+item.marveladdons:green_fabric=§2초록색 천 롤
+item.marveladdons:cyan_fabric=§3청록색 천 롤
+item.marveladdons:light_blue_fabric=§b파란색 밝은 천 롤
+item.marveladdons:blue_fabric=§9파란색 천 롤
+item.marveladdons:purple_fabric=§5보라색 천 롤
+item.marveladdons:magenta_fabric=§d자홍색 천 롤
+item.marveladdons:pink_fabric=§d분홍색 천 롤
+item.marveladdons:brown_fabric=§6갈색 천 롤
+item.marveladdons:glasses=§f마스크 렌즈
+itemGroup.name.spray=§6스프레이 페인트
+itemGroup.name.fabric=§b천 롤
+
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Black Cat 소환
+entity.spidermanaddon:punisher.name=Punisher
+item.spawn_egg.entity.spidermanaddon:punisher.name=Punisher 소환
+entity.spidermanaddon:electro.name=Electro
+item.spawn_egg.entity.spidermanaddon:electro.name=Electro 소환
+entity.spidermanaddon:mano_ninja.name=핸드 닌자
+item.spawn_egg.entity.spidermanaddon:mano_ninja.name=핸드 닌자 소환
+entity.spidermanaddon:scorpion.name=Scorpion
+item.spawn_egg.entity.spidermanaddon:scorpion.name=Scorpion 소환
+entity.spidermanaddon:tarantula.name=Tarantula
+item.spawn_egg.entity.spidermanaddon:tarantula.name=Tarantula 소환
+entity.spidermanaddon:symbiotes.name=심비오트
+item.spawn_egg.entity.spidermanaddon:symbiotes.name=심비오트 소환
+entity.spidermanaddon:kraven.name=Kraven
+item.spawn_egg.entity.spidermanaddon:kraven.name=Kraven 소환
+entity.spidermanaddon:mayor_fisk.name=Kingpin
+item.spawn_egg.entity.spidermanaddon:mayor_fisk.name=Kingpin 소환
+entity.spidermanaddon:boomerang.name=Boomerang
+item.spawn_egg.entity.spidermanaddon:boomerang.name=Boomerang 소환
+
+item.spidermanaddon:miles_morales_venom_punch=베놈 펀치
+item.spidermanaddon:miles_morales_sensor=스캔
+item.spidermanaddon:miles_morales_invisibility=투명화
+item.spidermanaddon:miles_morales_focus=집중
+item.spidermanaddon:miles_morales_venom_punch=베놈 펀치
+item.spidermanaddon:miles_morales_venom_jump=베놈 점프
+item.spidermanaddon:miles_morales_venom_smash=베놈 스매시
+item.spidermanaddon:miles_morales_combat=전투
+
+message.spiderman_resistance.shield=거미 저항력이 마지막 순간에 당신을 보호했습니다.
+
+ui.laboratory_workbench.title=연구실 작업대
+ui.laboratory_workbench.body=스파이더맨 능력의 강화를 선택하세요.
+
+ui.laboratory_workbench.health=체력: 레벨 %s/%s
+ui.laboratory_workbench.resistance=저항력: 레벨 %s/%s
+ui.laboratory_workbench.focus=집중: 레벨 %s/%s
+
+ui.laboratory_workbench.health.title=체력 강화
+ui.laboratory_workbench.resistance.title=저항력 강화
+ui.laboratory_workbench.focus.title=집중 강화
+
+ui.laboratory_workbench.health.body=현재 레벨: %s/%s\n비용: 부품 %s개\n\n체력을 강화하시겠습니까?
+ui.laboratory_workbench.resistance.body=현재 레벨: %s/%s\n비용: 부품 %s개\n\n저항력을 강화하시겠습니까?
+ui.laboratory_workbench.focus.body=현재 레벨: %s/%s\n비용: 부품 %s개\n\n집중을 강화하시겠습니까?
+
+ui.laboratory_workbench.upgrade=강화
+ui.laboratory_workbench.cancel=취소
+
+ui.laboratory_workbench.no_components=부품이 부족합니다. %s개가 필요합니다.
+ui.laboratory_workbench.max_level=이 강화는 이미 최대 레벨입니다.
+
+ui.laboratory_workbench.health.success=체력을 레벨 %s로 강화했습니다.
+ui.laboratory_workbench.resistance.success=저항력을 레벨 %s로 강화했습니다.
+ui.laboratory_workbench.focus.success=집중을 레벨 %s로 강화했습니다.
+
+item.spiderverse:spiderman_rivals_mask=Spider-Man: Rivals 마스크
+item.spiderverse:spiderman_rivals_suit=Spider-Man: Rivals 슈트
+item.spiderverse:spiderman_2099_white_mask=스파이더맨 2099 화이트 마스크
+item.spiderverse:spiderman_2099_white_suit=스파이더맨 2099 화이트 슈트
+item.spiderverse:spiderman_brand_new_day_mask=스파이더맨: 브랜드 뉴 데이 마스크
+item.spiderverse:spiderman_brand_new_day_suit=스파이더맨: 브랜드 뉴 데이 슈트
+item.spiderverse:spider_oni_mask=Spider-Oni 마스크
+item.spiderverse:spider_oni_suit=Spider-Oni 슈트
+item.spiderverse:spiderman_black_gold_mask=스파이더맨 블랙 앤 골드 마스크
+item.spiderverse:spiderman_black_gold_suit=스파이더맨 블랙 앤 골드 슈트
+item.spiderverse:spiderman_mk1_mask=Spider-Man MK I 마스크
+item.spiderverse:spiderman_mk1_suit=Spider-Man MK I 슈트
+item.spiderverse:spiderman_mk2_mask=Spider-Man MK II 마스크
+item.spiderverse:spiderman_mk2_suit=Spider-Man MK II 슈트
+item.spiderverse:spiderman_mk3_mask=Spider-Man MK III 마스크
+item.spiderverse:spiderman_mk3_suit=Spider-Man MK III 슈트
+item.spiderverse:spiderman_mk4_mask=Spider-Man MK IV 마스크
+item.spiderverse:spiderman_mk4_suit=Spider-Man MK IV 슈트
+item.spiderverse:spiderman_miles_morales_2099_mask=Spider-Man: Miles Morales 2099 마스크
+item.spiderverse:spiderman_miles_morales_2099_suit=Spider-Man: Miles Morales 2099 슈트
+item.spiderverse:spiderman_miles_morales_purple_reign_mask=Spider-Man: Miles Morales - Purple Reign 마스크
+item.spiderverse:spiderman_miles_morales_purple_reign_suit=Spider-Man: Miles Morales - Purple Reign 슈트
+item.spiderverse:silk_web_mask=실크: 웹 슈트 마스크
+item.spiderverse:silk_web_suit=실크: 웹 슈트
+item.spiderverse:scarlet_spider_2_mask=Scarlet Spider II 마스크
+item.spiderverse:scarlet_spider_2_suit=Scarlet Spider II 슈트
+item.spiderverse:spiderman_dark_mask=Spider-Man 다크 마스크
+item.spiderverse:spiderman_dark_suit=Spider-Man 다크 슈트
+item.spiderverse:spiderman_into_the_spiderverse_mask=Spider-Man: Into the Spider-Verse 마스크
+item.spiderverse:spiderman_into_the_spiderverse_suit=Spider-Man: Into the Spider-Verse 슈트
+item.spiderverse:spiderman_miles_morales_2020_mask=Miles Morales 2020 마스크
+item.spiderverse:spiderman_miles_morales_2020_suit=Miles Morales 2020 슈트
+item.spiderverse:spiderman_miles_morales_2020_v2_mask=Miles Morales 2020 마스크
+item.spiderverse:spiderman_miles_morales_2020_v2_suit=Miles Morales 2020 슈트
+item.spiderverse:spiderman_miles_morales_2020_v3_mask=Miles Morales 2020 마스크
+item.spiderverse:spiderman_miles_morales_2020_v3_suit=Miles Morales 2020 슈트
+item.spiderverse:spiderman_miles_morales_2020_v4_mask=Miles Morales 2020 마스크
+item.spiderverse:spiderman_miles_morales_2020_v4_suit=Miles Morales 2020 슈트
+item.spiderverse:spiderman_blue_mask=Spider-Man 파란색 마스크
+item.spiderverse:spiderman_blue_suit=Spider-Man 파란색 슈트
+item.spiderverse:spiderman_antivenom_classic_mask=스파이더맨 클래식 안티베놈 마스크
+item.spiderverse:spiderman_antivenom_classic_suit=스파이더맨 클래식 안티베놈 슈트
+item.spiderverse:poison_mask=Spider-Man: Poison 마스크
+item.spiderverse:poison_suit=Spider-Man: Poison 슈트
+item.spiderverse:spiderman_king_in_black_mask=Spider-Man: King in Black 마스크
+item.spiderverse:spiderman_king_in_black_suit=Spider-Man: King in Black 슈트
+item.spiderverse:spidergwen_symbiont_mask=Gwenom 마스크
+item.spiderverse:spidergwen_symbiont_suit=Gwenom 슈트
+item.spiderverse:spiderman_zombie_black_mask=심비오트 좀비 스파이더맨 마스크
+item.spiderverse:spiderman_zombie_black_suit=심비오트 좀비 스파이더맨 슈트
+item.spiderverse:spiderman_zombie_mask=좀비 스파이더맨 마스크
+item.spiderverse:spiderman_zombie_suit=좀비 스파이더맨 슈트
+item.spiderverse:arachknight_mask=Arachknight 마스크
+item.spiderverse:arachknight_suit=Arachknight 슈트
+item.spiderverse:spiderman_cyborg_mask=Spider-Man Cyborg 마스크
+item.spiderverse:spiderman_cyborg_suit=Spider-Man Cyborg 슈트
+item.spiderverse:spider_carnage_mask=Spider-Carnage 마스크
+item.spiderverse:spider_carnage_suit=Spider-Carnage 슈트
+item.spiderverse:punisher_spiderman_mask=Spider-Punisher 마스크
+item.spiderverse:punisher_spiderman_suit=Spider-Punisher 슈트
+item.spiderverse:assassin_spiderman_mask=어쌔신 스파이더맨 마스크
+item.spiderverse:assassin_spiderman_suit=어쌔신 스파이더맨 슈트
+item.spiderverse:mayday_parker_black_mask=심비오트 메이데이 파커 마스크
+item.spiderverse:mayday_parker_black_suit=심비오트 메이데이 파커 슈트
+item.spiderverse:mayday_parker_mask=Mayday Parker 마스크
+item.spiderverse:mayday_parker_suit=Mayday Parker 슈트
+item.spiderverse:spiderman_classic_black_red_spider_mask=심비오트 스파이더맨 마스크 (레드 스파이더)
+item.spiderverse:spiderman_classic_black_red_spider_suit=심비오트 스파이더맨 슈트 (레드 스파이더)
+item.spidermanaddon:agent_venom_powers=에이전트 베놈 능력
+item.spidermanaddon:agent_venom_fusil=돌격소총
+item.spidermanaddon:agent_venom_missiles=로켓 발사기
+item.spidermanaddon:agent_venom_pistols=권총
+item.marveladdons:venom_item=심비오트
+
+gui.spidermanaddon.black=검정
+gui.spidermanaddon.white=흰색
+gui.spidermanaddon.dark_blue=진한 파랑
+gui.spidermanaddon.light_blue=연한 파랑
+gui.spidermanaddon.snow=눈
+gui.spidermanaddon.purple=보라
+gui.spidermanaddon.red=빨강
+
+gui.spidermanaddon.symbiont_color=심비오트 색상
+gui.spidermanaddon.symbiont_color_body=심비오트 색상을 선택하세요
+gui.spidermanaddon.symbiont_color_changed=심비오트 색상이 변경되었습니다
+gui.spidermanaddon.symbiont_wings=심비오트 날개
+gui.spidermanaddon.symbiont_wings_body=심비오트 날개를 켜거나 끄세요
+gui.spidermanaddon.symbiont_wings_enable=날개 활성화
+gui.spidermanaddon.symbiont_wings_disable=날개 비활성화
+gui.spidermanaddon.symbiont_wings_enabled=날개 활성화됨
+gui.spidermanaddon.symbiont_wings_disabled=날개 비활성화됨
+
+gui.spidermanaddon.agent_venom_suits=에이전트 베놈 슈트
+gui.spidermanaddon.agent_venom_suits_body=에이전트 베놈 전용 슈트를 선택하세요
+gui.spidermanaddon.agent_venom_suit_unlocked=에이전트 베놈 슈트 잠금 해제
+item.spidermanaddon:agent_venom_thunderbolts_mask=에이전트 베놈: 썬더볼츠 마스크
+item.spidermanaddon:agent_venom_thunderbolts_suit=에이전트 베놈: 썬더볼츠 슈트
+item.spidermanaddon:agent_venom_spiderman2_v2_mask=에이전트 베놈: 해리 오스본 마스크 (거미 문양)
+item.spidermanaddon:agent_venom_spiderman2_v2_suit=에이전트 베놈: 해리 오스본 슈트 (거미 문양)
+item.spidermanaddon:agent_venom_spiderman2_mask=에이전트 베놈: 해리 오스본 마스크
+item.spidermanaddon:agent_venom_spiderman2_suit=에이전트 베놈: 해리 오스본 슈트
+item.spidermanaddon:agent_anti_venom_mask=에이전트 안티베놈 마스크
+item.spidermanaddon:agent_anti_venom_suit=에이전트 안티베놈 슈트
+item.spidermanaddon:agent_venom_mask=에이전트 베놈 마스크
+item.spidermanaddon:agent_venom_suit=에이전트 베놈 슈트
+
+gui.spidermanaddon.symbiont_skins=스킨
+gui.spidermanaddon.symbiont_skins_body=베놈 스킨을 선택하세요
+gui.spidermanaddon.symbiont_skin_need_capsule=이 스킨을 해제하려면 심비오트 캡슐이 필요합니다
+gui.spidermanaddon.symbiont_skin_unlocked=스킨 잠금 해제
+gui.spidermanaddon.symbiont_skin_changed=스킨 변경됨
+gui.spidermanaddon.symbiont_venom_required=베놈으로 변신한 상태여야 합니다
+
+gui.spidermanaddon.symbiont_agent_venom_enabled=에이전트 베놈 활성화됨
+gui.spidermanaddon.symbiont_agent_venom_disabled=에이전트 베놈 비활성화됨
+gui.spidermanaddon.symbiont_agent_venom_deactivate=에이전트 베놈 비활성화
+gui.spidermanaddon.symbiont_agent_venom_deactivate_confirm=에이전트 베놈을 비활성화하시겠습니까?
+gui.spidermanaddon.symbiont_venom_enabled=베놈 변신 활성화됨
+gui.spidermanaddon.symbiont_venom_disabled=베놈 변신 비활성화됨
+gui.spidermanaddon.symbiont_venom_deactivate=베놈 변신 비활성화
+gui.spidermanaddon.symbiont_venom_deactivate_confirm=베놈 변신을 비활성화하시겠습니까?
+gui.spidermanaddon.symbiont_venom_incompatible=공생과 호환되지 않습니다. 다리 슬롯을 비워야 합니다.
+
+item.spidermanaddon:venom_rage=분노 모드
+item.marveladdons:venom_cellular_corrosion=세포 부식
+item.marveladdons:venom_eat=섭취
+item.marveladdons:venom_axe=심비오트 도끼
+item.marveladdons:venom_knife_whip=심비오트 나이프
+item.marveladdons:venom_explotion=심비오트 폭발
+
+gui.spidermanaddon.symbiont_deactivate=심비오트 비활성화
+gui.spidermanaddon.symbiont_deactivate_confirm=심비오트 능력을 비활성화하시겠습니까?
+gui.spidermanaddon.symbiont_powers_enabled=심비오트 능력 활성화
+gui.spidermanaddon.symbiont_powers_disabled=심비오트 능력 비활성화
+gui.spidermanaddon.confirm=확인
+gui.spidermanaddon.cancel=취소
+gui.spidermanaddon.symbiont_menu_body=베놈 심비오트 시스템
+gui.spidermanaddon.symbiont_progress=진행도 보기
+gui.spidermanaddon.symbiont_activate=심비오트 활성화
+gui.spidermanaddon.symbiont_unlock_suit=슈트 잠금 해제
+gui.spidermanaddon.symbiont_unlock_suit_body=사용 가능한 심비오트 슈트를 선택하세요
+gui.spidermanaddon.symbiont_level=레벨
+gui.spidermanaddon.symbiont_exp=경험치
+gui.spidermanaddon.symbiont_powers=심비오트 능력 활성화
+gui.spidermanaddon.symbiont_venom=베놈으로 변신
+gui.spidermanaddon.symbiont_venom_locked=베놈으로 변신 §c잠김
+gui.spidermanaddon.symbiont_agent_venom=에이전트 베놈
+gui.spidermanaddon.symbiont_agent_venom_locked=에이전트 베놈 §c잠김
+gui.spidermanaddon.symbiont_suit_missing=전체 슈트를 착용해야 합니다
+gui.spidermanaddon.symbiont_suit_unlocked=심비오트 슈트 잠금 해제
+gui.spidermanaddon.symbiont_bonded=이제 베놈 심비오트의 숙주입니다
+gui.spidermanaddon.not_symbiont_host=심비오트 숙주가 아닙니다
+gui.spidermanaddon.back=뒤로
+
+gui.spidermanaddon.symbiont_rank_0=숙주
+gui.spidermanaddon.symbiont_rank_1=결속됨
+gui.spidermanaddon.symbiont_rank_2=분노한 숙주
+gui.spidermanaddon.symbiont_rank_3=리썰 프로텍터
+gui.spidermanaddon.symbiont_rank_4=완벽한 적응
+gui.spidermanaddon.symbiont_rank_5=에이전트 베놈
+gui.spidermanaddon.symbiont_rank_6=살아 있는 무기고
+gui.spidermanaddon.symbiont_rank_7=Anti-Venom
+gui.spidermanaddon.symbiont_rank_8=완벽한 결속
+gui.spidermanaddon.symbiont_rank_9=왕의 날개
+gui.spidermanaddon.symbiont_rank_10=킹 인 블랙
+
+item.spidermanaddon:black_cat_whip_thef=행운의 그래플링 훅
+item.spidermanaddon:black_cat_whip_claws=클로 채찍
+item.spidermanaddon:black_cat_swing=스윙 훅
+item.spidermanaddon:black_cat_claws=클로 공격
+
+item.spidermanaddon:mysterio_gas=환영 가스
+item.spidermanaddon:mysterio_powers=Mysterio 능력
+item.spidermanaddon:mysterio_invoke=미끼 배치
+item.spidermanaddon:mysterio_drones=공격 드론
+item.spidermanaddon:mysterio_laser=미스테리오 빔
+item.spidermanaddon:mysterio_clones=클론 소환
+item.spiderverse:mysterio_far_from_home_suit=Mysterio: Far From Home 슈트
+item.spiderverse:mysterio_far_from_home_helmet=미스테리오 헬멧: 파 프롬 홈
+
+item.spidermanaddon:pumpkin_knife_guide_explosive=그린 고블린 폭발 추적 칼날
+item.spidermanaddon:pumpkin_knife_guide=그린 고블린 추적 칼날
+item.spidermanaddon:green_goblin_powers=그린 고블린 능력
+item.spidermanaddon:green_goblin_raimi_blades=그린 고블린 수납식 칼날
+item.spidermanaddon:green_goblin_spiderman3_blades=그린 고블린 칼날
+item.spiderverse:green_goblin_spiderman3_suit=그린 고블린 - Spider-Man 3 슈트
+item.spiderverse:green_goblin_spiderman3_mask=그린 고블린 - Spider-Man 3 마스크
+item.spiderverse:green_goblin_no_way_home_suit=그린 고블린 - Spider-Man: No Way Home 슈트
+item.spiderverse:green_goblin_no_way_home_mask=그린 고블린 - Spider-Man: No Way Home 마스크
+item.spidermanaddon:planeador_spiderman3_item=그린 고블린 글라이더
+entity.spidermanaddon:planeador_spiderman3.name=그린 고블린 글라이더
+item.spawn_egg.entity.spidermanaddon:planeador_spiderman3.name=그린 고블린 글라이더
+
+gui.spidermanaddon.confirm_upgrade=웹 슈터 강화
+gui.spidermanaddon.upgrade_cost=이 웹 슈터를 강화하려면 부품 10개가 필요합니다
+gui.spidermanaddon.upgrade=강화
+gui.spidermanaddon.max_level=이 웹 슈터는 이미 최대 레벨입니다
+gui.spidermanaddon.upgraded=웹 슈터 강화됨
+gui.spidermanaddon.not_enough_components=부품이 부족합니다
+
+gui.spidermanaddon.no_upgrades=강화 가능한 웹 슈터가 필요합니다.
+gui.spidermanaddon.upgrade_menu=웹 슈터 강화
+gui.spidermanaddon.select_upgrade=웹 슈터 선택
+gui.spidermanaddon.confirm_remove=부품 5개를 회수하시겠습니까?
+gui.spidermanaddon.remove=제거
+gui.spidermanaddon.shooter_removed=웹 슈터가 제거되었습니다
+gui.spidermanaddon.cannot_remove_equipped=장착된 웹 슈터는 제거할 수 없습니다
+
+gui.spidermanaddon.upgrade_shooter=웹 슈터 강화
+gui.spidermanaddon.remove_shooter=웹 슈터 제거
+gui.spidermanaddon.settings=웹 슈터 설정
+
+gui.spidermanaddon.confirm_unlock=웹 슈터 잠금 해제
+gui.spidermanaddon.unlock_cost=부품 10개가 필요합니다
+gui.spidermanaddon.unlock=잠금 해제
+gui.spidermanaddon.cancel=취소
+gui.spidermanaddon.not_enough_components=부품 부족
+gui.spidermanaddon.unlocked=웹 슈터 잠금 해제
+
+gui.spidermanaddon.select_unlock=웹 슈터 선택
+gui.spidermanaddon.unlock_menu=웹 슈터 잠금 해제
+gui.spidermanaddon:web_shot=웹 슈터
+gui.spidermanaddon.loadout=§c웹 슈터 장비 구성
+gui.spidermanaddon.web_shooter_loadout=웹 슈터 장착
+gui.spidermanaddon.empty=§c비어 있음
+gui.spidermanaddon.config=§a웹 슈터 설정 완료.
+gui.spidermanaddon.no_info=§c정보를 찾을 수 없습니다.
+
+spidermanaddon.web_line.no_build=§c30블록 이내에 두 번째 끝점이 없습니다.
+spidermanaddon.web_line.empty=§c유체가 부족합니다.
+
+item.spidermanaddon:web_shield=웹 실드
+item.spidermanaddon:web_whip=웹 훅
+item.spidermanaddon:web_line=웹 라인
+item.spidermanaddon:web_bomb=웹 수류탄
+item.spidermanaddon:spider_drone=Spider-Drone
+item.spidermanaddon:web_hook=웹 훅
+
+item.mzaddon:spider_web_cartridge=웹 카트리지
+item.spidermanaddon:spiderman_spin_punch=회전 공격
+item.spidermanaddon:spiderman_kick=날아차기
+item.spidermanaddon:spiderman_focus=집중
+item.spidermanaddon:spiderman_sensor=스캔
+item.spidermanaddon:spiderman_punch=펀치
+item.spidermanaddon:spiderman_combat=전투
+
+item.spiderverse:silk_mask=Silk 마스크
+item.spiderverse:silk_suit=Silk 슈트
+spidermanaddon.venom_wings=비행 설정
+
+entity.spidermanaddon:miles_morales.name=Miles Morales
+item.spawn_egg.entity.spidermanaddon:miles_morales.name=Miles Morales 소환
+entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Man
+item.spawn_egg.entity.spidermanaddon:spectacular_spiderman.name=Spectacular Spider-Man 소환
+entity.spidermanaddon:spider_gwen.name=Spider-Gwen
+item.spawn_egg.entity.spidermanaddon:spider_gwen.name=Spider-Gwen 소환
+entity.spidermanaddon:spider_ham.name=Spider-Ham
+item.spawn_egg.entity.spidermanaddon:spider_ham.name=Spider-Ham 소환
+entity.spidermanaddon:spider_punk.name=Spider-Punk
+item.spawn_egg.entity.spidermanaddon:spider_punk.name=Spider-Punk 소환
+entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099
+item.spawn_egg.entity.spidermanaddon:spiderman_2099.name=Spider-Man 2099 소환
+entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way home
+item.spawn_egg.entity.spidermanaddon:spiderman_no_way_home.name=Spider-Man: No way home 소환
+entity.spidermanaddon:spiderman_noir.name=Spider-Noir
+item.spawn_egg.entity.spidermanaddon:spiderman_noir.name=Spider-Noir 소환
+entity.spidermanaddon:spiderman_raimi.name=Spider-Man (지구-96283)
+item.spawn_egg.entity.spidermanaddon:spiderman_raimi.name=Spider-Man (지구-96283) 소환
+entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited
+item.spawn_egg.entity.spidermanaddon:spiderman_unlimited.name=Spider-Man Unlimited 소환
+entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (지구-120703)
+item.spawn_egg.entity.spidermanaddon:the_amazing_spiderman.name=Spider-Man (지구-120703) 소환
+
+item.spidermanaddon:spider_ham_skin=Spider-Ham Skin
+item.spidermanaddon:spider_ham_hammer=스파이더햄 망치
+
+spidermanaddon.gizmo_camera_mode.title=카메라 모드
+spidermanaddon:camera.free=자유 카메라
+spidermanaddon:camera.selfie=셀카 카메라
+spidermanaddon:camera.clear=카메라 모드 비활성화
+spidermanaddon:camera.animations=애니메이션
+spidermanaddon:camera.lyla=Lyla 활성화/비활성화
+
+spidermanaddon:camera.lyla.off=비활성화
+spidermanaddon:camera.lyla.on=활성화
+
+item.spidermanaddon:multiversal_chip=멀티버스 칩
+item.spidermanaddon:gizmo_portal=포털 생성
+item.spidermanaddon:gizmo_camera_mode=카메라 모드
+
+spidermanaddon.gizmo.title=멀티버스 장치
+spidermanaddon.portal=포털 생성
+spidermanaddon.spiderman=스파이더맨 영입
+spidermanaddon.villain=빌런 소환
+spidermanaddon.miles_morales=Miles Morales (지구 1610B)
+spidermanaddon.spectacular_spiderman=Spectacular Spider-Man (지구 26496)
+spidermanaddon.spider_punk=Spider-Punk (지구 138B)
+spidermanaddon.spider_gwen=Spider-Gwen (지구 65B)
+spidermanaddon.spider_ham=Spider-Ham (지구 8311B)
+spidermanaddon.spiderman_2099=Spider-Man 2099 (지구 928B)
+spidermanaddon.spiderman_no_way_home=Spider-Man - MCU (지구 199999)
+spidermanaddon.spiderman_noir=Spider-Noir (지구 90214)
+spidermanaddon.spiderman_raimi=Spider-Man (지구 96283)
+spidermanaddon.spiderman_unlimited=Spider-Man Unlimited (지구 751263)
+spidermanaddon.the_amazing_spiderman=The Amazing Spider-Man (지구 120703)
+spidermanaddon.silk=Silk
+
+item.spiderverse:the_amazing_spiderman_casero_mask=어메이징 스파이더맨 홈메이드 마스크
+item.spiderverse:the_amazing_spiderman_casero_suit=어메이징 스파이더맨 홈메이드 슈트
+item.spiderverse:spiderman_new_blue_mask=Spider-Man: New Blue 마스크
+item.spiderverse:spiderman_new_blue_suit=Spider-Man: New Blue 슈트
+item.spiderverse:yfn_spiderman_oscorp_mask=친절한 이웃 스파이더맨: Oscorp Suit 마스크
+item.spiderverse:yfn_spiderman_oscorp_suit=친절한 이웃 스파이더맨: Oscorp Suit 슈트
+item.spiderverse:yfn_spiderman_mask=친절한 이웃 스파이더맨 마스크
+item.spiderverse:yfn_spiderman_suit=친절한 이웃 스파이더맨 슈트
+item.spiderverse:spiderman_bombastic_bag_man_mask=스파이더맨: 봄바스틱 백맨 마스크
+item.spiderverse:spiderman_bombastic_bag_man_suit=스파이더맨: 봄바스틱 백맨 슈트
+
+item.spidermanaddon:web_bomb_item=웹 폭탄
+item.spidermanaddon:spider_drone_item=Spider-Drone
+item.spidermanaddon:mobile=휴대전화
+item.spidermanaddon:dr_octopus_take=잡기
+item.spiderverse:spiderman_noir_into_the_spiderverse_mask=Spider-Man Noir: Into The Spider-Verse 마스크
+item.spiderverse:the_amazing_spiderman_black_mask=The Amazing Spider-Man 블랙 마스크
+item.spidermanaddon:capsule=캡슐
+item.spidermanaddon:dr_octopus_chip=소환 칩: Doctor Octopus [지구-616]
+item.spidermanaddon:multiversal_gizmo=멀티버스 장치
+item.spidermanaddon:web_shooter=웹 슈터
+item.spidermanaddon:web_shooter_balanceo=웹 슈터 [스윙]
+entity.spidermanaddon:air_compressor.name=공기 압축기
+item.spawn_egg.entity.spidermanaddon:air_compressor.name=공기 압축기
+entity.spidermanaddon:viento.name=바람
+item.spawn_egg.entity.spidermanaddon:viento.name=바람
+
+spidermanaddon.symbiont_pull_lock=심비오트 끌어당기기로 주변 적 4명을 붙잡아 짓눌렀습니다.
+spidermanaddon.antivenom_bomb_lock=적에게 큰 피해를 주는 안티 베놈 폭탄을 던집니다.
+spidermanaddon.antivenom_tempest_lock=적에게 큰 피해를 주는 안티 베놈 폭풍을 일으킵니다.
+spidermanaddon.symbiote_whip_lock=심비오트 블레이드로 전투합니다.
+spidermanaddon.rage_mode_lock=분노 모드를 활성화해 저항력과 전투 피해를 높이고 몇 초 동안 불사 상태가 됩니다.
+spidermanaddon.rage_mode_unlock.price=가격: 25 XP
+spidermanaddon.symbiote_powers_lock.price=가격: 5 XP
+item.spidermanaddon:pumpkin_bomb_raimi=그린 고블린 펌킨 폭탄 [레이미 사가]
+item.spidermanaddon:planeador_raimi_item=그린 고블린 글라이더 [레이미 사가]
+item.spidermanaddon:iron_arms_menu=메뉴
+item.spidermanaddon:dr_octopus_walk=메탈 암으로 걷기
+item.spidermanaddon:dr_octopus_attack=Attack
+entity.spidermanaddon:suits_machine.name=슈트 제작기
+item.spawn_egg.entity.spidermanaddon:suits_machine.name=슈트 제작기
+entity.spidermanaddon:taskmaster_drone.name=태스크마스터 드론
+item.spawn_egg.entity.spidermanaddon:taskmaster_drone.name=태스크마스터 드론 소환
+item.spidermanaddon:iron_arms_menu=메뉴
+item.spidermanaddon:concussive_blast=웹 슈터: Concussive Blast
+item.spidermanaddon:web_grabber=웹 슈터: Web Grabber
+item.spidermanaddon:impact_web=웹 슈터: Web Impact
+item.spiderverse:superior_spiderman_black_mask=Superior Spider-Man 블랙 마스크
+item.spiderverse:spiderman_raimi_black_mask=Spider-Man Raimi's 블랙 마스크
+item.spiderverse:the_amazing_spiderman_black_suit=The Amazing Spider-Man 블랙 마스크
+item.spiderverse:spiderman_ps5_symbiote_mask=Insomniac's Spider-Man 2: 심비오트 슈트 마스크
+item.spiderverse:spiderman_ps4_black_mask=Insomniac's Spider-Man 2: 블랙 슈트 마스크
+item.spiderverse:miles_morales_across_the_spiderverse_mask=Spider-Man Miles Morales: Across The Spider-Verse 마스크
+item.spiderverse:spiderman_classic_black_mask=스파이더맨 클래식 블랙 마스크
+item.spiderverse:venom_s3_mask=Venom [Spider-Man 3] 마스크
+item.spiderverse:spiderman_antivenom_mask=Spider-Man: Antivenom 마스크
+item.spiderverse:spirit_spider_mask=Spirit Spider 마스크
+item.spiderverse:spectacular_spiderman_black_mask_3=Spectacular Spider-Man 3.0 블랙 마스크
+item.spiderverse:spectacular_spiderman_black_mask_2=Spectacular Spider-Man 2.0 블랙 마스크
+item.spiderverse:spectacular_spiderman_black_mask=Spectacular Spider-Man 블랙 마스크
+item.spiderverse:spectacular_spiderman_mask=Spectacular Spider-Man 마스크
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask_1=Spider-Man 2099: Across The Spider-Verse 마스크
+item.spiderverse:spiderman_2099_across_the_spiderverse_mask=Spider-Man 2099: Across The Spider-Verse 마스크
+item.spiderverse:anti_ock_mask_3=안티옥 슈트 마스크
+item.spiderverse:anti_ock_mask_2=안티옥 슈트 마스크
+item.spiderverse:anti_ock_mask_1=안티옥 슈트 마스크
+item.spiderverse:anti_ock_mask=안티옥 슈트 마스크
+item.spiderverse:aracnido_jr_mask=아라크니드 주니어 마스크
+item.spiderverse:ezekiel_sims_mask=Ezekiel Sims 마스크
+item.spiderverse:human_spider_mask=la 휴먼 스파이더 마스크
+item.spiderverse:into_the_spiderverse_sb_mask=Into The Spider-Verse SB 마스크
+item.spiderverse:miles_morales_10th_mask_3=스파이더맨 마일스 모랄레스: 10주년 마스크
+item.spiderverse:miles_morales_10th_mask_2=스파이더맨 마일스 모랄레스: 10주년 마스크
+item.spiderverse:miles_morales_10th_mask_1=스파이더맨 마일스 모랄레스: 10주년 마스크
+item.spiderverse:miles_morales_10th_mask=스파이더맨 마일스 모랄레스: 10주년 마스크
+item.spiderverse:miles_morales_bodega_cat_mask=Spider-Man Miles Morales: 보데가 캣 마스크
+item.spiderverse:miles_morales_bodega_cat_mask_1=Spider-Man Miles Morales: 보데가 캣 마스크
+item.spiderverse:miles_morales_bodega_cat_mask_2=Spider-Man Miles Morales: 보데가 캣 마스크
+item.spiderverse:miles_morales_bodega_cat_mask_3=Spider-Man Miles Morales: 보데가 캣 마스크
+item.spiderverse:miles_morales_gold_mask=Spider-Man Miles Morales: 업타운 프라이드 마스크
+item.spiderverse:miles_morales_into_the_spiderverse_mask=Miles Morales: Into The Spider-Verse 마스크
+item.spiderverse:miles_morales_wolverine_mask_3=Miles Morales: Wolverine 마스크
+item.spiderverse:miles_morales_wolverine_mask_2=Miles Morales: Wolverine 마스크
+item.spiderverse:miles_morales_wolverine_mask_1=Miles Morales: Wolverine 마스크
+item.spiderverse:miles_morales_wolverine_mask=Miles Morales: Wolverine 마스크
+item.spiderverse:scarlet_spider_across_the_spiderverse_mask=Scarlet Spider: Across The Spider-Verse 마스크
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider 마스크
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider 마스크
+item.spiderverse:scarlet_spider_mask_3=Scarlet Spider 마스크
+item.spiderverse:scarlet_spider_mask_2=Scarlet Spider 마스크
+item.spiderverse:scarlet_spider_mask_1=Scarlet Spider 마스크
+item.spiderverse:scarlet_spider_mask=Scarlet Spider 마스크
+item.spiderverse:spiderman_67_mask=Spider-Man: 67° 마스크
+item.spiderverse:spiderman_90_black_mask_1=Spider-Man: 애니메이션 시리즈 [빨강 및 파랑 테두리] 블랙 마스크
+item.spiderverse:spiderman_90_black_mask=Spider-Man: 애니메이션 시리즈 블랙 마스크
+item.spiderverse:spiderman_90_mask=Spider-Man: 애니메이션 시리즈 마스크
+item.spiderverse:spiderman_cero_mask=스파이더맨: 제로 마스크
+item.spiderverse:spiderman_future_foundation_mask=Spider-Man: 퓨처 파운데이션 마스크
+item.spiderverse:spiderman_homecoming_mask=스파이더맨: 스타크 슈트 마스크
+item.spiderverse:spiderman_homemade_mask=스파이더맨 홈메이드 마스크
+item.spiderverse:spiderman_india_mask=Spider-Man India: Across The Spider-Verse 슈트
+item.spiderverse:spiderman_far_from_home_mask=스파이더맨: 업그레이드 마스크
+item.spiderverse:spiderman_last_stand_mask=Spider-Man: Last Stand 마스크
+item.spiderverse:spiderman_miles_morales_leap_of_faith_mask=Miles Morales: 신념의 도약 마스크
+item.spiderverse:spiderman_negative_mask=Spider-Man: Negative 마스크
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Spider-Noir: Into The Spider-Verse 마스크
+item.spiderverse:spiderman_no_way_home_mask=스파이더맨: 하이브리드 마스크
+item.spiderverse:spiderman_ps4_mask=Insomniac's Spider-Man: 어드밴스드 마스크
+item.spiderverse:spiderman_ps5_mask_3=Insomniac's Spider-Man: 어드밴스드 마스크 2.0
+item.spiderverse:spiderman_ps5_mask_2=Insomniac's Spider-Man: 어드밴스드 마스크 2.0
+item.spiderverse:spiderman_ps5_mask_1=Insomniac's Spider-Man: 어드밴스드 마스크 2.0
+item.spiderverse:spiderman_ps5_mask=Insomniac's Spider-Man: 어드밴스드 마스크 2.0
+item.spiderverse:spiderman_raimi_mask=Spider-Man Raimi's 마스크
+item.spiderverse:spiderman_secret_wars_civil_war_mask=Spider-Man: Secret Wars - Civil War 마스크
+item.spiderverse:spiderman_stealth_mask=Spider-Man: Big Time 마스크
+item.spiderverse:spiderman_steve_ditko_mask=Spider-Man: Amazing Fantasy #15 마스크
+item.spiderverse:spiderman_unlimited_mask=Spider-Man: Unlimited 마스크
+item.spiderverse:spiderman_velocity_mask=스파이더맨 벨로시티 마스크
+item.spiderverse:spiderman_web_of_shadows_black_mask=Spider-Man: Web of Shadows 블랙 마스크
+item.spiderverse:spiderman_web_of_shadows_mask=Spider-Man: Web of Shadows 마스크
+item.spiderverse:spiderman_what_if_animated_mask=Spider-Man: What If Ep 5 마스크
+item.spiderverse:spiderman_what_if_mask=Spider-Man: Disney Land 마스크
+item.spiderverse:spiderman_wrestler_mask=레슬러 스파이더맨 마스크
+item.spiderverse:superior_spiderman_mask_3=Superior Spider-Man 마스크
+item.spiderverse:superior_spiderman_mask_2=Superior Spider-Man 마스크
+item.spiderverse:superior_spiderman_mask_1=Superior Spider-Man 마스크
+item.spiderverse:superior_spiderman_mask=Superior Spider-Man 마스크
+item.spiderverse:spider_punk_across_the_spider_verse_mask=Spider-Punk: Across The Spider-Verse 마스크
+item.spiderverse:the_amazing_spiderman_2_mask=The Amazing Spider-Man 2 마스크
+item.spiderverse:spider_punk_mask=Spider-Punk 마스크
+item.spiderverse:the_amazing_spiderman_1_mask=The Amazing Spider-Man 마스크
+item.spiderverse:ultimate_spiderman_mask=Ultimate Spider-Man 마스크
+item.spiderverse:ultimate_spiderman_ucm_mask=Ultimate Spider-Man [MCU] 마스크
+item.spiderverse:ultimate_spiderman_black_mask=Ultimate Spider-Man 블랙 마스크
+item.spiderverse:yfn_spiderman_casero_mask="친절한 이웃 스파이더맨" 홈메이드 마스크
+item.spidermanaddon:green_goblin_chip=소환 칩: 그린 고블린 [지구-616]
+item.spidermanaddon:green_goblin_raimi_chip=소환 칩: 그린 고블린 [지구-96283]
+item.spidermanaddon:hobgoblin_chip=소환 칩: Hobgoblin [지구-616]
+item.spidermanaddon:doctor_octopus_chip=소환 칩: Doctor Octopus [지구-616]
+item.spidermanaddon:lizard_chip=소환 칩: Lagarto [지구-616]
+item.spidermanaddon:shocker_chip=소환 칩: Shocker [지구-616]
+
+item.spidermanaddon:iron_arms=아이언 스파이더 암
+item.spidermanaddon:spiderman_symbiote_powers=심비오트 스파이더맨 능력
+item.spidermanaddon:spiderman_powers=스파이더맨 능력
+item.spidermanaddon:web_wings=웹 윙
+item.spiderverse:green_goblin_raimi_suit=그린 고블린 [Raimi] 슈트
+item.spiderverse:green_goblin_raimi_mask=그린 고블린 [Raimi] 마스크
+
+spidermanaddon.damage_player.text=플레이어 공격을 켜거나 끕니다. 다른 능력에도 적용됩니다.
+spidermanaddon.activar=활성화
+spidermanaddon.web_shooter_config=설정
+spidermanaddon.desactivar=비활성화
+spidermanaddon.symbiont_suit.unlock=잠금 해제: 5 XP
+spidermanaddon.suit_lock=심비오트 슈트 잠금 해제 [분노 모드]
+spidermanaddon.cancel=Cancel
+spidermanaddon.back=뒤로
+spidermanaddon.none=없음
+spidermanaddon.venom=Venom
+spidermanaddon.antivenom=Antivenom
+spidermanaddon.carnage=Carnage
+spidermanaddon.ultimate_venom=Ultimate Venom
+spidermanaddon.symbiote_config=설정
+spidermanaddon.damage_player=플레이어 피해
+spidermanaddon.symbiote_skin=심비오트 유형
+spidermanaddon.symbiote_suit=심비오트 슈트 [분노 모드]
+spidermanaddon.spiderman_powers=스파이더맨 능력
+spidermanaddon.block_powers=강화가 잠겨 있습니다.
+spidermanaddon.block_powers_text=선행 강화를 해제해야 이 강화를 사용할 수 있습니다.
+spidermanaddon.continuar=계속
+spidermanaddon.unlock_mejora=강화 잠금 해제
+spidermanaddon.swing_1_lock=스윙: 급강하 중 묘기를 수행하세요. 묘기를 수행하면 XP를 얻습니다.
+spidermanaddon.combat_0_lock=전투: 근접 공격 피해가 증가합니다.
+spidermanaddon.combat_1_lock=전투: 지면 강타와 공중 타격 피해가 증가합니다.
+spidermanaddon.combat_2_lock=전투: 공중 타격으로 주변 적을 날려 버릴 수 있습니다.
+spidermanaddon.health_0_lock=체력: 추가 하트.
+spidermanaddon.health_1_lock=체력: 하트가 2개 미만이면 10초 동안 흡수 효과를 얻습니다. 재사용 대기시간은 30초입니다.
+spidermanaddon.health_2_lock=체력: 피해를 받지 않는 동안 15초마다 재생합니다.
+spidermanaddon.swing_1.unlock=잠금 해제: 10 XP
+spidermanaddon.combat_0.unlock=잠금 해제: 10 XP
+spidermanaddon.combat_1.unlock=잠금 해제: 15 XP
+spidermanaddon.combat_2.unlock=잠금 해제: 20 XP
+spidermanaddon.health_0.unlock=잠금 해제: 10 XP
+spidermanaddon.health_1.unlock=잠금 해제: 15 XP
+spidermanaddon.health_2.unlock=잠금 해제: 20 XP
+
+item.spiderverse:spiderman_classic_mask=Spider-Man: 클래식 마스크
+item.spiderverse:spiderman_classic_mask_1=Spider-Man: 클래식 마스크
+item.spiderverse:spiderman_classic_mask_2=Spider-Man: 클래식 마스크
+item.spiderverse:spiderman_classic_mask_3=Spider-Man: 클래식 마스크
+item.spiderverse:scarlet_spider_mask=la 스칼렛 스파이더 마스크
+item.spiderverse:scarlet_spider_mask_1=la 스칼렛 스파이더 마스크
+item.spiderverse:scarlet_spider_mask_2=la 스칼렛 스파이더 마스크
+item.spiderverse:scarlet_spider_mask_3=la 스칼렛 스파이더 마스크
+item.spiderverse:iron_spider_mask=아이언 스파이더 마스크 (클래식)
+item.spiderverse:iron_spider_mask_1=아이언 스파이더 마스크 (클래식)
+item.spiderverse:iron_spider_mask_2=아이언 스파이더 마스크 (클래식)
+item.spiderverse:iron_spider_mask_3=아이언 스파이더 마스크 (클래식)
+item.spiderverse:iron_spider_ucm_mask=Iron Spider [MCU] 마스크
+item.spiderverse:spiderman_2099_mask_1=Spider-Man 2099 마스크
+item.spiderverse:spiderman_2099_mask_2=Spider-Man 2099 마스크
+item.spiderverse:spiderman_2099_mask_3=Spider-Man 2099 마스크
+item.spiderverse:spiderman_2099_mask=Spider-Man 2099 마스크
+item.spiderverse:miles_morales_mask=Spider-Man Miles Morales 마스크
+item.spiderverse:ghost_spider_mask=Ghost Spider 마스크
+
+entity.spidermanaddon:taskmaster_sequels.name=태스크마스터 부하
+item.spawn_egg.entity.spidermanaddon:taskmaster_sequels.name=태스크마스터 부하 소환
+spidermanaddon.repetir=도전 다시 시작
+spidermanaddon.taskmaster_challenges.0=도전 1
+spidermanaddon.taskmaster_challenges.1=도전 2
+spidermanaddon.taskmaster_challenges.2=도전 3
+spidermanaddon.taskmaster_challenges.3=도전 4
+spidermanaddon.taskmaster_challenges.4=도전 5
+spidermanaddon.taskmaster_challenges.start=시작
+spidermanaddon.taskmaster_challenges.0.text=태스크마스터 부하 5명을 처치하세요.
+spidermanaddon.taskmaster_challenges.1.text=폭탄을 해제하고 태스크마스터의 부하를 처치하세요.
+spidermanaddon.taskmaster_challenges.2.text=태스크마스터의 드론을 파괴하세요.
+spidermanaddon.taskmaster_challenges.3.text=태스크마스터의 부하에게서 시민을 구하세요.
+spidermanaddon.taskmaster_challenges.4.text=태스크마스터를 처치하세요.
+
+spidermanaddon.suitsFabricForm=제작
+marveladdon:fabricar=제작
+spidermanaddon.venom_snow_lock=베놈: 스노우 심비오트 §l§6[잠금 해제]
+spidermanaddon.venom_snow_lock.price=가격: 20 XP
+spidermanaddon.venompool_lock=Venompool §l§6[잠금 해제]
+spidermanaddon.venompool_lock.price=가격: 20 XP
+spidermanaddon.venom_2099_lock=Venom 2099 §l§6[잠금 해제]
+spidermanaddon.venom_2099_lock.price=가격: 15 XP
+spidermanaddon.ultimate_venom_spider_lock=Ultimate Venom [거미 문양 포함] §l§6[잠금 해제]
+spidermanaddon.ultimate_venom_spider_lock.price=가격: 15 XP
+spidermanaddon.ultimate_venom_lock=Ultimate Venom §l§6[잠금 해제]
+spidermanaddon.ultimate_venom_lock.price=가격: 15 XP
+spidermanaddon.venom_lee_price_lock=Venom: Lee Price §l§6[잠금 해제]
+spidermanaddon.venom_lee_price_lock.price=가격: 15 XP
+spidermanaddon.blue_venom_lock=Venom: Blue §l§6[잠금 해제]
+spidermanaddon.blue_venom_lock.price=가격: 10 XP
+spidermanaddon.venom_movies_lock=Venom: Movies §l§6[잠금 해제]
+spidermanaddon.venom_movies_lock.price=가격: 15 XP
+spidermanaddon.venom.unlock=잠금 해제
+
+entity.spidermanaddon:green_goblin_raimi.name=그린 고블린 [레이미 사가]
+item.spawn_egg.entity.spidermanaddon:green_goblin_raimi.name=그린 고블린 소환 [레이미 사가]
+
+item.spidermanaddon:iron_arms_attack=Iron Arms [공격]
+item.spidermanaddon:spider_rush=Spider Rush
+item.spidermanaddon:spider_shock=Spider Shock
+spidermanaddon.iron_arms.title=메탈 스파이더 암
+item.spidermanaddon:symbiote_menu=메뉴
+spidermanaddon.concussive_blast.price=비용: §l§aXP 레벨 15
+item.spidermanaddon:rage_mode=분노 모드
+item.spidermanaddon:symbiote_blast=심비오트 폭발
+spidermanaddon.symbiote_blast=심비오트 폭발
+item.spidermanaddon:symbiont_pull=심비오트 끌어당기기
+spidermanaddon.symbiont_pull=심비오트 끌어당기기
+item.spidermanaddon:symbiote_strike=심비오트 스트라이크
+spidermanaddon.symbiote_strike=심비오트 스트라이크
+item.spidermanaddon:antivenom_bomb=안티 베놈 폭탄
+spidermanaddon.antivenom_bomb=안티 베놈 폭탄
+item.spidermanaddon:antivenom_tempest=안티 베놈 폭풍
+spidermanaddon.antivenom_tempest=안티 베놈 폭풍
+item.spidermanaddon:symbiote_whip=심비오트 블레이드
+spidermanaddon.symbiote_whip=심비오트 블레이드
+
+spidermanaddon.web_grabber.price=비용: §l§aXP 레벨 15
+spidermanaddon.web_grabber.price5=비용: §l§aXP 레벨 25
+
+spidermanaddon.web_grabber_lv1=Web Grabber - §l§a레벨 0 §6[강화]
+spidermanaddon.web_grabber_lv1_title=Web Grabber - §l§a레벨 1
+spidermanaddon.web_grabber_lv1_text=탄창 용량이 2발에서 3발로 증가합니다.
+
+spidermanaddon.web_grabber_lv2=Web Grabber - §l§a레벨 1 §6[강화]
+spidermanaddon.web_grabber_lv2_title=Web Grabber - §l§a레벨 2
+spidermanaddon.web_grabber_lv2_text=재충전 시간이 55초에서 40초로 감소합니다.
+
+spidermanaddon.web_grabber_lv3=Web Grabber - §l§a레벨 2 §6[강화]
+spidermanaddon.web_grabber_lv3_title=Web Grabber - §l§a레벨 3
+spidermanaddon.web_grabber_lv3_text=포획 반경이 6블록에서 12블록으로 증가합니다.
+
+spidermanaddon.web_grabber_lv4=Web Grabber - §l§a레벨 3 §6[강화]
+spidermanaddon.web_grabber_lv4_title=Web Grabber - §l§a레벨 4
+spidermanaddon.web_grabber_lv4_text=탄창 용량이 3발에서 4발로 증가합니다.
+
+spidermanaddon.web_grabber_lv5=Web Grabber - §l§a레벨 4 §6[강화]
+spidermanaddon.web_grabber_lv5_title=Web Grabber - §l§a레벨 5
+spidermanaddon.web_grabber_lv5_text=포획 가능한 적이 4명에서 8명으로 증가합니다.
+
+spidermanaddon.web_grabber_full=Web Grabber - §l§a레벨 5
+spidermanaddon.web_grabber_full_text=EWeb Grabber - §l§a레벨 5
+spidermanaddon.web_grabber_unlock=Web Grabber
+spidermanaddon.web_grabber_lock=Web Grabber §l§6[잠금 해제]
+
+spidermanaddon.concussive_blast.price=비용: §l§aXP 레벨 15
+spidermanaddon.concussive_blast.price5=비용: §l§aXP 레벨 25
+
+spidermanaddon.concussive_blast_lv1=Concussive Blast - §l§a레벨 0 §6[강화]
+spidermanaddon.concussive_blast_lv1_title=Concussive Blast - §l§a레벨 1
+spidermanaddon.concussive_blast_lv1_text=탄창 용량이 2발에서 3발로 증가합니다.
+
+spidermanaddon.concussive_blast_lv2=Concussive Blast - §l§a레벨 1 §6[강화]
+spidermanaddon.concussive_blast_lv2_title=Concussive Blast - §l§a레벨 2
+spidermanaddon.concussive_blast_lv2_text=재충전 시간이 45초에서 35초로 감소합니다.
+
+spidermanaddon.concussive_blast_lv3=Concussive Blast - §l§a레벨 2 §6[강화]
+spidermanaddon.concussive_blast_lv3_title=Concussive Blast - §l§a레벨 3
+spidermanaddon.concussive_blast_lv3_text=탄창 용량이 3발에서 4발로 증가합니다.
+
+spidermanaddon.concussive_blast_lv4=Concussive Blast - §l§a레벨 3 §6[강화]
+spidermanaddon.concussive_blast_lv4_title=Concussive Blast - §l§a레벨 4
+spidermanaddon.concussive_blast_lv4_text=재충전 시간이 35초에서 24초로 감소합니다.
+
+spidermanaddon.concussive_blast_lv5=Concussive Blast - §l§a레벨 4 §6[강화]
+spidermanaddon.concussive_blast_lv5_title=Concussive Blast - §l§a레벨 5
+spidermanaddon.concussive_blast_lv5_text=충격 넉백이 증가합니다.
+
+spidermanaddon.concussive_blast_full=Concussive Blast - §l§a레벨 5
+spidermanaddon.concussive_blast_full_text=Concussive Blast - §l§a레벨 5
+spidermanaddon.concussive_blast_unlock=Concussive Blast
+spidermanaddon.concussive_blast_lock=Concussive Blast §l§6[잠금 해제]
+
+spidermanaddon.electric_web.price=비용: §l§aXP 레벨 15
+spidermanaddon.electric_web.price5=비용: §l§aXP 레벨 25
+
+spidermanaddon.electric_web_lv1=Electric Web - §l§a레벨 0 §6[강화]
+spidermanaddon.electric_web_lv1_title=Electric Web - §l§a레벨 1
+spidermanaddon.electric_web_lv1_text=탄창 용량이 2발에서 3발로 증가합니다.
+
+spidermanaddon.electric_web_lv2=Electric Web - §l§a레벨 1 §6[강화]
+spidermanaddon.electric_web_lv2_title=Electric Web - §l§a레벨 2
+spidermanaddon.electric_web_lv2_text=전기 거미줄 지속 시간이 5초에서 10초로 증가합니다.
+
+spidermanaddon.electric_web_lv3=Electric Web - §l§a레벨 2 §6[강화]
+spidermanaddon.electric_web_lv3_title=Electric Web - §l§a레벨 3
+spidermanaddon.electric_web_lv3_text=재충전 시간이 45초에서 30초로 감소합니다.
+
+spidermanaddon.electric_web_lv4=Electric Web - §l§a레벨 3 §6[강화]
+spidermanaddon.electric_web_lv4_title=Electric Web - §l§a레벨 4
+spidermanaddon.electric_web_lv4_text=탄창 용량이 3발에서 4발로 증가합니다.
+
+spidermanaddon.electric_web_lv5=Electric Web - §l§a레벨 4 §6[강화]
+spidermanaddon.electric_web_lv5_title=Electric Web - §l§a레벨 5
+spidermanaddon.electric_web_lv5_text=전기 거미줄 피해가 증가합니다.
+
+spidermanaddon.electric_web_full=Electric Web - §l§a레벨 5
+spidermanaddon.electric_web_full_text=Electric Web - §l§a레벨 5
+spidermanaddon.electric_web_unlock=Electric Web
+spidermanaddon.electric_web_lock=Electric Web §l§6[잠금 해제]
+
+spidermanaddon.web_whip_full=Web Whip
+spidermanaddon.web_whip_full_text=강화를 사용할 수 없습니다
+spidermanaddon.web_whip_unlock=Web Whip
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.web_whip_lock=Web Whip §l§6[잠금 해제]
+
+spidermanaddon.impact_web_lv1=웹 슈터 - §l§a레벨 0 §6[강화]
+spidermanaddon.impact_web_lv1_title=웹 슈터 - §l§a레벨 1
+spidermanaddon.impact_web_lv1_text=탄창 용량이 6발에서 8발로 증가합니다.
+
+spidermanaddon.impact_web_lv2=웹 슈터 - §l§a레벨 1 §6[강화]
+spidermanaddon.impact_web_lv2_title=웹 슈터 - §l§a레벨 2
+spidermanaddon.impact_web_lv2_text=재충전 시간이 2초에서 1.5초로 감소합니다.
+
+spidermanaddon.impact_web_lv3=웹 슈터 - §l§a레벨 2 §6[강화]
+spidermanaddon.impact_web_lv3_title=웹 슈터 - §l§a레벨 3
+spidermanaddon.impact_web_lv3_text=탄창 용량이 8발에서 10발로 증가합니다.
+
+spidermanaddon.impact_web_lv4=웹 슈터 - §l§a레벨 3 §6[강화]
+spidermanaddon.impact_web_lv4_title=웹 슈터 - §l§a레벨 4
+spidermanaddon.impact_web_lv4_text=재충전 시간이 1.5초에서 1초로 감소합니다.
+
+spidermanaddon.impact_web_lv5=웹 슈터 - §l§a레벨 4 §6[강화]
+spidermanaddon.impact_web_lv5_title=웹 슈터 - §l§a레벨 5
+spidermanaddon.impact_web_lv5_text=적을 맞히면 낮은 확률로 거미줄 효과를 부여합니다. (효과가 거미줄 블록을 생성합니다.)
+
+spidermanaddon.impact_web_full=웹 슈터 - §l§a레벨 5
+spidermanaddon.web_shooter_full_text=강화 한도에 도달했습니다.
+spidermanaddon.impact_web.price=비용: §l§aXP 레벨 15
+spidermanaddon.impact_web.price5=비용: §l§aXP 레벨 25
+
+spidermanaddon.web_shooter_shoot_lv1=웹 슈터 - §l§a레벨 0 §6[강화]
+spidermanaddon.web_shooter_shoot_lv1_title=웹 슈터 - §l§a레벨 1
+spidermanaddon.web_shooter_shoot_lv1_text=탄창 용량이 6발에서 8발로 증가합니다.
+
+spidermanaddon.web_shooter_shoot_lv2=웹 슈터 - §l§a레벨 1 §6[강화]
+spidermanaddon.web_shooter_shoot_lv2_title=웹 슈터 - §l§a레벨 2
+spidermanaddon.web_shooter_shoot_lv2_text=재충전 시간이 2초에서 1.5초로 감소합니다.
+
+spidermanaddon.web_shooter_shoot_lv3=웹 슈터 - §l§a레벨 2 §6[강화]
+spidermanaddon.web_shooter_shoot_lv3_title=웹 슈터 - §l§a레벨 3
+spidermanaddon.web_shooter_shoot_lv3_text=탄창 용량이 8발에서 10발로 증가합니다.
+
+spidermanaddon.web_shooter_shoot_lv4=웹 슈터 - §l§a레벨 3 §6[강화]
+spidermanaddon.web_shooter_shoot_lv4_title=웹 슈터 - §l§a레벨 4
+spidermanaddon.web_shooter_shoot_lv4_text=재충전 시간이 1.5초에서 1초로 감소합니다.
+
+spidermanaddon.web_shooter_shoot_lv5=웹 슈터 - §l§a레벨 4 §6[강화]
+spidermanaddon.web_shooter_shoot_lv5_title=웹 슈터 - §l§a레벨 5
+spidermanaddon.web_shooter_shoot_lv5_text=적을 맞히면 낮은 확률로 거미줄 효과를 부여합니다. (효과가 거미줄 블록을 생성합니다.)
+
+spidermanaddon.web_shooter_shoot_full=웹 슈터 - §l§a레벨 5
+spidermanaddon.web_shooter_full_text=강화 한도에 도달했습니다.
+spidermanaddon.web_shooter_shoot.price=비용: §l§aXP 레벨 15
+spidermanaddon.web_shooter_shoot.price5=비용: §l§aXP 레벨 25
+
+spidermanaddon.impact_web=Impact Web
+spidermanaddon.impact_web_lock=Impact Web §l§6[잠금 해제]
+
+spidermanaddon.web_whip=Web Whip
+spidermanaddon.electric_web=Electric Web
+spidermanaddon.concussive_blast=Concussive Blast
+spidermanaddon.web_bomb=Web Bomb
+spidermanaddon.spider_drone=Spider Drone
+spidermanaddon.web_grabber=Web Grabber
+
+item.spidermanaddon:web_blossom=Web blossom
+item.spidermanaddon:holo_decoy=Holo decoy
+item.spidermanaddon:low_gravity=Low gravity
+item.spidermanaddon:arms_race=Arms race
+item.spidermanaddon:blitz=Blitz
+item.spidermanaddon:electric_punch=Electric Punch
+item.spidermanaddon:equaliser=Equaliser
+item.spidermanaddon:negative_shockwave=Negative shockwave
+item.spidermanaddon:rock_out=Rock out
+item.spidermanaddon:spirit_fire=Spirit fire
+
+spidermanaddon.low_gravity_lock_text=공중에 있는 동안 10초간 중력이 감소합니다.
+spidermanaddon.low_gravity_lock=Low gravity §l§6[잠금 해제]
+spidermanaddon.web_blossom_text=점프하며 보이는 모든 대상에게 거미줄을 발사합니다.
+spidermanaddon.holo_decoy_lock_text=여러 홀로그램을 생성합니다.
+spidermanaddon.holo_decoy_lock=Holo decoy §l§6[잠금 해제]
+spidermanaddon.arms_race_lock_text=전기 충격으로 적을 기절시킵니다.
+spidermanaddon.arms_race_lock=Arms race §l§6[잠금 해제]
+spidermanaddon.blitz_lock_text=더 빠르게 질주하고 실시간으로 운동량을 전달해 적을 밀쳐냅니다.
+spidermanaddon.blitz_lock=Blitz §l§6[잠금 해제]
+spidermanaddon.electric_punch_lock_text=주먹을 일시적으로 충전해 적을 감전시킵니다.
+spidermanaddon.electric_punch_lock=Electric Punch §l§6[잠금 해제]
+spidermanaddon.equaliser_text=5초 동안 자신을 포함한 모두가 한 방에 쓰러집니다.
+spidermanaddon.equaliser_lock=Equaliser §l§6[잠금 해제]
+spidermanaddon.negative_shockwave_text=부정 에너지 파동을 방출합니다.
+spidermanaddon.negative_shockwave_lock=Negative shockwave §l§6[잠금 해제]
+spidermanaddon.rock_out_text=정의로운 음파로 적을 날려 버립니다.
+spidermanaddon.rock_out_lock=Rock out §l§6[잠금 해제]
+spidermanaddon.spirit_fire_text=어딘가에서... 불안정하고 해로운 에테르 에너지 파동을 끌어냅니다...
+spidermanaddon.spirit_fire_lock=Spirit fire §l§6[잠금 해제]
+
+spidermanaddon.regresar=뒤로
+spidermanaddon.salir=나가기
+spidermanaddon.usar=사용
+
+item.spidermanaddon:spectacular_spiderman_chip=Spectacular Spider-Man [지구-26496]
+item.spidermanaddon:miles_morales_chip=Miles Morales [지구-1610B]
+item.spidermanaddon:spider_gwen_chip=Spider-Gwen [지구-65B]
+item.spidermanaddon:spider_ham_chip=Spider-Ham [지구-8311]
+item.spidermanaddon:spider_punk_chip=Spider-Punk [지구-138B]
+item.spidermanaddon:spiderman_2099_chip=Spider-Man 2099 [지구-928B]
+item.spidermanaddon:spiderman_no_way_home_chip=Spider-Man [지구-199999]
+item.spidermanaddon:spiderman_noir_chip=Spider-Man: Noir [지구-90214B]
+item.spidermanaddon:spiderman_raimi_chip=Spider-Man [지구-96283]
+item.spidermanaddon:spiderman_unlimited_chip=Spider-Man: Inlimited [지구-751263]
+item.spidermanaddon:the_amazing_spiderman_chip=The Amazing Spider-Man [지구-120703]
+
+item.spidermanaddon:green_goblin=그린 고블린 [지구-616]
+item.spidermanaddon:hobgoblin=Hobgoblin [지구-616]
+item.spidermanaddon:shocker=Shocker [지구-616]
+item.spidermanaddon:lizard=리저드 [지구-616]
+
+spidermanaddon.multiversal_gizmo=멀티버스 장치
+spidermanaddon.accesorios=액세서리
+spidermanaddon.suit_skills=슈트 능력
+spidermanaddon.upgrades_laboratoryWorkbench=강화
+spidermanaddon.laboratoryWorkbench=연구실 작업대
+spidermanaddon.web_shooter=웹 슈터
+spidermanaddon.capsule=캡슐
+spidermanaddon.hobgoblin_pumpkin_bomb=홉고블린 펌킨 폭탄
+spidermanaddon.fabricar=제작
+spidermanaddon.suitsFabric_form=제작
+spidermanaddon.suits_form=슈트 선택
+spidermanaddon.multiversal_chip=Chip [빌런]
+spidermanaddon.spiderman_chip=Chip [스파이더 소사이어티]
+
+item.spidermanaddon:venom=Venom [변신]
+item.spidermanaddon:symbiont_whip=심비오트 채찍
+item.spidermanaddon:venom_regeneration=섭취
+item.spidermanaddon:symbiont_axe=심비오트 도끼
+item.spidermanaddon:symbiont_claw=심비오트 발톱
+item.spidermanaddon:venom_punch=전투
+item.spidermanaddon:venom_impulse_whip=심비오트 채찍 [부스트]
+item.spidermanaddon:symbiote_capsule=베놈 심비오트 캡슐
+item.spidermanaddon:capsule=캡슐
+tile.spidermanaddon:knull_block.name=Knull 블록
+tile.spidermanaddon:meteorite_block.name=운석 블록
+spidermanaddon.feed=섭취
+spidermanaddon.symbiont_axe=심비오트 도끼
+spidermanaddon.symbiont_claw=심비오트 발톱
+spidermanaddon.symbiont_whip=심비오트 채찍
+spidermanaddon.transformation=변신
+spidermanaddon.skins=스킨
+spidermanaddon.on=활성화
+spidermanaddon.off=비활성화
+spidermanaddon.camera=게임 카메라
+spidermanaddon.third=3인칭
+spidermanaddon.first=1인칭
+entity.spidermanaddon:symbiont.name=베놈 심비오트
+item.spawn_egg.entity.spidermanaddon:symbiont.name=베놈 심비오트
+entity.spidermanaddon:venom_horse.name=말 베놈
+item.spawn_egg.entity.spidermanaddon:venom_horse.name=말 베놈
+
+item.spidermanaddon:spiderman_2099_burger.name=스파이더맨 2099 버거
+item.spiderverse:scarlet_spider_suit=la 스칼렛 스파이더 슈트
+item.spiderverse:spiderman_90_suit=Spider-Man: 애니메이션 시리즈 슈트
+item.spiderverse:spiderman_67_suit=Spider-Man 67° 슈트
+item.spiderverse:spectacular_spiderman_suit=Spectacular Spider-Man 슈트
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man 블랙 슈트
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man 2.0 블랙 슈트
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man 3.0 블랙 슈트
+item.spiderverse:spiderman_steve_ditko_suit=Spider-Man: Amazing Fantasy #15 슈트
+
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman.name=Ultimate Spider-Man 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_india.name=Spider-Man India 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales.name=Miles Morales 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_iron_spider_ucm.name=Iron Spider [MCU] 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_punk.name=Spider-Punk 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_no_way_home.name=Spider-Man Hybrid 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_noir.name=Spider-Man Noir 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_superior_spiderman.name=Superior Spider-Man 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi_black_suit.name=Spider-Man Raimi Black Suit 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_raimi.name=Spider-Man Raimi 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_ps4.name=Spider-Man PS4 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_black_suit.name=Spider-Man Black Suit 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse.name=Spider-Man 2099 [Across the Spider-Verse] 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_spider_gwen.name=Spider-Gwen 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_silk.name=Silk 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_scarlet_spider.name=Scarlet Spider 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_peni_parker.name=Peni Parker 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman_2.name=The Amazing Spider-Man 2 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_the_amazing_spiderman.name=The Amazing Spider-Man 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith.name=Miles Morales (leap of faith) 봉제 인형
+
+item.spawn_egg.entity.spidermanaddon:spider_mobile.name=Spider-Mobile
+item.spawn_egg.entity.spidermanaddon:spider_bike.name=Spider-Bike
+item.spawn_egg.entity.spidermanaddon:black_cat_doll.name=Black Cat 인형
+item.spawn_egg.entity.spidermanaddon:peter_backpack.name=피터 파커의 백팩
+item.spawn_egg.entity.spidermanaddon:spider_man_suits_stand.name=스파이더맨 슈트 스탠드
+item.spawn_egg.entity.spidermanaddon:laboratory_workbench.name=연구실 작업대
+entity.spidermanaddon:lizard.name=리저드
+item.spawn_egg.entity.spidermanaddon:lizard.name=Lagarto 소환
+entity.spidermanaddon:prisoner.name=죄수
+item.spawn_egg.entity.spidermanaddon:prisoner.name=죄수 소환
+item.spidermanaddon:research_token=연구 토큰
+
+item.spidermanaddon:backpack_token=백팩 토큰
+item.spidermanaddon:web_shooters_plans=웹 슈터 시스템 [스윙]
+item.spiderverse:web_shooter_balanceo=웹 슈터 [스윙]
+item.spidermanaddon:usb=USB [데이터 없음]
+
+item.spidermanaddon:base_token=기지 토큰
+item.spidermanaddon:challenge_token=도전 토큰
+item.spidermanaddon:tokens_crime=범죄 토큰
+item.spiderverse:web_cartridge=웹 카트리지
+item.spidermanaddon:spiderman_palette.name=스파이더맨 팔레트
+
+item.spidermanaddon:miles_morales_invisibility_token=마일스 모랄레스 능력: 투명화
+item.spidermanaddon:fire_resistence_stealth_suit_token=슈트 능력: 화염 저항
+item.spidermanaddon:invisibility_stealth_suit_token=슈트 능력: 투명화
+item.spidermanaddon:regeneration_stealth_suit_token=슈트 능력: 재생
+
+item.spiderverse:spiderman_classic_suit=Spider-Man: 클래식 슈트
+item.spiderverse:spiderman_raimi_suit=Spider-Man Raimi's 슈트
+item.spiderverse:spiderman_raimi_black_suit=Spider-Man Raimi's 블랙 슈트
+item.spiderverse:miles_morales_suit=Spider-Man Miles Morales: 클래식 슈트
+item.spiderverse:miles_morales_gold_suit=스파이더맨 마일스 모랄레스: 업타운 프라이드 슈트
+item.spiderverse:iron_spider_ucm_suit=Iron Spider [UCM] 슈트
+item.spiderverse:spiderman_stealth_suit=Spider-Man: Big Time 슈트
+item.spiderverse:spiderman_ps4_suit=Insomniac's Spider-Man: 어드밴스드 슈트
+item.spiderverse:spiderman_ps4_black_suit=Insomniac's Spider-Man 2: 블랙 슈트
+item.spiderverse:ultimate_spiderman_ucm_suit=스파이더맨: 얼티밋 슈트
+item.spiderverse:the_amazing_spiderman_1_suit=The Amazing Spider-Man 슈트
+item.spiderverse:the_amazing_spiderman_2_suit=The Amazing Spider-Man 2 슈트
+item.spiderverse:spiderman_steve_ditko_suit=Spider-Man: Amazing Fantasy #15 슈트
+item.spiderverse:human_spider_suit=la 휴먼 스파이더 슈트
+item.spiderverse:spiderman_wrestler_suit=레슬러 스파이더맨 슈트
+item.spiderverse:spiderman_homemade_suit=Spider-Man: 홈메이드 슈트
+item.spiderverse:spiderman_far_from_home_suit=스파이더맨: 업그레이드 슈트
+item.spiderverse:spiderman_no_way_home_suit=스파이더맨: 하이브리드 슈트
+item.spiderverse:spiderman_negative_suit=스파이더맨: 네거티브 슈트
+item.spiderverse:spiderman_homecoming_suit=스파이더맨: 스타크 슈트
+item.spidermanaddon:genetically_engineered_super_spider=유전자 조작 슈퍼 거미
+item.spidermanaddon:spider_egg=거미 소환
+item.spidermanaddon:radioactive_spider=Spider-Man Powers
+item.spidermanaddon:pumpkin_bomb=펌킨 폭탄
+item.spiderverse:iron_arms=아이언 스파이더 레그
+item.spidermanaddon:nanotechnology_chip=나노기술 칩
+item.spiderverse:miles_morales_bodega_cat_suit=Spider-Man Miles Morales: 보데가 캣 슈트
+item.spiderverse:ultimate_spiderman_suit=Ultimate Spider-Man 슈트
+item.spiderverse:spectacular_spiderman_black_suit=Spectacular Spider-Man: 블랙 슈트
+item.spiderverse:spectacular_spiderman_black_suit_2=Spectacular Spider-Man: 블랙 슈트 2.0
+item.spiderverse:spectacular_spiderman_black_suit_3=Spectacular Spider-Man: 블랙 슈트 3.0
+item.spiderverse:spiderman_classic_black_suit=스파이더맨: 클래식 블랙 슈트
+item.spiderverse:spiderman_black_suit_comic=스파이더맨: 시크릿 워즈 블랙 슈트
+item.spiderverse:ultimate_spiderman_black_suit=Ultimate Spider-Man: 블랙 슈트
+entity.spidermanaddon:green_goblin.name=그린 고블린
+item.spawn_egg.entity.spidermanaddon:green_goblin.name=그린 고블린 소환
+entity.spidermanaddon:shocker.name=Shocker
+item.spawn_egg.entity.spidermanaddon:shocker.name=Shocker 소환
+entity.spidermanaddon:venom_boss.name=Venom
+item.spawn_egg.entity.spidermanaddon:venom_boss.name=Venom 소환
+entity.spidermanaddon:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.spidermanaddon:hobgoblin.name=Hobgoblin 소환
+entity.spidermanaddon:taskmaster.name=Taskmaster
+item.spawn_egg.entity.spidermanaddon:taskmaster.name=Taskmaster 소환
+entity.spidermanaddon:dealer.name=밀매상
+item.spawn_egg.entity.spidermanaddon:dealer.name=밀매상 소환
+entity.spidermanaddon:black_cat.name=Black Cat
+item.spawn_egg.entity.spidermanaddon:black_cat.name=Black Cat 소환
+entity.spidermanaddon:symbiot.name=베놈 심비오트
+item.spawn_egg.entity.spidermanaddon:symbiot.name=베놈 심비오트
+entity.spidermanaddon:sewing_machine.name=재봉틀
+item.spawn_egg.entity.spidermanaddon:sewing_machine.name=재봉틀
+entity.spidermanaddon:challenge_box.name=도전 상자
+item.spawn_egg.entity.spidermanaddon:challenge_box.name=도전 상자
+entity.spidermanaddon:microscope.name=현미경
+item.spawn_egg.entity.spidermanaddon:microscope.name=현미경
+entity.spidermanaddon:symbiote_meteorite.name=심비오트 운석
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite.name=심비오트 운석 소환
+entity.spidermanaddon:symbiote_meteorite_table.name=심비오트 운석
+item.spawn_egg.entity.spidermanaddon:symbiote_meteorite_table.name=심비오트 운석
+entity.spidermanaddon:symbiont.name=베놈 심비오트
+item.spawn_egg.entity.spidermanaddon:symbiont.name=베놈 심비오트
+
+item.spidermanaddon:venom=Venom [변신]
+
+item.spiderverse:spider_gwen=Spider-Gwen [변신]
+item.spiderverse:miles_morales_into_the_spiderverse_default=Miles Morales: Into the Spider-Verse [변신]
+item.spiderverse:miles_morales_into_the_spiderverse=Miles Morales: Into the Spider-Verse - 신념의 도약 [변신]
+item.spiderverse:miles_morales_across_the_spiderverse=Miles Morales: Across the Spider-Verse [변신]
+item.spiderverse:miles_morales_into_the_spiderverse_training=Miles Morales: Into the Spider-Verse - 훈련 [변신]
+item.spidermanaddon:comic1=코믹: 어메이징 판타지 #15
+item.spiderverse:hobgoblin_skin=Hobgoblin 슈트
+item.spiderverse:green_goblin_skin=그린 고블린 슈트
+
+item.spidermanaddon:planeador_item=그린 고블린 글라이더
+item.spidermanaddon:spider_mobile_item=Spider-Mobile
+item.spidermanaddon:spider_bike_item=Spider-Bike
+
+item.spidermanaddon:web_shot_empty=웹 슈터 [비어 있음]
+item.spidermanaddon:web_shot=웹 슈터
+item.spidermanaddon:sand_crystal_shard=샌드맨 크리스탈 조각
+tile.spidermanaddon:sand_crystal.name=샌드맨 수정
+tile.spidermanaddon:sand_crystal_block.name=샌드맨 크리스탈 블록
+tile.spidermanaddon:prisoner_spawn.name=Prisoner Spawn
+
+item.spidermanaddon:combat_mode=전투 모드
+item.spidermanaddon:delete_upgrades_token=강화 제거
+item.spidermanaddon:escudo_token=방패 [강화]
+item.spidermanaddon:golpe_eletrico_token=전기 타격 [강화]
+item.spidermanaddon:regeneracion_token=재생 [강화]
+item.spidermanaddon:salud_extra_token=추가 체력 [강화]
+item.spidermanaddon:dano_token=추가 피해 [강화]
+item.spidermanaddon:mega_venom_blast=메가 베놈 블래스트
+item.spidermanaddon:venom_blast_punch=베놈 스트라이크
+item.spidermanaddon:bodega_cat=보데가 캣 백팩
+item.spidermanaddon:multiversal_particles=멀티버스 입자
+item.spidermanaddon:component=기술 부품
+item.spidermanaddon:gr_27_negative=네거티브 GR-27
+item.spidermanaddon:web_flow=웹 플로우
+item.spidermanaddon:spider_powers=스파이더 능력
+item.spidermanaddon:spider_powers_42=42
+item.spidermanaddon:symbiote_capsule=베놈 심비오트 캡슐
+
+item.spidermanaddon:symbiote_super_punch=슈퍼 심비오트 펀치
+item.spidermanaddon:symbiote_punch=심비오트 스트라이크
+item.spidermanaddon:symbiont_blast=심비오트 폭발
+item.spidermanaddon:backpack_empty=빈 백팩
+item.spidermanaddon:cat_hability_item=고양이 능력
+item.spidermanaddon:comic2=얼티밋 스파이더맨 #1 코믹
+item.spidermanaddon:lizard_invoke=리저드 소환기
+item.spidermanaddon:shocker_invoke=Shocker 소환기
+item.spidermanaddon:green_goblin_invoke=그린 고블린 소환기
+item.spidermanaddon:taskmaster_invoke=Taskmaster 소환기
+item.spidermanaddon:hobgoblin_invoke=Hobgoblin 소환기
+
+item.spiderverse:spiderman_classic_suit_damage=Spider-Man: 클래식 슈트 §c[손상됨]
+item.spiderverse:spiderman_raimi_suit_damage=Spider-Man Raimi's 슈트 §c[손상됨]
+item.spiderverse:miles_morales_suit_damage=Spider-Man Miles Morales: 클래식 슈트 §c[손상됨]
+item.spiderverse:miles_morales_gold_suit_damage=스파이더맨 마일스 모랄레스: 업타운 프라이드 슈트 §c[손상됨]
+item.spiderverse:spiderman_stealth_suit_damage=스파이더맨: 스텔스 슈트 §c[손상됨]
+item.spiderverse:spiderman_ps4_suit_damage=Insomniac's Spider-Man: 어드밴스드 슈트 §c[손상됨]
+item.spiderverse:ultimate_spiderman_ucm_suit_damage=스파이더맨: 얼티밋 슈트 §c[손상됨]
+item.spiderverse:the_amazing_spiderman_1_suit_damage=The Amazing Spider-Man 슈트 §c[손상됨]
+item.spiderverse:the_amazing_spiderman_2_suit_damage=The Amazing Spider-Man 2 슈트 §c[손상됨]
+item.spiderverse:human_spider_suit_damage=la 휴먼 스파이더 슈트 §c[손상됨]
+item.spiderverse:spiderman_wrestler_suit_damage=레슬러 스파이더맨 슈트 §c[손상됨]
+item.spiderverse:spiderman_homemade_suit_damage=Spider-Man: 홈메이드 슈트 §c[손상됨]
+item.spiderverse:spiderman_far_from_home_suit_damage=Spider-Man: 업그레이드 슈트 §c[손상됨]
+item.spiderverse:spiderman_no_way_home_suit_damage=스파이더맨: 하이브리드 슈트 §c[손상됨]
+item.spiderverse:spiderman_homecoming_suit_damage=스파이더맨: 스타크 슈트 §c[손상됨]
+item.spiderverse:miles_morales_bodega_cat_suit_damage=스파이더맨 마일스 모랄레스: 보데가 캣 슈트 §c[손상됨]
+
+item.spiderverse:spiderman_ps5_suit=Insomniac's Spider-Man: 어드밴스드 슈트 2.0
+item.spiderverse:spiderman_ps5_suit_1=Insomniac's Spider-Man: 어드밴스드 슈트 2.0
+item.spiderverse:spiderman_ps5_suit_2=Insomniac's Spider-Man: 어드밴스드 슈트 2.0
+item.spiderverse:spiderman_ps5_suit_3=Insomniac's Spider-Man: 어드밴스드 슈트 2.0
+item.spiderverse:ezekiel_sims_suit=Ezekiel Sims 슈트
+item.spiderverse:iron_spider_suit=아이언 스파이더 슈트 (클래식)
+item.spiderverse:iron_spider_suit_1=아이언 스파이더 슈트 (클래식)
+item.spiderverse:iron_spider_suit_2=아이언 스파이더 슈트 (클래식)
+item.spiderverse:iron_spider_suit_3=아이언 스파이더 슈트 (클래식)
+item.spiderverse:spiderman_velocity_suit=스파이더맨 벨로시티 슈트
+item.spiderverse:spiderman_future_foundation_suit=스파이더맨: 퓨처 파운데이션 슈트
+item.spiderverse:spiderman_cero_suit=스파이더맨: 제로 슈트
+item.spiderverse:aracnido_jr_suit=아라크니드 주니어 슈트
+item.spiderverse:spiderman_classic_suit_1=Spider-Man: 클래식 슈트
+item.spiderverse:spiderman_classic_suit_2=Spider-Man: 클래식 슈트
+item.spiderverse:spiderman_classic_suit_3=Spider-Man: 클래식 슈트
+item.spiderverse:spiderman_2099_suit_1=Spider-Man 2099 슈트
+item.spiderverse:spiderman_2099_suit_2=Spider-Man 2099 슈트
+item.spiderverse:spiderman_2099_suit_3=Spider-Man 2099 슈트
+item.spiderverse:spiderman_2099_suit=Spider-Man 2099 슈트
+item.spiderverse:spider_punk_suit=Spider-Punk 슈트
+item.spiderverse:spiderman_ps5_symbiote_suit=Insomniac's Spider-Man 2: 심비오트 슈트
+item.spiderverse:scarlet_spider_suit_1=la 스칼렛 스파이더 슈트
+item.spiderverse:scarlet_spider_suit_2=la 스칼렛 스파이더 슈트
+item.spiderverse:scarlet_spider_suit_3=la 스칼렛 스파이더 슈트
+item.spiderverse:anti_ock_suit=안티옥 슈트
+item.spiderverse:taskmaster_suit=Taskmaster 슈트
+item.spiderverse:taskmaster_mask=Taskmaster 마스크
+item.spiderverse:anti_ock_suit_damage=안티옥 슈트 §c[손상됨]
+item.spiderverse:spiderman_ps5_suit_damage=Insomniac's Spider-Man: 어드밴스드 슈트 2.0 §c[손상됨]
+item.spiderverse:spiderman_ps5_suit_1_damage=Insomniac's Spider-Man: 어드밴스드 슈트 2.0 §c[손상됨]
+item.spiderverse:spiderman_ps5_suit_2_damage=Insomniac's Spider-Man: 어드밴스드 슈트 2.0 §c[손상됨]
+item.spiderverse:spiderman_ps5_suit_3_damage=Insomniac's Spider-Man: 어드밴스드 슈트 2.0 §c[손상됨]
+item.spiderverse:spiderman_classic_suit_1_damage=Spider-Man: 클래식 슈트 §c[손상됨]
+item.spiderverse:spiderman_classic_suit_2_damage=Spider-Man: 클래식 슈트 §c[손상됨]
+item.spiderverse:spiderman_classic_suit_3_damage=Spider-Man: 클래식 슈트 §c[손상됨]
+item.spiderverse:scarlet_spider_suit_1_damage=la 스칼렛 스파이더 슈트 §c[손상됨]
+item.spiderverse:scarlet_spider_suit_2_damage=la 스칼렛 스파이더 슈트 §c[손상됨]
+item.spiderverse:scarlet_spider_suit_3_damage=la 스칼렛 스파이더 슈트 §c[손상됨]
+item.spiderverse:spiderman_2099_suit_1_damage=Spider-Man 2099 슈트 §c[손상됨]
+item.spiderverse:spiderman_2099_suit_2_damage=Spider-Man 2099 슈트 §c[손상됨]
+item.spiderverse:spiderman_2099_suit_3_damage=Spider-Man 2099 슈트 §c[손상됨]
+item.spiderverse:spiderman_2099_suit_damage=Spider-Man 2099 슈트 §c[손상됨]
+item.spiderverse:spider_punk_suit_damage=Spider-Punk 슈트 §c[손상됨]
+item.spiderverse:hobgoblin_mask=Hobgoblin 마스크
+item.spiderverse:green_goblin_mask=그린 고블린 마스크
+item.spidermanaddon:spiderman_picture=스파이더맨 사진
+item.spidermanaddon:trace_c=TRACE-C
+item.spidermanaddon:twirl_e=TWIRL-E
+item.spidermanaddon:twist_e=TWIST-E
+item.spidermanaddon:anya_corazon=아냐 코라손
+item.spidermanaddon:spider_bot_fly_controllers=스파이더봇용 비행 컨트롤러
+item.spidermanaddon:spider_bots_controllers=스파이더봇 컨트롤러
+item.spidermanaddon:camera_mode_emotes=이모트
+item.spidermanaddon:camera_mode=카메라 위치 변경
+item.spidermanaddon:spider_web_ball=웹 볼
+tile.spidermanaddon:newspaper0.name=신문
+tile.spidermanaddon:newspaper1.name=신문
+tile.spidermanaddon:newspaper.name=신문
+entity.spidermanaddon:penguin_stacy.name=Penguin Stacy
+item.spawn_egg.entity.spidermanaddon:penguin_stacy.name=Penguin Stacy 소환
+entity.spidermanaddon:robot_dog.name=사냥꾼 로봇
+item.spawn_egg.entity.spidermanaddon:robot_dog.name=사냥꾼 로봇 소환
+entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson
+item.spawn_egg.entity.spidermanaddon:j_jonah_jameson.name=J. Jonah Jameson 소환
+entity.spidermanaddon:hunters_drone.name=헌터 드론
+item.spawn_egg.entity.spidermanaddon:hunters_drone.name=헌터 드론 소환
+entity.spidermanaddon:stuffed_aracnido_jr.name=아라크니드 주니어 봉제 인형
+item.spawn_egg.entity.spidermanaddon:stuffed_aracnido_jr.name=아라크니드 주니어 봉제 인형
+entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+item.spawn_egg.entity.spidermanaddon:tsum_tsum.name=Tsum Tsum
+entity.spidermanaddon:hunter.name=크레이븐 사냥꾼
+item.spawn_egg.entity.spidermanaddon:hunter.name=크레이븐 사냥꾼 소환
+entity.spidermanaddon:hunter_crossbow.name=석궁을 든 크레이븐 헌터
+item.spawn_egg.entity.spidermanaddon:hunter_crossbow.name=석궁을 든 크레이븐 헌터 소환
+item.spidermanaddon:delete_spider_powers=능력 제거
+
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit=Spider-Man 2099: Across The Spider-Verse 슈트
+item.spiderverse:spiderman_2099_across_the_spiderverse_suit_1=Spider-Man 2099: Across The Spider-Verse (다크) 슈트
+item.spiderverse:spiderman_90_black_suit=Spider-Man: 애니메이션 시리즈 블랙 슈트
+item.spiderverse:spiderman_90_black_suit_1=Spider-Man: 애니메이션 시리즈 [빨강 및 파랑 테두리] 블랙 슈트
+item.spiderverse:scarlet_spider_across_the_spiderverse_suit=Scarlet Spider: Across The SpiderVerse 슈트
+item.spiderverse:superior_spiderman_suit=Superior Spider-Man 슈트
+item.spiderverse:superior_spiderman_suit_1=Superior Spider-Man 슈트
+item.spiderverse:superior_spiderman_suit_2=Superior Spider-Man 슈트
+item.spiderverse:superior_spiderman_suit_3=Superior Spider-Man 슈트
+item.spiderverse:miles_morales_wolverine_suit=Miles Morales: Wolverine 슈트
+item.spiderverse:miles_morales_wolverine_suit_1=Miles Morales: Wolverine 슈트
+item.spiderverse:miles_morales_wolverine_suit_2=Miles Morales: Wolverine 슈트
+item.spiderverse:miles_morales_wolverine_suit_3=Miles Morales: Wolverine 슈트
+item.spiderverse:the_amazing_spiderman_belt_suit=The Amazing Spider-Man 벨트 포함 슈트
+item.spiderverse:the_amazing_spiderman_black_suit=The Amazing Spider-Man 블랙 슈트
+item.spiderverse:spider_gwen_classic_suit=Ghost ️Spider 슈트
+item.spiderverse:miles_morales_across_the_spiderverse_suit=Miles Morales: Across The Spider-Verse 슈트
+item.spidermanaddon:dr_octopus_arms=닥터 옥토퍼스 팔
+item.spidermanaddon:electric_web_empty=전기 웹 슈터 [비어 있음]
+item.spidermanaddon:electric_web=전기 웹 슈터
+entity.spidermanaddon:dr_octopus.name=Doctor Octopus
+item.spawn_egg.entity.spidermanaddon:dr_octopus.name=Doctor Octopus 소환
+item.spiderverse:vulture_suit=벌처 슈트
+item.spiderverse:mysterio_suit_1=Mysterio 슈트
+item.spiderverse:mysterio_suit=Mysterio 슈트
+item.spiderverse:mysterio_helmet=미스테리오 헬멧
+item.spiderverse:ghost_spider_suit=Ghost Spider 슈트
+item.spiderverse:miles_morales_into_the_spiderverse_suit=Miles Morales: Into the Spider-Verse 슈트
+item.spiderverse:electro_suit=Electro 슈트
+item.spiderverse:electro_helmet=Electro 마스크
+item.spidermanaddon:kraven_axe=크레이븐 도끼
+item.spidermanaddon:robot_dog_pet_plans=크레이븐 로봇 개 컨트롤러
+item.spidermanaddon:robot_dog_pet=크레이븐 로봇 개 [애완동물]
+item.spidermanaddon:miles_morales_powers=마일스 모랄레스 능력
+item.spidermanaddon:symbiote_powers=심비오트 능력
+item.spiderverse:superior_spiderman_suit_damage=Superior Spider-Man 슈트 §c[손상됨]
+item.spiderverse:superior_spiderman_suit_1_damage=Superior Spider-Man 슈트 §c[손상됨]
+item.spiderverse:superior_spiderman_suit_2_damage=Superior Spider-Man 슈트 §c[손상됨]
+item.spiderverse:superior_spiderman_suit_3_damage=Superior Spider-Man 슈트 §c[손상됨]
+item.spiderverse:miles_morales_wolverine_suit_damage=Miles Morales: Wolverine 슈트 §c[손상됨]
+item.spiderverse:miles_morales_wolverine_suit_1_damage=Miles Morales: Wolverine 슈트 §c[손상됨]
+item.spiderverse:miles_morales_wolverine_suit_2_damage=Miles Morales: Wolverine 슈트 §c[손상됨]
+item.spiderverse:miles_morales_wolverine_suit_3_damage=Miles Morales: Wolverine 슈트 §c[손상됨]
+item.spiderverse:the_amazing_spiderman_belt_suit_damage=The Amazing Spider-Man 벨트 포함 슈트 §c[손상됨]
+
+item.spiderverse:venom_s3=Venom [Spider-Man 3] 슈트
+item.spiderverse:spiderman_last_stand_suit=Spider-Man: Last Stand 슈트
+item.spiderverse:superior_spiderman_black_suit=Superior Spider-Man 블랙 슈트
+item.spiderverse:spiderman_web_of_shadows_black_suit=스파이더맨: 웹 오브 섀도우 블랙 슈트
+item.spiderverse:spiderman_web_of_shadows_suit=Spider-Man: Web of Shadows 슈트
+item.spiderverse:spiderman_what_if_suit=Spider-Man: Disney Land 슈트
+item.spiderverse:spiderman_what_if_animated_suit=Spider-Man: What If Ep 5 슈트
+item.spiderverse:spirit_spider_suit=Spirit Spider 슈트
+item.spiderverse:yfn_spiderman_casero_suit="친절한 이웃 스파이더맨" 홈메이드 슈트
+item.spiderverse:into_the_spiderverse_sb_suit=Into The Spider-Verse SB 슈트
+item.spiderverse:spiderman_miles_morales_leap_of_faith_suit=Miles Morales: 신념의 도약 슈트
+item.spiderverse:miles_morales_bodega_cat_suit_3=Spider-Man Miles Morales: 보데가 캣 슈트
+item.spiderverse:miles_morales_bodega_cat_suit_2=Spider-Man Miles Morales: 보데가 캣 슈트
+item.spiderverse:miles_morales_bodega_cat_suit_1=Spider-Man Miles Morales: 보데가 캣 슈트
+item.spiderverse:miles_morales_10th_suit_3=마일스 모랄레스: 10주년 슈트
+item.spiderverse:miles_morales_10th_suit_2=마일스 모랄레스: 10주년 슈트
+item.spiderverse:miles_morales_10th_suit_1=마일스 모랄레스: 10주년 슈트
+item.spiderverse:miles_morales_10th_suit=마일스 모랄레스: 10주년 슈트
+item.spiderverse:anti_ock_suit_1=안티옥 슈트
+item.spiderverse:anti_ock_suit_2=안티옥 슈트
+item.spiderverse:anti_ock_suit_3=안티옥 슈트
+item.spiderverse:spider_punk_across_the_spider_verse_suit=Spider-Punk: Across The Spider-Verse 슈트
+item.spiderverse:spiderman_unlimited_suit=Spider-Man: Unlimited 슈트
+item.spiderverse:spiderman_noir_into_the_spiderverse_suit=Spider-Noir: Into The Spider-Verse 슈트
+item.spiderverse:spiderman_secret_wars_civil_war_suit=Spider-Man: Secret Wars - Civil War 슈트
+item.spiderverse:spiderman_india_suit=Spider-Man India: Across The Spider-Verse 슈트
+item.spiderverse:spiderman_antivenom_suit=스파이더맨 안티베놈 슈트

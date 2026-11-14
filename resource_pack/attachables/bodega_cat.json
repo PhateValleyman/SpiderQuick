@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:bodega_cat",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/miles_morales_bodega_cat"
+			},
+			"geometry": {
+				"default": "geometry.bodega_cat"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';"
+				],
+                "animate": [
+                    "idle",
+					"on"
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.default": "v.off_hand && !c.is_first_person" }
+			],
+            "animations": {
+                "idle": "animation.miles_morales_bodega_cat.idle",
+                "on": "animation.miles_morales_bodega_cat.on"
+            }
+		}
+	}
+}

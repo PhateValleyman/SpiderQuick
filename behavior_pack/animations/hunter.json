@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.hunter.ia": {
+      "loop": true,
+      "animation_length": 11.5,
+      "timeline": {
+        "0.0": [
+		  "/effect @s speed 2 2 true"
+        ],
+        "1.0": [
+		  "/playsound spiderman_effects.hunters_attack @a[r=20]",
+          "/event entity @s minecraft:hability_active",
+		  "/effect @s slowness 2 3 true"
+        ],
+        "2.0": [
+		  "/playsound spiderman_effects.shocker_shot @a[r=20]",
+		  "/particle spidermanaddon:yellow_electric_hit ^ ^ ^2",
+		  "/particle spidermanaddon:yellow_electric_hit2 ^ ^ ^2",
+		  "/particle spidermanaddon:yellow_electric_hit2 ^ ^ ^2",
+		  "/particle spidermanaddon:yellow_electric_hit3 ^ ^ ^2",
+		  "/particle spidermanaddon:yellow_electric_hit ^ ^ ^2",
+		  "/particle spidermanaddon:yellow_electric_hit4 ^ ^ ^2",
+          "/event entity @s hunter:attack"
+        ],
+        "2.5": [
+          "/event entity @s minecraft:default"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.vehicle.damage": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/event entity @s mzaddon:car_damage_off"
+          ],
+          "transitions": [
+            {
+              "vehicle.damage": "q.modified_move_speed > 0.75 && q.has_rider"
+            }
+          ]
+        },
+        "vehicle.damage": {
+          "animations": [
+            "vehicle.damage.loop"
+          ],
+          "on_entry": [
+            "/event entity @s mzaddon:car_damage"
+          ],
+          "transitions": [
+            {
+              "off": "q.modified_move_speed < 0.9 || !q.has_rider"
+            }
+          ]
+        },
+        "off": {
+          "on_entry": [
+            "/event entity @s mzaddon:car_damage_off"
+          ],
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bike.player.animation": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/event entity @p[c=1] bike:off"
+          ],
+          "transitions": [
+            {
+              "bike.idle": "q.has_rider"
+            }
+          ]
+        },
+        "bike.idle": {
+          "on_entry": [
+            "/event entity @p[c=1] bike:idle"
+          ],
+          "transitions": [
+            {
+              "default": "!q.has_rider"
+            },
+            {
+              "bike.jump": "!q.is_on_ground"
+            }
+          ]
+        },
+        "bike.jump": {
+          "on_entry": [
+            "/event entity @p[c=1] bike:jump"
+          ],
+          "transitions": [
+            {
+              "default": "!q.has_rider"
+            },
+            {
+              "bike.idle": "q.is_on_ground"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.bike.particle": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "bike.motor.particle"
+          ],
+          "transitions": [
+            {
+              "bike.particle": "q.modified_move_speed > 0.25"
+            }
+          ]
+        },
+        "bike.particle": {
+          "animations": [
+            "bike.walk.particle"
+          ],
+          "transitions": [
+            {
+              "default": "q.modified_move_speed < 0.25"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.vehicle.walk": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": [
+            "/stopsound @a[r=20] vehicles.car",
+            "/stopsound @a[r=20] vehicles.van_idle",
+            "/stopsound @a[r=20] vehicles.bike",
+            "/event entity @s vehicle:freno_off"
+          ],
+          "transitions": [
+            {
+              "vehicle.walk": "q.modified_move_speed > 0.85 && q.has_rider && q.property('mzaddon:fuel') == true"
+            }
+          ]
+        },
+        "vehicle.walk": {
+          "animations": [
+            "vehicle.walk"
+          ],
+          "transitions": [
+            {
+              "vehicle.freno": "q.modified_move_speed < 0.85 || !q.has_rider || q.property('mzaddon:fuel') == false"
+            }
+          ]
+        },
+        "vehicle.freno": {
+          "animations": [
+            "vehicle.freno"
+          ],
+          "transitions": [
+            {
+              "default": "(q.any_animation_finished || q.modified_move_speed > 0.75) && q.property('vehicle:freno') == false"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.vehicle.fuel_system": {
+      "initial_state": "ac",
+      "states": {
+        "ac": {
+          "transitions": [
+            {
+              "default": "q.scoreboard('v_fuel') <= 0"
+            }
+          ]
+        },
+        "default": {
+          "on_entry": [
+            "/scoreboard objectives add v_fuel dummy",
+            "/scoreboard players add @s v_fuel 0",
+            "/event entity @s[scores={v_fuel=1..}] vehicle:fuel"
+          ],
+          "transitions": [
+            {
+              "vehicle.fuel": "q.scoreboard('v_fuel') <= 0"
+            }
+          ]
+        },
+        "vehicle.fuel": {
+          "on_entry": [
+            "/event entity @s vehicle:out"
+          ],
+          "transitions": [
+            {
+              "default": "q.scoreboard('v_fuel') > 1 || q.scoreboard('v_fuel') == 1"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.vehicle.fuel": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "vehicle.fuel": "q.has_rider && q.property('mzaddon:fuel') == true"
+            },
+            {
+              "vehicle.out": "q.has_rider && q.property('mzaddon:fuel') == false"
+            }
+          ]
+        },
+        "vehicle.fuel": {
+          "on_entry": [
+            "/playsound vehicles.car_start @a[r=8]",
+            "/event entity @s vehicle:despawn"
+          ],
+          "transitions": [
+            {
+              "default": "!q.has_rider || q.property('mzaddon:fuel') == false"
+            }
+          ]
+        },
+        "vehicle.out": {
+          "on_entry": [
+            "/playsound vehicles.car_out @a[r=8]"
+          ],
+          "transitions": [
+            {
+              "default": "!q.has_rider || q.property('mzaddon:fuel') == true"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.vehicle.move.fuel": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "move.fuel": "query.modified_move_speed"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

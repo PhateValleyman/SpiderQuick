@@ -1,0 +1,104 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:boomerang_explosive_shoot",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "return": {
+        "minecraft:physics": {},
+        "minecraft:collision_box": {
+          "width": 0.35,
+          "height": 0.35
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "boomerang_projectile",
+          "boomerang_explosive",
+          "bullet"
+        ]
+      },
+
+      "minecraft:collision_box": {
+        "width": 0.35,
+        "height": 0.35
+      },
+
+      "minecraft:physics": {},
+
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+
+      "minecraft:projectile": {
+        "power": 1.25,
+        "gravity": 0.0,
+        "uncertaintyBase": 0.0,
+        "anchor": 1,
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "should_bounce": false,
+        "shoot_sound": "boomerang.boomerang",
+        "hit_sound": "random.explode",
+
+        "on_hit": {
+          "impact_damage": {
+            "damage": 8,
+            "knockback": true,
+            "destroy_on_hit": false
+          },
+
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "spidermanaddon:explode"
+            }
+          }
+        }
+      },
+
+      "minecraft:timer": {
+        "looping": false,
+        "time": 3.0,
+        "time_down_event": {
+          "event": "spidermanaddon:return"
+        }
+      }
+    },
+
+    "events": {
+      "spidermanaddon:explode": {
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "particle minecraft:large_explosion ~ ~ ~",
+            "playsound random.explode @a[r=32] ~ ~ ~",
+            "damage @e[r=4,type=!spidermanaddon:boomerang,type=!spidermanaddon:boomerang_explosive_shoot,type=!spidermanaddon:boomerang_shoot] 14 entity_attack",
+            "event entity @s spidermanaddon:return"
+          ]
+        }
+      },
+
+      "spidermanaddon:return": {
+        "add": {
+          "component_groups": [
+            "return"
+          ]
+        }
+      }
+    }
+  }
+}

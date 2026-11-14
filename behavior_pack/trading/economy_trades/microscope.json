@@ -1,0 +1,106 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 5,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_powers",
+                  "quantity": 16
+                },
+                {
+                  "item": "spidermanaddon:spider_egg",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:genetically_engineered_super_spider",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:spider_egg",
+                  "quantity": 4
+                },
+                {
+                  "item": "minecraft:slime_ball",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 24
+                },
+                {
+                  "item": "minecraft:copper_ingot",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spidermanaddon:web_shot_empty"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_shot_empty",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:web_shooters_plans",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:web_shooter_balanceo"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spidermanaddon:web_flow",
+                  "quantity": 1
+                },
+                {
+                  "item": "minecraft:iron_ingot",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:web_cartridge",
+                  "quantity": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

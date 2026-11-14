@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.iron_spider_ucm_suit.normal": {
+			"loop": true,
+			"bones": {
+				"killer": {
+					"scale": 0
+				},
+				"normal": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.iron_spider_ucm_suit.killer": {
+			"loop": true,
+			"bones": {
+				"killer": {
+					"scale": 1
+				},
+				"normal": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

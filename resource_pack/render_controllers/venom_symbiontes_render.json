@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.venom.symbiote.0": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.1": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.2": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.3": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.4": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.5": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.6": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.7": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.8": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    },
+    "controller.render.venom.symbiote.9": {
+      "geometry": "Geometry.symbiote",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.symbiote" ]
+    }
+  }
+}

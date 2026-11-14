@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spider_carnage_mask",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/suits/spider_carnage"
+			},
+			"geometry": {
+				"default": "geometry.spider_carnage_mask"
+			},
+			"scripts": {
+                "animate": [
+					"idle", "spirit_spider_head.look"
+                ]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "animations": {
+				"idle": "animation.venom_s3.idle",
+				"spirit_spider_head.look": "animation.spirit_spider_head.idle"
+            }
+		}
+	}
+}

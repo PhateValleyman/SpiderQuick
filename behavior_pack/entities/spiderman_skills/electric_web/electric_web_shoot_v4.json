@@ -1,0 +1,93 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:electric_web_shoot_v4",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "destroy"
+				}
+			},
+				"minecraft:projectile": {
+					"on_hit": {
+					  "definition_event": {
+						"event_trigger": {
+						  "event": "hit"
+						}
+					  },
+					  "impact_damage": {
+						"damage": [7, 7],
+						"knockback": false,
+						"destroy_on_hit": false
+					  },
+					  "mob_effect": {
+						"effect": "slowness",
+						"durationeasy": 100,
+						"durationnormal": 100,
+						"durationhard": 100,
+						"amplifier": 4
+					  },
+					  "stick_in_ground": {
+						"shake_time": 0.1
+					  }
+					},
+					"power": 1.75,
+					"gravity": 0.001,
+					"anchor": 0,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 0.0,
+					"offset": [
+						0,
+						0,
+						0
+					],
+				  "shooting": {
+					"source": "owner"
+				  }
+				}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

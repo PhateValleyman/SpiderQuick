@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mzaddon:spider_web_cartridge"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+	  "CBC",
+	  "BAB",
+	  "CBC"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:slime_ball"
+      },
+	  "B": {
+        "item": "minecraft:iron_nugget"
+      },
+	  "C": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "mzaddon:spider_web_cartridge",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

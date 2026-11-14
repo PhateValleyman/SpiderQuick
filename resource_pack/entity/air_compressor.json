@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:air_compressor",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/blocks/air_compressor"
+			},
+			"geometry": {
+				"default": "geometry.air_compressor"
+			},
+			  "particle_effects": {
+				 "air_compressor": "spidermanaddon:air_compressor"
+			  },
+			"animations": {
+				"particles": "animation.air_compressor.particles",
+				"on": "animation.air_compressor.on"
+			},
+			"animation_controllers": [
+				{
+					"air_compressor": "controller.animation.air_compressor"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "air_compressor",
+				"texture_index": 0
+			}
+		}
+	}
+}

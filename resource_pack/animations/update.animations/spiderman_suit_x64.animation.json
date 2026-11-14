@@ -1,0 +1,66 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.iron_spider.suit.off": {
+			"animation_length": 0.5,
+			"bones": {
+				"waist": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"body": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"head": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"mask": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"leftArm": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"rightArm": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"rightLeg": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"leftLeg": {
+					"scale": {
+						"0.0": [0, 0, 0],
+						"0.125": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.spiderman.mask.off": {
+			"loop": true,
+			"bones": {
+				"mask": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

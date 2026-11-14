@@ -1,0 +1,227 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.challenge_box" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+					{"open": "q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 3 || q.variant == 5"}, 
+					{ "villager": "q.variant == 4" } ]
+				}
+			}
+		},
+		"controller.animation.taskmaster.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk.normal" : "query.modified_move_speed > 0.1 && (q.variant == 0 || q.variant == 1 || q.variant == 2 || q.variant == 4 || q.variant == 5 || q.variant == 6 || q.variant == 7)"
+						}
+					]
+				},
+				"walk.normal" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1 || q.variant == 3"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.taskmaster.hability" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hability" : "q.variant == 1"
+						},
+						{
+							"hability2" : "q.variant == 3"
+						},
+						{
+							"kick" : "q.variant == 5"
+						},
+						{
+							"shoot" : "q.variant == 7"
+						},
+						{
+							"teleport" : "q.variant == 8"
+						}
+					]
+				},
+				"hability" : {
+					"animations" : [ "hability" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 && q.all_animations_finished"
+						}
+					]
+				},
+				"hability2" : {
+					"animations" : [ "hability2" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 && q.all_animations_finished"
+						}
+					]
+				},
+				"kick" : {
+					"animations" : [ "kick" ],
+					"transitions" : [
+						{
+							"kick2" : "q.variant == 6 || q.variant == 0 && q.all_animations_finished"
+						}
+					]
+				},
+				"kick2" : {
+					"animations" : [ "kick2" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 && q.all_animations_finished"
+						}
+					]
+				},
+				"shoot" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{
+							"shoot_attack" : "q.all_animations_finished"
+						}
+					]
+				},
+				"shoot_attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 && q.all_animations_finished"
+						}
+					]
+				},
+				"teleport" : {
+					"animations" : [ "teleport" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.taskmaster.cubrirse" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cubrirse" : "q.is_sheared"
+						}
+					]
+				},
+				"cubrirse" : {
+					"animations" : [ "cubrirse" ],
+					"transitions" : [
+						{
+							"default2" : "q.all_animations_finished"
+						}
+					]
+				},
+				"default2" : {
+					"transitions" : [
+						{
+							"cubrirse2" : "q.is_sheared"
+						}
+					]
+				},
+				"cubrirse2" : {
+					"animations" : [ "cubrirse2" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.taskmaster.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack>0 && q.variant == 0"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"attack.2" : "q.all_animations_finished && variable.attack>0 && q.variant == 0"
+						}
+					]
+				},
+				"attack.2" : {
+					"animations" : [ "attack.2" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.taskmaster.combat_mode" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle" ],
+					"transitions" : [
+						{
+							"combat_pose" : "q.has_target"
+						}
+					]
+				},
+				"combat_pose" : {
+					"animations" : [ "combat_pose" ],
+					"transitions" : [
+						{
+							"combat_idle" : "q.all_animations_finished"
+						}
+					]
+				},
+				"combat_idle" : {
+					"animations" : [ "combat_idle" ],
+					"transitions" : [
+						{
+							"default" : "!query.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.taskmaster.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground"
+						}
+					]
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"combat_idle" : "q.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

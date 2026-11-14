@@ -1,0 +1,71 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:robot_dog_pet",
+			"category": "Equipment"
+		},
+		"components": {
+
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "robot_dog_pet",
+				"duration": 1
+			},
+			"minecraft:throwable": {
+				"do_swing_animation": true
+			},
+			"minecraft:projectile": {
+				"projectile_entity": "spidermanaddon:robot_dog_pet"
+			},
+			"minecraft:icon": {
+				"texture": "robot_dog_pet"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "throw",
+					"target": "self"
+				}
+			},
+"minecraft:render_offsets": {
+    "main_hand": { //off_hand
+          "third_person": {
+            "scale": [
+              0.05,
+              0.05,
+              0.05
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.02,
+              0.02,
+              0.02
+            ]
+          }
+      },
+    "off_hand": { //off_hand
+       "first_person": {
+          "rotation": [ 0.0, 0.0, 0.0 ],
+           "position": [ 0.0, 0.0, 0.0 ],
+           "scale": [ 0.0, 0.0, 0.0 ]
+         },
+       "third_person": {
+           "rotation": [ 0.0, 0.0, 0.0 ],
+           "position": [ 0.0, 0.0, 0.0 ],
+           "scale": [ 0.0, 0.0, 0.0 ]
+					}
+				}
+			}
+		},
+		"events": {
+			"throw": {
+				"run_command": {
+					"command": [
+							"playsound armor.equip_leather @s ~ ~ ~ 1 1 1"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.spiderman.combat_idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spiderman.combat" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'combat_mode') || q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack')"
+						}
+					]
+				},
+				"spiderman.combat" : {
+					"animations" : [ "spiderman.combat" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'combat_mode') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'iron_arms_attack')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

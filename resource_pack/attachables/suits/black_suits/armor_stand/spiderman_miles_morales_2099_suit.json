@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spiderman_miles_morales_2099_suit.armor_stand",
+			"item": {
+				"spiderverse:spiderman_miles_morales_2099_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"outline": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/suits/spiderman_miles_morales_2099_suit",
+				"outline": "textures/suits/spiderman_miles_morales_2099_suit"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_miles_morales_2099_suit",
+				"outline": "geometry.spiderman_miles_morales_2099_mask"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			]
+		}
+	}
+}

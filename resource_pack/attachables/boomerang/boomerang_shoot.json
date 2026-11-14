@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:boomerang_skill",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/boomerang/boomerang"
+			},
+			"geometry": {
+				"default": "geometry.boomerang_first",
+				"web_shooter_third": "geometry.boomerang_item"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person" }
+			]
+		}
+	}
+}

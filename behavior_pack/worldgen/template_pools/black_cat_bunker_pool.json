@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "spidermanaddon:black_cat_bunker_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/black_cat_bunker",
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

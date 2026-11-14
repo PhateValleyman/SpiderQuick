@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.cat_hability" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"cat_hability" : "variable.attack_time > 0.1"
+						}
+					]
+				},
+				"cat_hability" : {
+					"on_entry": [
+						"/summon spidermanaddon:cat_punch ~ ~1 ~",
+						"/playsound spiderman_effects.kick_blast @a[r=15] ~ ~1 ~ 0.45"
+					],
+					"transitions" : [
+						{
+							"default" : "variable.attack_time < 0.1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.spiderman.bodega_cat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/function bodega_cat_off"
+					],
+					"transitions" : [
+						{
+							"bodega_cat" : "q.equipped_item_any_tag('slot.armor.chest', 'bodega_cat')"
+						}
+					]
+				},
+				"bodega_cat" : {
+					"on_entry": [
+						"/function bodega_cat_off"
+					],
+					"transitions" : [
+						{
+							"bodega_cat.on" : "(1.0)"
+						}
+					]
+				},
+				"bodega_cat.on" : {
+					"on_entry": [
+						"/function bodega_cat_on"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.chest', 'bodega_cat')"
+						}
+					]
+				}
+			}
+		}
+	}
+}

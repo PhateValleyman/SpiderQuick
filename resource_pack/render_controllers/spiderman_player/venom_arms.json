@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.venom_arms": {
+      "geometry": "Geometry.venom_arms",
+      "part_visibility": [
+        { "*": "query.equipped_item_any_tag('slot.armor.head', 'venom')" }
+      ],
+      "materials": [ { "*": "Material.venom_skin" } ],
+      "textures": [ "Texture.venom_skin" ]
+    }
+  }
+}

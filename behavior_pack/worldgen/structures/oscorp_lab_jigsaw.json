@@ -1,0 +1,93 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "spidermanaddon:oscorp_lab_jigsaw"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      },
+      {
+        "any_of": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "roofed"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "dark_oak"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "taiga"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "birch"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "savanna"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "desert"
+          },
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "grove"
+          },
+          {
+            "all_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "river"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_thin",
+    "start_pool": "spidermanaddon:oscorp_lab_pool",
+    "max_depth": 1,
+    "max_distance_from_center": {
+      "horizontal": 128,
+      "vertical": 128
+    },
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 0
+      }
+    },
+    "heightmap_projection": "world_surface",
+    "liquid_settings": "ignore_waterlogging",
+    "dimension_padding": {
+      "top": 0,
+      "bottom": 0
+    }
+  }
+}

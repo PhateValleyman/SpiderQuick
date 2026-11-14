@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "marveladdons:venom_item",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/nome"
+			},
+			"geometry": {
+				"default": "geometry.nome"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:mayday_parker_black_suit.armor_stand",
+			"item": {
+				"spiderverse:mayday_parker_black_suit": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/mayday_parker_black_suit",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_full"
+			},
+
+			"render_controllers": [
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mystructure:clarin_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/clarin",
+          "projection": "rigid"
+        },
+        "weight": 50
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mystructure/clarin0",
+          "projection": "rigid"
+        },
+        "weight": 50
+      }
+    ]
+  }
+}

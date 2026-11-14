@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "marveladdons:venom_cellular_corrosion",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/nome"
+			},
+			"geometry": {
+				"default": "geometry.nome"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

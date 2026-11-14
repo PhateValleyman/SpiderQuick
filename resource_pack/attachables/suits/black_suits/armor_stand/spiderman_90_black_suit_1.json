@@ -1,0 +1,46 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spiderverse:spiderman_90_black_suit_1.armor_stand",
+			"item": {
+				"spiderverse:spiderman_90_black_suit_1": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted",
+				"armor_skin": "slime",
+				"outline": "outline",
+				"outline_color": "outline",
+				"rubik": "outline"
+			},
+			"textures": {
+				"default": "textures/suits/spiderman_90_black_suit",
+				"enchanted": "textures/misc/enchanted_item_glint",
+				"armor_skin": "textures/entity/invisible",
+				"outline_color": "textures/suits/spiderman_90_red",
+				"outline": "textures/suits/spiderman_outline",
+				"rubik": "textures/suits/spiderman_90_red"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_full",
+				"armor_skin": "geometry.player_ironman",
+				"outline": "geometry.spiderman_full_outline",
+				"outline_color": "geometry.spiderman_suit_x64_outline_color",
+				"rubik": "geometry.spiderman_mask_x64_outline_color"
+			},
+
+			"render_controllers": [
+				"controller.render.rubik",
+				{ "controller.render.armor": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.armor_skin": "q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.outline_color": "!query.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+
+				{ "controller.render.outline": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+
+				
+			]
+		}
+	}
+}

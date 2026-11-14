@@ -1,0 +1,227 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.suits_machine.default": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "!variable.suits_machine_default" }
+      ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.suits_machine.silk_suit": {
+      "geometry": "Geometry.silk_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 106" }
+      ],
+      "textures": [ "Texture.silk_suit" ]
+    },
+    "controller.render.suits_machine.spiderman_unlimited_suit": {
+      "geometry": "Geometry.spiderman_unlimited_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 78" }
+      ],
+      "textures": [ "Texture.spiderman_unlimited_suit" ]
+    },
+    "controller.render.suits_machine.suits_machine_venom_s3": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 98" }
+      ],
+      "textures": [ "Texture.suits_machine_venom_s3" ]
+    },
+    "controller.render.suits_machine": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ 
+			"Texture.spiderman_classic_suit", 
+			"Texture.spiderman_classic_suit_1", 
+			"Texture.spiderman_classic_suit_2", 
+			"Texture.spiderman_classic_suit_3", 
+			"Texture.human_spider_suit", 
+			"Texture.spiderman_raimi_suit", 
+			"Texture.the_amazing_spiderman_1_suit", 
+			"Texture.spiderman_miles_morales_suit", 
+			"Texture.anti_ock_suit", 
+			"Texture.anti_ock_suit_1", 
+			"Texture.anti_ock_suit_2", 
+			"Texture.anti_ock_suit_3", 
+			"Texture.iron_spider_suit", 
+			"Texture.iron_spider_suit_1", 
+			"Texture.iron_spider_suit_2", 
+			"Texture.iron_spider_suit_3", 
+			"Texture.none", 
+			"Texture.none", 
+			"Texture.none", 
+			"Texture.none", 
+			"Texture.aracnido_jr_suit", 
+			"Texture.ezekiel_sims_suit", 
+			"Texture.none", 
+			"Texture.iron_spider_ucm_suit",
+			"Texture.miles_morales_into_the_spiderverse_suit", 
+			"Texture.miles_morales_across_the_spiderverse_suit", 
+			"Texture.miles_morales_10th_suit", 
+			"Texture.miles_morales_10th_suit_1", 
+			"Texture.miles_morales_10th_suit_2", 
+			"Texture.miles_morales_10th_suit_3", 
+			"Texture.miles_morales_bodega_cat_suit", 
+			"Texture.miles_morales_bodega_cat_suit_1", 
+			"Texture.miles_morales_bodega_cat_suit_2", 
+			"Texture.miles_morales_bodega_cat_suit_3", 
+			"Texture.miles_morales_gold_suit", 
+			"Texture.scarlet_spider_suit",
+			"Texture.scarlet_spider_suit_1",
+			"Texture.scarlet_spider_suit_2",
+			"Texture.scarlet_spider_suit_3",
+			"Texture.scarlet_spider_across_the_spiderverse_suit",
+			"Texture.spectacular_spiderman_suit",
+			"Texture.spectacular_spiderman_black_suit",
+			"Texture.spectacular_spiderman_black_suit_2",
+			"Texture.spectacular_spiderman_black_suit_3",
+			"Texture.spider_punk_suit",
+			"Texture.spiderman_67_suit",
+			"Texture.spiderman_90_suit",
+			"Texture.spiderman_90_black_suit",
+			"Texture.spiderman_90_black_suit_1",
+			"Texture.spiderman_2099_suit",
+			"Texture.spiderman_2099_suit_1",
+			"Texture.spiderman_2099_suit_2",
+			"Texture.spiderman_2099_suit_3",
+			"Texture.spiderman_2099_across_the_spiderverse_suit",
+			"Texture.spiderman_2099_across_the_spiderverse_suit_1",
+			"Texture.spiderman_antivenom_suit",
+			"Texture.spiderman_cero_suit",
+			"Texture.spiderman_classic_black_suit",
+			"Texture.spiderman_homemade_suit",
+			"Texture.spiderman_homecoming_suit",
+			"Texture.spiderman_far_from_home_suit",
+			"Texture.spiderman_future_foundation_suit",
+			"Texture.none",
+			"Texture.spiderman_last_stand_suit",
+			"Texture.spiderman_negative_suit",
+			"Texture.spiderman_no_way_home_suit",
+			"Texture.none",
+			"Texture.spiderman_ps4_suit",
+			"Texture.spiderman_ps5_suit",
+			"Texture.spiderman_ps5_suit_1",
+			"Texture.spiderman_ps5_suit_2",
+			"Texture.spiderman_ps5_suit_3",
+			"Texture.spiderman_ps4_black_suit",
+			"Texture.spiderman_ps5_symbiote_suit",
+			"Texture.spiderman_raimi_black_suit",
+			"Texture.spiderman_secret_wars_civil_war_suit",
+			"Texture.spiderman_stealth_suit",
+			"Texture.spiderman_steve_ditko_suit",
+			"Texture.none",
+			"Texture.spiderman_velocity_suit",
+			"Texture.spiderman_web_of_shadows_suit",
+			"Texture.spiderman_web_of_shadows_black_suit",
+			"Texture.spiderman_what_if_suit",
+			"Texture.spiderman_what_if_animated_suit",
+			"Texture.spiderman_wrestler_suit",
+			"Texture.spirit_spider_suit",
+			"Texture.superior_spiderman_suit",
+			"Texture.superior_spiderman_suit_1",
+			"Texture.superior_spiderman_suit_2",
+			"Texture.superior_spiderman_suit_3",
+			"Texture.superior_spiderman_black_suit",
+			"Texture.the_amazing_spiderman_2_suit",
+			"Texture.the_amazing_spiderman_belt_suit",
+			"Texture.the_amazing_spiderman_black_suit",
+			"Texture.ultimate_spiderman_suit",
+			"Texture.ultimate_spiderman_black_suit",
+			"Texture.ultimate_spiderman_ucm_suit",
+			"Texture.yfn_spiderman_casero_suit",
+			"Texture.none",
+			"Texture.into_the_spiderverse_sb_suit",
+			"Texture.spiderman_miles_morales_leap_of_faith_suit",
+			"Texture.spiderman_bombastic_bag_man_suit",
+			"Texture.yfn_spiderman_suit",
+			"Texture.yfn_spiderman_oscorp_suit",
+			"Texture.spiderman_new_blue_suit",
+			"Texture.the_amazing_spiderman_casero_suit",
+			"Texture.none"
+		  ]
+        }
+      },
+      "geometry": "Geometry.suit",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    },
+    "controller.render.suits_machine.spiderman_bombastic_bag_man_mask": {
+      "geometry": "Geometry.spiderman_bombastic_bag_man_mask",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 101" }
+      ],
+      "textures": [ "Texture.spiderman_bombastic_bag_man_mask" ]
+    },
+    "controller.render.suits_machine.venom_spiderman3": {
+      "geometry": "Geometry.venom_spiderman3",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 98" }
+      ],
+      "textures": [ "Texture.venom_spiderman3" ]
+    },
+    "controller.render.suits_machine.spiderman_noir_into_the_spiderverse_suit": {
+      "geometry": "Geometry.spiderman_noir_into_the_spiderverse_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 66" }
+      ],
+      "textures": [ "Texture.spiderman_noir_into_the_spiderverse_suit" ]
+    },
+    "controller.render.suits_machine.spiderman_india_suit": {
+      "geometry": "Geometry.spiderman_india_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 62" }
+      ],
+      "textures": [ "Texture.spiderman_india_suit" ]
+    },
+    "controller.render.suits_machine.miles_morales_wolverine_suit": {
+      "geometry": "Geometry.miles_morales_wolverine_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 16" }
+      ],
+      "textures": [ "Texture.miles_morales_wolverine_suit" ]
+    },
+    "controller.render.suits_machine.miles_morales_wolverine_suit_1": {
+      "geometry": "Geometry.miles_morales_wolverine_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 17" }
+      ],
+      "textures": [ "Texture.miles_morales_wolverine_suit_1" ]
+    },
+    "controller.render.suits_machine.miles_morales_wolverine_suit_2": {
+      "geometry": "Geometry.miles_morales_wolverine_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 18" }
+      ],
+      "textures": [ "Texture.miles_morales_wolverine_suit_2" ]
+    },
+    "controller.render.suits_machine.miles_morales_wolverine_suit_3": {
+      "geometry": "Geometry.miles_morales_wolverine_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 19" }
+      ],
+      "textures": [ "Texture.miles_morales_wolverine_suit_3" ]
+    },
+    "controller.render.suits_machine.ghost_spider_suit": {
+      "geometry": "Geometry.ghost_spider_suit",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 22" }
+      ],
+      "textures": [ "Texture.ghost_spider_suit" ]
+    }
+  }
+}

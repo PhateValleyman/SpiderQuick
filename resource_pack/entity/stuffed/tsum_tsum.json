@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:tsum_tsum",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/stuffed/tsum_tsum"
+			},
+			"geometry": {
+				"default": "geometry.tsum_tsum"
+			},
+			"animations": {
+				"loop": "animation.stuffed_spiderman.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "tsum_tsum",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:electro_boss",
+      "materials": {
+        "default": "entity_emissive_alpha",
+				"scan": "scan"
+      },
+      "textures": {
+        "default": "textures/entity/electro/electro_tas2",
+		"final_phase": "textures/entity/electro/electro_no_way_home",
+				"scan": "textures/entity/prisoner/scan"
+      },
+      "geometry": {
+        "default": "geometry.electro_tas2",
+		"final_phase": "geometry.electro_no_way_home",
+				"scan": "geometry.prisoner_scan"
+      },
+		"particle_effects": {
+		 "miles_morales_light": "spidermanaddon:miles_morales_light",
+		 "miles_morales_light1": "spidermanaddon:miles_morales_light1",
+		 "miles_morales_light2": "spidermanaddon:miles_morales_light2",
+		 "blue_miles_morales_light": "spidermanaddonblue_miles_morales_light",
+		 "blue_miles_morales_light1": "spidermanaddon:blue_miles_morales_light1",
+		 "blue_miles_morales_light2": "spidermanaddon:blue_miles_morales_light2",
+			"blue_light": "spidermanaddon:blue_miles_morales_light",
+			"yellow_light": "spidermanaddon:miles_morales_light",
+			"miles_morales_rays_blue": "spidermanaddon:miles_morales_rays_blue",
+			"miles_morales_rays": "spidermanaddon:miles_morales_rays"
+		},
+      "animations": {
+        "idle": "animation.player.mysterio.falling",
+        "look_at_target": "animation.electro.look_at_target",
+        "controller": "controller.animation.electro_boss",
+        "angry": "animation.electro.angry",
+        "death": "animation.electro.death",
+        "phases": "controller.animation.electro_boss.phases",
+        "phase1": "animation.electro.phase1.idle",
+        "phase2": "animation.electro.phase2.idle",
+        "laser": "animation.player.electro.laser.third",
+        "blue_laser": "animation.player.electro.blue_laser.third"
+      },
+      "scripts": {
+        "animate": [
+          "controller", "idle", "phases"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.electro_boss",
+				"controller.render.scan"
+      ],
+      "spawn_egg": {
+        "base_color": "#179b20",
+        "overlay_color": "#f7c308"
+      }
+    }
+  }
+}

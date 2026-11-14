@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:orange_fabric"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:orange_wool"
+      }
+    },
+    "result": {
+      "item": "marveladdons:orange_fabric",
+        "data": 0,
+      "count": 8
+    }
+  }
+}

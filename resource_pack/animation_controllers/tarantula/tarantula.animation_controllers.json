@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.tarantula": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "walk": "q.modified_move_speed > 0.03 && q.is_on_ground && query.property('spidermanaddon:tarantula_state') == 'default'"
+            },
+            {
+              "falling": "!q.is_on_ground && query.property('spidermanaddon:tarantula_state') == 'default'"
+            }
+          ],
+          "transitions": [
+            {
+              "impulse_attack": "query.property('spidermanaddon:tarantula_state') == 'impulse_attack'"
+            }
+          ],
+		  "blend_transition": 0.25
+        },
+        "impulse_attack": {
+          "animations": [
+            "impulse_attack"
+          ],
+          "transitions": [
+            {
+              "default": "query.property('spidermanaddon:tarantula_state') == 'default'"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.tarantula.melee": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack > 0.0 && query.property('spidermanaddon:tarantula_state') == 'default'"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "default": "q.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

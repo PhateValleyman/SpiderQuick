@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.hunter.ia" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/event entity @s minecraft:default"
+					],
+					"transitions" : [
+						{
+							"hunter.ia" : "q.has_target"
+						}
+					]
+				},
+				"hunter.ia" : {
+					"animations" : [ "hunter_IA" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		}
+	}
+}

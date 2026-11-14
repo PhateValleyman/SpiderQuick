@@ -1,0 +1,36 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:scorpion_powers",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/entity/scorpion/scorpion"
+			},
+			"geometry": {
+				"default": "geometry.scorpion_powers"
+			},
+			"scripts": {
+                "animate": [
+                    "idle",
+					"attack.c"
+                ]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+            "animations": {
+				"attack.c": "controller.animation.scorpion.attack",
+				"idle": "animation.scorpion.idle",
+					
+				"tail_attack": "animation.scorpion.tail_attack",
+				"tail_attack_spin": "animation.scorpion.tail_attack_spin",
+				"jump_attack": "animation.scorpion.jump_attack2",
+				"hide": "animation.scorpion.hide"
+            }
+		}
+	}
+}

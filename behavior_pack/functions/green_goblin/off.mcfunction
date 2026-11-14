@@ -1,0 +1,1 @@
+clear @s spidermanaddon:green_goblin_combat

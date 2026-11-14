@@ -1,0 +1,190 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.prisoner.armor" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "armor" ],
+					"transitions" : [
+						{
+							"armor" : "q.is_pregnant"
+						}
+					]
+				},
+				"armor" : {
+					"transitions" : [
+						{
+							"default" : "!q.is_pregnant"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.prisoner.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"punch" : "variable.attack>0 && q.variant == 0"
+						},
+						{
+							"punch_melee" : "variable.attack>0 && q.variant == 1"
+						}
+					]
+				},
+				"punch" : {
+					"animations" : [ "punch" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				},
+				"punch_melee" : {
+					"animations" : [ "punch_melee" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.prisoner.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk.normal" : "query.modified_move_speed > 0.1 && (q.variant == 0 || q.variant == 1) && q.is_on_ground"
+						},
+						{
+							"walk.weapon" : "query.modified_move_speed > 0.1 && (q.variant == 2 || q.variant == 3) && q.is_on_ground"
+						}
+					]
+				},
+				"walk.normal" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk.weapon" : {
+					"animations" : [ "walk.weapon" ],
+					"transitions" : [
+						{
+							"default" : "query.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.prisoner.apuntar_pistol" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"apuntar_pistol" : "q.has_target && q.variant == 2"
+						}
+					]
+				},
+				"apuntar_pistol" : {
+					"animations" : [ "apuntar_pistol" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.prisoner.apuntar_fusil" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"apuntar_fusil" : "q.has_target && q.variant == 3"
+						}
+					]
+				},
+				"apuntar_fusil" : {
+					"animations" : [ "apuntar_fusil" ],
+					"transitions" : [
+						{
+							"default" : "!q.has_target"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.prisoner.eyes": {
+			"initial_state": "loop",
+			"states": {
+				"loop": {
+					"animations": [ "prisoner.eyes" ]
+				}
+			}
+		},
+		"controller.animation.prisoner.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"prisoner.idle" : "q.variant == 0"
+						},
+						{
+							"prisoner.idle.melee" : "q.variant == 1"
+						},
+						{
+							"prisoner.idle.pistol" : "q.variant == 2"
+						},
+						{
+							"prisoner.idle.weapon" : "q.variant == 3"
+						}
+					]
+				},
+				"prisoner.idle" : {
+					"animations" : [ "prisoner.idle" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 1 || q.variant == 2 || q.variant == 3"
+						}
+					]
+				},
+				"prisoner.idle.melee" : {
+					"animations" : [ "prisoner.idle.melee" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 0 || q.variant == 2 || q.variant == 3"
+						}
+					]
+				},
+				"prisoner.idle.pistol" : {
+					"animations" : [ "prisoner.idle.pistol" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 1 || q.variant == 0 || q.variant == 3"
+						}
+					]
+				},
+				"prisoner.idle.weapon" : {
+					"animations" : [ "prisoner.idle.weapon" ],
+					"transitions" : [
+						{
+							"default" : "q.variant == 1 || q.variant == 2 || q.variant == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

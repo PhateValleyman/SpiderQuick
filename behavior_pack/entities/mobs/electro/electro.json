@@ -1,0 +1,521 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:electro_boss",
+      "spawn_category": "monster",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "nido:scan": {
+          "type": "bool",
+          "default": true,
+          "client_sync": true
+        },
+        "spidermanaddon:electro_phase": {
+          "type": "int",
+          "range": [
+            0,
+            1
+          ],
+          "default": 0,
+          "client_sync": true
+        },
+        "spidermanaddon:electro_angry": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        },
+        "spidermanaddon:electro_dead": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "component_groups": {
+      "electro:slow_flight": {
+        "minecraft:movement": {
+          "value": 0.08
+        },
+        "minecraft:flying_speed": {
+          "value": 0.08
+        }
+      },
+      "electro:alert_flight": {
+        "minecraft:movement": {
+          "value": 0.16
+        },
+        "minecraft:flying_speed": {
+          "value": 0.16
+        }
+      },
+      "electro:laser_attack": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "burst_shots": 10,
+          "burst_interval": 0.25,
+          "attack_interval_min": 5.0,
+          "attack_interval_max": 7.0,
+          "attack_radius": 32
+        },
+        "minecraft:shooter": {
+          "def": "spidermanaddon:blue_electro_unibeam_shoot"
+        }
+      },
+      "electro:laser_attack_final": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "burst_shots": 10,
+          "burst_interval": 0.25,
+          "attack_interval_min": 3.0,
+          "attack_interval_max": 5.0,
+          "attack_radius": 32
+        },
+        "minecraft:shooter": {
+          "def": "spidermanaddon:electro_unibeam_shoot"
+        }
+      },
+      "electro:pve": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "must_see": true,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 36
+            }
+          ]
+        }
+      },
+      "electro:phase_start_timer": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1.0,
+          "randomInterval": false,
+          "time_down_event": {
+            "event": "electro:final_phase_skin",
+            "target": "self"
+          }
+        }
+      },
+      "electro:phase_end_timer": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 2.0,
+          "randomInterval": false,
+          "time_down_event": {
+            "event": "electro:final_phase_end",
+            "target": "self"
+          }
+        }
+      },
+      "destroy": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      },
+      "spidermanaddon:death_mode": {
+        "minecraft:movement": {
+          "value": 0.0
+        },
+        "minecraft:flying_speed": {
+          "value": 0.0
+        },
+        "minecraft:knockback_resistance": {
+          "value": 1.0
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+            "cause": "all",
+            "deals_damage": false
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1.0,
+          "time_down_event": {
+            "event": "spidermanaddon:death_destroy",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "electro",
+          "electro_boss",
+          "monster"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/electro.json"
+      },
+      "minecraft:health": {
+        "value": 2000,
+        "max": 2000
+      },
+      "minecraft:boss": {
+        "name": "Electro",
+        "hud_range": 64,
+        "should_darken_sky": false
+      },
+      "minecraft:scale": {
+        "value": 1.1
+      },
+      "minecraft:attack": {
+        "damage": 6
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 30.0,
+        "outside_range": 36.0,
+        "must_see": true,
+        "on_inside_range": {
+          "event": "electro:alert_speed",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "electro:slow_speed",
+          "target": "self"
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
+      },
+      "minecraft:movement.hover": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_fly": {},
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.float": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 12.0,
+        "probability": 0.05
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.random_hover": {
+        "priority": 8,
+        "xz_dist": 10,
+        "y_dist": 5,
+        "y_offset": 1,
+        "interval": 1,
+        "hover_height": [
+          3,
+          6
+        ]
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 2,
+        "entity_types": {
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "electro_boss"
+          }
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "lightning",
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "has_damage",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": "void"
+                  }
+                ]
+              },
+              "event": "spidermanaddon:death_start",
+              "target": "self"
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:game_event_movement_tracking": {
+        "emit_flap": true
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0,
+        "max": 1.0
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "set_property": {
+          "spidermanaddon:electro_phase": 0,
+          "spidermanaddon:electro_angry": false
+        },
+        "add": {
+          "component_groups": [
+            "electro:slow_flight",
+            "electro:pve",
+            "electro:laser_attack"
+          ]
+        }
+      },
+      "electro:slow_speed": {
+        "remove": {
+          "component_groups": [
+            "electro:alert_flight"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:slow_flight"
+          ]
+        }
+      },
+      "electro:alert_speed": {
+        "remove": {
+          "component_groups": [
+            "electro:slow_flight"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:alert_flight"
+          ]
+        }
+      },
+      "electro:final_phase_start": {
+        "set_property": {
+          "spidermanaddon:electro_angry": true
+        },
+        "remove": {
+          "component_groups": [
+            "electro:laser_attack",
+            "electro:laser_attack_final",
+            "electro:phase_start_timer",
+            "electro:phase_end_timer"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:phase_start_timer"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "particle spidermanaddon:miles_morales_rays ~ ~1 ~",
+            "playsound random.explode @a[r=32] ~ ~ ~ 0.5 1.4"
+          ]
+        }
+      },
+      "electro:final_phase_skin": {
+        "set_property": {
+          "spidermanaddon:electro_phase": 1
+        },
+        "remove": {
+          "component_groups": [
+            "electro:phase_start_timer"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:phase_end_timer"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "particle spidermanaddon:yellow_electric_hit ~ ~1 ~",
+            "particle spidermanaddon:yellow_electric_hit2 ~ ~1 ~",
+            "particle spidermanaddon:yellow_electric_hit3 ~ ~1 ~"
+          ]
+        }
+      },
+      "electro:final_phase_end": {
+        "set_property": {
+          "spidermanaddon:electro_angry": false
+        },
+        "remove": {
+          "component_groups": [
+            "electro:phase_end_timer",
+            "electro:laser_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:laser_attack_final"
+          ]
+        }
+      },
+      "minecraft:destroy": {
+        "remove": {},
+        "add": {
+          "component_groups": [
+            "destroy"
+          ]
+        },
+        "queue_command": {
+          "command": [
+            "particle spidermanaddon:yellow_electric_hit ~ ~1 ~",
+            "particle spidermanaddon:yellow_electric_hit2 ~ ~1 ~",
+            "particle spidermanaddon:yellow_electric_hit3 ~ ~1 ~"
+          ]
+        }
+      },
+      "electro:laser_off": {
+        "remove": {
+          "component_groups": [
+            "electro:laser_attack",
+            "electro:laser_attack_final"
+          ]
+        }
+      },
+      "electro:laser_first_on": {
+        "remove": {
+          "component_groups": [
+            "electro:laser_attack_final"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:laser_attack"
+          ]
+        }
+      },
+      "electro:laser_final_on": {
+        "remove": {
+          "component_groups": [
+            "electro:laser_attack"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "electro:laser_attack_final"
+          ]
+        }
+      },
+      "spidermanaddon:death_start": {
+        "remove": {
+          "component_groups": [
+            "electro:slow_flight",
+            "electro:alert_flight",
+            "electro:laser_attack",
+            "electro:laser_attack_final",
+            "electro:phase_start_timer",
+            "electro:phase_end_timer"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "spidermanaddon:death_mode"
+          ]
+        },
+        "set_property": {
+          "spidermanaddon:electro_angry": true,
+          "spidermanaddon:electro_dead": true
+        },
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "tag @s add electro_death_mode",
+            "effect @s instant_health 1 10 true",
+            "effect @s resistance 8 255 true",
+            "effect @s slowness 8 255 true",
+            "stopsound @a[r=32] fly_loop"
+          ]
+        }
+      },
+      "nido:scan": {
+        "set_property": {
+          "nido:scan": false
+        },
+        "queue_command": {
+          "command": [
+            "tag @s add nido_scan"
+          ]
+        }
+      },
+      "nido:scan.off": {
+        "set_property": {
+          "nido:scan": true
+        },
+        "queue_command": {
+          "command": [
+            "tag @s remove nido_scan"
+          ]
+        }
+      },
+      "spidermanaddon:death_destroy": {
+        "queue_command": {
+          "target": "self",
+          "command": [
+            "effect @s invisibility 6 0 true",
+            "kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

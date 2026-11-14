@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:kraven_axe_on",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/items_3d/kraven_axe"
+			},
+			"geometry": {
+				"default": "geometry.kraven_axe_shoot"
+			},
+			"animations": {
+				"loop": "animation.kraven_axe.shoot"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"texture": "kraven_axe",
+				"texture_index": 0
+			}
+		}
+	}
+}

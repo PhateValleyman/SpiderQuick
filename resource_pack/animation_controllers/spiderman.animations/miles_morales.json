@@ -1,0 +1,70 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.miles_morales" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.miles_morales.skill.c",
+						"player.miles_morales.invisibility.c"
+					]
+				}
+			}
+		},
+		"controller.animation.player.miles_morales.invisibility": {
+			"states": {
+				"default": {
+					"transitions": [
+						{ "invisibility": "q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_invisibility') && q.property('nido:ability1') == 5" }
+					]
+				},
+				"invisibility": {
+					"animations": [
+						"player.miles_morales.invisibility"
+					],
+					"transitions": [
+						{ "default": "q.all_animations_finished && (!q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_invisibility') || q.property('nido:ability1') == 0)" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.miles_morales.skill" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "miles_morales.mega_venom_blast" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') && q.property('arathnido:animation') == 10" },
+						{ "miles_morales.venom_blast_punch" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_punch') && q.property('arathnido:animation') == 17" },
+						{ "miles_morales.venom_smash" : "(q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_smash') || q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_combat')) && q.property('arathnido:animation') == 18" },
+						{ "miles_morales.venom_jump" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_jump') && q.property('arathnido:animation') == 19" }
+					]
+				},
+				"miles_morales.mega_venom_blast" : {
+					"animations" : [ "player.miles_morales.mega_venom_blast" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'spiderman_focus') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				},
+				"miles_morales.venom_blast_punch" : {
+					"animations" : [ "player.miles_morales.venom_blast_punch" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_punch') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				},
+				"miles_morales.venom_smash" : {
+					"animations" : [ "player.miles_morales.venom_smash" ],
+					"transitions" : [
+						{ "default" : "((!q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_smash') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_combat')) || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				},
+				"miles_morales.venom_jump" : {
+					"animations" : [ "player.miles_morales.venom_jump" ],
+					"transitions" : [
+						{ "default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'miles_morales_venom_jump') || q.property('arathnido:animation') == 0) && q.all_animations_finished" }
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:black_cat_hook",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/taskmaster_shoot"
+			},
+			"geometry": {
+				"default": "geometry.taskmaster_shoot"
+			},
+			"animations": {
+				"move": "animation.bullet.move"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			}
+		}
+	}
+}

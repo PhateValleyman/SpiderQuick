@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.girl_hunter": {
+      "geometry": "Geometry.girl_hunter",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 0" }
+      ],
+      "textures": [ "Texture.girl_hunter", "Texture.enchanted" ]
+    },
+    "controller.render.girl_hunter1": {
+      "geometry": "Geometry.girl_hunter1",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 1" }
+      ],
+      "textures": [ "Texture.girl_hunter1", "Texture.enchanted" ]
+    },
+    "controller.render.male_hunter": {
+      "geometry": "Geometry.male_hunter",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 2" }
+      ],
+      "textures": [ "Texture.male_hunter", "Texture.enchanted" ]
+    },
+    "controller.render.male_hunter1": {
+      "geometry": "Geometry.male_hunter1",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "q.variant == 3" }
+      ],
+      "textures": [ "Texture.male_hunter1", "Texture.enchanted" ]
+    },
+    "controller.render.hunter.crossbow": {
+      "geometry": "Geometry.crossbow",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.crossbow", "Texture.enchanted" ]
+    }
+  }
+}

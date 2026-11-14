@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.multiversal_gizmo.lyla": {
+      "geometry": "Geometry.lyla",
+      "materials": [ { "*": "Material.lyla" } ],
+      "textures": [ "Texture.lyla" ]
+    },
+    "controller.render.multiversal_gizmo.lyla.outline": {
+      "geometry": "Geometry.lyla_outline",
+      "materials": [ { "*": "Material.lyla_outline" } ],
+      "textures": [ "Texture.lyla_outline" ]
+    },
+    "controller.render.multiversal_gizmo.lyla_rabbit_face": {
+      "geometry": "Geometry.lyla_rabbit_face",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.lyla_rabbit_face" ]
+    }
+  }
+}

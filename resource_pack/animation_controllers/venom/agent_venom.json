@@ -1,0 +1,138 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.agent_venom.knife.use" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "player.chainsaw.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_knife') && variable.attack_time > 0.1" }
+					]
+				},
+				"player.chainsaw.attack" : {
+					"animations" : [ 
+						{"player.ash_williams.chainsaw.attack.0": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_knife')" },
+						{ "player.ash_williams.chainsaw.attack.1" : "q.any_animation_finished && variable.attack_time > 0.1" }
+					]
+				},
+				"player.ash_williams.chainsaw.attack.1" : {
+					"animations" : [ 
+						{"player.ash_williams.chainsaw.attack.1": "!v.is_first_person" }
+					],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_knife')" },
+						{ "default" : "q.any_animation_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.agent_venom_pistols.animations": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [ 
+						{"shoot":"q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 2" },
+						{"reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') && q.property('arathnido:animation') == 3" }
+                    ]
+				},
+				"shoot": {
+                    "animations": [ "player.agent_venom.shoot", {"player.double_glock_17.shoot":"variable.is_first_person"}, {"player.double_glock_17.shoot.third":"!variable.is_first_person"} ],
+					"transitions": [ 
+                        {"default":"(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') || q.property('arathnido:animation') == 0) && q.any_animation_finished"}
+                    ]
+				},
+				"reload": {
+                    "animations": [ {"player.double_glock_17.reload":"variable.is_first_person"} ],
+					"transitions": [ 
+                        {"default":"(!q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_pistols') || q.property('arathnido:animation') == 0) && q.any_animation_finished"}
+                    ]
+				}
+			}
+		},
+		"controller.animation.player.agent_venom.whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"player.agent_venom.whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'agent_venom_whip') && q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"player.agent_venom.whip" : {
+					"animations" : [ { "player.agent_venom.whip":"!v.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.agent_venom.blast" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"player.agent_venom.blast" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_explotion') && q.property('arathnido:animation') == 1"
+						}
+					],
+					"blend_transition": 0.25
+				},
+				"player.agent_venom.blast" : {
+					"animations" : [ { "player.agent_venom.blast":"!v.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+						}
+					],
+					"blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.agent_venom.blast" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"blast" : "q.property('arathnido:animation') == 1"
+						}
+					]
+				},
+				"blast" : {
+					"animations" : [ "blast" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.agent_venom.impulse_whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"impulse_whip" : "q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"impulse_whip" : {
+					"animations" : [ "impulse_whip" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

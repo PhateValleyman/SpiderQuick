@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.kraven_axe_shoot",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "kraven_axe",
+					"pivot": [-6, 12, -1],
+					"rotation": [0, 0, 90],
+					"cubes": [
+						{"origin": [-6.5, 11.5, -7], "size": [1, 1, 24], "uv": [0, 0]},
+						{"origin": [-7, 11, 16.75], "size": [2, 2, 3], "inflate": -0.25, "uv": [8, 25]},
+						{"origin": [-7, 11, -11.25], "size": [2, 2, 5], "inflate": -0.25, "uv": [7, 17]},
+						{"origin": [-7, 9, -21.25], "size": [2, 6, 6], "inflate": 0.25, "uv": [0, 0]},
+						{"origin": [-7, 15.25, -20.25], "size": [2, 5, 4], "inflate": 0, "uv": [12, 8]},
+						{"origin": [-7, 13.25, -24.85], "size": [1, 16, 18], "inflate": 0, "uv": [3, 38]},
+						{"origin": [-7, -5.25, -24.85], "size": [1, 16, 18], "inflate": 0, "uv": [53, 6]},
+						{"origin": [-7, 3.75, -20.25], "size": [2, 5, 4], "inflate": 0, "uv": [0, 12]},
+						{"origin": [-7.5, 8.5, -23.25], "size": [3, 7, 1], "inflate": -0.25, "uv": [0, 25]},
+						{"origin": [-7.5, 10.5, -23.25], "size": [3, 1, 2], "inflate": -0.15, "uv": [25, 25]},
+						{"origin": [-7.5, 12.5, -23.25], "size": [3, 1, 2], "inflate": -0.15, "uv": [15, 25]},
+						{"origin": [-7, 11, -15], "size": [2, 2, 4], "inflate": 0, "uv": [10, 0]}
+					]
+				}
+			]
+		}
+	]
+}

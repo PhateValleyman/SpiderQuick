@@ -1,0 +1,69 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.spider_ham" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+					  "player.spider_ham.skin.c", 
+					  "player.spider_ham.hammer.c", 
+					  "player.spider_ham.hammer.attack.c"
+					]
+				}
+			}
+		},
+		"controller.animation.player.spider_ham.hammer.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_ham.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_ham_hammer') && variable.attack_time > 0.1"
+						}
+					]
+				},
+				"spider_ham.attack" : {
+					"animations" : [ {"player.spider_ham.hammer.attack":"!v.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.spider_ham.hammer" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{ "player.spider_ham.hammer" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'spider_ham_hammer') && v.is_first_person" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.spider_ham.skin" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"spider_ham" : "q.equipped_item_any_tag('slot.armor.head', 'spider_ham_skin')"
+						}
+					]
+				},
+				"spider_ham" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.head', 'spider_ham_skin')"
+						}
+					],
+					"animations" : [ 
+						{ "player.spider_ham": "!v.is_first_person" }
+					]
+				}
+			}
+		}
+	}
+}

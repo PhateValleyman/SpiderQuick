@@ -1,0 +1,63 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "spidermanaddon:shocker_sonic_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "spawn_category": "misc"
+    },
+    "component_groups": {
+      "shocker:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "shocker_sonic_projectile",
+          "projectile"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.3,
+        "height": 0.3
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:projectile": {
+        "gravity": 0.0,
+        "inertia": 1.0,
+        "liquid_inertia": 1.0,
+        "power": 1.0,
+        "anchor": 1,
+        "should_bounce": false,
+        "owner_launch_immunity_ticks": 5
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 4.0,
+        "time_down_event": {
+          "event": "shocker:despawn",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "shocker:despawn": {
+        "add": {
+          "component_groups": [
+            "shocker:despawn"
+          ]
+        }
+      }
+    }
+  }
+}

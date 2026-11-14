@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:web_hook",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.web_shooters"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"web_shooter", "web_hook", "special_item", "item_using","item_hand"
+                ]
+            },
+		  "minecraft:cooldown": {
+			"category": "web_hook",
+			"duration": 0.1
+		  },
+		  "minecraft:allow_off_hand": false,
+		  "minecraft:hand_equipped": true,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 1.0
+			},
+		  "minecraft:max_stack_size": 1,
+		  "minecraft:icon": {
+			"texture": "web_hook"
+		  }
+		}
+	}
+}

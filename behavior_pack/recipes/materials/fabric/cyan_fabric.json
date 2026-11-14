@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spidermanaddon:cyan_fabric"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+		   "item": "minecraft:cyan_wool"
+      }
+    },
+    "result": {
+      "item": "marveladdons:cyan_fabric",
+        "data": 0,
+      "count": 8
+    }
+  }
+}

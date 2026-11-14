@@ -1,0 +1,75 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:multiversal_gizmo",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"lyla": "entity_emissive_alpha",
+				"lyla_outline": "outline_light"
+			},
+			"textures": {
+				"default": "textures/items_3d/multiversal_gizmo",
+				"lyla": "textures/entity/lyla/lyla_yellow_light",
+				"lyla_outline": "textures/entity/lyla/lyla_yellow",
+				"lyla_rabbit_face": "textures/entity/lyla/lyla_rabbit_face"
+			},
+			"geometry": {
+				"default": "geometry.multiversal_gizmo",
+				"web_shooter_third": "geometry.multiversal_gizmo_third",
+				"lyla": "geometry.lyla_l",
+				"lyla_outline": "geometry.lyla_l_outline",
+				"lyla_rabbit_face": "geometry.lyla_rabbit_face"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+					"v.off_hand = c.item_slot == 'off_hand';",
+					"v.camera_mode_anim = (q.property('arathnido:animation') == 21 || q.property('arathnido:animation') == 22 || q.property('arathnido:animation') == 23 || q.property('arathnido:animation') == 24 || q.property('arathnido:animation') == 16 || q.property('arathnido:animation') == 17 || q.property('arathnido:animation') == 18 || q.property('arathnido:animation') == 19 || q.property('arathnido:animation') == 20 || q.property('arathnido:animation') == 25) && q.equipped_item_any_tag('slot.weapon.mainhand', 'gizmo_camera_mode');",
+					"v.sefieOn = q.property('arathnido:animation') == 26 && q.equipped_item_any_tag('slot.weapon.mainhand', 'gizmo_camera_mode');",
+					"v.lyla_rabbit_face = q.property('arathnido:animation') == 26 && q.equipped_item_any_tag('slot.weapon.mainhand', 'gizmo_portal');",
+					"v.defaultCamera = q.property('arathnido:animation') == 0 && v.off_hand;",
+					"v.visibleG = q.property('arathnido:animation') < 16 || v.defaultCamera || q.equipped_item_any_tag('slot.weapon.mainhand', 'gizmo_camera_mode');"
+				],
+                "animate": [
+				  {"mainhand":"v.main_hand"},
+				  {"offhand":"v.off_hand"},
+				  {"lyla.idle":"v.off_hand"},
+				  {"lyla.falling.c":"!v.camera_mode_anim"},
+				  {"lyla.animations.c": "q.equipped_item_any_tag('slot.weapon.mainhand', 'gizmo_camera_mode')"}
+                ]
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person && ((q.equipped_item_any_tag('slot.weapon.mainhand', 'item_hand') && v.off_hand) || v.main_hand)" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person && v.visibleG" },
+				{ "controller.render.multiversal_gizmo.lyla": "!c.is_first_person && v.off_hand && (v.visibleG || v.lyla_rabbit_face)" },
+				{ "controller.render.multiversal_gizmo.lyla.outline": "!c.is_first_person && v.off_hand && (v.visibleG || v.lyla_rabbit_face)" },
+				{ "controller.render.multiversal_gizmo.lyla_rabbit_face": "!c.is_first_person && v.lyla_rabbit_face" }
+			],
+            "animations": {
+				"lyla.animations.c": "controller.animation.lyla.animations",
+				"animation.1": "animation.lyla.gizmo_camera_mode.animation.1",
+				"animation.2": "animation.lyla.gizmo_camera_mode.animation.2",
+				"animation.3": "animation.lyla.gizmo_camera_mode.animation.3",
+				"animation.4": "animation.lyla.gizmo_camera_mode.animation.4",
+				"animation.5": "animation.lyla.gizmo_camera_mode.animation.5",
+				"animation.6": "animation.lyla.gizmo_camera_mode.animation.6",
+				"animation.7": "animation.lyla.gizmo_camera_mode.animation.7",
+				"animation.8": "animation.lyla.gizmo_camera_mode.animation.8",
+				"animation.9": "animation.lyla.gizmo_camera_mode.animation.9",
+				"animation.10": "animation.lyla.gizmo_camera_mode.animation.10",
+				"mainhand": "animation.multiversal_gizmo.mainhand",
+				"offhand": "animation.multiversal_gizmo.offhand",
+				"lyla.idle": "animation.lyla.idle",
+				"lyla.default": "animation.lyla.default",
+				"lyla.default.2": "animation.lyla.default.2",
+				"lyla.default.3": "animation.lyla.default.3",
+				"lyla.falling.c": "controller.animation.lyla.falling",
+				"lyla.falling": "animation.lyla.falling",
+				"lyla.falling.active": "animation.lyla.falling.active",
+				"lyla.gliding": "animation.lyla.gliding",
+				"lyla.selfie": "animation.lyla.selfie"
+            }
+		}
+	}
+}

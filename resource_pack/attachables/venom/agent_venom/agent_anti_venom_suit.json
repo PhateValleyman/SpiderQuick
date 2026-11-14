@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:agent_anti_venom_suit",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/agent_anti_venom",
+				"web_wings": "textures/web_wings"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_suit",
+				"web_wings": "geometry.web_wings"
+			},
+			"render_controllers": [
+				{ "controller.render.spiderman_suit.web_wings": "q.is_gliding && !q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" },
+				{ "controller.render.default": "!q.equipped_item_any_tag('slot.armor.head', 'convert_entity')" }
+			]
+		}
+	}
+}

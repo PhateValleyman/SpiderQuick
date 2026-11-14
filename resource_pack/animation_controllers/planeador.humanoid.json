@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.humanoid.planeador" : {
+			"initial_state" : "default",
+			"states" : {
+				"melee" : {
+					"transitions" : [
+						{
+							"planeador" : "query.mark_variant == 4 && !variable.is_first_person"
+						}
+					]
+				},
+				"planeador" : {
+					"animations" : [ "planeador" ],
+					"transitions" : [
+						{
+							"melee" : "query.mark_variant == 0 || variable.is_first_person"
+						}
+					]
+				}
+			}
+		}
+			}
+		}

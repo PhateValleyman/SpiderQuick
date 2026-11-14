@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.mysterio_invoke.particle": {
+      "loop": true,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.0": [
+          "/particle spidermanaddon:mysterio_smoke ~ ~0.1 ~"
+        ]
+      }
+    }
+  }
+}

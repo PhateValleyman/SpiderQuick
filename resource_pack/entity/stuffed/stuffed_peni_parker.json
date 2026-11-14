@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:stuffed_peni_parker",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/stuffed/peni_parker_comic"
+			},
+			"geometry": {
+				"default": "geometry.stuffed_spiderwoman"
+			},
+			"animations": {
+				"loop": "animation.stuffed_spiderman.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "stuffed_peni_parker",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_punk",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"glitch": "outline_light",
+				"outline": "outline",
+				"outline_color": "outline"
+			},
+			"textures": {
+				"default": "textures/suits/spider_punk/spider_punk_across_the_spider_verse_suit",
+				"glitch": "textures/suits/glitch",
+				"multiversal_gizmo": "textures/items_3d/multiversal_gizmo",
+				"sit": "textures/spiderman_sit",
+				"outline_color": "textures/suits/spider_punk/yellow",
+				"outline": "textures/suits/spiderman_outline"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"geometry": {
+				"default": "geometry.spider_punk_across_suit",
+				"glitch": "geometry.spiderman_glitch",
+				"multiversal_gizmo": "geometry.multiversal_gizmo_third",
+				"sit": "geometry.spiderman_sit",
+				"outline": "geometry.spider_punk_outline",
+				"outline_color": "geometry.spider_punk_outline_color",
+				"mask": "geometry.spider_punk_across_mask",
+				"mask_outline": "geometry.spider_punk_mask_outline",
+				"mask_outline_color": "geometry.spider_punk_mask_outline_color"
+			},
+			"animations": {
+				"loop": "animation.player.new_spiderman.idle",
+				"walk": "animation.npc.spiderman.walk",
+				"falling": "animation.player.new_spiderman.falling.pose",
+				"glitch": "animation.npc.spiderman.glitch",
+				"offhand": "animation.multiversal_gizmo.mainhand",
+				"look_at_target": "animation.common.look_at_target",
+				"punch.1": "animation.player.new_spiderman.combat.punch.1",
+				"punch.2": "animation.player.new_spiderman.combat.punch.2",
+				"punch.3": "animation.player.new_spiderman.combat.punch.3",
+				"punch.4": "animation.player.new_spiderman.combat.punch.4",
+				"sit.1": "animation.npc.spiderman.sit.1",
+				"sit.2": "animation.npc.spiderman.sit.2",
+				"sit.3": "animation.npc.spiderman.sit.3",
+				"sit.4": "animation.npc.spiderman.sit.4",
+				"sit.5": "animation.npc.spiderman.sit.5",
+				"shoot": "animation.npc.spiderman.shoot",
+				"climb": "animation.player.new_spiderman.climb.default",
+				"climb.walk": "animation.player.new_spiderman.climb.walk",
+				"swim": "animation.npc.spiderman.swim"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"walk": "controller.animation.npc.spiderman.walk"
+				},
+				{
+					"falling": "controller.animation.npc.spiderman.falling"
+				},
+				{
+					"glitch": "controller.animation.npc.spiderman.glitch"
+				},
+				{
+					"attack": "controller.animation.npc.spiderman.attack"
+				},
+				{
+					"sit": "controller.animation.npc.spiderman.sit"
+				},
+				{
+					"shoot": "controller.animation.npc.spiderman.shoot"
+				},
+				{
+					"climb": "controller.animation.npc.spiderman.climb"
+				},
+				{
+					"look_at_target": "controller.animation.npc.spiderman.look_at_target"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.spiderverse.glitch",
+				"controller.render.spiderverse.multiversal_gizmo",
+				"controller.render.spiderverse.sit",
+				"controller.render.outline_color",
+				"controller.render.outline",
+				"controller.render.spiderman.npc",
+				"controller.render.spiderman.npc.outline",
+				"controller.render.spider_punk.npc.outline.color"
+			],
+		  "spawn_egg": {
+			 "base_color": "#e60000",
+			 "overlay_color": "#e6b753"
+		  }
+		}
+	}
+}

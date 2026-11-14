@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:web_shield",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_items/spider_web_shield"
+			},
+			"geometry": {
+				"default": "geometry.spider_web_shield_first",
+				"web_shooter_third": "geometry.spider_web_shield"
+			},
+			"render_controllers": [
+				{ "controller.render.default": "c.is_first_person && q.property('arathnido:animation') == 2" },
+				{ "controller.render.web_shooter.third": "!c.is_first_person && q.property('arathnido:animation') == 2" }
+			]
+		}
+	}
+}

@@ -1,0 +1,113 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:pumpkin_knife_guide_explosive_shoot",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"shoot": "controller.animation.shoot"
+			},
+			"scripts": {
+				"animate": [
+					"shoot"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "hit",
+							"target": "self"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							16,
+							16
+						],
+						"knockback": true,
+						"destroy_on_hit": false,
+						"semi_random_diff_damage": false
+					}
+				},
+				"hit_sound": "gun.impact",
+				"power": 2.0,
+				"gravity": 0.001,
+				"anchor": 1,
+				"destroy_on_hurt": true,
+				"uncertaintyBase": 1.9,
+				"should_bounce": false,
+				"inertia": 1,
+				"offset": [
+					0,
+					0.5,
+					0
+				],
+				"multiple_targets": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 8,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:explode": {
+					"fuse_lit": true,
+					"power": 3,
+					"causes_fire": false,
+					"fire_affected_by_griefing": false,
+					"destroy_affected_by_griefing": true,
+					"breaks_blocks": true,
+					"fuse_length": 0
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						},
+						"queue_command": {
+							"command": [
+									
+									"playsound item.trident.throw @a ~ ~ ~ 0.75"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

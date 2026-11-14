@@ -1,0 +1,37 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "spidermanaddon:mysterio_gas_shoot_pvp",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "geometry": {
+                "default": "geometry.mysterio_skull"
+            },
+            "textures": {
+                "default": "textures/entity/mysterio/mysterio_skull"
+            },
+			"animations": {
+				"rot": "animation.mysterio.unibeam.rot",
+				"loop": "animation.mysterio_unibeam_shoot.idle"
+			},
+            "particle_effects": {
+                "mysterio_unibeam": "spidermanaddon:mysterio_smoke",
+				"mysterio_light": "spidermanaddon:mysterio_light"
+            },
+            "scripts": {
+                "animate": [
+                    "rot", "loop"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#6A3636",
+                "overlay_color": "#A63030"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

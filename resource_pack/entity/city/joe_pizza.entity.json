@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "spidermanaddon:joe_pizza",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/city/joe_pizza"
+      },
+      "geometry": {
+        "default": "geometry.joe_pizza"
+      },
+      "animations": {
+        "idle": "animation.customer.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.joes_pizza"
+      ],
+      "spawn_egg": {
+        "base_color": "#405966",
+        "overlay_color": "#adcca4"
+      }
+    }
+  }
+}

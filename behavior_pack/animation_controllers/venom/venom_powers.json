@@ -1,0 +1,907 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.player.venom" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						"player.venom.powers.c",
+						"player.venom.transform_item.c",
+						"player.venom.attack.properties.c",
+						"player.venom.impulse_whip.c",
+						"player.venom.explotion.c",
+						"player.venom.whip.attack.c",
+						"player.venom.shield.c",
+						"player.venom.attack.sounds.c",
+						"player.symbiont.rage.c"
+					]
+				}
+			}
+		},
+		"controller.animation.player.symbiont.rage": {
+		  "initial_state": "default",
+		  "states": {
+			"default": {
+					"on_entry": [
+						"/stopsound @s venom.ambient"
+					],
+			  "transitions": [
+				{ "attack": "q.scoreboard('venom_rage') == 1" }
+			  ]
+			},
+			"attack": {
+				"animations" : [ 
+					"player.venom.ambient"
+				],
+				"transitions": [{ "default": "q.scoreboard('venom_rage') == 0" }]
+			}
+		  }
+		},
+		"controller.animation.player.venom.attack.sounds": {
+		  "initial_state": "default",
+		  "states": {
+			"default": {
+			  "transitions": [
+				{ "attack": "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && v.attack_time > 0.1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_sounds')" }
+			  ]
+			},
+			"attack": {
+					"animations" : [ 
+						"player.venom.time"
+					],
+				"on_entry": [ "/playsound venom.axe @a[r=10] ~ ~ ~ 0.5" ],
+				  "transitions": [{ "default": "q.all_animations_finished" }]
+			}
+		  }
+		},
+		"controller.animation.player.venom.changes_skin" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"venom.changes_skin" : "q.property('nido:ability1') == 1"
+						}
+					]
+				},
+				"venom.changes_skin" : {
+					"animations" : [ 
+						{ "venom.changes_skin.default": "q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 7" },
+						{ "venom.changes_skin.ultimate": "q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5" },
+						{ "venom.changes_skin.blue": "q.property('arathnido:skins') == 2" },
+						{ "venom.changes_skin.2099": "q.property('arathnido:skins') == 6"},
+						{ "venom.changes_skin.snow": "q.property('arathnido:skins') == 8"},
+						{ "venom.changes_skin.antivenom": "q.property('arathnido:skins') == 9"}
+					],
+					"transitions" : [
+						{
+							"end" : "q.any_animation_finished"
+						}
+					]
+				},
+				"end" : {
+					"animations" : [ 
+						{ "venom.changes_skin.default.end": "q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 7" },
+						{ "venom.changes_skin.ultimate.end": "q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5" },
+						{ "venom.changes_skin.blue.end": "q.property('arathnido:skins') == 2" },
+						{ "venom.changes_skin.2099.end": "q.property('arathnido:skins') == 6" },
+						{ "venom.changes_skin.snow.end": "q.property('arathnido:skins') == 8" },
+						{ "venom.changes_skin.antivenom.end": "q.property('arathnido:skins') == 9" }
+					],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.avatar" : {
+			"initial_state" : "active",
+			"states" : {
+				"active" : {
+					"transitions" : [
+						{ "default" : "(1.0)" }
+					]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add venom_avatar dummy", "/scoreboard players add @s venom_avatar 0", "/scoreboard objectives add venom_powers dummy", "/scoreboard players add @s venom_powers 0", "/function venom/avatar_off" ],
+					"transitions" : [
+						{ "avatar" : "q.scoreboard('venom_avatar') == 1 && q.is_alive" }
+					]
+				},
+				"avatar" : {
+					"on_entry" : [ "/function venom/avatar_off" ],
+					"transitions" : [
+						{
+							"on" : "(1.0)"
+						}
+					]
+				},
+				"on" : {
+					"on_entry" : [ "/function venom/avatar_on" ],
+					"transitions" : [
+						{ "default" : "!q.is_alive" },
+						{ "off" : "q.scoreboard('venom_avatar') == 0" }
+					]
+				},
+				"off" : {
+					"on_entry" : [ "/scoreboard players set @s venom_powers 0", "/function venom/avatar_off", "/function venom/off_powers" ],
+					"transitions" : [
+						{ "default" : "(1.0)" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.shield" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : ["/event entity @s guns:shoot.off", "/tag @s remove venom_shield" ],
+					"transitions" : [
+						{
+							"venom.shield" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_shield') && q.is_using_item"
+						}
+					]
+				},
+				"venom.shield" : {
+					"on_entry" : ["/event entity @s guns:shoot" ],
+					"animations" : [ "player.venom.shield" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished && !q.is_using_item"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.axe.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/event entity @s venom:attacks.0", "/tag @s remove venom_attacking" ],
+					"transitions" : [
+						{
+							"venom.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_axe') && variable.attack_time > 0.1 && !q.is_sneaking"
+						}
+					]
+				},
+				"venom.attack.1" : {
+					"on_entry" : [ "/event entity @s venom:attacks.12" ],
+					"animations" : [ "player.venom.axe.attack", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_axe'))" },
+						{	"venom.attack.2" : "q.any_animation_finished && variable.attack_time > 0.1" }
+					]
+				},
+				"venom.attack.2" : {
+					"on_entry" : [ "/event entity @s venom:attacks.6" ],
+					"animations" : [ "player.venom.axe.attack", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_axe'))" },
+						{	"venom.attack.1" : "q.any_animation_finished && variable.attack_time > 0.1" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.knife.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/event entity @s venom:attacks.0", "/tag @s remove venom_attacking" ],
+					"transitions" : [
+						{
+							"venom.attack.1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && variable.attack_time > 0.1 && !q.is_sneaking"
+						}
+					]
+				},
+				"venom.attack.1" : {
+					"on_entry" : [ "/event entity @s venom:attacks.5" ],
+					"animations" : [ "player.venom.knife.attack", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip'))" },
+						{	"venom.attack.2" : "q.any_animation_finished && variable.attack_time > 0.1" }
+					]
+				},
+				"venom.attack.2" : {
+					"on_entry" : [ "/event entity @s venom:attacks.6" ],
+					"animations" : [ "player.venom.knife.attack", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip'))" },
+						{	"venom.attack.1" : "q.any_animation_finished && variable.attack_time > 0.1" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.symbiont.whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"attack.1" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.is_using_item"
+						}
+					]
+				},
+				"attack.1" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "player.symbiont.whip.attack.1" ],
+					"transitions" : [
+						{ "default" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || (q.any_animation_finished && !q.is_using_item)" },
+						{ "attack.2" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.is_using_item" }
+					]
+				},
+				"attack.2" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "player.symbiont.whip.attack.2" ],
+					"transitions" : [
+						{ "default" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || (q.any_animation_finished && !q.is_using_item)" },
+						{ "attack.1" : "q.any_animation_finished && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.is_using_item" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.whip.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/event entity @s venom:attacks.0", "/tag @s remove venom_attacking" ],
+					"transitions" : [
+						{
+							"venom.attack.1" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip') && q.is_using_item && !q.is_sneaking"
+						}
+					]
+				},
+				"venom.attack.1" : {
+					"on_entry" : [ "/event entity @s venom:attacks.8" ],
+					"animations" : [ "player.venom.whip.attack.1", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || (q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip')))" },
+						{	"venom.attack.2" : "q.any_animation_finished && q.is_using_item" }
+					]
+				},
+				"venom.attack.2" : {
+					"on_entry" : [ "/event entity @s venom:attacks.9" ],
+					"animations" : [ "player.venom.whip.attack.2", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || (q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip')))" },
+						{	"venom.attack.3" : "q.any_animation_finished && q.is_using_item" }
+					]
+				},
+				"venom.attack.3" : {
+					"on_entry" : [ "/event entity @s venom:attacks.10" ],
+					"animations" : [ "player.venom.whip.attack.3", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || (q.all_animations_finished && (!q.is_using_item || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_knife_whip')))" },
+						{	"venom.attack.4" : "q.any_animation_finished && q.is_using_item" }
+					]
+				},
+				"venom.attack.4" : {
+					"on_entry" : [ "/event entity @s venom:attacks.11" ],
+					"animations" : [ "player.venom.whip.attack.4", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished" }
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/effect @s levitation 0 30 true",
+						"/effect @s slow_falling 0 1 true",
+						"/tag @s remove venom_climb", "/event entity @s mutant_fly:fisicas_on"
+					],
+					"transitions" : [
+						{
+							"climb.default" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground && !q.is_in_water"
+						}
+					]
+				},
+				"climb.default" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_on_ground || q.is_in_water" },
+						{ "climb.down" : "!q.is_sneaking" },
+						{ "climb.run" : "q.is_jumping" }
+					],
+					"animations" : [ 
+						"player.venom.climb.default"
+					],
+					"on_entry" : [ 
+						"/effect @s slow_falling 0 1 true",
+						"/effect @s levitation 0 30 true", "/event entity @s mutant_fly:fisicas_off"
+					]
+				},
+				"climb.run" : {
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_on_ground || q.is_in_water" },
+						{ "climb.down" : "!q.is_sneaking" }
+					],
+					"animations" : [ 
+						"player.venom.climb.impulso"
+					],
+					"on_entry" : [ 
+						"/effect @s slow_falling 0 1 true",
+						"/effect @s levitation infinite 29 true",
+						"/tag @s remove venom_climb", "/event entity @s mutant_fly:fisicas_on"
+					]
+				},
+				"climb.on" : {
+					"on_entry" : [ 
+						"/tag @s remove venom_climb", "/event entity @s mutant_fly:fisicas_on"
+					],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_on_ground || q.is_in_water" },
+						{ "climb.default" : "q.is_sneaking" },
+						{ "climb.down" : "!q.is_jumping" }
+					],
+					"animations" : [ 
+						"player.venom.climb.on"
+					]
+				},
+				"climb.down" : {
+					"on_entry" : [ 
+						"/effect @s levitation 0 30 true",
+						"/tag @s remove venom_climb", "/event entity @s mutant_fly:fisicas_on"
+					],
+					"transitions" : [
+						{ "default" : "q.property('arathnido:escalar') == false || q.is_on_ground || q.is_in_water" },
+						{ "climb.default" : "q.is_sneaking" },
+						{ "climb.on" : "q.is_jumping" }
+					],
+					"animations" : [ 
+						"player.venom.climb.down"
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.explotion" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/event entity @s guns:shoot.off", "/tag @s remove blast_player"
+					],
+					"transitions" : [
+						{ "venom.explotion" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_explotion') && q.is_using_item" }
+					],
+					"blend_transition": 0.1
+				},
+				"venom.explotion" : {
+					"on_entry" : [ 
+						"/event entity @s guns:shoot"
+					],
+					"animations" : [ "player.venom.explotion" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.impulse_whip" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/event entity @s guns:shoot.off", "/tag @s remove venom_swing"
+					],
+					"transitions" : [
+						{ "venom.whip" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_whip') && q.is_using_item && q.is_sneaking && q.property('arathnido:animation') == 0" }
+					],
+					"blend_transition": 0.1
+				},
+				"venom.whip" : {
+					"on_entry" : [ 
+						"/event entity @s venom:whip_impulse"
+					],
+					"animations" : [ "player.venom.impulse_whip" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.combat" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/inputpermission set @s movement enabled", "/event entity @s venom:attacks.0", "/tag @s remove venom_hability", "/effect @s speed infinite 1 true", "/tag @s remove venom_special_attack", "/tag @s remove venom_smash", "/tag @s remove venom_smash_i", "/tag @s remove venom_hability", "/tag @s remove venom_attacking"  ],
+					"transitions" : [
+						{
+							"venom.attack.1" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && q.property('arathnido:attack') == true && !q.is_sneaking && q.is_on_ground && q.property('arathnido:take') == false"
+						},
+						{
+							"venom.attack.aire" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && q.property('arathnido:attack') == true && !q.is_sneaking && !q.is_on_ground && q.property('arathnido:take') == false"
+						},
+						{
+							"venom.smash" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && q.property('arathnido:attack') == true && q.is_sneaking && !q.is_on_ground && q.property('arathnido:take') == false"
+						},
+						{
+							"venom.hability" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.is_sneaking && q.head_x_rotation(0) > 75 && q.is_on_ground && q.property('arathnido:take') == false"
+						},
+						{
+							"venom.special_attack" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && q.property('arathnido:attack') == true && q.is_sneaking && q.is_on_ground && q.property('arathnido:take') == false"
+						}
+					]
+				},
+				"venom.special_attack" : {
+					"animations" : [ 
+						{ "player.venom.special_attack": "q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 7" },
+						{ "player.ultimate_venom.special_attack":"q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5"}, 
+						{ "player.blue_venom.special_attack":"q.property('arathnido:skins') == 2"}, 
+						{ "player.venom_2099.special_attack":"q.property('arathnido:skins') == 6"}, 
+						{ "player.venom_snow.special_attack":"q.property('arathnido:skins') == 8"}, 
+						{ "player.antivenom.special_attack":"q.property('arathnido:skins') == 9"}
+					],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished" }
+					]
+				},
+				"venom.hability" : {
+					"on_entry" : [ 
+						"/playsound venom.hability @a[r=15]", "/tag @s remove venom_hability"
+					],
+					"animations" : [ 
+						{"player.venom.hability":"q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 7"},
+						{"player.blue_venom.hability":"q.property('arathnido:skins') == 2"},
+						{"player.ultimate_venom.hability":"q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5"},
+						{"player.venom_2099.hability":"q.property('arathnido:skins') == 6"},
+						{"player.venom_snow.hability":"q.property('arathnido:skins') == 8"},
+						{"player.antivenom.hability":"q.property('arathnido:skins') == 9"},
+						{"player.venom.hability.move":"q.modified_move_speed > 0.1 && (q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 7)"}, 
+						{"player.blue_venom.hability.move":"q.modified_move_speed > 0.1 && q.property('arathnido:skins') == 2"},
+						{"player.venom_2099.hability.move":"q.modified_move_speed > 0.1 && q.property('arathnido:skins') == 6"}, 
+						{"player.venom_snow.hability.move":"q.modified_move_speed > 0.1 && q.property('arathnido:skins') == 8"}, 
+						{"player.antivenom.hability.move":"q.modified_move_speed > 0.1 && q.property('arathnido:skins') == 9"}, 
+						{"player.ultimate_venom.hability.move":"q.modified_move_speed > 0.1 && (q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5)"} 
+					],
+					"transitions" : [
+						{ "venom.hability.off" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.is_sneaking || !q.is_on_ground" },
+						{ "venom.hability.attack" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_combat') && q.property('arathnido:attack') == true" }
+					]
+				},
+				"venom.hability.attack" : {
+					"on_entry" : [ 
+						"/tag @s add venom_hability"
+					],
+					"animations" : [ 
+						{ "player.venom.hability.attack": "q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 7" },
+						{ "player.blue_venom.hability.attack": "q.property('arathnido:skins') == 2" },
+						{ "player.ultimate_venom.hability.attack": "q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5" },
+						{ "player.venom_2099.hability.attack": "q.property('arathnido:skins') == 6" },
+						{ "player.venom_snow.hability.attack": "q.property('arathnido:skins') == 8" },
+						{ "player.antivenom.hability.attack": "q.property('arathnido:skins') == 9" }
+					],
+					"transitions" : [
+						{
+							"venom.hability" : "q.any_animation_finished"
+						}
+					]
+				},
+				"venom.hability.off" : {
+					"on_entry" : [ 
+						"/effect @s speed 0 41 true", "/playsound venom.hability.end @a[r=20]"
+					],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"venom.attack.aire" : {
+					"on_entry" : [ "/event entity @s venom:attacks.1" ],
+					"animations" : [ "player.venom.attack.1", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				},
+				"venom.attack.1" : {
+					"on_entry" : [ "/event entity @s venom:attacks.1" ],
+					"animations" : [ "player.venom.attack.1", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && ((!q.is_using_item && q.property('arathnido:attack') == false) || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_combat'))" },
+						{	"venom.attack.2" : "q.any_animation_finished && q.property('arathnido:attack') == true" }
+					]
+				},
+				"venom.attack.2" : {
+					"on_entry" : [ "/event entity @s venom:attacks.2" ],
+					"animations" : [ "player.venom.attack.2", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && ((!q.is_using_item && q.property('arathnido:attack') == false) || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_combat'))" },
+						{	"venom.attack.3" : "q.any_animation_finished && q.property('arathnido:attack') == true" }
+					]
+				},
+				"venom.attack.3" : {
+					"on_entry" : [ "/event entity @s venom:attacks.3" ],
+					"animations" : [ "player.venom.attack.3", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished && ((!q.is_using_item && q.property('arathnido:attack') == false) || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_combat'))" },
+						{	"venom.attack.4" : "q.any_animation_finished && q.property('arathnido:attack') == true" }
+					]
+				},
+				"venom.attack.4" : {
+					"on_entry" : [ "/event entity @s venom:attacks.4" ],
+					"animations" : [ "player.venom.attack.4", "player.venom.attack.time.2" ],
+					"transitions" : [
+						{	"default" : "q.all_animations_finished" }
+					]
+				},
+				"venom.smash" : {
+					"on_entry" : [ "/playsound venom.punch @a[r=10]", "/event entity @s venom:attacks.5", "/effect @s slow_falling 1 0 true" ],
+					"animations" : [ "player.venom.smash.on" ],
+					"transitions" : [
+						{
+							"smash" : "q.is_on_ground || q.property('arathnido:escalar') == true"
+						}
+					]
+				},
+				"smash" : {
+					"on_entry" : [ "/event entity @s venom:attacks.0", "/tag @s remove venom_smash_i" ],
+					"animations" : [ 
+						"player.venom.smash", 
+						{ "player.venom.smash.particles": "q.property('arathnido:skins') == 0 || q.property('arathnido:skins') == 1 || q.property('arathnido:skins') == 3 || q.property('arathnido:skins') == 7" },
+						{"player.ultimate_venom.smash.particles":"q.property('arathnido:skins') == 4 || q.property('arathnido:skins') == 5"}, 
+						{"player.blue_venom.smash.particles":"q.property('arathnido:skins') == 2"}, 
+						{"player.venom_2099.smash.particles":"q.property('arathnido:skins') == 6"}, 
+						{"player.venom_snow.smash.particles":"q.property('arathnido:skins') == 8"}, 
+						{"player.antivenom.smash.particles":"q.property('arathnido:skins') == 9"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.attack.properties" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/event entity @s venom:attack.off"
+					],
+					"transitions" : [
+						{
+							"venom.attack" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_item') && variable.attack_time > 0.1"
+						},
+						{
+							"venom.attack" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.weapon.mainhand', 'venom_combat') && q.is_using_item"
+						}
+					]
+				},
+				"venom.attack" : {
+					"on_entry": [
+						"/event entity @s venom:attack",
+						"/stopsound @s game.player.attack.nodamage"
+					],
+					"transitions" : [
+						{
+							"off" : "(1.0)"
+						}
+					]
+				},
+				"off" : {
+					"animations" : [ "player.venom.attack.cooldown" ],
+					"on_entry": [
+						"/event entity @s venom:attack.off"
+					],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.walk.sounds" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"venom.walk" : "q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.modified_move_speed > 0.5 && q.is_on_ground && !q.is_in_water"
+						},
+						{
+							"venom.hability" : "q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.is_on_ground && q.is_sneaking && q.head_x_rotation(0) > 75"
+						}
+					]
+				},
+				"venom.walk" : {
+					"animations" : [ "player.venom.walk.sounds" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || q.modified_move_speed < 0.5 || !q.is_on_ground || q.is_in_water"
+						},
+						{
+							"venom.hability" : "q.is_sneaking && q.head_x_rotation(0) > 75"
+						}
+					]
+				},
+				"venom.hability" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.is_on_ground || !q.is_sneaking"
+						},
+						{
+							"venom.hability.walk" : "q.modified_move_speed > 0.5"
+						}
+					]
+				},
+				"venom.hability.walk" : {
+					"animations" : [ "player.venom.hability.walk.sounds" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') || !q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.is_on_ground || !q.is_sneaking"
+						},
+						{
+							"venom.hability" : "q.modified_move_speed < 0.5"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.transform_item" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/function venom/transform_off" ],
+					"transitions" : [
+						{ "avatar" : "q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.is_alive" }
+					]
+				},
+				"avatar" : {
+					"on_entry" : [ "/function venom/transform_off" ],
+					"transitions" : [
+						{
+							"on" : "(1.0)"
+						}
+					]
+				},
+				"on" : {
+					"on_entry" : [ "/function venom/transform_on" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') || !q.is_alive"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.escalar.run_lados" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ 
+						"/event entity @s spiderman:wall.animation.off",
+						"/scoreboard objectives add right_wall dummy",
+						"/scoreboard objectives add left_wall dummy",
+						"/scoreboard players add @s right_wall 0",
+						"/scoreboard players add @s left_wall 0"
+					],
+					"transitions" : [
+						{
+							"on" : "q.is_sneaking && q.property('arathnido:escalar') == true && !q.is_on_ground"
+						}
+					]
+				},
+				"on" : {
+					"on_entry" : [ 
+						"/event entity @s spiderman:wall.animation.off",
+						"/scoreboard objectives add right_wall dummy",
+						"/scoreboard objectives add left_wall dummy",
+						"/scoreboard players add @s right_wall 0",
+						"/scoreboard players add @s left_wall 0"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || q.property('arathnido:escalar') == false || q.is_on_ground"
+						},
+						{
+							"spiderman.right_wall" : "q.scoreboard('right_wall') == 1"
+						},
+						{
+							"spiderman.left_wall" : "q.scoreboard('left_wall') == 1"
+						}
+					]
+				},
+				"spiderman.right_wall" : {
+					"on_entry" : [ 
+						"/event entity @s spiderman:right_wall.animation"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || q.property('arathnido:escalar') == false || q.is_on_ground"
+						},
+						{
+							"on" : "q.scoreboard('left_wall') == 1"
+						}
+					]
+				},
+				"spiderman.left_wall" : {
+					"on_entry" : [ 
+						"/event entity @s spiderman:left_wall.animation"
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || q.property('arathnido:escalar') == false || q.is_on_ground"
+						},
+						{
+							"on" : "q.scoreboard('right_wall') == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.super_jump" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/effect @s jump_boost 0 26 true",
+						"/effect @s speed 0 41 true"
+					],
+					"transitions" : [
+						{
+							"venom.super_jump" : "q.is_on_ground && q.head_x_rotation(0) < -15 && q.is_sneaking"
+						}
+					]
+				},
+				"venom.super_jump" : {
+					"animations" : [ "player.venom.super_jump" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_jumping && !q.is_on_ground || !q.is_sneaking"
+						},
+						{
+							"super_jump" : "q.is_jumping"
+						}
+					]
+				},
+				"super_jump" : {
+					"animations" : [ 
+						"player.venom.super_jump.particles"
+					],
+					"on_entry" : [ "/playsound venom.super_jump @a[r=20]" ],
+					"transitions" : [
+						{
+							"super_jump.default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.venom.powers" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry": [
+						"/scoreboard objectives add venom_skin dummy", "/scoreboard players add @s venom_skin 0", "/function venom/player_off","/function venom/venom_off",
+						"/event entity @s spiderman:escalar.off",
+						"/event entity @s nido:flying.off",
+						"/effect @s health_boost 0 10 true",
+						"/effect @s speed 0 1 true",
+						"/effect @s resistance 0 2 true",
+						"/effect @s strength 0 1 true",
+						"/effect @s jump_boost 0 4 true",
+						"/effect @s haste 0 0 true",
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:wall.animation.off",
+						"/function venom/venom_skin"
+					],
+					"transitions" : [
+						{ "powers.on" : "(!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.armor.legs', 'venom_powers')) || (q.scoreboard('venom_avatar') == 1 && q.scoreboard('venom_powers') == 1) && q.is_alive" },
+						{ "transform" : "q.equipped_item_any_tag('slot.armor.head', 'venom_transform') && q.equipped_item_any_tag('slot.armor.legs', 'venom_powers') && q.is_alive" }
+					]
+				},
+				"powers.on" : {
+					"on_entry": [
+						"/function venom/venom_off",
+						"/effect @s health_boost infinite 4 true",
+						"/event entity @s spiderman:default"
+					],
+					"transitions" : [
+						{ "powers" : "(1.0)" }
+					],
+					"animations" : [ 
+						{ "regeneration.powers": "q.health == 20" }
+					]
+				},
+				"transform" : {
+					"on_entry": [
+						"/function venom/venom_skin"
+					],
+					"transitions" : [
+						{ "venom.on" : "q.all_animations_finished" }
+					],
+					"animations" : [ 
+						"player.venom.transform"
+					]
+				},
+				"venom.on" : {
+					"on_entry": [
+						"/function venom/venom_off",
+						"/effect @s health_boost infinite 9 true",
+						"/event entity @s spiderman:default"
+					],
+					"transitions" : [
+						{ "venom" : "(1.0)" }
+					],
+					"animations" : [ 
+						{ "regeneration.powers": "q.health == 20" }
+					]
+				},
+				"powers" : {
+					"on_entry": [
+						"/function venom/player_on",
+						"/effect @s speed infinite 0 true",
+						"/effect @s resistance infinite 1 true",
+						"/effect @s strength infinite 0 true",
+						"/effect @s jump_boost infinite 2 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [ 
+						"player.symbiont.powers", "player.venom.super_jump.c", { "player.venom.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{ "default" : "(q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.equipped_item_any_tag('slot.armor.legs', 'venom_powers')) && (q.scoreboard('venom_avatar') == 0 || q.scoreboard('venom_powers') == 0) || !q.is_alive" }
+					]
+				},
+				"venom" : {
+					"on_entry": [
+						"/function venom/venom_on",
+						"/effect @s speed infinite 1 true",
+						"/effect @s resistance infinite 2 true",
+						"/effect @s strength infinite 1 true",
+						"/effect @s jump_boost infinite 4 true",
+						"/effect @s haste infinite 0 true",
+						"/event entity @s spiderman:damage_sensor"
+					],
+					"animations" : [
+						"player.venom.powers", 
+						"player.venom.combat.c",
+						"player.venom.knife.attack.c",
+						"player.venom.axe.attack.c", 
+						"player.venom.walk.sounds.c", 
+						"player.venom.super_jump.c", "player.venom.ambient",
+						"player.venom.changes_skin.c", { "player.venom.damage_sensor": "!q.is_sneaking && q.property('arathnido:animation') == 0 && q.scoreboard('venom_rage') == 0" }
+					],
+					"transitions" : [
+						{ "venom.off" : "!q.equipped_item_any_tag('slot.armor.head', 'venom_transform') || !q.equipped_item_any_tag('slot.armor.legs', 'venom_powers')" },
+						{ "default" : "!q.is_alive" }
+					]
+				},
+				"venom.off" : {
+					"on_entry": [
+						"/function venom/venom_off",
+						"/event entity @s spiderman:escalar.off",
+						"/event entity @s nido:flying.off",
+						"/effect @s health_boost 0 10 true",
+						"/effect @s speed 0 1 true",
+						"/effect @s resistance 0 2 true",
+						"/effect @s strength 0 1 true",
+						"/effect @s jump_boost 0 4 true",
+						"/effect @s haste 0 0 true",
+						"/event entity @s spiderman:default",
+						"/event entity @s spiderman:wall.animation.off"
+					],
+					"animations" : [ 
+						"player.venom.transform.off"
+					],
+					"transitions" : [
+						{ "default" : "q.all_animations_finished" }
+					]
+				}
+			}
+		}
+  }
+}

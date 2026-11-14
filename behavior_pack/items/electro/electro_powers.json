@@ -1,0 +1,27 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "spidermanaddon:electro_powers",
+			  "menu_category": {
+				"category": "equipment",
+				"group": "spidermanaddon:itemGroup.name.electro"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "electro_powers", "off_rightitem", "custom_look"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "electro_powers"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"protection": 5,
+				"slot": "slot.armor.legs"
+			}
+		}
+	}
+}

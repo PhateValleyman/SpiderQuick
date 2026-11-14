@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mano_shuriken.idle": {
+			"loop": true,
+			"animation_length": 0.4583,
+			"bones": {
+				"shuriken": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [0, -360, 0]
+					}
+				}
+			}
+		}
+	}
+}

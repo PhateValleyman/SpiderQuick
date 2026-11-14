@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spiderverse:spiderman_black_suit_comic.armor_stand",
+			"item": {
+				"spiderverse:spiderman_black_suit_comic": "query.owner_identifier == 'minecraft:armor_stand'"
+			},
+			"materials": {
+				"default": "armor",
+				"outline": "armor"
+			},
+			"textures": {
+				"default": "textures/suits/spiderman_black_suit_comic",
+				"outline": "textures/suits/spiderman_black_suit_comic"
+			},
+			"geometry": {
+				"default": "geometry.spiderman_suit_x64",
+				"outline": "geometry.spiderman_mask_x64"
+			},
+			"render_controllers": [
+				"controller.render.default",
+				"controller.render.outline"
+			]
+		}
+	}
+}

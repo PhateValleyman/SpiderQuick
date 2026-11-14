@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.vehicle.smoke": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "vehicle.smoke": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:lava_particle ^ ^ ^-2",
+			"/particle minecraft:campfire_smoke_particle ^ ^ ^",
+			"/particle minecraft:campfire_smoke_particle ^1 ^ ^",
+			"/particle minecraft:campfire_smoke_particle ^-1 ^ ^",
+			"/particle minecraft:lava_particle ^ ^ ^",
+			"/particle minecraft:lava_particle ^1 ^ ^"
+
+
+          ]
+        },
+        "vehicle.smoke": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:campfire_smoke_particle ^ ^ ^0.5",
+			"/particle minecraft:campfire_smoke_particle ^ ^ ^1",
+			"/particle minecraft:lava_particle ^-1 ^ ^"
+          ]
+        }
+      }
+    }
+  }
+}

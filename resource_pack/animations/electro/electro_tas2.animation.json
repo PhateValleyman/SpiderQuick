@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.electro_tas2.new": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"position": [3, 0, 0]
+				},
+				"rightLeg": {
+					"position": [-3, 0, 0]
+				},
+				"waist": {
+					"position": [0, 5, 0]
+				},
+				"head": {
+					"position": [0, 5, 0]
+				},
+				"leftArm": {
+					"position": [5, 0, 0]
+				},
+				"rightArm": {
+					"position": [-5, 0, 0]
+				},
+				"pestana1": {
+					"rotation": [0, 0, 10]
+				},
+				"pestana0": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		},
+		"animation.electro_tas2.idle": {
+			"loop": true,
+			"bones": {
+				"pestana1": {
+					"rotation": [0, 0, 10]
+				},
+				"pestana0": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		}
+	}
+}

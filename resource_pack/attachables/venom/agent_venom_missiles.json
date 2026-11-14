@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "spidermanaddon:agent_venom_missiles",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/3d_items/agent_venom_missiles"
+			},
+			"geometry": {
+				"default": "geometry.agent_venom_missiles"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"scripts": {
+                "animate": [
+				  "idle.c"
+                ]
+			},
+            "animations": {
+				"idle.c": "animation.agent_venom_missiles.idle"
+            }
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "spidermanaddon:spider_ham_hammer",
+			"materials": {
+				"default": "armor"
+			},
+			"textures": {
+				"default": "textures/entity/spider_ham"
+			},
+			"geometry": {
+				"default": "geometry.spider_ham_hammer",
+				"first": "geometry.spider_ham_hammer_first"
+			},
+			"render_controllers": [
+				{ "controller.render.item_3d": "!c.is_first_person" },
+				{ "controller.render.item_3d.first": "c.is_first_person" }
+			]
+		}
+	}
+}

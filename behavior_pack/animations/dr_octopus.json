@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.player.dr_octopus_arms.attack": {
+      "loop": true,
+      "animation_length": 0.75,
+      "timeline": {
+        "0.0": [
+		  "/tag @s add dr_octopus_p"
+        ],
+        "0.1": [
+		  "/playsound dr_octopus.arms.attack @s ^ ^1 ^ 0.5"
+        ],
+        "0.2": [
+		  "/execute at @s[tag=pvp_player] positioned ^ ^1 ^2 run damage @e[type=!xp_orb, type=!item, tag=!dr_octopus_p, r=5] 13",
+		  "/execute at @s[tag=!pvp_player] positioned ^ ^1 ^2 run damage @e[type=!xp_orb, type=!item, type=!player, r=5] 13"
+        ],
+        "0.45": [
+		  "/tag @s remove dr_octopus_p"
+        ]
+      }
+    },
+    "animation.player.dr_octopus_arms.powers": {
+      "loop": true,
+      "animation_length": 0.25,
+      "timeline": {
+        "0.05": [
+			"/effect @s resistance infinite 1 true"
+        ]
+      }
+	},
+    "animation.player.dr_octopus_arms.walk": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.1": [
+		  "/playsound dr_octopus.walk @s ^ ^1 ^ 0.5"
+        ]
+      }
+    }
+  }
+}

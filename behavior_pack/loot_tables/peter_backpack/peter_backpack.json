@@ -1,0 +1,243 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:component",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_iron_spider_ucm_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_miles_morales_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_miles_morales_into_the_spiderverse_suit_leap_of_faith_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_peni_parker_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_scarlet_spider_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_silk_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spider_gwen_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_2099_across_the_spiderverse_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_black_suit_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_india_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_no_way_home_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_noir_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_ps4_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_raimi_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spiderman_raimi_black_suit_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_superior_spiderman_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_the_amazing_spiderman_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_the_amazing_spiderman_2_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_spider_punk_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:stuffed_aracnido_jr_spawn_egg",
+                    "weight": 5
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:tsum_tsum_spawn_egg",
+                    "weight": 5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:multiversal_particles",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_powers",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_powers_42",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:gr_27_negative",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:bodega_cat",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:web_wings",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "marveladdons:avengers_id_card",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:uncle_ben_camera",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_bot_fly_controllers",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_bots_controllers",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:web_bomb",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:pumpkin_bomb",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_drone_item",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spiderman_palette",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spiderman_2099_burger",
+                    "weight": 15
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:robot_dog_pet_plans",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:mutation_antidote",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spider_mutant",
+                    "weight": 10
+                },
+                {
+                    "type": "item",
+                    "name": "spidermanaddon:spiderman_unlimited_wrist_morpher",
+                    "weight": 10
+                }
+            ]
+        }
+    ]
+}

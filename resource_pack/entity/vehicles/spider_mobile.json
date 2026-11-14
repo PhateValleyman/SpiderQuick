@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:spider_mobile",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/spider_mobile"
+			},
+			"geometry": {
+				"default": "geometry.spider_mobile"
+			},
+			"animations": {
+				"walk": "animation.spider_mobile.walk",
+				"loop": "animation.spider_mobile.idle",
+				"volante": "animation.volante.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"volante": "controller.animation.volante"
+				},
+				{
+					"walk": "controller.animation.spider_mobile.walk"
+				}
+			],
+			"render_controllers": [
+				"controller.render.spider_mobile"
+			],
+			"spawn_egg": {
+				"texture": "spider_mobile",
+				"texture_index": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "spidermanaddon:black_cat_hook",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+	},
+	"component_groups": {
+		"destroy": {
+			"minecraft:instant_despawn": {
+				"remove_child_entities":true
+			}
+		}
+	},
+    "components": {
+      "minecraft:leashable": {
+         "soft_distance": 120,
+         "hard_distance": 120,
+         "max_distance": 120
+      },
+      "minecraft:timer": {
+          "looping": true,
+          "time": 120,
+          "time_down_event": {
+              "event": "destroy",
+              "target": "self"
+          }
+      },
+	  "minecraft:type_family": {
+		"family": ["black_cat_hook"]
+	  },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	  "minecraft:damage_sensor": {
+		"triggers": {
+			"cause": "all",
+			"deals_damage": false
+		}
+	  },
+			"minecraft:collision_box": {
+				"width": 0.01,
+				"height": 0.01
+			},
+      "minecraft:physics": {
+		"has_gravity":false,
+		"has_collision":false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+	"events": {
+		"destroy": {
+			"add": {
+				"component_groups": [
+					"destroy"
+				]
+			}
+		}
+	}
+  }
+}

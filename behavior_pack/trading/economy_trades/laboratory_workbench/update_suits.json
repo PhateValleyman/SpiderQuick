@@ -1,0 +1,391 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 21,
+          "trades": [
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_classic_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:scarlet_spider_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_2099_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:spiderman_ps5_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:iron_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_spider_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:iron_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_spider_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:iron_spider_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:iron_spider_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:superior_spiderman_suit_3"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit_1"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit_2"
+                }
+              ]
+            },
+            {
+              "max_uses": 10000,
+              "wants": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit",
+                  "quantity": 1
+                },
+                {
+                  "item": "spidermanaddon:component",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "spiderverse:miles_morales_wolverine_suit_3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

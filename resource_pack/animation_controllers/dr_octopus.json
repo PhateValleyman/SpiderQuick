@@ -1,0 +1,218 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.dr_octopus.hability_2":{
+			"initial_state" : "default",
+			"states":{
+				"default":{
+					"transitions": [
+						{
+							"dr_octopus.hability_2": "q.variant == 2"
+						}
+					]
+				},
+				"dr_octopus.hability_2":{
+					"animations":["take.move", "take"],
+					"transitions":[
+						{
+							"dr_octopus.off": "q.all_animations_finished || q.variant == 0"
+						}
+					]
+				},
+				"dr_octopus.hability_2.now":{
+					"animations":["take.move", "take.idle"],
+					"transitions":[
+						{
+							"default":	"q.variant == 0"
+						},
+						{
+							"dr_octopus.off": "q.all_animations_finished"
+						}
+					]
+				},
+				"dr_octopus.off":{
+					"animations":["lanzar"],
+					"transitions":[
+						{
+							"default":	"q.variant == 0 && q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.dr_octopus.climb" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"climb" : "q.is_wall_climbing"
+						}
+					],
+          "blend_transition": 0.2
+				},
+				"climb" : {
+					"animations" : [ "climb" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_wall_climbing"
+						}
+					],
+          "blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.dr_octopus.hability_1" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hability_1" : "q.variant == 1 && q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"hability_1" : {
+					"animations" : [ "hability_1" ],
+					"transitions" : [
+						{
+							"idle" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.dr_octopus.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle.none" ],
+					"transitions" : [
+						{
+							"arms_on" : "q.is_angry"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"arms_on" : {
+					"animations" : [ "arms_on" ],
+					"transitions" : [
+						{
+							"idle" : "q.all_animations_finished"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"idle" : {
+					"animations" : [ "idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_angry"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.dr_octopus.electrocutado" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"electrocutado" : "q.mark_variant == 11"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"electrocutado" : {
+					"animations" : [ "electrocutado" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.dr_octopus.jumping" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"jumping" : "!q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"jumping" : {
+					"animations" : [ "jumping" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.dr_octopus.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "q.modified_move_speed > 0.1 && q.is_on_ground && !q.is_angry"
+						},
+						{
+							"walk_attack" : "q.modified_move_speed > 0.1 && q.is_on_ground && q.is_angry"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || !q.is_on_ground || q.is_angry"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"walk_attack" : {
+					"animations" : [ "walk_attack" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || !q.is_on_ground || !q.is_angry"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.dr_octopus.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"attack" : "variable.attack>0"
+						}
+					]
+				},
+				"attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

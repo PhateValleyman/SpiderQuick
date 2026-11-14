@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "spidermanaddon:lizard",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/lizard"
+			},
+			"geometry": {
+				"default": "geometry.lizard"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 38.17);"
+				]
+			},
+			"animations": {
+				"loop": "animation.lizard.idle",
+				"walk": "animation.lizard.walk",
+				"roar": "animation.lizard.roar",
+				"jump": "animation.lizard.jump",
+				"jump_on": "animation.lizard.jump_on",
+				"attack": "animation.lizard.attack",
+				"attack.2": "animation.lizard.attack.2",
+				"suit": "animation.lizard.no_suit"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				},
+				{
+					"walk": "controller.animation.lizard.walk"
+				},
+				{
+					"attack": "controller.animation.lizard.attack"
+				},
+				{
+					"hability": "controller.animation.lizard.hability"
+				},
+				{
+					"suit": "controller.animation.lizard.suit"
+				}
+			],
+			"render_controllers": [
+				"controller.render.lizard"
+			],
+			"spawn_egg": {
+				"texture": "egg_lizard",
+				"texture_index": 0
+			}
+		}
+	}
+}

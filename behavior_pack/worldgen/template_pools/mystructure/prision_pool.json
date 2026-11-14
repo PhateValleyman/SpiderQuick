@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mystructure:prision_pool"
+    },
+    "elements": [
+      {
+        "weight": 100,
+        "element": {
+          "location": "mystructure/prision",
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid"
+        }
+      }
+    ]
+  }
+}

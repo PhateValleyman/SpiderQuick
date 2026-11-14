@@ -1,0 +1,65 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.venom.boss.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"venom.boss.walk" : "q.modified_move_speed > 0.1 && q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"venom.boss.walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.venom.boss" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle", "whip.idle", "look", "axe.off","fly", "on" ]
+				}
+			}
+		},
+		"controller.animation.symbiotes.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"symbiotes.walk" : "q.modified_move_speed > 0.1 && q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				},
+				"symbiotes.walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],
+          "blend_transition": 0.25
+				}
+			}
+		},
+		"controller.animation.symbiotes.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "idle", "look" ]
+				}
+			}
+		}
+	}
+}

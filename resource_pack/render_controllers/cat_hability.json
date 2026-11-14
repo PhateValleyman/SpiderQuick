@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.black_cat.whip_claws.first": {
+      "geometry": "Geometry.black_cat_whip_claws_first",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.black_cat_whip_claws" ]
+    },
+    "controller.render.black_cat.whip_claws.third": {
+      "geometry": "Geometry.black_cat_whip_claws_third",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.black_cat_whip_claws" ]
+    },
+    "controller.render.rubik": {
+      "geometry": "Geometry.rubik",
+      "materials": [ { "*": "Material.rubik" } ],
+      "textures": [ "Texture.rubik" ]
+    },
+    "controller.render.cat_hability": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.default", "Texture.enchanted" ]
+    }
+  }
+}

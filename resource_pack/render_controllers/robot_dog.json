@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.robot_dog.angry": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "q.has_target" }
+      ],
+      "textures": [ "Texture.angry", "Texture.enchanted" ]
+    },
+    "controller.render.robot_dog.wild": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "part_visibility": [
+        { "*": "!q.has_target" }
+      ],
+      "textures": [ "Texture.default", "Texture.enchanted" ]
+    },
+    "controller.render.robot_dog.tame": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.tame", "Texture.enchanted" ]
+    }
+  }
+}
