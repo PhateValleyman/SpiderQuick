@@ -6,17 +6,23 @@ import { system } from '@minecraft/server';
  * so schedule it through system.run and resolve/reject with its result/error.
  */
 export function runCommandAsyncCompat(target, command) {
-    return new Promise((resolve, reject) => {
+    // Callers historically fire-and-forget this helper; never leak an unhandled rejection.
+    return new Promise((resolve) => {
+        const reportError = (error) => {
+            console.warn('SpiderQuick command failed: ' + command + ' (' + error + ')');
+            resolve(undefined);
+        };
+
         try {
             system.run(() => {
                 try {
                     resolve(target.runCommand(command));
                 } catch (error) {
-                    reject(error);
+                    reportError(error);
                 }
             });
         } catch (error) {
-            reject(error);
+            reportError(error);
         }
     });
 }
