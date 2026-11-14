@@ -2,7 +2,7 @@
 // Every placed SpiderQuick structure gets a persistent `qc:control` marker at its exact origin corner.
 // Moving uses a live raycast preview: the stone follows the player's view and a tap on it places the structure.
 // Instance names are stored independently from the structure template and can be used as teleport destinations.
-import { world, system } from '@minecraft/server';
+import { world, system, StructureSaveMode } from '@minecraft/server';
 import { ActionFormData, ModalFormData } from '@minecraft/server-ui';
 import { CATEGORIES } from './catalog.js';
 import { teleportToInstance, warping } from './teleport.js';
@@ -515,11 +515,43 @@ function placeMoved(player, instance) {
         return;
     }
 
+    let snapshot;
     try {
+        const max = {
+            x: original.x + instance.size.x - 1,
+            y: original.y + instance.size.y - 1,
+            z: original.z + instance.size.z - 1,
+        };
+        const snapshotId =
+            'spiderquick:move_' +
+            instance.id.toLowerCase().replace(/[^a-z0-9_.-]/g, '_') +
+            '_' + system.currentTick;
+
         clearMarker(player.dimension, target);
 
+        snapshot = world.structureManager.createFromWorld(
+            snapshotId,
+            player.dimension,
+            original,
+            max,
+            {
+                includeEntities: false,
+                includeBlocks: true,
+                saveMode: StructureSaveMode.Memory,
+            },
+        );
+
+        world.structureManager.place(
+            snapshot,
+            player.dimension,
+            target,
+            {
+                includeEntities: false,
+                includeBlocks: true,
+            },
+        );
+
         const movedInstance = { ...instance, origin: target };
-        loadStructure(player.dimension, movedInstance);
         setControlStone(player.dimension, movedInstance);
 
         saveInstances(
@@ -527,7 +559,6 @@ function placeMoved(player, instance) {
                 i.id === instance.id ? movedInstance : i,
             ),
         );
-
         writePlayer(player, MOVE_KEY, null);
 
         try {
@@ -535,7 +566,7 @@ function placeMoved(player, instance) {
         } catch (clearError) {
             notify(
                 player,
-                '§eNová stavba je umístěna, ale původní oblast se nepodařilo vyčistit. Zůstala zachována jako kopie.',
+                '§eStavba byla zkopírována včetně bloků a úprav, ale původní oblast nešla vyčistit. Zůstala zachována jako kopie.',
             );
             console.warn('SpiderQuick old structure cleanup error: ' + clearError);
             return;
@@ -543,11 +574,20 @@ function placeMoved(player, instance) {
 
         notify(player, '§a🔵 Stavba ' + instance.name + ' byla přesunuta.');
     } catch (e) {
+        writePlayer(player, MOVE_KEY, { ...move, target: null });
         notify(
             player,
-            '§cNové místo se nepodařilo použít. Původní stavba zůstala zachována.',
+            '§cPřesun se nepodařil. Původní stavba zůstala zachována; zkus jiné místo.',
         );
         console.warn('SpiderQuick move place error: ' + e);
+    } finally {
+        if (snapshot) {
+            try {
+                world.structureManager.delete(snapshot);
+            } catch (deleteError) {
+                console.warn('SpiderQuick temporary structure cleanup error: ' + deleteError);
+            }
+        }
     }
 }
 
