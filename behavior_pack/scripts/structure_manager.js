@@ -194,6 +194,15 @@ function isAirBlock(block) {
         block?.typeId === 'minecraft:void_air';
 }
 
+function volumesOverlap(originA, sizeA, originB, sizeB) {
+    return originA.x < originB.x + sizeB.x &&
+        originA.x + sizeA.x > originB.x &&
+        originA.y < originB.y + sizeB.y &&
+        originA.y + sizeA.y > originB.y &&
+        originA.z < originB.z + sizeB.z &&
+        originA.z + sizeA.z > originB.z;
+}
+
 function isMoveDestinationClear(dimension, instance, target) {
     const size = instance.size;
     if (
@@ -202,6 +211,17 @@ function isMoveDestinationClear(dimension, instance, target) {
         !Number.isInteger(size.y) || size.y < 1 ||
         !Number.isInteger(size.z) || size.z < 1
     ) return false;
+
+    if (volumesOverlap(target, size, instance.origin, size)) return false;
+
+    const otherInstances = getInstances().filter(
+        (other) =>
+            other.id !== instance.id &&
+            other.dimension === dimension.id,
+    );
+    if (otherInstances.some((other) =>
+        volumesOverlap(target, size, other.origin, other.size),
+    )) return false;
 
     try {
         for (let x = 0; x < size.x; x++) {
