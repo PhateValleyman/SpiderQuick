@@ -528,6 +528,14 @@ function placeMoved(player, instance) {
             },
         );
 
+        if (
+            snapshot.size.x !== instance.size.x ||
+            snapshot.size.y !== instance.size.y ||
+            snapshot.size.z !== instance.size.z
+        ) {
+            throw new Error('Saved structure dimensions do not match the registered instance.');
+        }
+
         world.structureManager.place(
             snapshot,
             player.dimension,
